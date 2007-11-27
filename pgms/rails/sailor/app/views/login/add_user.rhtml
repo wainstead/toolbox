@@ -1,0 +1,42 @@
+<!--
+ ! Excerpted from "Agile Web Development with Rails, 2nd Ed."
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/rails2 for more book information.
+-->
+
+<!-- this should go in the layout file, not here... -->
+    <% if flash[:notice] -%>
+      <div id="notice"><%= flash[:notice] %></div>
+    <% end -%>
+
+
+<div class="depot-form">
+
+  <%= error_messages_for 'user' %>
+
+  <fieldset>
+    <legend>Enter User Details</legend>
+
+    <% form_for :user do |form| %>
+      <p>
+        <label for="user_name">Name:</label>
+        <%= form.text_field :name, :size => 40 %>
+      </p>
+
+      <p>
+        <label for="user_password">Password:</label>
+        <%= form.password_field :password, :size => 40 %>
+      </p>
+
+      <p>
+        <label for="user_password_confirmation">Confirm:</label>
+        <%= form.password_field :password_confirmation, :size => 40 %>
+      </p>
+
+      <%= submit_tag "Add User", :class => "submit" %>
+    
+    <% end %>  
+  </fieldset>
+</div>
+<hr>
+<%= link_to "login now", :controller => "login", :action => "login" %>

@@ -1,0 +1,65 @@
+#!/usr/local/bin/ruby
+
+foo = { :bar => "baz", :blippy => "ooga booga" }
+
+#aputs foo[:bar]
+
+foo.each do |x|
+  puts x
+  #puts foo[x]
+end
+
+
+@baz = [1,2,3,4,5]
+
+@baz.each do |x|
+  puts x * 2
+end
+
+
+class Gippy
+  def foo
+    puts %{I'm the "foo" in you!} #'
+  end
+
+end
+
+
+g = Gippy.new
+g.foo
+
+
+class Hippy < Gippy
+
+  attr_accessor :beeswax
+
+  def initialize
+    @beeswax = "hello sailor!"
+  end
+  def bar
+    puts %Q!I have {curly quotes} man!
+  end
+
+end
+
+
+h = Hippy.new
+h.foo
+h.bar
+puts "bw:"
+puts h.beeswax
+
+
+class Dippy < Hippy
+  attr_reader :list
+  def initialize
+    @list = [1,2,3,4,5,6]
+  end
+end
+
+
+d = Dippy.new
+d.foo
+d.list.each do |dip|
+  puts dip * 3
+end

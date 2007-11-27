@@ -1,0 +1,168 @@
+#!/usr/bin/expect
+
+# $Id: fix_alteon.exp,v 1.1 2007/06/20 21:20:21 swain Exp $
+
+# simple proc to make this script's output distinct from the alteon's
+# output
+proc speak msg {
+    puts "me ==> $msg"
+}
+
+
+proc wrtlog { fd msg } {
+    set datepipe [open |date r]
+    set date [gets $datepipe]
+    close $datepipe
+    puts $fd "$date $msg"
+}
+
+
+proc update_load_balancer {}  {
+
+    upvar log_file lfd
+
+    send "/stats/slb/maint\r"
+
+    expect {
+        timeout {
+            speak "ERROR - Timed out waiting for the string 'Incorrect VIPs'"
+            wrtlog $lfd "ERROR - Timed out waiting for the string 'Incorrect VIPs'"
+            exit 2
+        }
+        -re "Incorrect VIPs:\[ \t]+(\[0-9\]+)\r\n" {
+            speak " =================  'Incorrect VIPs'"
+        }
+    }
+
+
+    if { $expect_out(1,string) >= "1" } {
+
+        wrtlog $lfd "Found $expect_out(1,string) incorrect VIPs. Fixing..."
+        speak " ===============   We have <$expect_out(1,string)> incorrect VIPs"
+        expect "Statistics\#" { send "/cfg/slb/real 31/cur\r" }
+
+        expect {
+            timeout {
+                speak "ERROR - Timed out waiting for the string 'cur 31'"
+                wrtlog $lfd "ERROR - Timed out waiting for the string 'cur 31'"
+                exit 2
+            }
+            -re "proxy (\[a-z\]+)" {
+		speak " ====== Enabled "
+            }
+        }
+        if  { $expect_out(1,string) eq "enabled" } {
+            send "/cfg/slb/real 31/proxy disable\r"
+        } else {
+            send "/cfg/slb/real 31/proxy enable\r"
+        }
+        expect "fc-alt-1"
+        send "apply\r"
+        expect "fc-alt-1"
+        send "save\r"
+        expect "Confirm saving to FLASH"
+        send "y\r"
+        expect "New config successfully saved to FLASH"
+        send "/oper/slb/clear\r"
+        expect "Operations\#"
+        send "/stats/slb/clear\r"
+        send "y\ry\r"
+        wrtlog $lfd "VIPs fixed."
+
+    } else {
+        speak " ===============  No incorrect VIPs"
+        wrtlog $lfd " ===============  No incorrect VIPs"
+    }
+
+}
+
+
+# logging
+set log_file [open /var/log/alteon.err a]
+fconfigure $log_file -buffering line
+
+# timeout for "expect" blocks
+set timeout 10
+# timeout for our "interact" block
+set int_timeout 30
+
+
+spawn  ssh 64.152.35.130 -l admin
+
+
+expect {
+    timeout {
+        speak "ERROR -- login timed out"
+        wrtlog $log_file "ERROR -- login timed out"
+        exit 1
+    }
+    "password" { send "secret password goes here\r" }
+}
+
+expect { 
+    timeout {
+        speak "ERROR: Didn't get the prompt!"
+        wrtlog $log_file "ERROR: Didn't get the prompt!"
+        exit 2
+    }
+    "Main\#" { 
+        speak "Got the main prompt"
+        wrtlog $log_file "Got the main prompt from the balancer. Starting main loop."
+    }
+}
+
+
+while {1} {
+
+    update_load_balancer
+
+    speak "Entering interact mode. Timeout is $int_timeout."
+    speak "You are now typing directly to the load balancer."
+    speak "If you type nothing, in $int_timeout seconds"
+    speak "I will loop again and test the balancer."
+    speak "Type ~exit to quit."
+    speak "Type '~interp' to drop to the Expect interpreter; 'return' to get out again."
+    
+    interact {
+
+        # this command will terminate the spawned process, and exit
+        # this script
+
+        "~exit" {
+            speak "exiting on your command"
+            send -i $spawn_id "exit\r"
+            expect -i $spawn_id eof { speak "Logged out of the load balancer" }
+            exit
+        }
+
+        # this drops us to the expect prompt. type 'return' to leave
+        # the interpreter and return to this interact block.
+        "~interp" interpreter
+
+        # unused escape sequence
+        "~~" { speak "You typed the escape command (which does nothing)" }
+
+
+
+        # the return statement exits this 'interact' block, and we
+        # loop again in our while{} block
+        timeout $int_timeout {
+            speak "'interact' timed out. Looping again."
+            return
+        }
+
+
+        # dash-oh is a special arg to 'interact'; all subsequent
+        # statements watch the output of the spawned process, not the
+        # user.
+        -o
+        eof { 
+            speak "The spawned process exited. Now I'm exiting." 
+            break
+        }
+    }
+
+}
+
+speak " ===================   done..."
+exit 0

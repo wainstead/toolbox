@@ -1,0 +1,22 @@
+#!/usr/bin/expect
+
+# $Id: mup.exp,v 1.6 2007/02/23 17:56:09 swain Exp $
+
+set timeout 25
+
+set machine [lindex $argv 0]
+set muppattern [lindex $argv 1]
+puts "Using machine $machine $muppattern"
+spawn /usr/bin/ssh bst-1.fortunecity.com
+expect "Unauthorized"
+
+send "ssh $machine\r"
+expect "$muppattern"
+send "cd /opt/apache2/logs\r"
+expect "logs"
+send "tail -f `ls -tr *error* | tail -1` | grep -v 'TRANSMIT_ERROR' \r"
+
+interact
+puts "mup.exp done."
+
+# $Id: mup.exp,v 1.6 2007/02/23 17:56:09 swain Exp $

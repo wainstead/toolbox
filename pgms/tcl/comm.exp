@@ -1,0 +1,128 @@
+#!/usr/bin/expect --
+
+# prolly the most complex bit of expect programming 
+# i've done to date. lots of tcl-isms.
+
+# write to smaller log file /var/log/comm.small
+proc wrtlog { fd msg } {
+  set datepipe [open |date r]
+  set date [gets $datepipe]
+  close $datepipe
+  puts $fd "$date $msg\n"
+}
+
+
+# test the lock file, continue if it's set
+proc check_lock { lockfile } {
+  if { ![file exists $lockfile] } {
+    return 1
+  } else {
+    set FILE [open $lockfile r]
+    gets $FILE var
+    close $FILE
+
+    if { $var > 0 } {
+      return 1
+    } else {
+      return 0
+    }
+  }
+}
+
+# take care of metro traffic reports
+proc metro_traffic { report } {
+  set filename /tmp/metro_traffic_report
+  set FILE [open $filename w]
+  puts $FILE "$report"
+  close $FILE
+}
+
+##########
+########## start main...
+##########
+
+# set up directory, log files, lock file
+cd /tmp/
+log_file /var/log/comm
+set lockfile /home/swain/tmp/commlock
+set smalllog [open /var/log/comm.small a]
+
+
+# test $lockfile and see if it's OK to answer
+set test_lock [check_lock $lockfile]
+while { $test_lock == 0 } {
+  wrtlog $smalllog "lock file was locked before spawn: $test_lock"
+  sleep 5
+  set test_lock [check_lock $lockfile]
+}
+wrtlog $smalllog "Spawning Minicom..."
+spawn minicom
+
+
+# Loop forever. Quasi daemon.
+while { 1 } {
+  wrtlog $smalllog "At top of loop"
+  set timeout -1
+
+  # wait for the phone to ring.
+  # when it does give 60 seconds for a connection to happen
+  expect {
+    "RING" {
+      set timeout 60
+      wrtlog $smalllog "Phone rang: $expect_out(0,string)"
+     }
+  }
+
+  # wait so we get caller ID info on the handset
+  sleep 7  
+
+  # test $lockfile and see if it's OK to answer
+  set test_lock [check_lock $lockfile]
+  if { !$test_lock } {
+    close
+    wrtlog $smalllog "Closing and breaking on test_lock: $test_lock"
+    break
+  } else {
+    wrtlog $smalllog "Sending ATA"
+    send "ATA\r"
+  }
+
+  wrtlog $smalllog "Waiting for CONNECT. Timeout = $timeout"
+
+  # when we get CONNECT we wait for zmodem sends or whatnot
+  expect {
+    timeout { 
+      wrtlog $smalllog "Timed out, no connection established"
+      close
+      exit
+     }
+    "NO CARRIER" {
+      wrtlog $smalllog "No connection established: $expect_out(0,string)"
+      continue
+    }
+    "CONNECT" { wrtlog $smalllog "Got CONNECT: $expect_out(0,string)" }
+  }
+
+  set flag 1
+  while { $flag == 1 } {
+    expect {
+      timeout { 
+        wrtlog $smalllog "Timed out, no data received"
+        # We explicitly exit here to hang up the modem. If we 
+        # used 'continue' the line would remain open and we'd be locked up.
+        close
+        exit 
+       }
+      "NO CARRIER" { set flag 0 }
+      # This terminates zmodem receives that are done
+      "press any key" { send "\r" }
+      # This matches Metro Traffic uploads
+      -re "(>MTC<)(.*)(\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*)" {
+        metro_traffic $expect_out(2,string)
+        set flag 0
+      }
+    }
+  }
+  wrtlog $smalllog "Out of _while flag ==_: $expect_out(0,string)"
+}
+

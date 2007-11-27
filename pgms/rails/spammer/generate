@@ -1,0 +1,1002 @@
+Script started on Tue 31 Jul 2007 11:42:18 AM EDT
+[spork spammer]$       exists  app/models/
+      create  app/views/notifier
+      exists  test/unit/
+      create  test/fixtures/notifier
+      create  app/models/notifier.rb
+      create  test/unit/notifier_test.rb
+[spork spammer]$       exists  app/models/
+      exists  test/unit/
+      exists  test/fixtures/
+      create  app/models/user.rb
+      create  test/unit/user_test.rb
+      create  test/fixtures/users.yml
+      create  db/migrate
+      create  db/migrate/001_create_users.rb
+[spork spammer]$ (in /home/swain/public_html/projects/spammer)
+rake aborted!
+Connection refused - /tmp/mysql.sock
+
+(See full trace by running task with --trace)
+[spork spammer]$ (in /home/swain/public_html/projects/spammer)
+== CreateUsers: migrating =====================================================
+-- create_table(:users)
+   -> 0.1064s
+== CreateUsers: migrated (0.1114s) ============================================
+
+[spork spammer]$ Loading development environment.
+>> => #<User:0xb76babf0 @new_record=true, @attributes={"username"=>nil, "password"=>nil, "email"=>nil}>
+>> => [#<ActiveRecord::ConnectionAdapters::MysqlColumn:0xb7619f48 @default=nil, @limit=11, @null=false, @primary=true, @name="id", @scale=nil, @original_default=nil, @sql_type="int(11)", @precision=nil, @type=:integer>, #<ActiveRecord::ConnectionAdapters::MysqlColumn:0xb7619cdc @default=nil, @limit=255, @null=true, @primary=false, @name="username", @scale=nil, @original_default=nil, @sql_type="varchar(255)", @precision=nil, @type=:string>, #<ActiveRecord::ConnectionAdapters::MysqlColumn:0xb7619944 @default=nil, @limit=255, @null=true, @primary=false, @name="password", @scale=nil, @original_default=nil, @sql_type="varchar(255)", @precision=nil, @type=:string>, #<ActiveRecord::ConnectionAdapters::MysqlColumn:0xb7619638 @default=nil, @limit=255, @null=true, @primary=false, @name="email", @scale=nil, @original_default=nil, @sql_type="varchar(255)", @precision=nil, @type=:string>]
+>> => "swain"
+>> => "112233"
+>> => "swain@corp.fortunecity.com"
+>> => true
+>> [spork spammer]$ bash: script/create: No such file or directory
+[spork spammer]$ /home/swain/public_html/projects/spammer
+[spork spammer]$       exists  app/controllers/
+      exists  app/helpers/
+      create  app/views/foo
+      exists  test/functional/
+      create  app/controllers/foo_controller.rb
+      create  test/functional/foo_controller_test.rb
+      create  app/helpers/foo_helper.rb
+      create  app/views/foo/index.rhtml
+[spork spammer]$ Loading development environment.
+>> => #<User:0xb7592e50 @attributes={"username"=>"swain", "id"=>"1", "password"=>"112233", "email"=>"swain@corp.fortunecity.com"}>
+>> => "foo"
+>> => true
+>> [spork spammer]$ /home/swain/public_html/projects/spammer
+[spork spammer]$ mv: cannot stat `spammer': No such file or directory
+[spork spammer]$ [spork projects]$ [spork projects]$ [spork ~]$ [spork pgms]$ [spork pgms]$ Directory /opt/cvs/swain/pgms/rails added to the repository
+[spork pgms]$ [spork pgms]$ [spork rails]$ cvs add: nothing known about rails
+[spork rails]$ /home/swain/cvs/pgms/rails
+[spork rails]$ ? spammer/README
+? spammer/Rakefile
+? spammer/app
+? spammer/components
+? spammer/config
+? spammer/db
+? spammer/doc
+? spammer/generate
+? spammer/lib
+? spammer/log
+? spammer/public
+? spammer/script
+? spammer/test
+? spammer/tmp
+? spammer/vendor
+Directory /opt/cvs/swain/pgms/rails/spammer added to the repository
+[spork rails]$ [spork spammer]$ app/	     config/  db/   generate  log/     Rakefile  script/  tmp/
+components/  CVS/     doc/  lib/      public/  README	 test/	  vendor/
+[spork spammer]$ .
+./app
+./app/controllers
+./app/helpers
+./app/models
+./app/views
+./app/views/layouts
+./app/views/notifier
+./app/views/foo
+./config
+./config/environments
+./components
+./db
+./db/migrate
+./doc
+./lib
+./lib/tasks
+./log
+./public
+./public/images
+./public/javascripts
+./public/stylesheets
+./script
+./script/performance
+./script/process
+./test
+./test/fixtures
+./test/fixtures/notifier
+./test/functional
+./test/integration
+./test/mocks
+./test/mocks/development
+./test/mocks/test
+./test/unit
+./vendor
+./vendor/plugins
+./tmp
+./tmp/sessions
+./tmp/sockets
+./tmp/cache
+./tmp/pids
+./CVS
+[spork spammer]$ .
+./app
+./app/controllers
+./app/helpers
+./app/models
+./app/views
+./app/views/layouts
+./app/views/notifier
+./app/views/foo
+./config
+./config/environments
+./components
+./db
+./db/migrate
+./doc
+./lib
+./lib/tasks
+./log
+./public
+./public/images
+./public/javascripts
+./public/stylesheets
+./script
+./script/performance
+./script/process
+./test
+./test/fixtures
+./test/fixtures/notifier
+./test/functional
+./test/integration
+./test/mocks
+./test/mocks/development
+./test/mocks/test
+./test/unit
+./vendor
+./vendor/plugins
+./tmp
+./tmp/sessions
+./tmp/sockets
+./tmp/cache
+./tmp/pids
+[spork spammer]$ cvs add: cannot add special file `.'; skipping
+? ./app/controllers/application.rb
+? ./app/controllers/foo_controller.rb
+? ./app/helpers/application_helper.rb
+? ./app/helpers/foo_helper.rb
+? ./app/models/notifier.rb
+? ./app/models/user.rb
+? ./app/views/foo/index.rhtml
+? ./app/views/notifier/signup_thanks.rhtml
+? ./app/controllers/application.rb
+? ./app/controllers/foo_controller.rb
+? ./app/helpers/application_helper.rb
+? ./app/helpers/foo_helper.rb
+? ./app/models/notifier.rb
+? ./app/models/user.rb
+? ./app/views/foo/index.rhtml
+? ./app/views/notifier/signup_thanks.rhtml
+? ./app/views/notifier/signup_thanks.rhtml
+? ./app/views/foo/index.rhtml
+? ./config/boot.rb
+? ./config/database.yml
+? ./config/environment.rb
+? ./config/routes.rb
+? ./config/environments/development.rb
+? ./config/environments/production.rb
+? ./config/environments/test.rb
+? ./config/environments/development.rb
+? ./config/environments/production.rb
+? ./config/environments/test.rb
+? ./db/schema.rb
+? ./db/migrate/001_create_users.rb
+? ./db/migrate/001_create_users.rb
+? ./doc/README_FOR_APP
+? ./log/development.log
+? ./log/production.log
+? ./log/server.log
+? ./log/test.log
+? ./public/.htaccess
+? ./public/404.html
+? ./public/500.html
+? ./public/dispatch.cgi
+? ./public/dispatch.fcgi
+? ./public/dispatch.rb
+? ./public/favicon.ico
+? ./public/index.html
+? ./public/robots.txt
+? ./public/images/rails.png
+? ./public/javascripts/application.js
+? ./public/javascripts/controls.js
+? ./public/javascripts/dragdrop.js
+? ./public/javascripts/effects.js
+? ./public/javascripts/prototype.js
+? ./public/images/rails.png
+? ./public/javascripts/application.js
+? ./public/javascripts/controls.js
+? ./public/javascripts/dragdrop.js
+? ./public/javascripts/effects.js
+? ./public/javascripts/prototype.js
+? ./script/about
+? ./script/breakpointer
+? ./script/console
+? ./script/destroy
+? ./script/generate
+? ./script/plugin
+? ./script/runner
+? ./script/server
+? ./script/performance/benchmarker
+? ./script/performance/profiler
+? ./script/process/inspector
+? ./script/process/reaper
+? ./script/process/spawner
+? ./script/performance/benchmarker
+? ./script/performance/profiler
+? ./script/process/inspector
+? ./script/process/reaper
+? ./script/process/spawner
+? ./test/test_helper.rb
+? ./test/fixtures/users.yml
+? ./test/functional/foo_controller_test.rb
+? ./test/unit/notifier_test.rb
+? ./test/unit/user_test.rb
+? ./test/fixtures/users.yml
+? ./test/functional/foo_controller_test.rb
+? ./test/unit/notifier_test.rb
+? ./test/unit/user_test.rb
+? ./tmp/sessions/ruby_sess.ff94f3a1a6de5475
+? ./tmp/sessions/ruby_sess.ff94f3a1a6de5475
+Directory /opt/cvs/swain/pgms/rails/spammer/app added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/app/controllers added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/app/helpers added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/app/models added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/app/views added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/app/views/layouts added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/app/views/notifier added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/app/views/foo added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/config added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/config/environments added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/components added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/db added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/db/migrate added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/doc added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/lib added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/lib/tasks added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/log added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/public added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/public/images added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/public/javascripts added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/public/stylesheets added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/script added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/script/performance added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/script/process added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/test added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/test/fixtures added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/test/fixtures/notifier added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/test/functional added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/test/integration added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/test/mocks added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/test/mocks/development added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/test/mocks/test added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/test/unit added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/vendor added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/vendor/plugins added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/tmp added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/tmp/sessions added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/tmp/sockets added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/tmp/cache added to the repository
+Directory /opt/cvs/swain/pgms/rails/spammer/tmp/pids added to the repository
+[spork spammer]$ ./app/controllers/application.rb
+./app/controllers/foo_controller.rb
+./app/controllers/foo_controller.rb~
+./app/helpers/application_helper.rb
+./app/helpers/foo_helper.rb
+./app/models/notifier.rb
+./app/models/user.rb
+./app/models/notifier.rb~
+./app/views/notifier/signup_thanks.rhtml
+./app/views/foo/index.rhtml
+./app/views/foo/index.rhtml~
+./config/environments/production.rb
+./config/environments/development.rb
+./config/environments/test.rb
+./config/database.yml
+./config/routes.rb
+./config/boot.rb
+./config/environment.rb
+./config/database.yml~
+./config/environment.rb~
+./db/migrate/001_create_users.rb
+./db/migrate/001_create_users.rb~
+./db/schema.rb
+./doc/README_FOR_APP
+./log/server.log
+./log/production.log
+./log/development.log
+./log/test.log
+./public/images/rails.png
+./public/javascripts/prototype.js
+./public/javascripts/effects.js
+./public/javascripts/dragdrop.js
+./public/javascripts/controls.js
+./public/javascripts/application.js
+./public/.htaccess
+./public/dispatch.rb
+./public/dispatch.cgi
+./public/dispatch.fcgi
+./public/404.html
+./public/500.html
+./public/index.html
+./public/favicon.ico
+./public/robots.txt
+./script/performance/benchmarker
+./script/performance/profiler
+./script/process/reaper
+./script/process/spawner
+./script/process/inspector
+./script/about
+./script/breakpointer
+./script/console
+./script/destroy
+./script/generate
+./script/runner
+./script/server
+./script/plugin
+./test/fixtures/users.yml
+./test/functional/foo_controller_test.rb
+./test/unit/notifier_test.rb
+./test/unit/user_test.rb
+./test/test_helper.rb
+./tmp/sessions/ruby_sess.ff94f3a1a6de5475
+./Rakefile
+./README
+./generate
+[spork spammer]$ cvs add: scheduling file `./app/controllers/application.rb' for addition
+cvs add: scheduling file `./app/controllers/foo_controller.rb' for addition
+cvs add: scheduling file `./app/controllers/foo_controller.rb~' for addition
+cvs add: scheduling file `./app/helpers/application_helper.rb' for addition
+cvs add: scheduling file `./app/helpers/foo_helper.rb' for addition
+cvs add: scheduling file `./app/models/notifier.rb' for addition
+cvs add: scheduling file `./app/models/user.rb' for addition
+cvs add: scheduling file `./app/models/notifier.rb~' for addition
+cvs add: scheduling file `./app/views/notifier/signup_thanks.rhtml' for addition
+cvs add: scheduling file `./app/views/foo/index.rhtml' for addition
+cvs add: scheduling file `./app/views/foo/index.rhtml~' for addition
+cvs add: scheduling file `./config/environments/production.rb' for addition
+cvs add: scheduling file `./config/environments/development.rb' for addition
+cvs add: scheduling file `./config/environments/test.rb' for addition
+cvs add: scheduling file `./config/database.yml' for addition
+cvs add: scheduling file `./config/routes.rb' for addition
+cvs add: scheduling file `./config/boot.rb' for addition
+cvs add: scheduling file `./config/environment.rb' for addition
+cvs add: scheduling file `./config/database.yml~' for addition
+cvs add: scheduling file `./config/environment.rb~' for addition
+cvs add: scheduling file `./db/migrate/001_create_users.rb' for addition
+cvs add: scheduling file `./db/migrate/001_create_users.rb~' for addition
+cvs add: scheduling file `./db/schema.rb' for addition
+cvs add: scheduling file `./doc/README_FOR_APP' for addition
+cvs add: scheduling file `./log/server.log' for addition
+cvs add: scheduling file `./log/production.log' for addition
+cvs add: scheduling file `./log/development.log' for addition
+cvs add: scheduling file `./log/test.log' for addition
+cvs add: scheduling file `./public/images/rails.png' for addition
+cvs add: scheduling file `./public/javascripts/prototype.js' for addition
+cvs add: scheduling file `./public/javascripts/effects.js' for addition
+cvs add: scheduling file `./public/javascripts/dragdrop.js' for addition
+cvs add: scheduling file `./public/javascripts/controls.js' for addition
+cvs add: scheduling file `./public/javascripts/application.js' for addition
+cvs add: scheduling file `./public/.htaccess' for addition
+cvs add: scheduling file `./public/dispatch.rb' for addition
+cvs add: scheduling file `./public/dispatch.cgi' for addition
+cvs add: scheduling file `./public/dispatch.fcgi' for addition
+cvs add: scheduling file `./public/404.html' for addition
+cvs add: scheduling file `./public/500.html' for addition
+cvs add: scheduling file `./public/index.html' for addition
+cvs add: scheduling file `./public/favicon.ico' for addition
+cvs add: scheduling file `./public/robots.txt' for addition
+cvs add: scheduling file `./script/performance/benchmarker' for addition
+cvs add: scheduling file `./script/performance/profiler' for addition
+cvs add: scheduling file `./script/process/reaper' for addition
+cvs add: scheduling file `./script/process/spawner' for addition
+cvs add: scheduling file `./script/process/inspector' for addition
+cvs add: scheduling file `./script/about' for addition
+cvs add: scheduling file `./script/breakpointer' for addition
+cvs add: scheduling file `./script/console' for addition
+cvs add: scheduling file `./script/destroy' for addition
+cvs add: scheduling file `./script/generate' for addition
+cvs add: scheduling file `./script/runner' for addition
+cvs add: scheduling file `./script/server' for addition
+cvs add: scheduling file `./script/plugin' for addition
+cvs add: scheduling file `./test/fixtures/users.yml' for addition
+cvs add: scheduling file `./test/functional/foo_controller_test.rb' for addition
+cvs add: scheduling file `./test/unit/notifier_test.rb' for addition
+cvs add: scheduling file `./test/unit/user_test.rb' for addition
+cvs add: scheduling file `./test/test_helper.rb' for addition
+cvs add: scheduling file `./tmp/sessions/ruby_sess.ff94f3a1a6de5475' for addition
+cvs add: scheduling file `./Rakefile' for addition
+cvs add: scheduling file `./README' for addition
+cvs add: scheduling file `./generate' for addition
+cvs add: use 'cvs commit' to add these files permanently
+[spork spammer]$ cvs commit: Examining .
+cvs commit: Examining app
+cvs commit: Examining app/controllers
+cvs commit: Examining app/helpers
+cvs commit: Examining app/models
+cvs commit: Examining app/views
+cvs commit: Examining app/views/foo
+cvs commit: Examining app/views/layouts
+cvs commit: Examining app/views/notifier
+cvs commit: Examining components
+cvs commit: Examining config
+cvs commit: Examining config/environments
+cvs commit: Examining db
+cvs commit: Examining db/migrate
+cvs commit: Examining doc
+cvs commit: Examining lib
+cvs commit: Examining lib/tasks
+cvs commit: Examining log
+cvs commit: Examining public
+cvs commit: Examining public/images
+cvs commit: Examining public/javascripts
+cvs commit: Examining public/stylesheets
+cvs commit: Examining script
+cvs commit: Examining script/performance
+cvs commit: Examining script/process
+cvs commit: Examining test
+cvs commit: Examining test/fixtures
+cvs commit: Examining test/fixtures/notifier
+cvs commit: Examining test/functional
+cvs commit: Examining test/integration
+cvs commit: Examining test/mocks
+cvs commit: Examining test/mocks/development
+cvs commit: Examining test/mocks/test
+cvs commit: Examining test/unit
+cvs commit: Examining tmp
+cvs commit: Examining tmp/cache
+cvs commit: Examining tmp/pids
+cvs commit: Examining tmp/sessions
+cvs commit: Examining tmp/sockets
+cvs commit: Examining vendor
+cvs commit: Examining vendor/plugins
+RCS file: /opt/cvs/swain/pgms/rails/spammer/README,v
+done
+Checking in README;
+/opt/cvs/swain/pgms/rails/spammer/README,v  <--  README
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/Rakefile,v
+done
+Checking in Rakefile;
+/opt/cvs/swain/pgms/rails/spammer/Rakefile,v  <--  Rakefile
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/generate,v
+done
+Checking in generate;
+/opt/cvs/swain/pgms/rails/spammer/generate,v  <--  generate
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/controllers/application.rb,v
+done
+Checking in app/controllers/application.rb;
+/opt/cvs/swain/pgms/rails/spammer/app/controllers/application.rb,v  <--  application.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/controllers/foo_controller.rb,v
+done
+Checking in app/controllers/foo_controller.rb;
+/opt/cvs/swain/pgms/rails/spammer/app/controllers/foo_controller.rb,v  <--  foo_controller.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/controllers/foo_controller.rb~,v
+done
+Checking in app/controllers/foo_controller.rb~;
+/opt/cvs/swain/pgms/rails/spammer/app/controllers/foo_controller.rb~,v  <--  foo_controller.rb~
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/helpers/application_helper.rb,v
+done
+Checking in app/helpers/application_helper.rb;
+/opt/cvs/swain/pgms/rails/spammer/app/helpers/application_helper.rb,v  <--  application_helper.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/helpers/foo_helper.rb,v
+done
+Checking in app/helpers/foo_helper.rb;
+/opt/cvs/swain/pgms/rails/spammer/app/helpers/foo_helper.rb,v  <--  foo_helper.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/models/notifier.rb,v
+done
+Checking in app/models/notifier.rb;
+/opt/cvs/swain/pgms/rails/spammer/app/models/notifier.rb,v  <--  notifier.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/models/notifier.rb~,v
+done
+Checking in app/models/notifier.rb~;
+/opt/cvs/swain/pgms/rails/spammer/app/models/notifier.rb~,v  <--  notifier.rb~
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/models/user.rb,v
+done
+Checking in app/models/user.rb;
+/opt/cvs/swain/pgms/rails/spammer/app/models/user.rb,v  <--  user.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/views/foo/index.rhtml,v
+done
+Checking in app/views/foo/index.rhtml;
+/opt/cvs/swain/pgms/rails/spammer/app/views/foo/index.rhtml,v  <--  index.rhtml
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/views/foo/index.rhtml~,v
+done
+Checking in app/views/foo/index.rhtml~;
+/opt/cvs/swain/pgms/rails/spammer/app/views/foo/index.rhtml~,v  <--  index.rhtml~
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/app/views/notifier/signup_thanks.rhtml,v
+done
+Checking in app/views/notifier/signup_thanks.rhtml;
+/opt/cvs/swain/pgms/rails/spammer/app/views/notifier/signup_thanks.rhtml,v  <--  signup_thanks.rhtml
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/config/boot.rb,v
+done
+Checking in config/boot.rb;
+/opt/cvs/swain/pgms/rails/spammer/config/boot.rb,v  <--  boot.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/config/database.yml,v
+done
+Checking in config/database.yml;
+/opt/cvs/swain/pgms/rails/spammer/config/database.yml,v  <--  database.yml
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/config/database.yml~,v
+done
+Checking in config/database.yml~;
+/opt/cvs/swain/pgms/rails/spammer/config/database.yml~,v  <--  database.yml~
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/config/environment.rb,v
+done
+Checking in config/environment.rb;
+/opt/cvs/swain/pgms/rails/spammer/config/environment.rb,v  <--  environment.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/config/environment.rb~,v
+done
+Checking in config/environment.rb~;
+/opt/cvs/swain/pgms/rails/spammer/config/environment.rb~,v  <--  environment.rb~
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/config/routes.rb,v
+done
+Checking in config/routes.rb;
+/opt/cvs/swain/pgms/rails/spammer/config/routes.rb,v  <--  routes.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/config/environments/development.rb,v
+done
+Checking in config/environments/development.rb;
+/opt/cvs/swain/pgms/rails/spammer/config/environments/development.rb,v  <--  development.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/config/environments/production.rb,v
+done
+Checking in config/environments/production.rb;
+/opt/cvs/swain/pgms/rails/spammer/config/environments/production.rb,v  <--  production.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/config/environments/test.rb,v
+done
+Checking in config/environments/test.rb;
+/opt/cvs/swain/pgms/rails/spammer/config/environments/test.rb,v  <--  test.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/db/schema.rb,v
+done
+Checking in db/schema.rb;
+/opt/cvs/swain/pgms/rails/spammer/db/schema.rb,v  <--  schema.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/db/migrate/001_create_users.rb,v
+done
+Checking in db/migrate/001_create_users.rb;
+/opt/cvs/swain/pgms/rails/spammer/db/migrate/001_create_users.rb,v  <--  001_create_users.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/db/migrate/001_create_users.rb~,v
+done
+Checking in db/migrate/001_create_users.rb~;
+/opt/cvs/swain/pgms/rails/spammer/db/migrate/001_create_users.rb~,v  <--  001_create_users.rb~
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/doc/README_FOR_APP,v
+done
+Checking in doc/README_FOR_APP;
+/opt/cvs/swain/pgms/rails/spammer/doc/README_FOR_APP,v  <--  README_FOR_APP
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/log/development.log,v
+done
+Checking in log/development.log;
+/opt/cvs/swain/pgms/rails/spammer/log/development.log,v  <--  development.log
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/log/production.log,v
+done
+Checking in log/production.log;
+/opt/cvs/swain/pgms/rails/spammer/log/production.log,v  <--  production.log
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/log/server.log,v
+done
+Checking in log/server.log;
+/opt/cvs/swain/pgms/rails/spammer/log/server.log,v  <--  server.log
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/log/test.log,v
+done
+Checking in log/test.log;
+/opt/cvs/swain/pgms/rails/spammer/log/test.log,v  <--  test.log
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/.htaccess,v
+done
+Checking in public/.htaccess;
+/opt/cvs/swain/pgms/rails/spammer/public/.htaccess,v  <--  .htaccess
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/404.html,v
+done
+Checking in public/404.html;
+/opt/cvs/swain/pgms/rails/spammer/public/404.html,v  <--  404.html
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/500.html,v
+done
+Checking in public/500.html;
+/opt/cvs/swain/pgms/rails/spammer/public/500.html,v  <--  500.html
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/dispatch.cgi,v
+done
+Checking in public/dispatch.cgi;
+/opt/cvs/swain/pgms/rails/spammer/public/dispatch.cgi,v  <--  dispatch.cgi
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/dispatch.fcgi,v
+done
+Checking in public/dispatch.fcgi;
+/opt/cvs/swain/pgms/rails/spammer/public/dispatch.fcgi,v  <--  dispatch.fcgi
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/dispatch.rb,v
+done
+Checking in public/dispatch.rb;
+/opt/cvs/swain/pgms/rails/spammer/public/dispatch.rb,v  <--  dispatch.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/favicon.ico,v
+done
+Checking in public/favicon.ico;
+/opt/cvs/swain/pgms/rails/spammer/public/favicon.ico,v  <--  favicon.ico
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/index.html,v
+done
+Checking in public/index.html;
+/opt/cvs/swain/pgms/rails/spammer/public/index.html,v  <--  index.html
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/robots.txt,v
+done
+Checking in public/robots.txt;
+/opt/cvs/swain/pgms/rails/spammer/public/robots.txt,v  <--  robots.txt
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/images/rails.png,v
+done
+Checking in public/images/rails.png;
+/opt/cvs/swain/pgms/rails/spammer/public/images/rails.png,v  <--  rails.png
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/javascripts/application.js,v
+done
+Checking in public/javascripts/application.js;
+/opt/cvs/swain/pgms/rails/spammer/public/javascripts/application.js,v  <--  application.js
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/javascripts/controls.js,v
+done
+Checking in public/javascripts/controls.js;
+/opt/cvs/swain/pgms/rails/spammer/public/javascripts/controls.js,v  <--  controls.js
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/javascripts/dragdrop.js,v
+done
+Checking in public/javascripts/dragdrop.js;
+/opt/cvs/swain/pgms/rails/spammer/public/javascripts/dragdrop.js,v  <--  dragdrop.js
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/javascripts/effects.js,v
+done
+Checking in public/javascripts/effects.js;
+/opt/cvs/swain/pgms/rails/spammer/public/javascripts/effects.js,v  <--  effects.js
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/public/javascripts/prototype.js,v
+done
+Checking in public/javascripts/prototype.js;
+/opt/cvs/swain/pgms/rails/spammer/public/javascripts/prototype.js,v  <--  prototype.js
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/about,v
+done
+Checking in script/about;
+/opt/cvs/swain/pgms/rails/spammer/script/about,v  <--  about
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/breakpointer,v
+done
+Checking in script/breakpointer;
+/opt/cvs/swain/pgms/rails/spammer/script/breakpointer,v  <--  breakpointer
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/console,v
+done
+Checking in script/console;
+/opt/cvs/swain/pgms/rails/spammer/script/console,v  <--  console
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/destroy,v
+done
+Checking in script/destroy;
+/opt/cvs/swain/pgms/rails/spammer/script/destroy,v  <--  destroy
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/generate,v
+done
+Checking in script/generate;
+/opt/cvs/swain/pgms/rails/spammer/script/generate,v  <--  generate
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/plugin,v
+done
+Checking in script/plugin;
+/opt/cvs/swain/pgms/rails/spammer/script/plugin,v  <--  plugin
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/runner,v
+done
+Checking in script/runner;
+/opt/cvs/swain/pgms/rails/spammer/script/runner,v  <--  runner
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/server,v
+done
+Checking in script/server;
+/opt/cvs/swain/pgms/rails/spammer/script/server,v  <--  server
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/performance/benchmarker,v
+done
+Checking in script/performance/benchmarker;
+/opt/cvs/swain/pgms/rails/spammer/script/performance/benchmarker,v  <--  benchmarker
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/performance/profiler,v
+done
+Checking in script/performance/profiler;
+/opt/cvs/swain/pgms/rails/spammer/script/performance/profiler,v  <--  profiler
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/process/inspector,v
+done
+Checking in script/process/inspector;
+/opt/cvs/swain/pgms/rails/spammer/script/process/inspector,v  <--  inspector
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/process/reaper,v
+done
+Checking in script/process/reaper;
+/opt/cvs/swain/pgms/rails/spammer/script/process/reaper,v  <--  reaper
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/script/process/spawner,v
+done
+Checking in script/process/spawner;
+/opt/cvs/swain/pgms/rails/spammer/script/process/spawner,v  <--  spawner
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/test/test_helper.rb,v
+done
+Checking in test/test_helper.rb;
+/opt/cvs/swain/pgms/rails/spammer/test/test_helper.rb,v  <--  test_helper.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/test/fixtures/users.yml,v
+done
+Checking in test/fixtures/users.yml;
+/opt/cvs/swain/pgms/rails/spammer/test/fixtures/users.yml,v  <--  users.yml
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/test/functional/foo_controller_test.rb,v
+done
+Checking in test/functional/foo_controller_test.rb;
+/opt/cvs/swain/pgms/rails/spammer/test/functional/foo_controller_test.rb,v  <--  foo_controller_test.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/test/unit/notifier_test.rb,v
+done
+Checking in test/unit/notifier_test.rb;
+/opt/cvs/swain/pgms/rails/spammer/test/unit/notifier_test.rb,v  <--  notifier_test.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/test/unit/user_test.rb,v
+done
+Checking in test/unit/user_test.rb;
+/opt/cvs/swain/pgms/rails/spammer/test/unit/user_test.rb,v  <--  user_test.rb
+initial revision: 1.1
+done
+RCS file: /opt/cvs/swain/pgms/rails/spammer/tmp/sessions/ruby_sess.ff94f3a1a6de5475,v
+done
+Checking in tmp/sessions/ruby_sess.ff94f3a1a6de5475;
+/opt/cvs/swain/pgms/rails/spammer/tmp/sessions/ruby_sess.ff94f3a1a6de5475,v  <--  ruby_sess.ff94f3a1a6de5475
+initial revision: 1.1
+done
+[spork spammer]$ [spork ~]$ [spork ruby]$ ? grep.rb
+cvs update: Updating .
+U activerecord.rb
+[spork ruby]$ #!/usr/bin/ruby
+
+# adding to an existing class
+class Hash
+  def hooha
+    puts "hooha"
+  end
+end
+
+# inheritence. classes must be declared before they are used, unlike
+# Perl; i.e. Ruby does not seem to scan the file first. Could be
+# wrong.
+
+class Hashy < Hash
+  attr_accessor :arb
+  attr_reader :greeting
+  attr_writer :greeting
+end
+
+
+# use "raise" instead of "die"
+/\w/.match(ARGV[0]) or raise "Usage: #{$0} <keyword>"
+
+
+print "Counting #{ARGV[0]}'s's...\n"
+$c = 0 # with a dollar sign it's global
+
+
+#myhash = {} # could also do "Hash.new" or thereabouts
+myhash = Hashy.new
+
+
+myhash.arb = "arbitrary string of text"
+myhash.greeting = "hello sailor!"
+
+
+open('/home/swain/cvs/LOG.txt').each { |x|
+  $c += 1
+  if /#{ARGV[0]}/.match(x)
+
+    y = x.split(/\s/)
+    #print "#{y[0]} "
+
+    y.each { |z|
+      if myhash.key?(z)
+        myhash[z] += 1
+      else
+        myhash[z] = 1
+      end
+    }
+  end
+}
+
+# myhash.keys.each { |key|
+#   puts "#{key} #{myhash[key]}\n"
+# }
+
+print "#{myhash.greeting} it's: #{myhash.arb}\n"
+print "amount: #{$c}\n"
+myhash.hooha
+print "#{ARGV[0]}'s's: #{myhash[ARGV[0]]}\n"
+[spork ruby]$ activerecord.rb*  CVS/	grep.rb*  grep.rb~*  phone.rb*
+[spork ruby]$ 
+RCS file: /opt/cvs/swain/pgms/ruby/activerecord.rb,v
+Working file: activerecord.rb
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2007/07/30 16:32:45;  author: swain;  state: Exp;
+Example script on how to connect to DB with ActiveRecord. Should prove
+immensely useful.
+=============================================================================
+[spork ruby]$ [spork public_html]$ ./includes/auth_gateway.class.php:20:    private $test_request = CC_TEST_MODE;
+[spork public_html]$ ./includes/auth_gateway.class.php:20:    private $test_request = CC_TEST_MODE;
+./includes/auth_gateway.class.php:74:            if (strtoupper($this->test_request) == 'TRUE') {
+./includes/auth_gateway.class.php:75:                die("<hr><b><font color=red>cc gateway can not be in test mode on production please change the test_request variable or the conf file.</font></b><hr>");
+./includes/auth_gateway.class.php:85:        $form_data["x_test_request"]   = $this->test_request;
+./includes/auth_gateway.class.php:247:        if ($this->test_request == 'TRUE') {
+./includes/auth_gateway.class.php:271:        if ($this->test_request == 'TRUE') {
+[spork public_html]$ [spork ~]$ [spork ruby]$ activerecord.rb*  CVS/	grep.rb*  grep.rb~*  phone.rb*
+[spork ruby]$ [spork ruby]$ [spork ruby]$ bash: ./activemerchant.rb: /usr/local/bin/ruby: bad interpreter: No such file or directory
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+Hello, sailor!
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+Hello, sailor!
+/usr/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:266:in `load_missing_constant': uninitialized constant ApplicationController (NameError)
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:452:in `const_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:464:in `const_missing'
+	from ./activemerchant.rb:12
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+Hello, sailor!
+[spork ruby]$ Hello, sailor!
+[spork ruby]$ Hello, sailor!
+./activemerchant.rb:14: uninitialized constant PaymentTransactionTestController::ActiveMerchant (NameError)
+[spork ruby]$ Hello, sailor!
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/money.rb:96: warning: method redefined; discarding old cents
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/core_extensions.rb:17: warning: ambiguous first argument; put parentheses or even spaces
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/core_extensions.rb:21: warning: ambiguous first argument; put parentheses or even spaces
+./activemerchant.rb:14: uninitialized constant PaymentTransactionTestController::ActiveMerchant (NameError)
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+/usr/lib/ruby/1.8/net/https.rb:121: warning: method redefined; discarding old edit_path
+/usr/lib/ruby/1.8/net/https.rb:130: warning: redefine socket_type
+/usr/lib/ruby/1.8/net/https.rb:157: warning: method redefined; discarding old on_connect
+/usr/lib/ruby/gems/1.8/gems/activemerchant-1.1.0/lib/active_merchant/billing/gateways/authorize_net.rb:236: warning: method redefined; discarding old expdate
+Hello, sailor!
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/support/cattr_accessor.rb:4: warning: method redefined; discarding old cattr_reader
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/support/cattr_accessor.rb:31: warning: method redefined; discarding old cattr_writer
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/support/cattr_accessor.rb:53: warning: method redefined; discarding old cattr_accessor
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/money.rb:96: warning: method redefined; discarding old cents
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/core_extensions.rb:17: warning: ambiguous first argument; put parentheses or even spaces
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/core_extensions.rb:21: warning: ambiguous first argument; put parentheses or even spaces
+[spork ruby]$ /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require': No such file to load -- gem (LoadError)
+	from /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+	from ./activemerchant.rb:8
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+/usr/lib/ruby/1.8/net/https.rb:121: warning: method redefined; discarding old edit_path
+/usr/lib/ruby/1.8/net/https.rb:130: warning: redefine socket_type
+/usr/lib/ruby/1.8/net/https.rb:157: warning: method redefined; discarding old on_connect
+/usr/lib/ruby/gems/1.8/gems/activemerchant-1.1.0/lib/active_merchant/billing/gateways/authorize_net.rb:236: warning: method redefined; discarding old expdate
+Hello, sailor!
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/support/cattr_accessor.rb:4: warning: method redefined; discarding old cattr_reader
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/support/cattr_accessor.rb:31: warning: method redefined; discarding old cattr_writer
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/support/cattr_accessor.rb:53: warning: method redefined; discarding old cattr_accessor
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/money.rb:96: warning: method redefined; discarding old cents
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/core_extensions.rb:17: warning: ambiguous first argument; put parentheses or even spaces
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/core_extensions.rb:21: warning: ambiguous first argument; put parentheses or even spaces
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+/usr/lib/ruby/1.8/net/https.rb:121: warning: method redefined; discarding old edit_path
+/usr/lib/ruby/1.8/net/https.rb:130: warning: redefine socket_type
+/usr/lib/ruby/1.8/net/https.rb:157: warning: method redefined; discarding old on_connect
+/usr/lib/ruby/gems/1.8/gems/activemerchant-1.1.0/lib/active_merchant/billing/gateways/authorize_net.rb:236: warning: method redefined; discarding old expdate
+Hello, sailor!
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/support/cattr_accessor.rb:4: warning: method redefined; discarding old cattr_reader
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/support/cattr_accessor.rb:31: warning: method redefined; discarding old cattr_writer
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/support/cattr_accessor.rb:53: warning: method redefined; discarding old cattr_accessor
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/money.rb:96: warning: method redefined; discarding old cents
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/core_extensions.rb:17: warning: ambiguous first argument; put parentheses or even spaces
+/usr/lib/ruby/gems/1.8/gems/money-1.7.1/lib/money/core_extensions.rb:21: warning: ambiguous first argument; put parentheses or even spaces
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+Hello, sailor!
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+Hello, sailor!
+./activemerchant.rb:28: undefined method `creditcard' for #<PaymentTransactionTestController:0xb78048b8> (NoMethodError)
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+Hello, sailor!
+./activemerchant.rb:29: undefined method `creditcard' for #<PaymentTransactionTestController:0xb7802ef4> (NoMethodError)
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is obsolete.  Use gem instead.
+Hello, sailor!
+./activemerchant.rb:32: undefined method `number' for nil:NilClass (NoMethodError)
+[spork ruby]$ ./activemerchant.rb:8:Warning: require_gem is ob

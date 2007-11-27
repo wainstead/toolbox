@@ -1,0 +1,20 @@
+#!/usr/bin/expect
+
+spawn ./responder.pl
+
+interact {
+    ~~ {puts "you typed tilde squared"}
+    ~i interpreter
+    ~e {send "exit\r"}
+    -o eof {puts "end of file received from the process. Exiting."; return}
+}
+puts "past the interact block now" 
+
+# send "exit\r"
+
+# expect {
+#     "Exiting" { puts "Process exited." }
+#     timeout { puts "Timed out waiting for process to exit." }
+# }
+
+exit 0

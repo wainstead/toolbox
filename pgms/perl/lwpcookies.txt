@@ -1,0 +1,17 @@
+#LWP-Cookies-1.0
+Set-Cookie3: BX="2htnveh2v30gl&b=3&s=je"; path="/"; domain=.icio.us; path_spec; expires="2037-06-02 20:00:00Z"; version=0
+Set-Cookie3: mpa_fqdn=http%3A%2F%2Ftheteam.myphotoalbum.com; path="/"; domain=.myphotoalbum.com; expires="2008-03-08 19:58:29Z"; version=0
+Set-Cookie3: mpa_popup=true; path="/"; domain=.myphotoalbum.com; expires="2007-06-07 20:01:35Z"; version=0
+Set-Cookie3: clubreload=reloadPrem%3Dtrue; path="/"; domain=.myphotodevel.com; expires="2007-08-11 15:05:46Z"; version=0
+Set-Cookie3: getvar=reloadPrem%3Dtrue; path="/"; domain=.myphotodevel.com; expires="2007-06-18 18:59:49Z"; version=0
+Set-Cookie3: goodstanding=reloadGoodStanding%3Dtrue; path="/"; domain=.myphotodevel.com; expires="2007-08-11 15:05:46Z"; version=0
+Set-Cookie3: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Forder_prints.php; path="/"; domain=.myphotodevel.com; expires="2007-09-07 15:05:49Z"; version=0
+Set-Cookie3: mpa_popup=true; path="/"; domain=.myphotodevel.com; expires="2007-11-06 15:05:49Z"; version=0
+Set-Cookie3: mpa_popup=true; path="/gifts"; domain=.myphotodevel.com; expires="2007-11-06 15:05:26Z"; version=0
+Set-Cookie3: mpa_popup=true; path="/gifts/cards"; domain=.myphotodevel.com; expires="2007-11-06 15:05:28Z"; version=0
+Set-Cookie3: mpa_popup=true; path="/gifts/folded_cards"; domain=.myphotodevel.com; expires="2007-11-06 15:05:23Z"; version=0
+Set-Cookie3: aus=64.52.253.120.1173455382354550; path="/"; domain=aus2.mozilla.org; path_spec; expires="2008-03-08 15:49:42Z"; version=0
+Set-Cookie3: VISID=5C9BB036; path="/"; domain=counter.hitslink.com; path_spec; expires="2038-01-18 05:00:00Z"; version=0
+Set-Cookie3: NSC_gffe-iuuq-mc-wtfswfs=8efb33b53660; path="/"; domain=feeds.arstechnica.com; path_spec; expires="2007-04-03 15:27:20Z"; version=0
+Set-Cookie3: NSC_gffe-iuuq-mc-wtfswfs=8efb33bf3660; path="/"; domain=feeds.yuiblog.com; path_spec; expires="2007-04-03 15:27:19Z"; version=0
+Set-Cookie3: holiday=true; path="/"; domain=swain.myphotodevel.com; expires="2007-03-13 17:10:48Z"; version=0

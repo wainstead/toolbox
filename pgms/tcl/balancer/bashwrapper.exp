@@ -1,0 +1,14 @@
+#!/usr/bin/expect
+
+spawn $env(SHELL)
+
+stty raw -echo
+interact {
+    ~d {puts "expect says the date is [exec date]" }
+    ~e {send "exit\r"}
+    # after the dash-oh, all patterns are matched to the spawned process's output
+    -o
+    "foo" { puts "(The process says foo. tee hee.) foo" }
+}
+
+puts "bashwrapper is done"

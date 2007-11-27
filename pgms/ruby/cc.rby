@@ -1,0 +1,6 @@
+#!/usr/local/bin/ruby
+
+
+require 'active_merchant'
+
+puts "hello sailor!"

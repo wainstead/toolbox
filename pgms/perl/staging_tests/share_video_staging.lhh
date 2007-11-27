@@ -1,0 +1,317 @@
+http://swain.myphotostage.com/loginpage.php?returnpage=%2Fview_album.php%3Fpage%3D1
+
+GET /loginpage.php?returnpage=%2Fview_album.php%3Fpage%3D1 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?page=1
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fpage%3D1
+
+HTTP/1.x 200 OK
+Date: Tue, 02 May 2006 18:26:29 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Vary: *
+X-Powered-By: PHP/4.4.2
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Wednesday, 02-May-07 18:26:30 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1017
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 4238
+----------------------------------------------------------
+http://swain.myphotostage.com/loginpage.php
+
+POST /loginpage.php HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/loginpage.php?returnpage=%2Fview_album.php%3Fpage%3D1
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 158
+returnpage=%2Fview_album.php%3Fpage%3D1&uname=swain&gallerypassword=112233&referer=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fpage%3D1&Login=Login
+HTTP/1.x 302 Found
+Date: Tue, 02 May 2006 18:26:32 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Vary: *
+X-Powered-By: PHP/4.4.2
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Wednesday, 02-May-07 18:26:32 GMT; domain=myphotostage.com
+Location: /view_album.php?page=1
+Keep-Alive: timeout=15, max=1004
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://swain.myphotostage.com/view_album.php?page=1
+
+GET /view_album.php?page=1 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/loginpage.php?returnpage=%2Fview_album.php%3Fpage%3D1
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Tue, 02 May 2006 18:26:32 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Vary: *
+X-Powered-By: PHP/4.4.2
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Wednesday, 02-May-07 18:26:32 GMT; domain=myphotostage.com
+Set-Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; expires=Thursday, 01-Jun-06 18:26:32 GMT; domain=myphotostage.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fpage%3D1; expires=Thursday, 01-Jun-06 18:26:32 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1012
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 11545
+----------------------------------------------------------
+http://swain.myphotostage.com/select_share.php?set_albumName=album03&index=&id=&FromShare=Video
+
+GET /select_share.php?set_albumName=album03&index=&id=&FromShare=Video HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?page=1
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fpage%3D1
+
+HTTP/1.x 200 OK
+Date: Tue, 02 May 2006 18:26:37 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Vary: *
+X-Powered-By: PHP/4.4.2
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Wednesday, 02-May-07 18:26:38 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1006
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 8123
+----------------------------------------------------------
+http://swain.myphotostage.com/js/scriptaculous.js?load=effects
+
+GET /js/scriptaculous.js?load=effects HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select_share.php?set_albumName=album03&index=&id=&FromShare=Video
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Tue, 02 May 2006 14:23:33 GMT
+If-None-Match: "102d17b-868-44576b65"
+
+HTTP/1.x 304 Not Modified
+Date: Tue, 02 May 2006 18:26:39 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1002
+Etag: "102d17b-868-44576b65"
+Vary: *
+----------------------------------------------------------
+http://swain.myphotostage.com/select_share.php?set_albumName=album10&FromShare=Video
+
+GET /select_share.php?set_albumName=album10&FromShare=Video HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select_share.php?set_albumName=album03&index=&id=&FromShare=Video
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Tue, 02 May 2006 18:26:51 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Vary: *
+X-Powered-By: PHP/4.4.2
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Wednesday, 02-May-07 18:26:51 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=998
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 7512
+----------------------------------------------------------
+http://swain.myphotostage.com/js/scriptaculous.js?load=effects
+
+GET /js/scriptaculous.js?load=effects HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select_share.php?set_albumName=album10&FromShare=Video
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Tue, 02 May 2006 14:23:33 GMT
+If-None-Match: "102d17b-868-44576b65"
+
+HTTP/1.x 304 Not Modified
+Date: Tue, 02 May 2006 18:26:52 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=994
+Etag: "102d17b-868-44576b65"
+Vary: *
+----------------------------------------------------------
+http://swain.myphotostage.com/share_video.php?set_albumName=album10&index=1&id=PC290048
+
+GET /share_video.php?set_albumName=album10&index=1&id=PC290048 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select_share.php?set_albumName=album10&FromShare=Video
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Tue, 02 May 2006 18:26:55 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Vary: *
+X-Powered-By: PHP/4.4.2
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Wednesday, 02-May-07 18:26:55 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=981
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 7813
+----------------------------------------------------------
+http://swain.myphotostage.com/process_email.php?feature=share_photo&index=1
+
+POST /process_email.php?feature=share_photo&index=1 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/share_video.php?set_albumName=album10&index=1&id=PC290048
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 284
+emails=swain%40corp.fortunecity.com&fromName=swain+staging&subject=share+video+test&message=jhan+in+a+protracted+dialog+about+fc%0D%0A%0D%0AYou%27re+invited+to+view+this+video+--+PC290048--++in+album+--+Untitled+Album+--+on+MyPhotoAlbum.%0D%0A%0D%0AEnjoy%21&email_action=send&x=90&y=7
+HTTP/1.x 200 OK
+Date: Tue, 02 May 2006 18:27:26 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Vary: *
+X-Powered-By: PHP/4.4.2
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Wednesday, 02-May-07 18:27:26 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 6203
+----------------------------------------------------------
+http://swain.myphotostage.com/do_command.php?return=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fpage%3D1&cmd=logout
+
+GET /do_command.php?return=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fpage%3D1&cmd=logout HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/process_email.php?feature=share_photo&index=1
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 302 Found
+Date: Tue, 02 May 2006 18:27:31 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Vary: *
+X-Powered-By: PHP/4.4.2
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Wednesday, 02-May-07 18:27:31 GMT; domain=myphotostage.com
+Location: http://swain.myphotostage.com/view_album.php?page=1
+Keep-Alive: timeout=15, max=1015
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://swain.myphotostage.com/view_album.php?page=1
+
+GET /view_album.php?page=1 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/process_email.php?feature=share_photo&index=1
+Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; PHPSESSID=dd039f721536fd04b173ce5aab587081; switchmenu=; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Tue, 02 May 2006 18:27:31 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.2
+Vary: *
+X-Powered-By: PHP/4.4.2
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Wednesday, 02-May-07 18:27:31 GMT; domain=myphotostage.com
+Set-Cookie: osCsid=b349c938a609f670b4ceaac638f07a00; expires=Thursday, 01-Jun-06 18:27:31 GMT; domain=myphotostage.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fpage%3D1; expires=Thursday, 01-Jun-06 18:27:31 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 6994
+----------------------------------------------------------

@@ -1,0 +1,10 @@
+#LWP-Cookies-1.0
+Set-Cookie3: RMFD=011FeGIpO106rOw|O106w26; path="/"; domain=.fortunecity.com; path_spec; expires="2020-12-31 23:59:59Z"; version=0
+Set-Cookie3: RMID=436d62eb44638610; path="/"; domain=.fortunecity.com; path_spec; expires="2010-12-31 23:59:59Z"; version=0
+Set-Cookie3: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fpage%3D1; path="/"; domain=.myphotostage.com; expires="2006-06-10 18:56:24Z"; version=0
+Set-Cookie3: osCsid=f84a90e76349e9802a8f66976dd0a32d; path="/"; domain=.myphotostage.com; expires="2006-06-10 18:56:24Z"; version=0
+Set-Cookie3: ANRTT=60138^1^1147978418|60126^1^1147978206; path="/"; domain=.tacoda.net; path_spec; expires="2006-05-18 18:53:38Z"; version=0
+Set-Cookie3: Anxd=x; path="/"; domain=.tacoda.net; path_spec; expires="2006-05-12 18:53:38Z"; version=0
+Set-Cookie3: TData=#|AMS_60138|AMS_60126; path="/"; domain=.tacoda.net; path_spec; expires="2011-04-15 18:53:38Z"; version=0
+Set-Cookie3: TID=12671o81epdvec; path="/"; domain=.tacoda.net; path_spec; expires="2011-04-15 18:48:40Z"; version=0
+Set-Cookie3: Tsid=0^1147373320^1147375418|12120^1147373320^1147375418; path="/"; domain=.tacoda.net; path_spec; expires="2006-05-11 19:23:38Z"; version=0

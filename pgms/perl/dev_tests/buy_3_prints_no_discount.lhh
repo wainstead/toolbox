@@ -1,0 +1,358 @@
+http://freeuser.myphotodevel.com/order_prints.php
+
+GET /order_prints.php HTTP/1.1
+Host: freeuser.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://freeuser.myphotodevel.com/view_album.php
+Cookie: fcwt=www.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=79121b83fece170bec45eb1eed487a4c; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Fview_album.php; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Thu, 27 Apr 2006 21:19:20 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com; expires=Friday, 27-Apr-07 21:19:20 GMT; domain=myphotodevel.com
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Saturday, 27-May-06 21:19:20 GMT; domain=myphotodevel.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php; expires=Saturday, 27-May-06 21:19:20 GMT; domain=myphotodevel.com
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1013
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 4882
+----------------------------------------------------------
+http://freeuser.myphotodevel.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: freeuser.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 183
+Cookie: fcwt=www.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=79121b83fece170bec45eb1eed487a4c; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; switchmenu=
+Pragma: no-cache
+Cache-Control: no-cache
+subdomain=freeuser&addalbum=0&album=album01&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.1]=114%7Btxt_4%7DATT1117%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450
+HTTP/1.x 200 OK
+Date: Thu, 27 Apr 2006 21:19:22 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Saturday, 27-May-06 21:19:22 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1005
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://freeuser.myphotodevel.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: freeuser.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 183
+Cookie: fcwt=www.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=79121b83fece170bec45eb1eed487a4c; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; switchmenu=
+Pragma: no-cache
+Cache-Control: no-cache
+subdomain=freeuser&addalbum=0&album=album01&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.2]=114%7Btxt_4%7DATT1218%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450
+HTTP/1.x 200 OK
+Date: Thu, 27 Apr 2006 21:19:23 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Saturday, 27-May-06 21:19:23 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1004
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://freeuser.myphotodevel.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: freeuser.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 183
+Cookie: fcwt=www.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=79121b83fece170bec45eb1eed487a4c; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; switchmenu=
+Pragma: no-cache
+Cache-Control: no-cache
+subdomain=freeuser&addalbum=0&album=album01&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.3]=114%7Btxt_4%7DATT1319%7Btxt_9%7D.jpg%7Btxt_6%7D597%7Btxt_7%7D436
+HTTP/1.x 200 OK
+Date: Thu, 27 Apr 2006 21:19:23 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Saturday, 27-May-06 21:19:24 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/shopping_cart.php?call=print_photos
+
+GET /shopping_cart.php?call=print_photos HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://freeuser.myphotodevel.com/order_prints.php
+Cookie: fcwt=www.myphotodevel.com; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; ZDEDebuggerPresent=php,phtml,php3
+
+HTTP/1.x 200 OK
+Date: Thu, 27 Apr 2006 21:19:26 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.2
+X-Powered-By: PHP/5.1.2
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Sat, 27-May-2006 21:19:26 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/shopping_cart.php
+
+POST /shopping_cart.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/shopping_cart.php?call=print_photos
+Cookie: fcwt=www.myphotodevel.com; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; ZDEDebuggerPresent=php,phtml,php3
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1854
+has_changed=0&action=update_cart&goto=login.php&globalQty=1&no_size_boxes=3&globalSize=114&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DATT1117%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D3&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7DATT1117%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DATT1117%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7DATT1117%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DATT1218%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D2&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7DATT1218%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DATT1218%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7DATT1218%7Btxt_9%7D.jpg%7Btxt_6%7D600%7Btxt_7%7D450%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DATT1319%7Btxt_9%7D.jpg%7Btxt_6%7D597%7Btxt_7%7D436%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D1&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7DATT1319%7Btxt_9%7D.jpg%7Btxt_6%7D597%7Btxt_7%7D436%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DATT1319%7Btxt_9%7D.jpg%7Btxt_6%7D597%7Btxt_7%7D436%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7DATT1319%7Btxt_9%7D.jpg%7Btxt_6%7D597%7Btxt_7%7D436%7Bsbd%7Dfreeuser%7Balb%7Dalbum01%7Bso%7D1
+HTTP/1.x 302 Found
+Date: Thu, 27 Apr 2006 21:19:31 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.2
+X-Powered-By: PHP/5.1.2
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Sat, 27-May-2006 21:19:31 GMT; domain=myphotodevel.com
+Location: https://store.myphotodevel.com/login.php
+Content-Length: 0
+Keep-Alive: timeout=5, max=1018
+Connection: Keep-Alive
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/login.php
+
+GET /login.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/shopping_cart.php?call=print_photos
+Cookie: fcwt=www.myphotodevel.com; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; ZDEDebuggerPresent=php,phtml,php3
+
+HTTP/1.x 200 OK
+Date: Thu, 27 Apr 2006 21:19:32 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.2
+X-Powered-By: PHP/5.1.2
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Sat, 27-May-2006 21:19:32 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1023
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/login.php
+
+POST /login.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/login.php
+Cookie: fcwt=www.myphotodevel.com; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; ZDEDebuggerPresent=php,phtml,php3
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 103
+action=login&goto=&email_address=freeuser%40test.myphotodevel.com&new_cust=no&password=112233&x=50&y=17
+HTTP/1.x 302 Found
+Date: Thu, 27 Apr 2006 21:19:47 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.2
+X-Powered-By: PHP/5.1.2
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Sat, 27-May-2006 21:19:48 GMT; domain=myphotodevel.com
+Set-Cookie: mpa_fqdn=deleted; expires=Wed, 27-Apr-2005 21:19:47 GMT; domain=myphotodevel.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php; expires=Sat, 27-May-2006 21:19:48 GMT; domain=myphotodevel.com
+Location: https://store.myphotodevel.com/checkout_payment.php
+Content-Length: 0
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_payment.php
+
+GET /checkout_payment.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/login.php
+Cookie: fcwt=www.myphotodevel.com; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php
+
+HTTP/1.x 200 OK
+Date: Thu, 27 Apr 2006 21:19:48 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.2
+X-Powered-By: PHP/5.1.2
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Sat, 27-May-2006 21:19:48 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1023
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_payment.php
+
+POST /checkout_payment.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_payment.php
+Cookie: fcwt=www.myphotodevel.com; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 159
+action=process&goto=undefined&cr_card_type=Visa&cc_number=4111111111111111&cc_expiration_month=01&cc_expiration_year=2012&cvv2=111&cc_owner=free+user+user+free
+HTTP/1.x 200 OK
+Date: Thu, 27 Apr 2006 21:20:05 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.2
+X-Powered-By: PHP/5.1.2
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Sat, 27-May-2006 21:20:06 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_process.php
+
+POST /checkout_process.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_payment.php
+Cookie: fcwt=www.myphotodevel.com; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+goto=checkout_process&coupon_code=
+HTTP/1.x 302 Found
+Date: Thu, 27 Apr 2006 21:20:15 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.2
+X-Powered-By: PHP/5.1.2
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Sat, 27-May-2006 21:20:15 GMT; domain=myphotodevel.com
+Location: https://store.myphotodevel.com/checkout_success.php?confirmation_code=000000&cm=641b47f3ef4e09823c6ed4d65df7f44f&action=success&st=completed&err_code[]=&orders_id=129
+Content-Length: 0
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_success.php?confirmation_code=000000&cm=641b47f3ef4e09823c6ed4d65df7f44f&action=success&st=completed&err_code[]=&orders_id=129
+
+GET /checkout_success.php?confirmation_code=000000&cm=641b47f3ef4e09823c6ed4d65df7f44f&action=success&st=completed&err_code[]=&orders_id=129 HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_payment.php
+Cookie: fcwt=www.myphotodevel.com; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php
+
+HTTP/1.x 302 Found
+Date: Thu, 27 Apr 2006 21:20:17 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.2
+X-Powered-By: PHP/5.1.2
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Sat, 27-May-2006 21:20:17 GMT; domain=myphotodevel.com
+Location: checkout_success.php?orders_id=129&st=completed&orders_id=129&err_code=Array&confirmation_code=000000
+Keep-Alive: timeout=5, max=1023
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_success.php?orders_id=129&st=completed&orders_id=129&err_code=Array&confirmation_code=000000
+
+GET /checkout_success.php?orders_id=129&st=completed&orders_id=129&err_code=Array&confirmation_code=000000 HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_payment.php
+Cookie: fcwt=www.myphotodevel.com; T3CK=TANT%3D1%7CTANO%3D0; osCsid=10b48fe43223fe6bc8922ad0ed765f19; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Ffreeuser.myphotodevel.com%2Forder_prints.php
+
+HTTP/1.x 200 OK
+Date: Thu, 27 Apr 2006 21:20:17 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.2
+X-Powered-By: PHP/5.1.2
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=10b48fe43223fe6bc8922ad0ed765f19; expires=Sat, 27-May-2006 21:20:18 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------

@@ -1,0 +1,56 @@
+#!/usr/bin/expect
+
+# reading from the user and the process simultaneously. this would
+# allow us to send the user into interact. sleeper.pl just sleeps 3
+# seconds, prints "hello sailor," sleeps another second and exits.
+
+spawn ./sleeper.pl
+
+set timeout 5
+
+expect {
+    -i $spawn_id eof            { puts "sleeper reached end of file" }
+    -i $spawn_id timeout        { puts "I timed out!" }
+    -i $user_spawn_id timeout   { puts "You timed out!" }
+    -i $user_spawn_id "hooha"   { puts "You wrote hooha to me!"; exp_continue }
+    -i $spawn_id "hello sailor" { puts "the script responded!"; exp_continue }
+
+    -i $user_spawn_id -re "inter"   {
+        stty raw -echo
+        interact {
+            ~~ { send_user "you want out of the interact block, eh?" }
+        }
+        puts "past the interact block now"
+        stty cooked echo
+        exp_continue
+    }
+}
+
+
+
+
+        # this approach does now work
+        #     -re "inter" {
+        #         puts "interacting now."
+        #         interact -input $user_spawn_id timeout 5 {
+        #             ~~ { puts "returning to expect now" }
+        #             timeout { "timed out waiting for user input" }
+        #         }
+        #     }
+#     puts "I'm past the expect block."
+    
+#     stty raw -echo
+#     interact -i $user_spawn_id {
+#         @@ { send_user "You typed at at" }
+#         ~~ { send_user "Leaving interact block, looping into expect block again" }
+#     }
+
+
+
+# spawn connection
+
+# enter loop
+# list menu
+# if match: fix
+# else: sleep a while, continue
+# if connection dropped: reconnect

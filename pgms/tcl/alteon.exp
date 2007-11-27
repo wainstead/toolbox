@@ -1,0 +1,32 @@
+#!/usr/bin/expect
+
+# $Id: alteon.exp,v 1.1 2007/05/08 15:30:08 swain Exp $
+
+# testbed for testing the alteon. but it sometimes exits on a line
+# that contains 'exit' and 'Exit'. Dunno why, but it has a familiar
+# feel to it...
+
+set timeout 2
+puts "hello, sailor!"
+
+spawn "./foo.pl"
+
+expect {
+
+    eof { 
+        puts "end of file reached"
+        exit 1
+    }
+
+    timeout { 
+        puts "timed out" 
+        exit 2
+    }
+
+    -re "Incorrect VIPs:(\\s+)(\\d+)" { 
+        puts "Matched the string!!!" 
+        puts "$expect_out(2,string)"
+    }
+}
+
+puts "script completed"

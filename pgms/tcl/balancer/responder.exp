@@ -1,0 +1,9 @@
+#!/usr/bin/expect
+
+# Since we did not spawn a process, the
+# default is to read stdin
+expect {
+    -re "foo"  { puts "got the foo"; exp_continue }
+    -re "bar"  { puts "got the bar"; exp_continue }
+    -re "quit" { puts "exiting!"; exit            }
+}

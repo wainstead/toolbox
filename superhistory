@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $Id: superhistory,v 1.1 2004/08/24 19:01:49 swain Exp $
+
+cat $HOME/.superhistory

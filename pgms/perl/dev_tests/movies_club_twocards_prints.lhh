@@ -1,0 +1,2000 @@
+http://movies.myphotodevel.com/view_album.php?set_albumName=album06
+
+GET /view_album.php?set_albumName=album06 HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/albums.php?reloadPrem=true
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:49 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; expires=Friday, 18-May-07 14:38:50 GMT; domain=myphotodevel.com
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:38:50 GMT; domain=myphotodevel.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; expires=Saturday, 17-Jun-06 14:38:50 GMT; domain=myphotodevel.com
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1016
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 8729
+----------------------------------------------------------
+http://movies.myphotodevel.com/ads/album_728.php
+
+GET /ads/album_728.php HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/view_album.php?set_albumName=album06
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:51 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Keep-Alive: timeout=15, max=996
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: RMFD=011FgjYIO206rOw|O206szT|O106vyO; RMFH=011FgjYI; T3CK=TANT%3D1%7CTANO%3D0; fcwt=fcep0105091; RMID=436d62e443d8f460; RMFS=011FgjYI; NSC_403a501a0050=445cb9323660
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:52 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Set-Cookie: RMFD=011FgjYIO206rOw|O306szT|O106vyO; expires=Fri, 31-Dec-2020 23:59:59 GMT; path=/; domain=.fortunecity.com
+Set-Cookie: NSC_403a501a0050=445cb9323660;path=/
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 159
+----------------------------------------------------------
+http://movies.myphotodevel.com/ads/album_600.php
+
+GET /ads/album_600.php HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/view_album.php?set_albumName=album06
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:52 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Keep-Alive: timeout=15, max=995
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://anrtx.tacoda.net/rtx/r.js?cmd=abn&si=12120&r=&v=3.1.0.26a&cb=0.9042878161579484
+
+GET /rtx/r.js?cmd=abn&si=12120&r=&v=3.1.0.26a&cb=0.9042878161579484 HTTP/1.1
+Host: anrtx.tacoda.net
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: TData=AMS_60290|AMS_60506|AMS_60507|AMS_60508|AMS_60514|AMS_60515|AMS_60560|AMS_60598|AMS_60818|#|AMS_60138|AMS_50230|AMS_50213; ANRTT=60138^1^1148567919|50230^1^1148402663|50213^1^1148316438; TID=11tijsq0b0q3mp; Tsid=0^1147963119^1147964919|12120^1147963119^1147964919; Anxd=x
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:53 GMT
+Server: Apache/1.3.33 (Unix) mod_perl/1.29
+P3P: policyref="http://www.tacoda.com/w3c/p3p.xml", CP="IDC DSP COR DEVa TAIa OUR BUS UNI", policyref="http://www.tacoda.com/w3c/p3p.xml", CP="IDC DSP COR DEVa TAIa OUR BUS UNI"
+Set-Cookie: ANRTT=60138^1^1148567933|50230^1^1148402663|50213^1^1148316438; path=/; expires=Thu, 25-May-06 14:38:53 GMT; domain=.tacoda.net
+Set-Cookie: Tsid=0^1147963119^1147964933|12120^1147963119^1147964933; path=/; expires=Thu, 18-May-06 15:08:53 GMT; domain=.tacoda.net
+Set-Cookie: Anxd=x; expires=Fri, 19-May-06 14:38:53 GMT; path=/; domain=.tacoda.net
+Set-Cookie: TData=AMS_60290|AMS_60506|AMS_60507|AMS_60508|AMS_60514|AMS_60515|AMS_60560|AMS_60598|AMS_60818|#|AMS_60138|AMS_50230|AMS_50213; expires=Fri, 22-Apr-11 14:38:53 GMT; path=/; domain=.tacoda.net
+Content-Length: 693
+Keep-Alive: timeout=60, max=1000
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_600.php
+Cookie: RMFD=011FgjYIO206rOw|O306szT|O106vyO; RMFH=011FgjYI; T3CK=TANT%3D1%7CTANO%3D0; fcwt=fcep0105091; RMID=436d62e443d8f460; RMFS=011FgjYI; NSC_403a501a0050=445cb9323660
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:53 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Set-Cookie: RMFD=011FgjYIO206rOw|O406szT|O106vyO; expires=Fri, 31-Dec-2020 23:59:59 GMT; path=/; domain=.fortunecity.com
+Set-Cookie: NSC_403a501a0050=445cb9323660;path=/
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 159
+----------------------------------------------------------
+http://anrtx.tacoda.net/rtx/r.js?cmd=abn&si=12120&r=&v=3.1.0.26a&cb=0.9025411035450966
+
+GET /rtx/r.js?cmd=abn&si=12120&r=&v=3.1.0.26a&cb=0.9025411035450966 HTTP/1.1
+Host: anrtx.tacoda.net
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_600.php
+Cookie: TData=AMS_60290|AMS_60506|AMS_60507|AMS_60508|AMS_60514|AMS_60515|AMS_60560|AMS_60598|AMS_60818|#|AMS_60138|AMS_50230|AMS_50213; ANRTT=60138^1^1148567933|50230^1^1148402663|50213^1^1148316438; TID=11tijsq0b0q3mp; Tsid=0^1147963119^1147964933|12120^1147963119^1147964933; Anxd=x
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:54 GMT
+Server: Apache/1.3.33 (Unix) mod_perl/1.29
+P3P: policyref="http://www.tacoda.com/w3c/p3p.xml", CP="IDC DSP COR DEVa TAIa OUR BUS UNI", policyref="http://www.tacoda.com/w3c/p3p.xml", CP="IDC DSP COR DEVa TAIa OUR BUS UNI"
+Set-Cookie: ANRTT=60138^1^1148567934|50230^1^1148402663|50213^1^1148316438; path=/; expires=Thu, 25-May-06 14:38:54 GMT; domain=.tacoda.net
+Set-Cookie: Tsid=0^1147963119^1147964934|12120^1147963119^1147964934; path=/; expires=Thu, 18-May-06 15:08:54 GMT; domain=.tacoda.net
+Set-Cookie: Anxd=x; expires=Fri, 19-May-06 14:38:54 GMT; path=/; domain=.tacoda.net
+Set-Cookie: TData=AMS_60290|AMS_60506|AMS_60507|AMS_60508|AMS_60514|AMS_60515|AMS_60560|AMS_60598|AMS_60818|#|AMS_60138|AMS_50230|AMS_50213; expires=Fri, 22-Apr-11 14:38:54 GMT; path=/; domain=.tacoda.net
+Content-Length: 693
+Keep-Alive: timeout=60, max=999
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://anad.tacoda.net/cgi-bin/ads/ad12120a.cgi/v=2.0S/sz=728x90a/54961/RETURN-CODE/JS/
+
+GET /cgi-bin/ads/ad12120a.cgi/v=2.0S/sz=728x90a/54961/RETURN-CODE/JS/ HTTP/1.1
+Host: anad.tacoda.net
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: TData=AMS_60290|AMS_60506|AMS_60507|AMS_60508|AMS_60514|AMS_60515|AMS_60560|AMS_60598|AMS_60818|#|AMS_60138|AMS_50230|AMS_50213; ANRTT=60138^1^1148567933|50230^1^1148402663|50213^1^1148316438; TID=11tijsq0b0q3mp; /sk12120.11565=,CFC-CZw.1,GFC; /sk12120.11562=,CFC-CQS.1-CU2.1,GFC; /ad12092.12106=,CFC-CQO.1,GFC; Tsid=0^1147963119^1147964933|12120^1147963119^1147964933; Anxd=x; /ad12120.12106=,CFC-CVz.1,GFC
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:53 GMT
+Server: Apache (Unix)
+P3P: policyref="http://ante.tacoda.net/w3c/p3p.xml", CP="NON DSP COR NID CURa ADMo DEVo TAIo PSAo PSDo OUR IND UNI COM NAV"
+Ad-Reach: Burst!Media
+Set-Cookie: /ad12120.12106=,CFC-CVz.1-Cgy.1,GFC; path=/
+Pragma: no-cache
+Cache-Control: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://movies.myphotodevel.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 184
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+Pragma: no-cache
+Cache-Control: no-cache
+subdomain=movies&addalbum=0&album=album06&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.1]=114%7Btxt_4%7Dimage010_3%7Btxt_9%7D.jpg%7Btxt_6%7D279%7Btxt_7%7D296
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:54 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:38:54 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1011
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://anad.tacoda.net/cgi-bin/ads/sk12120a.cgi/v=2.0S/sz=120x600a/26944/RETURN-CODE/JS/
+
+GET /cgi-bin/ads/sk12120a.cgi/v=2.0S/sz=120x600a/26944/RETURN-CODE/JS/ HTTP/1.1
+Host: anad.tacoda.net
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_600.php
+Cookie: TData=AMS_60290|AMS_60506|AMS_60507|AMS_60508|AMS_60514|AMS_60515|AMS_60560|AMS_60598|AMS_60818|#|AMS_60138|AMS_50230|AMS_50213; ANRTT=60138^1^1148567934|50230^1^1148402663|50213^1^1148316438; TID=11tijsq0b0q3mp; /sk12120.11565=,CFC-CZw.1,GFC; /sk12120.11562=,CFC-CQS.1-CU2.1,GFC; /ad12092.12106=,CFC-CQO.1,GFC; Tsid=0^1147963119^1147964934|12120^1147963119^1147964934; Anxd=x; /ad12120.12106=,CFC-CVz.1,GFC
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:54 GMT
+Server: Apache (Unix)
+P3P: policyref="http://ante.tacoda.net/w3c/p3p.xml", CP="NON DSP COR NID CURa ADMo DEVo TAIo PSAo PSDo OUR IND UNI COM NAV"
+Ad-Reach: Burst!Media
+Set-Cookie: /sk12120.11562=,CFC-CQS.1-CU2.2,GFC; path=/
+Pragma: no-cache
+Cache-Control: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://ad.doubleclick.net/adi/N1841.tacoda/B1764282.9;sz=120x600;click=http://anad.tacoda.net/ads/sk12120a-map.cgi/BCPG49520.75527.85966/SZ=120X600A/V=2.0S//REDIRURL=;ord=48660?
+
+GET /adi/N1841.tacoda/B1764282.9;sz=120x600;click=http://anad.tacoda.net/ads/sk12120a-map.cgi/BCPG49520.75527.85966/SZ=120X600A/V=2.0S//REDIRURL=;ord=48660? HTTP/1.1
+Host: ad.doubleclick.net
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_600.php
+Cookie: id=8000008031185b6
+
+HTTP/1.x 200 OK
+Server: DCLK-AdSvr
+Content-Type: text/html
+Content-Length: 392
+Content-Encoding: gzip
+----------------------------------------------------------
+http://ads.pointroll.com/PRServe/?ad=585S1520065218560&pub=tacoda&num=1&size=728_90&code=no&hide=~&redir=http://anad.tacoda.net/ads/ad12120a-map.cgi/BCPG50334.76560.87549/SZ=728X90A/V=2.0S//REDIRURL-$CTURL$&defredir=~&bu=0.35749798997629423&r=0.74888438817128
+
+GET /PRServe/?ad=585S1520065218560&pub=tacoda&num=1&size=728_90&code=no&hide=~&redir=http://anad.tacoda.net/ads/ad12120a-map.cgi/BCPG50334.76560.87549/SZ=728X90A/V=2.0S//REDIRURL-$CTURL$&defredir=~&bu=0.35749798997629423&r=0.74888438817128 HTTP/1.1
+Host: ads.pointroll.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: PRpb=economst; PRaf=|172982:1|174321:2|167887:1|170583:2|176149:1|163237:1|170590:1|154381:1|170991:1|167900:2|167899:1|168504:1|163359:1|152854:1|156868:1|156869:2|151070:1|151067:1|155999:1|155964:1|141989:1|148231:1|148247:1|148250:2|148348:1|#; PRID=17D3787F-F333-40A2-84DD-4322131004D9; PRimp=A8A56F66-5EAE-4B52-98A5-3E2B395A3EB1
+
+HTTP/1.x 200 OK
+Server: Microsoft-IIS/5.0
+Date: Thu, 18 May 2006 14:38:54 GMT
+P3P: CP="NOI DSP COR PSAo PSDo OUR BUS OTC"
+Connection: close
+Content-Type: text/html
+Content-Length: 4344
+Set-Cookie: PRimp=E9358163-B57A-4CB1-897F-79B4E945F65C; domain=ads.pointroll.com; path=/; expires=Fri, 01-Jan-2010 00:00:00 GMT;
+Set-Cookie: PRpb=tacoda; domain=ads.pointroll.com; path=/; expires=Fri, 01-Jan-2010 00:00:00 GMT;
+Set-Cookie: PRaf=|179585:1|172982:1|174321:2|167887:1|170583:2|176149:1|163237:1|170590:1|154381:1|170991:1|167900:2|167899:1|168504:1|163359:1|152854:1|156868:1|156869:2|151070:1|151067:1|155999:1|155964:1|141989:1|148231:1|148247:1|148250:2|148348:1|#; domain=ads.pointroll.com; path=/; expires=Fri, 01-Jan-2010 00:00:00 GMT;
+----------------------------------------------------------
+http://view.atdmt.com/CHO/view/tcdxxscd0110000004cho/direct/01/&0.35749798997629423
+
+GET /CHO/view/tcdxxscd0110000004cho/direct/01/&0.35749798997629423 HTTP/1.1
+Host: view.atdmt.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: AA002=1147470500-18165833/1148680205
+
+HTTP/1.x 302 Object moved
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 0
+Expires: 0
+Location: http://spe.atdmt.com/images/pixel.gif
+Server: Microsoft-IIS/6.0
+Connection: close
+Date: Thu, 18 May 2006 14:38:53 GMT
+----------------------------------------------------------
+http://spd.pointroll.com/PointRoll/Ads/PRScript.dll?v=93&pos=0&init=0&delay=0&push=0&set=2&bye=1
+
+GET /PointRoll/Ads/PRScript.dll?v=93&pos=0&init=0&delay=0&push=0&set=2&bye=1 HTTP/1.1
+Host: spd.pointroll.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+
+HTTP/1.x 200 OK
+Server: Microsoft-IIS/5.0
+P3P: CP="NOI DSP COR PSAo PSDo OUR BUS OTC"
+Content-Type: text/plain
+Content-Length: 6105
+Date: Thu, 18 May 2006 14:38:54 GMT
+Connection: keep-alive
+----------------------------------------------------------
+http://movies.myphotodevel.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 182
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+Pragma: no-cache
+Cache-Control: no-cache
+subdomain=movies&addalbum=0&album=album06&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.2]=114%7Btxt_4%7Dimage010%7Btxt_9%7D.jpg%7Btxt_6%7D559%7Btxt_7%7D288
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:54 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:38:55 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1010
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://movies.myphotodevel.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 184
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+Pragma: no-cache
+Cache-Control: no-cache
+subdomain=movies&addalbum=0&album=album06&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.3]=114%7Btxt_4%7Dimage01010%7Btxt_9%7D.jpg%7Btxt_6%7D530%7Btxt_7%7D396
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:55 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:38:55 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=993
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://movies.myphotodevel.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 184
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+Pragma: no-cache
+Cache-Control: no-cache
+subdomain=movies&addalbum=0&album=album06&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.4]=114%7Btxt_4%7Dimage011_1%7Btxt_9%7D.jpg%7Btxt_6%7D576%7Btxt_7%7D432
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:56 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:38:56 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1009
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://movies.myphotodevel.com/no-ads.php
+
+GET /no-ads.php HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/view_album.php?set_albumName=album06
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:38:59 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; expires=Friday, 18-May-07 14:38:59 GMT; domain=myphotodevel.com
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=992
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 1311
+----------------------------------------------------------
+https://store.myphotodevel.com/shopping_cart.php?action=add_product&print_selections=148{mpa_user_id}142804{subdomain}movies
+
+GET /shopping_cart.php?action=add_product&print_selections=148{mpa_user_id}142804{subdomain}movies HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/no-ads.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:03 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:39:03 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://movies.myphotodevel.com/
+
+GET / HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:08 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; expires=Friday, 18-May-07 14:39:08 GMT; domain=myphotodevel.com
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1007
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 7338
+----------------------------------------------------------
+http://movies.myphotodevel.com/ads/album_728.php
+
+GET /ads/album_728.php HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:08 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Keep-Alive: timeout=15, max=1004
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: RMFD=011FgjYIO206rOw|O406szT|O106vyO; RMFH=011FgjYI; T3CK=TANT%3D1%7CTANO%3D0; fcwt=fcep0105091; RMID=436d62e443d8f460; RMFS=011FgjYI; NSC_403a501a0050=445cb9323660
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:09 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Set-Cookie: RMFD=011FgjYIO306rOw|O406szT|O106vyO; expires=Fri, 31-Dec-2020 23:59:59 GMT; path=/; domain=.fortunecity.com
+Set-Cookie: NSC_403a501a0050=445cb9323660;path=/
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 408
+----------------------------------------------------------
+http://movies.myphotodevel.com/ads/album_600.php
+
+GET /ads/album_600.php HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:09 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Keep-Alive: timeout=15, max=1003
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_600.php
+Cookie: RMFD=011FgjYIO306rOw|O406szT|O106vyO; RMFH=011FgjYI; T3CK=TANT%3D1%7CTANO%3D0; fcwt=fcep0105091; RMID=436d62e443d8f460; RMFS=011FgjYI; NSC_403a501a0050=445cb9323660
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:10 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_403a501a0050=445cb9323660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 249
+----------------------------------------------------------
+http://cxtad.specificmedia.com/SMBannerAds/index.jsp?url=http://movies.myphotodevel.com/ads/album_728.php&l=1256519057&sz=728x90&rnd={INSERT_CACHEBUSTER_HERE}
+
+GET /SMBannerAds/index.jsp?url=http://movies.myphotodevel.com/ads/album_728.php&l=1256519057&sz=728x90&rnd={INSERT_CACHEBUSTER_HERE} HTTP/1.1
+Host: cxtad.specificmedia.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: JSESSIONID=4B5E0BE512F4971B47A96E561440D637
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:10 GMT
+Server: Apache/2.0.55 (Unix) mod_jk/1.2.14
+Set-Cookie: JSESSIONID=B47CC48FD89ED795B63A9B485E104951; Path=/SMBannerAds
+Content-Length: 170
+Connection: close
+Content-Type: text/html;charset=UTF-8
+----------------------------------------------------------
+http://gifts.myphotodevel.com/gc_add_frame.php
+
+GET /gc_add_frame.php HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:11 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:39:11 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 4274
+----------------------------------------------------------
+http://gifts.myphotodevel.com/gc_add_frame.php?gc_id=&pid=898&gc_w=640&gc_h=480&gc_frm=Easter/4_Green_Stripe
+
+GET /gc_add_frame.php?gc_id=&pid=898&gc_w=640&gc_h=480&gc_frm=Easter/4_Green_Stripe HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_frame.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:39:13 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:39:13 GMT; domain=myphotodevel.com
+Location: http://movies.myphotodevel.com/select-photo.php?gc_id=628
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://movies.myphotodevel.com/select-photo.php?gc_id=628
+
+GET /select-photo.php?gc_id=628 HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_frame.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:13 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; expires=Friday, 18-May-07 14:39:14 GMT; domain=myphotodevel.com
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=986
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 4884
+----------------------------------------------------------
+http://movies.myphotodevel.com/js/scriptaculous.js?load=effects
+
+GET /js/scriptaculous.js?load=effects HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/select-photo.php?gc_id=628
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:15 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Tue, 02 May 2006 14:23:33 GMT
+Etag: "290223e-868-44576b65"
+Accept-Ranges: bytes
+Content-Length: 2152
+Keep-Alive: timeout=15, max=983
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://gifts.myphotodevel.com/tmp/hd_card_925d80217d3d5278385ea8d61a9150c7.jpg?1147963165
+
+GET /tmp/hd_card_925d80217d3d5278385ea8d61a9150c7.jpg?1147963165 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_message.php?gc_alb=album06&gc_sbd=movies&gc_id=628&gc_img=image011.jpg
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:25 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Thu, 18 May 2006 14:39:25 GMT
+Etag: W/"71152aa-58f8-446c871d"
+Accept-Ranges: bytes
+Content-Length: 22776
+Keep-Alive: timeout=15, max=1013
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotodevel.com/tmp/hd_card_80227d45e52d08177fc7ef7f8336c7bd.jpg?1147963184
+
+GET /tmp/hd_card_80227d45e52d08177fc7ef7f8336c7bd.jpg?1147963184 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_message.php?gc_alb=album06&gc_sbd=movies&gc_id=628&gc_img=image011.jpg
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; TCT=1; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:39:45 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Thu, 18 May 2006 14:39:44 GMT
+Etag: W/"71152ab-5c93-446c8730"
+Accept-Ranges: bytes
+Content-Length: 23699
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotodevel.com/gc_quantities.php?gc_id=628
+
+GET /gc_quantities.php?gc_id=628 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_message.php?gc_alb=album06&gc_sbd=movies&gc_id=628&gc_img=image011.jpg
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:01 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:40:01 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 4421
+----------------------------------------------------------
+http://gifts.myphotodevel.com/tmp/hd_card_92085054dd538a3f86cf36090a7de4ce.jpg?1147963206
+
+GET /tmp/hd_card_92085054dd538a3f86cf36090a7de4ce.jpg?1147963206 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_quantities.php?gc_id=628
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:07 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Thu, 18 May 2006 14:40:06 GMT
+Etag: W/"71152af-5c93-446c8746"
+Accept-Ranges: bytes
+Content-Length: 23699
+Keep-Alive: timeout=15, max=1018
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotodevel.com/gc_quantities.php?gc_id=628
+
+POST /gc_quantities.php?gc_id=628 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_quantities.php?gc_id=628
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; T3CK=TANT%3D1%7CTANO%3D0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 87
+gc_card_tmp_img=tmp%2Fhd_card_92085054dd538a3f86cf36090a7de4ce.jpg&quantity=2&x=67&y=11
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:40:13 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:40:13 GMT; domain=myphotodevel.com
+Location: https://store.myphotodevel.com/shopping_cart.php?action=add_product&card_choice=898{gc_img}image011.jpg{gc_cap}this+looks+sufficiently+corny{gc_frm}Easter%2F4_Green_Stripe{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album06{gc_sbd}movies{gc_id}628{gc_tmp_img}hd_card_92085054dd538a3f86cf36090a7de4ce.jpg&cart_quantity=2
+Keep-Alive: timeout=15, max=1017
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/shopping_cart.php?action=add_product&card_choice=898{gc_img}image011.jpg{gc_cap}this+looks+sufficiently+corny{gc_frm}Easter%2F4_Green_Stripe{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album06{gc_sbd}movies{gc_id}628{gc_tmp_img}hd_card_92085054dd538a3f86cf36090a7de4ce.jpg&cart_quantity=2
+
+GET /shopping_cart.php?action=add_product&card_choice=898{gc_img}image011.jpg{gc_cap}this+looks+sufficiently+corny{gc_frm}Easter%2F4_Green_Stripe{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album06{gc_sbd}movies{gc_id}628{gc_tmp_img}hd_card_92085054dd538a3f86cf36090a7de4ce.jpg&cart_quantity=2 HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_quantities.php?gc_id=628
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:18 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:40:19 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://gifts.myphotodevel.com/tmp/hd_card_92085054dd538a3f86cf36090a7de4ce.jpg?1147963219
+
+GET /tmp/hd_card_92085054dd538a3f86cf36090a7de4ce.jpg?1147963219 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:20 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Thu, 18 May 2006 14:40:18 GMT
+Etag: "71152af-5c93-446c8752"
+Accept-Ranges: bytes
+Content-Length: 23699
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+https://store.myphotodevel.com/shopping_cart.php
+
+POST /shopping_cart.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/shopping_cart.php?action=add_product&card_choice=898{gc_img}image011.jpg{gc_cap}this+looks+sufficiently+corny{gc_frm}Easter%2F4_Green_Stripe{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album06{gc_sbd}movies{gc_id}628{gc_tmp_img}hd_card_92085054dd538a3f86cf36090a7de4ce.jpg&cart_quantity=2
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 2839
+has_changed=0&action=update_cart&goto=login.php&globalQty=1&no_size_boxes=4&globalSize=114&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7Dimage010_3%7Btxt_9%7D.jpg%7Btxt_6%7D279%7Btxt_7%7D296%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D4&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7Dimage010_3%7Btxt_9%7D.jpg%7Btxt_6%7D279%7Btxt_7%7D296%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7Dimage010_3%7Btxt_9%7D.jpg%7Btxt_6%7D279%7Btxt_7%7D296%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7Dimage010_3%7Btxt_9%7D.jpg%7Btxt_6%7D279%7Btxt_7%7D296%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D4&cart_quantity%5B%5D=1&products_id%5B%5D=114%7Btxt_4%7Dimage010%7Btxt_9%7D.jpg%7Btxt_6%7D559%7Btxt_7%7D288%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7Dimage010%7Btxt_9%7D.jpg%7Btxt_6%7D559%7Btxt_7%7D288%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7Dimage010%7Btxt_9%7D.jpg%7Btxt_6%7D559%7Btxt_7%7D288%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7Dimage010%7Btxt_9%7D.jpg%7Btxt_6%7D559%7Btxt_7%7D288%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7Dimage01010%7Btxt_9%7D.jpg%7Btxt_6%7D530%7Btxt_7%7D396%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7Dimage01010%7Btxt_9%7D.jpg%7Btxt_6%7D530%7Btxt_7%7D396%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7Dimage01010%7Btxt_9%7D.jpg%7Btxt_6%7D530%7Btxt_7%7D396%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7Dimage01010%7Btxt_9%7D.jpg%7Btxt_6%7D530%7Btxt_7%7D396%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7Dimage011_1%7Btxt_9%7D.jpg%7Btxt_6%7D576%7Btxt_7%7D432%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7Dimage011_1%7Btxt_9%7D.jpg%7Btxt_6%7D576%7Btxt_7%7D432%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7Dimage011_1%7Btxt_9%7D.jpg%7Btxt_6%7D576%7Btxt_7%7D432%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7Dimage011_1%7Btxt_9%7D.jpg%7Btxt_6%7D576%7Btxt_7%7D432%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D1&products_id%5B%5D=148%7Bmpa_user_id%7D142804%7Bsubdomain%7Dmovies&cart_quantity%5B%5D=1&products_id%5B%5D=898%7Bgc_img%7Dimage011.jpg%7Bgc_cap%7Dthis%2Blooks%2Bsufficiently%2Bcorny%7Bgc_frm%7DEaster%252F4_Green_Stripe%7Bgc_url%7D%7Bgc_w%7D640%7Bgc_h%7D480%7Bgc_alb%7Dalbum06%7Bgc_sbd%7Dmovies%7Bgc_id%7D628%7Bgc_tmp_img%7Dhd_card_92085054dd538a3f86cf36090a7de4ce.jpg&cart_quantity%5B%5D=2
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:40:22 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:40:22 GMT; domain=myphotodevel.com
+Location: https://store.myphotodevel.com/login.php
+Content-Length: 0
+Keep-Alive: timeout=5, max=1023
+Connection: Keep-Alive
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/login.php
+
+GET /login.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/shopping_cart.php?action=add_product&card_choice=898{gc_img}image011.jpg{gc_cap}this+looks+sufficiently+corny{gc_frm}Easter%2F4_Green_Stripe{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album06{gc_sbd}movies{gc_id}628{gc_tmp_img}hd_card_92085054dd538a3f86cf36090a7de4ce.jpg&cart_quantity=2
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:23 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:40:24 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1022
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/login.php
+
+POST /login.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/login.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 98
+action=login&goto=&email_address=swain%40corp.fortunecity.com&new_cust=no&password=112233&x=40&y=5
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:40:33 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:40:34 GMT; domain=myphotodevel.com
+Set-Cookie: mpa_fqdn=deleted; expires=Wed, 18-May-2005 14:40:33 GMT; domain=myphotodevel.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; expires=Sat, 17-Jun-2006 14:40:34 GMT; domain=myphotodevel.com
+Location: https://store.myphotodevel.com/checkout_payment.php
+Content-Length: 0
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_payment.php
+
+GET /checkout_payment.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/login.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:35 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:40:35 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1023
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://movies.myphotodevel.com/view_album.php?set_albumName=album06
+
+GET /view_album.php?set_albumName=album06 HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:37 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; expires=Friday, 18-May-07 14:40:38 GMT; domain=myphotodevel.com
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:40:38 GMT; domain=myphotodevel.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06; expires=Saturday, 17-Jun-06 14:40:38 GMT; domain=myphotodevel.com
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 8729
+----------------------------------------------------------
+http://movies.myphotodevel.com/ads/album_728.php
+
+GET /ads/album_728.php HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/view_album.php?set_albumName=album06
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:39 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Keep-Alive: timeout=15, max=1017
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: RMFD=011FgjYIO306rOw|O406szT|O106vyO; RMFH=011FgjYI; T3CK=TANT%3D1%7CTANO%3D0; fcwt=fcep0105091; RMID=436d62e443d8f460; RMFS=011FgjYI; NSC_403a501a0050=445cb9323660
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:39 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_403a501a0050=445cb9323660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 248
+----------------------------------------------------------
+http://movies.myphotodevel.com/ads/album_600.php
+
+GET /ads/album_600.php HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/view_album.php?set_albumName=album06
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:40 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Keep-Alive: timeout=15, max=1015
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://ad.fortunecity.com/imp?z=6&Z=728x90&s=41859&t=3
+
+GET /imp?z=6&Z=728x90&s=41859&t=3 HTTP/1.1
+Host: ad.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: RMFD=011FgjYIO306rOw|O406szT|O106vyO; RMFH=011FgjYI; T3CK=TANT%3D1%7CTANO%3D0; fcwt=fcep0105091; RMID=436d62e443d8f460; RMFS=011FgjYI
+
+HTTP/1.x 302 Found
+Connection: close
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Set-Cookie: RMFD=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: RMFH=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: T3CK=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: fcwt=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: RMID=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: RMFS=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Location: http://ad.yieldmanager.com/imp?z=6&Z=728x90&s=41859&t=3
+Cache-Control: no-store
+Content-Length: 0
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_600.php
+Cookie: RMFD=011FgjYIO306rOw|O406szT|O106vyO; RMFH=011FgjYI; T3CK=TANT%3D1%7CTANO%3D0; fcwt=fcep0105091; RMID=436d62e443d8f460; RMFS=011FgjYI; NSC_403a501a0050=445cb9323660
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:41 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_403a501a0050=445cb9323660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 248
+----------------------------------------------------------
+http://ad.yieldmanager.com/imp?z=6&Z=728x90&s=41859&t=3
+
+GET /imp?z=6&Z=728x90&s=41859&t=3 HTTP/1.1
+Host: ad.yieldmanager.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_728.php
+Cookie: ih="b!!!!E!!!+>!!!!#8y9WJ!!!=^!!!!(8y!sl!!!Y$!!!!#8xy1E!!#kC!!!!%8xx_r!!%SG!!!!$8xKR`!!+Dm!!!!#8xm4v!!,(t!!!!#8xKRW!!,>F!!!!#8y!Lg!!,]Q!!!!#8xKRG!!,qF!!!!#8xKv+!!,qJ!!!!#8xKu9!!,r.!!!!#8xKtd!!-1)!!!!#8xx_Z!!-1/!!!!#8xKv1!!-h!!!!!#8xJl+!!-h'!!!!#8y9VG!!-wW!!!!#8xKRV!!.+5!!!!$8xy6v!!.+6!!!!#8xx_6!!.+8!!!!#8xy6i!!.=O!!!!#8xK8C!!.CU!!!!#8y9U6!!.CY!!!!#8y!Lf!!.H/!!!!#8xx_r!!.H2!!!!#8y##_!!.W1!!!!#8xKK0!!.[4!!!!#8xy1H!!.`j!!!!#8xl`y!!.l*!!!!#8xKBx!!/4V!!!!#8xKRI!!/9>!!!!#8xKQ<!!/9y!!!!#8xKBw!!/EI!!!!#8y9UE"; lifb=^,nZ6v2*uf9FvR#t#@0O!p-h<oOn^A%/Q>NDku[h*?^_[(Vp>T:+=y:; pv1="b!!!!#!!!3O~!!(hK!!.CU!!'K>!!,,$!?5%!%R/S3!Zd<'!!)nP!!)i<~~~~~~8y9U68yRN1~"; vuday1=!!!!'N0u0bM++/7
+
+HTTP/1.x 200 Ok
+Connection: close
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Content-Type: text/html
+Set-Cookie: lifb=^,nZ6v2*uf9FvR#t#@0O<#S))077X.!p-h<oOn^A%/Q>NDku[h*?^_[(Vp>Tu$/!^; expires=Sat, 20-May-2006 19:16:33 GMT
+Set-Cookie: vuday1=!!!!(N0u0bc+H(W; expires=Fri, 19-May-2006 00:00:00 GMT
+Set-Cookie: pv1="b!!!!#!!!3O~!!(hK!!.CU!!'K>!!,,$!?5%!%R/S3!Zd<'!!)nP!!)i<~~~~~~8y9U68yRN1~"; path=/; expires=Mon, 14-Aug-2017 00:00:00 GMT
+Set-Cookie: pc1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ih="b!!!!F!!!+>!!!!#8y9WJ!!!=^!!!!(8y!sl!!!Y$!!!!#8xy1E!!#kC!!!!%8xx_r!!%SG!!!!$8xKR`!!+Dm!!!!#8xm4v!!,(t!!!!#8xKRW!!,>F!!!!#8y!Lg!!,]Q!!!!#8xKRG!!,qF!!!!#8xKv+!!,qJ!!!!#8xKu9!!,r.!!!!#8xKtd!!-1)!!!!#8xx_Z!!-1/!!!!#8xKv1!!-h!!!!!#8xJl+!!-h'!!!!#8y9VG!!-wW!!!!#8xKRV!!.+5!!!!$8xy6v!!.+6!!!!#8xx_6!!.+8!!!!#8xy6i!!.=O!!!!#8xK8C!!.CU!!!!#8y9U6!!.CY!!!!#8y!Lf!!.H/!!!!#8xx_r!!.H2!!!!#8y##_!!.W1!!!!#8xKK0!!.[4!!!!#8xy1H!!.`j!!!!#8xl`y!!.l*!!!!#8xKBx!!/4V!!!!#8xKRI!!/9>!!!!#8xKQ<!!/9y!!!!#8xKBw!!/EI!!!!#8y9UE!!/EK!!!!#8y9Zq"; path=/; expires=Mon, 14-Aug-2017 00:00:00 GMT
+Set-Cookie: vh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: bh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ia="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Cache-Control: no-store
+Content-Length: 1249
+----------------------------------------------------------
+http://ad.fortunecity.com/imp?z=1&Z=120x600&s=41859&t=3
+
+GET /imp?z=1&Z=120x600&s=41859&t=3 HTTP/1.1
+Host: ad.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_600.php
+Cookie: RMFD=011FgjYIO306rOw|O406szT|O106vyO; RMFH=011FgjYI; T3CK=TANT%3D1%7CTANO%3D0; fcwt=fcep0105091; RMID=436d62e443d8f460; RMFS=011FgjYI
+
+HTTP/1.x 302 Found
+Connection: close
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Set-Cookie: RMFD=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: RMFH=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: T3CK=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: fcwt=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: RMID=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: RMFS=; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Location: http://ad.yieldmanager.com/imp?z=1&Z=120x600&s=41859&t=3
+Cache-Control: no-store
+Content-Length: 0
+----------------------------------------------------------
+http://view.atdmt.com/NYC/iview/rghtccps0070000058nyc/direct;wi.728;hi.90/01?click=http://ad.fortunecity.com/click,AAAAAIOjAADIXQEAa3oAAAABEQAAAP8AAP8FCwEABgK.wQAASrsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGmHbEQAAAAA,,
+
+GET /NYC/iview/rghtccps0070000058nyc/direct;wi.728;hi.90/01?click=http://ad.fortunecity.com/click,AAAAAIOjAADIXQEAa3oAAAABEQAAAP8AAP8FCwEABgK.wQAASrsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGmHbEQAAAAA,, HTTP/1.1
+Host: view.atdmt.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://ad.yieldmanager.com/imp?z=6&Z=728x90&s=41859&t=3
+Cookie: AA002=1147470500-18165833/1148680205
+
+HTTP/1.x 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 5901
+Content-Type: text/html
+Expires: 0
+Server: Microsoft-IIS/6.0
+Connection: close
+Date: Thu, 18 May 2006 14:40:41 GMT
+----------------------------------------------------------
+http://ad.yieldmanager.com/imp?z=1&Z=120x600&s=41859&t=3
+
+GET /imp?z=1&Z=120x600&s=41859&t=3 HTTP/1.1
+Host: ad.yieldmanager.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/ads/album_600.php
+Cookie: ih="b!!!!F!!!+>!!!!#8y9WJ!!!=^!!!!(8y!sl!!!Y$!!!!#8xy1E!!#kC!!!!%8xx_r!!%SG!!!!$8xKR`!!+Dm!!!!#8xm4v!!,(t!!!!#8xKRW!!,>F!!!!#8y!Lg!!,]Q!!!!#8xKRG!!,qF!!!!#8xKv+!!,qJ!!!!#8xKu9!!,r.!!!!#8xKtd!!-1)!!!!#8xx_Z!!-1/!!!!#8xKv1!!-h!!!!!#8xJl+!!-h'!!!!#8y9VG!!-wW!!!!#8xKRV!!.+5!!!!$8xy6v!!.+6!!!!#8xx_6!!.+8!!!!#8xy6i!!.=O!!!!#8xK8C!!.CU!!!!#8y9U6!!.CY!!!!#8y!Lf!!.H/!!!!#8xx_r!!.H2!!!!#8y##_!!.W1!!!!#8xKK0!!.[4!!!!#8xy1H!!.`j!!!!#8xl`y!!.l*!!!!#8xKBx!!/4V!!!!#8xKRI!!/9>!!!!#8xKQ<!!/9y!!!!#8xKBw!!/EI!!!!#8y9UE!!/EK!!!!#8y9Zq"; lifb=^,nZ6v2*uf9FvR#t#@0O<#S))077X.!p-h<oOn^A%/Q>NDku[h*?^_[(Vp>Tu$/!^; pv1="b!!!!#!!!3O~!!(hK!!.CU!!'K>!!,,$!?5%!%R/S3!Zd<'!!)nP!!)i<~~~~~~8y9U68yRN1~"; vuday1=!!!!(N0u0bc+H(W
+
+HTTP/1.x 200 Ok
+Connection: close
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Content-Type: text/html
+Set-Cookie: lifb=^,nZ6v2*uf9FvR#t#@0O<#S))077X.!p-h<oOn^A%/Q>NDku[h*?^_[(Vp>Tu$/!^; expires=Sat, 20-May-2006 19:16:33 GMT
+Set-Cookie: vuday1=!!!!)N0u0b!g)@$; expires=Fri, 19-May-2006 00:00:00 GMT
+Set-Cookie: pv1="b!!!!#!!!3O~!!(hK!!.CU!!'K>!!,,$!?5%!%R/S3!Zd<'!!)nP!!)i<~~~~~~8y9U68yRN1~"; path=/; expires=Mon, 14-Aug-2017 00:00:00 GMT
+Set-Cookie: pc1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ih="b!!!!F!!!+>!!!!$8y9Zq!!!=^!!!!(8y!sl!!!Y$!!!!#8xy1E!!#kC!!!!%8xx_r!!%SG!!!!$8xKR`!!+Dm!!!!#8xm4v!!,(t!!!!#8xKRW!!,>F!!!!#8y!Lg!!,]Q!!!!#8xKRG!!,qF!!!!#8xKv+!!,qJ!!!!#8xKu9!!,r.!!!!#8xKtd!!-1)!!!!#8xx_Z!!-1/!!!!#8xKv1!!-h!!!!!#8xJl+!!-h'!!!!#8y9VG!!-wW!!!!#8xKRV!!.+5!!!!$8xy6v!!.+6!!!!#8xx_6!!.+8!!!!#8xy6i!!.=O!!!!#8xK8C!!.CU!!!!#8y9U6!!.CY!!!!#8y!Lf!!.H/!!!!#8xx_r!!.H2!!!!#8y##_!!.W1!!!!#8xKK0!!.[4!!!!#8xy1H!!.`j!!!!#8xl`y!!.l*!!!!#8xKBx!!/4V!!!!#8xKRI!!/9>!!!!#8xKQ<!!/9y!!!!#8xKBw!!/EI!!!!#8y9UE!!/EK!!!!#8y9Zq"; path=/; expires=Mon, 14-Aug-2017 00:00:00 GMT
+Set-Cookie: vh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: bh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ia="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Cache-Control: no-store
+Content-Length: 2455
+----------------------------------------------------------
+http://web.adknowledge.com/js/showAD120.js?adkBref=unRef&pubID=adtegrity&ran=uK14vG4Gb6BOUzQI
+
+GET /js/showAD120.js?adkBref=unRef&pubID=adtegrity&ran=uK14vG4Gb6BOUzQI HTTP/1.1
+Host: web.adknowledge.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://ad.yieldmanager.com/imp?z=1&Z=120x600&s=41859&t=3
+Cookie: as=7e5b2751-08b9-49e4-9e88-91561b6ad1a5; iashis=53687-1147962949-1
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:42 GMT
+Server: Apache/2.0.52 (Unix) PHP/5.0.2
+Last-Modified: Tue, 16 May 2006 16:08:10 GMT
+Etag: "5840d9-1783-2608e80"
+Accept-Ranges: bytes
+Content-Length: 6019
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://adsvr.adknowledge.com/get_ad.cgi?pid=adtegrity&tg=test&sz=120x600&skn=I&fm=F&fid=0&ran=uK14vG4Gb6BOUzQI&ref=unRef&clickUrl=http%3A%2F%2Fad%2Efortunecity%2Ecom%2Fclick%2CAAAAAIOjAADCAgAAFHsAAAABFQAAAAYAAf8FCwEAAQPNvAAAcBAAADi8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGmHbEQAAAAA%2C%2C&ue=n&locid=NONE
+
+GET /get_ad.cgi?pid=adtegrity&tg=test&sz=120x600&skn=I&fm=F&fid=0&ran=uK14vG4Gb6BOUzQI&ref=unRef&clickUrl=http%3A%2F%2Fad%2Efortunecity%2Ecom%2Fclick%2CAAAAAIOjAADCAgAAFHsAAAABFQAAAAYAAf8FCwEAAQPNvAAAcBAAADi8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGmHbEQAAAAA%2C%2C&ue=n&locid=NONE HTTP/1.1
+Host: adsvr.adknowledge.com:80
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://ad.yieldmanager.com/imp?z=1&Z=120x600&s=41859&t=3
+Cookie: as=7e5b2751-08b9-49e4-9e88-91561b6ad1a5; iashis=53687-1147962949-1
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:42 GMT
+Content-Length: 2887
+Content-Type: text/html
+Pragma: no-cache
+Cache-Control: no-cache
+Connection: close
+P3P: policyref="/w3c/p3p.xml", CP="DSP COR NID IND UNI"
+Set-Cookie: as=7e5b2751-08b9-49e4-9e88-91561b6ad1a5; DOMAIN=adknowledge.com; PATH=/; EXPIRES=Fri, 18-May-2007 14:40:42 GMT;
+Set-Cookie: iashis=53682-1147963242-1|53687-1147962949-1; DOMAIN=adknowledge.com; PATH=/; EXPIRES=Fri, 18-May-2007 14:40:42 GMT;
+----------------------------------------------------------
+http://gifts.myphotodevel.com/gc_add_frame.php
+
+GET /gc_add_frame.php HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/view_album.php?set_albumName=album06
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:42 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:40:43 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 4274
+----------------------------------------------------------
+http://gifts.myphotodevel.com/gc_add_frame.php?gc_id=&pid=172&gc_w=640&gc_h=480&gc_frm=Easter/5_Chicks
+
+GET /gc_add_frame.php?gc_id=&pid=172&gc_w=640&gc_h=480&gc_frm=Easter/5_Chicks HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_frame.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:40:45 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:40:45 GMT; domain=myphotodevel.com
+Location: http://movies.myphotodevel.com/select-photo.php?gc_id=629
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://movies.myphotodevel.com/select-photo.php?gc_id=629
+
+GET /select-photo.php?gc_id=629 HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_frame.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:45 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; expires=Friday, 18-May-07 14:40:45 GMT; domain=myphotodevel.com
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1014
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 4884
+----------------------------------------------------------
+http://movies.myphotodevel.com/js/scriptaculous.js?load=effects
+
+GET /js/scriptaculous.js?load=effects HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/select-photo.php?gc_id=629
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+If-Modified-Since: Tue, 02 May 2006 14:23:33 GMT
+If-None-Match: "290223e-868-44576b65"
+
+HTTP/1.x 304 Not Modified
+Date: Thu, 18 May 2006 14:40:46 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1007
+Etag: "290223e-868-44576b65"
+Vary: *
+----------------------------------------------------------
+http://movies.myphotodevel.com/select-photo.php?gc_id=629&set_albumName=album04
+
+GET /select-photo.php?gc_id=629&set_albumName=album04 HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/select-photo.php?gc_id=629
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:52 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; expires=Friday, 18-May-07 14:40:52 GMT; domain=myphotodevel.com
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1002
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 5738
+----------------------------------------------------------
+http://movies.myphotodevel.com/js/scriptaculous.js?load=effects
+
+GET /js/scriptaculous.js?load=effects HTTP/1.1
+Host: movies.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/select-photo.php?gc_id=629&set_albumName=album04
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; PHPSESSID=2bb542a7812590d40cde9d831e2f7f61; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+If-Modified-Since: Tue, 02 May 2006 14:23:33 GMT
+If-None-Match: "290223e-868-44576b65"
+
+HTTP/1.x 304 Not Modified
+Date: Thu, 18 May 2006 14:40:53 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=995
+Etag: "290223e-868-44576b65"
+Vary: *
+----------------------------------------------------------
+http://images.myphotodevel.com/m/mo/mov/movi/movie/movies/albums/album04/001501c5c1f2_c046a9b0_4b7a6f44.thumb.jpeg
+
+GET /m/mo/mov/movi/movie/movies/albums/album04/001501c5c1f2_c046a9b0_4b7a6f44.thumb.jpeg HTTP/1.1
+Host: images.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://movies.myphotodevel.com/select-photo.php?gc_id=629&set_albumName=album04
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:40:54 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Tue, 28 Mar 2006 21:05:14 GMT
+Etag: "21380cc-eac-4429a50a"
+Accept-Ranges: bytes
+Content-Length: 3756
+Keep-Alive: timeout=15, max=1002
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotodevel.com/tmp/hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg?1147963266
+
+GET /tmp/hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg?1147963266 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_message.php?gc_alb=album04&gc_sbd=movies&gc_id=629&gc_img=image005_2.jpg
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:41:07 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Thu, 18 May 2006 14:41:06 GMT
+Etag: W/"71152b3-41d3-446c8782"
+Accept-Ranges: bytes
+Content-Length: 16851
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotodevel.com/tmp/hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg?1147963278
+
+GET /tmp/hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg?1147963278 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_message.php?gc_alb=album04&gc_sbd=movies&gc_id=629&gc_img=image005_2.jpg
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:41:19 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Thu, 18 May 2006 14:41:18 GMT
+Etag: W/"71152b3-453d-446c878e"
+Accept-Ranges: bytes
+Content-Length: 17725
+Keep-Alive: timeout=15, max=1013
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotodevel.com/gc_quantities.php?gc_id=629
+
+GET /gc_quantities.php?gc_id=629 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_add_message.php?gc_alb=album04&gc_sbd=movies&gc_id=629&gc_img=image005_2.jpg
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:41:21 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:41:21 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=15, max=1011
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Encoding: gzip
+Content-Length: 4420
+----------------------------------------------------------
+http://gifts.myphotodevel.com/tmp/hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg?1147963287
+
+GET /tmp/hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg?1147963287 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_quantities.php?gc_id=629
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:41:28 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Thu, 18 May 2006 14:41:27 GMT
+Etag: W/"71152b3-453d-446c8797"
+Accept-Ranges: bytes
+Content-Length: 17725
+Keep-Alive: timeout=15, max=1006
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotodevel.com/gc_quantities.php?gc_id=629
+
+POST /gc_quantities.php?gc_id=629 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_quantities.php?gc_id=629
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 88
+gc_card_tmp_img=tmp%2Fhd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg&quantity=3&x=121&y=29
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:41:35 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+X-Powered-By: PHP/4.4.1
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Saturday, 17-Jun-06 14:41:36 GMT; domain=myphotodevel.com
+Location: https://store.myphotodevel.com/shopping_cart.php?action=add_product&card_choice=172{gc_img}image005_2.jpg{gc_cap}hurray+for+boobies%21{gc_frm}Easter%2F5_Chicks{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album04{gc_sbd}movies{gc_id}629{gc_tmp_img}hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg&cart_quantity=3
+Keep-Alive: timeout=15, max=1005
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/shopping_cart.php?action=add_product&card_choice=172{gc_img}image005_2.jpg{gc_cap}hurray+for+boobies%21{gc_frm}Easter%2F5_Chicks{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album04{gc_sbd}movies{gc_id}629{gc_tmp_img}hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg&cart_quantity=3
+
+GET /shopping_cart.php?action=add_product&card_choice=172{gc_img}image005_2.jpg{gc_cap}hurray+for+boobies%21{gc_frm}Easter%2F5_Chicks{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album04{gc_sbd}movies{gc_id}629{gc_tmp_img}hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg&cart_quantity=3 HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotodevel.com/gc_quantities.php?gc_id=629
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:41:42 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:41:43 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://gifts.myphotodevel.com/tmp/hd_card_92085054dd538a3f86cf36090a7de4ce.jpg?1147963304
+
+GET /tmp/hd_card_92085054dd538a3f86cf36090a7de4ce.jpg?1147963304 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:41:45 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Thu, 18 May 2006 14:40:18 GMT
+Etag: "71152af-5c93-446c8752"
+Accept-Ranges: bytes
+Content-Length: 23699
+Keep-Alive: timeout=15, max=1004
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotodevel.com/tmp/hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg?1147963304
+
+GET /tmp/hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg?1147963304 HTTP/1.1
+Host: gifts.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:41:45 GMT
+Server: Apache/1.3.34 (Unix) mod_gzip/1.3.26.1a PHP/4.4.1
+Vary: *
+Last-Modified: Thu, 18 May 2006 14:41:42 GMT
+Etag: "71152b3-453d-446c87a6"
+Accept-Ranges: bytes
+Content-Length: 17725
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+https://store.myphotodevel.com/shopping_cart.php
+
+POST /shopping_cart.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/shopping_cart.php?action=add_product&card_choice=172{gc_img}image005_2.jpg{gc_cap}hurray+for+boobies%21{gc_frm}Easter%2F5_Chicks{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album04{gc_sbd}movies{gc_id}629{gc_tmp_img}hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg&cart_quantity=3
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 3139
+has_changed=1&action=update_cart&goto=checkout_payment.php&globalQty=1&no_size_boxes=4&globalSize=114&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7Dimage010_3%7Btxt_9%7D.jpg%7Btxt_6%7D279%7Btxt_7%7D296%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D4&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7Dimage010_3%7Btxt_9%7D.jpg%7Btxt_6%7D279%7Btxt_7%7D296%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7Dimage010_3%7Btxt_9%7D.jpg%7Btxt_6%7D279%7Btxt_7%7D296%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7Dimage010_3%7Btxt_9%7D.jpg%7Btxt_6%7D279%7Btxt_7%7D296%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7Dimage010%7Btxt_9%7D.jpg%7Btxt_6%7D559%7Btxt_7%7D288%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7Dimage010%7Btxt_9%7D.jpg%7Btxt_6%7D559%7Btxt_7%7D288%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=1&products_id%5B%5D=115%7Btxt_4%7Dimage010%7Btxt_9%7D.jpg%7Btxt_6%7D559%7Btxt_7%7D288%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7Dimage010%7Btxt_9%7D.jpg%7Btxt_6%7D559%7Btxt_7%7D288%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7Dimage01010%7Btxt_9%7D.jpg%7Btxt_6%7D530%7Btxt_7%7D396%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7Dimage01010%7Btxt_9%7D.jpg%7Btxt_6%7D530%7Btxt_7%7D396%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7Dimage01010%7Btxt_9%7D.jpg%7Btxt_6%7D530%7Btxt_7%7D396%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=1&products_id%5B%5D=118%7Btxt_4%7Dimage01010%7Btxt_9%7D.jpg%7Btxt_6%7D530%7Btxt_7%7D396%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7Dimage011_1%7Btxt_9%7D.jpg%7Btxt_6%7D576%7Btxt_7%7D432%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=4&products_id%5B%5D=152%7Btxt_4%7Dimage011_1%7Btxt_9%7D.jpg%7Btxt_6%7D576%7Btxt_7%7D432%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7Dimage011_1%7Btxt_9%7D.jpg%7Btxt_6%7D576%7Btxt_7%7D432%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7Dimage011_1%7Btxt_9%7D.jpg%7Btxt_6%7D576%7Btxt_7%7D432%7Bsbd%7Dmovies%7Balb%7Dalbum06%7Bso%7D1&products_id%5B%5D=148%7Bmpa_user_id%7D142804%7Bsubdomain%7Dmovies&cart_quantity%5B%5D=1&products_id%5B%5D=898%7Bgc_img%7Dimage011.jpg%7Bgc_cap%7Dthis%2Blooks%2Bsufficiently%2Bcorny%7Bgc_frm%7DEaster%252F4_Green_Stripe%7Bgc_url%7D%7Bgc_w%7D640%7Bgc_h%7D480%7Bgc_alb%7Dalbum06%7Bgc_sbd%7Dmovies%7Bgc_id%7D628%7Bgc_tmp_img%7Dhd_card_92085054dd538a3f86cf36090a7de4ce.jpg&cart_quantity%5B%5D=2&products_id%5B%5D=172%7Bgc_img%7Dimage005_2.jpg%7Bgc_cap%7Dhurray%2Bfor%2Bboobies%2521%7Bgc_frm%7DEaster%252F5_Chicks%7Bgc_url%7D%7Bgc_w%7D640%7Bgc_h%7D480%7Bgc_alb%7Dalbum04%7Bgc_sbd%7Dmovies%7Bgc_id%7D629%7Bgc_tmp_img%7Dhd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg&cart_quantity%5B%5D=3
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:42:22 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:42:22 GMT; domain=myphotodevel.com
+Location: https://store.myphotodevel.com/checkout_payment.php
+Content-Length: 0
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_payment.php
+
+GET /checkout_payment.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/shopping_cart.php?action=add_product&card_choice=172{gc_img}image005_2.jpg{gc_cap}hurray+for+boobies%21{gc_frm}Easter%2F5_Chicks{gc_url}{gc_w}640{gc_h}480{gc_sbd}movies{gc_alb}album04{gc_sbd}movies{gc_id}629{gc_tmp_img}hd_card_19e65e7d88ba8764c5ddfe57380f4632.jpg&cart_quantity=3
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:42:23 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:42:23 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1023
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_payment.php
+
+POST /checkout_payment.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_payment.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 133
+action=process&goto=undefined&payment=894&cr_card_type=Visa&cc_number=&cc_expiration_month=01&cc_expiration_year=2005&cvv2=&cc_owner=
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:42:29 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:42:30 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_process.php
+
+POST /checkout_process.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_payment.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+goto=checkout_process&coupon_code=
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:42:35 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:42:35 GMT; domain=myphotodevel.com
+Location: https://store.myphotodevel.com/checkout_success.php?confirmation_code=000000&cm=64f4e008e4a7d2f049b45087c1a19b28&action=success&st=completed&err_code[]=&orders_id=341
+Content-Length: 0
+Keep-Alive: timeout=5, max=1014
+Connection: Keep-Alive
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_success.php?confirmation_code=000000&cm=64f4e008e4a7d2f049b45087c1a19b28&action=success&st=completed&err_code[]=&orders_id=341
+
+GET /checkout_success.php?confirmation_code=000000&cm=64f4e008e4a7d2f049b45087c1a19b28&action=success&st=completed&err_code[]=&orders_id=341 HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_payment.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com
+
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:42:37 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:42:37 GMT; domain=myphotodevel.com
+Set-Cookie: getvar=reloadPrem%3Dtrue; expires=Sun, 21-May-2006 14:42:38 GMT; domain=myphotodevel.com
+Set-Cookie: getvar=reloadPrem%3Dtrue; expires=Sun, 21-May-2006 14:42:38 GMT; domain=myphotodevel.com
+Location: checkout_success.php?orders_id=341&st=completed&orders_id=341&err_code=Array&confirmation_code=000000
+Keep-Alive: timeout=5, max=1013
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/checkout_success.php?orders_id=341&st=completed&orders_id=341&err_code=Array&confirmation_code=000000
+
+GET /checkout_success.php?orders_id=341&st=completed&orders_id=341&err_code=Array&confirmation_code=000000 HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_payment.php
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; getvar=reloadPrem%3Dtrue
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:42:38 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:42:39 GMT; domain=myphotodevel.com
+Set-Cookie: getvar=reloadPrem%3Dtrue; expires=Sun, 21-May-2006 14:42:39 GMT; domain=myphotodevel.com
+Set-Cookie: getvar=reloadPrem%3Dtrue; expires=Sun, 21-May-2006 14:42:39 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/login.php?logoff=true
+
+GET /login.php?logoff=true HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_success.php?orders_id=341&st=completed&orders_id=341&err_code=Array&confirmation_code=000000
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; getvar=reloadPrem%3Dtrue
+
+HTTP/1.x 302 Found
+Date: Thu, 18 May 2006 14:42:44 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Location: login.php
+Content-Length: 0
+Keep-Alive: timeout=5, max=1022
+Connection: Keep-Alive
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotodevel.com/login.php
+
+GET /login.php HTTP/1.1
+Host: store.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotodevel.com/checkout_success.php?orders_id=341&st=completed&orders_id=341&err_code=Array&confirmation_code=000000
+Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; ZDEDebuggerPresent=php,phtml,php3; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fmovies.myphotodevel.com; getvar=reloadPrem%3Dtrue
+
+HTTP/1.x 200 OK
+Date: Thu, 18 May 2006 14:42:44 GMT
+Server: Apache/2.0.55 (Unix) mod_ssl/2.0.55 OpenSSL/0.9.7e PHP/5.1.3
+X-Powered-By: PHP/5.1.3
+Set-Cookie: ZDEDebuggerPresent=php,phtml,php3; path=/
+Set-Cookie: osCsid=496bef42e19ee7ff90a94fa06ebdeef4; expires=Sat, 17-Jun-2006 14:42:45 GMT; domain=myphotodevel.com
+Set-Cookie: getvar=reloadPrem%3Dtrue; expires=Sun, 21-May-2006 14:42:45 GMT; domain=myphotodevel.com
+Keep-Alive: timeout=5, max=1023
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------

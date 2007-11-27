@@ -1,0 +1,1 @@
+export SCREENPID=`ps aux |grep 'SCREEN emacs' | grep -v grep  | awk '{print $2}'`

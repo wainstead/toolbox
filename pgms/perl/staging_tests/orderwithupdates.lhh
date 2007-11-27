@@ -1,0 +1,3324 @@
+http://swain.myphotostage.com/
+
+GET / HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fpage%3D1
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:31 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Monday, 26-Feb-07 16:04:32 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://anrtx.tacoda.net/rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.1066839529523037
+
+GET /rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.1066839529523037 HTTP/1.1
+Host: anrtx.tacoda.net
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/
+Cookie: TData=#|AMS_60138|AMS_60126; ANRTT=60138^1^1141573124|60126^1^1141350755; Anxd=x; TID=11vs2n915edl47; Tsid=0^1140968324^1140970124|12120^1140968324^1140970124
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:08:03 GMT
+Server: Apache/1.3.33 (Unix) mod_perl/1.29
+P3P: CP="IDC DSP COR DEVa TAIa OUR BUS UNI", CP="IDC DSP COR DEVa TAIa OUR BUS UNI"
+Set-Cookie: ANRTT=60138^1^1141574883|60126^1^1141350755; path=/; expires=Sun, 05-Mar-06 16:08:03 GMT; domain=.tacoda.net
+Set-Cookie: Tsid=0^1140968324^1140971883|12120^1140968324^1140971883; path=/; expires=Sun, 26-Feb-06 16:38:03 GMT; domain=.tacoda.net
+Set-Cookie: Anxd=x; expires=Mon, 27-Feb-06 16:08:03 GMT; path=/; domain=.tacoda.net
+Set-Cookie: TData=#|AMS_60138|AMS_60126; expires=Wed, 21-Feb-07 16:08:03 GMT; path=/; domain=.tacoda.net
+Content-Length: 608
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127516677_G.highlight.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127516677_G.highlight.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2cc7d1c-2774-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:36 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1023
+Etag: "2cc7d1c-2774-4401c373"
+----------------------------------------------------------
+http://swain.myphotostage.com/view_album.php?set_albumName=album12
+
+GET /view_album.php?set_albumName=album12 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:39 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Monday, 26-Feb-07 16:04:39 GMT; domain=myphotostage.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12; expires=Tuesday, 28-Mar-06 16:04:39 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://swain.myphotostage.com/js.php?s=xmlhttp.js
+
+GET /js.php?s=xmlhttp.js HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:40 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Mon, 26 Jul 1974 05:00:00 GMT
+Last-Modified: Sun, 26 Feb 2006 16:04:40 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://anrtx.tacoda.net/rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.79925081911554
+
+GET /rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.79925081911554 HTTP/1.1
+Host: anrtx.tacoda.net
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: TData=#|AMS_60138|AMS_60126; ANRTT=60138^1^1141574883|60126^1^1141350755; Anxd=x; TID=11vs2n915edl47; Tsid=0^1140968324^1140971883|12120^1140968324^1140971883
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:42 GMT
+Server: Apache/1.3.33 (Unix) mod_perl/1.29
+P3P: CP="IDC DSP COR DEVa TAIa OUR BUS UNI", CP="IDC DSP COR DEVa TAIa OUR BUS UNI"
+Set-Cookie: ANRTT=60138^1^1141574862|60126^1^1141350755; path=/; expires=Sun, 05-Mar-06 16:07:42 GMT; domain=.tacoda.net
+Set-Cookie: Tsid=0^1140968324^1140971862|12120^1140968324^1140971862; path=/; expires=Sun, 26-Feb-06 16:37:42 GMT; domain=.tacoda.net
+Set-Cookie: Anxd=x; expires=Mon, 27-Feb-06 16:07:42 GMT; path=/; domain=.tacoda.net
+Set-Cookie: TData=#|AMS_60138|AMS_60126; expires=Wed, 21-Feb-07 16:07:42 GMT; path=/; domain=.tacoda.net
+Content-Length: 608
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127516677_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127516677_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2cc7d1b-ed5-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1022
+Etag: "2cc7d1b-ed5-4401c373"
+----------------------------------------------------------
+http://swain.myphotostage.com/images/add-to-cart.gif
+
+GET /images/add-to-cart.gif HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Fri, 28 Oct 2005 13:02:58 GMT
+Etag: "332ba56-20e-43622182"
+Accept-Ranges: bytes
+Content-Length: 526
+Keep-Alive: timeout=15, max=1021
+Connection: Keep-Alive
+Content-Type: image/gif
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127619205_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127619205_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2cc8256-1025-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1021
+Etag: "2cc8256-1025-4401c373"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127569669_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127569669_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2d37229-ded-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1020
+Etag: "2d37229-ded-4401c373"
+----------------------------------------------------------
+http://swain.myphotostage.com/images/hide-column.gif
+
+GET /images/hide-column.gif HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Tue, 29 Nov 2005 17:51:59 GMT
+Etag: "332cd8c-116-438c953f"
+Accept-Ranges: bytes
+Content-Length: 278
+Keep-Alive: timeout=15, max=1020
+Connection: Keep-Alive
+Content-Type: image/gif
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127411589_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127411589_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2d38498-c2a-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1019
+Etag: "2d38498-c2a-4401c373"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127671173_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127671173_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2cc7d1e-a9f-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1023
+Etag: "2cc7d1e-a9f-4401c373"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811500677_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811500677_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+If-Modified-Since: Sun, 26 Feb 2006 15:07:24 GMT
+If-None-Match: "2d3849e-e6c-4401c42c"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1018
+Etag: "2d3849e-e6c-4401c42c"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811524357_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811524357_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+If-Modified-Since: Sun, 26 Feb 2006 15:07:24 GMT
+If-None-Match: "2d384a1-b08-4401c42c"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1022
+Etag: "2d384a1-b08-4401c42c"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811474309_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811474309_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+If-Modified-Since: Sun, 26 Feb 2006 15:07:24 GMT
+If-None-Match: "2d384a3-e63-4401c42c"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1017
+Etag: "2d384a3-e63-4401c42c"
+----------------------------------------------------------
+http://static.myphotostage.com/images/proceed-to-checkout.gif
+
+GET /images/proceed-to-checkout.gif HTTP/1.1
+Host: static.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Fri, 28 Oct 2005 13:02:58 GMT
+Etag: "332d621-d7e-43622182"
+Accept-Ranges: bytes
+Content-Length: 3454
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/gif
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811543301_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811543301_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+If-Modified-Since: Sun, 26 Feb 2006 15:07:24 GMT
+If-None-Match: "2d384a5-da8-4401c42c"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:04:42 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1021
+Etag: "2d384a5-da8-4401c42c"
+----------------------------------------------------------
+https://store.myphotoalbum.com/images/you-shopping-cart.gif
+
+GET /images/you-shopping-cart.gif HTTP/1.1
+Host: store.myphotoalbum.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=31r98f2n05lg3lpa5745m5om80; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Fview_photo.php%3Fset_albumName%3Dblizzard%26id%3DP2100002
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:09 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7c PHP/5.0.4
+Last-Modified: Fri, 19 Nov 2004 22:27:19 GMT
+Etag: "85b3b9-447-27e1fc0"
+Accept-Ranges: bytes
+Content-Length: 1095
+Connection: close
+Content-Type: image/gif
+----------------------------------------------------------
+https://store.myphotostage.com/shopping_cart.php?action=add_product
+
+POST /shopping_cart.php?action=add_product HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 728
+print_choices=114%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%3B%3B114%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%3B%3B114%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%3B%3B114%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%3B%3B114%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%3B%3B114%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%3B%3B114%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%3B%3B114%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%3B%3B114%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%3B%3B&subdomain=swain&album=album12
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:48 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:04:48 GMT; domain=myphotostage.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12; expires=Tue, 28 Mar 2006 16:04:48 GMT; domain=myphotostage.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127516677_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127516677_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 15:04:19 GMT
+Etag: "2cc7d1b-ed5-4401c373"
+Accept-Ranges: bytes
+Content-Length: 3797
+Keep-Alive: timeout=15, max=1017
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127671173_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127671173_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 15:04:19 GMT
+Etag: "2cc7d1e-a9f-4401c373"
+Accept-Ranges: bytes
+Content-Length: 2719
+Keep-Alive: timeout=15, max=1021
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127619205_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127619205_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 15:04:19 GMT
+Etag: "2cc8256-1025-4401c373"
+Accept-Ranges: bytes
+Content-Length: 4133
+Keep-Alive: timeout=15, max=1016
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+https://store.myphotostage.com/images/icons/warning.gif
+
+GET /images/icons/warning.gif HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/shopping_cart.php?action=add_product
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+Last-Modified: Tue, 12 Oct 2004 19:30:57 GMT
+Etag: "2564f79-c0-1dc95e40"
+Accept-Ranges: bytes
+Content-Length: 192
+Connection: close
+Content-Type: image/gif
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127569669_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127569669_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 15:04:19 GMT
+Etag: "2d37229-ded-4401c373"
+Accept-Ranges: bytes
+Content-Length: 3565
+Keep-Alive: timeout=15, max=1020
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127411589_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127411589_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 15:04:19 GMT
+Etag: "2d38498-c2a-4401c373"
+Accept-Ranges: bytes
+Content-Length: 3114
+Keep-Alive: timeout=15, max=1015
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811500677_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811500677_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 15:07:24 GMT
+Etag: "2d3849e-e6c-4401c42c"
+Accept-Ranges: bytes
+Content-Length: 3692
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811524357_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811524357_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 15:07:24 GMT
+Etag: "2d384a1-b08-4401c42c"
+Accept-Ranges: bytes
+Content-Length: 2824
+Keep-Alive: timeout=15, max=1014
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811474309_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811474309_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 15:07:24 GMT
+Etag: "2d384a3-e63-4401c42c"
+Accept-Ranges: bytes
+Content-Length: 3683
+Keep-Alive: timeout=15, max=1018
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811543301_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811543301_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:04:51 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 15:07:24 GMT
+Etag: "2d384a5-da8-4401c42c"
+Accept-Ranges: bytes
+Content-Length: 3496
+Keep-Alive: timeout=15, max=1013
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://swain.myphotostage.com/view_album.php?set_albumName=album12
+
+GET /view_album.php?set_albumName=album12 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:01 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Monday, 26-Feb-07 16:05:01 GMT; domain=myphotostage.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12; expires=Tuesday, 28-Mar-06 16:05:02 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://swain.myphotostage.com/js.php?s=xmlhttp.js
+
+GET /js.php?s=xmlhttp.js HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:03 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Mon, 26 Jul 1974 05:00:00 GMT
+Last-Modified: Sun, 26 Feb 2006 16:05:03 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://anrtx.tacoda.net/rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.6941831212449079
+
+GET /rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.6941831212449079 HTTP/1.1
+Host: anrtx.tacoda.net
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: TData=#|AMS_60138|AMS_60126; ANRTT=60138^1^1141574862|60126^1^1141350755; Anxd=x; TID=11vs2n915edl47; Tsid=0^1140968324^1140971862|12120^1140968324^1140971862
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:08:05 GMT
+Server: Apache/1.3.33 (Unix) mod_perl/1.29
+P3P: CP="IDC DSP COR DEVa TAIa OUR BUS UNI", CP="IDC DSP COR DEVa TAIa OUR BUS UNI"
+Set-Cookie: ANRTT=60138^1^1141574885|60126^1^1141350755; path=/; expires=Sun, 05-Mar-06 16:08:05 GMT; domain=.tacoda.net
+Set-Cookie: Tsid=0^1140968324^1140971885|12120^1140968324^1140971885; path=/; expires=Sun, 26-Feb-06 16:38:05 GMT; domain=.tacoda.net
+Set-Cookie: Anxd=x; expires=Mon, 27-Feb-06 16:08:05 GMT; path=/; domain=.tacoda.net
+Set-Cookie: TData=#|AMS_60138|AMS_60126; expires=Wed, 21-Feb-07 16:08:05 GMT; path=/; domain=.tacoda.net
+Content-Length: 608
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://swain.myphotostage.com/images/currently-in-cart.gif
+
+GET /images/currently-in-cart.gif HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:05 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 02 Nov 2005 16:41:24 GMT
+Etag: "332baaf-553-4368ec34"
+Accept-Ranges: bytes
+Content-Length: 1363
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Content-Type: image/gif
+----------------------------------------------------------
+http://swain.myphotostage.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album12
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum12
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:12 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Monday, 26-Feb-07 16:05:12 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1021
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://anrtx.tacoda.net/rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.030735628919912883
+
+GET /rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.030735628919912883 HTTP/1.1
+Host: anrtx.tacoda.net
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/albums.php
+Cookie: TData=#|AMS_60138|AMS_60126; ANRTT=60138^1^1141574885|60126^1^1141350755; Anxd=x; TID=11vs2n915edl47; Tsid=0^1140968324^1140971885|12120^1140968324^1140971885
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:09:34 GMT
+Server: Apache/1.3.33 (Unix) mod_perl/1.29
+P3P: CP="IDC DSP COR DEVa TAIa OUR BUS UNI", CP="IDC DSP COR DEVa TAIa OUR BUS UNI"
+Set-Cookie: ANRTT=60138^1^1141574974|60126^1^1141350755; path=/; expires=Sun, 05-Mar-06 16:09:34 GMT; domain=.tacoda.net
+Set-Cookie: Tsid=0^1140968324^1140971974|12120^1140968324^1140971974; path=/; expires=Sun, 26-Feb-06 16:39:34 GMT; domain=.tacoda.net
+Set-Cookie: Anxd=x; expires=Mon, 27-Feb-06 16:09:34 GMT; path=/; domain=.tacoda.net
+Set-Cookie: TData=#|AMS_60138|AMS_60126; expires=Wed, 21-Feb-07 16:09:34 GMT; path=/; domain=.tacoda.net
+Content-Length: 608
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://swain.myphotostage.com/view_album.php?set_albumName=album06
+
+GET /view_album.php?set_albumName=album06 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/albums.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:22 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Monday, 26-Feb-07 16:05:22 GMT; domain=myphotostage.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06; expires=Tuesday, 28-Mar-06 16:05:22 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1020
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://swain.myphotostage.com/js.php?s=xmlhttp.js
+
+GET /js.php?s=xmlhttp.js HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:23 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Mon, 26 Jul 1974 05:00:00 GMT
+Last-Modified: Sun, 26 Feb 2006 16:05:23 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://anrtx.tacoda.net/rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.7304902099952707
+
+GET /rtx/r.js?cmd=abn&si=12120&r=swain.myphotostage.com&v=3.1.0.26a&cb=0.7304902099952707 HTTP/1.1
+Host: anrtx.tacoda.net
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: TData=#|AMS_60138|AMS_60126; ANRTT=60138^1^1141574974|60126^1^1141350755; Anxd=x; TID=11vs2n915edl47; Tsid=0^1140968324^1140971974|12120^1140968324^1140971974
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:08:54 GMT
+Server: Apache/1.3.33 (Unix) mod_perl/1.29
+P3P: CP="IDC DSP COR DEVa TAIa OUR BUS UNI", CP="IDC DSP COR DEVa TAIa OUR BUS UNI"
+Set-Cookie: ANRTT=60138^1^1141574934|60126^1^1141350755; path=/; expires=Sun, 05-Mar-06 16:08:54 GMT; domain=.tacoda.net
+Set-Cookie: Tsid=0^1140968324^1140971934|12120^1140968324^1140971934; path=/; expires=Sun, 26-Feb-06 16:38:54 GMT; domain=.tacoda.net
+Set-Cookie: Anxd=x; expires=Mon, 27-Feb-06 16:08:54 GMT; path=/; domain=.tacoda.net
+Set-Cookie: TData=#|AMS_60138|AMS_60126; expires=Wed, 21-Feb-07 16:08:54 GMT; path=/; domain=.tacoda.net
+Content-Length: 608
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130012.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130012.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:26 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:40 GMT
+Etag: "2cc2067-183d-434d19d8"
+Accept-Ranges: bytes
+Content-Length: 6205
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130020.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130020.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:26 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:41 GMT
+Etag: "2cc206a-145b-434d19d9"
+Accept-Ranges: bytes
+Content-Length: 5211
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130009.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130009.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:26 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:42 GMT
+Etag: "2cc206c-b82-434d19da"
+Accept-Ranges: bytes
+Content-Length: 2946
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130008.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130008.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:26 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:43 GMT
+Etag: "2cc206e-b71-434d19db"
+Accept-Ranges: bytes
+Content-Length: 2929
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130011.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130011.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:26 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:44 GMT
+Etag: "2cc2070-c97-434d19dc"
+Accept-Ranges: bytes
+Content-Length: 3223
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130004.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130004.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:26 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:46 GMT
+Etag: "2cc2076-16ff-434d19de"
+Accept-Ranges: bytes
+Content-Length: 5887
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130010.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130010.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:26 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:47 GMT
+Etag: "2cc2078-cb5-434d19df"
+Accept-Ranges: bytes
+Content-Length: 3253
+Keep-Alive: timeout=15, max=1021
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130021.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130021.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:26 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:48 GMT
+Etag: "2cc207a-16d8-434d19e0"
+Accept-Ranges: bytes
+Content-Length: 5848
+Keep-Alive: timeout=15, max=1021
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130002.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130002.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:26 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:49 GMT
+Etag: "2cc207c-15e8-434d19e1"
+Accept-Ranges: bytes
+Content-Length: 5608
+Keep-Alive: timeout=15, max=1020
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130015.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130015.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:27 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:50 GMT
+Etag: "2cc207e-e44-434d19e2"
+Accept-Ranges: bytes
+Content-Length: 3652
+Keep-Alive: timeout=15, max=1020
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130014.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130014.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:27 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:51 GMT
+Etag: "2cc8ea3-d9d-434d19e3"
+Accept-Ranges: bytes
+Content-Length: 3485
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130006.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130006.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:27 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:51 GMT
+Etag: "2c616a2-1835-434d19e3"
+Accept-Ranges: bytes
+Content-Length: 6197
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P2130017.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P2130017.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:27 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 12 Oct 2005 14:12:52 GMT
+Etag: "2c61654-1144-434d19e4"
+Accept-Ranges: bytes
+Content-Length: 4420
+Keep-Alive: timeout=15, max=1018
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album06/P3190046.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album06/P3190046.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:27 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Fri, 11 Nov 2005 15:14:27 GMT
+Etag: "2cc2048-11f6-4374b553"
+Accept-Ranges: bytes
+Content-Length: 4598
+Keep-Alive: timeout=15, max=1017
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://swain.myphotostage.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 183
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+Pragma: no-cache
+Cache-Control: no-cache
+
+subdomain=swain&addalbum=0&album=album06&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.6]=114%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:32 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Keep-Alive: timeout=15, max=1018
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://swain.myphotostage.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 183
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+Pragma: no-cache
+Cache-Control: no-cache
+
+subdomain=swain&addalbum=0&album=album06&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.5]=114%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:35 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Keep-Alive: timeout=15, max=1017
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://swain.myphotostage.com/ajax.php?k=add_to_cart
+
+POST /ajax.php?k=add_to_cart HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: message/itree-rpc
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 183
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; TCT=1; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+Pragma: no-cache
+Cache-Control: no-cache
+
+subdomain=swain&addalbum=0&album=album06&dim_button_src=/images/currently-in-cart.gif&print_choices[print_choice.4]=114%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:36 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Keep-Alive: timeout=15, max=1016
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://gifts.myphotostage.com/gc_add_frame.php
+
+GET /gc_add_frame.php HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/view_album.php?set_albumName=album06
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:05:41 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://ads.fortunecity.com/RealMedia/ads/adstream_mjx.ads/myphoto/album/1403006291@Top?
+
+GET /RealMedia/ads/adstream_mjx.ads/myphoto/album/1403006291@Top? HTTP/1.1
+Host: ads.fortunecity.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php
+Cookie: RMID=436d62eb4401d810
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 15:59:22 GMT
+Server: Apache/1.3.27 (Unix) mod_oas/5.6
+P3P: policyref="http://www.fortunecity.com/w3c/p3p.xml",CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Content-Length: 406
+Expires: Tue, 25 Apr 1995 09:30:00 -0700
+Pragma: no-cache
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://ads.fortunecity.com/RealMedia/ads/adstream_jx.ads/myphoto/gifts@x96!x96
+
+GET /RealMedia/ads/adstream_jx.ads/myphoto/gifts@x96!x96 HTTP/1.1
+Host: ads.fortunecity.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php
+Cookie: RMID=436d62eb4401d810
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 15:59:24 GMT
+Server: Apache/1.3.27 (Unix) mod_oas/5.6
+P3P: policyref="http://www.fortunecity.com/w3c/p3p.xml",CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Content-Length: 314
+Expires: Tue, 25 Apr 1995 09:30:00 -0700
+Pragma: no-cache
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+
+GET /gc_add_frame.php?gc_id=&gc_frm_cat=Baby HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:01 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://ads.fortunecity.com/RealMedia/ads/adstream_mjx.ads/myphoto/album/1373720235@Top?
+
+GET /RealMedia/ads/adstream_mjx.ads/myphoto/album/1373720235@Top? HTTP/1.1
+Host: ads.fortunecity.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: RMID=436d62eb4401d810
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 15:59:44 GMT
+Server: Apache/1.3.27 (Unix) mod_oas/5.6
+P3P: policyref="http://www.fortunecity.com/w3c/p3p.xml",CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Content-Length: 406
+Expires: Tue, 25 Apr 1995 09:30:00 -0700
+Pragma: no-cache
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://ads.fortunecity.com/RealMedia/ads/adstream_jx.ads/myphoto/gifts@x96!x96
+
+GET /RealMedia/ads/adstream_jx.ads/myphoto/gifts@x96!x96 HTTP/1.1
+Host: ads.fortunecity.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: RMID=436d62eb4401d810
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 15:59:46 GMT
+Server: Apache/1.3.27 (Unix) mod_oas/5.6
+P3P: policyref="http://www.fortunecity.com/w3c/p3p.xml",CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Content-Length: 305
+Expires: Tue, 25 Apr 1995 09:30:00 -0700
+Pragma: no-cache
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Title.gif
+
+GET /cards/Baby/4_Title.gif HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:06 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Mon, 29 Aug 2005 21:26:31 GMT
+Etag: "253e487-688-43137d87"
+Accept-Ranges: bytes
+Content-Length: 1672
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Content-Type: image/gif
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_A_Star_Is_Born/Ht.png
+
+GET /cards/Baby/4_A_Star_Is_Born/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:06 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 19 Oct 2005 18:10:00 GMT
+Etag: "3543b21-4ce8-43568bf8"
+Accept-Ranges: bytes
+Content-Length: 19688
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Announcing_B_Bear/Ht.png
+
+GET /cards/Baby/4_Announcing_B_Bear/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:06 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 19 Oct 2005 18:13:08 GMT
+Etag: "3d84321-49b2-43568cb4"
+Accept-Ranges: bytes
+Content-Length: 18866
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Announcing_B_Dots/Ht.png
+
+GET /cards/Baby/4_Announcing_B_Dots/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 31 Aug 2005 23:07:49 GMT
+Etag: "dc0326-44a4-43163845"
+Accept-Ranges: bytes
+Content-Length: 17572
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Announcing_G_Bear/Ht.png
+
+GET /cards/Baby/4_Announcing_G_Bear/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 19 Oct 2005 18:50:39 GMT
+Etag: "67befe-45f7-4356957f"
+Accept-Ranges: bytes
+Content-Length: 17911
+Keep-Alive: timeout=15, max=1021
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Announcing_G_Dots/Ht.png
+
+GET /cards/Baby/4_Announcing_G_Dots/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 07 Sep 2005 16:24:19 GMT
+Etag: "2d36662-468d-431f1433"
+Accept-Ranges: bytes
+Content-Length: 18061
+Keep-Alive: timeout=15, max=1020
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Baby_Christmas/Ht.png
+
+GET /cards/Baby/4_Baby_Christmas/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Tue, 22 Nov 2005 21:29:50 GMT
+Etag: "14dd0cb-5aba-43838dce"
+Accept-Ranges: bytes
+Content-Length: 23226
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Blue_Stripe/Ht.png
+
+GET /cards/Baby/4_Blue_Stripe/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Tue, 27 Dec 2005 17:55:27 GMT
+Etag: "11868c9-1f68-43b1800f"
+Accept-Ranges: bytes
+Content-Length: 8040
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Fragile/Ht.png
+
+GET /cards/Baby/4_Fragile/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 19 Oct 2005 19:33:16 GMT
+Etag: "df904f-3baf-43569f7c"
+Accept-Ranges: bytes
+Content-Length: 15279
+Keep-Alive: timeout=15, max=1021
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Just_Arr_Shoe/Ht.png
+
+GET /cards/Baby/4_Just_Arr_Shoe/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 19 Oct 2005 19:47:59 GMT
+Etag: "1540cc1-46af-4356a2ef"
+Accept-Ranges: bytes
+Content-Length: 18095
+Keep-Alive: timeout=15, max=1018
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Meet_New_Member/Ht.png
+
+GET /cards/Baby/4_Meet_New_Member/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 31 Aug 2005 23:13:56 GMT
+Etag: "36278b8-3ee4-431639b4"
+Accept-Ranges: bytes
+Content-Length: 16100
+Keep-Alive: timeout=15, max=1020
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Meet_Our_Little_B/Ht.png
+
+GET /cards/Baby/4_Meet_Our_Little_B/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 19 Oct 2005 20:44:08 GMT
+Etag: "1dc5852-51ad-4356b018"
+Accept-Ranges: bytes
+Content-Length: 20909
+Keep-Alive: timeout=15, max=1017
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Meet_Our_Little_G/Ht.png
+
+GET /cards/Baby/4_Meet_Our_Little_G/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:07 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 19 Oct 2005 20:44:23 GMT
+Etag: "25646be-4aec-4356b027"
+Accept-Ranges: bytes
+Content-Length: 19180
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/4_Pink_Stripe/Ht.png
+
+GET /cards/Baby/4_Pink_Stripe/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:08 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Tue, 27 Dec 2005 17:55:40 GMT
+Etag: "18362de-1ca7-43b1801c"
+Accept-Ranges: bytes
+Content-Length: 7335
+Keep-Alive: timeout=15, max=1018
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/5_Title.gif
+
+GET /cards/Baby/5_Title.gif HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:08 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Mon, 29 Aug 2005 21:26:31 GMT
+Etag: "253e488-676-43137d87"
+Accept-Ranges: bytes
+Content-Length: 1654
+Keep-Alive: timeout=15, max=1016
+Connection: Keep-Alive
+Content-Type: image/gif
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/5_Announcing_Boy/Ht.png
+
+GET /cards/Baby/5_Announcing_Boy/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:08 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Tue, 06 Sep 2005 21:54:11 GMT
+Etag: "3d54ee8-7edb-431e1003"
+Accept-Ranges: bytes
+Content-Length: 32475
+Keep-Alive: timeout=15, max=1017
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/5_Announcing_Girl/Ht.png
+
+GET /cards/Baby/5_Announcing_Girl/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:08 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Tue, 06 Sep 2005 21:32:15 GMT
+Etag: "4dc4d3-7573-431e0adf"
+Accept-Ranges: bytes
+Content-Length: 30067
+Keep-Alive: timeout=15, max=1015
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/5_Blue_Plaid/Ht.png
+
+GET /cards/Baby/5_Blue_Plaid/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:08 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Tue, 27 Dec 2005 18:15:39 GMT
+Etag: "2351b35-5607-43b184cb"
+Accept-Ranges: bytes
+Content-Length: 22023
+Keep-Alive: timeout=15, max=1016
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/5_Just_Arr_Shoe/Ht.png
+
+GET /cards/Baby/5_Just_Arr_Shoe/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:08 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Wed, 05 Oct 2005 14:38:44 GMT
+Etag: "1db9599-62b3-4343e574"
+Accept-Ranges: bytes
+Content-Length: 25267
+Keep-Alive: timeout=15, max=1014
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/cards/Baby/5_Pink_Plaid/Ht.png
+
+GET /cards/Baby/5_Pink_Plaid/Ht.png HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; TCT=1; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:06:08 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Tue, 27 Dec 2005 18:15:52 GMT
+Etag: "2b69f00-4a30-43b184d8"
+Accept-Ranges: bytes
+Content-Length: 18992
+Keep-Alive: timeout=15, max=1015
+Connection: Keep-Alive
+Content-Type: image/png
+----------------------------------------------------------
+http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&pid=171&gc_w=640&gc_h=480&gc_frm=Baby/5_Announcing_Girl
+
+GET /gc_add_frame.php?gc_id=&pid=171&gc_w=640&gc_h=480&gc_frm=Baby/5_Announcing_Girl HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 302 Found
+Date: Sun, 26 Feb 2006 16:07:14 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: http://swain.myphotostage.com/select-photo.php?gc_id=13987
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://swain.myphotostage.com/select-photo.php?gc_id=13987
+
+GET /select-photo.php?gc_id=13987 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_frame.php?gc_id=&gc_frm_cat=Baby
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:23 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Monday, 26-Feb-07 16:07:23 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+
+GET /select-photo.php?gc_id=13987&set_albumName=album02 HTTP/1.1
+Host: swain.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=a052447f0dea259d70015d48ef37be82; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:53 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com; expires=Monday, 26-Feb-07 16:07:53 GMT; domain=myphotostage.com
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3130049.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3130049.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:29:38 GMT
+Etag: "24f5360-11ef-4255a642"
+Accept-Ranges: bytes
+Content-Length: 4591
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3130048.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3130048.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:29:35 GMT
+Etag: "247b29a-fbe-4255a63f"
+Accept-Ranges: bytes
+Content-Length: 4030
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3130054.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3130054.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:29:43 GMT
+Etag: "24f5364-10cf-4255a647"
+Accept-Ranges: bytes
+Content-Length: 4303
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3130055.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3130055.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:29:45 GMT
+Etag: "24f5368-ec0-4255a649"
+Accept-Ranges: bytes
+Content-Length: 3776
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3130060.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3130060.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:29:46 GMT
+Etag: "24f536b-106d-4255a64a"
+Accept-Ranges: bytes
+Content-Length: 4205
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3120010.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3120010.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:32:52 GMT
+Etag: "24f536e-a79-4255a704"
+Accept-Ranges: bytes
+Content-Length: 2681
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3120011.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3120011.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:32:54 GMT
+Etag: "24f5372-a14-4255a706"
+Accept-Ranges: bytes
+Content-Length: 2580
+Keep-Alive: timeout=15, max=1021
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3120012.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3120012.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:32:55 GMT
+Etag: "24f5376-b19-4255a707"
+Accept-Ranges: bytes
+Content-Length: 2841
+Keep-Alive: timeout=15, max=1021
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3120013.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3120013.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:32:57 GMT
+Etag: "24f5379-9d6-4255a709"
+Accept-Ranges: bytes
+Content-Length: 2518
+Keep-Alive: timeout=15, max=1020
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3120014.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3120014.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:32:58 GMT
+Etag: "24f537c-874-4255a70a"
+Accept-Ranges: bytes
+Content-Length: 2164
+Keep-Alive: timeout=15, max=1020
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3130058.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3130058.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:42:01 GMT
+Etag: "24f5384-1491-4255a929"
+Accept-Ranges: bytes
+Content-Length: 5265
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3130059.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3130059.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:42:03 GMT
+Etag: "24f5387-14b7-4255a92b"
+Accept-Ranges: bytes
+Content-Length: 5303
+Keep-Alive: timeout=15, max=1019
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/P3130060_001.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/P3130060_001.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:42:05 GMT
+Etag: "24f538a-106d-4255a92d"
+Accept-Ranges: bytes
+Content-Length: 4205
+Keep-Alive: timeout=15, max=1018
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album02/destroy.thumb.jpeg
+
+GET /s/sw/swa/swai/swain/swain/albums/album02/destroy.thumb.jpeg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:07:56 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Thu, 07 Apr 2005 21:42:43 GMT
+Etag: "24f538d-1395-4255a953"
+Accept-Ranges: bytes
+Content-Length: 5013
+Keep-Alive: timeout=15, max=1018
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotostage.com/gc_add_message.php?gc_alb=album02&gc_sbd=swain&gc_id=13987&gc_img=P3130060_001.jpg
+
+GET /gc_add_message.php?gc_alb=album02&gc_sbd=swain&gc_id=13987&gc_img=P3130060_001.jpg HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://swain.myphotostage.com/select-photo.php?gc_id=13987&set_albumName=album02
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:08:11 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://ads.fortunecity.com/RealMedia/ads/adstream_mjx.ads/myphoto/album/1892958959@Top?
+
+GET /RealMedia/ads/adstream_mjx.ads/myphoto/album/1892958959@Top? HTTP/1.1
+Host: ads.fortunecity.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_message.php?gc_alb=album02&gc_sbd=swain&gc_id=13987&gc_img=P3130060_001.jpg
+Cookie: RMID=436d62eb4401d810
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:01:54 GMT
+Server: Apache/1.3.27 (Unix) mod_oas/5.6
+P3P: policyref="http://www.fortunecity.com/w3c/p3p.xml",CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Content-Length: 405
+Expires: Tue, 25 Apr 1995 09:30:00 -0700
+Pragma: no-cache
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://ads.fortunecity.com/RealMedia/ads/adstream_jx.ads/myphoto/gifts@x96!x96
+
+GET /RealMedia/ads/adstream_jx.ads/myphoto/gifts@x96!x96 HTTP/1.1
+Host: ads.fortunecity.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_message.php?gc_alb=album02&gc_sbd=swain&gc_id=13987&gc_img=P3130060_001.jpg
+Cookie: RMID=436d62eb4401d810
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:01:55 GMT
+Server: Apache/1.3.27 (Unix) mod_oas/5.6
+P3P: policyref="http://www.fortunecity.com/w3c/p3p.xml",CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Content-Length: 314
+Expires: Tue, 25 Apr 1995 09:30:00 -0700
+Pragma: no-cache
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://gifts.myphotostage.com/tmp/hd_card_e59165b16fdba0d48ff1b60b426efc17.jpg?1140970093
+
+GET /tmp/hd_card_e59165b16fdba0d48ff1b60b426efc17.jpg?1140970093 HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_message.php?gc_alb=album02&gc_sbd=swain&gc_id=13987&gc_img=P3130060_001.jpg
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:08:16 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 16:08:13 GMT
+Etag: "688500-84bd-4401d26d"
+Accept-Ranges: bytes
+Content-Length: 33981
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotostage.com/gc_add_message.php?gc_alb=album02&gc_sbd=swain&gc_id=13987&gc_img=P3130060_001.jpg
+
+POST /gc_add_message.php?gc_alb=album02&gc_sbd=swain&gc_id=13987&gc_img=P3130060_001.jpg HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_message.php?gc_alb=album02&gc_sbd=swain&gc_id=13987&gc_img=P3130060_001.jpg
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 141
+preview_name=hd_card_tmp_e59165b16fdba0d48ff1b60b426efc17.png&gc_id=13987&action=update&x=75&y=22&gc_cap=it%27s+cold+out+there%21&counter=100
+HTTP/1.x 302 Found
+Date: Sun, 26 Feb 2006 16:23:57 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: gc_quantities.php?gc_id=13987
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://gifts.myphotostage.com/gc_quantities.php?gc_id=13987
+
+GET /gc_quantities.php?gc_id=13987 HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_add_message.php?gc_alb=album02&gc_sbd=swain&gc_id=13987&gc_img=P3130060_001.jpg
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:23:58 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://ads.fortunecity.com/RealMedia/ads/adstream_mjx.ads/myphoto/album/1024012770@Top?
+
+GET /RealMedia/ads/adstream_mjx.ads/myphoto/album/1024012770@Top? HTTP/1.1
+Host: ads.fortunecity.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_quantities.php?gc_id=13987
+Cookie: RMID=436d62eb4401d810
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:17:41 GMT
+Server: Apache/1.3.27 (Unix) mod_oas/5.6
+P3P: policyref="http://www.fortunecity.com/w3c/p3p.xml",CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Content-Length: 403
+Expires: Tue, 25 Apr 1995 09:30:00 -0700
+Pragma: no-cache
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://ads.fortunecity.com/RealMedia/ads/adstream_jx.ads/myphoto/gifts@x96!x96
+
+GET /RealMedia/ads/adstream_jx.ads/myphoto/gifts@x96!x96 HTTP/1.1
+Host: ads.fortunecity.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_quantities.php?gc_id=13987
+Cookie: RMID=436d62eb4401d810
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:17:42 GMT
+Server: Apache/1.3.27 (Unix) mod_oas/5.6
+P3P: policyref="http://www.fortunecity.com/w3c/p3p.xml",CP="NOI DSP COR DEVa TAIa OUR BUS UNI"
+Content-Length: 313
+Expires: Tue, 25 Apr 1995 09:30:00 -0700
+Pragma: no-cache
+Connection: close
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://gifts.myphotostage.com/tmp/hd_card_c46b467142b43971dfa7cde83be79077.jpg?1140971040
+
+GET /tmp/hd_card_c46b467142b43971dfa7cde83be79077.jpg?1140971040 HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_quantities.php?gc_id=13987
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:24:03 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 16:24:00 GMT
+Etag: "688505-864e-4401d620"
+Accept-Ranges: bytes
+Content-Length: 34382
+Keep-Alive: timeout=15, max=1022
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://gifts.myphotostage.com/gc_quantities.php?gc_id=13987
+
+POST /gc_quantities.php?gc_id=13987 HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_quantities.php?gc_id=13987
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 88
+x=103&y=23&gc_card_tmp_img=tmp%2Fhd_card_c46b467142b43971dfa7cde83be79077.jpg&quantity=5
+HTTP/1.x 302 Found
+Date: Sun, 26 Feb 2006 16:24:21 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+X-Powered-By: PHP/4.4.1
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: https://store.myphotostage.com/shopping_cart.php?action=add_product&card_choice=171{gc_img}P3130060_001.jpg{gc_cap}it%27s+cold+out+there%21{gc_frm}Baby%2F5_Announcing_Girl{gc_url}{gc_w}640{gc_h}480{gc_sbd}swain{gc_alb}album02{gc_sbd}swain{gc_id}13987{gc_tmp_img}hd_card_c46b467142b43971dfa7cde83be79077.jpg&cart_quantity=5
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+https://store.myphotostage.com/shopping_cart.php?action=add_product&card_choice=171{gc_img}P3130060_001.jpg{gc_cap}it%27s+cold+out+there%21{gc_frm}Baby%2F5_Announcing_Girl{gc_url}{gc_w}640{gc_h}480{gc_sbd}swain{gc_alb}album02{gc_sbd}swain{gc_id}13987{gc_tmp_img}hd_card_c46b467142b43971dfa7cde83be79077.jpg&cart_quantity=5
+
+GET /shopping_cart.php?action=add_product&card_choice=171{gc_img}P3130060_001.jpg{gc_cap}it%27s+cold+out+there%21{gc_frm}Baby%2F5_Announcing_Girl{gc_url}{gc_w}640{gc_h}480{gc_sbd}swain{gc_alb}album02{gc_sbd}swain{gc_id}13987{gc_tmp_img}hd_card_c46b467142b43971dfa7cde83be79077.jpg&cart_quantity=5 HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://gifts.myphotostage.com/gc_quantities.php?gc_id=13987
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:24:23 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:24:23 GMT; domain=myphotostage.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127516677_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127516677_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2cc7d1b-ed5-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:24:28 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1023
+Etag: "2cc7d1b-ed5-4401c373"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127619205_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127619205_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2cc8256-1025-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:24:29 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1022
+Etag: "2cc8256-1025-4401c373"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127569669_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127569669_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2d37229-ded-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:24:29 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1021
+Etag: "2d37229-ded-4401c373"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127411589_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127411589_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2d38498-c2a-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:24:29 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1020
+Etag: "2d38498-c2a-4401c373"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811500677_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811500677_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:07:24 GMT
+If-None-Match: "2d3849e-e6c-4401c42c"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:24:29 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1019
+Etag: "2d3849e-e6c-4401c42c"
+----------------------------------------------------------
+http://gifts.myphotostage.com/tmp/hd_card_c46b467142b43971dfa7cde83be79077.jpg?1140971064
+
+GET /tmp/hd_card_c46b467142b43971dfa7cde83be79077.jpg?1140971064 HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:24:29 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 16:24:00 GMT
+Etag: "688505-864e-4401d620"
+Accept-Ranges: bytes
+Content-Length: 34382
+Keep-Alive: timeout=15, max=1023
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811524357_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811524357_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:07:24 GMT
+If-None-Match: "2d384a1-b08-4401c42c"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:24:29 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1018
+Etag: "2d384a1-b08-4401c42c"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811474309_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811474309_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:07:24 GMT
+If-None-Match: "2d384a3-e63-4401c42c"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:24:29 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1017
+Etag: "2d384a3-e63-4401c42c"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/54811543301_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/54811543301_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:07:24 GMT
+If-None-Match: "2d384a5-da8-4401c42c"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:24:29 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1016
+Etag: "2d384a5-da8-4401c42c"
+----------------------------------------------------------
+http://images.myphotostage.com/s/sw/swa/swai/swain/swain/albums/album12/60127671173_G.thumb.jpg
+
+GET /s/sw/swa/swai/swain/swain/albums/album12/60127671173_G.thumb.jpg HTTP/1.1
+Host: images.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+If-Modified-Since: Sun, 26 Feb 2006 15:04:19 GMT
+If-None-Match: "2cc7d1e-a9f-4401c373"
+
+HTTP/1.x 304 Not Modified
+Date: Sun, 26 Feb 2006 16:24:29 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Connection: Keep-Alive, Keep-Alive
+Keep-Alive: timeout=15, max=1023
+Etag: "2cc7d1e-a9f-4401c373"
+----------------------------------------------------------
+https://store.myphotostage.com/shopping_cart.php
+
+POST /shopping_cart.php HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/shopping_cart.php?action=add_product&card_choice=171{gc_img}P3130060_001.jpg{gc_cap}it%27s+cold+out+there%21{gc_frm}Baby%2F5_Announcing_Girl{gc_url}{gc_w}640{gc_h}480{gc_sbd}swain{gc_alb}album02{gc_sbd}swain{gc_id}13987{gc_tmp_img}hd_card_c46b467142b43971dfa7cde83be79077.jpg&cart_quantity=5
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 7564
+has_changed=1&action=update_cart&goto=&globalQty=1&no_size_boxes=12&globalSize=114&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D12&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D12&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D12&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D12&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D11&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D11&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D11&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D11&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D10&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D10&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D10&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D10&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=1&products_id%5B%5D=118%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=2&products_id%5B%5D=118%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=3&products_id%5B%5D=118%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&products_id%5B%5D=171%7Bgc_img%7DP3130060_001.jpg%7Bgc_cap%7Dit%2527s%2Bcold%2Bout%2Bthere%2521%7Bgc_frm%7DBaby%252F5_Announcing_Girl%7Bgc_url%7D%7Bgc_w%7D640%7Bgc_h%7D480%7Bgc_alb%7Dalbum02%7Bgc_sbd%7Dswain%7Bgc_id%7D13987%7Bgc_tmp_img%7Dhd_card_c46b467142b43971dfa7cde83be79077.jpg&cart_quantity%5B%5D=5
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:28:08 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:28:08 GMT; domain=myphotostage.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+http://gifts.myphotostage.com/tmp/hd_card_c46b467142b43971dfa7cde83be79077.jpg?1140971289
+
+GET /tmp/hd_card_c46b467142b43971dfa7cde83be79077.jpg?1140971289 HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:28:11 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 16:24:00 GMT
+Etag: "688505-864e-4401d620"
+Accept-Ranges: bytes
+Content-Length: 34382
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+https://store.myphotostage.com/shopping_cart.php
+
+POST /shopping_cart.php HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/shopping_cart.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 7940
+has_changed=0&action=update_cart&goto=&globalQty=1&no_size_boxes=12&globalSize=114&cart_delete%5B%5D=%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D12&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D12&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D12&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D12&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127516677_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D12&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D11&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D11&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D11&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D11&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D10&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D10&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D10&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D10&cart_delete%5B%5D=%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127569669_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_delete%5B%5D=%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127411589_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=1&products_id%5B%5D=118%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=2&products_id%5B%5D=118%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=3&products_id%5B%5D=118%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&products_id%5B%5D=171%7Bgc_img%7DP3130060_001.jpg%7Bgc_cap%7Dit%2527s%2Bcold%2Bout%2Bthere%2521%7Bgc_frm%7DBaby%252F5_Announcing_Girl%7Bgc_url%7D%7Bgc_w%7D640%7Bgc_h%7D480%7Bgc_alb%7Dalbum02%7Bgc_sbd%7Dswain%7Bgc_id%7D13987%7Bgc_tmp_img%7Dhd_card_c46b467142b43971dfa7cde83be79077.jpg&cart_quantity%5B%5D=5
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:28:44 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:28:44 GMT; domain=myphotostage.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+http://gifts.myphotostage.com/tmp/hd_card_c46b467142b43971dfa7cde83be79077.jpg?1140971325
+
+GET /tmp/hd_card_c46b467142b43971dfa7cde83be79077.jpg?1140971325 HTTP/1.1
+Host: gifts.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; PHPSESSID=4951d346a228debd1b8c81835c7c4633; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:28:47 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.4.1
+Last-Modified: Sun, 26 Feb 2006 16:24:00 GMT
+Etag: "688505-864e-4401d620"
+Accept-Ranges: bytes
+Content-Length: 34382
+Keep-Alive: timeout=15, max=1024
+Connection: Keep-Alive
+Content-Type: image/jpeg
+----------------------------------------------------------
+https://store.myphotostage.com/shopping_cart.php
+
+POST /shopping_cart.php HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/shopping_cart.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 5760
+has_changed=0&action=update_cart&goto=login.php&globalQty=1&no_size_boxes=9&globalSize=114&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127671173_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D9&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D60127619205_G%7Btxt_9%7D.jpg%7Btxt_6%7D640%7Btxt_7%7D480%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D8&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811500677_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D7&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811524357_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D6&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811474309_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D5&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=1&products_id%5B%5D=152%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=118%7Btxt_4%7D54811543301_G%7Btxt_9%7D.jpg%7Btxt_6%7D480%7Btxt_7%7D640%7Bsbd%7Dswain%7Balb%7Dalbum12%7Bso%7D4&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=1&products_id%5B%5D=118%7Btxt_4%7DP2130004%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D3&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=2&products_id%5B%5D=118%7Btxt_4%7DP2130011%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D2&cart_quantity%5B%5D=0&products_id%5B%5D=114%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=152%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=0&products_id%5B%5D=115%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&cart_quantity%5B%5D=3&products_id%5B%5D=118%7Btxt_4%7DP2130008%7Btxt_9%7D.jpg%7Btxt_6%7D2560%7Btxt_7%7D1920%7Bsbd%7Dswain%7Balb%7Dalbum06%7Bso%7D1&products_id%5B%5D=171%7Bgc_img%7DP3130060_001.jpg%7Bgc_cap%7Dit%2527s%2Bcold%2Bout%2Bthere%2521%7Bgc_frm%7DBaby%252F5_Announcing_Girl%7Bgc_url%7D%7Bgc_w%7D640%7Bgc_h%7D480%7Bgc_alb%7Dalbum02%7Bgc_sbd%7Dswain%7Bgc_id%7D13987%7Bgc_tmp_img%7Dhd_card_c46b467142b43971dfa7cde83be79077.jpg&cart_quantity%5B%5D=5
+HTTP/1.x 302 Found
+Date: Sun, 26 Feb 2006 16:29:00 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:29:00 GMT; domain=myphotostage.com
+Location: https://store.myphotostage.com/login.php
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+https://store.myphotostage.com/login.php
+
+GET /login.php HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/shopping_cart.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:29:01 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:29:01 GMT; domain=myphotostage.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+https://store.myphotostage.com/login.php
+
+POST /login.php HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/login.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 99
+action=login&goto=&email_address=swain%40corp.fortunecity.com&new_cust=no&password=112233&x=163&y=4
+HTTP/1.x 302 Found
+Date: Sun, 26 Feb 2006 16:29:08 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:29:09 GMT; domain=myphotostage.com
+Set-Cookie: mpa_fqdn=deleted; expires=Sat, 26 Feb 2005 16:29:08 GMT; domain=myphotostage.com
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06; expires=Tue, 28 Mar 2006 16:29:09 GMT; domain=myphotostage.com
+Location: https://store.myphotostage.com/checkout_payment.php
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+https://store.myphotostage.com/checkout_payment.php
+
+GET /checkout_payment.php HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/login.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:29:10 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:29:10 GMT; domain=myphotostage.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+https://store.myphotostage.com/checkout_payment.php
+
+POST /checkout_payment.php HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/checkout_payment.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 133
+action=process&goto=undefined&payment=130&cr_card_type=Visa&cc_number=&cc_expiration_month=01&cc_expiration_year=2005&cvv2=&cc_owner=
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:29:28 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:29:28 GMT; domain=myphotostage.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+https://store.myphotostage.com/checkout_process.php
+
+POST /checkout_process.php HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/checkout_payment.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+goto=checkout_process&coupon_code=
+HTTP/1.x 302 Found
+Date: Sun, 26 Feb 2006 16:29:37 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:29:37 GMT; domain=myphotostage.com
+Location: https://store.myphotostage.com/checkout_success.php?confirmation_code=000000&cm=750e29817a5d37b0f05ccb0a16d3c297&action=success&st=completed&err_code[]=&orders_id=8188
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+https://store.myphotostage.com/checkout_success.php?confirmation_code=000000&cm=750e29817a5d37b0f05ccb0a16d3c297&action=success&st=completed&err_code[]=&orders_id=8188
+
+GET /checkout_success.php?confirmation_code=000000&cm=750e29817a5d37b0f05ccb0a16d3c297&action=success&st=completed&err_code[]=&orders_id=8188 HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/checkout_payment.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 302 Found
+Date: Sun, 26 Feb 2006 16:29:38 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:29:38 GMT; domain=myphotostage.com
+Location: checkout_success.php?orders_id=8188&st=completed&orders_id=8188&err_code=Array&confirmation_code=000000
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+https://store.myphotostage.com/checkout_success.php?orders_id=8188&st=completed&orders_id=8188&err_code=Array&confirmation_code=000000
+
+GET /checkout_success.php?orders_id=8188&st=completed&orders_id=8188&err_code=Array&confirmation_code=000000 HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/checkout_payment.php
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:29:39 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:29:39 GMT; domain=myphotostage.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------
+https://store.myphotostage.com/login.php?logoff=true
+
+GET /login.php?logoff=true HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/checkout_success.php?orders_id=8188&st=completed&orders_id=8188&err_code=Array&confirmation_code=000000
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 302 Found
+Date: Sun, 26 Feb 2006 16:29:46 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Location: login.php
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=ISO-8859-1
+X-Pad: avoid browser bug
+----------------------------------------------------------
+https://store.myphotostage.com/login.php
+
+GET /login.php HTTP/1.1
+Host: store.myphotostage.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050920 Firefox/1.0.7
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://store.myphotostage.com/checkout_success.php?orders_id=8188&st=completed&orders_id=8188&err_code=Array&confirmation_code=000000
+Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; T3CK=TANT%3D1%7CTANO%3D0; mpa_fqdn=http%3A%2F%2Fswain.myphotostage.com%2Fview_album.php%3Fset_albumName%3Dalbum06
+
+HTTP/1.x 200 OK
+Date: Sun, 26 Feb 2006 16:29:47 GMT
+Server: Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e PHP/5.0.4
+X-Powered-By: PHP/5.0.4
+Set-Cookie: osCsid=263b8682ac06be420de6be4bbfdc71c5; expires=Tue, 28 Mar 2006 16:29:47 GMT; domain=myphotostage.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+----------------------------------------------------------

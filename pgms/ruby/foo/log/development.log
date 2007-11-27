@@ -1,0 +1,442 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-07-30 14:40:42) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/foo" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-07-30 14:40:48) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/foocontroller" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-07-30 14:41:00) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/Foo" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-07-30 14:41:13) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/FooController" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing InfoController#properties (for 127.0.0.1 at 2007-07-30 14:41:21) [GET]
+  Session ID: e22c1723942969c1ac2c3316f14b5e73
+  Parameters: {"action"=>"properties", "controller"=>"rails/info"}
+  [4;36;1mSQL (0.000202)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Table 'foo_development.schema_info' doesn't exist: SELECT version FROM schema_info[0m
+Completed in 0.39627 (2 reqs/sec) | Rendering: 0.00072 (0%) | DB: 0.00020 (0%) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.000158)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001520)[0m   [0mCREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.025127)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000273)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateFoos (1)
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'foos' already exists: CREATE TABLE foos (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000290)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFoos (1)
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000292)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFoos (1)
+  [4;36;1mSQL (0.014271)[0m   [0;1mCREATE TABLE foos (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `mystring` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002524)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000397)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000458)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001419)[0m   [0;1mSHOW FIELDS FROM foos[0m
+  [4;35;1mSQL (0.000870)[0m   [0mSHOW KEYS FROM foos[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFoo Columns (0.001435)[0m   [0mSHOW FIELDS FROM foos[0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000254)[0m   [0mINSERT INTO foos (`mystring`) VALUES('this is my string')[0m
+  [4;36;1mSQL (0.000541)[0m   [0;1mCOMMIT[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-07-30 14:44:39) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/foo" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing FooController#index (for 127.0.0.1 at 2007-07-30 14:46:22) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {"action"=>"index", "controller"=>"foo"}
+Rendering foo/index
+Completed in 0.00152 (657 reqs/sec) | Rendering: 0.00073 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/foo]
+
+
+Processing FooController#index (for 127.0.0.1 at 2007-07-30 14:47:09) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {"action"=>"index", "controller"=>"foo"}
+Rendering foo/index
+Completed in 0.00130 (769 reqs/sec) | Rendering: 0.00059 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/foo]
+
+
+Processing BarController#index (for 127.0.0.1 at 2007-07-30 14:50:47) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {"action"=>"index", "controller"=>"bar"}
+  [4;36;1mSQL (0.000176)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBar Columns (0.000000)[0m   [0mMysql::Error: #42S02Table 'foo_development.bars' doesn't exist: SHOW FIELDS FROM bars[0m
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: #42S02Table 'foo_development.bars' doesn't exist: SHOW FIELDS FROM bars):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract_adapter.rb:128:in `log'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:243:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:348:in `columns'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:763:in `columns'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:771:in `columns_hash'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1023:in `find_one'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1014:in `find_from_ids'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:419:in `find'
+    .//app/controllers/bar_controller.rb:4:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing BarController#index (for 127.0.0.1 at 2007-07-30 14:52:08) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {"action"=>"index", "controller"=>"bar"}
+  [4;36;1mSQL (0.000175)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBar Columns (0.001506)[0m   [0mSHOW FIELDS FROM foos[0m
+  [4;36;1mBar Load (0.000385)[0m   [0;1mSELECT * FROM foos WHERE (foos.`id` = 1) [0m
+Rendering bar/index
+Completed in 0.03738 (26 reqs/sec) | Rendering: 0.00094 (2%) | DB: 0.00207 (5%) | 200 OK [http://localhost/bar]
+
+
+Processing BarController#index (for 127.0.0.1 at 2007-07-30 14:52:24) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {"action"=>"index", "controller"=>"bar"}
+  [4;36;1mSQL (0.000196)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBar Columns (0.000000)[0m   [0mMysql::Error: #42S02Table 'foo_development.bars' doesn't exist: SHOW FIELDS FROM bars[0m
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: #42S02Table 'foo_development.bars' doesn't exist: SHOW FIELDS FROM bars):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract_adapter.rb:128:in `log'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:243:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:348:in `columns'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:763:in `columns'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:771:in `columns_hash'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1023:in `find_one'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1014:in `find_from_ids'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:419:in `find'
+    .//app/controllers/bar_controller.rb:4:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing BarController#index (for 127.0.0.1 at 2007-07-30 14:52:33) [GET]
+  Session ID: c488920bc27c54eea5196e45cd151fc2
+  Parameters: {"action"=>"index", "controller"=>"bar"}
+  [4;36;1mBar Columns (0.001579)[0m   [0;1mSHOW FIELDS FROM foos[0m
+  [4;35;1mBar Load (0.000390)[0m   [0mSELECT * FROM foos WHERE (foos.`id` = 1) [0m
+Rendering bar/index
+Completed in 0.00723 (138 reqs/sec) | Rendering: 0.00092 (12%) | DB: 0.00216 (29%) | 200 OK [http://localhost/bar]

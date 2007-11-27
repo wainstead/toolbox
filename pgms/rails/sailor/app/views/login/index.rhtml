@@ -1,0 +1,17 @@
+<h1>index page for the login controller (hi mom!)</h1>
+
+Let's see if you're logged in:
+
+<% if session[:user_id] %>
+<% @user = User.find(session[:user_id]) %>
+<%= @user.name %> is logged in.
+<p>
+<%= link_to "logout", :controller => "login", :action => "logout" %><br>
+<% else %>
+nope!
+<p>
+<%= link_to "login",  :controller => "login", :action => "login" %><br>
+<% end %>
+
+
+

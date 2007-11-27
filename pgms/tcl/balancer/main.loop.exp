@@ -1,0 +1,68 @@
+#!/usr/bin/expect
+
+proc speak msg {
+    puts "me ==> $msg"
+}
+
+proc update_load_balancer {} {
+    speak "I updated the balancer"
+}
+
+set int_timeout 30
+
+spawn ./responder.pl
+
+while {1} {
+
+    send "boy howdy!\r"
+    expect {
+        "ydwoh" update_load_balancer
+    }
+
+    speak "Entering interact mode. Timeout is $int_timeout."
+    speak "You are now typing directly to the load balancer."
+    speak "If you type nothing, in $int_timeout seconds"
+    speak "I will loop again and test the balancer."
+    speak "Type ~exit to quit."
+    speak "Type '~interp' to drop to the Expect interpreter; 'return' to get out again."
+    
+    interact {
+
+        # this command will terminate the spawned process, and exit
+        # this script
+
+        "~exit" {
+            speak "exiting on your command"
+            send -i $spawn_id "exit\r"
+            expect -i $spawn_id "Exiting" { speak "Responder done" }
+            exit
+        }
+
+        # this drops us to the expect prompt. type 'return' to leave
+        # the interpreter and return to this interact block.
+        "~interp" interpreter
+
+        # unused escape sequence
+        "~~" { speak "You typed the escape command (which does nothing)" }
+
+
+
+        # the return statement exits this 'interact' block, and we
+        # loop again in our while{} block
+        timeout $int_timeout {
+            speak "'interact' timed out. Looping again."
+            return
+        }
+
+
+        # dash-oh is a special arg to 'interact'; all subsequent
+        # statements watch the output of the spawned process, not the
+        # user.
+        -o
+        eof { 
+            speak "The spawned process exited. Now I'm exiting." 
+            break
+        }
+    }
+}
+speak "Script done."

@@ -1,0 +1,26 @@
+#!/usr/bin/expect --
+
+puts "Hello, sailor!"
+set timeout 5
+
+# by default, expect interacts with the user if no process was
+# spawned; that is, $spawn_id is $user_spawn_id, so to speak.
+
+expect {
+    -i timeout {
+        puts "Timed out, sucka!"
+        exp_continue
+    }
+    -re "foo" {
+        puts "bar!"
+        exp_continue
+    }
+    -gl "hooha" {
+        puts "hooha'd!"
+        # since we don't exit or exp_continue, this block serves as a 'break' statement
+    }
+    -re "exit" {
+        puts "Exiting..."
+        exit 0
+    }
+}

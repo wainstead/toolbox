@@ -1,0 +1,33 @@
+#!/usr/bin/expect
+
+
+proc remove_spid { spid } {
+    global spawn_ids
+    puts "removing $spid from spawn_ids"
+    set index [lsearch $spawn_ids $spid]
+    set spawn_ids [lreplace $spawn_ids $index $index]
+    if { [llength $spawn_ids] == 0 } {
+        puts "All work done. Exiting."
+        exit
+    } else {
+        puts "still got [llength $spawn_ids] left to do"
+    }
+}
+
+
+set spawn_ids ""
+
+spawn talker.pl 3 foo
+lappend spawn_ids $spawn_id
+spawn talker.pl 4 blee
+lappend spawn_ids $spawn_id
+spawn talker.pl 2 blammo
+lappend spawn_ids $spawn_id
+
+expect {
+    -i spawn_ids
+    eof {
+        remove_spid $expect_out(spawn_id)
+        exp_continue
+    }
+}

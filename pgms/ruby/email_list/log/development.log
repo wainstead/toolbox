@@ -1,0 +1,117 @@
+  [4;36;1mSQL (0.000153)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.018329)[0m   [0mCREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000391)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreatePeople (1)
+  [4;35;1mSQL (0.019252)[0m   [0mCREATE TABLE people (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT NULL, `first_name` varchar(255) DEFAULT NULL, `last_name` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.015559)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000343)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000485)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001584)[0m   [0mSHOW FIELDS FROM people[0m
+  [4;36;1mSQL (0.000791)[0m   [0;1mSHOW KEYS FROM people[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (0.001620)[0m   [0mSHOW FIELDS FROM people[0m
+  [4;36;1mSQL (0.000177)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000271)[0m   [0mINSERT INTO people (`first_name`, `last_name`, `email`) VALUES('Bruce', 'Tate', 'bruce.tate@nospan.j2life.com')[0m
+  [4;36;1mSQL (0.000558)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000174)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.017520)[0m   [0;1mINSERT INTO people (`first_name`, `last_name`, `email`) VALUES('Tom', NULL, NULL)[0m
+  [4;35;1mSQL (0.000486)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000363)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateAddresses (2)
+  [4;35;1mSQL (0.050369)[0m   [0mCREATE TABLE addresses (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int DEFAULT NULL, `address` varchar(255) DEFAULT NULL, `city` varchar(255) DEFAULT NULL, `state` varchar(255) DEFAULT NULL, `zip` int DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000308)[0m   [0;1mUPDATE schema_info SET version = 2[0m
+  [4;35;1mSQL (0.000369)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.025694)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001795)[0m   [0mSHOW FIELDS FROM addresses[0m
+  [4;36;1mSQL (0.000817)[0m   [0;1mSHOW KEYS FROM addresses[0m
+  [4;35;1mSQL (0.001792)[0m   [0mSHOW FIELDS FROM people[0m
+  [4;36;1mSQL (0.000807)[0m   [0;1mSHOW KEYS FROM people[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (0.001575)[0m   [0mSHOW FIELDS FROM people[0m
+  [4;36;1mAddress Columns (0.002211)[0m   [0;1mSHOW FIELDS FROM addresses[0m
+  [4;35;1mSQL (0.000180)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000255)[0m   [0;1mINSERT INTO people (`first_name`, `last_name`, `email`) VALUES(NULL, NULL, 'swain@panix.com')[0m
+  [4;35;1mSQL (0.000369)[0m   [0mINSERT INTO addresses (`city`, `zip`, `address`, `person_id`, `state`) VALUES(NULL, NULL, NULL, 3, NULL)[0m
+  [4;36;1mSQL (0.000398)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.000565)[0m   [0mSELECT * FROM people WHERE (people.`email` = 'swain@panix.com') LIMIT 1[0m
+DEPRECATION WARNING: find_all is deprecated and will be removed from Rails 2.0 (use find(:all, ...))  See http://www.rubyonrails.org/deprecation for details. (called from irb_binding at (irb):9)
+  [4;36;1mAddress Load (0.012304)[0m   [0;1mSELECT * FROM addresses [0m
+  [4;35;1mPerson Load (0.000557)[0m   [0mSELECT * FROM people WHERE (people.`email` = 'swain@panix.com') LIMIT 1[0m
+  [4;36;1mPerson Load (0.000556)[0m   [0;1mSELECT * FROM people WHERE (people.`email` = 'swain@panix.com') LIMIT 1[0m
+  [4;35;1mAddress Load (0.000645)[0m   [0mSELECT * FROM addresses WHERE (addresses.person_id = 3) [0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000224)[0m   [0mINSERT INTO addresses (`city`, `zip`, `address`, `person_id`, `state`) VALUES('Parma', NULL, NULL, 3, NULL)[0m
+  [4;36;1mSQL (0.015062)[0m   [0;1mCOMMIT[0m
+DEPRECATION WARNING: find_all is deprecated and will be removed from Rails 2.0 (use find(:all, ...))  See http://www.rubyonrails.org/deprecation for details. (called from irb_binding at (irb):19)
+  [4;35;1mAddress Load (0.000620)[0m   [0mSELECT * FROM addresses [0m
+  [4;36;1mSQL (0.000179)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Update (0.078732)[0m   [0mUPDATE people SET `last_name` = NULL, `first_name` = NULL, `email` = 'swain@panix.com' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.000174)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.000565)[0m   [0mSELECT * FROM people WHERE (people.`email` = 'swain@panix.com') LIMIT 1[0m
+  [4;36;1mSQL (0.046580)[0m   [0;1mSELECT count(*) AS count_all FROM addresses WHERE (addresses.person_id = 3) [0m
+  [4;35;1mPerson Load (0.000558)[0m   [0mSELECT * FROM people WHERE (people.`email` = 'swain@panix.com') LIMIT 1[0m
+  [4;36;1mSQL (0.000419)[0m   [0;1mSELECT count(*) AS count_all FROM addresses WHERE (addresses.person_id = 3) [0m
+  [4;35;1mAddress Load (0.021967)[0m   [0mSELECT * FROM addresses WHERE (addresses.person_id = 3) AND (addresses.`city` = 'Parma') LIMIT 1[0m
+  [4;36;1mAddress Load (0.000661)[0m   [0;1mSELECT * FROM addresses WHERE (addresses.person_id = 3) AND (addresses.`city` = 'Parma') LIMIT 1[0m
+  [4;35;1mAddress Load (0.000656)[0m   [0mSELECT * FROM addresses WHERE (addresses.person_id = 3) AND (addresses.`city` = 'Hooverville') LIMIT 1[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-07-24 17:43:27) [GET]
+  Session ID: e7c765a62bebc0421b3fe4f8797c1eb7
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/\\" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing InfoController#properties (for 127.0.0.1 at 2007-07-24 17:43:41) [GET]
+  Session ID: 05493cc50f1ee683f8105552f372c45f
+  Parameters: {"action"=>"properties", "controller"=>"rails/info"}
+  [4;36;1mSQL (0.000185)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.020032)[0m   [0mSELECT version FROM schema_info[0m
+Completed in 0.13901 (7 reqs/sec) | Rendering: 0.00075 (0%) | DB: 0.02022 (14%) | 200 OK [http://localhost/rails/info/properties]
