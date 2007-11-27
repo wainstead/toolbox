@@ -1,6 +1,9 @@
-!$Id: LOG.txt,v 1.115 2007/11/27 22:14:20 swain Exp $
+!$Id: LOG.txt,v 1.1 2007/11/27 22:54:23 swain Exp $
 
 # $Log: LOG.txt,v $
+# Revision 1.1  2007/11/27 22:54:23  swain
+# Initial revision
+#
 # Revision 1.115  2007/11/27 22:14:20  swain
 # updating. ing. ing.
 #
@@ -17300,7 +17303,7 @@ gallery/css/logo.gif.
 /*                                                                                                              
  * This is just program logic to include the Gallery login page. SW.                                            
  *                                                                                                              
- * $Id: LOG.txt,v 1.115 2007/11/27 22:14:20 swain Exp $                                                         
+ * $Id: LOG.txt,v 1.1 2007/11/27 22:54:23 swain Exp $                                                         
  */
 ?>
 <?php
@@ -19054,6 +19057,9 @@ Got a lot of code work in today. Solved the hardlink/symlink problem
 
 	From: 	  swain@ampira.com
 	Subject: 	Adding $Log: LOG.txt,v $
+	Subject: 	Adding Revision 1.1  2007/11/27 22:54:23  swain
+	Subject: 	Adding Initial revision
+	Subject: 	Adding
 	Subject: 	Adding Revision 1.115  2007/11/27 22:14:20  swain
 	Subject: 	Adding updating. ing. ing.
 	Subject: 	Adding
@@ -19169,6 +19175,9 @@ Got a lot of code work in today. Solved the hardlink/symlink problem
 	To: 	  dev@ampira.com
 
 $Log: LOG.txt,v $
+Revision 1.1  2007/11/27 22:54:23  swain
+Initial revision
+
 Revision 1.115  2007/11/27 22:14:20  swain
 updating. ing. ing.
 
@@ -19286,6 +19295,9 @@ https://cvs.corp.fortunecity.com/cgi-bin/viewcvs.cgi/ampiradev/fcsignupwizard/sr
 
 Today I've been doing a lot of cleanup of the MPA Gallery code base,
 $Log: LOG.txt,v $
+Revision 1.1  2007/11/27 22:54:23  swain
+Initial revision
+
 Revision 1.115  2007/11/27 22:14:20  swain
 updating. ing. ing.
 
@@ -26946,7 +26958,7 @@ fresh:
 3. In the database: insert/update the tables like so:
 
     -- define the Attic Key product.
-    -- $Id: LOG.txt,v 1.115 2007/11/27 22:14:20 swain Exp $
+    -- $Id: LOG.txt,v 1.1 2007/11/27 22:54:23 swain Exp $
     DELETE FROM osc_products               WHERE products_id=2000;
     DELETE FROM osc_products_description   WHERE products_id=2000;
     DELETE FROM osc_products_to_categories WHERE products_id=2000;
@@ -30963,6 +30975,9 @@ whole thing in here (indented for practical reasons):
     
     
     # $Log: LOG.txt,v $
+    # Revision 1.1  2007/11/27 22:54:23  swain
+    # Initial revision
+    #
     # Revision 1.115  2007/11/27 22:14:20  swain
     # updating. ing. ing.
     #
@@ -35250,3 +35265,8 @@ aside). So here's one reason why we occasionally see this bug.
 
 svn checkout https://svn.corp.fortunecity.com/myphotopro/trunk
 
+
+svn import . https://svn.corp.fortunecity.com/swain/trunk
+svn import . https://svn.corp.fortunecity.com/swainlisp/trunk
+
+This file now under Subversion. gosh. wow. golly gee willickers.
