@@ -2,7 +2,6 @@
 
 # continuously run ps -auxw until we are told to exit; write sort -u
 # of the results to stdout.
-# $Id: contps.pl,v 1.2 2003/02/20 18:49:48 swain Exp $
 
 use strict;
 
