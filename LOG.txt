@@ -35270,3 +35270,24 @@ svn import . https://svn.corp.fortunecity.com/swain/trunk
 svn import . https://svn.corp.fortunecity.com/swainlisp/trunk
 
 This file now under Subversion. gosh. wow. golly gee willickers.
+
+
+#########################################################################
+071130 Fri 30 Nov 2007 10:13:27 AM EST
+
+Out sick yesterday.
+
+Thinking about vetting of gifts: the ideal thing would be to make use
+of the ofs_orders_parts_status table. Add a new column `vetted`, which
+defaults to zero. If this OrderShippingPart needs vetting, AND
+ofs_orders_parts_status.vetted == 0, then change the status to 'held'.
+
+Now, does this all fit together? Moving something to 'held' only
+occurs when it's time to ship the thing to the printer -- step 7.
+
+(Aside: two refactoring projects: update all the order status numbers,
+and rename the columns in ofs_orders_parts_status).
+
+The goal here is to let Jessy look at held orders and vet the
+individual order shipping parts. The OFS is going to have to pull out
+all orders of status 7 and state 'ready'.
