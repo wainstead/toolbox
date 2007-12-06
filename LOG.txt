@@ -35162,10 +35162,10 @@ cd /mnt/fast/vol01/a/au/aut/auto/autot
 Running lhhreplay here is not strictly necesary, and in my first run,
 it failed due to css files 404'ing. There's the problem of lhhreplay's
 input files going stale, which they do. So that step is probably good
-for nothing. It would be the subsequent lhhreplay scrips I write to
+for nothing. It would be the subsequent lhhreplay scripts I write to
 test all of Gallery's functionality that would be more useful anyway.
 
-Oh, my delete_autouser() is defind in
+Oh, my delete_autouser() is defined in
 ./cvs/pgms/sql/delete_autouser.sql:
 
 swain@torque:~/cvs/pgms/sql$ cat ./delete_autouser.sql
@@ -35291,3 +35291,182 @@ and rename the columns in ofs_orders_parts_status).
 The goal here is to let Jessy look at held orders and vet the
 individual order shipping parts. The OFS is going to have to pull out
 all orders of status 7 and state 'ready'.
+
+
+
+#########################################################################
+071203 Mon 03 Dec 2007 05:29:11 PM EST
+
+Victory, as I got Rails to send an email from kristalle to ... well,
+kristalle, but via ims-1. Huzzah. So that means I got the
+configuration right and all.
+
+I should propagate the config to dev too. It might differ
+slightly. Meanwhile: did all kinds of piecemeal work today. I debugged
+the crontab on mdb-2 (my fault), did various assists with the OFS,
+pushed Ferry to get the OFS to talk to the Pixami server (no dice yet,
+says the low level routing is a problem), tinkered with eye.fi quite a
+lot, finished reading the SVN book, and also finished up my Japan
+uploads.
+
+
+
+
+#########################################################################
+071204 Tue 04 Dec 2007 11:21:57 AM EST
+
+The cron job for sending emails should be this simple:
+
+/Users/swain/Sites/projects/sendmyemail/script/runner 'PhotogMailer.deliver_lead()'
+
+Runner only needs something like a line or two of Ruby. Originally I
+did it this way, in the sendmyemail project I created:
+
+kristalle:/home/swain/public_html/projects/sendmyemail swain$ script/runner 'PhotogMailer.create_send_emails()'
+Date: Tue, 4 Dec 2007 10:45:25 -0500
+From: leads@myphotopro.com
+To: swain@corp.fortunecity.com
+Subject: Hello, photographer!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear so and so, 
+
+You have a lead!
+
+You will be charged at the end of the month.
+---
+
+
+And earlier than that:
+
+kristalle:/home/swain/public_html/projects/sendmyemail swain$ script/runner 'email = PhotogMailer.create_lead(); puts email.encoded;'
+Date: Tue, 4 Dec 2007 10:43:17 -0500
+From: leads@myphotopro.com
+To: swain@corp.fortunecity.com
+Subject: Hello, photographer!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear so and so, 
+
+You have a lead!
+
+You will be charged at the end of the month.
+---
+
+
+So all I need is a method on the ActionMailer subclass called 'leads()'
+which will be called this way: 'deliver_leads()'. It uses reflection
+to do the correct thing. I had trouble when I defined a method
+send_emails on the ActionMailer subclass and tried to call it
+directly; kept getting 'method not found' errors. I guessed correctly
+that all methods have to be called create_xxx or deliver_xxx.
+
+How to run stuff from a script:
+
+#!/usr/bin/env /Users/swain/Sites/projects/myphotopro/trunk/script/runner
+@users = User.find_all_by_emails_sent(0)
+puts @users[5].photographers
+
+
+Found this via script/runner -h. Output:
+
+
+kristalle:/home/swain/public_html/projects/myphotopro/trunk swain$ script/foo --environment=swain
+#<Photographer:0x2589628>
+#<Photographer:0x2589600>
+#<Photographer:0x25895d8>
+
+I'm stuck on the architecture question: where does the behavior go for
+sending the emails? Seems like the User class would get
+it... something like:
+
+@users = User.find_all_emails_sent(0)
+foreach @users |u|
+    u.send_thankyou_email
+    foreach u.photographers |p|
+       p.send_lead_email
+    end
+    update the row for the user (u.emails_sent= Time.now; u.save)
+end
+
+
+
+#########################################################################
+071206 Thu 06 Dec 2007 08:39:34 AM EST
+
+Yesterday I spent considerable time trying to solve a bug where, for
+anonymous users, the credit card number disappeared. It was clear from
+the log in /tmp on the osc servers that the store submitted the charge
+to Authorizenet with no credit card number.. about 8 people in the
+last 42 days met this bug. Couldn't reproduce it, couldn't find a
+cause; so I put in what I hope will be a solution. The anonymous user
+class will send the user to the payment selection page if there's no
+credit card number.
+
+Also, had to remove the PixamiEscape class calls in the OFS so '$da'
+would stop showing up in addresses. Sadly I wasted nearly a day
+writing that stuff per Tom at Pixami, and Woody Yu said to remove
+it. That's live. Have to scrap that class and stuff.
+
+Long fun manager's meeting too. We're all ebulliant because MPA is
+doing so well last month and this:
+
+--------------------------------------------------
+Total Transactions: date, # of transactions, money
+
+DATE     TRANSACTIONS    $$$$$
+12-01       121        3,127.94
+12-02       220        6,528.94
+12-03       176        4,774.17
+12-04       178        4,392.29
+12-05       181        4,745.84
+
+------------------------------------
+Total Transactions, total this month
+
+TRANSACTIONS    $$$$$
+876         23,569.18
+
+---------------------------------------------------------------------
+Total Transactions by day, last month: date, # of transactions, money
+
+DATE     TRANSACTIONS    $$$$$
+11-01       219        2,653.66
+11-02       182        2,234.71
+11-03       148        2,336.27
+11-04       195        2,937.80
+11-05       155        2,600.39
+11-06       150        2,544.76
+11-07       121        2,246.91
+11-08       110        1,852.57
+11-09       101        1,909.05
+11-10        91        1,505.73
+11-11       116        2,532.66
+11-12       151        2,440.61
+11-13       118        1,895.74
+11-14       140        2,748.41
+11-15        95        1,933.42
+11-16       104        1,673.50
+11-17       106        1,715.96
+11-18       145        2,612.31
+11-19       126        2,119.30
+11-20       109        1,834.09
+11-21       103        1,767.57
+11-22        82        1,785.35
+11-23       104        2,556.72
+11-24       114        2,018.74
+11-25       158        3,595.24
+11-26       181        3,262.58
+11-27       143        2,591.24
+11-28       155        4,026.08
+11-29       142        4,049.30
+11-30       102        2,799.88
+
+-----------------------------
+Total transactions last month
+
+TRANSACTIONS    $$$$$
+3975        72,780.55
+
