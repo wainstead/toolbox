@@ -30395,7 +30395,7 @@ more prints. No problems.
 
 Well I solved my own problem by adding on to the front of the dumped file:
 SET FOREIGN_KEY_CHECKS = 0;
-and on to it's end
+and on to its end
 SET FOREIGN_KEY_CHECKS = 1;
 
 
@@ -35470,3 +35470,174 @@ Total transactions last month
 TRANSACTIONS    $$$$$
 3975        72,780.55
 
+---
+
+Some notes about MPP:
+
+I do the development on my Mac. Jessy controls the deployment on
+torque, in /opt/mpa/custom-sites/jhanley/. She did all her work under
+CVS, and since then Chris moved the project to SVN because Capastrano
+requires it.
+
+Meanwhile: I do my development with Mongrel, which comes with Rails;
+Chris chose fastcgi to deploy MPP under Apache. Makes sense.
+
+For credit card stuff, I created the project mpp_credit_card because I
+couldn't work out how to do database migrations with two
+databases. This gives us a separate credit card admin interface,
+however, on a different port, so that may or may not be a win.
+
+The credit card class has a symbol passed into the connect method
+specifying the database info to use from database.yml. Unfortunately I
+don't know how to make this conditional based on the server we're
+running on (my mac versus torque, that is).
+
+---
+
+Been fighting Rails, trying to get advertiser.address to save
+correctly. It won't. Puzzling. But I think the advertiser's address
+was just the billing address. The photographer has an address, and I
+didn't notice this at the outset.
+
+
+
+
+
+#########################################################################
+071207 Fri 07 Dec 2007 10:33:35 AM EST
+
+The Advertiser class has a guaranteed unique email address; this is
+the key to identifying them.
+
+Very quiet day here: Jessy and Chris are both off.
+
+I made good progress today: I spent time on the admin interface. I got
+reacquainted with how to do authentication: the forgotten part was the
+before_filter business, which is like Emacs's (defadvice) feature
+(before advice, after advice). Now all the admin controllers are
+password protected and it should be easy enough to do an account
+controller for the advertisers, so they can manage their accounts.
+
+And, the account controller is created; I think basic authentication
+is now working for advertisers. The methods/views all have to be
+fleshed out which will be a considerable piece of work.
+
+
+
+
+
+#########################################################################
+071210 Mon 10 Dec 2007 10:43:52 AM EST
+
+Fernando estimates 3-4 hours a day pushing through book and calendar
+orders. Ridiculous.
+
+Had a huge child porn site over the weekend. I think the copy failed
+when it was being removed; the browser returned successfully, but most
+of the full sized images are missing. Today I cannot upload a second
+batch to the NCMEC; probably their server failed again.
+
+Solved my login problems with the Account controller; I can see now
+where I have to put stuff into the 'details' and 'photography' methods
+(CRUD ops on the advertiser and photographer stuff).
+
+
+
+
+#########################################################################
+071211 Tue 11 Dec 2007 09:25:57 AM EST
+
+Installed MacPorts and RMagick last night. Demo'd what I have for
+Peter, who seemed pleased (and pleased he got the thank you email from
+MPP).
+
+Met with Chris and Fernando in an attempt to get Ops moving forward
+on:
+
+* getting the OFS to talk to the Pixami server
+* getting MPP working on torque and staging
+
+End result is: intbuilder.mpa.com should be working today (by
+lunchtime, even) so we can at least let the OFS do its thing. MPP by
+COB tomorrow, but he was complaining about how much else he has to do
+(data center move plan, etc).
+
+We also talked about memcached, and it looks like there are no
+roadblocks to working on that; so I need to draw up a plan for that.
+
+
+
+
+#########################################################################
+071212 Wed 12 Dec 2007 11:56:40 AM EST
+
+Rolled out the store this morning: calendar and book covers now show
+in the shopping cart and confirmation pages. Very yay.
+
+Running Veracity for Chris on mdb-3. Haven't done a whole lot today;
+tracked down how to modify the OFS so we send the right mailing code
+to Rastar. We were marking all orders domestic. Morning meeting was
+longish. Whipped up a little CGI to list the day's orders.
+
+We are having another huge day in sales. A "25% off everything" offer
+went out.
+
+We also rolled out a fix for the OFS... actually two, in the last two
+days. One: we can talk to the Pixami server now via
+intbuilder.myphotoalbum.com; and I left out the line that adds the
+order shipping part to the ofs_shipping_part_status table. Fernando
+fixed that.
+
+Reread most of my log from the beginning of the year, hoping to find
+notes on my work with memcached. I can't believe I didn't preserve
+that anywhere.
+
+Found it! Found my hacks for memcached on spork!
+
+*** AlbumDB.php	04 Dec 2007 13:51:53 -0500	1.9
+--- AlbumDB.php	12 Dec 2007 17:38:45 -0500	
+***************
+*** 42,57 ****
+  		$changed = 0;
+  		while ($i < sizeof($this->albumOrder)) {
+  			$name = $this->albumOrder[$i];
+! 		       	if (ereg("^\.", $name)) { // how did this get here??
+  				array_splice($this->albumOrder, $i, 1);
+  				$changed = 1;
+  			} else if (fs_is_dir("$dir/$name")) {
+! 				$album = new Album;
+! 				if ($album->load($name,$loadphotos)) {
+! 					array_push($this->albumList, $album);
+! 				} else if ($name != 'CVS') {
+! 					array_push($this->brokenAlbums, $name);
+! 				}
+  				$i++;
+  			} else {
+  				/* Couldn't find the album -- delete it from order */
+--- 42,67 ----
+  		$changed = 0;
+  		while ($i < sizeof($this->albumOrder)) {
+  			$name = $this->albumOrder[$i];
+!             if (ereg("^\.", $name)) { // how did this get here??
+  				array_splice($this->albumOrder, $i, 1);
+  				$changed = 1;
+  			} else if (fs_is_dir("$dir/$name")) {
+!                 global $memcache;
+!                 if ( ! $album = $memcache->get("$dir/$name") ) {
+!                     
+!                     $album = new Album;
+!                     if ($album->load($name,$loadphotos)) {
+!                         array_push($this->albumList, $album);
+!                         $memcache->set("$dir/$name", $album, false, 0);
+!                         stderr("Added $dir/$name to cache");
+!                     } else if ($name != 'CVS') {
+!                         array_push($this->brokenAlbums, $name);
+!                     }
+!                 } else {
+!                     array_push($this->albumList, $album);
+!                     stderr("swain/$dir/$name loaded from cache!");
+!                 }
+! 
+  				$i++;
+  			} else {
+  				/* Couldn't find the album -- delete it from order */
