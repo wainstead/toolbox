@@ -1,6 +1,8 @@
 -- set prem_packages_history.expire_date for the users expire2, expire15, expire30 and expired.
 -- 7/3/7: added expire3years
--- $Id: expire.sql,v 1.2 2007/07/03 15:54:11 swain Exp $
+-- 12/19/07: added update to last_purchase_date
+update users set last_purchase_date= now() where username in  ('expire2','expire15','expire30','expired');
+
 update prem_packages_history set expire_date = date_add(date(now()), interval 14 day) where customer_id = (select userid from users where username='expire15');
 update prem_packages_history set expire_date = date_add(date(now()), interval 1 day) where customer_id = (select userid from users where username='expire2');
 update prem_packages_history set expire_date = date_add(date(now()), interval 29 day) where customer_id = (select userid from users where username='expire30');
