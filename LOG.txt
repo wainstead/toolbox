@@ -35592,52 +35592,368 @@ Reread most of my log from the beginning of the year, hoping to find
 notes on my work with memcached. I can't believe I didn't preserve
 that anywhere.
 
-Found it! Found my hacks for memcached on spork!
+Found it! Found my hacks for memcached on spork! In a nutshell, I
+created a function in util.php called ultrafoo(). It took an album
+name and returned the instantiated album, checking to see if it was in
+memcached or not.
 
-*** AlbumDB.php	04 Dec 2007 13:51:53 -0500	1.9
---- AlbumDB.php	12 Dec 2007 17:38:45 -0500	
-***************
-*** 42,57 ****
-  		$changed = 0;
-  		while ($i < sizeof($this->albumOrder)) {
-  			$name = $this->albumOrder[$i];
-! 		       	if (ereg("^\.", $name)) { // how did this get here??
-  				array_splice($this->albumOrder, $i, 1);
-  				$changed = 1;
-  			} else if (fs_is_dir("$dir/$name")) {
-! 				$album = new Album;
-! 				if ($album->load($name,$loadphotos)) {
-! 					array_push($this->albumList, $album);
-! 				} else if ($name != 'CVS') {
-! 					array_push($this->brokenAlbums, $name);
-! 				}
-  				$i++;
-  			} else {
-  				/* Couldn't find the album -- delete it from order */
---- 42,67 ----
-  		$changed = 0;
-  		while ($i < sizeof($this->albumOrder)) {
-  			$name = $this->albumOrder[$i];
-!             if (ereg("^\.", $name)) { // how did this get here??
-  				array_splice($this->albumOrder, $i, 1);
-  				$changed = 1;
-  			} else if (fs_is_dir("$dir/$name")) {
-!                 global $memcache;
-!                 if ( ! $album = $memcache->get("$dir/$name") ) {
-!                     
-!                     $album = new Album;
-!                     if ($album->load($name,$loadphotos)) {
-!                         array_push($this->albumList, $album);
-!                         $memcache->set("$dir/$name", $album, false, 0);
-!                         stderr("Added $dir/$name to cache");
-!                     } else if ($name != 'CVS') {
-!                         array_push($this->brokenAlbums, $name);
-!                     }
-!                 } else {
-!                     array_push($this->albumList, $album);
-!                     stderr("swain/$dir/$name loaded from cache!");
-!                 }
-! 
-  				$i++;
-  			} else {
-  				/* Couldn't find the album -- delete it from order */
+RCS file: /opt/cvs/ampiradev/gallery/albums.php,v
+retrieving revision 1.171
+diff -r1.171 albums.php
+24c24,35
+< $albumDB = new AlbumDB(FALSE);
+---
+> 
+> if ( ! $albumDB = $memcache->get('swain-albumdb') ) { 
+>     stderr("No albumDB in cache. Creating...");
+>     $albumDB = new AlbumDB(false);
+>     $memcache->set('swain-albumdb', $albumDB, false, 0) or die ("Failed to save data at the server");
+>     stderr("Added albumdb to cache!");
+>     //stderr("cached: " . serialize($albumDB));
+> } else {
+>     stderr("Got the albumdb from cache!");
+>     //stderr("cached version: " . serialize($albumDB));
+> }
+> 
+32a44
+> 
+36c48,49
+< $perPage = $gallery->app->albumsPerPage;
+---
+> 
+> $perPage  = $gallery->app->albumsPerPage;
+46,52c59,65
+< $navigator["page"] = $gallery->session->albumListPage;
+< $navigator["pageVar"] = "set_albumListPage";
+< $navigator["url"] = makeGalleryUrl("albums.php");
+< $navigator["maxPages"] = $maxPages;
+< $navigator["spread"] = 5;
+< $navigator["fullWidth"] = 100;
+< $navigator["widthUnits"] = "%";
+---
+> $navigator["page"]        = $gallery->session->albumListPage;
+> $navigator["pageVar"]     = "set_albumListPage";
+> $navigator["url"]         = makeGalleryUrl("albums.php");
+> $navigator["maxPages"]    = $maxPages;
+> $navigator["spread"]      = 5;
+> $navigator["fullWidth"]   = 100;
+> $navigator["widthUnits"]  = "%";
+Index: init.php
+===================================================================
+RCS file: /opt/cvs/ampiradev/gallery/init.php,v
+retrieving revision 1.89
+diff -r1.89 init.php
+35a36,39
+> $memcache = new Memcache;
+> $memcache->connect('localhost', 11211) or die ("Could not connect");
+> //$memcache->flush();
+> 
+272c276,283
+< $gallery->userDB = new Gallery_UserDB;
+---
+> 
+> if ( ! $gallery->userDB = $memcache->get('swain/userdb') ) {
+>     stderr("No userdb in cache. Creating and adding it.");
+>     $gallery->userDB = new Gallery_UserDB;
+>     $memcache->set('swain/userdb', $gallery->userDB, false, 0);
+> } else {
+>     stderr("Got userdb from cache");
+> }
+302,303c313,323
+< 	$gallery->album = new Album;
+< 	$ret = $gallery->album->load($gallery->session->albumName);
+---
+> 
+>     if ( ! $gallery->album = $memcache->get("swain/{$gallery->session->albumName}") ) {
+>         $gallery->album = new Album;
+>         $ret = $gallery->album->load($gallery->session->albumName);
+>         stderr("adding swain/{$gallery->session->albumName} to cache");
+>         $memcache->set("swain/{$gallery->session->albumName}", $gallery->album, false, 0);
+>     } else {
+>         stderr("got swain/{$gallery->session->albumName} from cache");
+>         $ret = true;
+>     }
+> 
+429a450
+> require("includes/hanley.php");
+Index: util.php
+===================================================================
+RCS file: /opt/cvs/ampiradev/gallery/util.php,v
+retrieving revision 1.99
+diff -r1.99 util.php
+1425,1426c1425,1426
+<             $myAlbum = new Album();
+<             $myAlbum->load($myAlbumName);
+---
+> 
+>             $myAlbum = ultrafoo($myAlbumName);
+1443,1444c1443,1444
+<             $myAlbum = new Album();
+<             $myAlbum->load($myAlbumName);
+---
+> 
+>             $myAlbum = ultrafoo($myAlbumName);
+1547,1548c1547,1548
+<     $myAlbum = new Album();
+<     $myAlbum->load($albumName);
+---
+> 
+>     $myAlbum = ultrafoo($albumName);
+1555,1556c1555,1556
+<             $nestedAlbum = new Album();
+<             $nestedAlbum->load($myName);
+---
+> 
+>             $nestedAlbum = ultrafoo($myName);
+1822,1823c1822,1823
+<     $myAlbum = new Album();
+<     $myAlbum->load($albumName);
+---
+> 
+>     $myAlbum = ultrafoo($albumName);
+1829,1830c1829,1830
+<                 $nestedAlbum = new Album();
+<             $nestedAlbum->load($myName);
+---
+> 
+>             $nestedAlbum = ultrfoo($myName);
+3685a3686,3705
+> 
+> function ultrafoo($albumname, $loadphotos = true) {
+>     global $memcache;
+> 
+>     if ( empty($albumname) ) {
+>         debug_print_backtrace();
+>         die("No albumname passed into ultrafoo");
+>     }
+> 
+>     if ( ! $album = $memcache->get("swain/$albumname") ) {
+>         $album = new Album();
+>         $album->load($albumname, $loadphotos);
+>         $memcache->set("swain/$albumname", $album, false, 0);
+>         stderr("ultrafoo: Set $albumname in the cache.");
+>     } else {
+>         stderr("ultrafoo: Got $albumname from the cache.");
+>     }
+> 
+>     return $album;
+> }
+Index: view_album.php
+===================================================================
+RCS file: /opt/cvs/ampiradev/gallery/view_album.php,v
+retrieving revision 1.245
+diff -r1.245 view_album.php
+170,171c170,177
+<         $pAlbum = new Album();
+<         $pAlbum->load($pAlbumName);
+---
+>         if ( ! $pAlbum = $memcache->get("swain/$pAlbumName") ) {
+>             $pAlbum = new Album();
+>             $pAlbum->load($pAlbumName);
+>             $memcache->set("swain/$pAlbumName", $pAlbum, false, 0);
+>             stderr("Added $pAlbumName to cache.");
+>         } else {
+>             stderr("Loaded $pAlbumName from cache.");
+>         }
+730,731c736,737
+< 			$index=$gallery->album->getIndexByVotingId($id);
+< 			$albumName=$gallery->album->isAlbumName($index);
+---
+> 			$index = $gallery->album->getIndexByVotingId($id);
+> 			$albumName = $gallery->album->isAlbumName($index);
+734,736c740,749
+< 					makeAlbumUrl($albumName). ">\n";
+< 			       	$myAlbum = new Album();
+< 			       	$myAlbum->load($gallery->album->isAlbumName($index));
+---
+>                                 makeAlbumUrl($albumName). ">\n";
+> 
+>                             if ( ! $myAlbum = $memcache->get("swain/$albumName") ) {
+>                                 $myAlbum = new Album();
+>                                 $myAlbum->load($gallery->album->isAlbumName($index));
+>                                 $memcache->set("swain/$albumName", $myAlbum, false, 0);
+>                                 stderr("added $albumName to the cache");
+>                             } else {
+>                                 stderr("Got $albumName from cache");
+>                             }
+947,949c960,967
+< 				$myAlbum = new Album();
+< 				$myAlbum->load($myAlbumName);
+< 
+---
+>                 if ( ! $myAlbum = $memcache->get("swain/$myAlbumName") ) {
+>                     $myAlbum = new Album();
+>                     $myAlbum->load($myAlbumName);
+>                     $memcache->set("swain/$myAlbumName", $myAlbum, false, 0);
+>                     stderr("Added $myAlbumName to the cache.");
+>                 } else {
+>                     stderr("Got $myAlbumName from cache.");
+>                 }
+1171,1173c1189,1197
+< 			if ($gallery->album->isAlbumName($i)) {
+< 				$myAlbum = new Album();
+< 				$myAlbum->load($gallery->album->isAlbumName($i));
+---
+> 			if ($thisalbumname = $gallery->album->isAlbumName($i)) {
+>                 if ( ! $myAlbum = $memcache->get("swain/$thisalbumname") ) {
+>                     $myAlbum = new Album();
+>                     $myAlbum->load($gallery->album->isAlbumName($i));
+>                     $memcache->set("swain/$thisalbumname", $myAlbum, false, 0);
+>                     stderr("Added $thisalbumname to cache");
+>                 } else {
+>                     stderr("Got $thisalbumname from cache");
+>                 }
+Index: view_photo.php
+===================================================================
+RCS file: /opt/cvs/ampiradev/gallery/view_photo.php,v
+retrieving revision 1.210
+diff -r1.210 view_photo.php
+185,186c185
+<     $pAlbum = new Album();
+<     $pAlbum->load($pAlbumName);
+---
+>     $pAlbum = ultrafoo($pAlbumName);
+Index: classes/Album.php
+===================================================================
+RCS file: /opt/cvs/ampiradev/gallery/classes/Album.php,v
+retrieving revision 1.116
+diff -r1.116 Album.php
+173,174c173
+<         $album = new Album();
+<         $album->load($albumName);
+---
+>         $album = ultrafoo($albumName);
+181,182c180
+<             $parentAlbum = new Album();
+<             $parentAlbum->load($this->fields['parentAlbumName']);
+---
+>             $parentAlbum = ultrafoo($this->fields['parentAlbumName']);
+583c581
+< 
+---
+>         stderr("Loaded $name from filesystem.");
+1474,1475c1472
+<             $parentAlbum = new Album();
+<             $parentAlbum->load($this->fields['parentAlbumName'], $loadphotos);
+---
+>             $parentAlbum = ultrafoo($this->fields['parentAlbumName'], $loadphotos);
+1489,1490c1486
+<             $album = new Album();
+<             $album->load($albumName);
+---
+>             $album = ultrafoo($albumName);
+2077,2078c2073,2074
+<                 $nestedAlbum = new Album();
+<                 $nestedAlbum->load($this->isAlbumName($i));
+---
+>                 $nestedAlbum = ultrafoo($this->isAlbumName($i));
+>                 
+2122,2123c2118
+<                 $nestedAlbum = new Album();
+<                 $nestedAlbum->load($this->isAlbumName($i));
+---
+>                 $nestedAlbum = ultrafoo($this->isAlbumName($i));
+2133,2134c2128
+<                 $nestedAlbum = new Album();
+<                 $nestedAlbum->load($this->isAlbumName($i));
+---
+>                 $nestedAlbum = ultrafoo($this->isAlbumName($i));
+2576,2577c2570
+<                 $myAlbum = new Album();
+<                 $myAlbum->load($matches[1]);
+---
+>                 $myAlbum = ultrafoo($matches[1]);
+2605,2606c2598
+<         $myAlbum = new Album();
+<         $myAlbum->load($this->isAlbumName($index));
+---
+>         $myAlbum = ultrafoo($this->isAlbumName($index));
+2618,2619c2610
+<                     $subAlbum = new Album();
+<                     $subAlbum->load($this->getAlbumName($index));
+---
+>                     $subAlbum = ultrafoo($this->getAlbumName($index));
+Index: classes/gallery/UserDB.php
+===================================================================
+RCS file: /opt/cvs/ampiradev/gallery/classes/gallery/UserDB.php,v
+retrieving revision 1.6
+diff -r1.6 UserDB.php
+135a136
+>         global $memcache;
+146c147,153
+< 		$user = new Gallery_User();
+---
+>         if ( ! $user = $memcache->get("swain/$uid") ) {
+>             $user = new Gallery_User();
+>             $memcache->set("swain/$uid", $user, false, 0);
+>             stderr("Set swain/$uid in the cache");
+>         }
+>         else { stderr("Loaded user object from cache"); }
+> 
+
+
+
+#########################################################################
+071213 Thu 13 Dec 2007 03:21:20 PM EST
+
+The demo sucked this morning; I should have tested the app. The db
+needed raking, and for that matter, the data imported. Stupid.
+
+Jessy laid into me for the chart thing... said Peter was visibly put
+off, which he was. I could have stated things better.
+
+Got Dylan all set up with Rails/SVN on torque, plus shell access.
+
+
+
+
+#########################################################################
+071214 Fri 14 Dec 2007 11:07:06 AM EST
+
+I give up. Chris is against storing the images for MPP in the
+database, so I'll have to implement a file management system in
+Rails. It really pisses me off. A complete waste of time.
+
+And, some time later, Chris provides a bunch of links and rethinks the
+BLOB issue. I have to admit I'm not too keen on storing the medium
+sized images in the database.
+
+I implemented email confirmation in MPP. Peter tested and was
+impressed.
+
+
+#########################################################################
+071217 Mon 17 Dec 2007 10:22:42 AM EST
+
+Vetted cards; I think Fcat might have been at it too because they were
+shrinking in number before I got to them. Or maybe not. Set up Dylan
+with fixing up the stylesheet for the admin controller. Found a weird
+error in the store from yesterday but it's something Jessy was trying
+to buy, with an expired coupon. Never saw that error before.
+
+I know I ended Friday with throwing out the "event types," since I'd
+already created "specialties." 
+
+"Sending" the emails via the console:
+
+@user = User.find_by_id(23)
+@user.send_thankyou_email
+@user.send_leads
+
+
+
+#########################################################################
+071218 Tue 18 Dec 2007 11:13:07 AM EST
+
+Told Jessy she has to give me ten bucks to fix a store bug. Quantities
+on the order confirmation page are wrong.
+
+Bleh. Took forever to solve a bug with display of an order in
+checkout_success.php. In the end I just stripped out all the category
+crap. Why was that in there?
+
+Whipped up a form to send emails out for a given user. Was a good
+excercise for me in Rails!
+
+When I come back: hack the photographer signup form to work in the
+account administration.
