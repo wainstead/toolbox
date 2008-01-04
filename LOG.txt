@@ -35957,3 +35957,69 @@ excercise for me in Rails!
 
 When I come back: hack the photographer signup form to work in the
 account administration.
+
+
+
+#########################################################################
+080103 Thu 03 Jan 2008 06:31:04 PM EST
+
+Oops. Was back yesterday. Chris and I did battle with merging the
+Pixami stuff in; no dice. Reviewed that with Fernando today and I
+think he's on top of it. Had a meeting with Jessy and Peter; went over
+the social networking stuff she wants to do. A lot of my dev projects
+have to come first... well, at least: moving subusers into the
+database. Moving basic album/photo metadata into the DB would also be
+useful. I now wonder, tiredly, if a Gallery class is even necessary. I
+suppose for permissions testing, it does.
+
+I've started identifying what needs doing and possible issues... I
+suppose I should draw up a full set of use cases?
+
+
+
+#########################################################################
+080104 Fri 04 Jan 2008 01:20:40 PM EST
+
+Overarching dev projects are:
+
+1. autorenew
+   * will have to force store account creation -- cc must be linked to
+     the site. To do this we need to ask the Cart if it has a club
+     with autorenew checked.
+   * user must opt out of autorenewal (in the store)?
+   * batch cc processing needed (can be done later)
+
+2. credit card editing
+   * CRUD. Just copy what Amazon does.
+
+3. memcached
+   * refactoring gallery internals:
+      * smoothing out the gallery API via refactoring
+      * making it far more efficient (in terms of object construction)
+   * needs a LOT of testing
+
+4. move all user data to mysql
+   * move subusers
+   * do we need a special subuser class?
+
+5. convert all album data to sqlite
+   * more or less, preserve current format
+
+6. pathless gallery
+   * need a "final" veracity run to import data
+   * veracity will have to be the "maintainence" program
+   * building new tables "one last time"
+   * gallery uses db info (cutover)
+   * progressively introduce "rootless" albums via spreading
+
+7. gallery object
+   * encapsulate the $gallery variable as a new singleton
+
+
+Chris made a presentation today on the data center move; planned
+completion date is March 30th. His quote of the day: "It took me 30
+minutes to find a chair" (at the data center; he had "chair, keyboard,
+mouse" listed under one of the todo items). Jessy laughed for what
+seemed like five minutes.
+
+
