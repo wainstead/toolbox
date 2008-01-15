@@ -36023,3 +36023,142 @@ mouse" listed under one of the todo items). Jessy laughed for what
 seemed like five minutes.
 
 
+
+
+
+#########################################################################
+080107 Mon 07 Jan 2008 01:14:06 PM EST
+
+Came in Saturday, but didn't do a whole lot: merged Gallery's HEAD to
+my branch and resolved conflicts. Found a bug where creating a new
+album ads it to the end instead of the front. Upgraded Rails to 2.0.x
+and did some testing; worked OK. Emailed Ops to upgrade
+torque. Already done today, too! Huzzah.
+
+Fleshed out two mini-specs on credit card editing and autorenewal for
+Fernando, but I need to give him deadlines. Editing shouldn't take
+more than two days, really. If that. AR will take quite a bit more
+work.
+
+So.. returned to working on technical specs. Jessy's first part of the
+social networking project already existed; so I noted that at the top
+of her page. Most of the page dealt with the later goal of displaying
+shares on the target user's friends page anyhow.
+
+Combining address book and subusers: well, we technically don't have
+to merge the tables. I have to think on this one a bit.
+
+I hacked gallery/UserDB.php briefly to allow '@' and '.' in usernames,
+so that solves that... it seems people in the address book will be
+moved to the subusers table, and this should be moderately easy.
+
+User who can only view one album: we send in the email a hashkey:
+
+sitename + album + our secret word == hashkey;
+
+When the user hits the URL for that album:
+
+swain.myphotodevel.com/view_album.php?hashkey=UmFuZG9tSVY0DT
+
+Some mechanism will have to test if it's a valid hashkey or
+not... algorithmically:
+
+if ($hashkey) 
+   if ($gallery->album->isViewableWithHashkey($hashkey)) {
+   ....
+
+Where to store the hash keys? With the album, it would seem. Perhaps a
+many to many table thusly:
+
+albumid | hashkey
+
+would be simpler.
+
+
+Interlude: stipped all $Id$s from gallery and osccommerce.
+
+
+
+
+
+#########################################################################
+080108 Tue 08 Jan 2008 10:15:57 AM EST
+
+For "Friends," merging the address book and the subusers creates a
+problem. How do you then associate the actual users? So perhaps a list
+of contacts is still necessary and separate from the subusers. 
+
+
+
+#########################################################################
+080109 Wed 09 Jan 2008 02:00:40 PM EST
+
+Where's the week going? Meanwhile: merging branches has been rough due
+to the Id tag. Been removing those, and that alone is a PITN. (Pain in
+the neck). Also told Ferry not to use curse words in code anymore
+because we might get audited at a later date. Heh. Something that
+concerns him.
+
+Hmm. Wonder if PHPDoc is still running... nope.
+
+
+
+
+
+#########################################################################
+080111 Fri 11 Jan 2008 10:26:05 AM EST
+
+Spent most of the day testing for the rollout, and fixing bugs (had
+one I introduced to the shortform; went completely the wrong way about
+debugging it. There was a javascript error, should have noticed that
+straight away! Bad Steve!)
+
+Bleh. Just wasted a lot of time trying to figure out why Emacs is now
+indenting the close brace by one space. Where the hell did that come
+from? I need to figure out the whole indentation system now. Shelve
+that until later. The answer is probably in c-indent-alist and that
+trick (which I can dig out of PhpWiki) where the file specifies the
+indentation.
+
+
+
+
+#########################################################################
+080115 Tue 15 Jan 2008 10:44:07 AM EST
+
+Solved some issues yesterday with MPP, namely getting the specialties
+to display on the account index page. Also had a few other
+commits. Had a tiff with Chris when he started asking dumb questions
+about a file in the gifts dir; thought he was just code spelunking and
+annoying me but he was actually working on something. I also note here
+my typing has improved a lot, and I don't know why.
+
+How to encrypt passwords:
+
+#!/usr/bin/perl -w
+
+use Digest::SHA1  qw(sha1 sha1_hex sha1_base64);
+
+print "Hello, sailor boy!\n";
+
+$salt = create_new_salt("1");
+$digest = encrypt_password("112233", $salt);
+print "digest: $digest\n";
+
+
+sub create_new_salt {
+    my $id = shift;
+    die unless $id;
+    return $id . rand();
+}
+
+
+sub encrypt_password {
+    my $password = shift;
+    my $salt = shift;
+
+    $string_to_hash = $password . "blippy" . $salt;
+    return sha1_hex($string_to_hash);
+}
+
+
