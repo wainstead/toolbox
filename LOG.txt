@@ -35820,3 +35820,84 @@ sub encrypt_password {
 }
 
 
+
+
+
+#########################################################################
+080116 Wed 16 Jan 2008 10:55:26 AM EST
+
+Did some reworking of the photographer data yesterday. Now have the
+name for the company name in most places; filtered out ones with no
+state. Seems they all have zip codes if they have a state. Added
+Canadian provinces too.
+
+Finally am constraining the search results to the specialty the user
+selected. Rather than do a big join -- which is probably possible -- I
+resorted to looping on the results of all addresses matching the
+user's choice(s). It doesn't take much code... the bonus is I have all
+the photogs who don't list that specialty, but I can push them to the
+end of the array just in case. Actually now that I think of it, I can
+use unshift and push to build up the array rather than building
+two... and use array.length to constrain the... no, wait. That won't
+work. I might wind up with ten withou that specialty when there are
+ten that do have it. So it will be the slower way. No biggie.
+
+
+
+#########################################################################
+080117 Thu 17 Jan 2008 01:57:15 PM EST
+
+Came up with a simple solution to the shell buffer problem. On the
+Mandriva Linux systems, when I started up Emacs, all the shell buffers
+I'd want were created for me; and the contents of previous
+incarnations were inserted at the top (point-min).
+
+On the Ubuntu systems, however, the previous contents are inserted
+somehow in a way that makes the whole file a series of arguments to
+the shell. This had disasterous consequences.
+
+I disabled this feature, but was unhappy without my permanent buffer
+contents. Today it dawned on me to just write a (y-or-n-p) prompt to
+create the delay needed. Worked like a charm. No sweat now to invoke
+sw-mpp to open four shells, and type "y RET" to restore the buffer
+contents.
+
+;; the big enchilada
+(defun sw-mpp ()
+  "Are we live or on tape?"
+  (interactive)
+
+  (setq sw-restore-shell-buffers-flag nil)
+
+  (sw-shell "console")
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/myphotopro")
+  (comint-send-input)
+
+  (sw-shell "mongrel")
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/myphotopro")
+  (comint-send-input)
+
+
+  (sw-shell "cli")
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/myphotopro")
+  (comint-send-input)
+
+  (sw-shell "sql")
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/myphotopro")
+  (comint-send-input)
+
+  (setq sw-restore-shell-buffers-flag t)
+  (if (y-or-n-p "Restore the shell buffers? ")
+      (progn
+        (sw-insert-saved-buffer-contents "cli")
+        (sw-insert-saved-buffer-contents "mongrel")
+        (sw-insert-saved-buffer-contents "console")
+        (sw-insert-saved-buffer-contents "sql")
+        )
+    )
+)
+
