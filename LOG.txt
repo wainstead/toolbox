@@ -35891,6 +35891,14 @@ contents.
   (comint-send-input)
 
   (setq sw-restore-shell-buffers-flag t)
+
+  ;; We probably want to disable automatically saving the shell
+  ;; buffers until this is decided by the user; I might walk away and
+  ;; in the next few minutes all the shell buffer files would be
+  ;; overwritten. Also, if I choose 'n' the old ones should be backed
+  ;; up. Even better idea: if auto-save-desktop runs and I haven't
+  ;; made the choice, automatically back them up.
+
   (if (y-or-n-p "Restore the shell buffers? ")
       (progn
         (sw-insert-saved-buffer-contents "cli")
@@ -35898,6 +35906,252 @@ contents.
         (sw-insert-saved-buffer-contents "console")
         (sw-insert-saved-buffer-contents "sql")
         )
+    ;; else
+    (progn
+      (sw-backup-saved-buffer-contents "cli")
+      (sw-backup-saved-buffer-contents "mongrel")
+      (sw-backup-saved-buffer-contents "console")
+      (sw-backup-saved-buffer-contents "sql")
+      )
     )
+
+  (sw-init-shell "mongrel" "script/server")
+  (sw-init-shell "console" "script/console")
+  (sw-init-shell "sql" "mysql -uroot myphotopro_development")
 )
 
+
+Just seen in an strace by Chris:
+
+open("/usr/lib/perl/5.8/DynaLoader.pm", O_RDONLY|O_LARGEFILE) = 4
+ioctl(4, SNDCTL_TMR_TIMEBASE or TCGETS, 0xbfa05208) = -1 ENOTTY (Inappropriate ioctl for device)
+_llseek(4, 0, [0], SEEK_CUR) = 0
+read(4, "# Generated from DynaLoader.pm.PL\n\npackage DynaLoader;\n\n# And Gandalf said: \'Many folk like to know beforehand what is to\n# be set on the table; but those who have laboured to prepare the\n# feast like to keep their secret; for wonder makes the words "..., 4096) = 4096
+
+
+
+
+
+#########################################################################
+080118 Fri 18 Jan 2008 11:55:41 AM EST
+
+Building on my recent work of saving shell buffer contents... why not
+set up a git, cvs or svn repository a subdir which holds all shell
+buffers; then a cron job to automatically commit all the files every
+night?
+
+It's kind of extreme but I'd never lose anything.
+
+
+You say, "typolesbo is trying to format a date in a page, using php's strftime()"
+You say, "asks me, "why can't i do (something) before i've made my time?""
+You say, "i said "because you have no chance to survive""
+You say, "it was all downhill from there"
+
+
+
+
+#########################################################################
+080123 Wed 23 Jan 2008 11:47:20 AM EST
+
+I wrote this block in UserDB.php today.
+
+    /**
+     * If $username == 'admin' we'll have to instatiate an AdminUser;
+     * else it will be a SubUser. This has to be, because Gallery
+     * expects to be able to do the "same things" to a User class
+     * regardless of who they are... but subusers and users are in
+     * separate tables.
+     *
+     * bleh, scratch all that. The problem is the data
+     * model. Gallery's data model does not map to the mpa_users
+     * table. If we don't put an entry for the admin in the subusers
+     * table, we have to store the extra data somewhere else anyway!
+     * In another table? That's stupid. The subusers table already has
+     * the right schema and it's 10x simpler to do it that way.
+     *
+     * So that begs the question: should this table still be called
+     * mpa_subusers? Probably.
+     */
+
+Boy, is Ferry gonna have kittens when he finds out.
+
+
+
+#########################################################################
+080124 Thu 24 Jan 2008 10:03:41 AM EST
+
+To review so far:
+
+1. Got rid of the borked constructor for UserDB; we use a Factory
+method now that simply returns the unserialized file.
+
+2. Decided to put the site admin into the mpa_subusers table, as
+that's more uniform.
+
+Met with Chris over the mpa_subusers table. Not surprisingly he wants
+the uid <=> siteid association moved to a separate table so a subuser
+can belong to more than one site. He did say that table would have to
+list the perms the user has as well.
+
+My thinking here is that the mpa_subusers table could eventually
+become the main users table. A new thought!
+
+Thinking a few jumps ahead... I could also replace the username
+'admin' with the site name username. That would assist in the Ferry
+scheme of things, though I still feel like it's a waste of time.
+
+
+
+#########################################################################
+080125 Fri 25 Jan 2008 12:40:21 PM EST
+
+Hanley wants me to do Trialpay stuff for her, can't find the login/pw
+anymore. Thought I had it posted up writtin in Centerline. Tried to
+organize a last minute lunch outing today, but it failed. Chris is
+going upstate for his father's birthday, has to eat at his desk.
+
+Am running 10 Perl jobs at a time, each doing 30 users at a time,
+regenerating the RSS feeds. They all fell behind
+again... well... actually most of them have been behind because Chris
+forgot he shut it off last January. When we restarted it we never
+updated them for the year. Meanwhile, I introduced a bug a few weeks
+ago. I didn't know /opt/mpa/veracity was the path being used, and the
+copy there of regenerate-feeds.php was broken (it wasn't loading of
+the new library files. I broke verify-lib.php into three files).
+
+Emailed ops twice about this.
+
+
+
+#########################################################################
+080129 Tue 29 Jan 2008 09:57:44 AM EST
+
+Basic thrashing about yesterday. I got rid of extra calls to build the
+userMap array in Gallery_UserDB.php. This is a huge win, really, but
+there's noone to share it with.
+
+Peter is looking for a way to track the spending of a user from signup
+to deletion... the idea is, what revenue does a customer bring in over
+their lifetime? Probably the best thing to do is generate a
+spreadsheet of some sort so he can crunch numbers.
+
+I spent time, end of yesterday through now (2pm) optimizing the file
+makefeeds.php. This script generates the rss.xml file. It was looping
+through every album, loading all the photos. I suppose this would be
+useful if we had rss feeds per album, which we don't. So a good start
+was shutting that off. It stopped running out of memory at that point.
+
+Next I built a loop that creates an array of the ten most recently
+updated albums that can be viewed by anyone.
+
+Got about half way through password recovery for myphotopro. It just
+has to send the email with the link, and clicking the link has to do
+something. These are no big deal really; all things I've done before.
+
+
+Wainstead \ gives up on AIM argument with head of ops, who's telling him "refactoring" is just 
+"putting icing on bad code"
+scott [to Wainstead \]: well, frequently it is
+marburg warbles Le Tigre, "I'm outta time....outta fuckin time... I'm a gasoline gut with a 
+vasoline mind..."
+scott [to Wainstead \]: it can be a good thing, but it's no magic bullet for turning crap into art
+heller says, "then I would argue it shouldn't be called "refactoring". refactoring is supposed to 
+be a real improvement. "
+Wainstead \ [to scott]: have you read martin fowler's book?
+scott [to Wainstead \]: I have not
+marburg [to Wainstead \]: it's not scott's fault he's illiterate!  stop picking on him.
+heller [to Wainstead \]: tell him to just read the first line of the wikipedia article. 
+scott [to heller]: ok, if you define it to be an improvement then sure
+Wainstead \ [to marburg]: that wasn't what i was implying :o)
+scott [to heller]: but then I submit that much of what people call refactoring isn't.
+heller [to scott]: sure. like it's defined that in a base 10 numbering system 2+2 = 4. 
+heller [to scott]: then I would correct them for misusing the term. . .
+Wainstead \ [to scott]: i would wholeheartedly agree with that statement. most programmers don't 
+understand what refactoring means.
+heller says, "exactly. "
+heller says, "but, it sounds like chris is saying that the definition of refactoring isn't to 
+improve it. . ."
+[Type lines of input; use `.' to end or `@abort' to abort the command.]
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+chrisatfcity: Well if the code wasn't written right to begin with and adding simple functionality 
+takes you weeks thena rewrite is in order
+chrisatfcity: guy makes perfect sense
+Steve Wainstead: if the code wasn't written right you refactor it
+chrisatfcity: refactor is like reicing a cake.
+Steve Wainstead: you refactor it until the new code is easy to add
+Steve Wainstead: that's the rule
+Steve Wainstead: that's the common wisdom now
+chrisatfcity: if the cake itself sucks reicing ain't gonna do it
+chrisatfcity: I like my metaphor
+Steve Wainstead: no, refactoring, by definition, means: changing theinternals of the code so it's 
+easier to test/modify/add new stuff
+Steve Wainstead: if your "refactoring" is "icing" you're doing it completely wrong
+12:00 PM
+chrisatfcity: well if you keep the old code and clean it up.. you are just re icing it
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+You say, "and on and on"
+You say, "i've learned to just give up when he refuses to understand something"
+You say, "the motivation for this converstation being this poorly written piece: 
+http://highscalability.com/moving-old-new-do-not-be-afraid-re-write-take-some-help => 
+http://avln.us/6o2"
+URL Added: ID# 0 -- 
+http://highscalability.com/moving-old-new-do-not-be-afraid-re-write-take-some-help
+chilly_willy [to Wainstead \]: i just wish i had the time to refactor my code
+chilly_willy [to Wainstead \]: everyone just wans more features, screw making the code easier to 
+work with
+heller [to Wainstead \]: even if you use his analogy of re-icing you have to apply "to make it 
+better" so if the cake underneath sucks, then part of refactoring isn't just re-icing, it's 
+putting a better cake underneath first. 
+scott [to Wainstead \]: well, under the wikiepdia definiton of refactoring, leaving the external 
+interface the same and totally rewriting all of the actual code still counts as refactoring.
+heller says, "yea. and I htink that's a generally acccepted definition. so, chris is high. "
+
+
+
+#########################################################################
+080130 Wed 30 Jan 2008 10:06:14 AM EST
+
+Peter's gonna pitch elimos.com to Alex over at Unhappy Corp. I
+guestimated 4 weeks to roll out a site using Rails. I think two weeks
+is more than enough to build 90% of the functionality: it's not reuse
+so much as my understanding of Rails has improved that much. I should
+probably set up an app on Slim just for kicks, something that can
+stand medium traffic levels without falling over.
+
+Peter and Jessy are in Las Vegas the rest of the week for a photo
+conference. Also, I've given up giving up caffeine. I blame Dunkin'
+Donuts for giving me real coffee on Sunday; had headaches the last two
+days. And where I thought I was past that after last week.
+
+Back on MPP, fleshing out password recovery.
+
+Password recovery all done, I think. Also rolled out
+Gallery/Veracity/subuser port to staging, tested, looks good. I need
+to be able to rerun veracity after the release to "catch up" any new
+signups missed during the 4 hour run (or so). I should time that
+again.
+
+Simple strategy: run Veracity to port everything. Rerun Veracity to
+cover all new users since the beginning of the previous run. Roll
+out. Rerun again since start of previous run. Rerun for entire
+userbase, to catch any possible subusers that were missed.
+
+
+
+
+#########################################################################
+080131 Thu 31 Jan 2008 09:37:47 AM EST
+
+The run of Veracity yesterday, which ported all user data to the
+database, took almost exactly 3 hours. (2 hours 58 minutes).
+
+I had a total brainfart: I forgot to update the signup wizard!
+Duh. That's my top priority today.
+
+Well, that started with finding all the files on production that are
+either modified or not under version control. Sent two emails. Really,
+it's all me, Chris and Fernando.
+
+OK, signup wizard appears to be done. Whew.
