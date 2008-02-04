@@ -189,7 +189,7 @@ foreach my $hashref (@conversation) {
 
     # ajax calls sometimes return nothing. i s'pose they should at least return Booleans.
     if ( $hashref->{URL} !~ /ajax/) {   
-        ok($mech->content, "Server returned some text (step $counter)");
+        $errcount++ unless ok($mech->content, "Server returned some text (step $counter)");
     }
 
 
