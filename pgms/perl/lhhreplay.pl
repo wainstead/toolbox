@@ -69,8 +69,6 @@
 # Feel free to send feature requests, patches, suggestions, or flames
 # to swain AT panix DOT com.
 
-# $Id: lhhreplay.pl,v 1.10 2007/06/27 17:08:13 swain Exp $
-
 
 use Test::More qw(no_plan);
 use Test::WWW::Mechanize;
@@ -185,7 +183,9 @@ foreach my $hashref (@conversation) {
     ### Customize these rules to your application.
     ###
 
-    ok($mech->success, "returned OK status: " . $mech->status . "  (step $counter)");
+    my $errcount = 0;
+
+    $errcount++ unless ok($mech->success, "returned OK status: " . $mech->status . "  (step $counter)");
 
     # ajax calls sometimes return nothing. i s'pose they should at least return Booleans.
     if ( $hashref->{URL} !~ /ajax/) {   
@@ -193,17 +193,20 @@ foreach my $hashref (@conversation) {
     }
 
 
-    $mech->content_unlike( qr/fatal error/i, "No fatal errors (step $counter)");
-    $mech->content_unlike( qr/parse error/i, "No parse errors (step $counter)");
-    $mech->content_unlike( qr/mysql error/i, "No mysql errors (step $counter)");
-    $mech->content_unlike( qr/out of bounds/i, "No out of bounds errors (step $counter)");
-    $mech->content_unlike( qr/Error: No match for E-Mail Address and\/or Password\./i, "No login errors (step $counter)");
-    $mech->content_unlike( qr/SQL\/DB Error/i, "No ez_sql errors (step $counter)");
-    $mech->content_unlike( qr/Util::dump/i, "No Util::dumps (step $counter)");
-    $mech->content_unlike( qr/Warning:/i, "No PHP warnings (step $counter)");
-    $mech->content_unlike( qr/An error has occurred/i, "No 'An error has occurred' (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/fatal error/i, "No fatal errors (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/parse error/i, "No parse errors (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/mysql error/i, "No mysql errors (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/out of bounds/i, "No out of bounds errors (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/Error: No match for E-Mail Address and\/or Password\./i, "No login errors (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/SQL\/DB Error/i, "No ez_sql errors (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/Util::dump/i, "No Util::dumps (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/Warning:/i, "No PHP warnings (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/An error has occurred/i, "No 'An error has occurred' (step $counter)");
 
-    $mech->save_content("$trialsdir/$counter.$$.html");
+    my $errstr = "";
+    $errstr = "error" if ($errcount);
+   
+    $mech->save_content("$trialsdir/$counter.$$.$errstr.html");
 
     $counter++;
     
