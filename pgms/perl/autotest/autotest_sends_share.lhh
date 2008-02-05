@@ -1,0 +1,1773 @@
+http://autotest.myphotodevel.com/
+
+GET / HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:21 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Set-Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; path=/
+Set-Cookie: mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; expires=Wed, 04-Feb-2009 21:26:22 GMT; domain=myphotodevel.com
+Set-Cookie: page_view_#=0; expires=Wed, 06-Feb-2008 21:26:22 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/album_728.php
+
+GET /ads/album_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=0
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:22 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 384
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+GET /ads/album_600.php?adstyle=none HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=0
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:22 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 378
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: RMFD=011JMQ5SS60cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:22 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Set-Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; expires=Fri, 31-Dec-2020 23:59:59 GMT; path=/; domain=.fortunecity.com
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 142
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: RMFD=011JMQ5SS60cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:22 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 298
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=79978735&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=-&utmp=/&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=79978735&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=-&utmp=/&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Thu, 24 Jan 2008 08:38:43 GMT
+Server: ucfe
+Content-Length: 35
+Date: Tue, 05 Feb 2008 21:26:22 GMT
+----------------------------------------------------------
+http://ads.realtechnetwork.net/servlet/ajrotator/7634/0/vj?z=realtech&dim=297
+
+GET /servlet/ajrotator/7634/0/vj?z=realtech&dim=297 HTTP/1.1
+Host: ads.realtechnetwork.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: ajess1_4034FD73FB087B5CB46AE308=a; ajefc=TTKJJUVTKKNJUQNNOOWUOLNKNJJKKNJUTMJMOWUVKXKNJJPRIRWMMP; ajcmp=20131Lc31Im003JfP; ajdotomin1=0; u=321380863; sp=1
+
+HTTP/1.x 200 OK
+Server: JBird/1.0b
+Connection: close
+Date: Tue, 05 Feb 2008 21:26:22 GMT
+Pragma: no-cache
+Cache-Control: private, max-age=0, no-cache, no-store
+Expires: Tue, 01 Jan 2000 00:00:00 GMT
+P3P: policyref="http://ads.realtechnetwork.net:80/p3p/RotatorPolicyRef.xml", CP="NOI DSP COR CURa DEVa TAIa OUR SAMa NOR STP NAV STA LOC"
+----------------------------------------------------------
+http://ads.revsci.net/adserver/ako?rsi_random=589445358&rsi_pub=6D0B0D30D224D4EC88790BDFDC2F4FB8&rsi_site=3A6E4F58241C3D85743A4ED0BF99E164&rsi_width=160&rsi_height=600&rsi_secure=0&rsi_url=http%3A//autotest.myphotodevel.com/ads/album_600.php%3Fadstyle%3Dnone&rsi_referrer=http%3A//autotest.myphotodevel.com/&rsi_title=600%20Ad%20Tag&rsi_inf=1
+
+GET /adserver/ako?rsi_random=589445358&rsi_pub=6D0B0D30D224D4EC88790BDFDC2F4FB8&rsi_site=3A6E4F58241C3D85743A4ED0BF99E164&rsi_width=160&rsi_height=600&rsi_secure=0&rsi_url=http%3A//autotest.myphotodevel.com/ads/album_600.php%3Fadstyle%3Dnone&rsi_referrer=http%3A//autotest.myphotodevel.com/&rsi_title=600%20Ad%20Tag&rsi_inf=1 HTTP/1.1
+Host: ads.revsci.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: rsi_us_1000000=pUMFJkOg/xMUlv1F3/SWKLqJ2T6j2RBWZ6jWkGs2qcjUvyGMNfTKmG42z8o58eHfY7ZaejEZ3ndt7Mo+eyac1C0isnQCQlINfb7gZc7+q24CvfPFUeqBmVNw3CiGvPijVwe8x2ewJoFYrysBbH5+ebfIS5+xujwbKr/mbVdHZWwf0Grw0QsQHQYDGkhNj562eaF9KiXveojE/1qlbA3gVYa+xOqwYOoqL06mP81//EW3JGsNpBvNYfV66yXYJovvx7fmUYGcqohz4CWFlGbnhv6Q5skTU6lsiiLpp8+lq6RaW0ucFV3Tn/KrqtR5MaaMSiJVw+xl4YpPziYr3+CmYSW93MWZAeGo55LJg4PUl6Ab13akVa+v7ZL7F69+3/VeMGk4iuG7z6Zp+jDe76mjn5ucdZMgHPgBx//wxCy1ttP9f8TNRLfz+bO+T7i0Gr6UkKeRy1Im8xVuxZ6NTupJOtFfQsjyWdqq/WngLYp3dmSQZyrqoTyiY5+02J9AHby5gQSJ5MWIS6rtjFKN7YaI+sJx/ft4UyORrIk44cmszFOFqdxH9NAN1IqLGHA9FjC3heTUP22mLYnpQKQgL6qLA10oiOy9ZS1t2TjB5vku2ZUwvLKIIAoLsVo7dXHLcLBV7hMSzspH4rBx8qi5QzyaimNZf0vVs3mNtEkbyOi5Xjk3G0Z+eVsF/CuN/tKVYS1vfvRZB9eDoQ==; NETSEGS_C05503=CC360E7484AC484D&C05503&4459B51C&47925795&0&&478EDD58&CE38F864A80B0983D14912C9E745EC8D; 01IS=U; NETSEGS_K05540=CC360E7484AC484D&K05540&3F149836&4792797F&0&&478EEA33&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07612=CC360E7484AC484D&H07612&3F149836&478F8295&0&&478D77E3&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_E05516=CC360E7484AC484D&E05516&446B91AC&478CE863&3&10724,10726,10729&478AD033&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_G05524=CC360E7484AC484D&G05524&45BE59C7&46FD3CB1&4&10015,10016,10017,10018&46FB10FA&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_C07583=CC360E7484AC484D&C07583&3F149836&473C8C0A&0&&473A7410&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_G07608=CC360E7484AC484D&G07608&3F149836&47A8B336&1&10001&47A680E0&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_J05530=CC360E7484AC484D&J05530&44345613&476AA973&5&10302,10404,10351,10053,10297&47688229&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_E06560=CC360E7484AC484D&E06560&3F149836&478E7789&2&10001,10084&478C208A&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07710=CC360E7484AC484D&H07710&3F149836&4787CA6D&0&&47859139&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_C07584=CC360E7484AC484D&C07584&3F149836&4790F029&0&&478EC83D&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07709=CC360E7484AC484D&H07709&3F149836&47868E61&0&&4784352D&CE38F864A80B0983D14912C9E745EC8D; 01AIS=3; NETSEGS_E05511=CC360E7484AC484D&E05511&3F149836&4783F845&0&&478195B5&CE38F864A80B0983D14912C9E745EC8D; 01AI=2-2-E1413925FBFCB4494A75FB7D45E1FD583B90AE70A3347521A8E0E272BE513D4C-0B1C2E121C7CDFE392CE6B2EF2067286A414EE9602967EF67F70C68B9639BDB8; NETSEGS_E05510=CC360E7484AC484D&E05510&447D0A63&479FA949&1&10221&479D559A&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_A06546=CC360E7484AC484D&A06546&3F149836&472B6704&0&&47294132&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_G07610=CC360E7484AC484D&G07610&3F149836&47615FBB&0&&475F593F&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_J05531=CC360E7484AC484D&J05531&45B54F57&47AA0813&4&10128,10219,10295,10298&47A7E9D8&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_K05539=CC360E7484AC484D&K05539&3F149836&478E6EAC&2&10001,10015&478C29EF&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_K05541=CC360E7484AC484D&K05541&3F149836&469E460D&0&&469C22A8&CE38F864A80B0983D14912C9E745EC8D; NETID01=xi1LRgr@1R0AAB2F72gAAACk; NETSEGS_D05509=CC360E7484AC484D&D05509&3F149836&474F3875&1&10138&474CCCD1&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_F07607=CC360E7484AC484D&F07607&3F149836&47113376&0&&470EDE8C&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_J05532=CC360E7484AC484D&J05532&3F149836&47A0F47E&1&10961&479EA847&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07707=cc360e7484ac484d&H07707&0&47b09f77&3&10015,10016,10018&47a68461&ce38f864a80b0983d14912c9e745ec8d; rsi_cls_1000000=pUM94jmkPxIU7dSLqc/4VFf8xBzu6Ook9bWRmuTWFt01NyjI0nCfapryZNHpwBivOXNGf1mfOgXYPTiTcQC9NdYfxXEzddybFT8mgmhacvXfEVEoWZ0QJfjCmwTTdOB16S4IqItNyTm3BcitxyQlO1FC99AZPAGK4Emkz2EM1Jh9dvb4wFNXBQnmdg0tNgi0UIslsoMDygInO1Pcl5UL8pGMxBciy4EW8VDvCEldyrO3TEZJ4k7AX4rwXwrg1GzHji7rY2cH7whFONGFFK+MR/115K2zfhepxBYKcfIoLsZNf5DlLgwhqydhrvFKrb2KAT98lZh0KbB0GT+7WpeUehDh0E7H/55xZAkVveJzGEL1o5relFyjMhMSNI3Jp89DHHmfLxPn1HFZ/56l9J8JXjDW/yUhN7bdPFybc48sZiLg4mi7jIyYtrV1tmlfLm15nGrYidXY4aopm7NJVymopQl5Xkpow3DyB32d39L4RHgrnGzz9fOXed5GPd/B2BERSDPBMTwiOvHkPuc2L3GjU/2o6/xgskjTqs2jHmQpXkhL/6BXQjRGKVgwbXfgmznoSZCgtRTWha3F+MMj8LiM3AQoz+s4hjtTXPYVw67u2H+jEk04dgItDxU5Liyxdb22KJdmTlejL7NrnLfpZVHkqDbaRhqdOksRuGGy7uatmoVzVH++NwGBDtb4IjNFXxk6v1T3juOApL0jPWNGMUJQwgoeTi/SWlxbUZJc+wpuh7Lukz45vl7GtQuaHleIZlwg/AkfW49MLYPgY4mpPsSTzjPc0jivjN0LzurkOSVjpHUN1hLvqRfdLA3UnS+/wMkx1+lokTTTF5RJmsaG01qEsaulZtU13UCtsqsaJ+El35LrQlPyzT1xjTkrPfZF8ZlNLIb3qgIhm6RQqUKDE6NhktrFy6DAqLXuVRjZYfESIVoZQyVLfWvIOlqIKUPi9KzH3TJsSmnu8eA4HAtIb3K9E4MLHHFUlzqyR2/M/XmIhzfTzChDVDJ0QhKtNpSRS3vzNv1A0o04oYsv1rNLnJXm3G01GIoukSAqxAyg/TFZqyTnHHWmPqO8HLmjr7F3SaVIobNKBvrQi+KTDfxKOUZa15P5PAqPMxO8QfMMTwHacJvp0n37crDS6UquXYx1/pnNV1xF2xqeEHnz3u6KXsw=; rsi_segs_1000000=pUPFOD+FLwIQlrmdUK9PH7Ydwqu2UBVbQzyJv5VogdBy6pWUWLt/4IzIDYWxZps3zEWKNP/jMmwnAgH2LtpSfbUq371MuI1GHMZ8uaAM0Gsod3OlwXs5zbSmHg67WAFOYdqLyU/pTn7+wzpibjR9YmEnrNRg9HabcM+WRNNVE6VCUnjGjzgz6p1vPYua2kiWB2GJaOf2/DJ9hUemeCJR3N7XbaqjNNLGxzLkXty5QOc8JXrUVJMlIcUgue6EDyyIVitoxcYjgS7vZxKtl/C9h5Uur4F53TrWMl63mKAShYyBVs0B41c7lSml4d8c27U/7RBxIJ8=
+
+HTTP/1.x 200 OK
+Server: Apache-Coyote/1.1
+P3P: policyref="http://www.revenuescience.com/w3c/rsip3p.xml", CP="NON PSA PSD IVA IVD OTP OUR IND UNI PUR COM NAV INT DEM CNT STA PRE OTC HEA"
+Content-Type: application/x-javascript;charset=ISO-8859-1
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Content-Length: 716
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+Connection: keep-alive
+Set-Cookie: rsi_us_1000000=; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/adserver
+Set-Cookie: rsi_us_1000000=pUMFJs+g/xMU1j2Eq6nZ/D3R4TSpDxWmeFcZrzWYLldSnhccDq88L2iLYItQwAfWsgWzijkU4gefGTrO3/eo8r/+poAnBrbE4AGfeBv9Vqu8XWO2cL8YqWHkS2+OY7yqPQxAYqQnz40wdAX1DKKgyMdeCTFi4OQb89xw3tGgYsGKy4gd6qP+1baeEHhlW9pPgYIQeII4mr/c2W3qPlH7oNvStZIQcJwCk7W/sSBcWhu5ZDvWGuWqLHrSp/Fs/gHo9Sme0uqfCna3Yt2dyPkBSWV315JSSrAZAXSxLJxYKjuruGG+DkqsJxqaYQVQVNphXVeow2d5C95HcSZHc1ngTbmJrPExGRMcqNXa4icZAHB2rGFqy5DDlmxAa9ClRrJIv/fo5hTh8qjsh94fsnHX99QvTXd90wony68AWLTMFyCiMoDUISQ/BQlFMB50OXi+ECL14N9f99dTMcsOrAu7YmI4XiYFQpeA5D3UcNJj7w9d4olW7FbfGKCpDZtyV2VMGDSMBBiyZ+fRJzL6m7CHn/okJsIMMyRZpiA7TF5BoLZmmaXolQ0szJiP3GMd7wDQT3gt7TFFSQkBBjNs8RQquaSylDcPW5GEbCQ5cKUihBIrmG4XyWsGzgMZGWtWKOg3EL2zu1Vxr/gCrBDMuslaXTuCSMvNw9JR4rAgEhQhvYQaVtPgwX0W8sr+MFa1l1gv8M3/iLYb5E/TdRfGIsAt4g==; Expires=Sat, 28-Jan-2040 21:26:54 GMT; Path=/adserver
+Cache-Control: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+----------------------------------------------------------
+http://ad.yieldmanager.com/imp?Z=160x600&s=190890&r=0&_salt=2104877358&u=http%3A%2F%2Fautotest.myphotodevel.com%2Fads%2Falbum_600.php%3Fadstyle%3Dnone
+
+GET /imp?Z=160x600&s=190890&r=0&_salt=2104877358&u=http%3A%2F%2Fautotest.myphotodevel.com%2Fads%2Falbum_600.php%3Fadstyle%3Dnone HTTP/1.1
+Host: ad.yieldmanager.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Set-Cookie: testbounce=testing; path=/
+Location: http://ad.yieldmanager.com/imp?Z=160x600&s=190890&r=0&_salt=2104877358&u=http%3A%2F%2Fautotest.myphotodevel.com%2Fads%2Falbum_600.php%3Fadstyle%3Dnone&B=1
+Cache-Control: no-store
+Last-Modified: Tue, 05 Feb 2008 21:26:23 GMT
+Pragma: no-cache
+Content-Length: 0
+Connection: close
+----------------------------------------------------------
+http://ad.yieldmanager.com/pixel?id=51778&id=75887&id=85331&id=75886&id=67750&id=74565&id=66682&id=75889&id=86132&id=51937&id=86406&id=56918&id=74560&id=51936&id=75890&id=51935&id=51067&t=2
+
+GET /pixel?id=51778&id=75887&id=85331&id=75886&id=67750&id=74565&id=66682&id=75889&id=86132&id=51937&id=86406&id=56918&id=74560&id=51936&id=75890&id=51935&id=51067&t=2 HTTP/1.1
+Host: ad.yieldmanager.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Set-Cookie: uid=uid=ffee1082-d430-11dc-86f6-0019bb31a15a&_hmacv=1&_salt=2259493340&_keyid=k1&_hmac=40ca135115bb041282cb0bf0351e9ecc8cbb679d; expires=Thu, 06-Mar-2008 21:26:23 GMT
+Set-Cookie: pv1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: pc1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ih="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: vh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: bh="b!!!!4!!*(h!!!!#:$[ti!!*10!!!!#:$[ti!!*3!!!!!#:$[ti!!*3#!!!!#:$[ti!!*3$!!!!#:$[ti!!*oY!!!!#:$[ti!!,6N!!!!#:$[ti!!,D(!!!!#:$[ti!!-?2!!!!#:$[ti!!-?7!!!!#:$[ti!!-Ng!!!!#:$[ti!!-Nh!!!!#:$[ti!!-Nj!!!!#:$[ti!!-Nk!!!!#:$[ti!!.iq!!!!#:$[ti!!.s?!!!!#:$[ti!!.vR!!!!#:$[ti"; path=/; expires=Thu, 04-Feb-2010 21:26:23 GMT
+Set-Cookie: ia="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Cache-Control: no-store
+Last-Modified: Tue, 05 Feb 2008 21:26:23 GMT
+Pragma: no-cache
+Content-Length: 43
+Content-Type: image/gif
+Connection: close
+----------------------------------------------------------
+http://c7.zedo.com/img/bh.gif?n=162&g=20&a=52&s=0&t=e
+
+GET /img/bh.gif?n=162&g=20&a=52&s=0&t=e HTTP/1.1
+Host: c7.zedo.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: FFbh=162-20070621,20|74_1Z111_1Z27_1Z51_0; __qca=1182289555-48148237-74564056; PI=h414911Za370076Zc162002490%2C162002490Zs57Zt811; ZEDOIDA=VH24QQoBABYAACm5GSgAAAHI; geo=3581356; FFChanCap=367B641,363#305768,388#362995#361564:162,1709#262907,2490#360505,1718#375503:558,766#369371|0,0,1:0,34,1:0,34,1:0,0,1:0,9,1:0,23,1:0,30,1; ZEDOIDX=29; gs=1; FFcat=641,396,14:641,388,7; FFad=2:1
+
+HTTP/1.x 200 OK
+Server: ZEDO 3G
+Content-Length: 5
+Content-Type: image/gif
+Set-Cookie: FFbh=162-20070621,20|74_1Z111_1Z27_1Z51_0;expires=Wed, 04 Feb 2009 21:26:23 GMT;domain=.zedo.com;path=/;
+Etag: "a03452c-2aa6-44556321b5a40"
+P3P: CP="NOI DSP COR CURa ADMa DEVa PSDa OUR BUS UNI COM NAV OTC", policyref="/w3c/p3p.xml"
+Cache-Control: max-age=2491
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+Connection: keep-alive
+----------------------------------------------------------
+http://phoenix.untd.com/TRCK/RGST?AGMT=33&TIME=168&RNS=1123456789
+
+GET /TRCK/RGST?AGMT=33&TIME=168&RNS=1123456789 HTTP/1.1
+Host: phoenix.untd.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: WHRE=114D3_1:125C1F_0_1157B|125BEE_0_11531; RMFD=011JKfF7O205Zp7|O105Zs6|O105Zs9|O105ZsE|O205Ztg; OAX=QDT9c0efg/cADGN+
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+Connection: close
+Server: Phoenix/1.1
+Content-Type: image/gif
+Content-Length: 43
+Set-Cookie: WHRE=1154D_1:125BEE_0_115F5|125C1F_0_1157B; expires=Fri, 02 Feb 2018 21:26:23 GMT; domain=.untd.com; path=/
+P3P: policyref="http://cyclops.prod.untd.com/common/w3c/netzero.xml", CP="CAO DSP CURa ADMa DEVa TAIa PSAa PSDa OUR BUS IND PHY ONL UNI FIN COM NAV INT DEM PRE LOC"
+Pragma: no-cache
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+----------------------------------------------------------
+http://ads.revsci.net/adserver/ako?record_activation&rsi_dpr=51778-75887-85331-75886-67750-74565-66682-75889-86132-51937-86406-56918-74560-51936-75890-51935-51067&rsi_actrec=uol-on&rsi_szactrec=ut-17
+
+GET /adserver/ako?record_activation&rsi_dpr=51778-75887-85331-75886-67750-74565-66682-75889-86132-51937-86406-56918-74560-51936-75890-51935-51067&rsi_actrec=uol-on&rsi_szactrec=ut-17 HTTP/1.1
+Host: ads.revsci.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: rsi_us_1000000=pUMFJs+g/xMU1j2Eq6nZ/D3R4TSpDxWmeFcZrzWYLldSnhccDq88L2iLYItQwAfWsgWzijkU4gefGTrO3/eo8r/+poAnBrbE4AGfeBv9Vqu8XWO2cL8YqWHkS2+OY7yqPQxAYqQnz40wdAX1DKKgyMdeCTFi4OQb89xw3tGgYsGKy4gd6qP+1baeEHhlW9pPgYIQeII4mr/c2W3qPlH7oNvStZIQcJwCk7W/sSBcWhu5ZDvWGuWqLHrSp/Fs/gHo9Sme0uqfCna3Yt2dyPkBSWV315JSSrAZAXSxLJxYKjuruGG+DkqsJxqaYQVQVNphXVeow2d5C95HcSZHc1ngTbmJrPExGRMcqNXa4icZAHB2rGFqy5DDlmxAa9ClRrJIv/fo5hTh8qjsh94fsnHX99QvTXd90wony68AWLTMFyCiMoDUISQ/BQlFMB50OXi+ECL14N9f99dTMcsOrAu7YmI4XiYFQpeA5D3UcNJj7w9d4olW7FbfGKCpDZtyV2VMGDSMBBiyZ+fRJzL6m7CHn/okJsIMMyRZpiA7TF5BoLZmmaXolQ0szJiP3GMd7wDQT3gt7TFFSQkBBjNs8RQquaSylDcPW5GEbCQ5cKUihBIrmG4XyWsGzgMZGWtWKOg3EL2zu1Vxr/gCrBDMuslaXTuCSMvNw9JR4rAgEhQhvYQaVtPgwX0W8sr+MFa1l1gv8M3/iLYb5E/TdRfGIsAt4g==; NETSEGS_C05503=CC360E7484AC484D&C05503&4459B51C&47925795&0&&478EDD58&CE38F864A80B0983D14912C9E745EC8D; 01IS=U; NETSEGS_K05540=CC360E7484AC484D&K05540&3F149836&4792797F&0&&478EEA33&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07612=CC360E7484AC484D&H07612&3F149836&478F8295&0&&478D77E3&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_E05516=CC360E7484AC484D&E05516&446B91AC&478CE863&3&10724,10726,10729&478AD033&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_G05524=CC360E7484AC484D&G05524&45BE59C7&46FD3CB1&4&10015,10016,10017,10018&46FB10FA&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_C07583=CC360E7484AC484D&C07583&3F149836&473C8C0A&0&&473A7410&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_G07608=CC360E7484AC484D&G07608&3F149836&47A8B336&1&10001&47A680E0&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_J05530=CC360E7484AC484D&J05530&44345613&476AA973&5&10302,10404,10351,10053,10297&47688229&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_E06560=CC360E7484AC484D&E06560&3F149836&478E7789&2&10001,10084&478C208A&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07710=CC360E7484AC484D&H07710&3F149836&4787CA6D&0&&47859139&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_C07584=CC360E7484AC484D&C07584&3F149836&4790F029&0&&478EC83D&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07709=CC360E7484AC484D&H07709&3F149836&47868E61&0&&4784352D&CE38F864A80B0983D14912C9E745EC8D; 01AIS=3; NETSEGS_E05511=CC360E7484AC484D&E05511&3F149836&4783F845&0&&478195B5&CE38F864A80B0983D14912C9E745EC8D; 01AI=2-2-E1413925FBFCB4494A75FB7D45E1FD583B90AE70A3347521A8E0E272BE513D4C-0B1C2E121C7CDFE392CE6B2EF2067286A414EE9602967EF67F70C68B9639BDB8; NETSEGS_E05510=CC360E7484AC484D&E05510&447D0A63&479FA949&1&10221&479D559A&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_A06546=CC360E7484AC484D&A06546&3F149836&472B6704&0&&47294132&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_G07610=CC360E7484AC484D&G07610&3F149836&47615FBB&0&&475F593F&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_J05531=CC360E7484AC484D&J05531&45B54F57&47AA0813&4&10128,10219,10295,10298&47A7E9D8&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_K05539=CC360E7484AC484D&K05539&3F149836&478E6EAC&2&10001,10015&478C29EF&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_K05541=CC360E7484AC484D&K05541&3F149836&469E460D&0&&469C22A8&CE38F864A80B0983D14912C9E745EC8D; NETID01=xi1LRgr@1R0AAB2F72gAAACk; NETSEGS_D05509=CC360E7484AC484D&D05509&3F149836&474F3875&1&10138&474CCCD1&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_F07607=CC360E7484AC484D&F07607&3F149836&47113376&0&&470EDE8C&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_J05532=CC360E7484AC484D&J05532&3F149836&47A0F47E&1&10961&479EA847&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07707=cc360e7484ac484d&H07707&0&47b09f77&3&10015,10016,10018&47a68461&ce38f864a80b0983d14912c9e745ec8d; rsi_cls_1000000=pUM94jmkPxIU7dSLqc/4VFf8xBzu6Ook9bWRmuTWFt01NyjI0nCfapryZNHpwBivOXNGf1mfOgXYPTiTcQC9NdYfxXEzddybFT8mgmhacvXfEVEoWZ0QJfjCmwTTdOB16S4IqItNyTm3BcitxyQlO1FC99AZPAGK4Emkz2EM1Jh9dvb4wFNXBQnmdg0tNgi0UIslsoMDygInO1Pcl5UL8pGMxBciy4EW8VDvCEldyrO3TEZJ4k7AX4rwXwrg1GzHji7rY2cH7whFONGFFK+MR/115K2zfhepxBYKcfIoLsZNf5DlLgwhqydhrvFKrb2KAT98lZh0KbB0GT+7WpeUehDh0E7H/55xZAkVveJzGEL1o5relFyjMhMSNI3Jp89DHHmfLxPn1HFZ/56l9J8JXjDW/yUhN7bdPFybc48sZiLg4mi7jIyYtrV1tmlfLm15nGrYidXY4aopm7NJVymopQl5Xkpow3DyB32d39L4RHgrnGzz9fOXed5GPd/B2BERSDPBMTwiOvHkPuc2L3GjU/2o6/xgskjTqs2jHmQpXkhL/6BXQjRGKVgwbXfgmznoSZCgtRTWha3F+MMj8LiM3AQoz+s4hjtTXPYVw67u2H+jEk04dgItDxU5Liyxdb22KJdmTlejL7NrnLfpZVHkqDbaRhqdOksRuGGy7uatmoVzVH++NwGBDtb4IjNFXxk6v1T3juOApL0jPWNGMUJQwgoeTi/SWlxbUZJc+wpuh7Lukz45vl7GtQuaHleIZlwg/AkfW49MLYPgY4mpPsSTzjPc0jivjN0LzurkOSVjpHUN1hLvqRfdLA3UnS+/wMkx1+lokTTTF5RJmsaG01qEsaulZtU13UCtsqsaJ+El35LrQlPyzT1xjTkrPfZF8ZlNLIb3qgIhm6RQqUKDE6NhktrFy6DAqLXuVRjZYfESIVoZQyVLfWvIOlqIKUPi9KzH3TJsSmnu8eA4HAtIb3K9E4MLHHFUlzqyR2/M/XmIhzfTzChDVDJ0QhKtNpSRS3vzNv1A0o04oYsv1rNLnJXm3G01GIoukSAqxAyg/TFZqyTnHHWmPqO8HLmjr7F3SaVIobNKBvrQi+KTDfxKOUZa15P5PAqPMxO8QfMMTwHacJvp0n37crDS6UquXYx1/pnNV1xF2xqeEHnz3u6KXsw=; rsi_segs_1000000=pUPFOD+FLwIQlrmdUK9PH7Ydwqu2UBVbQzyJv5VogdBy6pWUWLt/4IzIDYWxZps3zEWKNP/jMmwnAgH2LtpSfbUq371MuI1GHMZ8uaAM0Gsod3OlwXs5zbSmHg67WAFOYdqLyU/pTn7+wzpibjR9YmEnrNRg9HabcM+WRNNVE6VCUnjGjzgz6p1vPYua2kiWB2GJaOf2/DJ9hUemeCJR3N7XbaqjNNLGxzLkXty5QOc8JXrUVJMlIcUgue6EDyyIVitoxcYjgS7vZxKtl/C9h5Uur4F53TrWMl63mKAShYyBVs0B41c7lSml4d8c27U/7RBxIJ8=
+
+HTTP/1.x 200 OK
+Server: Apache-Coyote/1.1
+P3P: policyref="http://www.revenuescience.com/w3c/rsip3p.xml", CP="NON PSA PSD IVA IVD OTP OUR IND UNI PUR COM NAV INT DEM CNT STA PRE OTC HEA"
+Content-Type: image/gif
+Content-Length: 43
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+Connection: keep-alive
+Set-Cookie: rsi_us_1000000=; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/adserver
+Set-Cookie: rsi_us_1000000=pUMF5E+jMAYY7lxFyrYb2bmSRjJZubEfN9UyttJmUgnvpuIVlX4E6ycMPEhXom0Gwl51rKabtoYcnV6ODVno4G88Nf4lI2/h2xalRkFtUTKL4MCaqI91HKE802kr5BvVymly7Z9zsoHjV9gEcKFrbZjFQo5PWQE46sbgpXh84xrIH7G0W/XZfUkgRHDxLHRXtnJXhhqy6VOQ87HeoKMi8qmxUYYE3l7dehK0QoZb6hmWKaf796WmN5IHZ99zLwbZG92K6YB/fUEp0elCy7hoT0feanxXeUDZS9gKTk+AWIUHLkN+YP83H/i1n/6bbQ+g4Qake1qw//W6O2LDx3hMuD7QkAguUv+A89XQRu6LS4d4F5TBlnGQaTBOGWBG/5CEiu6TjP6KDO6COg9nb0BzKUtUmiGEkTYsNXCb05YepU9/6Ppuun8oJddEB2zxzACoxPdGmDeyDz1OlsJnM7mbTo3e/FI5QemBkU1Zx8bpm2ZZGfdsltmzMeHb6EXCw650hWIav6hppZ5FY3iZArnWBwUMoXkJVQ0gpJS1+37jnWUAm/ipTRGtLLHFSMxZyDe5mn50A2oqqDdp4mmuzwXOAC+I22DQkNwRLauoyZlfVP6jinaqdAGVGb+nHGostNhEkrBpcUZ98pvfLc8jDkqiVDy+oi7U8ro3EBQIHZ77FqTzbMNcXLYMe6xWQq5mU7HmwIb/mg9eNBl+EPEjHHZX3sBSo+DJV8Tfs3PY9UkimjtovCes5Tu1Uc+hCzJ1tUgcP1iofjDqdjudLlZyv2jOjMul0pSS0AIDmSXAiaHZl2/pyMBFSZfszhy5uOjdiWDLjnX7BbLySgbgrla4i8hDhawsSB5PI0W6GYTEIIuAni9OdxrE6LekZhYl4hzuAtSVqGrPkuwMD1Cw85PkrnW4+eSw6kib8jJEqDRUD+BtVLFPHLKTNgb1xPqGfzDjGIbKrlQFvhMJ2qM0OlovQseLavmgUxUxVWlKzkaPlQYLecOmwtBgISXZXnY86bXR6spazzsKMA6uOprQ3x5GJY1+4V0rLxbjXDjwFDq8endMam7yVQqXqQChGYrfHIRNWFrZsh0ZgKQufTCtucSIWdbbK8+iTGPBA5jDRkUP9ZPhwzAPaC6vmtOaebz5bQHvcbqLYOKhXknX8StvXrVFF6vxvy3TjVBBfWCtTXtBXyGPQUrzyQvSStlupq1T1JOh1Ry4DqKDpsCLSnzJSfy1tRWSVg9Jcgf+PEmQWfMetOurStuks3OLiK7eoUv59ohWa5AMMNdmA605CLpbkAYx7WdFInYNTZb3xVBQmgZUuZFWYqR79P2uxf5Ne5XNhqNCUXDGUky3IonC8hqfq40Ol7qLBCzYRu+anqZUWNy4b6I=; Expires=Sat, 28-Jan-2040 21:26:54 GMT; Path=/adserver
+Cache-Control: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+----------------------------------------------------------
+http://ad.yieldmanager.com/imp?Z=160x600&s=190890&r=0&_salt=2104877358&u=http%3A%2F%2Fautotest.myphotodevel.com%2Fads%2Falbum_600.php%3Fadstyle%3Dnone&B=1
+
+GET /imp?Z=160x600&s=190890&r=0&_salt=2104877358&u=http%3A%2F%2Fautotest.myphotodevel.com%2Fads%2Falbum_600.php%3Fadstyle%3Dnone&B=1 HTTP/1.1
+Host: ad.yieldmanager.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: testbounce=testing
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Set-Cookie: uid=uid=0001337e-d431-11dc-b907-0019bb2ed348&_hmacv=1&_salt=4281295590&_keyid=k1&_hmac=e3ff0cf5c6cbfa5cf486539b1d78666ab14f2a40; expires=Thu, 06-Mar-2008 21:26:23 GMT
+Set-Cookie: pv1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: pc1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ih="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: vh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: bh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ia="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Cache-Control: no-store
+Last-Modified: Tue, 05 Feb 2008 21:26:23 GMT
+Pragma: no-cache
+Content-Length: 653
+Content-Type: application/x-javascript
+Connection: close
+----------------------------------------------------------
+http://ad.targetingmarketplace.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAIAAAAAAP8AAAADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKHkLP-48QNBwvj1WAvKsZ1ONuETf.e.owtyPwAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+GET /iframe3?rDEAAKrpAgA2cAQAwa8BAAIAAAAAAP8AAAADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKHkLP-48QNBwvj1WAvKsZ1ONuETf.e.owtyPwAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none HTTP/1.1
+Host: ad.targetingmarketplace.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Location: http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAIAAAAAAP8AAAADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKHkLP-48QNBwvj1WAvKsZ1ONuETf.e.owtyPwAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cache-Control: no-store
+Last-Modified: Tue, 05 Feb 2008 21:26:23 GMT
+Pragma: no-cache
+Content-Length: 0
+Connection: close
+----------------------------------------------------------
+http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAIAAAAAAP8AAAADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKHkLP-48QNBwvj1WAvKsZ1ONuETf.e.owtyPwAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+GET /iframe3?rDEAAKrpAgA2cAQAwa8BAAIAAAAAAP8AAAADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKHkLP-48QNBwvj1WAvKsZ1ONuETf.e.owtyPwAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none HTTP/1.1
+Host: ad.yieldmanager.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: testbounce=testing; uid=uid=0001337e-d431-11dc-b907-0019bb2ed348&_hmacv=1&_salt=4281295590&_keyid=k1&_hmac=e3ff0cf5c6cbfa5cf486539b1d78666ab14f2a40
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Set-Cookie: uid=uid=0001337e-d431-11dc-b907-0019bb2ed348&_hmacv=1&_salt=1302582405&_keyid=k1&_hmac=8861914abd61ac62d3c595bf7d7bb15ba05159f3; expires=Thu, 06-Mar-2008 21:26:23 GMT
+Set-Cookie: vuday1=]B)aYNKC)8YapEC; expires=Wed, 06-Feb-2008 00:00:00 GMT
+Set-Cookie: pv1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: pc1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ih="b!!!!#!!L9!!!!!#:$[ti"; path=/; expires=Thu, 04-Feb-2010 21:26:23 GMT
+Set-Cookie: vh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: bh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ia="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Cache-Control: no-store
+Last-Modified: Tue, 05 Feb 2008 21:26:23 GMT
+Pragma: no-cache
+Content-Length: 311
+Content-Type: text/html
+Connection: close
+----------------------------------------------------------
+http://media.fastclick.net/w/get.media?sid=30231&m=3&tp=7&d=j&t=s
+
+GET /w/get.media?sid=30231&m=3&tp=7&d=j&t=s HTTP/1.1
+Host: media.fastclick.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAIAAAAAAP8AAAADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKHkLP-48QNBwvj1WAvKsZ1ONuETf.e.owtyPwAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: vt=1929:38783:80398:1796:0:1201544504|4508:99807:203160:37952:0:1201720876|4784:86000:201671:38120:0:1201619312|4784:102792:201673:38120:0:1201619313|4784:75839:201662:25659:0:1201711028|4784:85279:201682:22605:0:1201717170|5802:105286:202466:4366:0:1201725935|4038:71341:209149:37953:0:1201899654|; adv_ic=B1oAAABAOadHIAYGAAFJAABlOCAHIAtAAAI4iaPgABcBND3gARcCJ6FMgBcEQwAA/ULgARcBhojgAS8BljzgARcASOACFwBk4AJfAvDhoIBHIHcBnUbgAS8A7+ACFwCh4AIXASzO4AEvAXxF4AEvAbK/4AEXAAjgAqcCGl2e4ABfAF3gAhcC4uuQ4AAXAIkgw8DvAo5wjuAAFwB+4ALXAhDWi+AAFwFiQeABLwGAxeABFwCL4AIXAdaW4AEXAXZE4AEvAp3rh+AARwFYQOABFwB84AIXAcY54AEXAkAxhuAALwGmPuABFwLNzoPgABcANuACRwJmBYDgABcAMOECHwK9h37gABcBXBPgAUcCBwRo4AAXANPhAgfgAxcAOuECfwLHuGbgAC8Ap+AC1wHTt+ABFwAU4AJ3AunBYeAALwE4NuABdwECkuABFwGIN+ABFwAB4AIXABTgAl/gAxcAmeICVwGVduABRwFEOyAnQrQgAAI4HV/gAHcAx+EC9wJRxFngABcAEeAC1wBQ4AIXABjhAmcBksPgAS8AkeICDwFjtuABFwGeFeABdwEKVeABFwAW4AJfApu/VeAAdwDL4ALXAoGyTeAAFwAp4QI3AYqt4AEXAPTgAi8CYzA64AAvAKjgAhcCD9k04AAXABvgAhcBZ9bgARcBjz/gAacAYOACFwCt4QI3AZXV4AEvAK/iAg8B4JjgARcA2OACXwFEluABFwDU4AJfAumPM+AAjwB34AJHAtj/MeAAFwAL4QJnANfgAhcA1eMCRwEV+OABLwD14AJ3AjZbKuAARwFfLuAB1wEAPuABFwBF4ALXAvtoJ+AALwCO4AIvAJ7gAhcAReACXwJLdR/gAC8AGeACFwHIauABFwHYOuABdwI9/hzgAC8A6uICJwLHIhbgABcAeeACRwJu4AvgABcAd+ACFwKVbALgABcAeeECNwLTZgHgABcAoOECHwG+WuABFwDD4AIXACDgAhcAo+ACRwKl5PsilSC3JW8AguACFwLlFvjgABcBzBQgHyAjQAACWeb34AAXAPXgAi8C8Bj04AAXADzgAhcC5+Pz4AAXAN/hAt8Cyrjy4AAXAckj4AFfAVaz4AEXAPjgAkcCTHzx4AAvABLhAmcCQ7fu4AAXAOnkAvcCPX/h4AAXAOfkAh8Cw7zV4AAXAN3gAi8B17ngARcAH+ACd+ADFwGkNeABpwJtDc/gAEcAfuACXwKHrsXgABcAa+ACRwLWwMTgABcAfOACvwEKpuABFwDv4AKPAt8nw+AALwC+4gK3Al5QsuAAFwD34gJXAF3gAhcAHuECZwLfvbDgAC8AGOACpwKsLargABcALeACFwLo4aTgABcAE+ACXwDn4AIXAI3gDhcBQQ3hAR8C1uKb4ABHAIXgAi8BrabgARcA/OEABwEAAA==; pluto=827055772016|v1; zru=1|:1202164716|; pjw=BAYAAAABIAMDQDmnRyAGYAsBstGABwTTSwIAKyATAAIgA+ADHwGK4oAfAjvCAeAMHwIwWwFgRwHX7+ANPwENRYAfANXgDh8B/RWAXwEwceANPwFxaYA/AXy/wB8BAAA=; rt=urt11:s:1188395593|urt6:r:1201186921|urt69:k:1202164716|
+
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:26:23 GMT
+Location: http://rd.apmebf.com/w/get.media?sid=30231&m=3&tp=7&d=j&t=s&host=media.fastclick.net
+P3P: CP='NOI DSP DEVo TAIo COR PSA OUR IND NAV'
+Content-Length: 288
+Keep-Alive: timeout=5, max=59
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://rd.apmebf.com/w/get.media?sid=30231&m=3&tp=7&d=j&t=s&host=media.fastclick.net
+
+GET /w/get.media?sid=30231&m=3&tp=7&d=j&t=s&host=media.fastclick.net HTTP/1.1
+Host: rd.apmebf.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAIAAAAAAP8AAAADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKHkLP-48QNBwvj1WAvKsZ1ONuETf.e.owtyPwAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: S=5updvj-41613-1193951251823-4c
+
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:26:24 GMT
+Server: Apache/2.2.4 (Unix)
+Set-Cookie: S=5updvj-41613-1193951251823-4c; domain=.apmebf.com; path=/; expires=Thu, 04-Feb-2010 21:26:24 GMT
+Location: http://media.fastclick.net/w/get.media?sid=30231&m=3&tp=7&d=j&t=s&upsid=827055772016
+P3P: CP='NOI DSP DEVo TAIo COR PSA OUR IND NAV'
+Content-Length: 288
+Keep-Alive: timeout=5, max=75
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://media.fastclick.net/w/get.media?sid=30231&m=3&tp=7&d=j&t=s&upsid=827055772016
+
+GET /w/get.media?sid=30231&m=3&tp=7&d=j&t=s&upsid=827055772016 HTTP/1.1
+Host: media.fastclick.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAIAAAAAAP8AAAADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKHkLP-48QNBwvj1WAvKsZ1ONuETf.e.owtyPwAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: vt=1929:38783:80398:1796:0:1201544504|4508:99807:203160:37952:0:1201720876|4784:86000:201671:38120:0:1201619312|4784:102792:201673:38120:0:1201619313|4784:75839:201662:25659:0:1201711028|4784:85279:201682:22605:0:1201717170|5802:105286:202466:4366:0:1201725935|4038:71341:209149:37953:0:1201899654|; adv_ic=B1oAAABAOadHIAYGAAFJAABlOCAHIAtAAAI4iaPgABcBND3gARcCJ6FMgBcEQwAA/ULgARcBhojgAS8BljzgARcASOACFwBk4AJfAvDhoIBHIHcBnUbgAS8A7+ACFwCh4AIXASzO4AEvAXxF4AEvAbK/4AEXAAjgAqcCGl2e4ABfAF3gAhcC4uuQ4AAXAIkgw8DvAo5wjuAAFwB+4ALXAhDWi+AAFwFiQeABLwGAxeABFwCL4AIXAdaW4AEXAXZE4AEvAp3rh+AARwFYQOABFwB84AIXAcY54AEXAkAxhuAALwGmPuABFwLNzoPgABcANuACRwJmBYDgABcAMOECHwK9h37gABcBXBPgAUcCBwRo4AAXANPhAgfgAxcAOuECfwLHuGbgAC8Ap+AC1wHTt+ABFwAU4AJ3AunBYeAALwE4NuABdwECkuABFwGIN+ABFwAB4AIXABTgAl/gAxcAmeICVwGVduABRwFEOyAnQrQgAAI4HV/gAHcAx+EC9wJRxFngABcAEeAC1wBQ4AIXABjhAmcBksPgAS8AkeICDwFjtuABFwGeFeABdwEKVeABFwAW4AJfApu/VeAAdwDL4ALXAoGyTeAAFwAp4QI3AYqt4AEXAPTgAi8CYzA64AAvAKjgAhcCD9k04AAXABvgAhcBZ9bgARcBjz/gAacAYOACFwCt4QI3AZXV4AEvAK/iAg8B4JjgARcA2OACXwFEluABFwDU4AJfAumPM+AAjwB34AJHAtj/MeAAFwAL4QJnANfgAhcA1eMCRwEV+OABLwD14AJ3AjZbKuAARwFfLuAB1wEAPuABFwBF4ALXAvtoJ+AALwCO4AIvAJ7gAhcAReACXwJLdR/gAC8AGeACFwHIauABFwHYOuABdwI9/hzgAC8A6uICJwLHIhbgABcAeeACRwJu4AvgABcAd+ACFwKVbALgABcAeeECNwLTZgHgABcAoOECHwG+WuABFwDD4AIXACDgAhcAo+ACRwKl5PsilSC3JW8AguACFwLlFvjgABcBzBQgHyAjQAACWeb34AAXAPXgAi8C8Bj04AAXADzgAhcC5+Pz4AAXAN/hAt8Cyrjy4AAXAckj4AFfAVaz4AEXAPjgAkcCTHzx4AAvABLhAmcCQ7fu4AAXAOnkAvcCPX/h4AAXAOfkAh8Cw7zV4AAXAN3gAi8B17ngARcAH+ACd+ADFwGkNeABpwJtDc/gAEcAfuACXwKHrsXgABcAa+ACRwLWwMTgABcAfOACvwEKpuABFwDv4AKPAt8nw+AALwC+4gK3Al5QsuAAFwD34gJXAF3gAhcAHuECZwLfvbDgAC8AGOACpwKsLargABcALeACFwLo4aTgABcAE+ACXwDn4AIXAI3gDhcBQQ3hAR8C1uKb4ABHAIXgAi8BrabgARcA/OEABwEAAA==; pluto=827055772016|v1; zru=1|:1202164716|; pjw=BAYAAAABIAMDQDmnRyAGYAsBstGABwTTSwIAKyATAAIgA+ADHwGK4oAfAjvCAeAMHwIwWwFgRwHX7+ANPwENRYAfANXgDh8B/RWAXwEwceANPwFxaYA/AXy/wB8BAAA=; rt=urt11:s:1188395593|urt6:r:1201186921|urt69:k:1202164716|
+
+HTTP/1.x 200 Okay
+Date: Tue, 05 Feb 2008 21:26:24 GMT
+Content-Type: application/x-javascript
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: 0
+P3P: CP='NOI DSP DEVo TAIo COR PSA OUR IND NAV'
+Set-Cookie: pjw=BAcAAAABIAMDgNSoRyAGYAsClpwBYAcCIB0DIBEBAABABeADHwHTnYAfAT8aQBngCR8Bi5GAHwHNE+ANHwHJXIAfAWcW4A0fAIqgPwDM4A4/AYiLgD8BeDHgDT8AZaCfAbMZwB8BAAA=; domain=.fastclick.net; path=/; expires=Thu, 07-Feb-2008 21:26:24 GMT
+Set-Cookie: pluto=827055772016|v1; domain=.fastclick.net; path=/; expires=Thu, 04-Feb-2010 21:26:24 GMT
+Set-Cookie: adv_ic=B1kAAACA1KhHIAYGAAFJAADLOyAHIAtAAAJAOafgABcBZTjgARcCJ6FMgBcEQwAA/ULgARcCOImjgBcgRwE0PeABFwGGiOABFwGWPOABFwBI4AIXAGTgAl8C8OGg4ABHAZ1G4AEvAO/gAhcAoeACFwEszuABLwF8ReABLwIaXZ7gAEcAXeACjwLi65DgABcAiSDDwO8CENaL4AAXAWJB4AEXAYDF4AEXAIvgAhcB1pbgARcBdkTgAS8CneuH4ABHAVhA4AEXAHzgAhcBxjngARcCQDGG4AAvAaY+4AEXAs3Og+AAFwA24AJHAmYFgOAAFwAw4ALvAr2HfuAAFwFcE+ABRwIHBGjgABcA0+AC7+ADFwA64QJPAse4ZuAALwCn4ALXAdO34AEXABTgAncC6cFh4AAvATg24AF3AQKS4AEXAYg34AEXAAHgAhcAFOACX+ADFwCZ4gInAZV24AFHAETiAp8COB1f4AB3AMfhAt8CUcRZ4AAXABHgAtcAUOACFwAY4QJnAZLD4AEvAJHiAs8BY7bgARcBnhUgn0MUIAABClXgARcAFuACXwKbv1XgAHcAy+AC1wKBsk3gABcAKeECNwGKreABFwD04AIvAmMwOuAALwCo4AIXAg/ZNOAAFwAb4AIXAWfW4AEXAY8/4AGnAGDgAhcAreECNwGV1eABLwCv4gIPAeCY4AEXANjgAl8BRJbgARcA1OACXwLpjzPgAI8Ad+ACRwLY/zHgABcAC+ECZwDX4AIXANXjAkcBFfjgAS8A9eACdwI2WyrgAEcBXy7gAdcBAD7gARcAReAC1wL7aCfgAC8AjuACLwCe4AIXAEXgAl8CS3Uf4AAvABngAhcByGrgARcB2DrgAXcCPf4c4AAvAOriAicCxyIW4AAXAHngAkcCbuAL4AAXAHfgAhcClWwC4AAXAHnhAjcC02YB4AAXAKDhAh8BvlrgARcAw+ACFwAg4AIXAKPgAkcCpeT7IpUgtyWHAILgAhcC5Rb44AAXAcwUIB8gI0AAAlnm9+AAFwD14AIvAvAY9OAAFwA84AIXAufj8+AAFwDf4QLfAsq48uAAFwHJI+ABXwFWs+ABFwD44AJHAkx88eAALwAS4QJnAkO37uAAFwDp5AL3Aj1/4eAAFwDn5AIfAsO81eAAFwDd4AIvAde54AEXAB/gAnfgAxcBpDXgAacCbQ3P4ABHAH7gAl8Ch67F4AAXAGvgAkcC1sDE4AAXAHzgAr8BCqbgARcA7+ACjwLfJ8PgAC8AvuICtwJeULLgABcA9+ICVwBd4AIXAB7hAmcC372w4AAvABjgAqcCrC2q4AAXAC3gAhcC6OGk4AAXABPgAl8A5+ACFwCN4A4XAUEN4QEfAtbim+AARwCF4AIvAa2m4AEXAPzhAAcBAAA=; domain=.fastclick.net; path=/; expires=Wed, 04-Feb-2009 21:26:24 GMT
+Keep-Alive: timeout=5, max=5
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+----------------------------------------------------------
+http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+
+GET /loginpage.php?returnpage=%2Findex.php%3F HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=0; fcwt=autotest
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:26 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1127447475&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Login%20to%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/loginpage.php?returnpage=%2Findex.php%3F&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1127447475&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Login%20to%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/loginpage.php?returnpage=%2Findex.php%3F&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 04 Dec 2007 18:04:11 GMT
+Server: ucfe
+Content-Length: 35
+Date: Tue, 05 Feb 2008 21:26:27 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/loginpage.php
+
+POST /loginpage.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=0; fcwt=autotest
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 126
+returnpage=%2Findex.php%3F&uname=autotest&gallerypassword=112233&referer=http%3A%2F%2Fautotest.myphotodevel.com%2F&Login=Login
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:26:28 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: /index.php?
+Content-Length: 8
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/index.php?
+
+GET /index.php? HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=0; fcwt=autotest
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:29 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Mon, 05-May-2008 21:26:29 GMT; domain=myphotodevel.com
+Set-Cookie: page_view_#=1; expires=Wed, 06-Feb-2008 21:26:29 GMT
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:29 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:29 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 291
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+
+GET /ads/loggedin_600.php?adstyle=none HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:29 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 653
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=361912904&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/index.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=361912904&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/index.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 04 Dec 2007 18:00:48 GMT
+Server: ucfe
+Content-Length: 35
+Date: Tue, 05 Feb 2008 21:26:29 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:29 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 294
+----------------------------------------------------------
+http://autotest.myphotodevel.com/share.php?&set_albumName=&index=&id=&FromShare=Slideshow
+
+GET /share.php?&set_albumName=&index=&id=&FromShare=Slideshow HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:33 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Mon, 05-May-2008 21:26:33 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/share.php?&set_albumName=&index=&id=&FromShare=Slideshow
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:34 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:34 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 291
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+
+GET /ads/loggedin_600.php?adstyle=none HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/share.php?&set_albumName=&index=&id=&FromShare=Slideshow
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:34 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 653
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:34 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 293
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=73598151&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Share%20Slideshow%20of%20second%20admin's%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/share.php?&set_albumName=&index=&id=&FromShare=Slideshow&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=73598151&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Share%20Slideshow%20of%20second%20admin's%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/share.php?&set_albumName=&index=&id=&FromShare=Slideshow&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/share.php?&set_albumName=&index=&id=&FromShare=Slideshow
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 04 Dec 2007 17:51:56 GMT
+Server: ucfe
+Content-Length: 35
+Date: Tue, 05 Feb 2008 21:26:34 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/share.php?set_albumName=album03&index=&id=&FromShare=Slideshow&type=album
+
+GET /share.php?set_albumName=album03&index=&id=&FromShare=Slideshow&type=album HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/share.php?&set_albumName=&index=&id=&FromShare=Slideshow
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:37 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Mon, 05-May-2008 21:26:37 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/share.php?set_albumName=album03&index=&id=&FromShare=Slideshow&type=album
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:37 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:37 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 292
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+
+GET /ads/loggedin_600.php?adstyle=none HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/share.php?set_albumName=album03&index=&id=&FromShare=Slideshow&type=album
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:37 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 653
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:26:38 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 294
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=389659587&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Share%20Slideshow%20of%20third%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/share.php?set_albumName=album03&index=&id=&FromShare=Slideshow&type=album&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=389659587&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Share%20Slideshow%20of%20third%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/share.php?set_albumName=album03&index=&id=&FromShare=Slideshow&type=album&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/share.php?set_albumName=album03&index=&id=&FromShare=Slideshow&type=album
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 04 Dec 2007 18:06:11 GMT
+Server: ucfe
+Content-Length: 35
+Date: Tue, 05 Feb 2008 21:26:38 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/process_email.php?feature=share_slideshow
+
+POST /process_email.php?feature=share_slideshow HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/share.php?set_albumName=album03&index=&id=&FromShare=Slideshow&type=album
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 291
+emails=swain%40corp.fortunecity.com&fromName=autotest+account&subject=autotest+sends+you+the+third+album&message=You%27re+invited+to+view+a+slideshow+for+--+third+album+--+on+MyPhotoAlbum.%0D%0AEnjoy%21%0D%0A%0D%0AThis+message+probably+automatically+generated.+So+there.&email_action=preview
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:12 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Mon, 05-May-2008 21:27:12 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/process_email.php?feature=share_slideshow
+
+POST /process_email.php?feature=share_slideshow HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/share.php?set_albumName=album03&index=&id=&FromShare=Slideshow&type=album
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 299
+emails=swain%40corp.fortunecity.com&fromName=autotest+account&subject=autotest+sends+you+the+third+album&message=You%27re+invited+to+view+a+slideshow+for+--+third+album+--+on+MyPhotoAlbum.%0D%0AEnjoy%21%0D%0A%0D%0AThis+message+probably+automatically+generated.+So+there.&email_action=send&x=103&y=16
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:18 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Mon, 05-May-2008 21:27:18 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/process_email.php?feature=share_slideshow
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:18 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+
+GET /ads/loggedin_600.php?adstyle=none HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/process_email.php?feature=share_slideshow
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:18 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 653
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:18 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 287
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:18 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 292
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1632035324&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Processing%20Share&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/process_email.php?feature=share_slideshow&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1632035324&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Processing%20Share&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/process_email.php?feature=share_slideshow&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/process_email.php?feature=share_slideshow
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 04 Dec 2007 18:01:29 GMT
+Server: ucfe
+Content-Length: 35
+Date: Tue, 05 Feb 2008 21:27:18 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/process_email.php?feature=share_slideshow
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=1; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:20 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Mon, 05-May-2008 21:27:20 GMT; domain=myphotodevel.com
+Set-Cookie: page_view_#=2; expires=Wed, 06-Feb-2008 21:27:20 GMT
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=2; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:21 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:21 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 288
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+
+GET /ads/loggedin_600.php?adstyle=none HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=2; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:21 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 653
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:21 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 292
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=528012124&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=528012124&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Thu, 24 Jan 2008 08:38:43 GMT
+Server: ucfe
+Content-Length: 35
+Date: Tue, 05 Feb 2008 21:27:21 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/do_command.php?return=http%3A%2F%2Fautotest.myphotodevel.com%2Fview_album.php%3Fpage%3D1&cmd=logout
+
+GET /do_command.php?return=http%3A%2F%2Fautotest.myphotodevel.com%2Fview_album.php%3Fpage%3D1&cmd=logout HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=2; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:27:23 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Mon, 05-May-2008 21:27:23 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/view_album.php?page=1
+Content-Length: 169
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/view_album.php?page=1
+
+GET /view_album.php?page=1 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=2; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:27:23 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: http://autotest.myphotodevel.com/albums.php
+Content-Length: 4
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=2; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:23 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: page_view_#=3; expires=Wed, 06-Feb-2008 21:27:24 GMT
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/album_728.php
+
+GET /ads/album_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=3; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:24 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 384
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+GET /ads/album_600.php?adstyle=none HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: PHPSESSID=s008e9223lr8sjihfns66n3kk7; mpa_fqdn=http%3A%2F%2Fautotest.myphotodevel.com; page_view_#=3; fcwt=autotest; mpa_popup=true; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:24 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 378
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:24 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Set-Cookie: RMFD=011JMQ5SS80cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; expires=Fri, 31-Dec-2020 23:59:59 GMT; path=/; domain=.fortunecity.com
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 142
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: RMFD=011JMQ5SS70cggU|R90cggW|P20cgkO|640ciE0|P40ciE5|T30cjmL|T30cjmN|630cmAB|610cmVr|P60cmse|P60cmsl|P30cnQN; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660; NSC_f1dfo4efm_qppm_iuuq=4411b9313660; NSC_f3dfo4efm_Qppm_iuuq=4411b9343660
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:24 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+Set-Cookie: NSC_f1dfo4efm_qppm_iuuq=4411b9313660;path=/
+Cache-Control: private
+Content-Encoding: gzip
+Content-Length: 298
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1790374240&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1790374240&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 04 Dec 2007 17:38:19 GMT
+Server: ucfe
+Content-Length: 35
+Date: Tue, 05 Feb 2008 21:27:24 GMT
+----------------------------------------------------------
+http://ads.realtechnetwork.net/servlet/ajrotator/7634/0/vj?z=realtech&dim=297
+
+GET /servlet/ajrotator/7634/0/vj?z=realtech&dim=297 HTTP/1.1
+Host: ads.realtechnetwork.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: ajess1_4034FD73FB087B5CB46AE308=a; ajefc=TTKJJUVTKKNJUQNNOOWUOLNKNJJKKNJUTMJMOWUVKXKNJJPRIRWMMP; ajcmp=20131Lc31Im003JfP; ajdotomin1=0; u=321380863; sp=1
+
+HTTP/1.x 200 OK
+Server: JBird/1.0b
+Connection: close
+Date: Tue, 05 Feb 2008 21:34:53 GMT
+Pragma: no-cache
+Cache-Control: private, max-age=0, no-cache, no-store
+Expires: Tue, 01 Jan 2000 00:00:00 GMT
+P3P: policyref="http://ads.realtechnetwork.net:80/p3p/RotatorPolicyRef.xml", CP="NOI DSP COR CURa DEVa TAIa OUR SAMa NOR STP NAV STA LOC"
+----------------------------------------------------------
+http://ads.revsci.net/adserver/ako?rsi_random=992697774&rsi_pub=6D0B0D30D224D4EC88790BDFDC2F4FB8&rsi_site=3A6E4F58241C3D85743A4ED0BF99E164&rsi_width=160&rsi_height=600&rsi_secure=0&rsi_url=http%3A//autotest.myphotodevel.com/ads/album_600.php%3Fadstyle%3Dnone&rsi_referrer=http%3A//autotest.myphotodevel.com/albums.php&rsi_title=600%20Ad%20Tag&rsi_inf=1
+
+GET /adserver/ako?rsi_random=992697774&rsi_pub=6D0B0D30D224D4EC88790BDFDC2F4FB8&rsi_site=3A6E4F58241C3D85743A4ED0BF99E164&rsi_width=160&rsi_height=600&rsi_secure=0&rsi_url=http%3A//autotest.myphotodevel.com/ads/album_600.php%3Fadstyle%3Dnone&rsi_referrer=http%3A//autotest.myphotodevel.com/albums.php&rsi_title=600%20Ad%20Tag&rsi_inf=1 HTTP/1.1
+Host: ads.revsci.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: rsi_us_1000000=pUMF5E+jMAYY7lxFyrYb2bmSRjJZubEfN9UyttJmUgnvpuIVlX4E6ycMPEhXom0Gwl51rKabtoYcnV6ODVno4G88Nf4lI2/h2xalRkFtUTKL4MCaqI91HKE802kr5BvVymly7Z9zsoHjV9gEcKFrbZjFQo5PWQE46sbgpXh84xrIH7G0W/XZfUkgRHDxLHRXtnJXhhqy6VOQ87HeoKMi8qmxUYYE3l7dehK0QoZb6hmWKaf796WmN5IHZ99zLwbZG92K6YB/fUEp0elCy7hoT0feanxXeUDZS9gKTk+AWIUHLkN+YP83H/i1n/6bbQ+g4Qake1qw//W6O2LDx3hMuD7QkAguUv+A89XQRu6LS4d4F5TBlnGQaTBOGWBG/5CEiu6TjP6KDO6COg9nb0BzKUtUmiGEkTYsNXCb05YepU9/6Ppuun8oJddEB2zxzACoxPdGmDeyDz1OlsJnM7mbTo3e/FI5QemBkU1Zx8bpm2ZZGfdsltmzMeHb6EXCw650hWIav6hppZ5FY3iZArnWBwUMoXkJVQ0gpJS1+37jnWUAm/ipTRGtLLHFSMxZyDe5mn50A2oqqDdp4mmuzwXOAC+I22DQkNwRLauoyZlfVP6jinaqdAGVGb+nHGostNhEkrBpcUZ98pvfLc8jDkqiVDy+oi7U8ro3EBQIHZ77FqTzbMNcXLYMe6xWQq5mU7HmwIb/mg9eNBl+EPEjHHZX3sBSo+DJV8Tfs3PY9UkimjtovCes5Tu1Uc+hCzJ1tUgcP1iofjDqdjudLlZyv2jOjMul0pSS0AIDmSXAiaHZl2/pyMBFSZfszhy5uOjdiWDLjnX7BbLySgbgrla4i8hDhawsSB5PI0W6GYTEIIuAni9OdxrE6LekZhYl4hzuAtSVqGrPkuwMD1Cw85PkrnW4+eSw6kib8jJEqDRUD+BtVLFPHLKTNgb1xPqGfzDjGIbKrlQFvhMJ2qM0OlovQseLavmgUxUxVWlKzkaPlQYLecOmwtBgISXZXnY86bXR6spazzsKMA6uOprQ3x5GJY1+4V0rLxbjXDjwFDq8endMam7yVQqXqQChGYrfHIRNWFrZsh0ZgKQufTCtucSIWdbbK8+iTGPBA5jDRkUP9ZPhwzAPaC6vmtOaebz5bQHvcbqLYOKhXknX8StvXrVFF6vxvy3TjVBBfWCtTXtBXyGPQUrzyQvSStlupq1T1JOh1Ry4DqKDpsCLSnzJSfy1tRWSVg9Jcgf+PEmQWfMetOurStuks3OLiK7eoUv59ohWa5AMMNdmA605CLpbkAYx7WdFInYNTZb3xVBQmgZUuZFWYqR79P2uxf5Ne5XNhqNCUXDGUky3IonC8hqfq40Ol7qLBCzYRu+anqZUWNy4b6I=; NETSEGS_C05503=CC360E7484AC484D&C05503&4459B51C&47925795&0&&478EDD58&CE38F864A80B0983D14912C9E745EC8D; 01IS=U; NETSEGS_K05540=CC360E7484AC484D&K05540&3F149836&4792797F&0&&478EEA33&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07612=CC360E7484AC484D&H07612&3F149836&478F8295&0&&478D77E3&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_E05516=CC360E7484AC484D&E05516&446B91AC&478CE863&3&10724,10726,10729&478AD033&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_G05524=CC360E7484AC484D&G05524&45BE59C7&46FD3CB1&4&10015,10016,10017,10018&46FB10FA&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_C07583=CC360E7484AC484D&C07583&3F149836&473C8C0A&0&&473A7410&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_G07608=CC360E7484AC484D&G07608&3F149836&47A8B336&1&10001&47A680E0&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_J05530=CC360E7484AC484D&J05530&44345613&476AA973&5&10302,10404,10351,10053,10297&47688229&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_E06560=CC360E7484AC484D&E06560&3F149836&478E7789&2&10001,10084&478C208A&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07710=CC360E7484AC484D&H07710&3F149836&4787CA6D&0&&47859139&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_C07584=CC360E7484AC484D&C07584&3F149836&4790F029&0&&478EC83D&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07709=CC360E7484AC484D&H07709&3F149836&47868E61&0&&4784352D&CE38F864A80B0983D14912C9E745EC8D; 01AIS=3; NETSEGS_E05511=CC360E7484AC484D&E05511&3F149836&4783F845&0&&478195B5&CE38F864A80B0983D14912C9E745EC8D; 01AI=2-2-E1413925FBFCB4494A75FB7D45E1FD583B90AE70A3347521A8E0E272BE513D4C-0B1C2E121C7CDFE392CE6B2EF2067286A414EE9602967EF67F70C68B9639BDB8; NETSEGS_E05510=CC360E7484AC484D&E05510&447D0A63&479FA949&1&10221&479D559A&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_A06546=CC360E7484AC484D&A06546&3F149836&472B6704&0&&47294132&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_G07610=CC360E7484AC484D&G07610&3F149836&47615FBB&0&&475F593F&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_J05531=CC360E7484AC484D&J05531&45B54F57&47AA0813&4&10128,10219,10295,10298&47A7E9D8&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_K05539=CC360E7484AC484D&K05539&3F149836&478E6EAC&2&10001,10015&478C29EF&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_K05541=CC360E7484AC484D&K05541&3F149836&469E460D&0&&469C22A8&CE38F864A80B0983D14912C9E745EC8D; NETID01=xi1LRgr@1R0AAB2F72gAAACk; NETSEGS_D05509=CC360E7484AC484D&D05509&3F149836&474F3875&1&10138&474CCCD1&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_F07607=CC360E7484AC484D&F07607&3F149836&47113376&0&&470EDE8C&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_J05532=CC360E7484AC484D&J05532&3F149836&47A0F47E&1&10961&479EA847&CE38F864A80B0983D14912C9E745EC8D; NETSEGS_H07707=cc360e7484ac484d&H07707&0&47b09f77&3&10015,10016,10018&47a68461&ce38f864a80b0983d14912c9e745ec8d; rsi_cls_1000000=pUM94jmkPxIU7dSLqc/4VFf8xBzu6Ook9bWRmuTWFt01NyjI0nCfapryZNHpwBivOXNGf1mfOgXYPTiTcQC9NdYfxXEzddybFT8mgmhacvXfEVEoWZ0QJfjCmwTTdOB16S4IqItNyTm3BcitxyQlO1FC99AZPAGK4Emkz2EM1Jh9dvb4wFNXBQnmdg0tNgi0UIslsoMDygInO1Pcl5UL8pGMxBciy4EW8VDvCEldyrO3TEZJ4k7AX4rwXwrg1GzHji7rY2cH7whFONGFFK+MR/115K2zfhepxBYKcfIoLsZNf5DlLgwhqydhrvFKrb2KAT98lZh0KbB0GT+7WpeUehDh0E7H/55xZAkVveJzGEL1o5relFyjMhMSNI3Jp89DHHmfLxPn1HFZ/56l9J8JXjDW/yUhN7bdPFybc48sZiLg4mi7jIyYtrV1tmlfLm15nGrYidXY4aopm7NJVymopQl5Xkpow3DyB32d39L4RHgrnGzz9fOXed5GPd/B2BERSDPBMTwiOvHkPuc2L3GjU/2o6/xgskjTqs2jHmQpXkhL/6BXQjRGKVgwbXfgmznoSZCgtRTWha3F+MMj8LiM3AQoz+s4hjtTXPYVw67u2H+jEk04dgItDxU5Liyxdb22KJdmTlejL7NrnLfpZVHkqDbaRhqdOksRuGGy7uatmoVzVH++NwGBDtb4IjNFXxk6v1T3juOApL0jPWNGMUJQwgoeTi/SWlxbUZJc+wpuh7Lukz45vl7GtQuaHleIZlwg/AkfW49MLYPgY4mpPsSTzjPc0jivjN0LzurkOSVjpHUN1hLvqRfdLA3UnS+/wMkx1+lokTTTF5RJmsaG01qEsaulZtU13UCtsqsaJ+El35LrQlPyzT1xjTkrPfZF8ZlNLIb3qgIhm6RQqUKDE6NhktrFy6DAqLXuVRjZYfESIVoZQyVLfWvIOlqIKUPi9KzH3TJsSmnu8eA4HAtIb3K9E4MLHHFUlzqyR2/M/XmIhzfTzChDVDJ0QhKtNpSRS3vzNv1A0o04oYsv1rNLnJXm3G01GIoukSAqxAyg/TFZqyTnHHWmPqO8HLmjr7F3SaVIobNKBvrQi+KTDfxKOUZa15P5PAqPMxO8QfMMTwHacJvp0n37crDS6UquXYx1/pnNV1xF2xqeEHnz3u6KXsw=; rsi_segs_1000000=pUPFOD+FLwIQlrmdUK9PH7Ydwqu2UBVbQzyJv5VogdBy6pWUWLt/4IzIDYWxZps3zEWKNP/jMmwnAgH2LtpSfbUq371MuI1GHMZ8uaAM0Gsod3OlwXs5zbSmHg67WAFOYdqLyU/pTn7+wzpibjR9YmEnrNRg9HabcM+WRNNVE6VCUnjGjzgz6p1vPYua2kiWB2GJaOf2/DJ9hUemeCJR3N7XbaqjNNLGxzLkXty5QOc8JXrUVJMlIcUgue6EDyyIVitoxcYjgS7vZxKtl/C9h5Uur4F53TrWMl63mKAShYyBVs0B41c7lSml4d8c27U/7RBxIJ8=
+
+HTTP/1.x 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+P3P: policyref="http://www.revenuescience.com/w3c/rsip3p.xml", CP="NON PSA PSD IVA IVD OTP OUR IND UNI PUR COM NAV INT DEM CNT STA PRE OTC HEA"
+Location: http://ad.yieldmanager.com/imp?Z=160x600&s=190890&r=0&_salt=596175881&u=http%3A%2F%2Fautotest.myphotodevel.com%2Fads%2Falbum_600.php%3Fadstyle%3Dnone
+Content-Length: 0
+Date: Tue, 05 Feb 2008 21:27:25 GMT
+Connection: keep-alive
+Set-Cookie: rsi_us_1000000=; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/adserver
+Set-Cookie: rsi_us_1000000=pUMF5E9D8AcY7sR2tF+3e7y/G3ACCfoK9R26m5CQBtSWfITAZL9M5QZ6kHlpjM88mdDui0WQmsBJ2b4EpwHpsDq1dB9YEizEc/In7OtXDFe1Rx841pdX9njmMY+eaStz+OIQoQOgiFTvUXfdXoWUmP2k87vGMiMFys/Hz5f/xlIKlk7HjwZwJYmMK6R8Nq8lvpD1Q9mfKhlXxQC8V51YVgaBGRr7icpUVF/PC1sjrYE++uNX4DyGyhZPOtKiim+2tsZlcWRFMJdnlYxjJRZ30X5mYdpL0vz8M+nSGd5ZgTVUmdqt61upU1q1HzkcVkvAsAcyIyEcu9Kd0YFNSgq5ZEqi65dlUKDYfgZgTbK30SM5oK5guEPzME6ssyG3GB7V4ooQRTfb4jZn5Utn19SNV7b2WJSqPU681dJG+zfyGfrB0TjcuBGoTJ/1iJWUrCo+liVoLNtnBn0krz7whBc80YAZ3a6BjyCwKYVfkA5vP1KVTh0jIBKGStzk+JTpTk+3tMF856mBb02ZD5gXhPS6HlNINgneCYRFT+s0ULEl8ABxgSDC6E8iNCr35Xns7NsFp/IIicZrCXwVho73xbLG2Asp75WzbC0X7Glpl19vrwUuaWX2SCiCDRO7IIg+1EBXk5vsoUYW7DXk9ojXZMkSu1dAJh6FdMvF7w4Jn43Af0x0I4ruFNLIgkx5CjmTIr283JR3wJuhVf5cYXmLHeeblKXMk9vBm/q1waLTGm6msK/Vem/UN9k/jPx6FlTnc+Ume0KenVzVETunckg9VZRddfyHNJZRWjq3RWqsM4vDuoYQ1khEoYRnq/EbwOhh+47O2AplPhVGOhM6ViC4yhQZ0ddfmeLXwgYR2LHwPi8XkiUYwtY/jGC/BA1V7Y3fCK/xnHqh4jnconSplKx8Db9gMY5O4ymko/Md3gUYcaFMVnRg0Nma5UZX4RpGBBdyNvTl0+Nl/tNOcAmS4b2ZjCjAEFJD3pFCy68EhwzZp+pliXt8J6zLDbdMf3elBQc4cbS+0Sd+ITveBm5nok/aGd+eNpaa0hPftOtm/Ojot12EWmW2xY+jQRzTwUqV8VzmUL0uFSGt6pEZfbtntiU1+seb+CoY35+KjHnnXuAcadRg60X6zXTWRjAjFi8juI5adXiQ61ZmWj8Slj2RWEYHh0j2A8Q6CevNoKQ51HOHfhRusXJMilp4Tib9o4Cfo2KtBR4xiZVYEPqXGIpX660Yy/8s4y5MBaPFsVA0I6MgF8UKCfhSEvx+jOFqvMpoG6INx6GojJUgcXDOYXa7w0OC23KTaBUffLX6+RvJCcQZnkJFy+Sr5+WGNg8YE9tS1hGmWGXNW4jARkmP8Wp3X1yDV+6PWor6atRelxSNpAGpLJQwpDExTgRs; Expires=Sat, 28-Jan-2040 21:27:56 GMT; Path=/adserver
+Cache-Control: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+----------------------------------------------------------
+http://ad.yieldmanager.com/imp?Z=160x600&s=190890&r=0&_salt=596175881&u=http%3A%2F%2Fautotest.myphotodevel.com%2Fads%2Falbum_600.php%3Fadstyle%3Dnone
+
+GET /imp?Z=160x600&s=190890&r=0&_salt=596175881&u=http%3A%2F%2Fautotest.myphotodevel.com%2Fads%2Falbum_600.php%3Fadstyle%3Dnone HTTP/1.1
+Host: ad.yieldmanager.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: testbounce=testing; uid=uid=0001337e-d431-11dc-b907-0019bb2ed348&_hmacv=1&_salt=1302582405&_keyid=k1&_hmac=8861914abd61ac62d3c595bf7d7bb15ba05159f3; vuday1=]B)aYNKC)8YapEC; ih="b!!!!#!!L9!!!!!#:$[ti"
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:25 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Set-Cookie: uid=uid=0001337e-d431-11dc-b907-0019bb2ed348&_hmacv=1&_salt=3052659520&_keyid=k1&_hmac=faccdf4fae9b2a8721088f64bb3b2f6c6f8db4c3; expires=Thu, 06-Mar-2008 21:27:25 GMT
+Set-Cookie: pv1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: pc1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ih="b!!!!#!!L9!!!!!#:$[ti"; path=/; expires=Thu, 04-Feb-2010 21:27:25 GMT
+Set-Cookie: vh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: bh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ia="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Cache-Control: no-store
+Last-Modified: Tue, 05 Feb 2008 21:27:25 GMT
+Pragma: no-cache
+Content-Length: 653
+Content-Type: application/x-javascript
+Connection: close
+----------------------------------------------------------
+http://ad.targetingmarketplace.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAAABAAAAAMAAQADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCu8zz258QNpGfvJh9rUkgoS6v5HkPd0H4kXqAAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+GET /iframe3?rDEAAKrpAgA2cAQAwa8BAAAABAAAAAMAAQADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCu8zz258QNpGfvJh9rUkgoS6v5HkPd0H4kXqAAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none HTTP/1.1
+Host: ad.targetingmarketplace.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:27:25 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Location: http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAAABAAAAAMAAQADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCu8zz258QNpGfvJh9rUkgoS6v5HkPd0H4kXqAAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cache-Control: no-store
+Last-Modified: Tue, 05 Feb 2008 21:27:25 GMT
+Pragma: no-cache
+Content-Length: 0
+Connection: close
+----------------------------------------------------------
+http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAAABAAAAAMAAQADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCu8zz258QNpGfvJh9rUkgoS6v5HkPd0H4kXqAAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+
+GET /iframe3?rDEAAKrpAgA2cAQAwa8BAAAABAAAAAMAAQADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCu8zz258QNpGfvJh9rUkgoS6v5HkPd0H4kXqAAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none HTTP/1.1
+Host: ad.yieldmanager.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: testbounce=testing; uid=uid=0001337e-d431-11dc-b907-0019bb2ed348&_hmacv=1&_salt=3052659520&_keyid=k1&_hmac=faccdf4fae9b2a8721088f64bb3b2f6c6f8db4c3; vuday1=]B)aYNKC)8YapEC; ih="b!!!!#!!L9!!!!!#:$[ti"
+
+HTTP/1.x 200 OK
+Date: Tue, 05 Feb 2008 21:27:25 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+Set-Cookie: uid=uid=0001337e-d431-11dc-b907-0019bb2ed348&_hmacv=1&_salt=4279086734&_keyid=k1&_hmac=66be18e638c8ba1d84da75414f52e3ff443d3820; expires=Thu, 06-Mar-2008 21:27:25 GMT
+Set-Cookie: vuday1=]B)aZNKC)8i5.J#; expires=Wed, 06-Feb-2008 00:00:00 GMT
+Set-Cookie: pv1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: pc1="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ih="b!!!!#!!L9!!!!!$:$[uQ"; path=/; expires=Thu, 04-Feb-2010 21:27:25 GMT
+Set-Cookie: vh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: bh="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Set-Cookie: ia="b"; path=/; expires=Mon, 01-Mar-2004 00:00:00 GMT
+Cache-Control: no-store
+Last-Modified: Tue, 05 Feb 2008 21:27:25 GMT
+Pragma: no-cache
+Content-Length: 311
+Content-Type: text/html
+Connection: close
+----------------------------------------------------------
+http://media.fastclick.net/w/get.media?sid=30231&m=3&tp=7&d=j&t=s
+
+GET /w/get.media?sid=30231&m=3&tp=7&d=j&t=s HTTP/1.1
+Host: media.fastclick.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAAABAAAAAMAAQADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCu8zz258QNpGfvJh9rUkgoS6v5HkPd0H4kXqAAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: vt=1929:38783:80398:1796:0:1201544504|4508:99807:203160:37952:0:1201720876|4784:86000:201671:38120:0:1201619312|4784:102792:201673:38120:0:1201619313|4784:75839:201662:25659:0:1201711028|4784:85279:201682:22605:0:1201717170|5802:105286:202466:4366:0:1201725935|4038:71341:209149:37953:0:1201899654|; adv_ic=B1kAAACA1KhHIAYGAAFJAADLOyAHIAtAAAJAOafgABcBZTjgARcCJ6FMgBcEQwAA/ULgARcCOImjgBcgRwE0PeABFwGGiOABFwGWPOABFwBI4AIXAGTgAl8C8OGg4ABHAZ1G4AEvAO/gAhcAoeACFwEszuABLwF8ReABLwIaXZ7gAEcAXeACjwLi65DgABcAiSDDwO8CENaL4AAXAWJB4AEXAYDF4AEXAIvgAhcB1pbgARcBdkTgAS8CneuH4ABHAVhA4AEXAHzgAhcBxjngARcCQDGG4AAvAaY+4AEXAs3Og+AAFwA24AJHAmYFgOAAFwAw4ALvAr2HfuAAFwFcE+ABRwIHBGjgABcA0+AC7+ADFwA64QJPAse4ZuAALwCn4ALXAdO34AEXABTgAncC6cFh4AAvATg24AF3AQKS4AEXAYg34AEXAAHgAhcAFOACX+ADFwCZ4gInAZV24AFHAETiAp8COB1f4AB3AMfhAt8CUcRZ4AAXABHgAtcAUOACFwAY4QJnAZLD4AEvAJHiAs8BY7bgARcBnhUgn0MUIAABClXgARcAFuACXwKbv1XgAHcAy+AC1wKBsk3gABcAKeECNwGKreABFwD04AIvAmMwOuAALwCo4AIXAg/ZNOAAFwAb4AIXAWfW4AEXAY8/4AGnAGDgAhcAreECNwGV1eABLwCv4gIPAeCY4AEXANjgAl8BRJbgARcA1OACXwLpjzPgAI8Ad+ACRwLY/zHgABcAC+ECZwDX4AIXANXjAkcBFfjgAS8A9eACdwI2WyrgAEcBXy7gAdcBAD7gARcAReAC1wL7aCfgAC8AjuACLwCe4AIXAEXgAl8CS3Uf4AAvABngAhcByGrgARcB2DrgAXcCPf4c4AAvAOriAicCxyIW4AAXAHngAkcCbuAL4AAXAHfgAhcClWwC4AAXAHnhAjcC02YB4AAXAKDhAh8BvlrgARcAw+ACFwAg4AIXAKPgAkcCpeT7IpUgtyWHAILgAhcC5Rb44AAXAcwUIB8gI0AAAlnm9+AAFwD14AIvAvAY9OAAFwA84AIXAufj8+AAFwDf4QLfAsq48uAAFwHJI+ABXwFWs+ABFwD44AJHAkx88eAALwAS4QJnAkO37uAAFwDp5AL3Aj1/4eAAFwDn5AIfAsO81eAAFwDd4AIvAde54AEXAB/gAnfgAxcBpDXgAacCbQ3P4ABHAH7gAl8Ch67F4AAXAGvgAkcC1sDE4AAXAHzgAr8BCqbgARcA7+ACjwLfJ8PgAC8AvuICtwJeULLgABcA9+ICVwBd4AIXAB7hAmcC372w4AAvABjgAqcCrC2q4AAXAC3gAhcC6OGk4AAXABPgAl8A5+ACFwCN4A4XAUEN4QEfAtbim+AARwCF4AIvAa2m4AEXAPzhAAcBAAA=; pluto=827055772016|v1; zru=1|:1202164716|; pjw=BAcAAAABIAMDgNSoRyAGYAsClpwBYAcCIB0DIBEBAABABeADHwHTnYAfAT8aQBngCR8Bi5GAHwHNE+ANHwHJXIAfAWcW4A0fAIqgPwDM4A4/AYiLgD8BeDHgDT8AZaCfAbMZwB8BAAA=; rt=urt11:s:1188395593|urt6:r:1201186921|urt69:k:1202164716|
+
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:27:26 GMT
+Location: http://rd.apmebf.com/w/get.media?sid=30231&m=3&tp=7&d=j&t=s&host=media.fastclick.net
+P3P: CP='NOI DSP DEVo TAIo COR PSA OUR IND NAV'
+Content-Length: 288
+Keep-Alive: timeout=5, max=95
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://rd.apmebf.com/w/get.media?sid=30231&m=3&tp=7&d=j&t=s&host=media.fastclick.net
+
+GET /w/get.media?sid=30231&m=3&tp=7&d=j&t=s&host=media.fastclick.net HTTP/1.1
+Host: rd.apmebf.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAAABAAAAAMAAQADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCu8zz258QNpGfvJh9rUkgoS6v5HkPd0H4kXqAAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: S=5updvj-41613-1193951251823-4c
+
+HTTP/1.x 302 Found
+Date: Tue, 05 Feb 2008 21:27:26 GMT
+Server: Apache/2.2.4 (Unix)
+Set-Cookie: S=5updvj-41613-1193951251823-4c; domain=.apmebf.com; path=/; expires=Thu, 04-Feb-2010 21:27:26 GMT
+Location: http://media.fastclick.net/w/get.media?sid=30231&m=3&tp=7&d=j&t=s&upsid=827055772016
+P3P: CP='NOI DSP DEVo TAIo COR PSA OUR IND NAV'
+Content-Length: 288
+Keep-Alive: timeout=5, max=33
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://media.fastclick.net/w/get.media?sid=30231&m=3&tp=7&d=j&t=s&upsid=827055772016
+
+GET /w/get.media?sid=30231&m=3&tp=7&d=j&t=s&upsid=827055772016 HTTP/1.1
+Host: media.fastclick.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://ad.yieldmanager.com/iframe3?rDEAAKrpAgA2cAQAwa8BAAAABAAAAAMAAQADEQIACgEXvAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJqZmZmZmdk.mpmZmZmZ2T8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCu8zz258QNpGfvJh9rUkgoS6v5HkPd0H4kXqAAAAAA=,,http://autotest.myphotodevel.com/ads/album_600.php?adstyle=none
+Cookie: vt=1929:38783:80398:1796:0:1201544504|4508:99807:203160:37952:0:1201720876|4784:86000:201671:38120:0:1201619312|4784:102792:201673:38120:0:1201619313|4784:75839:201662:25659:0:1201711028|4784:85279:201682:22605:0:1201717170|5802:105286:202466:4366:0:1201725935|4038:71341:209149:37953:0:1201899654|; adv_ic=B1kAAACA1KhHIAYGAAFJAADLOyAHIAtAAAJAOafgABcBZTjgARcCJ6FMgBcEQwAA/ULgARcCOImjgBcgRwE0PeABFwGGiOABFwGWPOABFwBI4AIXAGTgAl8C8OGg4ABHAZ1G4AEvAO/gAhcAoeACFwEszuABLwF8ReABLwIaXZ7gAEcAXeACjwLi65DgABcAiSDDwO8CENaL4AAXAWJB4AEXAYDF4AEXAIvgAhcB1pbgARcBdkTgAS8CneuH4ABHAVhA4AEXAHzgAhcBxjngARcCQDGG4AAvAaY+4AEXAs3Og+AAFwA24AJHAmYFgOAAFwAw4ALvAr2HfuAAFwFcE+ABRwIHBGjgABcA0+AC7+ADFwA64QJPAse4ZuAALwCn4ALXAdO34AEXABTgAncC6cFh4AAvATg24AF3AQKS4AEXAYg34AEXAAHgAhcAFOACX+ADFwCZ4gInAZV24AFHAETiAp8COB1f4AB3AMfhAt8CUcRZ4AAXABHgAtcAUOACFwAY4QJnAZLD4AEvAJHiAs8BY7bgARcBnhUgn0MUIAABClXgARcAFuACXwKbv1XgAHcAy+AC1wKBsk3gABcAKeECNwGKreABFwD04AIvAmMwOuAALwCo4AIXAg/ZNOAAFwAb4AIXAWfW4AEXAY8/4AGnAGDgAhcAreECNwGV1eABLwCv4gIPAeCY4AEXANjgAl8BRJbgARcA1OACXwLpjzPgAI8Ad+ACRwLY/zHgABcAC+ECZwDX4AIXANXjAkcBFfjgAS8A9eACdwI2WyrgAEcBXy7gAdcBAD7gARcAReAC1wL7aCfgAC8AjuACLwCe4AIXAEXgAl8CS3Uf4AAvABngAhcByGrgARcB2DrgAXcCPf4c4AAvAOriAicCxyIW4AAXAHngAkcCbuAL4AAXAHfgAhcClWwC4AAXAHnhAjcC02YB4AAXAKDhAh8BvlrgARcAw+ACFwAg4AIXAKPgAkcCpeT7IpUgtyWHAILgAhcC5Rb44AAXAcwUIB8gI0AAAlnm9+AAFwD14AIvAvAY9OAAFwA84AIXAufj8+AAFwDf4QLfAsq48uAAFwHJI+ABXwFWs+ABFwD44AJHAkx88eAALwAS4QJnAkO37uAAFwDp5AL3Aj1/4eAAFwDn5AIfAsO81eAAFwDd4AIvAde54AEXAB/gAnfgAxcBpDXgAacCbQ3P4ABHAH7gAl8Ch67F4AAXAGvgAkcC1sDE4AAXAHzgAr8BCqbgARcA7+ACjwLfJ8PgAC8AvuICtwJeULLgABcA9+ICVwBd4AIXAB7hAmcC372w4AAvABjgAqcCrC2q4AAXAC3gAhcC6OGk4AAXABPgAl8A5+ACFwCN4A4XAUEN4QEfAtbim+AARwCF4AIvAa2m4AEXAPzhAAcBAAA=; pluto=827055772016|v1; zru=1|:1202164716|; pjw=BAcAAAABIAMDgNSoRyAGYAsClpwBYAcCIB0DIBEBAABABeADHwHTnYAfAT8aQBngCR8Bi5GAHwHNE+ANHwHJXIAfAWcW4A0fAIqgPwDM4A4/AYiLgD8BeDHgDT8AZaCfAbMZwB8BAAA=; rt=urt11:s:1188395593|urt6:r:1201186921|urt69:k:1202164716|
+
+HTTP/1.x 200 Okay
+Date: Tue, 05 Feb 2008 21:27:26 GMT
+Content-Type: application/x-javascript
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: 0
+P3P: CP='NOI DSP DEVo TAIo COR PSA OUR IND NAV'
+Set-Cookie: pjw=BAgAAAABIAMDvtSoRyAGYAsCRaoBYAfAAAADIAgAgOACHwGWnIAfASAdQBngCR8B052AHwE/GuANHwGLkYAfAc0T4A0fAclcgB8BZxbgDR8AiqA/AMzgDj8BiIuAPwF4MeANPwBloJ8BsxnAHwEAAA==; domain=.fastclick.net; path=/; expires=Thu, 07-Feb-2008 21:27:26 GMT
+Set-Cookie: m1=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m2=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m3=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m4=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m5=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m6=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m7=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m8=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m9=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m10=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: m11=; domain=.fastclick.net; path=/; expires=Thu, 21-Dec-1972 00:00:00 GMT
+Set-Cookie: pluto=827055772016|v1; domain=.fastclick.net; path=/; expires=Thu, 04-Feb-2010 21:27:26 GMT
+Keep-Alive: timeout=5, max=81
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+----------------------------------------------------------
