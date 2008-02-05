@@ -1,0 +1,3425 @@
+http://autotest.myphotodevel.com/
+
+GET / HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:20 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Set-Cookie: PHPSESSID=9irn2mc04n6vpforvdsl7a2742; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://static.myphotodevel.com/css/admin.css?v-11-14-07
+
+GET /css/admin.css?v-11-14-07 HTTP/1.1
+Host: static.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:20 GMT
+Server: Apache
+Last-Modified: Mon, 15 Oct 2007 20:36:10 GMT
+Etag: "385c56fc-53a5-4c6c280"
+Accept-Ranges: bytes
+Content-Length: 21413
+Connection: close
+Content-Type: text/css
+----------------------------------------------------------
+http://static.myphotodevel.com/skins/none/css/embedded_style.css?v-11-14-07
+
+GET /skins/none/css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:20 GMT
+Server: Apache
+Last-Modified: Tue, 13 Mar 2007 14:30:41 GMT
+Etag: "48dd0f6a-2016-bbfbc640"
+Accept-Ranges: bytes
+Content-Length: 8214
+Connection: close
+Content-Type: text/css
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/album_728.php
+
+GET /ads/album_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:20 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 384
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/album_600.php?adstyle=default
+
+GET /ads/album_600.php?adstyle=default HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:20 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 644
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: RMFD=011IrwysP10ceOH|Q10cfEq|Q10cgkO|O10cgkU|440ciE0|440ciE5|Q10ciuf; RMID=4034fd7346c06870
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:20 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Set-Cookie: RMFD=011IsR6mO10ciE0; expires=Fri, 31-Dec-2020 23:59:59 GMT; path=/; domain=.fortunecity.com
+Set-Cookie: NSC_f32dfo4efm_Qppm_iuuq=445cb9333660;path=/
+Content-Length: 318
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=default
+Cookie: RMFD=011IrwysP10ceOH|Q10cfEq|Q10cgkO|O10cgkU|440ciE0|440ciE5|Q10ciuf; RMID=4034fd7346c06870
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:21 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Set-Cookie: RMFD=011IsR6nO10ciE5; expires=Fri, 31-Dec-2020 23:59:59 GMT; path=/; domain=.fortunecity.com
+Set-Cookie: NSC_f32dfo4efm_Qppm_iuuq=445cb9363660;path=/
+Content-Length: 327
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1738284669&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=-&utmp=/&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1738284669&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=-&utmp=/&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:15:54 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:53:21 GMT
+----------------------------------------------------------
+http://a.tribalfusion.com/j.ad?site=myphotoalbumcom&adSpace=ros&size=728x90&p=744249&a=1&flashVer=9&ver=1.12&center=1&url=http%3A%2F%2Fautotest.myphotodevel.com%2F&f=1&rnd=747797
+
+GET /j.ad?site=myphotoalbumcom&adSpace=ros&size=728x90&p=744249&a=1&flashVer=9&ver=1.12&center=1&url=http%3A%2F%2Fautotest.myphotodevel.com%2F&f=1&rnd=747797 HTTP/1.1
+Host: a.tribalfusion.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: ANON_ID=aTm5pJPEUEVa5VMTAJZcQ4joUnQXUUV1U7Y49YJYYZceKc39QVADBcZah0dUT3d3q5bZbvyCyg4oh35FwsqVyAWi6ETH6ZbeTOUMUbtx0Zd5sw2HXaZbTTVrUAsFXVWiG4VTGjQrevV7EyFKa4GhrTtYHLWY5RWfiEdd6WGBRQp39qA3OMrMFNqrosdU0QEeFSpbuLQQOUhZbGU0tFRrdooHbbVSMd0svm9pNEhdngt4cMYQnZcWEbH0SvIFU3kTcUuXDoHsb7S4KrYPesKRE5DoqAJTcv8SFbT6UPHwUjYQfBPMQ7cYG7lQVADhtnC0dQT3d5XgZbQvaIyg4MKS5Fx23VyAx7ZaETHeZbyTxLNrjt87Ub0XqHXaZbTTVrUAsFXVWiG4VUPJPfefUJEyLPSXGhM0WYHTRj5RWfiPd8A6cBRcVZaoNZdFwMrMFNqroCtQ0QEeFSpayZbBnOvuZbJUWFaRbdooHbbVSMd0svmtpyTOWrgMHyW5nnZcWEbH0SvIeb3kTcUuXDnA8aYSuIFYPfTpRE5DoqAJTcv8SFjTqUUWkU7YOBox2B7cYG7lQVADSWnC0dQT3d5C9RFvgG6h4tBw5rx23VyAx7ZaETH6ZbXTx3MFbtNjSKmIqHXaZbTTVrUwGFXVWiG4VWZbM6feRX3EyZcL6XGhLnHYHkPb5RW7iPd9eYVBRnb9v5VZbwMrMFNqroEdQ0QEeFSpb95QYOTUr7UW2bVFdgfBMbUsYd0vJj1WOI8oQg3UQH3CknWAbA4GUIPZb3kTayeXdpw1cMS217nPfjQVA58oBPJS138SLZbWXnUOv6nY4hYJYYF6Y87Bp9PD1ZdnC0if83D5R8mUv2AaC4t7l1BxNl9aAy4eETEu5PmxfRmYtRCUyNS8BX6ZcgvpFUUcUXV1WY4RW1emYeKEUiyIDu28hZcsnvH1dJ5R1e8y98qNAjRQq79yMoeMnyj887oYdQ0QGfZbSEd3f67O2br7UTaIVndncBMbvuJc0nwW1tMP3Bbg37QG3LavWAd3YbbIPb3kT9UuRpmB81CYoZb
+
+HTTP/1.x 200 OK
+P3P: CP="NOI DEVa TAIa OUR BUS"
+X-Function: 101
+Pragma: no-cache
+Cache-Control: no-cache, private
+Set-Cookie: ANON_ID=acm5pJ1rbY491dYTYcEE8amGAD1HnC0dUT3d3N5e0tZdcXK4qMWBEEZbRsyAyTeZcTHqImP723pOMV9VkXqEHp2FPTV7PjcDvstaGtZdZdUQIFe0EUeyGZbAJsfFUt3HSdIlc6Uf5rU1UFZcs1T9SMprwbFjBNq7tftWJSEaF1qYMrrQwTrrbUUYjnb7KMd7bQcY8i7FrYgfH2x4aYrSNRaJZcPnBD0SjZbeFXOrc3uWJeXscfS2S7rPaQEcT3xMTEJSS5EcjjQ61ZbN12V30D1nVqYc4pFhQV2GtHpMvdQTjF3dxfMv2GaG4qMWZcrvaRsuAyTe8EnAI9Fb23uqaV9WEnqEH5QfPTV7PvcGh9t6G7qud10je0EUeyGZbAZdcfFUt3HSdI48PrfQgY1UEU13a91pSrwwAYBNq7tMtP7oa6Fp7IiOpBOTrrbUUYjkUbKMd7bQcXcgnbrOeYH2wy3YrSNRaJZcPnBD0SbZbyF3l7cQuv71pWsfS2S7rPaQE4q3xMTEJSS54lovQkUQO1V3q0p1nVqYc4pFhQVTGSHphwWYTnJ1IQvMv2GaG4qMWqFvaRsuAyTgOmBAIXIn23MlWV9Wo0aEHbS7PTVfPvcHD0H6GsHWiwDbe0EUeyGZbAJsfFUt3HSdJBmA3fAtF0UJav3T91pSrwwAYBNq7t3tSx6aeFGGIyM9BOTrrbUUYjCUbKMd7bQcYwNnjr1SMl2ry83bScJ8QZcSTbD023PP75Jg9vuXDmDRbsi2W7oTnMEVa3wMVjYSt4Y0A3QXUUW1X3Za4H1PVBJcYG7gQXyF19nhuRFT3d3O5eQO28aeyBjW1bvbRMAsymgefRiIPXvq3srZdRdWcDB2HX6ZbQTUvCUCHFYRXG4TUsY7xk0AVVQ9MA2dfFUxcXS9Lo9BvfydbpUIHgYm9e5rUw3rMBNu6vQpR3wCIFppbMMINjTnqZbJDZbjtrbKMb6jQQ1HZcPrrwpMl2mkI3QQv2oUZcV2bD02TOPB5mWPZbuXSmBR8is2W9isR7EdJ3uMQIJXp38iXZbUqT; path=/; domain=.tribalfusion.com; expires=Thu, 13-Nov-2008 22:53:21 GMT;
+Content-Type: application/x-javascript
+Content-Encoding: none
+Content-Length: 546
+----------------------------------------------------------
+http://a.tribalfusion.com/j.ad?site=myphotoalbumcom&adSpace=ros&size=160x600|120x600&p=744535&a=1&flashVer=9&ver=1.12&center=1&url=http%3A%2F%2Fautotest.myphotodevel.com%2F&f=1&rnd=742476
+
+GET /j.ad?site=myphotoalbumcom&adSpace=ros&size=160x600|120x600&p=744535&a=1&flashVer=9&ver=1.12&center=1&url=http%3A%2F%2Fautotest.myphotodevel.com%2F&f=1&rnd=742476 HTTP/1.1
+Host: a.tribalfusion.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=default
+Cookie: ANON_ID=aTm5pJPEUEVa5VMTAJZcQ4joUnQXUUV1U7Y49YJYYZceKc39QVADBcZah0dUT3d3q5bZbvyCyg4oh35FwsqVyAWi6ETH6ZbeTOUMUbtx0Zd5sw2HXaZbTTVrUAsFXVWiG4VTGjQrevV7EyFKa4GhrTtYHLWY5RWfiEdd6WGBRQp39qA3OMrMFNqrosdU0QEeFSpbuLQQOUhZbGU0tFRrdooHbbVSMd0svm9pNEhdngt4cMYQnZcWEbH0SvIFU3kTcUuXDoHsb7S4KrYPesKRE5DoqAJTcv8SFbT6UPHwUjYQfBPMQ7cYG7lQVADhtnC0dQT3d5XgZbQvaIyg4MKS5Fx23VyAx7ZaETHeZbyTxLNrjt87Ub0XqHXaZbTTVrUAsFXVWiG4VUPJPfefUJEyLPSXGhM0WYHTRj5RWfiPd8A6cBRcVZaoNZdFwMrMFNqroCtQ0QEeFSpayZbBnOvuZbJUWFaRbdooHbbVSMd0svmtpyTOWrgMHyW5nnZcWEbH0SvIeb3kTcUuXDnA8aYSuIFYPfTpRE5DoqAJTcv8SFjTqUUWkU7YOBox2B7cYG7lQVADSWnC0dQT3d5C9RFvgG6h4tBw5rx23VyAx7ZaETH6ZbXTx3MFbtNjSKmIqHXaZbTTVrUwGFXVWiG4VWZbM6feRX3EyZcL6XGhLnHYHkPb5RW7iPd9eYVBRnb9v5VZbwMrMFNqroEdQ0QEeFSpb95QYOTUr7UW2bVFdgfBMbUsYd0vJj1WOI8oQg3UQH3CknWAbA4GUIPZb3kTayeXdpw1cMS217nPfjQVA58oBPJS138SLZbWXnUOv6nY4hYJYYF6Y87Bp9PD1ZdnC0if83D5R8mUv2AaC4t7l1BxNl9aAy4eETEu5PmxfRmYtRCUyNS8BX6ZcgvpFUUcUXV1WY4RW1emYeKEUiyIDu28hZcsnvH1dJ5R1e8y98qNAjRQq79yMoeMnyj887oYdQ0QGfZbSEd3f67O2br7UTaIVndncBMbvuJc0nwW1tMP3Bbg37QG3LavWAd3YbbIPb3kT9UuRpmB81CYoZb
+
+HTTP/1.x 200 OK
+P3P: CP="NOI DEVa TAIa OUR BUS"
+X-Function: 101
+Pragma: no-cache
+Cache-Control: no-cache, private
+Set-Cookie: ANON_ID=aem5pJVtiG4VWXYc3eHGV93VZbA2cfFUtYHSdJ5R0gdlH3xUGJRDU2KyprwMrMLNqronpJoQCwZdWScl1cvOOZbM7UUZbekr9h3HfbuODERXrr1pMh2tvgIFQG3EZbZcWEapkaQIpWfGTbV209onS9QSE9nnPaFBka1eOTIJ1T781sYTXUUR1U7Yvp3JYT3cYG7kdBeDY4bg0ho0YH5GPFZbv1pAC4qfR9byrpsmAp4m3mCZaIPTvm3rft8pUyNTAHXaZds7NfUje3mV45C0sWZcVG3e3nniyGQFmchwst3H9FJGs1Zbfyd7tUGJRZaa79ypnwMrMdkCBo8cZboQJnVWSdFocvOSAQ7UUZbewrcvIHjbkEqsXK3r1pMh2tvgZcUQG3EZbZcWEaCgTnIMIbGTaZbn2Sov3DQS1cFnPaFBwa2A4qZaJpBmpQmJQXUUR1U7YcDYJYT3cYG6g7QIDO2Ug0gP9YH5GPFZbv1pAC4q7RtbvbdsyA3sDsQRZaIPTvm3rft0SUyNTAHXaZdie7MU9cBnVTTh0GWZcVG3e3nniyGYFTchirHUHOJZdf2LZbfyd7tUGJRsT79ypnwMrOw0oBoYhYoQZagbWSdpYsvOfCY7UUFewrdQntjbvt1MvSUr1pMh2tvgIFQG3EZbZcWEb3uEYIiUvHTfyS29ov3DQS1cFnPaFB0a50ZaqEJGcm9S6JQXUUR1U7YKDYJYT3cYG7srQAD1dnC0bP23W54LDUvXVaC4xYZd1BxDipTAyTeGTBStPPvtY6FtRDUMNVfWXAZch3SYUUcFYV0TS4oWlVpZbe0EUjyInG2CfitCJHSdJ4R07lyD7YtpYRYq78yuJZaMQOjD7joQxQ0QHmMSWddAS7OTnr6UVUwVQdWo8UbQaYd0nLp1tNUnRJg3TQG3IsQWAdkhFMIPFYkTe5AXHoKnbnSyS7nPeEZdV64yVRaJpS38SLsDXQTwHDrYO9YJYV2kYn9LFmXDwHnC06Cs393B4SQv34aC4xP617xwQA6AyEeETGJjPPxfxDYt9kUONQZaHSEZbPiXZb8p5; path=/; domain=.tribalfusion.com; expires=Thu, 13-Nov-2008 22:53:21 GMT;
+Content-Type: application/x-javascript
+Content-Encoding: none
+Content-Length: 9420
+----------------------------------------------------------
+http://ad.doubleclick.net/adi/N2790.TribalFusion/B2489606.10;sz=728x90;click=http://a.tribalfusion.com/h.click/abmMQg1UZb90qArPrBEUrBYVdY1nUfrRUjm1qYt3TBk5afXoTjCXFb8UWZbXmPnZanVvomHMD3qr92HAy3AnJprYEXVUT1c3V0GBomEvP3Fv2VUvZcWA3XPqfQPVQOPWbuYHBuV6YN2V3X0FQJTm2wR9QSws3jdF/;ord=21059479?
+
+GET /adi/N2790.TribalFusion/B2489606.10;sz=728x90;click=http://a.tribalfusion.com/h.click/abmMQg1UZb90qArPrBEUrBYVdY1nUfrRUjm1qYt3TBk5afXoTjCXFb8UWZbXmPnZanVvomHMD3qr92HAy3AnJprYEXVUT1c3V0GBomEvP3Fv2VUvZcWA3XPqfQPVQOPWbuYHBuV6YN2V3X0FQJTm2wR9QSws3jdF/;ord=21059479? HTTP/1.1
+Host: ad.doubleclick.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: id=800000f80a6447d|675026/507702/13831|
+
+HTTP/1.x 200 OK
+Server: DCLK-AdSvr
+Content-Type: text/html
+Content-Length: 1600
+Content-Encoding: gzip
+----------------------------------------------------------
+http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+
+GET /loginpage.php?returnpage=%2Findex.php%3F HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:23 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://static.myphotodevel.com/css/mpa.css?v-11-14-07
+
+GET /css/mpa.css?v-11-14-07 HTTP/1.1
+Host: static.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:23 GMT
+Server: Apache
+Last-Modified: Fri, 02 Mar 2007 21:44:02 GMT
+Etag: "3868fa6a-1988-81826c80"
+Accept-Ranges: bytes
+Content-Length: 6536
+Connection: close
+Content-Type: text/css
+----------------------------------------------------------
+http://static.myphotodevel.com/skins/default/css/embedded_style.css?v-11-14-07
+
+GET /skins/default/css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:23 GMT
+Server: Apache
+Last-Modified: Tue, 13 Mar 2007 14:30:44 GMT
+Etag: "8e3f648-2016-bc298d00"
+Accept-Ranges: bytes
+Content-Length: 8214
+Connection: close
+Content-Type: text/css
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=624928855&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Login%20to%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/loginpage.php?returnpage=%2Findex.php%3F&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=624928855&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Login%20to%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/loginpage.php?returnpage=%2Findex.php%3F&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:07:00 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:53:23 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/loginpage.php
+
+POST /loginpage.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 126
+returnpage=%2Findex.php%3F&uname=autotest&gallerypassword=112233&referer=http%3A%2F%2Fautotest.myphotodevel.com%2F&Login=Login
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:53:31 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: /index.php?
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/index.php?
+
+GET /index.php? HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/loginpage.php?returnpage=%2Findex.php%3F
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:31 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:53:31 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:31 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=default
+
+GET /ads/loggedin_600.php?adstyle=default HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:31 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 656
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:31 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 408
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1996923523&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/index.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1996923523&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/index.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:25:55 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:53:31 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=default
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:32 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 418
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/do_command.php?return=http%3A%2F%2Fautotest.myphotodevel.com%2Fview_album.php&cmd=new-album
+
+GET /do_command.php?return=http%3A%2F%2Fautotest.myphotodevel.com%2Fview_album.php&cmd=new-album HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:53:33 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:53:34 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/view_album.php?set_albumName=album01
+Content-Length: 165
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/view_album.php?set_albumName=album01
+
+GET /view_album.php?set_albumName=album01 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:53:34 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:53:34 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/new_add.php?set_albumName=album01
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/new_add.php?set_albumName=album01
+
+GET /new_add.php?set_albumName=album01 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/index.php?
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:34 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:53:34 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://static.myphotodevel.com/images/icons/linux.png
+
+GET /images/icons/linux.png HTTP/1.1
+Host: static.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album01
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:34 GMT
+Server: Apache
+Last-Modified: Thu, 27 Jul 2006 19:24:38 GMT
+Etag: "603f7197-140-25922980"
+Accept-Ranges: bytes
+Content-Length: 320
+Connection: close
+Content-Type: image/png
+----------------------------------------------------------
+http://static.myphotodevel.com/images/icons/solaris.png
+
+GET /images/icons/solaris.png HTTP/1.1
+Host: static.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album01
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:34 GMT
+Server: Apache
+Last-Modified: Thu, 27 Jul 2006 19:24:38 GMT
+Etag: "603f716e-2f3-25922980"
+Accept-Ranges: bytes
+Content-Length: 755
+Connection: close
+Content-Type: image/png
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=888725620&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album01&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=888725620&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album01&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album01
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:11:21 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:53:34 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album01
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:44 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:53:44 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:44 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:44 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 408
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+
+GET /ads/loggedin_600.php?adstyle= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:44 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 649
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://static.myphotoalbum.com/skins//css/embedded_style.css?v-11-14-07
+
+GET /skins//css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotoalbum.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: __utmz=38867135.1194973813.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utma=38867135.1298813710.1194973813.1195059174.1195070105.4; fcwt=plookfish; mpa_popup=true; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Forder_prints.php; __utmc=38867135; osCsid=2e373e3dc6c3d012581fc5b6868484a3
+
+HTTP/1.x 404 Not Found
+Date: Wed, 14 Nov 2007 22:53:45 GMT
+Server: Apache
+Content-Length: 300
+Keep-Alive: timeout=2, max=10000
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1645699906&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1645699906&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:15:54 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:53:45 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:45 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 418
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+
+GET /create_or_add.php?set_albumName= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:47 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:53:47 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:48 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:53:48 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 406
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=193989666&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/create_or_add.php?set_albumName=&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=193989666&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/create_or_add.php?set_albumName=&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:16:05 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:53:48 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/create_or_add.php
+
+POST /create_or_add.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 119
+newAlbumTitle=second+album&newAlbumDescription=This+is+the+second+album+in+this+test+account&createNew=Create+New+Album
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:54:01 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:01 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album02
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album02
+
+GET /add_photos_to_album.php?set_albumName=album02 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:01 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:01 GMT; domain=myphotodevel.com
+Content-Length: 1667
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album02
+
+GET /easy_upload_j.php?set_albumName=album02 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album02
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:01 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:02 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1875887960&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20second%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album02&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1875887960&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20second%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album02&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album02
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:23:16 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:54:03 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album02
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:06 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:06 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:06 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+
+GET /ads/loggedin_600.php?adstyle= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:07 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 649
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:06 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 414
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://static.myphotoalbum.com/skins//css/embedded_style.css?v-11-14-07
+
+GET /skins//css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotoalbum.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: __utmz=38867135.1194973813.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utma=38867135.1298813710.1194973813.1195059174.1195070105.4; fcwt=plookfish; mpa_popup=true; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Forder_prints.php; __utmc=38867135; osCsid=2e373e3dc6c3d012581fc5b6868484a3
+
+HTTP/1.x 404 Not Found
+Date: Wed, 14 Nov 2007 22:54:07 GMT
+Server: Apache
+Content-Length: 300
+Keep-Alive: timeout=2, max=10000
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=273303153&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=273303153&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:15:54 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:54:07 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:07 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 408
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+
+GET /create_or_add.php?set_albumName= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:12 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:12 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:12 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:12 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 413
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1076068197&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/create_or_add.php?set_albumName=&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1076068197&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/create_or_add.php?set_albumName=&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:15:54 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:54:12 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/create_or_add.php
+
+POST /create_or_add.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 141
+newAlbumTitle=third+album&newAlbumDescription=this+is+the+third+album+and+is+a+top+level+album%0D%0A%0D%0Aso+there&createNew=Create+New+Album
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:54:32 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:32 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album03
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album03
+
+GET /add_photos_to_album.php?set_albumName=album03 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/create_or_add.php?set_albumName=
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:32 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:32 GMT; domain=myphotodevel.com
+Content-Length: 1667
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album03
+
+GET /easy_upload_j.php?set_albumName=album03 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:32 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:33 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=531110717&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20third%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album03&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=531110717&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20third%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album03&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album03
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:08:54 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:54:33 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:37 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:37 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:37 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:37 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 423
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+
+GET /ads/loggedin_600.php?adstyle= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:37 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 649
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://static.myphotoalbum.com/skins//css/embedded_style.css?v-11-14-07
+
+GET /skins//css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotoalbum.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: __utmz=38867135.1194973813.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utma=38867135.1298813710.1194973813.1195059174.1195070105.4; fcwt=plookfish; mpa_popup=true; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Forder_prints.php; __utmc=38867135; osCsid=2e373e3dc6c3d012581fc5b6868484a3
+
+HTTP/1.x 404 Not Found
+Date: Wed, 14 Nov 2007 22:54:37 GMT
+Server: Apache
+Content-Length: 300
+Keep-Alive: timeout=2, max=10000
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=233550478&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=233550478&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:28:08 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:54:37 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:37 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 425
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/view_album.php?set_albumName=album03
+
+GET /view_album.php?set_albumName=album03 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:54:40 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:40 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/new_add.php?set_albumName=album03
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/new_add.php?set_albumName=album03
+
+GET /new_add.php?set_albumName=album03 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:40 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:41 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=593616491&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album03&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=593616491&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album03&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album03
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:25:41 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:54:41 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/do_command.php?parentName=album03&return=/add_photos_to_album.php&cmd=new-album
+
+GET /do_command.php?parentName=album03&return=/add_photos_to_album.php&cmd=new-album HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:54:42 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:42 GMT; domain=myphotodevel.com
+Location: /add_photos_to_album.php?set_albumName=album04
+Content-Length: 165
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album04
+
+GET /add_photos_to_album.php?set_albumName=album04 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:42 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:43 GMT; domain=myphotodevel.com
+Content-Length: 1667
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album04
+
+GET /easy_upload_j.php?set_albumName=album04 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album04
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:43 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:43 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1989256033&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Untitled%20Album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album04&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1989256033&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Untitled%20Album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album04&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album04
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:32:36 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:54:43 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/new_add.php?set_albumName=album03
+
+GET /new_add.php?set_albumName=album03 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:50 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:50 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=228049327&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album03&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=228049327&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album03&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album03
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:23:24 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:54:50 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/do_command.php?parentName=album03&return=/add_photos_to_album.php&cmd=new-album
+
+GET /do_command.php?parentName=album03&return=/add_photos_to_album.php&cmd=new-album HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:54:52 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:52 GMT; domain=myphotodevel.com
+Location: /add_photos_to_album.php?set_albumName=album05
+Content-Length: 165
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album05
+
+GET /add_photos_to_album.php?set_albumName=album05 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:52 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:52 GMT; domain=myphotodevel.com
+Content-Length: 1667
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album05
+
+GET /easy_upload_j.php?set_albumName=album05 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album05
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:52 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:52 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=324688701&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Untitled%20Album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album05&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=324688701&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Untitled%20Album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album05&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album05
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:37:39 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:54:53 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/view_album.php?set_albumName=album05
+
+GET /view_album.php?set_albumName=album05 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album05
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:54:59 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:54:59 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/new_add.php?set_albumName=album05
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/new_add.php?set_albumName=album05
+
+GET /new_add.php?set_albumName=album05 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album05
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:54:59 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:00 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=357556366&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album05&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=357556366&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album05&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album05
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:13:29 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:00 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album05
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:02 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:03 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:03 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:03 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 403
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+
+GET /ads/loggedin_600.php?adstyle= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:03 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 649
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://static.myphotoalbum.com/skins//css/embedded_style.css?v-11-14-07
+
+GET /skins//css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotoalbum.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: __utmz=38867135.1194973813.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utma=38867135.1298813710.1194973813.1195059174.1195070105.4; fcwt=plookfish; mpa_popup=true; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Forder_prints.php; __utmc=38867135; osCsid=2e373e3dc6c3d012581fc5b6868484a3
+
+HTTP/1.x 404 Not Found
+Date: Wed, 14 Nov 2007 22:55:03 GMT
+Server: Apache
+Content-Length: 300
+Keep-Alive: timeout=2, max=10000
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1129916041&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1129916041&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:13:29 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:03 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:03 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 427
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/view_album.php?set_albumName=album01
+
+GET /view_album.php?set_albumName=album01 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:55:04 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:04 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/new_add.php?set_albumName=album01
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/new_add.php?set_albumName=album01
+
+GET /new_add.php?set_albumName=album01 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:04 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:05 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=663101244&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album01&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=663101244&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album01&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album01
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:33:30 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:05 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album05
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:07 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:07 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:07 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:07 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 404
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+
+GET /ads/loggedin_600.php?adstyle= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:07 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 649
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://static.myphotoalbum.com/skins//css/embedded_style.css?v-11-14-07
+
+GET /skins//css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotoalbum.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: __utmz=38867135.1194973813.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utma=38867135.1298813710.1194973813.1195059174.1195070105.4; fcwt=plookfish; mpa_popup=true; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Forder_prints.php; __utmc=38867135; osCsid=2e373e3dc6c3d012581fc5b6868484a3
+
+HTTP/1.x 404 Not Found
+Date: Wed, 14 Nov 2007 22:55:07 GMT
+Server: Apache
+Content-Length: 300
+Keep-Alive: timeout=2, max=10000
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1398885421&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1398885421&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:23:16 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:07 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:07 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 426
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/view_album.php?set_albumName=album02
+
+GET /view_album.php?set_albumName=album02 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:55:08 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:08 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/new_add.php?set_albumName=album02
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/new_add.php?set_albumName=album02
+
+GET /new_add.php?set_albumName=album02 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:09 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:09 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1513444357&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album02&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1513444357&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album02&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album02
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:37:39 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:09 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album05
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:11 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:11 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:11 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:11 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 404
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+
+GET /ads/loggedin_600.php?adstyle= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:11 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 649
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://static.myphotoalbum.com/skins//css/embedded_style.css?v-11-14-07
+
+GET /skins//css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotoalbum.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: __utmz=38867135.1194973813.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utma=38867135.1298813710.1194973813.1195059174.1195070105.4; fcwt=plookfish; mpa_popup=true; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Forder_prints.php; __utmc=38867135; osCsid=2e373e3dc6c3d012581fc5b6868484a3
+
+HTTP/1.x 404 Not Found
+Date: Wed, 14 Nov 2007 22:55:11 GMT
+Server: Apache
+Content-Length: 300
+Keep-Alive: timeout=2, max=10000
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:11 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 427
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=237766736&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=237766736&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:30:29 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:11 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/view_album.php?set_albumName=album03
+
+GET /view_album.php?set_albumName=album03 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:12 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:12 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/view_album.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:12 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:12 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 404
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+
+GET /ads/loggedin_600.php?adstyle=none HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/view_album.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:12 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 653
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://static.myphotoalbum.com/skins/none/css/embedded_style.css?v-11-14-07
+
+GET /skins/none/css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotoalbum.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+Cookie: __utmz=38867135.1194973813.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utma=38867135.1298813710.1194973813.1195059174.1195070105.4; fcwt=plookfish; mpa_popup=true; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Forder_prints.php; __utmc=38867135; osCsid=2e373e3dc6c3d012581fc5b6868484a3
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:13 GMT
+Server: Apache
+Last-Modified: Tue, 20 Mar 2007 21:41:40 GMT
+Etag: "d94c3-2016-92306d00"
+Accept-Ranges: bytes
+Content-Length: 8214
+Keep-Alive: timeout=2, max=10000
+Connection: Keep-Alive
+Content-Type: text/css
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1669257152&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%3A%20MyPhotoAlbum%20%3A%3A%20third%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/view_album.php?set_albumName=album03&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1669257152&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%3A%20MyPhotoAlbum%20%3A%3A%20third%20album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/view_album.php?set_albumName=album03&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/view_album.php?set_albumName=album03
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 11:11:38 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:13 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=none
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:13 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 427
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/view_album.php?set_albumName=album04
+
+GET /view_album.php?set_albumName=album04 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/view_album.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:55:16 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:16 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/new_add.php?set_albumName=album04
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/new_add.php?set_albumName=album04
+
+GET /new_add.php?set_albumName=album04 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/view_album.php?set_albumName=album03
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:16 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:16 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1223587695&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album04&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1223587695&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Create%20Or%20Add&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/new_add.php?set_albumName=album04&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album04
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:32:42 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:16 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/do_command.php?parentName=album04&return=/add_photos_to_album.php&cmd=new-album
+
+GET /do_command.php?parentName=album04&return=/add_photos_to_album.php&cmd=new-album HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album04
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:55:18 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:18 GMT; domain=myphotodevel.com
+Location: /add_photos_to_album.php?set_albumName=album06
+Content-Length: 165
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album06
+
+GET /add_photos_to_album.php?set_albumName=album06 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/new_add.php?set_albumName=album04
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:18 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:18 GMT; domain=myphotodevel.com
+Content-Length: 1667
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album06
+
+GET /easy_upload_j.php?set_albumName=album06 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/add_photos_to_album.php?set_albumName=album06
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:18 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:19 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1980576862&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Untitled%20Album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album06&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=1980576862&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=MyPhotoAlbum%20%3A%3A%20Untitled%20Album&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/easy_upload_j.php?set_albumName=album06&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album06
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 11:11:38 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:19 GMT
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/easy_upload_j.php?set_albumName=album06
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:29 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:29 GMT; domain=myphotodevel.com
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_728.php
+
+GET /ads/loggedin_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:29 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 391
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+
+GET /ads/loggedin_600.php?adstyle= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:29 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 649
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:29 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 411
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://static.myphotoalbum.com/skins//css/embedded_style.css?v-11-14-07
+
+GET /skins//css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotoalbum.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: __utmz=38867135.1194973813.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utma=38867135.1298813710.1194973813.1195059174.1195070105.4; fcwt=plookfish; mpa_popup=true; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Forder_prints.php; __utmc=38867135; osCsid=2e373e3dc6c3d012581fc5b6868484a3
+
+HTTP/1.x 404 Not Found
+Date: Wed, 14 Nov 2007 22:55:29 GMT
+Server: Apache
+Content-Length: 300
+Keep-Alive: timeout=2, max=10000
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=543930403&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=543930403&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:20:37 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:29 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/loggedin@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/loggedin_600.php?adstyle=
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:29 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Content-Length: 410
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://autotest.myphotodevel.com/do_command.php?return=http%3A%2F%2Fautotest.myphotodevel.com%2Fview_album.php%3Fpage%3D1&cmd=logout
+
+GET /do_command.php?return=http%3A%2F%2Fautotest.myphotodevel.com%2Fview_album.php%3Fpage%3D1&cmd=logout HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:55:35 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: mpa_popup=true; expires=Tue, 12-Feb-2008 22:55:35 GMT; domain=myphotodevel.com
+Location: http://autotest.myphotodevel.com/view_album.php?page=1
+Content-Length: 165
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/view_album.php?page=1
+
+GET /view_album.php?page=1 HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 302 Found
+Date: Wed, 14 Nov 2007 22:55:35 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: http://autotest.myphotodevel.com/albums.php
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/albums.php
+
+GET /albums.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:36 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/album_728.php
+
+GET /ads/album_728.php HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:36 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 384
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://autotest.myphotodevel.com/ads/album_600.php?adstyle=
+
+GET /ads/album_600.php?adstyle= HTTP/1.1
+Host: autotest.myphotodevel.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+Cookie: mpa_fqdn=http%3A%2F%2Fswain.myphotodevel.com%2Fdelete_photo.php%3Fid%3Dalbum07%26albumDelete%3D1%26confirm%3DDelete; mpa_popup=true; fcwt=swain; osCsid=c51572707057497375f1bc6b14ee6a57; PHPSESSID=9irn2mc04n6vpforvdsl7a2742; switchmenu=
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:36 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.4
+Content-Length: 637
+Connection: close
+Content-Type: text/html
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@Top2!Top2 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: RMFD=011IsR6nO10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:36 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Set-Cookie: RMFD=011IsR6nO10ciE0|O10ciE5; expires=Fri, 31-Dec-2020 23:59:59 GMT; path=/; domain=.fortunecity.com
+Content-Length: 318
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://static.myphotoalbum.com/skins//css/embedded_style.css?v-11-14-07
+
+GET /skins//css/embedded_style.css?v-11-14-07 HTTP/1.1
+Host: static.myphotoalbum.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=
+Cookie: __utmz=38867135.1194973813.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none); __utma=38867135.1298813710.1194973813.1195059174.1195070105.4; fcwt=plookfish; mpa_popup=true; mpa_fqdn=http%3A%2F%2Fswain.myphotoalbum.com%2Forder_prints.php; __utmc=38867135; osCsid=2e373e3dc6c3d012581fc5b6868484a3
+
+HTTP/1.x 404 Not Found
+Date: Wed, 14 Nov 2007 22:55:36 GMT
+Server: Apache
+Content-Length: 300
+Keep-Alive: timeout=2, max=10000
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+----------------------------------------------------------
+http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=379604370&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc=
+
+GET /__utm.gif?utmwv=1&utmn=379604370&utmcs=ISO-8859-1&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=9.0%20r47&utmcn=1&utmdt=Photo%20Sharing%20by%20MyPhotoAlbum.com%20%3A%20MyPhotoAlbum&utmhn=autotest.myphotodevel.com&utmr=0&utmp=/albums.php&utmac=UA-497528-1&utmcc= HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/albums.php
+
+HTTP/1.x 200 OK
+Pragma: no-cache
+Cache-Control: private, no-cache, no-cache="Set-Cookie", proxy-revalidate
+Expires: Fri, 04 Aug 1978 12:00:00 GMT
+Content-Type: image/gif
+Last-Modified: Tue, 13 Nov 2007 07:20:37 GMT
+Server: ucfe
+Content-Length: 35
+Date: Wed, 14 Nov 2007 22:55:36 GMT
+----------------------------------------------------------
+http://oascentral.fortunecity.com/RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25
+
+GET /RealMedia/ads/adstream_jx.ads/MPA/album@x25!x25 HTTP/1.1
+Host: oascentral.fortunecity.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=
+Cookie: RMFD=011IsR6nO10ciE0|O10ciE5; RMID=4034fd7346c06870; NSC_f32dfo4efm_Qppm_iuuq=445cb9363660
+
+HTTP/1.x 200 OK
+Date: Wed, 14 Nov 2007 22:55:36 GMT
+Server: Apache/1.3.27 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.12 OpenSSL/0.9.6b mod_oas/5.8 with cap module/2.0
+P3P: CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml", CP="NON NID PSAa PSDa OUR IND UNI COM NAV STA",policyref="/w3c/p3p.xml"
+Set-Cookie: RMFD=011IsR6nO10ciE0|O20ciE5; expires=Fri, 31-Dec-2020 23:59:59 GMT; path=/; domain=.fortunecity.com
+Content-Length: 327
+Expires: Tue, 25 Apr 1995 09:30:27 -0700
+Pragma: no-cache
+Keep-Alive: timeout=300
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+----------------------------------------------------------
+http://a.tribalfusion.com/j.ad?site=myphotoalbumcom&adSpace=ros&size=728x90&p=879756&a=1&flashVer=9&ver=1.12&center=1&url=http%3A%2F%2Fautotest.myphotodevel.com%2Falbums.php&f=1&rnd=880242
+
+GET /j.ad?site=myphotoalbumcom&adSpace=ros&size=728x90&p=879756&a=1&flashVer=9&ver=1.12&center=1&url=http%3A%2F%2Fautotest.myphotodevel.com%2Falbums.php&f=1&rnd=880242 HTTP/1.1
+Host: a.tribalfusion.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: ANON_ID=aem5pJVtiG4VWXYc3eHGV93VZbA2cfFUtYHSdJ5R0gdlH3xUGJRDU2KyprwMrMLNqronpJoQCwZdWScl1cvOOZbM7UUZbekr9h3HfbuODERXrr1pMh2tvgIFQG3EZbZcWEapkaQIpWfGTbV209onS9QSE9nnPaFBka1eOTIJ1T781sYTXUUR1U7Yvp3JYT3cYG7kdBeDY4bg0ho0YH5GPFZbv1pAC4qfR9byrpsmAp4m3mCZaIPTvm3rft8pUyNTAHXaZds7NfUje3mV45C0sWZcVG3e3nniyGQFmchwst3H9FJGs1Zbfyd7tUGJRZaa79ypnwMrMdkCBo8cZboQJnVWSdFocvOSAQ7UUZbewrcvIHjbkEqsXK3r1pMh2tvgZcUQG3EZbZcWEaCgTnIMIbGTaZbn2Sov3DQS1cFnPaFBwa2A4qZaJpBmpQmJQXUUR1U7YcDYJYT3cYG6g7QIDO2Ug0gP9YH5GPFZbv1pAC4q7RtbvbdsyA3sDsQRZaIPTvm3rft0SUyNTAHXaZdie7MU9cBnVTTh0GWZcVG3e3nniyGYFTchirHUHOJZdf2LZbfyd7tUGJRsT79ypnwMrOw0oBoYhYoQZagbWSdpYsvOfCY7UUFewrdQntjbvt1MvSUr1pMh2tvgIFQG3EZbZcWEb3uEYIiUvHTfyS29ov3DQS1cFnPaFB0a50ZaqEJGcm9S6JQXUUR1U7YKDYJYT3cYG7srQAD1dnC0bP23W54LDUvXVaC4xYZd1BxDipTAyTeGTBStPPvtY6FtRDUMNVfWXAZch3SYUUcFYV0TS4oWlVpZbe0EUjyInG2CfitCJHSdJ4R07lyD7YtpYRYq78yuJZaMQOjD7joQxQ0QHmMSWddAS7OTnr6UVUwVQdWo8UbQaYd0nLp1tNUnRJg3TQG3IsQWAdkhFMIPFYkTe5AXHoKnbnSyS7nPeEZdV64yVRaJpS38SLsDXQTwHDrYO9YJYV2kYn9LFmXDwHnC06Cs393B4SQv34aC4xP617xwQA6AyEeETGJjPPxfxDYt9kUONQZaHSEZbPiXZb8p5
+
+HTTP/1.x 200 OK
+P3P: CP="NOI DEVa TAIa OUR BUS"
+X-Function: 101
+Pragma: no-cache
+Cache-Control: no-cache, private
+Set-Cookie: ANON_ID=a9m5pJXrQV1U9s49YJEV0fuV7hQVAD1HnC0dUT3gKmZaFnn2GaCEUAN1bvaRsyKyTeEqDi6PRlNYUgbq9UyUiZaHXaYUiVpqrGJXOZcobVuZbsYc3i0EUifVZbA2cjFUtXtdP75nFJByacWWcL8Xq79aDbwMrfEGqp7StY0YDPF1AZbuMGvxTrr7oF3jVr7KMdb6dnndXlv31O07XWxRRrQG0njZcWEnG8SyYnFQk1iJ7yGIBR9QW2S7n6TQEVaYxMTClcxB8hLfvX28R5r97QDYJ47McYGMkMVCyuHrCgFUZbvhjN5bZbM2GaCLaMW1bMaRsyci82EdVe6PYadYUhZd39Uyv76HXaYUuVsc6GZbXfrFW2gbsYc3i0EUilGZbA2cjFUtXG96B5O0FBybMwQVLgVT79xGQwMrfERqqJoW30nVBTQG3MMGvxTrr7jrYjVr7KMdaa77Qdisf21mBCXdxRRrQG0njZcWEnGRSx7mrQkuIWZcV5ABR9QW2S7nOEQEVaYxMTCotUf81YvvX3Ss5r9WwSYJa9rcYGMkMVCXWWvCosWZcNCbN5bZbM2GaCLaMW1bMaRsy44DIEeWP7P1T5YUhZd39Uyv76HXaYUXVtqaGBXD8FH4pjsYc3i0EUiecZbA2cjFUtY0t6J5sZaYBygaEQcLgVT79xGQwMr7ERqrpatQ0P1UeSV3MMGvxTrr73FYjVr7KMddQEnMd0Vjr1nud2HxKJpJGYTJZcWLB10txlkArkTcQwXFWNRdQPXGZbnPaQFVcmhMmDo0Vn8SFnPXXfD1n9AQsJJYTYdYI3jQoAgvo7C0dUU3gBu5BZbSNpqC4qMV1kFRRRNiBBmETLqIPWbZa3QhjlVZbyNPEGXdBHTotI09rXVUeG4QpmY84Rt7biyHZbA2gV0Up1g8nZb5RWvfyflLUCLYwoB92prwMveKNmsrwnr0nEiFSM8lMCuSI977qUYjVt6CMPdFFABdxsjr1qgZb2pvU29ZbG22JZcWLIq0WxVSpBkTsQuXCZbaRdQdxUQn7JQHV7UxsqAJMY4eZaY; path=/; domain=.tribalfusion.com; expires=Thu, 13-Nov-2008 22:55:36 GMT;
+Content-Type: application/x-javascript
+Content-Encoding: none
+Content-Length: 541
+----------------------------------------------------------
+http://ad.doubleclick.net/adi/N2998.TribalFusion/B2491482.4;sz=728x90;click=http://a.tribalfusion.com/h.click/a8mMne0bMkYFjfXq6NRFJHUFM2WtFYorJrRbfr1EQs4T3k2aQ0nabAYUFfTWBQnAvBncruoHYC5Tn75dZaN4mvZcmFbZc0GvT1VMV1V7NpT725UUSWFjZbUA35RTQ3PGBpStFw0WjpWAju2cQY0VQuIOcc16/;ord=22937094?
+
+GET /adi/N2998.TribalFusion/B2491482.4;sz=728x90;click=http://a.tribalfusion.com/h.click/a8mMne0bMkYFjfXq6NRFJHUFM2WtFYorJrRbfr1EQs4T3k2aQ0nabAYUFfTWBQnAvBncruoHYC5Tn75dZaN4mvZcmFbZc0GvT1VMV1V7NpT725UUSWFjZbUA35RTQ3PGBpStFw0WjpWAju2cQY0VQuIOcc16/;ord=22937094? HTTP/1.1
+Host: ad.doubleclick.net
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_728.php
+Cookie: id=800000f80a6447d|675026/507702/13831|
+
+HTTP/1.x 200 OK
+Server: DCLK-AdSvr
+Content-Type: text/html
+Content-Length: 1907
+Content-Encoding: gzip
+----------------------------------------------------------
+http://a.tribalfusion.com/j.ad?site=myphotoalbumcom&adSpace=ros&size=160x600|120x600&p=885851&a=1&flashVer=9&ver=1.12&center=1&url=http%3A%2F%2Fautotest.myphotodevel.com%2Falbums.php&f=1&rnd=883522
+
+GET /j.ad?site=myphotoalbumcom&adSpace=ros&size=160x600|120x600&p=885851&a=1&flashVer=9&ver=1.12&center=1&url=http%3A%2F%2Fautotest.myphotodevel.com%2Falbums.php&f=1&rnd=883522 HTTP/1.1
+Host: a.tribalfusion.com
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.9) Gecko/20071025 Firefox/2.0.0.9
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://autotest.myphotodevel.com/ads/album_600.php?adstyle=
+Cookie: ANON_ID=aem5pJVtiG4VWXYc3eHGV93VZbA2cfFUtYHSdJ5R0gdlH3xUGJRDU2KyprwMrMLNqronpJoQCwZdWScl1cvOOZbM7UUZbekr9h3HfbuODERXrr1pMh2tvgIFQG3EZbZcWEapkaQIpWfGTbV209onS9QSE9nnPaFBka1eOTIJ1T781sYTXUUR1U7Yvp3JYT3cYG7kdBeDY4bg0ho0YH5GPFZbv1pAC4qfR9byrpsmAp4m3mCZaIPTvm3rft8pUyNTAHXaZds7NfUje3mV45C0sWZcVG3e3nniyGQFmchwst3H9FJGs1Zbfyd7tUGJRZaa79ypnwMrMdkCBo8cZboQJnVWSdFocvOSAQ7UUZbewrcvIHjbkEqsXK3r1pMh2tvgZcUQG3EZbZcWEaCgTnIMIbGTaZbn2Sov3DQS1cFnPaFBwa2A4qZaJpBmpQmJQXUUR1U7YcDYJYT3cYG6g7QIDO2Ug0gP9YH5GPFZbv1pAC4q7RtbvbdsyA3sDsQRZaIPTvm3rft0SUyNTAHXaZdie7MU9cBnVTTh0GWZcVG3e3nniyGYFTchirHUHOJZdf2LZbfyd7tUGJRsT79ypnwMrOw0oBoYhYoQZagbWSdpYsvOfCY7UUFewrdQntjbvt1MvSUr1pMh2tvgIFQG3EZbZcWEb3uEYIiUvHTfyS29ov3DQS1cFnPaFB0a50ZaqEJGcm9S6JQXUUR1U7YKDYJYT3cYG7srQAD1dnC0bP23W54LDUvXVaC4xYZd1BxDipTAyTeGTBStPPvtY6FtRDUMNVfWXAZch3SYUUcFYV0TS4oWlVpZbe0EUjyInG2CfitCJHSdJ4R07lyD7YtpYRYq78yuJZaMQOjD7joQxQ0QHmMSWddAS7OTnr6UVUwVQdWo8UbQaYd0nLp1tNUnRJg3TQG3IsQWAdkhFMIPFYkTe5AXHoKnbnSyS7nPeEZdV64yVRaJpS38SLsDXQTwHDrYO9YJYV2kYn9LFmXDwHnC06Cs393B4SQv34aC4xP617xwQA6AyEeETGJjPPxfxDYt9kUONQZaHSEZbPiXZb8p5
+
+HTTP/1.x 200 OK
+P3P: CP="NOI DEVa TAIa OUR BUS"
+X-Function: 101
+Pragma: no-cache
+Cache-Control: no-cache, private
+Set-Cookie: ANON_ID=atm5pJ1FMaRsNlyTeEJFtHnEvq3rftRDUyNTEHXf04HsJ3UcFXZasUl4VUsYc380EUi2CUe26OZdQW0UrHJ5vlrfydrsjGZdpvTj9UglYr1bBNqrsQtQ0ETiFSp7MMGuZd6C37sHjFVs8kOHdUPcYdCGMr1pfgatOv5UYGUDrZc5tZbG0SvZaPF3kpsUuXDqBR9QVgEJnRMFiVewrvqCn2p38TmUQXUBS9UaIO9UJV4BOMDYhQVAH1HnCgWUT3dYN5bZd5fkuCcwbO1iZc6VVNupqeESoPIPTbnnrhInDQyZcsE4yeMPTVrQUcFXDHeG4VQsYc3ZcKo7iZdWQe2hqVQW1O2HJ5U8YfydrsvGK7iTf9DQXhOJZbBNqrsQtQ0CEiFSp7MMGuNaoM7uX7FVtvDvtd34GYd3DJr1pfgmtuQNr3GMVa5Un3D0SvZaPF3kiGQuXDqBR9PRiTfncaUjVd7VvECn2p38TmUQXUBSSU9mNSUJrw5PW0QhQVAH1HnCrHUT3dYN5bZdCuAPCVerO1jOEVVNZcXaeEfmXIPTbnnrhi4S3yVFG3xBrPTVrQUcFXDHeG4VQsYc3suSriAVff2fEkQW1O2HJ5U8YfydrsYGLpeTb9fGXxMPFBNqrsQtQ0FaiFSp7MMGv8mor7nZcMFVu6MvHd34GYd3DJr1p7gmtvheUQG21m9W73D0SvZaPF3k2sQuXDqBR9SdJEFnPEQEVcXpMaCfHrF8WUnQX0nZc1n9N6cnJYTYaYAGTQRAA5R3C0dUU3bmk5BZcCUDIC4qMV1eFnRRNYpBuETHqJP0Fo3Qf4msFyNTEGXfQVTorOtSUXVWeH43fAYC5EdQZbiyKZbA2brMUS13koQ5RSMeyajaU8LZdVnQ9ynrwMo1HNmsIyR70QFiFSO08MCxRb9n7UU3jVxhoM9dko6vdwsjr1Oea2pwjsSrGMEJZcWK8Q0WuaZaSJkrcQuXBrJRTSpIrvnnaQEV9KYMPAsRbB8R3nQX0u71Q9H3UFJYEYcYH2ZcQRAtyBBChKUW38UNTFZbvMY4iVa; path=/; domain=.tribalfusion.com; expires=Thu, 13-Nov-2008 22:55:37 GMT;
+Content-Type: application/x-javascript
+Content-Encoding: none
+Content-Length: 9420
+----------------------------------------------------------
