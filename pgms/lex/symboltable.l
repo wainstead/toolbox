@@ -1,5 +1,9 @@
 %{
-/* word recognizer with symbol table */
+/* word recognizer with symbol table
+ * compile with:
+ *   lex symboltable.l          
+ *   gcc lex.yy.c -o symtab -lfl
+*/
 
 #include <string.h>
 #include <stdio.h>
