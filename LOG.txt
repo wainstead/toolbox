@@ -36155,3 +36155,105 @@ either modified or not under version control. Sent two emails. Really,
 it's all me, Chris and Fernando.
 
 OK, signup wizard appears to be done. Whew.
+
+
+
+#########################################################################
+080204 Mon 04 Feb 2008 04:39:43 PM EST
+
+I've sunk quite a bit of time into testing the store, now that the
+codebase is in SVN. Got my build and development set up properly.
+
+
+
+
+#########################################################################
+080205 Tue 05 Feb 2008 02:14:16 PM EST
+
+Very challenging: figuring out why my "autotest" site was failing on
+logins. Turns out the tarball for the fast storage was overwriting the
+file 'user.local.php'. Emacs will edit tar.gz files (or .tgz in this
+case) so I was able to delete the files from the archive.
+
+So... got the full test done. Dunno why I had separate "remove" and
+"make" scripts; combined them into one, recycle_autotest.sh:
+
+# completely delete the user 'autotest' and then recreate
+
+echo "Deleting autouser from database..."
+EXECUTESQL='/d0/mysql/mpa/bin/mysql -S /tmp/mysql.mpa.sock -uroot mpa -e'
+$EXECUTESQL 'call delete_autouser()'
+
+echo "rm -rf autouser off fast and slow storage..."
+rm -rf /mnt/slow/vol01/a/au/aut/auto/autot/autotest
+rm -rf /mnt/fast/vol01/a/au/aut/auto/autot/autotest
+
+echo "using createaccount.pl to recreate site..."
+/opt/mpa/admin/unix-bin/createaccount.pl autotest 112233 autotest@test.myphotodevel.com
+
+echo "Using lhhreplay.pl to recreate albums..."
+cd /home/swain/svn/pgms/perl
+./lhhreplay.pl ./autotest/autotest_createalbums.lhh
+
+echo "Untarring the albums for autotest..."
+cd /mnt/slow/vol01/a/au/aut/auto/autot
+tar xzvf /home/www/autotest.slow.tgz
+cd /mnt/fast/vol01/a/au/aut/auto/autot
+tar xzvf /home/www/autotest.fast.tgz
+
+echo "Creating and deleting subusers for autotest..."
+cd /home/swain/svn/pgms/perl
+./lhhreplay.pl ./autotest/autotest_makes_users.lhh
+
+
+echo "Done."
+
+
+
+There's a brittleness here though: the first LHH script creates all
+necessary albums and subalbums. The tarballs contain all the images. I
+should come up with a simple way to create new tarballs should the lhh
+script become obsolete; also, the next step after that would be to
+extract the username so one can create a site regardless of
+username. That's totally doable.
+
+It would take a Perl script using the Gallery API to upload the
+images, I think, to automate that part of it.
+
+In the end it should be "one click," so to speak, to create a new site
+on the fly and test the functionality. I'm reminded of setting up
+similar tests with Oliver at the NYT, and how such tests are
+lifesavers.
+
+Oh, and it should then do a comprehensive test of all store
+functionality. And this test should work on staging too.
+
+
+
+
+#########################################################################
+080207 Thu 07 Feb 2008 10:59:07 AM EST
+
+Reviewed Fernando yesterday. Longish manager's meeting too.
+
+Wrote up two tasks for Fernando: store-is-alive fix, and
+don't-delete-gifts-in-the-cart fix.
+
+Followups from yesterday:
+
+* digibug.com runs on PHP 4.3.3 on Apache.
+* Gallery Remote does not have photo organizing features.
+
+Spent considerable time exploring Adobe AIR. This is the "rich
+internet application" "runtime" they are releasing; currently in beta
+3 as of... December or so. So it's advanced since I last
+looked. Showed Jessy a demo app called Bee that is supposed to
+integrate WordPress to Flickr... I'm thinking that we can do the photo
+organizing tool Jessy was talking about. More to the point, now that I
+think about it, it could do the "mirroring" thing where the
+organization on your HD and Gallery are the same. I suppose that makes
+the most sense. This would mean we could adopt a "build/compose/edit"
+kind of RIA that then "syncs" with the online Gallery (comments and
+all!) Not only would that be cool, I dunno of anyone else doing it
+(though I haven't really looked).
+
