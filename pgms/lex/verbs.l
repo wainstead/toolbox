@@ -1,5 +1,6 @@
 %{
 /* this is the opening include block thingie. */
+#include <stdio.h>
 %}
 %%
 

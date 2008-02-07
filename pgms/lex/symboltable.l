@@ -58,7 +58,7 @@ enum {
   }
 }
 
-. /* ignore anything else */
+. /* ignore anything else */ ;
 
 %%
 
