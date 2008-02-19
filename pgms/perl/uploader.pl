@@ -34,7 +34,6 @@ $mech->submit_form(
     );
 
 
-#dumpfileandexit($mech->content);
 
 die "Don't appear to be logged in" unless $mech->content_like( qr/Log Out/, "No logout link found" );
 
@@ -91,25 +90,6 @@ exit(0);
 
 
 
-sub extractLink {
-    # looking for a line like:
-    # adminOptions.add_photos.value = "http://plookfish.myphotoalbum.com/add_video.php?set_albumName=album22";
-    foreach my $line (split /\n/, $_[0]) {
-        if ($line =~ /adminOptions.add_video.value = /) {
-            my ($key, $val) = split / = /, $line;
-            $val =~ s/[";]//g; #";
-            print "returning $val\n";
-            return $val;
-        }
-    }
-  }
-
-sub dumpfileandexit {
-    my $mech = shift;
-    open OUTFILE, "> delme.html" or die $!;
-    print OUTFILE $mech->content;
-    exit;
-}
 
 # usage: battery_of_tests($mech);
 sub battery_of_tests {
