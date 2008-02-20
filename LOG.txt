@@ -36257,3 +36257,204 @@ kind of RIA that then "syncs" with the online Gallery (comments and
 all!) Not only would that be cool, I dunno of anyone else doing it
 (though I haven't really looked).
 
+Sending a share email:
+
+DBConn: DBConn::_queryDB: got this query: 'SELECT s.uid AS uid, s.username AS username
+                  FROM mpa_subusers s, mpa_sites_subusers ss
+                  WHERE ss.site_id = 142687
+                  AND s.uid = ss.uid'
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'SELECT s.*, ss.*
+                  FROM mpa_subusers s, mpa_sites_subusers ss, users u
+                  WHERE u.userid=ss.site_id
+                  AND s.uid = ss.uid
+                  AND u.userid='142687'
+                  AND s.uid='1100548322_1920879344''
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'SELECT num_emails FROM mpa_users_email_history where email_address='swaindevel@test.myphotodevel.com' and date_sent like '2008-02-07%''
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'SELECT * FROM mpa_users_address_book WHERE email_address = 'swaindevel@test.myphotodevel.com' and friends_email = 'swain@corp.fortunecity.com''
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'INSERT INTO mpa_users_email_history (email_history_id, parent_userid, album, type, photo_name, album_title, description, email_address, date_sent, num_emails) VALUES (NULL, 142687, 'album31', 'Slideshow', '', 'it's a man's life in the army', 'big pay, lots of fun', 'swaindevel@test.myphotodevel.com', NOW(), 1)'
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'SELECT num_emails FROM mpa_users_email_history where email_address='swaindevel@test.myphotodevel.com' and date_sent like '2008-02-07%''
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'SELECT userid FROM users WHERE email_address = 'swain@corp.fortunecity.com''
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'INSERT INTO mpa_users_received_shares (id, received_userid, email_history_id, time_added) VALUES (NULL, 142697, , NOW())'
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'select sum(amt) from mpa_points where username = 'swain''
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'SELECT state from mpa_profile where userid=142687'
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: DBConn::_queryDB: got this query: 'SELECT datediff(birthdate, NOW()), country, firstname FROM userinfo WHERE userid=142687'
+DBConn: DBConn::_queryDB: ok i am done (succesfully).
+DBConn: swain.myphotodevel.com: connexion closed.
+
+
+
+#########################################################################
+080208 Fri 08 Feb 2008 05:52:15 PM EST
+
+typolesbo: ok again
+typolesbo: i didnt have it shoeing hte new files ;-)
+typolesbo: i am def not saying it's "DONE"
+typolesbo: i still need to add votoing
+typolesbo: and click tracking
+typolesbo: but the differnt displays
+typolesbo: etc should work on that page
+typolesbo: its more...
+typolesbo: look at how i coded it
+typolesbo: and tell me what you think
+typolesbo: and what I should change
+
+
+
+
+
+#########################################################################
+080211 Mon 11 Feb 2008 10:45:10 AM EST
+
+The above typolesbo paste was just to remind me what she wanted me to
+do; which was to review her new album pages. So far they render badly
+and the functionality is not there.
+
+
+
+#########################################################################
+080213 Wed 13 Feb 2008 10:32:22 AM EST
+
+Now waiting on Chris to come back from a data center tour to roll out
+Gallery. This rollout is almost two weeks late and the main problem, I
+think, is Chris.
+
+Epliogue: fucking A, this rollout process has to go.
+
+
+
+#########################################################################
+080214 Thu 14 Feb 2008 10:21:23 AM EST
+
+Chris says signups are running at 65% success instead of the normal
+85%. Also just got into a tiff with him over aim about an image not
+loading. For days now I've been seeing a lot of "connection resets"
+and things not loading.
+
+
+Steve Wainstead: i'm continuing to see elements not loading
+Steve Wainstead: acutally photos not loading
+Steve Wainstead: and if i refresh the page they load
+chrisatfcity: and??
+10:15 AM
+chrisatfcity: I need examples.
+chrisatfcity: URLs etc.
+chrisatfcity: Just saying somehting does not load doesn't help.
+Steve Wainstead: i cannot provide anything
+chrisatfcity: ofcourse you can
+chrisatfcity: What image did not load
+Steve Wainstead: if i give you the url to a photo that didn't load, and then did, what good woudl that do you?
+chrisatfcity: go into the source
+Steve Wainstead: i already deleted the album
+chrisatfcity: and grab the URL
+Steve Wainstead: and you'll tell me : it loaded for me
+chrisatfcity: it would help isolate the issue
+chrisatfcity: oh fer fuckssake
+Steve Wainstead: :)
+chrisatfcity: just give me the URL and stop whioning.
+Steve Wainstead: well you always do say that :)
+chrisatfcity: That's retarded.
+Steve Wainstead: i said already, i deleted the ablum
+chrisatfcity: It could load for anyone.
+chrisatfcity: don't be an ass
+Steve Wainstead: i was testing a site
+chrisatfcity: it's too early to get on my nerves
+Steve Wainstead: no, reallly. i deleted it.
+chrisatfcity: well then don't complain to me about it again..
+Steve Wainstead: so, i shouldn't say anything when things don't load
+Steve Wainstead: ?
+chrisatfcity: if you delete the information we need to troubleshoot what the hell am I supposed to do about it?
+Steve Wainstead: well, tell you what. i won't say anything anymore.
+chrisatfcity: It's like complaining about an ingrown toe nail when you have no legsd
+
+
+
+
+#########################################################################
+080219 Tue 19 Feb 2008 11:08:57 AM EST
+
+Hrmm. Gifts project on Torque was missing. Possibly not there from the
+very beginning. Chris thought I was some kind of Spanish Inquisition
+for asking.
+
+Have fleshed out an uploader script to test uploading. Committed to
+svn as "uploader.pl."
+
+
+
+
+#########################################################################
+080220 Wed 20 Feb 2008 11:37:50 AM EST
+
+New stored procedures:
+
+-- the point here is to delete the customer who bought an
+-- autorenewable club membership; this account was created while
+-- running "utlimate_test.lhh" via my perl script "lhhreplay.pl". --sw
+
+-- this chunk was taken out of my work log; something I solved long
+-- ago... it forms the basis of this stored procedure:
+
+-- select @id := customers_id from osc_customers where customers_email_address='mister@test.myphotodevel.com';
+-- delete from osc_orders_products where orders_id in (select orders_id from osc_orders where customers_id = @id);
+-- delete from osc_orders_products_attributes where orders_id in (select orders_id from osc_orders where customers_id = @id);
+-- delete from osc_orders_total where orders_id in (select orders_id from osc_orders where customers_id = @id);
+-- delete from osc_orders_status_history where orders_id in (select orders_id from osc_orders where customers_id = @id);
+-- delete from osc_orders where customers_id = @id;
+-- delete from osc_session_info where customers_id=@id;
+-- delete from osc_address_book where customers_id = @id;
+-- delete from osc_customers_basket where customers_id=@id;
+-- delete from osc_customers where customers_id=@id;
+
+
+
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS delete_autorenew_customer $$
+
+CREATE PROCEDURE delete_autorenew_customer()
+BEGIN
+
+DECLARE ultimatetest_cust_id INT;
+
+SELECT customers_id INTO ultimatetest_cust_id FROM osc_customers WHERE customers_email_address = 'joebanks@test.myphotodevel.com';
+
+delete from osc_orders_products            where orders_id in (select orders_id from osc_orders where customers_id = ultimatetest_cust_id);
+delete from osc_orders_products_attributes where orders_id in (select orders_id from osc_orders where customers_id = ultimatetest_cust_id);
+delete from osc_orders_total               where orders_id in (select orders_id from osc_orders where customers_id = ultimatetest_cust_id);
+delete from osc_orders_status_history      where orders_id in (select orders_id from osc_orders where customers_id = ultimatetest_cust_id);
+delete from osc_orders                     where customers_id = ultimatetest_cust_id;
+delete from osc_address_book               where customers_id = ultimatetest_cust_id;
+delete from osc_customers_basket           where customers_id = ultimatetest_cust_id;
+delete from osc_customers                  where customers_id = ultimatetest_cust_id;
+
+
+END $$
+
+-- remove the club membership for risefm.myphotodevel.com
+DROP PROCEDURE IF EXISTS declubify_risefm $$
+
+CREATE PROCEDURE declubify_risefm()
+BEGIN
+
+DECLARE risefm_id INT;
+
+SELECT userid INTO risefm_id FROM users WHERE username='risefm';
+DELETE FROM mpa_club_memberships WHERE mpa_userid = risefm_id;
+UPDATE users SET status = 1, package_type = 0 WHERE userid = risefm_id;
+
+END $$
+
+DELIMITER ;
+
+
+
