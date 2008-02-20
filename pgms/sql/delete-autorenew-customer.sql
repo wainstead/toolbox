@@ -26,12 +26,12 @@ DROP PROCEDURE IF EXISTS delete_autorenew_customer $$
 
 
 
-CREATE PROCEDURE delete_autorenew_customer()
+CREATE PROCEDURE delete_autorenew_customer(cust_email_address VARCHAR(64))
 BEGIN
 
 DECLARE ultimatetest_cust_id INT;
 
-SELECT customers_id INTO ultimatetest_cust_id FROM osc_customers WHERE customers_email_address = 'joebanks@test.myphotodevel.com';
+SELECT customers_id INTO ultimatetest_cust_id FROM osc_customers WHERE customers_email_address = cust_email_address;
 
 IF (ultimatetest_cust_id IS NOT NULL) THEN
    DELETE FROM osc_orders_products            WHERE orders_id IN (SELECT orders_id FROM osc_orders WHERE customers_id = ultimatetest_cust_id);
@@ -43,22 +43,7 @@ IF (ultimatetest_cust_id IS NOT NULL) THEN
    DELETE FROM osc_cart                       WHERE customers_id = ultimatetest_cust_id;
    DELETE FROM osc_customers                  WHERE customers_id = ultimatetest_cust_id;
 ELSE
-   SELECT "Nothing to delete for joebanks" AS message;
-END IF;
-
-SELECT customers_id INTO ultimatetest_cust_id FROM osc_customers WHERE customers_email_address = 'sometestorderthing@test.myphotodevel.com';
-
-IF (ultimatetest_cust_id IS NOT NULL) THEN
-   DELETE FROM osc_orders_products            WHERE orders_id IN (SELECT orders_id FROM osc_orders WHERE customers_id = ultimatetest_cust_id);
-   DELETE FROM osc_orders_products_attributes WHERE orders_id IN (SELECT orders_id FROM osc_orders WHERE customers_id = ultimatetest_cust_id);
-   DELETE FROM osc_orders_total               WHERE orders_id IN (SELECT orders_id FROM osc_orders WHERE customers_id = ultimatetest_cust_id);
-   DELETE FROM osc_orders_status_history      WHERE orders_id IN (SELECT orders_id FROM osc_orders WHERE customers_id = ultimatetest_cust_id);
-   DELETE FROM osc_orders                     WHERE customers_id = ultimatetest_cust_id;
-   DELETE FROM osc_address_book               WHERE customers_id = ultimatetest_cust_id;
-   DELETE FROM osc_cart                       WHERE customers_id = ultimatetest_cust_id;
-   DELETE FROM osc_customers                  WHERE customers_id = ultimatetest_cust_id;
-ELSE
-   SELECT "Nothing to delete for sometestorderthing" AS message;
+   SELECT concat('Nothing to delete for ', cust_email_address) AS message;
 END IF;
 
 END $$
@@ -88,7 +73,8 @@ DROP PROCEDURE IF EXISTS swain_undo $$
 CREATE PROCEDURE swain_undo()
 BEGIN
 call declubify_risefm();
-call delete_autorenew_customer();
+call delete_autorenew_customer('deleteme@test.myphotodevel.com');
+call delete_autorenew_customer('deleteme2@test.myphotodevel.com');
 END $$
 
 DELIMITER ;
