@@ -36419,26 +36419,36 @@ New stored procedures:
 
 DELIMITER $$
 
+
+
 DROP PROCEDURE IF EXISTS delete_autorenew_customer $$
 
-CREATE PROCEDURE delete_autorenew_customer()
+
+
+CREATE PROCEDURE delete_autorenew_customer(cust_email_address VARCHAR(64))
 BEGIN
 
 DECLARE ultimatetest_cust_id INT;
 
-SELECT customers_id INTO ultimatetest_cust_id FROM osc_customers WHERE customers_email_address = 'joebanks@test.myphotodevel.com';
+SELECT customers_id INTO ultimatetest_cust_id FROM osc_customers WHERE customers_email_address = cust_email_address;
 
-delete from osc_orders_products            where orders_id in (select orders_id from osc_orders where customers_id = ultimatetest_cust_id);
-delete from osc_orders_products_attributes where orders_id in (select orders_id from osc_orders where customers_id = ultimatetest_cust_id);
-delete from osc_orders_total               where orders_id in (select orders_id from osc_orders where customers_id = ultimatetest_cust_id);
-delete from osc_orders_status_history      where orders_id in (select orders_id from osc_orders where customers_id = ultimatetest_cust_id);
-delete from osc_orders                     where customers_id = ultimatetest_cust_id;
-delete from osc_address_book               where customers_id = ultimatetest_cust_id;
-delete from osc_customers_basket           where customers_id = ultimatetest_cust_id;
-delete from osc_customers                  where customers_id = ultimatetest_cust_id;
-
+IF (ultimatetest_cust_id IS NOT NULL) THEN
+   DELETE FROM osc_orders_products            WHERE orders_id IN (SELECT orders_id FROM osc_orders WHERE customers_id = ultimatetest_cust_id);
+   DELETE FROM osc_orders_products_attributes WHERE orders_id IN (SELECT orders_id FROM osc_orders WHERE customers_id = ultimatetest_cust_id);
+   DELETE FROM osc_orders_total               WHERE orders_id IN (SELECT orders_id FROM osc_orders WHERE customers_id = ultimatetest_cust_id);
+   DELETE FROM osc_orders_status_history      WHERE orders_id IN (SELECT orders_id FROM osc_orders WHERE customers_id = ultimatetest_cust_id);
+   DELETE FROM osc_orders                     WHERE customers_id = ultimatetest_cust_id;
+   DELETE FROM osc_address_book               WHERE customers_id = ultimatetest_cust_id;
+   DELETE FROM osc_cart                       WHERE customers_id = ultimatetest_cust_id;
+   DELETE FROM osc_customers                  WHERE customers_id = ultimatetest_cust_id;
+ELSE
+   SELECT concat('Nothing to delete for ', cust_email_address) AS message;
+END IF;
 
 END $$
+
+
+
 
 -- remove the club membership for risefm.myphotodevel.com
 DROP PROCEDURE IF EXISTS declubify_risefm $$
@@ -36454,7 +36464,95 @@ UPDATE users SET status = 1, package_type = 0 WHERE userid = risefm_id;
 
 END $$
 
+
+
+
+DROP PROCEDURE IF EXISTS swain_undo $$
+
+CREATE PROCEDURE swain_undo()
+BEGIN
+call declubify_risefm();
+call delete_autorenew_customer('deleteme@test.myphotodevel.com');
+call delete_autorenew_customer('deleteme2@test.myphotodevel.com');
+END $$
+
 DELIMITER ;
 
 
 
+#########################################################################
+080221 Thu 21 Feb 2008 02:41:47 PM EST
+
+Note for today: Chris has again reinstated Bugzilla as the means for
+tracking requests for Ops. I filed one for viewvc, and how websvn runs
+out of memory.
+
+For safekeeping:
+
+
+(defun sw-highlight-stuff ()
+  "Yow!  Legally-imposed CULTURE-reduction is CABBAGE-BRAINED!"
+  (interactive)
+  (hi-lock-face-buffer "DEGRADED_MODE" "hi-red-b")
+  (hi-lock-face-buffer "FFMPEG" "hi-red-b")
+  (hi-lock-face-buffer "FLVTOOL2" "hi-red-b")
+  (hi-lock-face-buffer "IMAGE_SERVER" "hi-red-b")
+  (hi-lock-face-buffer "PARTIAL_DISABLED_LOGINS" "hi-red-b")
+  (hi-lock-face-buffer "MASS_STORAGE_DIR" "hi-red-b")
+  (hi-lock-face-buffer "MENCODER" "hi-red-b")
+  (hi-lock-face-buffer "MPA_MYSQL_DB" "hi-red-b")
+  (hi-lock-face-buffer "MPA_MYSQL_HOST" "hi-red-b")
+  (hi-lock-face-buffer "MPA_MYSQL_PASSWORD" "hi-red-b")
+  (hi-lock-face-buffer "MPA_MYSQL_USERNAME" "hi-red-b")
+  (hi-lock-face-buffer "PARTIAL_DEGRADED_MODE" "hi-red-b")
+  (hi-lock-face-buffer "RAW_IMAGE_SERVER" "hi-red-b")
+  (hi-lock-face-buffer "MPA_SERVICE_NAME" "hi-red-b")
+  (hi-lock-face-buffer "SESSION_TYPE" "hi-red-b")
+  (hi-lock-face-buffer "MPA_STATIC_SERVER" "hi-red-b")
+  (hi-lock-face-buffer "USER_DATA_ROOT" "hi-red-b")
+  (hi-lock-face-buffer "SERVICE_OUTAGE" "hi-red-b"))
+
+
+
+
+#########################################################################
+080222 Fri 22 Feb 2008 11:07:37 AM EST
+
+Running it like this:
+
+find . -type f \( -name "*.php" -o -name "*.inc" -o -name "*.default" \) -print  | ~/svn/pgms/perl/redefine.pl > output.php
+
+Of moderate interest is how I'm now attempting to parse out the minor
+differences to accomodate them... on the one hand I'm starting to see
+it as a lexed input stream, though... I haven't quite "seen" it yet. I
+can feel something's there but can't quite find it. And I also feel
+the need for Emacs's recursive editing, once I find out how to do
+search-and-replace across files. I believe such a thing is possible.
+
+
+I found that I can craft the output and use grep-find to list all the
+changes:
+
+find . -type f \( -name "*.php" -o -name "*.inc" -o -name "*.default" \) -print  | ~/svn/pgms/perl/redefine.pl 
+
+is the command, and the print statement looks like this:
+
+print "$filename.new:$. $line";
+
+I then used the elisp function listed above to highlight all the
+constants.
+
+OK, I think I've worked out the problem to the point where I have to
+stop. I don't want to make all the changes and commit them to CVS; I'm
+waiting on Chris to move Gallery to SVN. He's resisting though; he
+wants to come up with the "right" project layout before importing
+it. This is our age old battle of "worse is better" or "don't let the
+best be the enemy of the good" or "a good plan, violently executed
+today is better than a perfect plan next week."
+
+
+Demo'd the Perl script to Fernando... Mike got viewvc up and
+running. It's way cool. I sync'd all the conf files for gallery on
+torque, staging and production (the production one is not live yet).
+
+Sending us home early due to bad weather.
