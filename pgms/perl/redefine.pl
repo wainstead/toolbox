@@ -1,12 +1,13 @@
 #!/usr/bin/perl
 
+# Run this in grep-find like so:
+# find . -type f \( -name "*.php" -o -name "*.inc" -o -name "*.default" \) -print  | ~/svn/pgms/perl/redefine.pl 
+# The output of this script is grep-find compatible.
+
 use strict;
 use warnings;
 # change all $gallery->something->something to defined constants in gallery.conf.
 
-open ROLLOUT,  "> rollout.sh"  or die $!;
-open ROLLBACK, "> rollbach.sh" or die $!;
-open LOGFILE,  "> redefine.log" or die $!;
 
 my %regexes;
 
@@ -34,6 +35,12 @@ $regexes{'$gallery->service_outage_no_logins'}            = 'SERVICE_OUTAGE_NO_L
 # in via stdin. --sw
 #open PIPE, 'find . -name "*.php" |' or die $!;
 
+
+open ROLLOUT,  "> rollout.sh"  or die $!;
+open ROLLBACK, "> rollback.sh" or die $!;
+open LOGFILE,  "> redefine.log" or die $!;
+
+
 my $filecount = 0;
 
 while (my $filename = <STDIN>) {
@@ -44,10 +51,12 @@ while (my $filename = <STDIN>) {
     open PHPOUTFILE, "> $filename.new" or die "Can't write '$filename': $!\n";
     
     while (my $line = <PHPINFILE>) {
-        while (my($variable, $constant) = each(%regexes)) {
+        while ( my($variable, $constant) = each(%regexes) ) {
             if ($line =~ s/\Q$variable/\Q$constant/g) {
                 $changes++;
                 print "$filename.new:$.: $line";
+                # find instances of variables in curly braces in strings, for example:
+                # echo "I am some string {$gallery->app->service_name} with interpolation";
                 my $before  = substr($`, -2, 2);
                 my $after   = substr($', 0, 2);        #');
                 print LOGFILE "parsed: |$before $after|\n";
@@ -62,7 +71,7 @@ while (my $filename = <STDIN>) {
     
     if ($changes) {
         print LOGFILE "$changes to $filename\n";
-        my @lines = `/opt/php5/bin/php -l $filename.new`;
+        print LOGFILE `/opt/php5/bin/php -l $filename.new`;
         print ROLLOUT "mv $filename $filename.old\n"; # back up original. messy to use cvs for this, also slow.
         print ROLLOUT "mv $filename.new $filename\n";
         print ROLLBACK "mv $filename.old $filename\n";
