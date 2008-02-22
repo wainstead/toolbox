@@ -36,10 +36,11 @@ $regexes{'$gallery->service_outage_no_logins'}            = 'SERVICE_OUTAGE_NO_L
 #open PIPE, 'find . -name "*.php" |' or die $!;
 
 
-open ROLLOUT,  "> rollout.sh"  or die $!;
-open ROLLBACK, "> rollback.sh" or die $!;
+open ROLLOUT,  "> rollout.sh"   or die $!;
+open ROLLBACK, "> rollback.sh"  or die $!;
 open LOGFILE,  "> redefine.log" or die $!;
 
+#*LOGFILE = *STDOUT;
 
 my $filecount = 0;
 
