@@ -1,0 +1,31 @@
+#!/opt/php5/bin/php
+<?php
+
+if ($argc < 2) die("usage: $argv[0] datfile\n");
+
+$GALLERY_BASEDIR =  '/home/swain/public_html/projects/ampiradev/gallery/';
+
+require($GALLERY_BASEDIR . "classes/Album.php");
+require($GALLERY_BASEDIR . "classes/Image.php");
+require($GALLERY_BASEDIR . "classes/AlbumItem.php");
+require($GALLERY_BASEDIR . "classes/NewAlbumItem.php");
+require($GALLERY_BASEDIR . "classes/NewMovie.class.php");
+require($GALLERY_BASEDIR . "classes/AlbumDB.php");
+require($GALLERY_BASEDIR . "classes/User.php");
+require($GALLERY_BASEDIR . "classes/EverybodyUser.php");
+require($GALLERY_BASEDIR . "classes/NobodyUser.php");
+require($GALLERY_BASEDIR . "classes/LoggedInUser.php");
+require($GALLERY_BASEDIR . "classes/UserDB.php");
+require($GALLERY_BASEDIR . "classes/Comment.php");
+require($GALLERY_BASEDIR . "classes/Premium.class.inc");
+require($GALLERY_BASEDIR . "classes/HTMLParser.class.inc");
+require($GALLERY_BASEDIR . "classes/DBConn.class.inc");
+require($GALLERY_BASEDIR . "classes/GoodStanding.class.inc");
+require($GALLERY_BASEDIR . "classes/Info.class.inc");
+require($GALLERY_BASEDIR . "classes/Stats.class.inc");
+
+require($GALLERY_BASEDIR . "ampira.local.php");
+
+var_export(unserialize(file_get_contents($argv[1])));
+
+?>
