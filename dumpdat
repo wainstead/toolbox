@@ -27,5 +27,5 @@ require($GALLERY_BASEDIR . "classes/Stats.class.inc");
 require($GALLERY_BASEDIR . "ampira.local.php");
 
 var_export(unserialize(file_get_contents($argv[1])));
-
+print "\n";
 ?>
