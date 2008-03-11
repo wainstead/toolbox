@@ -28,6 +28,7 @@ DELETE FROM mpa_albumitems        WHERE userid      = autotest_userid;
 DELETE FROM mpa_albumitems2       WHERE user_id     = autotest_userid;
 DELETE FROM mpa_albums2           WHERE user_id     = autotest_userid;
 DELETE FROM mpa_points            WHERE username    = 'autotest';
+DELETE FROM banlist               WHERE username    = 'autotest';
 
 END $$
 DELIMITER ;
