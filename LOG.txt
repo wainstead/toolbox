@@ -36556,3 +36556,911 @@ running. It's way cool. I sync'd all the conf files for gallery on
 torque, staging and production (the production one is not live yet).
 
 Sending us home early due to bad weather.
+
+
+
+#########################################################################
+080225 Mon 25 Feb 2008 12:13:26 PM EST
+
+Reasons for dumping the Aurigma tool and developing a replacement in
+Flex:
+
+1. Aurigma tool has security holes.
+2. Chris does not want to edit/compile another copy.
+3. We are dependent on Chris for the Aurigma tool.
+4. We have never liked the UI for the Aurigma tool.
+5. We can build a better uploader that runs on all platforms.
+6. This is a gateway to a Rich Internet Application that sorts photos
+   on the user's computer, or other new functionality.
+
+
+
+
+#########################################################################
+080227 Wed 27 Feb 2008 02:00:19 PM EST
+
+Was working with Fernando on alist and hash types in elisp last night:
+
+(setq blippylist '(("foo" . 31337) ("baz" . 69) ("blee" . 42)))
+(cdr (assoc "foo" blippylist))
+
+This is a simple way to do Perl style hashes.
+
+
+
+
+#########################################################################
+080228 Thu 28 Feb 2008 10:13:07 AM EST
+
+Am trying to work out a new way to insert the buffer contents from the
+previous session. There's all kinds of troube
+
+
+
+#########################################################################
+080228 Thu 28 Feb 2008 10:21:41 AM EST
+
+Tried to solve the problem of shell buffer contents being inserted too
+late (too early?). This results in all the shell buffer contents being
+executed as commands by bash, which has catastrophic results.
+
+I want a buffer local variable that is a flag indicating whether the
+contents have been restored. But I run into some crazy problem where
+it loops infinitely, the flag being void. Harrumph.
+
+Meanwhile, I've been teaching Gallery how to let people login via
+email address. I have the basic cases handled:
+
+1. email of site admin
+2. email of subuser
+3. email of another subdomain
+
+There's one sticking point: if they are a subuser of that site and
+want to login to their own site, they will be blocked. The way around
+this, I suppose, is to make Gallery a monolithic application and lose
+all our distinctiveness.
+
+
+
+
+#########################################################################
+080304 Tue 04 Mar 2008 11:05:39 AM EST
+
+Summary of my refactoring of the Album class:
+
+2008-02-29 17:00  swain
+
+	* classes/Album.php: minor changes
+
+2008-02-29 16:59  swain
+
+	* util.php: took out debugging output
+
+2008-02-29 16:55  swain
+
+	* classes/Album.php: pushed off the code to make the intermediate
+	sized photo to a new method; also added $me variables to the new
+	methods, which gives us finer grained debugging.
+
+2008-02-29 15:38  swain
+
+	* classes/Album.php: Pulled more blocks of code out, into their own
+	methods.
+
+2008-02-29 14:34  swain
+
+	* copy_photo.php, gallery_remote.php, gallery_remote2.php,
+	move_photo.php: Updated the calls to Album::addPhoto to use the new
+	class
+
+2008-02-29 12:25  swain
+
+	* classes/: NewAlbumItem.php, NewMovie.class.php: Don't serialize
+	it; var export it.
+
+2008-02-29 12:24  swain
+
+	* classes/NewAlbumItem.php: added a __toString() method.
+
+2008-02-29 12:23  swain
+
+	* util.php: Now passing a NewAlbumItem class into
+	Album::addPhoto(). But still, processNewImage() should probably go
+	away.
+
+2008-02-29 12:21  swain
+
+	* classes/Album.php: Huge changes:
+	
+	I introduced two new classes, NewAlbumItem and NewMovie. These
+	collect variables together, which helps the code organization
+	somewhat.
+	
+	This also makes passing data around more efficient, since objects
+	are passed by reference. It cuts down on the noise/clutter
+	somewhat, but adds some in the form of:
+	
+	$originalFilename becomes $nm->originalFilename
+	
+	But a little namespacing probably helps.
+	
+	Next, I took a huge section of addPhoto() and moved it into
+	processNewMovie(), a new method.
+	
+	addPhoto() is still four pages long, probably three pages too
+	many... and processNewMovie is two pages long, so further breakdown
+	will help.
+	
+	I got rid of several temporary variables that were just getting
+	their values from defined constants anyways.
+
+2008-02-29 12:01  swain
+
+	* init.php: added NewMovie to the load list
+
+2008-02-29 12:01  swain
+
+	* classes/NewMovie.class.php: Created new data holder class so
+	we're not passing tramp data all around the place.
+
+2008-02-29 11:53  swain
+
+	* add_movie.php: don't use the premium object to tell us the site
+	ID
+
+2008-02-28 18:29  swain
+
+	* init.php: Added new class.
+
+2008-02-28 18:29  swain
+
+	* classes/NewAlbumItem.php: Oops. Bad rectangle editing.
+
+2008-02-28 18:14  swain
+
+	* classes/NewAlbumItem.php: Container class for a new
+	AlbumItem-to-be.
+
+2008-02-28 17:06  swain
+
+	* albums.php: dropped the check on the album version; also quite a
+	bit of other junk.
+	
+	*** albums.php	14 Jan 2008 15:02:30 -0500	1.181 ---
+	albums.php    28 Feb 2008 17:01:07 -0500 *************** ***
+	501,520 ****
+	
+		 <br>
+	
+	-    <?php if (ereg("album[[:digit:]]+$", $albumURL)) { ?> -   
+	<?php if (!$gallery->session->offline) { ?> -		<?php } ?>
+	-    <?php } ?> -    <?php if ($gallery->album->versionOutOfDate())
+	{ ?> -	   <?php if ($gallery->user->isAdmin()) { ?> -	 </span> - 
+	 <span class="error"> -    <?php echo _("Note:	This album is out
+	of date!") ?><?php echo popup_link("&nbsp;" . _("upgrade album")
+	."&nbsp;", "upgrade_album.php") ?> -   </span> -     <?php } ?> -  
+	 <?php } ?> - -   </span>
+	
+	     <?php } ?>
+	
+	--- 501,506 ----
+
+2008-02-28 17:05  swain
+
+	* init.php, util.php, search.php: dropped the check on the album
+	version
+
+
+--------------------------
+
+I realized why Gallery programmers did that crazy memberwise copying
+of the class in the dat file: if the class structure changed, perhaps
+instantiation fails. I'll have to test this but it explains a lot.
+
+I was reading about object databases this weekend: an interesting
+thing is they are good for high performance.
+
+Spent some time spelunking in the error logs. Found that a db patch
+was missing (275.sql). My fault. Chris applied it, I wrote a Perl
+script to extract all the failed INSERT queries and ran them against
+mdb-2. Filed a bug in Bugzilla for the continued "mysql session" error
+dumps, which should be solvable by reconnecting to the db.
+
+So it's kinda silly that I wrote the "login via email" as I did: fetch
+the username for that email. What was I thinking? Hrrmm. For email
+shares, there is no username. I could go with the original idea of
+parsing out the "local name" from the email address (i.e. the 'swain'
+in 'swain@panix.com'). Suitable, I suppose.
+
+Once created the username cannot be changed though.
+
+
+
+#########################################################################
+080307 Fri 07 Mar 2008 10:39:17 AM EST
+
+Dylan was coughing all day yesterday, and I started a dry
+throat... this morning I'm burning up. Unless it's just hot in
+here. Either way... I'm going home momentarily.
+
+Yesterday was a day of tasks gettting "pushed on the stack." I need to
+consolidate the user deletion stuff somehow; was looking at a stored
+procedure. But Fernando found a bug: admins were being added to sites
+on production. One had 18. Fernando had 1000+. He found delayed video
+processing was causing it, removed a $tmpUser->save() and that solved
+it. Freaky.
+
+Then later in the day Jessy dragged me into a bug with pagination,
+which led to a fight that had been waiting to happen a long time: she
+started recoding the Gallery pages before I was ready. She accused
+"the dev team" of being too slow. I told her nowhere was refactoring
+the API ever on the task list, which she strangely contested. Chris
+even walked away from the argument.
+
+She texted me an apology last night; told me today Melissa was making
+fun of her and telling her to let it go. I kept thinking how the
+native Americans would start forest fires to clear the underbrush and
+the forests were park-like back in the colonial days. Of course I'm on
+Nyquil and running a fever so this probably gets less coherent as I
+go.
+
+I hacked the new numUserCanView method to test if
+$user->canWriteToAlbum because canReadAlbum always returned true. Or
+so it seemed. It requires stepping through the app and I don't have
+the concentration to do it. So adios.
+
+
+
+
+#########################################################################
+080310 Mon 10 Mar 2008 10:15:35 AM EDT
+
+Went home sick Friday. Terrible weekend. Fever and all that. Watched
+"Little Children," wherein Kate Winslet couldn't stop disrobing, and
+"300."
+
+The store couldn't connect to the database 11 times last night,
+between 1045PM and 343AM. Reported this to Chris; it's in the osc log
+for March 10th.
+
+Jessy claims to have fixed the numUserCanView method by loading the
+album.
+
+Tried for a while today to figure out error handling in stored
+procedures, but it was so ugly I gave up for the time being... and
+went with a meat and potatoes approach. 
+
+
+
+#########################################################################
+080311 Tue 11 Mar 2008 05:34:48 PM EDT
+
+Yesterday we had a six hour outage. The store log was filled with
+"unable to connect to db" errors again. Forwarded it to ops.
+
+Chris out today. Our bandwidth sucked all day; probably in part due to
+some DNS problem.
+
+Maybe because I'm sick, or I took phy*** something for my congestion,
+but today was the slowest day on earth. Still is.
+
+Anyhow... I spent time finishing up the "archive the user" stuff
+which I think is 90% there; I have a feeling I forgot
+something. Meanwhile, I found I had a bug in provisioning-lib.pl
+because I removed two subs and one of them actually was creating
+globals needed elsewhere... bit by my own bad programming! So I should
+clean that up tomorrow.
+
+Oh, also implemented a new bit for Chris that tracks how much space
+was freed up.
+
+
+
+#########################################################################
+080312 Wed 12 Mar 2008 09:56:37 AM EDT
+
+Was just checking on org-mode, which comes with Emacs 22.
+
+
+
+#########################################################################
+080313 Thu 13 Mar 2008 11:34:26 AM EDT
+
+Skin counts: that is, tally of the themes our users chose over the
+default, for March 12 2008.
+
+28% changed their theme overall.
+39% of club members changed their theme.
+
+
+Total number of sites checked is 214,539.
+153,425 have never changed their skin.
+
+There were 12,080 club member sites.
+4,717 changed their theme from the default.
+
+---
+
+Yesterday I filed something like 15 bugs for Jessy. Today I went over
+her files and they actually looked pretty good. There may be an issue
+with so many more file requests from the filesystem, so we'll see. She
+does far more includes than before.
+
+I have been pouring over the dumps of a couple dat files, thinking
+about the data models. It occurred to me that I could write some
+benchmarking stuff to see if jamming it all into one SQLite file makes
+it run faster than if we pull everything from individual dat
+files... there may be no real differerence though, as we're still
+unserializing strings to unmarshal the objects. That in itself might
+suggest creating mini databases instead of useing SQLite as an object
+store, though again it's a question of whether constructing is faster
+than unserializing (unmarshalling) or not.
+
+
+
+#########################################################################
+080314 Fri 14 Mar 2008 01:25:04 PM EDT
+
+Went through the 15 or so bugs I filed for Jessy. Most are closed now,
+thankfully, but Chris is being as difficult about things as
+suspected. Had a row with him over aim because he did his usual thing:
+pasting some link to me and not explaining it.
+
+Zend Studio don't run. Fernando's complains the evaluation period
+expired.
+
+
+
+
+#########################################################################
+080324 Mon 24 Mar 2008 12:11:07 PM EDT
+
+Back from Japan. New primary focus: moving to Kodak for prints. Had a
+long meeting with Peter and Jessy this morning.
+
+2:15pm. Finally done reading and replying to email.
+
+
+
+
+#########################################################################
+080325 Tue 25 Mar 2008 09:13:04 AM EDT
+
+So I have this order from on high that the OFS takes precedence over
+all. Jessy is pushing me to review the optimization stuff done by Fcat
+though. I don't have Zend Studio set up, unfortunately.
+
+Spent time again searching for an equivalent of cvsreport. cvsreport
+is a Perl script easily found via Google; SVNReport is some ancient
+Java project that I don't care to even look at because all I want is a
+script for cron. SVNReport is a half baked Crystal Reports or
+something. So... nothing yet. Curious. I can't find a way to limit svn
+log to a particular date or the last 24 hours. Bleh. Maybe the web
+thingie has rss?
+
+
+
+
+
+#########################################################################
+080326 Wed 26 Mar 2008 07:08:58 AM EDT
+
+In to work by 6:58am. I think no matter how one documents a software
+project, it's the experience that counts more... for example, I was
+just reflecting on how I move the store code to use native PHP
+sessions. This brought to mind how sessions work in the store and the
+changes that happened; all of that I *experienced* because I did
+it. To convey that in words on a web page or a piece of paper somehow
+omits something. The essence, or perhaps the Quality of it, in the
+"Zen And The Art Of The Motorcycle" sense.
+
+Oddly once I deleted my cookies and deleted everything in the
+osc_cart% tables, the new product codes worked just fine.
+
+
+
+
+#########################################################################
+080327 Thu 27 Mar 2008 11:32:48 AM EDT
+
+Yay to easy fixes. The Qualex document needs first_name twice; that
+was easy enough to do with a new method.
+
+Meanwhile... I've long had second thoughts on how we use DBInterface
+to access the database. It's so convoluted. One has to call a method
+to get the SQL code, which must be fed to a method to get the
+results. Actually when I state it like that it doesn't sound hard at
+all.
+
+I also now recall that one of the reasons I moved the SQL into little
+wrapper subroutines was just to facilitate Emacs formatting of Perl
+code. But then, they were just stuck in variables previous to that.
+
+
+
+
+
+#########################################################################
+080328 Fri 28 Mar 2008 11:49:56 AM EDT
+
+At COB I emailed a sample XML file to Christine at Kodak asking for a
+visual verification. It only needs the price charged per item. I now
+need to integrate gift products and cards into a same order.
+
+I suppose I should start thinking about multiple ship-to addresses and
+shipping types. It would be nice for the store to have.
+
+And in the large, probably the ability for nonmembers to upload and
+order photo products independent of their MPA account. I guess
+logically they would start by uploading photos and we'd create the
+site for them; they would be largely unaware of the site name. I dunno
+how we'd do that though. "First, choose a unique username." From the
+user's point of view they'd be creating a store account that has photo
+albums in it... this requires use cases. We'd have to market it
+differently.
+
+I created two offers for Jessy: half off your second book and 20% off
+photo products. I created them via sql and applied them to mdb-2. Sent
+an email.
+
+I started veracity yesterday; filed a bug on it. We save the full
+sized movie file now and it's causing veracity to fail.
+
+
+
+
+
+#########################################################################
+080331 Mon 31 Mar 2008 09:42:54 AM EDT
+
+Veracity done. Quite a few fatal errors.
+
+Store had tons of failures overnight; unable to connect to mdb-2
+again. Emailed Ops.
+
+Had a thought while chatting with Fernando this morning; he just came
+back from vacation (Las Vegas, then a wedding). When people pay via
+e-checks, they are status 4 in the store. If they take too long to pay
+for the order the gifts directory gets flushed and we lose their
+image.
+
+So e-check orders should get built and then placed on hold.
+
+
+
+#########################################################################
+080401 Tue 01 Apr 2008 10:10:27 AM EDT
+
+Finally have a parsable version of the spreadsheet with all (or
+nearly all) of Kodak's products. Perhaps I should have requested a
+dump of some kind? Oh well.
+
+Oops. Missed a meeting with Qualex. I replied and asked for a data
+dump that's more regularly formatted.
+
+
+
+#########################################################################
+080402 Wed 02 Apr 2008 10:55:10 AM EDT
+
+With Chris here it only took about ten minutes to resolve the issue
+with Staging posting orders to Qualex. I sent an order through no
+problemo, and emailed Christine, Tom and Peter.
+
+I now have to finish the task of data migration: Kodak's data to our
+database. It came out in the conference call yesterday that their
+database of all products and specs is... the Excel
+spreadsheet. Christine sent me an updated one with gift data in it but
+it's essentially useless. Unless you want to do everything by hand,
+which it seems Kodak does.
+
+quick notes in a call with thomas from kodak:
+"external partner order id tag"
+can't post https back to us
+
+
+
+#########################################################################
+080403 Thu 03 Apr 2008 02:04:39 PM EDT
+
+Yesterday ended with a successful test post to Qualex. I was missing
+lineitem, and I just threw in an incrementing variable to fill it. The
+data is in the database, in osc_orders_products_attributes, but
+extracting it is too tricky for now.
+
+Meanwhile, emailed Christine asking if there was a bug in the
+spreadsheet where DOGCOLLAR appears twice for inventory_name; it would
+appear inventory_name is their primary key. It was and it is. So that
+resolved, once again I dropped/created the table after throwing out my
+composite primary key and imported the data. Now all gifts are in.
+
+Which brings me to the next needed part: matching our product IDs to
+their "inventory names." This way I can update the products table.
+
+Waiting on Chris, who's been spearheading the Gallery rollout. Bugs
+here there and everywhere. The pressure is to get this out before some
+"analysts" look at the site.
+
+Anyway, the new products cause Express Select to fail in the
+store. Gonna chase that down.
+
+
+
+#########################################################################
+080407 Mon 07 Apr 2008 10:36:50 AM EDT
+
+Again kicking around the idea of what to do about people who've signed
+up on development. So far, noone else has, so I hope my patch worked.
+
+Five customers were affected by sessions errors last night from 1130
+to five past midnight. Emailed Ops about it.
+
+typolesbo: im hunbgry
+
+We got the test prints and mug from Kodak today and there were a lot
+of cropping problems. If we have to size the image prior to upload,
+that will be an issue.
+
+
+
+#########################################################################
+080409 Wed 09 Apr 2008 10:03:09 AM EDT
+
+Hmm. No entry yesterday? Yesterday was partially soaked up with a
+meeting with Qualex. I sat next to a guy with bad cologne for two
+hours. Jessy and I were in all black and the Qualex people joked that
+Peter didn't match. Also, choosing RRW photos for testing is a good
+thing because the "coolness rubs off on us," so to speak.
+
+I am close to wrapping up Qualex order fulfillment. It was a mistake
+to try to shoehorn the DPI products... or preserve them, or
+whatever. What I need to think about is the ability to determine where
+they ship based on manufacturer's ID. That would allow us to swap
+between the two... but this is something of a store issue. The store
+is inserting the product ID into the orders tables, and those are
+bound to the manufacturer. So perhaps I was right to begin with.
+
+Also I realized that testing with Qualex would be simple... just whip
+the OFS into shape so that any order created on staging is ready to
+go, then copy it to production like I've been doing. Hmmm. There is
+also the issue of existing orders... they will have product IDs that
+don't match. Gonna have to figure that one out too.
+
+I guess with a mapping of 115 => 7002 (as an example) we could just
+run an UPDATE statement against all shopping carts.
+
+Prefix codes are really about "batching" the order, to use Qualex's
+term. Qualex "batches" the order for us, so that throws a spanner in
+the works.
+
+So I'm toying with a switch: WholeOrder sorts the products by
+manufacturer's ID, and each group gets an OrderShippingPart. We could
+accommodate District "batching" by prefix code still. Maybe. Dunno yet
+if the two paradiggums are compatible.
+
+
+Again having the same old debate with Chris over moving the data to
+Mysql. I told him last night on the way to the Black Door that he'd
+eventually get his way, and I thought it was a huge mistake.
+
+Steve Wainstead: one of the problems i have with moving everything to mysql is we're just fighting the same old battle of object/relational mapping.
+Steve Wainstead: and i like that every site owns its own data and its data is not mixed together with all the other data
+Steve Wainstead: every site has its own object database, in practice
+Steve Wainstead: i'm still waiting for a really solid reason to put everything into mysql
+chrisatfcity: then your major problem is we have NO way to join data across sites
+chrisatfcity: no way to get unified statistics
+Steve Wainstead: and why do we need to join across sites?
+Steve Wainstead: for what?
+chrisatfcity: for future business requirements
+Steve Wainstead: you can't name any
+chrisatfcity: any kind of social networking will require it
+Steve Wainstead: not to be antagonistic. we've had this debate so many times already.
+Steve Wainstead: we're not going to be a social networking site.
+chrisatfcity: want to share albums between sites...
+chrisatfcity: not possible
+Steve Wainstead: no, that's possible
+Steve Wainstead: totally doable
+Steve Wainstead: it just has to be implemented
+chrisatfcity: any valid web application out there these days is backended with a relational database.
+chrisatfcity: it would be insane not to.
+Steve Wainstead: if the need were that great we would have done it by now
+Steve Wainstead: and there you go again
+Steve Wainstead: "valid web application"
+chrisatfcity: sorry
+chrisatfcity: profitable ...
+chrisatfcity: viable
+Steve Wainstead: well, no need to apologize. but it's very telling of your thinking
+chrisatfcity: proper
+chrisatfcity: well designed
+Steve Wainstead: we are not a real web app until everything is in a rdbms
+Steve Wainstead: no site is well designed unless everything is in an rdbms
+chrisatfcity: not saying that I'm saying we are severely disabled until we are in an rdbms
+chrisatfcity: we are not marketable
+Steve Wainstead: kodak is giving us $250K. how is that not marketable?
+chrisatfcity: the french we dealt on the phone were shocked we didn't have our data in a db and rightly so.. pretty much my thinking is that our software is not sellable or white labelable until it is DB driven.
+chrisatfcity: They don't care what is underneath as they just want us to buy prints.
+Steve Wainstead: i disagree
+chrisatfcity: they are not "buying us"
+chrisatfcity: if they or anyone did a technical due dilligence on mpa for plans to purchase it would fail on the fact that we use dat files
+chrisatfcity: rather than an rdbms
+Steve Wainstead: again i disagree
+chrisatfcity: As most apps to unify a system require that
+Steve Wainstead: unless they were simpletons
+Steve Wainstead: and again i disagree
+chrisatfcity: well your wrong.
+Steve Wainstead: i don't believe at all, Chris, that you think there is "only one way to do things right"
+Steve Wainstead: i know you better
+Steve Wainstead: but this is what i keep hearing from you
+chrisatfcity: No, but for this app to make it at all... it will need to have the photos config and all the meta data in the DB so it is searchable and statistics can be generated on our userbase.
+chrisatfcity: on the fly
+Steve Wainstead: you want to lead the market and be an innovator, look into couchdb instead. http://incubator.apache.org/couchdb/docs/overview.html
+chrisatfcity: I don't trust these S3 ec2 app engine.
+chrisatfcity: once you place your trust into a 3rd party vendo things get hairy
+chrisatfcity: look at evolutionware
+Steve Wainstead: couchdb is built on erlang and uses a document model
+Steve Wainstead: and is meant for shared-nothing sites
+Steve Wainstead: i like that we currently don't have to build every object out of relational data, which means reams of code. right now we simply unserialize the dat file.
+Steve Wainstead: it couldn't be any easier than that
+Steve Wainstead: and our schema is 10x simpler. remember all the headaches you had with cascading deletes?
+chrisatfcity: there weren't headaches.
+chrisatfcity: it was fucking awesome
+Steve Wainstead: i remember them clearly :)
+chrisatfcity: There were none
+Steve Wainstead: yes there were
+chrisatfcity: it works
+chrisatfcity: properly
+Steve Wainstead: you were pulling your hair out
+Steve Wainstead: well it works now, yes
+chrisatfcity: wtf are you talking
+chrisatfcity: about
+Steve Wainstead: after a ton of frustration
+chrisatfcity: um no... there was NO frustration
+chrisatfcity: no was setting up the new schema
+Steve Wainstead: oh, trust me. i remember very clearly how aggravated you were getting the cascading deletes to work :)
+Steve Wainstead: i can understand you don't remember
+chrisatfcity: get them to work.. it is a fairly simple schema.
+chrisatfcity: there were no probnlems getting it to work
+Steve Wainstead: yes there were. i remember very clearly.
+chrisatfcity: in fact once the syntax was straightened out it work right off the bat
+Steve Wainstead: i think it took you a day and a half
+chrisatfcity: I was surprised at how easy it was..
+Steve Wainstead: i remember you cursing over it
+chrisatfcity: to redesign the schema yea
+chrisatfcity: I've never cursed while doing mysql schemas
+chrisatfcity: seriously i don't know what your smoking, but that last schema was fine..
+chrisatfcity: veracity on the other hand I was cursing at that
+chrisatfcity: trying to get that to work the the new schema was a bitch
+chrisatfcity: that was where i was pulling my hair out.
+1:45 PM
+chrisatfcity: because it did unecessary recursions and caused duplicate data in the db
+Steve Wainstead: ah, no it didn't!
+chrisatfcity: that is what fucked with the Foreign keys
+Steve Wainstead: you found a bug but didn't realize it!
+chrisatfcity: because it was trying to insert entries twice
+Steve Wainstead: and you did that isRoot() hack, to get around it
+Steve Wainstead: what you found were orphaned albums
+chrisatfcity: wasn't a hack..
+Steve Wainstead: a bug i still have to go fix
+chrisatfcity: i fixed it
+Steve Wainstead: well, you didn't know it was a hack but it was
+Steve Wainstead: because you thought you were getting duplicates. you weren't.
+chrisatfcity: it worked proper that was all i cared about
+Steve Wainstead: you were finding albums with no parent!
+Steve Wainstead: there are a few thousand of them on production
+chrisatfcity: well they should be deleted then.
+chrisatfcity: And I'm not sure that was the case
+Steve Wainstead: oh, i know, because i worked it out back in january or so.
+Steve Wainstead: actually back in november. my log entry from the 15th:
+[long log entry from 11/15 omitted]
+
+
+So I record the never ending debate here for posterity. The vengeful
+thing to do is to give him what he wants. The problem is it would
+probably just be my problem in the end, anyway.
+
+Oh, I don't need to alter table for osc_products. I bet
+ofs_prefix_code is already just some int. Well, it's a bigint. No
+matter.
+
+I probably want to create a Qualex category for all Qualex products. I
+am heading towards a Qualex prefix code, etc. etc. It just seems
+simpler.
+
+Well... a dead end, kinda:
+
+root@torque:~/public_html/projects/ofs/bin# ./makeclean.pl  21628; ./import_files.pl ; ./create_orders_xml.pl 
+[./import_files.pl] Starting at Wed Apr  9 18:56:08 2008
+[./import_files.pl] [pid 15197] [orders_id 21628] [Wed Apr  9 18:56:08 2008] Changed processing_state to pending
+ERROR: OrderPartFactory got a bogus category code: '21'
+root@torque:~/public_html/projects/ofs/bin# 
+
+So how to build the order if there's only one category code? Not
+doable. All the Qualex products still need to be sorted into
+categories; the OrderParts then build up the order based on
+these. Hrmm.
+
+So my first thought is to add the assorted Qualex products to
+osc_products_to_categories; and for each OrderPart subclass, make the
+prefix code a parameter passed in. But this means each one's query has
+to do the correct thing. So I need to test the query for, say,
+LargePrints to see if it will get the Qualex large prints or not. I
+think it will because it has in the past.
+
+
+
+#########################################################################
+080410 Thu 10 Apr 2008 09:39:48 AM EDT
+
+I managed to back out. The problem above came when I added a Qualex
+category in the returned results of DBInterface::categories. Category
+21 freaked out the OrderPartFactory.
+
+The problem seems to be: I have the categories expressed in the DB
+class instead of the database. So at the moment I'm thinking that I
+should create a table for this; osc_categories_manufacturers, which
+expresses just that... except... that also sounds wrong.
+
+Categories seem to want to have "types." Some categories are a means
+of sorting products into groups for the customer: shirts, prints,
+posters, calendars. Others are more "system oriented." The first
+example is 1, which is currently labeled "All Products" but is
+actually "Can Be Sold" or "Sellable." If a product is not in 1, it
+cannot display in the cart. (The reason for that is ancient and I
+don't recall it).
+
+So coming back to the current problem: we need a list of categories
+for OrderPartFactory. Each category must map to an OrderPart subclass
+to handle those products. Instead of a SELECT statement, I have this
+hardwired into DBInterface.
+
+I was thinking some of the OrderParts could be consolidated: a Kideo
+and a poster print really function the same way, they just create
+separate directories. Oh, another idea I had was to create all
+prefixed order id directories (like 800023621) as subdirectories of
+the whole order (23621). I wonder why I didn't do that to begin
+with. The thought there was the Qualex xml file could live in the
+order id directory, and all the products could continue to be sorted.
+
+So part of the problem of the last couple of days has been: my getting
+pulled in different directions by these design decisions. I've made
+some incremental improvements to the db schema, though; and I think
+I've identified a problem in the design vis the DBInterface expressing
+the categories... this should be in the DB, I suppose. On the
+downside, an update to the database would cause orders to fail ("Bogus
+category ID of 21"). But if the error message is sufficient, the
+rollback would be simple. Versus now, where one adds a line to the
+DBInterface class; easily reversable.
+
+So anyway, at the outset (building the order) we're not interested in
+manufacturers, are we? Well, we do sort the order into parts via
+prefix codes. Each prefix code corresponds to a manufacturer; multiple
+prefix codes can map to one manufacturer (District). Now, multiple
+products in multiple categories must map to one prefix code. This is
+part of the bind I'm in.
+
+The osc_categories table has parent_id. This is the category's parent
+category; currently the only thing there is 21, Photographs, is the
+parent to 22, Glossy and 23, Matte. But this means a category can only
+have one parent. Hrmm. I still need this:
+
+# The following subs are used by the factory classes...
+
+sub categories {
+    my ($self) = @_;
+    return (
+            $self->folding_cards_category   ,
+            $self->glossy_category          ,
+            $self->photo_gifts_category     ,
+            $self->cards_4x8_category       ,
+            $self->cards_5x7_category       ,
+            $self->archive_cds_category     ,
+            $self->photo_calendars_category ,
+            $self->large_prints_category    ,
+            $self->frames_category          ,
+            $self->books_category           ,
+            $self->kideo_category           ,
+
+            );
+}
+
+
+This is obviously a hardcoded version of a SQL query. (Is this solving
+my problem though? I need to get all the photos for Qualex, id of
+7000+, to be built). (Well, parameterize the prefix code, then. For
+each category there's a prefix code, isn't there? Well, for each
+product there's a prefix code. Is that accurate? Then the query is
+really: for each product, get the prefix code it needs. Pass these
+prefix codes to the OrderPart subclasses. No? Well, 11000000 is Qualex
+and that's multiple products. So that can't be, can it? Yes: Category
+maps to subclass. Prefix code is the directory, which is a
+parameter. For all product IDs in the order, get all distinct prefix
+codes? No, not quite).
+
+Another thought is to let the OrderParts sort the order into the
+prefixed order id directories, then have OrderShippingPart consolidate
+them. Hmm.
+
+And in factoring out all the prefix codes from the OrderPart
+constructors, I may have found an answer... gifts were being placed in
+the PRINTS_PREFIX_CODE directory. (They were? Did I make that change
+in this session?) Aha, I did. I suck. Well, that's what version
+control is for :o) It told me the truth.
+
+Well, I changed the prefix code passed in to the constructors of the
+OrderPart subclasses. Looks good. But the Qualex_ShippingPart class
+won't put the poster in the xml. Hrmm. Perhaps it doesn't find it
+because there's no fs_path?
+
+----
+
+I'm thinking about a class hierarchy for products, to be used by the
+shipping classes. Select all products for this order by manufacturer,
+and all the rows returned are instances of ShippingProduct (or
+something). Hmm. The issue is the XML for the assorted manufacturers
+differs; so somehow ShippingProducts have to present one unified
+interface that each ShippingPart instance knows how to use. Worth some
+thought.
+
+The Qualex xml is so *regular* that I wish we'd done it from the start.
+
+
+
+#########################################################################
+080411 Fri 11 Apr 2008 03:33:20 PM EDT
+
+OrderPart subclasses have three responsibilities:
+
+1. Locate the image on the filesystem (in an album, in a gift dir, etc)
+2. Do any processing on that image (resizing, converting).
+3. Put the image in a prefixed orders directory.
+
+OrderShippingPart subclasses are specific to a manufacturer:
+
+1. Create the XML file.
+2. Upload the order.
+
+
+With a bit of refatoring, some duplicate code can be factored out of
+the OrderPart subclasses. OrderPartLargePrint is identical to
+OrderPartGifts.
+
+So this works, and I wonder if I can't use it to jam most of
+everything into the xml for qualex:
+
+SELECT p.*
+ FROM osc_products p, osc_orders_products op, osc_manufacturers m
+ WHERE p.products_id      = op.products_id
+ AND op.orders_id         = 21631
+ AND m.manufacturers_name = 'QUA'
+ AND p.manufacturers_id   = m.manufacturers_id;
+
+This scopes it to just prints:
+
+SELECT p.*
+ FROM osc_products p,
+      osc_orders_products op,
+      osc_manufacturers m,
+      qualex_prints qp
+ WHERE p.products_id      = op.products_id
+ AND op.orders_id         = 21631
+ AND m.manufacturers_name = 'QUA'
+ AND p.manufacturers_id   = m.manufacturers_id
+ AND p.manufacturers_product_id = qp.inventory_name
+;
+
+Similarly:
+
+SELECT p.*
+ FROM osc_products p,
+      osc_orders_products op,
+      osc_manufacturers m,
+      qualex_gifts qg,
+      qualex_product_categories qc
+ WHERE p.products_id      = op.products_id
+ AND op.orders_id         = 21631
+ AND m.manufacturers_name = 'QUA'
+ AND p.manufacturers_id   = m.manufacturers_id
+ AND p.manufacturers_product_id = qg.inventory_name
+ AND qg.product_category_id = qc.id
+;
+
