@@ -37464,3 +37464,485 @@ SELECT p.*
  AND qg.product_category_id = qc.id
 ;
 
+
+
+
+#########################################################################
+080414 Mon 14 Apr 2008 11:34:59 AM EDT
+
+Once again I'm somewhat frustrated by my save-shell-buffer-contents
+scheme not working anymore. Any of our servers that were upgraded from
+Mandriva to Ubuntu developed this annoying habit of trying to execute
+every line of the saved shell buffer contents, which would be comical
+were it not so disastrous. (The result was a frozen shell buffer, and
+dozens of crap files created in the current working directory).
+
+For now I'm trying a kludge: append today's date to the shell buffer
+contents file. At least the contents won't get overwritten on
+startup. That is: today, Monday, I started up Emacs. Because I've
+disabled inserting the shell buffer contents (or my previous hack
+failed to do so; for a while at least root's contents got inserted)
+shortly after startup each shell buffer, which was pretty much empty,
+had its contents written out, overwriting last week's stuff. So all
+that work is "lost," so to speak. It's really about keeping track of
+what I've done.
+
+And for now, success:
+
+-rw-r--r-- 1 swain swain     165 2008-04-14 11:38 .emacs.shellbuffer.cvssync-2008-04-14
+-rw-r--r-- 1 swain swain   13112 2008-04-14 11:38 .emacs.shellbuffer.cli-2008-04-14
+-rw-r--r-- 1 swain swain     135 2008-04-14 11:38 .emacs.shellbuffer.www-2008-04-14
+-rw-r--r-- 1 swain swain     465 2008-04-14 11:38 .emacs.shellbuffer.root-2008-04-14
+-rw-r--r-- 1 swain swain      97 2008-04-14 11:38 .emacs.shellbuffer.test-2008-04-14
+-rw-r--r-- 1 swain swain     403 2008-04-14 11:38 .emacs.shellbuffer.sql-2008-04-14
+
+These will not be reloadable; not without some serious handstands. So
+this is something of a challenge in elisp programming.
+
+The problem, I think, stems from the startup time of a shell
+buffer. Under Mandriva, the shell came up, the contents inserted, and
+there was no problem. With Ubuntu, I think the contents get inserted
+after the shell starts up. AFAIK, there's no way to find out if the
+shell has started or not, from Emacs.
+
+So I've thought of a variety of hacks, none satisfactory. It seems the
+simplest thing to do is: set a buffer local variable when the shell is
+created. The first time we're going to write out the buffer contents,
+if this variable is nil, we insert the previous contents and then
+save. My previous attempt to make this work failed however. Don't
+recall why.
+
+
+
+
+
+#########################################################################
+080415 Tue 15 Apr 2008 03:36:17 PM EDT
+
+I find myself back at a point where I want to pull all the products
+for this order that go to Qualex. And my first impulse is to define a
+category for all Qualex products; but then, this is completely
+unnecessary because I should just do a join for 'QUA'. All fine and
+dandy. But I again come back to another issue... for every
+OrderShippingPart it needs to get its products from the database, the
+images for which are already in the prefixed orders directory. I'm
+thinking each row from the query should be an object with a standard
+interface. Somehow I feel this would make life easier than dealing
+with hashes with myriad keys.
+
+Let's define that hash right now.. oh, already did:
+
+
+#     rows returned:
+#         new_image_name
+#         order_datetime
+#         xml_transit_date
+#         manufacturers_product_id
+#         order_item_quantity
+
+
+Actually it's larger than that, going by Data::Dumper:
+
+$VAR4 = {
+          'order_item_product_code'   => '7008',
+          'order_datetime'            => '2008-04-10 14:32:19',
+          'order_item_description'    => '4X6',
+          'order_item_image_filename' => '17491.jpg',
+          'order_item_quantity'       => '1',
+          'new_image_name'            => '17491',
+          'fs_path'                   => '/mnt/slow/vol01/s/sw/swa/swai/swain/swain/albums/album31/P8070061.jpg',
+          'orders_id'                 => '21631',
+          'products_options'          => 'fs_path',
+          'ship_to_dpi_date'          => '2008-04-15 11:53:58'
+        };
+$VAR5 = '3';
+$VAR6 = {
+          'order_item_product_code'   => '7008',
+          'order_datetime'            => '2008-04-10 14:32:19',
+          'order_item_description'    => '4X6',
+          'order_item_image_filename' => '17493.jpg',
+          'order_item_quantity'       => '1',
+          'new_image_name'            => '17493',
+          'fs_path'                   => '/mnt/slow/vol01/s/sw/swa/swai/swain/swain/albums/thirdcolumn/P6130028.jpg',
+          'orders_id'                 => '21631',
+          'products_options'          => 'fs_path',
+          'ship_to_dpi_date'          => '2008-04-15 11:53:58'
+        };
+
+And now I recall some issue where we use fs_path versus
+gift_something_something. Hrmm.
+
+
+And now, again, I see where building the order at the outset has the
+problem of putting District prints into 100000000 and Qualex prints
+into 1100000000. But we would never do this, would we? The customer
+would receive their prints in two mailings. Not optimal.
+
+So on rollout, I'll have to update all existing carts, mapping one
+product ID to another.
+
+Anyway the point to the paragraph previous to last is: orders could
+have been divided by product ID and manufacturer ID. This would
+somehow allow District prints to go into 100000000 and Qualex prints
+to go into 1100000000. And all the right things would happen. As it
+stands, I only have to make sure 5x7 slimlines go to District.
+
+So there will never be an order with mixed print product IDs, and if
+there is it's an error.
+
+Been tracking down why 11x14 won't go into the cart with the correct
+product ID. No, actually, I started out with my new
+store.product_codes.conf file; that lead me on a journey through
+Jacob's code to find how the product ID is defined:
+
+    //////////////////  This puppy is used in gifts/classes.php to make a bunch of defines
+    function defineProductCodesAndPrices() {
+        $result = $this->_queryDB("SELECT p.products_id,
+                                          p.products_price,
+                                          pd.products_name,
+                                          constant_name
+                                          FROM
+                                          osc_products p,
+                                          osc_products_description pd
+                                          WHERE p.products_id = pd.products_id
+                                          AND constant_name <> ''
+                                  ");
+        if ($result) {
+            while ($row = mysql_fetch_assoc($result)) {
+                if (strlen($row['constant_name'])) {         ////////////// if strlen is not 0
+                    define($row['constant_name'] . '_ID'   , $row['products_id']   );
+                    define($row['constant_name'] . '_PRICE', $row['products_price']);
+                    define($row['constant_name'] . '_DESC' , $row['products_name'] );
+                }
+            }
+        }
+    }
+
+
+So that makes it hard to change things, in a sense... as originally
+planned, the constant_name is hardwired into the classes. So I think,
+more and more, the one time effort of renaming the constant_name for
+every old and new product is the fixed one time cost of doing this.
+
+I just updated the 11x14 product class and it worked OK, except that
+the wrong product class in the store was invoked. Which is another
+issue: Gallery and the store both have product classes. Whether they
+can be unified is another question. This might lead to the "shared
+library" issue all over again.
+
+
+And another note. This looks kind of like an antipattern to me:
+
+      8:define('PRODUCT_ID_11X14', '140');
+      9:define('PRODUCT_ID_12X18', '139');
+     10:define('PRODUCT_ID_16X20', '231');
+     11:define('PRODUCT_ID_20X30', '233');
+    177:        if(in_array($products_id, array(PRODUCT_ID_11X14, PRODUCT_ID_12X18))) {
+    180:        else if(in_array($products_id, array(PRODUCT_ID_16X20, PRODUCT_ID_20X30))) {
+
+
+It says "this should be a database lookup" and not an array search.
+
+Oh, actually, I think it will be a mix of changing constant names and
+changing the constant in the product file. PRINT_11X14_MATTE would be
+completely inaccurate.
+
+
+
+
+#########################################################################
+080417 Thu 17 Apr 2008 11:13:36 AM EDT
+
+By end of day yesterday I had again updated matchup.pl and committed
+it... it now generates two files, rather than outputting to
+stdout. This seems to be the typical pattern for these sorts of
+things... I always wind up writing a "do" file and an "undo" file. I
+also refactored the class DBInterface.pm in a fairly large way.
+
+sub set_order_pending {
+    my ($self, $orders_status, $orders_id) = @_;
+
+#     my $dbh = $self->get_connection;
+#     my $sth = $dbh->prepare($self->get_update_status_sql)  or die $DBI::errstr;
+#     $sth->execute( $orders_status,'pending', $orders_id) or die $DBI::errstr;
+
+    my $sth = $self->exec_statement_handler(
+        $self->get_update_status_sql,
+        $orders_status,
+        'pending',
+        $orders_id
+        );
+
+    $sth->finish();
+}
+
+This is a pretty typical example. I can now turn on debugging and see
+all the database chatter. Well, nearly all of it.
+
+sub exec_statement_handler {
+    my $self  = shift;
+    my $query = shift;
+
+    $self->log("Running query:\n$query\nwith args: '", join(', ', @_), "'")
+        if DEBUG;
+
+    my $sth = $self->{dbh}->prepare($query)
+        or die $DBI::errstr;
+
+    # the array '@_' holds the rest of the args passed in (if any)...
+    $sth->execute( @_ )
+        or die $DBI::errstr;
+
+    return $sth;
+}
+
+I've done a little bit of work trying to solve the
+insert-previous-shell-buffer-contents problem again. I was looking at
+shell-mode-hooks. It's kind of surprising how many hook functions I've
+installed over the years... and I still don't quite grasp how to do it
+on my own. I understand what hook functions are and how they work, but
+adding them is another thing, and what happens is still another thing.
+
+So I think I'm kind of at a milestone point, or something. I still
+need to make the OFS work end to end with Qualex for any product
+though. I fixed a bug yesterday in doing end to end with our current
+suppliers (mock-zaah.php was missing from
+swainstore.myphotodevel.com). I did that as part of my refactoring of
+DBInterface.pm.
+
+Oh, and I added code to update prices too. I still haven't committed
+my output file as a DB patch. And I started looking at mugs-import.pl,
+and found that it was incorrect... I was inserting the billing code
+and not the inventory name. So here's a chance to delve into the
+qualex_gifts table.
+
+The mystery of yow resolved:
+
+
+From monnier@iro.umontreal.ca  Thu Apr 17 13:19:12 2008
+Delivered-To: swain@torque.dev.fortunecity.com
+Subject: Re: yow returns the same line every time
+Date: Thu, 17 Apr 2008 13:18:58 -0400
+
+> Executing (yow) over and over always returns the same line:
+> "Yow!  Legally-imposed CULTURE-reduction is CABBAGE-BRAINED!" [4 times]
+
+Yes, its' the only line left.  IIRC the others were removed because of
+copyright issues.
+
+
+        Stefan
+
+
+I reported it via emacs (report-emacs-bug).
+
+---
+
+I've replaced the sub 'categories' with 'get_orders_categories' and
+taught the OrderPartFactory to ignore categories_ids it knows nothing
+about. More hardwired stuff removed. Now, there is still the mapping
+of which OrderPart class is responsible for which product category;
+and this is expressed in the OrderPartFactory. Can this be removed? Is
+it something that should go in the database? For now, it stays,
+because it's fairly readable and I'm thinking that moving the
+expressing of these relationships into the db will make the system
+harder to read for humans.
+
+So orderpart to category, and we just pass in another prefix code. Oh,
+that new conf file has to go...
+
+
+
+#########################################################################
+080421 Mon 21 Apr 2008 10:24:37 AM EDT
+
+Should be working on a rollout today. Sidetracked by a programming
+puzzle: averaging the sales numbers without writing a script.
+
+swain@torque:~/public_html/projects/ofs/lib$ echo "1,431.02 
+1,298.97 
+1,782.57 
+1,139.87 
+1,597.39 
+1,548.58 
+1,959.65 
+1,305.27 
+1,344.92 
+1,086.86 
+1,552.77 
+1,071.58 
+1,467.65 
+1,787.49 
+1,357.48 
+1,694.42 
+  935.69 
+1,194.98 
+1,532.04 
+1,456.32 " | perl -ne 'BEGIN{$x=0.0} chomp; s/,//g; $x += $_; END { print $x/$., "\n" }'
+> > > > > > > > > > > > > > > > > > > 1431.02
+
+Darky helped work that out. Two bugs hampered the effort: feeding the
+input incorrectly, and the numbers have commas in them.
+
+OK, rolled everything back. Fixed a bug in my undo script for prints;
+the District products got the Qualex constant names. Easily remedied
+by testing the product ID.
+
+Store idea: it would be super useful if the store tracked every step
+the user took, and dump that in a debug output. This "no billto" is
+annoying and the debug dump tells me nothing.
+
+
+
+
+#########################################################################
+080422 Tue 22 Apr 2008 12:01:53 PM EDT
+
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+AIM IM with typolesbo.
+11:51 AM
+typolesbo: I may have to kill me
+typolesbo: sorry kill him
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+heller [to Wainstead \]: that's quite the typo. 
+merlin [to Wainstead \]: she needs to be sure she never arranges a hitman over im or email
+
+
+Snuffed out a bug. Julian Tree hardcoded the product IDs in some
+Javascript, but what's more, he did a substring call that depended on
+the length of the product ID being 3 digits.
+
+function updateQty(_pid,_qty) {
+
+  //document.log = "";
+  //document.log += "updateQty: got: " + _pid + ' ' + _qty + "\n";
+
+  var sizes = get_sizes();
+
+  var j;
+
+  for (var i in photoObj){
+    for (var pcode in sizes) {
+
+      j = sizes[pcode] + i;
+
+      //document.log += "working on: j=" + j + "\n";
+
+      if ((_pid == 7043) && (!$(j))){ 
+        //document.log += "it's 7043\n";
+        itree_set_value( 'cq_7008_'+i , _qty);
+      } else {
+        //document.log += "It's not 7043, subst: " + j.substring(3,7) + " from " + j + "\n";
+        itree_set_value(j,   ((_pid + '' == j.substring(3,7) + '')
+                              ? _qty 
+                              : 0) 
+                        );
+      }
+
+    }
+  }
+  //alert(document.log);
+}
+
+
+(from shopping_cart.js).
+
+I need to write a couple patches now. I think I'll commit the SQL for
+inserting photo products.
+
+Rollout of Qualex printing was completed at 6pm.
+
+
+#########################################################################
+080423 Wed 23 Apr 2008 02:20:47 PM EDT
+
+Tired today. Was up early, in before 8:30. Was here late; past seven
+thirty I believe. At the last minute there were a couple bugs in the
+rollout.
+
+One was: some spurious define()s in store.conf that are only on
+production. They defined PRODUCT_4X6 as 114, for example. This trumped
+everything else; the javascript in the shopping cart didn't work.
+
+Then the new signup coupons didn't work. I found my swain4 didn't
+work, and that was the tipoff. I edited a dump of osc_offers and
+changed the category ID from 22 to 21.
+
+Manager's meeting today, and miscellanous this and thats. Reported a
+CP case to the NCMEC. Can't find an Excel spreadsheet Jessy has on the
+shared drive.. perms probably.
+
+Loaded all my rrw photos into iPhoto. Created some smart albums. Not
+too shabby. It gets up to speed shortly after.
+
+
+
+
+#########################################################################
+080424 Thu 24 Apr 2008 12:31:50 PM EDT
+
+Yesterday blew right by.
+
+Spock: "He is intelligent, but not experienced. His pattern indicates
+two dimensional thinking."
+
+
+
+
+#########################################################################
+080428 Mon 28 Apr 2008 01:44:48 PM EDT
+
+Friday I resolved some bugs with 4x8 slimline cards. Been busy today
+going through the MediaClip installer's guide (another book builder
+program), emails, researching Amazon's SimpleDB and Goole's App
+Builder, and with the problem of order notifications. No idea why the
+status updates for all the test orders worked fine...
+
+Sent 28 orders through again. Had a tiff with Chris over AIM:
+replication is still broken on mdb-1. He can't fix it. He blames the
+table sizes and 32 bit architecture. He blames Gallery.
+
+Steve Wainstead: replication is still not fixed?
+Steve Wainstead: i am getting wildly different results on mdb1 an 2
+chrisatfcity: no.... the tables are too big too import into mdb-1
+chrisatfcity: I can't do a single transactional dump.
+chrisatfcity: goddamn 32 bit boxes..
+Steve Wainstead: bleh
+chrisatfcity: I've been taking backups of mdb-2 so need to worry
+Steve Wainstead: here is why i am terrified of putting everything in the database
+chrisatfcity: we are MIGRATING to a new DB server.
+chrisatfcity: chrissakes..
+chrisatfcity: we are also moving off of 32bit architecture
+chrisatfcity: plus this database is bloated and is twice the normal size.
+chrisatfcity: with dupes entries in mpa_albumitems and mpa_photos
+chrisatfcity: max row in this DB shouldn't exceed 100 or so million.
+chrisatfcity: right now we are there because we have some much duplicate data.
+chrisatfcity: so it takes forever to do an import
+Steve Wainstead: that does little for my confidence, sadly.
+chrisatfcity: i don't know what that means?
+Steve Wainstead: i am not confident we can run MPA on top of Mysql
+chrisatfcity: you have no confidence in MySQL? then stop using flickr wikipedia.
+chrisatfcity: and any other app that uses mysql.
+Steve Wainstead: because we cannot manage it
+chrisatfcity: fuck you.
+chrisatfcity: So you ar enot confident in me basically.
+Steve Wainstead: i'm sorry chris, but that's how i feel
+Steve Wainstead: no
+chrisatfcity: Yes
+Steve Wainstead: i think you can do it. but ... i haven't seen it yet.
+chrisatfcity: Haven't seen what?
+chrisatfcity: I've already told you I';ve managed a DB 3 times thjis size at whenu
+chrisatfcity: and we had a lot more riding on that db
+Steve Wainstead: i didn't mean "no, i am not confident in you"
+Steve Wainstead: i have a very high opinion of your abilities
+chrisatfcity: I've already said this DB is a piece of piss
+chrisatfcity: compared to the whenu one
+chrisatfcity: we just need to fix the frickin application
+chrisatfcity: to use the DB properly.
+Steve Wainstead: well, one way or another we're porting mpa to mysql, so you better be right
+chrisatfcity: Well the app is worthless to anyone without the data in
+a centralized DB... as long as it is shardable.. it is scalable.
+
+
+
