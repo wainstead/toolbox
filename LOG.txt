@@ -37946,3 +37946,20 @@ a centralized DB... as long as it is shardable.. it is scalable.
 
 
 
+
+
+
+#########################################################################
+080429 Tue 29 Apr 2008 01:59:28 PM EDT
+
+Chris has no memory of being the blocking point on MPP. He flipped me
+off in the manager's meeting today.
+
+Meanwhile, I need to get the OFS done.
+
+Sent out email on how to roll out gifts. In the end: folded cards will
+continue to go to Zaah because I don't know how to get the
+orientation... Qualex does do 5x7 slimlines, and I hacked that
+in. Everything looks good now. Briefed Fernando on how to roll back.
+
+Off to Las Vegas.
