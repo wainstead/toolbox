@@ -9,7 +9,7 @@ CREATE PROCEDURE list_orders_products(mpa_orders_id INT(10))
 
 BEGIN
 
-SELECT op.products_id, op.products_quantity, pd.products_name
+SELECT op.products_id, op.products_quantity, op.effective_quantity, pd.products_name
 FROM osc_orders_products op, osc_products_description pd
 WHERE op.products_id = pd.products_id
 AND orders_id = mpa_orders_id;
