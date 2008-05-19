@@ -37963,3 +37963,529 @@ orientation... Qualex does do 5x7 slimlines, and I hacked that
 in. Everything looks good now. Briefed Fernando on how to roll back.
 
 Off to Las Vegas.
+
+
+
+#########################################################################
+080505 Mon 05 May 2008 03:09:51 PM EDT
+
+One big bug I missed: hockey pucks, which are DPI only, wound up in
+the Qualex orders. Fcat correctly created a new category for DPI-only
+products and updated the OrderPartsFactory.
+
+Took until 1pm to flush out my email. There were some odd store errors
+but nothing major.
+
+The Sears thing: this is akin to people being able to buy photo gift
+products without creating an MPA account.
+
+
+
+
+#########################################################################
+080508 Thu 08 May 2008 12:17:52 PM EDT
+
+Culled my MPP entries for Mike. He's going to do development on MPP
+now. I have to step him through the app.
+
+
+From osc.log:
+
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swaincalendar: subdomain plookfish
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swainbook: page count: 25
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: Cover URL: cover-fetcher.php?AlbumID=8VKGOF6UTAZ1
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain__: shipping grand total 54.15
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: /login.php: Cart::calculateEverything called.
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: DiscountHelper::applyClubDiscount: Applying club discounts now...
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: No club discounts for this order.
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain__: default US shipping
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: GiftCardShipping::getShippingCost() called
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain: Got this many card sets: 5
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain: tier is: US
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain: gift card query: SELECT first_item + (additional_item * (5 - 1)) AS shipping_cost
+                  FROM osc_giftcard_shipping
+                  WHERE shipping_method='US'
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain: gift card shipping cost: 975
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: FoldedCardShipping::getShippingCost() called
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain: Got this many card sets: 5
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain: tier is: US
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain: gift card query: SELECT first_item + (additional_item * (5 - 1)) AS shipping_cost
+                  FROM osc_foldedcard_shipping
+                  WHERE shipping_method='US'
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain: gift card shipping cost: 899
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain__: shipping grand total 54.15
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: Subtotals update query:
+UPDATE osc_cart SET  `content_type` = 'physical' , `subtotal_amount` = '360.42' , `shipping_amount` = '0' , `order_total` = '360.42' , `tax_amount` = '0' , `tax_pct` = '0' , `t\
+ax_name` = 'Tax' , last_accessed = NOW() WHERE sess_key LIKE 'deb1f14e663e6790909683df5510cfe5'
+
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 ::
+Cart::calculateEverything done.
+
+Here is the boundary, it would seem, between the call to login.php and the
+call to shopping_cart.php.
+
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: /shopping_cart.php: Cart::calculateEverything called.
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: DiscountHelper::applyClubDiscount: Applying club discounts now...
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: No club discounts for this order.
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain__: default US shipping
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: GiftCardShipping::getShippingCost() called
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: FoldedCardShipping::getShippingCost() called
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: swain__: shipping grand total 0
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: Subtotals update query:
+UPDATE osc_cart SET  `content_type` = 'virtual' , `subtotal_amount` = '0' , `shipping_amount` = '0' , `order_total` = '0' , `tax_amount` = '0' , `tax_pct` = '0' , `tax_name` = \
+'Tax' , last_accessed = NOW() WHERE sess_key LIKE 'deb1f14e663e6790909683df5510cfe5'
+
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: Cart::calculateEverything done.
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: __swain:  RegisteredUser returning login.php
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: __swain:  RegisteredUser returning login.php
+deb1f14e663e6790909683df5510cfe5  2008-05-08  14:29:55 :: script name: /shopping_cart.php
+
+
+[08/May/2008:14:28:30 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /shopping_cart.php?action=add_product&book=5000{px_book_id}8VKGOF6UTAZ1 HTTP/1.1" 7657
+[08/May/2008:14:28:34 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /shopping_cart.php?action=add_product&book=5000{px_book_id}8VKGOF6UTAZ1 HTTP/1.1" 7657
+[08/May/2008:14:28:34 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /cover-fetcher.php?AlbumID=0K4GKE3MO7JD HTTP/1.1" 8094
+[08/May/2008:14:28:34 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /cover-fetcher.php?AlbumID=8VKGOF6UTAZ1 HTTP/1.1" 7613
+[08/May/2008:14:28:35 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /cover-fetcher.php?AlbumID=0TQR10E4OQJB HTTP/1.1" 3539
+
+
+[08/May/2008:14:29:32 -0400] 64.52.253.115 TLSv1 AES128-SHA "POST /shopping_cart.php HTTP/1.1" 26
+[08/May/2008:14:29:33 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /login.php HTTP/1.1" 4070
+[08/May/2008:14:29:54 -0400] 64.52.253.115 TLSv1 AES128-SHA "POST /login.php HTTP/1.1" 26
+[08/May/2008:14:29:55 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /shopping_cart.php HTTP/1.1" 3319
+[08/May/2008:14:29:56 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /images/order-prints-now.gif HTTP/1.1" 431
+[08/May/2008:14:29:56 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /images/store-account-info.gif HTTP/1.1" 1009
+[08/May/2008:14:29:56 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /images/prints.jpg HTTP/1.1" 10573
+[08/May/2008:14:29:56 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /images/gifts.jpg HTTP/1.1" 20927
+[08/May/2008:14:29:56 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /images/join-the-club-now.gif HTTP/1.1" 432
+[08/May/2008:14:29:56 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /images/create-gifts-now.gif HTTP/1.1" 423
+[08/May/2008:14:29:57 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /images/club.jpg HTTP/1.1" 16651
+
+
+[08/May/2008:14:31:17 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /shopping_cart.php?action=add_product&book=5000{px_book_id}MJ7KGI09TIZI HTTP/1.1" 3655
+[08/May/2008:14:31:18 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /shopping_cart.php?action=add_product&book=5000{px_book_id}MJ7KGI09TIZI HTTP/1.1" 3655
+[08/May/2008:14:31:19 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /cover-fetcher.php?AlbumID=MJ7KGI09TIZI HTTP/1.1" 3556
+[08/May/2008:14:31:44 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /shopping_cart.php?action=add_product&book=5000{px_book_id}BDYBN5IPB4KC HTTP/1.1" 3777
+[08/May/2008:14:31:46 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /shopping_cart.php?action=add_product&book=5000{px_book_id}BDYBN5IPB4KC HTTP/1.1" 3777
+[08/May/2008:14:31:47 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /cover-fetcher.php?AlbumID=MJ7KGI09TIZI HTTP/1.1" 3556
+[08/May/2008:14:31:47 -0400] 64.52.253.115 TLSv1 AES128-SHA "GET /cover-fetcher.php?AlbumID=BDYBN5IPB4KC HTTP/1.1" 8111
+
+
+My thinking is there's a bug in the cart merging section. Observe:
+
+mysql> select cart_id , order_total from osc_cart where customers_id=7;
++-----------+--------------+
+| cart_id   | order_total  |
++-----------+--------------+
+|  38452344 |   0.00000000 |
+|  39418317 | 107.93000031 |
+|  51083438 |   0.00000000 |
+|  51459616 |   0.00000000 |
+|  51688837 |   0.00000000 |
+|  52030449 |   0.00000000 |
+|  52440004 |   0.00000000 |
+|  52720226 |   0.00000000 |
+|  52807794 |   1.63999999 |
+|  53824850 |   0.00000000 |
+|  55202072 |   0.00000000 |
+|  55526754 |   0.00000000 |
+|  57620834 |   0.00000000 |
+|  57681634 |   0.00000000 |
+|  57766452 |   0.00000000 |
+|  61312672 |   0.00000000 |
+|  64262078 |   0.00000000 |
+|  65299186 |   0.00000000 |
+|  69384076 |   0.00000000 |
+|  71744194 |   0.00000000 |
+|  72578870 |   0.00000000 |
+|  73308644 |   0.00000000 |
+|  76463810 |   0.00000000 |
+|  77017610 |   0.00000000 |
+|  77021016 |   0.00000000 |
+|  78484126 |   0.00000000 |
+|  81095096 |   0.00000000 |
+|  88704542 |   1.68000007 |
+| 104891618 |   0.00000000 |
+| 108267172 | 148.33999634 |
+| 108267536 |   0.00000000 |
++-----------+--------------+
+31 rows in set (0.00 sec)
+
+
+Jessy has 37 carts? This should not be. But this does not appear to be
+related to her dissappearing merchandise. I did a left outer join on
+all the rows above with osc_cart_contents: 
+
+mysql>  SELECT si.cart_id, si.sess_key, si.order_total, c.unique_string FROM osc_cart si  left outer join osc_cart_contents c ON si.sess_key = c.sess_key WHERE si.customers_id = 7 AND c.unique_string is null limit 100;
++-----------+--------------------------------------+--------------+---------------+
+| cart_id   | sess_key                             | order_total  | unique_string |
++-----------+--------------------------------------+--------------+---------------+
+|  38452344 | 8cb4147e59e7ddb5ec48cefef3a04e95     |   0.00000000 | NULL          |
+|  39418317 | 5f49dcdadc3b45072a3ae62962eb3ee6     | 107.93000031 | NULL          |
+|  51083438 | 0728fbcb80b6f828fa33ad4992a7265b     |   0.00000000 | NULL          |
+|  51459616 | 1986ce7e817a3492964aa289d0c63925     |   0.00000000 | NULL          |
+|  51688837 | 0f665f035e0dca60e3a6cb8be6d10595     |   0.00000000 | NULL          |
+|  52030449 | 65aa86f89dda1306c8207340ccc9b047     |   0.00000000 | NULL          |
+|  52440004 | a7738751dc5ee10605c754cb2e7463bd     |   0.00000000 | NULL          |
+|  52720226 | ef932caa2ccc3a2b1dc147e18451d903     |   0.00000000 | NULL          |
+|  52807794 | 962f567272f14b6d396cdafbcfaba52e     |   1.63999999 | NULL          |
+|  53824850 | 2454037c6d927c16e0d1365c5c9aad26     |   0.00000000 | NULL          |
+|  55202072 | 9dc21769a8b305a9529da9270d7aa8eb     |   0.00000000 | NULL          |
+|  55526754 | 79b3672f3c891bbd951a309f068f9be4     |   0.00000000 | NULL          |
+|  57620834 | e1b8c1ffb440b6ad34e9548f64f99cb1     |   0.00000000 | NULL          |
+|  57681634 | 5d85f9b4f05b635a4732cfe225417c44     |   0.00000000 | NULL          |
+|  57766452 | 3f529085b83d4d139afea5480a80acb6     |   0.00000000 | NULL          |
+|  61312672 | 9a7e4cfa45a83c078d2f0ed9d086d860     |   0.00000000 | NULL          |
+|  64262078 | 6a97b284195efec5bd4ff8518ce1d7a5     |   0.00000000 | NULL          |
+|  65299186 | 0633b2eba36672ddcddf7a403190b30c     |   0.00000000 | NULL          |
+|  69384076 | 25e06b7fa4278bc456db416a653f397a     |   0.00000000 | NULL          |
+|  71744194 | c2a11228fd84f61bd9f31486dca819e6     |   0.00000000 | NULL          |
+|  72578870 | e92196d3a319090c1254fdeb47f5532a     |   0.00000000 | NULL          |
+|  73308644 | b61c462d300e0bd4eac65f61eec3938c     |   0.00000000 | NULL          |
+|  76463810 | 91711c0d596a96d158297db6e8b03afd     |   0.00000000 | NULL          |
+|  77017610 | 7272156592851fbc78fa96a50b5720d1     |   0.00000000 | NULL          |
+|  77021016 | abdbec4c70a6b106fd3a665e6807bc33     |   0.00000000 | NULL          |
+|  78484126 | 8ba39109ec9ec97e1d0824a98c53d6f1     |   0.00000000 | NULL          |
+|  81095096 | ab627199a4b8221d93632143d4401393     |   0.00000000 | NULL          |
+|  88704542 | 0daf2b1fd57b92aaa23f1668465338da     |   1.68000007 | NULL          |
+| 104891618 | 3e8f8c9c68231d48a66ad9a978e47e7d     |   0.00000000 | NULL          |
+| 108267172 | e9cf845c799a8be328552954ca6e398a     |   0.00000000 | NULL          |
+| 108267536 | _lo_0c87e29153230a06dd608328522af521 |   0.00000000 | NULL          |
++-----------+--------------------------------------+--------------+---------------+
+31 rows in set (0.00 sec)
+
+
+
+Both with "is not null" and "is null" and the results were 0 and 31,
+respectively.
+
+The reason for this is because of the merge function's call:
+
+    function getPreviousCartID($customers_id) {
+        $previous_sid_sql = " SELECT c.cart_id
+                              FROM osc_cart_contents c, osc_cart si 
+                              WHERE si.customers_id = " . (int)$customers_id . " 
+                              AND si.cart_id = c.cart_id ";
+        return DB::getVar($previous_sid_sql);
+    }
+
+If there are no rows in osc_cart_contents, this returns nothing.
+
+
+
+
+#########################################################################
+080509 Fri 09 May 2008 02:29:57 PM EDT
+
+On a hunch I've duplicated the bug, or at least found another. Add to
+cart while logged in, then go directly to login page and login again;
+this results in losing your row from osc_cart.
+
+I also found that the cart culling script is deleting legit carts. It
+was operating on customers_id in both osc_cart_contents and
+osc_cart_contents_attributes which are never set.
+
+So I played with constraints for a little bit, and worked this out:
+
+drop table if exists swain_child  ;
+drop table if exists swain_parent ;
+
+
+CREATE TABLE `swain_parent` (
+  `albumitem_id` int unsigned NOT NULL auto_increment,
+  `site_id`      int unsigned NOT NULL default 0,
+  `parent_id`    int unsigned NOT NULL default 0,
+  PRIMARY KEY  (`albumitem_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ CREATE TABLE `swain_child` (
+  `albumitem_id` int unsigned NOT NULL default '0',
+  `title`        varchar(50) default NULL,
+  `owner_id`	 int unsigned NOT NULL default '0',
+
+  PRIMARY KEY (`albumitem_id`),
+
+  CONSTRAINT `mpa_albumitems_upd_1` FOREIGN KEY (`albumitem_id`) REFERENCES `swain_parent` (`albumitem_id`) ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+insert into swain_parent values(1,42, 12);
+insert into swain_child values(1,'ima title', 12);
+
+
+Here, the child table has both delete and update constraints and this
+all works as one would think. I can update or delete the parent row
+and the correct things happen in the child. This would solve the
+problem with the culling script.
+
+Hmm. This would be easy to test... dump the three cart tables, edit
+them, reload them, run the store. I could drop extraneous columns
+while I'm at it.
+
+
+
+#########################################################################
+080512 Mon 12 May 2008 06:08:21 PM EDT
+
+Hmm. I think I need to clean up Jacob's object explosion in gifts
+before I can do anything meaningful with it.
+
+
+
+
+#########################################################################
+080513 Tue 13 May 2008 03:32:20 PM EDT
+
+Am working on shrinking the code base for products. This means
+factoring out a lot of redundant code from Jacob's class hierarchy.
+
+M-x c-set-style RET cc-mode RET fixes the borkage with braces.
+
+
+
+#########################################################################
+080514 Wed May 14 15:34:57 2008
+
+find . -name \*.php -print0  | xargs -0 egrep '^class' | perl -nlaF'/\s/' -e 'print $F[1]'
+
+Here, we use these Perl command line flags:
+
+n: iterate over each line of input... if you use 'p' it prints the
+line afterwards.
+
+l: chomp the line; automatically print \n afterwards
+a: autosplit the line
+F'//': the pattern to autosplit on. Results go in @F.
+
+With p, i.e. find . -name \*.php -print0  | xargs -0 egrep '^class' | perl -plaF'/\s/' -e 'print $F[1]'
+
+we get:
+
+Photo_MiniFootball
+./classes.php:class Photo_MiniFootball extends Games_And_Puzzles {
+Photo_Hockeypuck
+./classes.php:class Photo_Hockeypuck extends Games_And_Puzzles {
+Magnets
+./classes.php:class Magnets extends Products {
+Magnet_3x4
+./classes.php:class Magnet_3x4 extends Magnets {
+Magnet_25x35
+./classes.php:class Magnet_25x35 extends Magnets {
+Sporting
+./classes.php:class Sporting extends Products {
+All_products
+./classes.php:class All_products {
+
+
+
+
+
+#########################################################################
+080515 Thu May 15 11:35:03 2008
+
+Jacob's classes mix categories and products... it's too generalized,
+perhaps. I do like that Jessy can just edit text files for groupings,
+rather than it all being in the database and us having to write an
+interface for her; or us writing patch files for her. But there's too
+many classes maybe. Information is duplicated in the classes that's
+already in the database. I'd have to move all the cropping information
+into the db too.
+
+It's as though you had a Java system where everything is just treated
+as an Object. It would work, but it's cheating in a way.
+
+Here's some incredibly bad programming on Jacob's part:
+
+   579  jodonnell     function getProductDisplayName($product_name = '') {
+   712  jodonnell         if ($product_name == '') { return; }
+   579  jodonnell         $this->require_class($product_name);
+   579  jodonnell         $Product_name = ucfirst($product_name);
+   579  jodonnell         ob_start();
+   579  jodonnell         eval("$Product_name::getProductDisplayName();");
+   579  jodonnell         $name = ob_get_clean();
+   712  jodonnell         if ( ! $name  && $this->product->desc) {
+   712  jodonnell             return $this->product->desc;
+   712  jodonnell         }
+   579  jodonnell         return $name;
+   579  jodonnell     }
+
+The subclasses *echo* the name instead of returning it. Bleh. And
+where $product->getProductDisplayName() is called on a subclass, it's
+happenstance that it echoes it into the right place, probably.
+
+
+
+#########################################################################
+080519 Mon 19 May 2008 10:25:39 AM EDT
+
+Out Friday after being punched in the face defending my cab driver.
+
+I was working on abolishing the 170 classes that make up the Product
+classes Jacob created. I ported the data in to the DB and found that
+there's a few exceptions to the rule:
+
+Fatal error: Call to a member function getProductChildren() on a
+non-object in
+/d0/home/swain/public_html/projects/ampiradev/gallery/gifts/classes/product.class.php
+on line 122
+
+This means not every class that has-a PhysicalProductDetails (formerly
+PhysicalProduct) is the same.. or else this class has something it
+doesn't need?
+
+Why do all "sellable" products have to be in category 1? It's because
+that's how we select individual products when we join on the
+products_to_categories table. If a product belongs to two or more
+categories, then there are duplicates in the count:
+
+with categories_id = 1
+mysql>  SELECT 
+               c.products_id AS id,
+               pd.products_name,
+               SUM(c.price_set * c.customers_basket_quantity ) AS subttl,
+               c.price_set_comment AS discount,
+               SUM(c.customers_basket_quantity) AS count,
+               pc.categories_id
+
+        FROM  osc_cart_contents  c, osc_products p, osc_products_to_categories pc, osc_products_description pd
+        WHERE c.cart_id = 7702
+        and p.products_id  = c.products_id 
+        and pd.products_id = c.products_id 
+        and pc.products_id = c.products_id 
+
+        AND pc.categories_id = 1
+        GROUP BY id, discount 
+        ORDER BY categories_id;
+
++------+---------------------+---------+---------------+-------+---------------+
+| id   | products_name       | subttl  | discount      | count | categories_id |
++------+---------------------+---------+---------------+-------+---------------+
+| 7008 | 4X6                 |  0.4800 | Club Discount |     4 |             1 | 
+| 7102 | Mouse Pad           |  9.9900 |               |     1 |             1 | 
+| 7111 | Coasters (Set of 4) | 19.9900 |               |     1 |             1 | 
++------+---------------------+---------+---------------+-------+---------------+
+3 rows in set (0.00 sec)
+
+
+
+without categories_id = 1
+mysql>  SELECT 
+               c.products_id AS id,
+               pd.products_name,
+               SUM(c.price_set * c.customers_basket_quantity ) AS subttl,
+               c.price_set_comment AS discount,
+               SUM(c.customers_basket_quantity) AS count,
+               pc.categories_id
+
+        FROM  osc_cart_contents  c, osc_products p, osc_products_to_categories pc, osc_products_description pd
+        WHERE c.cart_id = 7702
+        and p.products_id  = c.products_id 
+        and pd.products_id = c.products_id 
+        and pc.products_id = c.products_id 
+
+
+        GROUP BY id, discount 
+        ORDER BY categories_id;
+
++------+---------------------+---------+---------------+-------+---------------+
+| id   | products_name       | subttl  | discount      | count | categories_id |
++------+---------------------+---------+---------------+-------+---------------+
+| 7008 | 4X6                 |  0.9600 | Club Discount |     8 |             1 | 
+| 7111 | Coasters (Set of 4) | 39.9800 |               |     2 |             1 | 
+| 7102 | Mouse Pad           | 19.9800 |               |     2 |             1 | 
++------+---------------------+---------+---------------+-------+---------------+
+3 rows in set (0.00 sec)
+
+
+so the problem, really, is to come up with a better sql statement. In
+fact we don't seem to need the category at all:
+
+ mysql>  SELECT 
+               c.products_id AS id,
+               pd.products_name,
+               SUM(c.price_set * c.customers_basket_quantity ) AS subttl,
+               c.price_set_comment AS discount,
+               SUM(c.customers_basket_quantity) AS count
+        FROM  osc_cart_contents  c, osc_products p, osc_products_description pd
+        WHERE c.cart_id = 7702
+        and p.products_id  = c.products_id 
+        and pd.products_id = c.products_id 
+        GROUP BY id, discount 
+;
++------+---------------------+---------+---------------+-------+
+| id   | products_name       | subttl  | discount      | count |
++------+---------------------+---------+---------------+-------+
+| 7008 | 4X6                 |  0.4800 | Club Discount |     4 | 
+| 7102 | Mouse Pad           |  9.9900 |               |     1 | 
+| 7111 | Coasters (Set of 4) | 19.9900 |               |     1 | 
++------+---------------------+---------+---------------+-------+
+3 rows in set (0.00 sec)
+
+
+The issue here, if it is one, is that we don't have a way to order the
+products in the summary. I think at the moment we're not controlling
+it anyway, so it seems like no loss.
+
+Since ordinality (cardinality?) is desirable for the Products classes
+in mpa_products, perhaps the two can overlap.
+
+Seems to work:
+
+
+
+      SELECT 
+               c.products_id AS id,
+               pd.products_name,
+               SUM(c.price_set * c.customers_basket_quantity ) AS subttl,
+               c.price_set_comment AS discount,
+               SUM(c.customers_basket_quantity) AS count,
+               pc.categories_id
+
+        FROM  osc_cart_contents  c
+        INNER JOIN osc_products p                ON p.products_id  = c.products_id 
+        INNER JOIN osc_products_description pd   ON pd.products_id = c.products_id 
+        INNER JOIN osc_products_to_categories pc ON pc.products_id = c.products_id 
+
+        WHERE c.cart_id = 7702
+        AND pc.categories_id = 1
+        GROUP BY id, discount 
+        ORDER BY categories_id;
++------+-----------------------------------------------------------+---------+---------------+-------+---------------+
+| id   | products_name                                             | subttl  | discount      | count | categories_id |
++------+-----------------------------------------------------------+---------+---------------+-------+---------------+
+| 1281 | Baby Onesie - 12 mo                                       | 39.9800 |               |     2 |             1 | 
+| 148  | Club                                                      | 20.0000 |               |     1 |             1 | 
+| 2000 | Key to the Attic                                          |  9.9500 |               |     1 |             1 | 
+| 4015 | Tuscany 16x20 florentine <br>silver frame for 11x14 photo | 47.9800 |               |     2 |             1 | 
+| 7008 | 4X6                                                       |  0.4800 | Club Discount |     4 |             1 | 
+| 7060 | Large Poster - 16x20                                      | 47.9700 |               |     3 |             1 | 
+| 7102 | Mouse Pad                                                 |  9.9900 |               |     1 |             1 | 
+| 7111 | Coasters (Set of 4)                                       | 19.9900 |               |     1 |             1 | 
++------+-----------------------------------------------------------+---------+---------------+-------+---------------+
+8 rows in set (0.00 sec)
+
+
+mysql>         SELECT 
+               c.products_id AS id,
+               pd.products_name,
+               SUM(c.price_set * c.customers_basket_quantity ) AS subttl,
+               c.price_set_comment AS discount,
+               SUM(c.customers_basket_quantity) AS count
+        FROM  osc_cart_contents  c
+        INNER JOIN osc_products p                ON p.products_id  = c.products_id 
+        INNER JOIN osc_products_description pd   ON pd.products_id = c.products_id 
+        WHERE c.cart_id = 7702
+        GROUP BY id, discount 
+;
++------+-----------------------------------------------------------+---------+---------------+-------+
+| id   | products_name                                             | subttl  | discount      | count |
++------+-----------------------------------------------------------+---------+---------------+-------+
+| 1281 | Baby Onesie - 12 mo                                       | 39.9800 |               |     2 | 
+| 148  | Club                                                      | 20.0000 |               |     1 | 
+| 2000 | Key to the Attic                                          |  9.9500 |               |     1 | 
+| 4015 | Tuscany 16x20 florentine <br>silver frame for 11x14 photo | 47.9800 |               |     2 | 
+| 7008 | 4X6                                                       |  0.4800 | Club Discount |     4 | 
+| 7060 | Large Poster - 16x20                                      | 47.9700 |               |     3 | 
+| 7102 | Mouse Pad                                                 |  9.9900 |               |     1 | 
+| 7111 | Coasters (Set of 4)                                       | 19.9900 |               |     1 | 
++------+-----------------------------------------------------------+---------+---------------+-------+
+8 rows in set (0.00 sec)
+
