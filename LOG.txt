@@ -38489,3 +38489,207 @@ mysql>         SELECT
 +------+-----------------------------------------------------------+---------+---------------+-------+
 8 rows in set (0.00 sec)
 
+Ditto for the query used in the Order class:
+
+  
+mysql>             SELECT 
+               p.orders_products_id,
+               p.products_id,
+               p.products_model,
+               p.products_name,  
+               p.products_price,       
+               p.final_price,  
+               p.products_tax,       
+               p.products_quantity     as quantity
+            FROM osc_orders_products p,
+                 osc_products_to_categories pc
+            WHERE orders_id = 21676
+            AND pc.categories_id = 1
+            AND p.products_id = pc.products_id
+            
+;
++--------------------+-------------+----------------+-----------------------------------------------------------+----------------+-------------+--------------+----------+
+| orders_products_id | products_id | products_model | products_name                                             | products_price | final_price | products_tax | quantity |
++--------------------+-------------+----------------+-----------------------------------------------------------+----------------+-------------+--------------+----------+
+|              17840 |        1281 | Baby Onesie    | Baby Onesie - 12 mo                                       |        39.9800 |     39.9800 |       0.0000 |        2 | 
+|              17841 |         148 | Club           | Club                                                      |        20.0000 |     20.0000 |       0.0000 |        1 | 
+|              17842 |        2000 | Key to the A   | Key to the Attic                                          |         9.9500 |      9.9500 |       0.0000 |        1 | 
+|              17843 |        4015 | Tuscany 16x2   | Tuscany 16x20 florentine <br>silver frame for 11x14 photo |        47.9800 |     47.9800 |       0.0000 |        2 | 
+|              17844 |        7008 | 4X6            | 4X6                                                       |         0.1200 |      0.1200 |       0.0000 |        1 | 
+|              17845 |        7008 | 4X6            | 4X6                                                       |         0.1200 |      0.1200 |       0.0000 |        1 | 
+|              17846 |        7008 | 4X6            | 4X6                                                       |         0.1200 |      0.1200 |       0.0000 |        1 | 
+|              17847 |        7008 | 4X6            | 4X6                                                       |         0.1200 |      0.1200 |       0.0000 |        1 | 
+|              17848 |        7060 | Large Poster   | Large Poster - 16x20                                      |        47.9700 |     47.9700 |       0.0000 |        3 | 
+|              17849 |        7102 | Mouse Pad      | Mouse Pad                                                 |         9.9900 |      9.9900 |       0.0000 |        1 | 
+|              17850 |        7111 | Coasters (Se   | Coasters (Set of 4)                                       |        19.9900 |     19.9900 |       0.0000 |        1 | 
++--------------------+-------------+----------------+-----------------------------------------------------------+----------------+-------------+--------------+----------+
+11 rows in set (0.00 sec)
+
+mysql>             SELECT 
+               p.orders_products_id,
+               p.products_id,
+               p.products_model,
+               p.products_name,  
+               p.products_price,       
+               p.final_price,  
+               p.products_tax,       
+               p.products_quantity     as quantity
+            FROM osc_orders_products p
+             WHERE orders_id = 21676
+ 
+            
+;
++--------------------+-------------+----------------+-----------------------------------------------------------+----------------+-------------+--------------+----------+
+| orders_products_id | products_id | products_model | products_name                                             | products_price | final_price | products_tax | quantity |
++--------------------+-------------+----------------+-----------------------------------------------------------+----------------+-------------+--------------+----------+
+|              17840 |        1281 | Baby Onesie    | Baby Onesie - 12 mo                                       |        39.9800 |     39.9800 |       0.0000 |        2 | 
+|              17841 |         148 | Club           | Club                                                      |        20.0000 |     20.0000 |       0.0000 |        1 | 
+|              17842 |        2000 | Key to the A   | Key to the Attic                                          |         9.9500 |      9.9500 |       0.0000 |        1 | 
+|              17843 |        4015 | Tuscany 16x2   | Tuscany 16x20 florentine <br>silver frame for 11x14 photo |        47.9800 |     47.9800 |       0.0000 |        2 | 
+|              17844 |        7008 | 4X6            | 4X6                                                       |         0.1200 |      0.1200 |       0.0000 |        1 | 
+|              17845 |        7008 | 4X6            | 4X6                                                       |         0.1200 |      0.1200 |       0.0000 |        1 | 
+|              17846 |        7008 | 4X6            | 4X6                                                       |         0.1200 |      0.1200 |       0.0000 |        1 | 
+|              17847 |        7008 | 4X6            | 4X6                                                       |         0.1200 |      0.1200 |       0.0000 |        1 | 
+|              17848 |        7060 | Large Poster   | Large Poster - 16x20                                      |        47.9700 |     47.9700 |       0.0000 |        3 | 
+|              17849 |        7102 | Mouse Pad      | Mouse Pad                                                 |         9.9900 |      9.9900 |       0.0000 |        1 | 
+|              17850 |        7111 | Coasters (Se   | Coasters (Set of 4)                                       |        19.9900 |     19.9900 |       0.0000 |        1 | 
++--------------------+-------------+----------------+-----------------------------------------------------------+----------------+-------------+--------------+----------+
+11 rows in set (0.00 sec)
+
+mysql> 
+
+
+
+So this paves the way to use osc_products_to_categories. I need to
+update two queries to not join on osc_products_to_categories anymore,
+delete all categories_id=1 from that table, and start creating new
+categories based on the product hierarchy in mpa_products.
+
+
+
+#########################################################################
+080528 Wed 28 May 2008 09:52:15 AM EDT
+
+Back from vacation.
+
+Just changed two queries and deleted all category 1 entries in
+osc_products_to_categories.
+
+
+
+#########################################################################
+080529 Thu 29 May 2008 11:50:53 AM EDT
+
+Chris in ... Pennsicola or something today. I need his USB cable for
+my camera because I took a way cool picture of Jeanne in her
+sunglasses at RRW last night.
+
+Been picking at the ProductTemplate subclasses in gifts. I'm kinda
+hung up on the decision to use osc_categories and brethren for these
+classifications, versus having mpa_% tables to do it. On the one hand,
+osc_categories should work because the structure is there and I tossed
+out the category 1 nonsense yesterday... but... this is a Gallery
+specific thing, so having the info in separate tables also makes
+sense. There's also display data in the classes:
+
+attribute: product -> 
+attribute: header -> occs/header.jpg
+attribute: title -> 
+attribute: product_picture -> 
+attribute: product_text -> 
+attribute: next_page -> 
+attribute: images -> 
+attribute: cropping_coords -> 
+attribute: price -> 
+attribute: children_list -> Array
+attribute: desc -> Main Products
+
+And then Frames, the parent class, mucks things up somewhat. Real life
+is like that: it doesn't always map to a class hierarchy.
+
+Hrmm. My copy of "Encouters with the Archdruid" is missing.
+
+
+
+#########################################################################
+080602 Mon 02 Jun 2008 11:18:18 AM EDT
+
+Whipped up a quickie page to preview the card images Chris is
+generating:
+
+<?php
+
+$dir = "/opt/mpa/custom-sites/jhanley/ampiradev/gallery/cards";
+$files = array();
+
+// Open a known directory, and proceed to read its contents
+if (is_dir($dir)) {
+    if ($dh = opendir($dir)) {
+        while (($file = readdir($dh)) !== false) {
+            if ( preg_match('/jpg$/', $file) )
+                $files[] = $file;
+        }
+        closedir($dh);
+    }
+ }
+
+sort($files);
+
+
+if (isset($_REQUEST['index'])) {
+    if ( ! isset($files[ $_REQUEST['index']] ) ) die("no such index {$_REQUEST[index]}");
+    $imagename = $files[ $_REQUEST['index']];
+    $index = $_REQUEST['index'];
+    $next  = $index + 1;
+    $prev  = $index - 1;
+    if ( (count($files) - 1) < $next) $next = count($files) - 1;
+    if ( $prev < 0 ) $prev = 0;
+ } else {
+    for ($x = 0; $x < count($files); $x++) {
+        echo "$x: <a href=\"transverse.php?index=$x\">$files[$x]</a><br>\n";
+    }
+    exit(0);
+ }
+
+
+if (isset($_REQUEST['mail'])) {
+    // email the message to whomever
+    $message = "Problem with $imagename:\n{$_REQUEST[problem]}";
+    $message = wordwrap($message, 70);
+    $message .= "\n\nform: http://swainhome.myphotodevel.com/transverse.php?index=$index";
+    $message .= "\n\nimage: http://whoozie.myphotodevel.com/cards/$imagename";
+    mail('swain@myphotoalbum.com,chris@corp.fortunecity.com,jessy@myphotoalbum.com,fmarte@corp.fortunecity.com', "Error in card $imagename", $message);
+
+    echo "<font color=red><h1>Message sent.</h1></font>\n";    
+} 
+
+
+
+// sample image url:
+// http://whoozie.myphotodevel.com/cards/Baby_5_Boy_Dots_H.jpg
+?>
+
+<a href="transverse.php?index=<?php echo $prev; ?>">prev</a> |
+<a href="transverse.php?index=<?php echo $next ?>">next</a> |
+<a href="transverse.php">index</a>
+<h3><?php echo $imagename; ?></h3><br>
+<a href="#report">report error</a><p>
+<img src="http://whoozie.myphotodevel.com/cards/<?php echo $imagename; ?>">
+<p>
+<hr>
+<p>
+
+<a name="report">Explain the problem with this card:</a>
+
+<form action="transverse.php" method="POST">
+
+<input type="hidden" name="index" value="<?php echo $index; ?>">
+<input type="hidden" name="mail" value="true">
+
+<textarea name="problem" cols="50" rows="10">
+</textarea>
+
+<input type="submit">
+
+</form>
+
