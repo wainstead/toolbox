@@ -38693,3 +38693,154 @@ if (isset($_REQUEST['mail'])) {
 
 </form>
 
+
+
+
+#########################################################################
+080603 Tue 03 Jun 2008 01:48:48 PM EDT
+
+Solved the bug with the shortform that was so vexing me
+yesterday... last night I realized I could use staging in simple ways
+to narrow down where the problem was, without stepping through the
+hideous mess that is the configuration management.
+
+I commented out the old $gallery->app variables, so Gallery used the
+new constants. No difference. I switched staging to use my personal
+build and the bug showed up. So that eliminated any system config
+issue.
+
+And then I noticed that there was an error coming from the shortform
+itself: couldn't load a class. The page was not loading completely,
+but this was not visible. It was trying to load a class I think I
+deleted from subversion. I commented out the require() and lo, the
+thing worked again.
+
+I'm now working on making the gifts run separate from Gallery, and
+it's proceding apace.
+
+
+
+#########################################################################
+080605 Thu 05 Jun 2008 12:22:50 PM EDT
+
+Am working on another idea: moving all images out of Gallery and into
+a gallery-static project. So far so good. I deleted all jpg, gif and
+png files after craeating a new virtual server, swainstatic, which
+points at the untarred hierarchy of images.
+
+
+
+#########################################################################
+080606 Fri 06 Jun 2008 02:40:12 PM EDT
+
+I cooked up a new tool to help find where missing image calls were
+coming from. First, I came across a PHP function,
+get_included_files(), which returns an array of all included/required
+files. I wrote something for my register_shutdown_function. Here's the
+code:
+
+function exit_notice() { 
+    // using ~swain/svn/pgms/perl/searchem.pl, i can find any missing files in error_log. --sw
+    $fp = fopen("/home/swain/tmp/www/included_files", "w");
+    if (!$fp) die("Can't write swain's included files list!");
+    foreach (get_included_files() as $file)
+        fwrite($fp, "$file\n");
+    fclose($fp);
+}
+register_shutdown_function( 'exit_notice' );
+
+Now there's a file after each pageview in my home dir. Parsing it is
+as simple as a perl script:
+
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+open INCLUDED_FILE_LIST, "< /home/swain/tmp/www/included_files" or die $!;
+
+while (my $file = <INCLUDED_FILE_LIST>) {
+    chomp $file;
+    $file =~ s/^included: //;
+    print `grep --with-filename --line-number $ARGV[0] $file`;
+}
+
+
+
+Output looks like this:
+
+swain@torque:~/svn/pgms/perl$ ./searchem.pl spacer.gif
+/d0/home/swain/public_html/projects/gifts/products.php:403:                echo "<img src='" . STATIC_SERVER . "/images/spacer.gif' width='175' height='155' alt='{$prod_name}' border='0'></a>";
+/d0/home/swain/public_html/projects/gifts/products.php:433:                echo "<img src='" . STATIC_SERVER . "/images/spacer.gif' width='175' height='155' alt='{$prod_name}' border='0'></a>";
+/d0/home/swain/public_html/projects/gifts/products.php:445:                echo "<img src='" . STATIC_SERVER . "/images/spacer.gif' width='175' height='175' alt='{$prod_name}' border='0'></a>";
+/d0/home/swain/public_html/projects/gifts/products.php:452:                echo "<img src='" . STATIC_SERVER . "/images/spacer.gif' width='175' height='155' alt='{$prod_name}' border='0'></a>";
+/d0/home/swain/public_html/projects/ampiradev/gallery/util.php:1996:            . "\n\t<td><img src=\"". STATIC_SERVER . "images/spacer.gif\" border=\"0\""
+/d0/home/swain/public_html/projects/gifts/products_html.php:7:        <Td class=barbg2 width=50%>' . STATIC_SERVER . '<img src="/images/spacer.gif" width="4" height="20" alt="" border="0"></TD>
+/d0/home/swain/public_html/projects/gifts/products_html.php:17:        <Td class=barbg2 width=50%><img src="' . STATIC_SERVER . '/images/spacer.gif" width="4" height="8" alt="" border="0"></TD>
+/d0/home/swain/public_html/projects/gifts/html_wrap/gifts.header:31:	<td class="headerbg" height=100%><img src="<?php echo  STATIC_SERVER ?>/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+/d0/home/swain/public_html/projects/gifts/html_wrap/gifts.header:112:	<td class=headerbg height=100%><img src="/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+/d0/home/swain/public_html/projects/gifts/html_wrap/gifts.footer:18:		<td class="footerbg"><img src="<?php echo  STATIC_SERVER ?>/images/spacer.gif" width="6" height="100" alt="" border="0"></td>
+/d0/home/swain/public_html/projects/gifts/html_wrap/gifts.footer:61:		<td class="footerbg"><img src="<?php echo  STATIC_SERVER ?>/images/spacer.gif" width="6" height="100" alt="" border="0"></td>
+
+
+With that I hunted down the remaining missing image calls from
+Apache's error_log. Well, it's not 100% but nearly so. Jessy and Dylan
+are redesigning it, so my work on products.php was probably wasted.
+
+Yesterday I broke out all image, css and js files from Gallery into a
+new project, mpa_static. It just made it easier to share files that
+way between gifts and gallery. Here's the before and after, once I
+removed all static content from the gifts project:
+
+1.6G	gifts
+112M	gifts
+
+Gallery is now only 40MB. mpa_static is 1.7GB.
+
+There was an extremely weird bug I encountered: the session database
+connection handle going out of scope. This happened when the gifts
+stub files looked like this:
+
+<?php
+
+  /**
+   * Gifts are in their own Subversion project. This stub file loads
+   * it from the correct location specified by the conf variable
+   * $GIFTS_BASEDIR.
+   */
+
+require_once('/opt/mpa/conf/gallery.conf');
+require("{$GALLERY_BASEDIR}/inc/function/get_all_gallery_items.inc");
+require("{$GIFTS_BASEDIR}books/book_explain.php");
+
+?>
+
+Changing it to this solves the problem:
+
+<?php
+
+  /**
+   * Gifts are in their own Subversion project. This stub file loads
+   * it from the correct location specified by the conf variable
+   * $GIFTS_BASEDIR.
+   */
+
+require_once('/opt/mpa/conf/gallery.conf');
+require("{$GIFTS_BASEDIR}books/book_explain.php");
+
+?>
+
+
+That is, eliminating that one line. This bug manifested itself in the
+Apache error log like so:
+
+using pingDb...
+[Fri Jun 06 15:28:36 2008] [error] [client 10.1.1.209] PHP Warning:  mysql_ping() expects parameter 1 to be resource, null given in /opt/mpa/lib/mysql_sessions.inc on line 237, referer: http://swain.myphotodevel.com/gifts/products.php
+MPA MYSQL SESSIONS DB ERROR: [Fri, 06 Jun 2008 15:28:36 -0400] mysql error number: '' : mysql error msg: '' message I (showerror) was passed: 'mysql ping failed.' On: swain.myphotodevel.com /gifts/books/book_explain.php
+
+Stack trace:
+#0  mpaGetFullDump() called at [/opt/mpa/lib/mysql_sessions.inc:265]
+#1  showerror(mysql ping failed.) called at [/opt/mpa/lib/mysql_sessions.inc:239]
+#2  pingDb() called at [/opt/mpa/lib/mysql_sessions.inc:114]
+[stuff deleted]
+
