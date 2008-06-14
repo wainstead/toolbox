@@ -20,10 +20,10 @@ main()
   do {
     yyparse();
   } while ( ! feof(yyin));
+}  
 
-  yyerror(s)
-  {
-
-    fprintf(stderr, "%s\n", s);
-  }
+yyerror(s)
+{
+  fprintf(stderr, "%s\n", s);
 }
+
