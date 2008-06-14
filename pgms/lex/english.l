@@ -1,28 +1,14 @@
 %{
-/* word recognizer with symbol table
- * compile with:
- *   lex symboltable.l          
- *   gcc lex.yy.c -o symtab -lfl
-*/
 
-#include <string.h>
-#include <stdio.h>
 #include "y.tab.h"
-
-#define  LOOKUP = 0;
-
-  int state;
-
-  int add_word(int type, char *word);
-  int lookup_word(char *word);
+#define  LOOKUP 0
+int state;
 %}
-
-
 
 %%
 
-\n { state = LOOKUP; } /* at end of line, return to default state */
-\.\n { state = LOOKUP; return 0; } /* end of sentence */
+\n { state = LOOKUP; }
+\.\n { state = LOOKUP; return 0; }
 
 ^verb { state = VERB; }
 ^adj  { state = ADJECTIVE; }
