@@ -8,14 +8,20 @@ require "/opt/mpa/lib/db-strict.pl";
 
 my $dbh = &MysqlConnect();
 
+# use mysql to get the dates in the format we want: 2008-07-02
 my $sth = $dbh->prepare("SELECT date_sub(date(now()), interval 1 day) AS yesterday, date(now()) AS today");
 $sth->execute;
 
 
 my $hash_ref = $sth->fetchrow_hashref;
-my $server = 'https://svn.corp.fortunecity.com';
 
+$sth->finish;
+$dbh->disconnect;
 
+my $server   = 'https://svn.corp.fortunecity.com';
+my $path     = '/home/swain/svn/svn2cl-0.10';
+my $xsltproc = '/usr/bin/xsltproc';
+my $svn      = '/opt/subversion/bin/svn';
 
 # read in configuration for mpa. I don't want to deal with Tim's code,
 # which cannot run under 'use strict' so I whipped this up. -SW
@@ -33,29 +39,32 @@ while (my $line = <CONFIGURATION>) {
 }
 
 my @lines = ();
+my $command = "";
 
-@lines = `svn log -r '{$hash_ref->{yesterday} 09:00:00}':'{$hash_ref->{today} 09:00:00}' $server/mpa_gallery  --xml --verbose | xsltproc svn2cl.xsl - `;
-email_report( 'Gallery changelog', join("", @lines) );
+$command = "$svn log -r '{$hash_ref->{yesterday} 09:00:00}':'{$hash_ref->{today} 09:00:00}' $server/mpa_gallery  --xml --verbose | $xsltproc $path/svn2cl.xsl - ";
+@lines = `$command`;
+email_report( 'Gallery changelog', join("", @lines), $hash_ref->{yesterday} );
 
-@lines = `svn log -r '{$hash_ref->{yesterday} 09:00:00}':'{$hash_ref->{today} 09:00:00}' $server/mpa_products --xml --verbose | xsltproc svn2cl.xsl - `;
-email_report( 'Gifts changelog', join("", @lines) );
+$command = "$svn log -r '{$hash_ref->{yesterday} 09:00:00}':'{$hash_ref->{today} 09:00:00}' $server/mpa_products --xml --verbose | $xsltproc $path/svn2cl.xsl - ";
+@lines = `$command`;
+email_report( 'Gifts changelog', join("", @lines), $hash_ref->{yesterday} );
 
-@lines = `svn log -r '{$hash_ref->{yesterday} 09:00:00}':'{$hash_ref->{today} 09:00:00}' $server/mpa_static   --xml --verbose | xsltproc svn2cl.xsl - `;
-email_report( 'Static changelog', join("", @lines) );
+$command = "$svn log -r '{$hash_ref->{yesterday} 09:00:00}':'{$hash_ref->{today} 09:00:00}' $server/mpa_static   --xml --verbose | $xsltproc $path/svn2cl.xsl - ";
+@lines = `$command`;
+email_report( 'Static changelog', join("", @lines), $hash_ref->{yesterday} );
 
-@lines = `svn log -r '{$hash_ref->{yesterday} 09:00:00}':'{$hash_ref->{today} 09:00:00}' $server/mpa_cart     --xml --verbose | xsltproc svn2cl.xsl - `;
-email_report( 'Cart changelog', join("", @lines) );
+$command = "$svn log -r '{$hash_ref->{yesterday} 09:00:00}':'{$hash_ref->{today} 09:00:00}' $server/mpa_cart     --xml --verbose | $xsltproc $path/svn2cl.xsl - ";
+@lines = `$command`;
+email_report( 'Cart changelog', join("", @lines), $hash_ref->{yesterday} );
 
 
 
-$sth->finish;
-$dbh->disconnect;
 
 sub email_report {
 
-    my ($report_name, $report) = @_;
+    my ($report_name, $report, $date) = @_;
 
-    $conf{subject_line} = "SVN $report_name for " . scalar(localtime());
+    $conf{subject_line} = "SVN $report_name for $date";
     my $smtp = Net::SMTP->new($conf{'smtpserver'}, Debug => 0);
 
     unless ($smtp) {
@@ -65,8 +74,8 @@ sub email_report {
     eval {
         #print("Attempting to send the message...");
         $smtp->mail($conf{sender});
-        $smtp->to('swain@corp.fortunecity.com');
-        #$smtp->cc('fmarte@corp.fortunecity.com');
+        $smtp->to('swain@myphotoalbum.com');
+        #$smtp->cc('fmarte@myphotoalbum.com');
 
         $smtp->data();
 
