@@ -38844,3 +38844,266 @@ Stack trace:
 #2  pingDb() called at [/opt/mpa/lib/mysql_sessions.inc:114]
 [stuff deleted]
 
+
+
+
+#########################################################################
+080617 Tue 17 Jun 2008 12:07:38 PM EDT
+
+Switching to the white keyboard; the Pro is too arthritic. The keys
+jam on the way down.
+
+grant select,insert,update,delete on mpa.mpa_products_groupings   to 'phpmyadmin'@'10.1.1.190' identified by 'shoesoff';
+grant select,insert,update,delete on mpa.osc_products_properties  to 'phpmyadmin'@'10.1.1.190' identified by 'shoesoff';
+grant select,insert,update,delete on mpa.osc_products_description to 'phpmyadmin'@'10.1.1.190' identified by 'shoesoff';
+grant select,insert,update,delete on mpa.osc_products             to 'phpmyadmin'@'10.1.1.190' identified by 'shoesoff';
+
+
+
+
+
+#########################################################################
+080619 Thu 19 Jun 2008 10:15:15 AM EDT
+
+From a previous entry: here's how to calculate "as the crow flies"
+distances with the Google Maps API:
+
+swain$ script/console
+Loading swain environment.
+>> include GeoKit::Geocoders
+=> Object
+>> from = MultiGeocoder.geocode('322 8th Ave, New York NY 10001')
+=> #<GeoKit::GeoLoc:0xb75bb2fc @zip="10001", @state="NY", @precision="unknown", @success=true, 
+@lng=-73.997206, @city="New York", @country_code="US", @lat=40.747449, @street_address="322 8th 
+Ave">
+>> dest = MultiGeocoder.geocode('34-38 75th St, Jackson Heights, NY 11372')
+=> #<GeoKit::GeoLoc:0xb7555114 @zip="11372", @state="NY", @precision="unknown", @success=true, 
+@lng=-73.891407, @city="New York", @country_code="US", @lat=40.752292, @street_address="3438 75th 
+St">
+>> Location.distance_between(from, dest)
+=> 5.55412844927348
+>>
+
+and 
+
+>> class Location
+>> include GeoKit::Mappable
+>> end
+=> Location
+
+
+Thought: the call to Location.distance_between returns instantly. This
+would suggest to me that the distance calculation is done locally
+without a network call; and I can see where once you have
+longitude/latitude, you have all you need to calculate distance.
+
+
+
+
+#########################################################################
+080620 Fri 20 Jun 2008 05:05:29 PM EDT
+
+New delete statements for clearing out old carts.
+
+delete osc_cart from osc_cart left outer join osc_cart_contents on
+osc_cart.cart_id = osc_cart_contents.cart_id where
+osc_cart_contents.cart_contents_id is null;
+
+delete osc_cart_contents_attributes from osc_cart_contents_attributes
+left outer join osc_cart on osc_cart_contents_attributes.sess_key =
+osc_cart.sess_key where osc_cart.sess_key is null;
+
+delete osc_cart_contents from osc_cart_contents left outer join
+osc_cart on osc_cart_contents.cart_id = osc_cart.cart_id where
+osc_cart.cart_id is null;
+
+
+These don't constrain to last_accessed though. But doing a left outer
+join in a delete was the trick solved here.
+
+
+
+#########################################################################
+080623 Mon 23 Jun 2008 11:32:23 AM EDT
+
+Chris off to a bad start. I'm having him fix mysql on staging, which I
+hosed while developing the delete routines I wrote for the cart.
+
+I think going with PATH_INFO the same way I did for the crack pages
+will resolve the subdir issue... that is, gifts wants to access
+everything from the top level, but gallery wants to access everything
+from gifts/. I just toyed with PATH_INFO and $_GET:
+
+<?php
+
+print "Hello, sailor!";
+print "<p>";
+print "Path info: $_SERVER[PATH_INFO]";
+print "<p>";
+print "Query string: $_SERVER[QUERY_STRING]<hr>";
+foreach ($_GET as $key => $val) {
+    print "$key => $val<br>\n";
+}
+?>
+
+with predictable results:
+
+http://crack.myphotodevel.com/delme.php/this/is/a/path?i=am&get=data
+
+
+Hello, sailor!
+
+Path info: /this/is/a/path
+
+Query string: i=am&get=data
+i => am
+get => data
+
+
+So I can use a Front Controller, maybe even products.php, to include
+the right file. This will get rid of nearly everything in gifts/ (all
+the stub files, that is) as well, or else I can just leave them there.
+
+swain@torque:~/public_html/projects/mpa_gallery/gifts$ find . -type f | grep -v svn
+./folded_cards/add_message.php
+./folded_cards/quantity.php
+./folded_cards/pick_border.php
+./folded_cards/pick_border_preview.php
+./folded_cards/temp_inside_card_picture.php
+./cards/gc_add_frame.php
+./cards/gc_quantities.php
+./cards/gc_add_message.php
+./cards/select_photo.php
+./books/book_explain.php
+./books/book_create.php
+./crop_picture.php
+./quantity.php
+./products.php
+./select_photo.php
+./select_frame.php
+
+
+I would shorten them to:
+/fc/add_message
+/fc/quantity
+/c/add_frame
+/c/select_photo
+/b/book_explain
+/b/book_create
+/crop_picture
+/select_frame
+
+and so on. I also realized on Friday my first focus should be getting
+single image products working, since cards books and calendars are all
+up in the air.
+
+Perhaps for uniformity I'd use 't' for top level. Instead of:
+
+/crop_picture
+/select_frame
+
+I'd use:
+
+/t/crop_picture
+/t/select_frame
+
+That would just make parsing the PATH_INFO easier.
+
+
+
+#########################################################################
+080624 Tue 24 Jun 2008 10:18:57 AM EDT
+
+Yesterday, spent considerable time debugging staging's
+configuration. Turns out we need a store rollout as well, what with
+the patches from 435 onwards.
+
+Fixed whoozie's store configuration. Emailed technology asking to test
+staging.
+
+b06c18d4194229a0a8c42fd3e679251d  2008-06-23  10:17:18 :: WARNING: missing file: /mnt/slow/vol01/t/tw/twi/twin/twinc/twincityroyals/albums/album02/half.jpg
+
+Lots of these from Saturday until yesterday. Chris had a bug in his
+spreading stuff; he has symlinks whose names no longer match the
+'slow' volumes they point to... so about eight customer's orders were
+unable to be purchased, 137 signups failed, and maybe a couple other
+things. Chris sent out an email about it. It went undetected until I
+asked Fernando about it on Monday morning; I should have done
+something Sunday when I saw it.
+
+
+
+
+#########################################################################
+080625 Wed 25 Jun 2008 04:50:36 PM EDT
+
+There are product categories and meta categories. Mugs, mousepads,
+tshirts, and ornaments are product categories. Spring, Father's Day,
+"For Her," and so on are meta categories. Or nonphysical categories if
+you prefer.
+
+
+
+
+#########################################################################
+080627 Fri 27 Jun 2008 11:39:34 AM EDT
+
+Chris Allaire. Recruiter. New York Magazine.
+
+
+Wainstead \ [to scott]: db2 doensn't support LIMIT either, iirc
+You say, "dow's rallying"
+You say, "bargain hunters probably"
+Wainstead \ | db2 "select * from blah fetch first 10 rows only"
+You say, "though i tended to:"
+Wainstead \ | db2 "select * from blah" | head -10
+
+
+
+#########################################################################
+080630 Mon 30 Jun 2008 12:57:44 PM EDT
+
+New rollout was completed Friday night around 8pm. There were a lot of
+last minute issues, like the ACSCAN site not working. There's a lot of
+relative image URLs in the CSS still. Books/calendars were broken on
+Saturday morning; Chris fixed them that afternoon. Crack pages were
+broken.
+
+
+
+
+#########################################################################
+080701 Tue 01 Jul 2008 02:22:46 PM EDT
+
+After a long detour today into Veracity land, I'm done. Chris is
+moving Plookfish to /opt/mpa_gallery/current, like everywhere else. I
+had to rejigger regenerate-feeds.php to match. Ran into some issues
+with init.php being loaded twice due to gallery.conf being loaded more
+than once, resulting in $GALLERY_BASEDIR being redefined and init.php
+being loaded again from a different place, resulting in a fatal error
+when an attempt was made to redefine stderr(). So all that sorted out,
+and it won't work on production because Chris still hasn't moved
+plookfish, it seems.
+
+We did a standup meeting today for the first time in ages. Got into a
+tiff with Hanley who thought I was making a personal attack on her
+when I pleaded for the extermination of spacer.gif. YOU ARE NOT YOUR
+CODE, I should have thought to told her.
+
+
+
+
+#########################################################################
+080702 Wed Jul  2 13:28:47 2008
+
+Solved the bug with frames: had a stupid bug in preg_match. Duh.
+
+Wrote a cron job to mail the ChangeLog for four projects out of SVN.
+
+Been researching sessions in Gallery and the Cart. Gallery has a lot
+of pre-php4 cruft still. I commented session.php. The store has a
+wonky setup of: one cookie for the cart, another for the session. The
+cart can outlast the session; being logged in or out is a session
+thing.
+
+
