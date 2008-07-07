@@ -125,6 +125,7 @@ while (my $chunk = <INFILE>) {
 
     die "No url.\n"     unless $URL;
     die "No request.\n" unless $request_ar;
+    next if ($URL =~ m/jpg$|gif$|js$/);
 
     # build our hash, which will be placed in the @conversation array
 
@@ -161,7 +162,10 @@ print "Doing lhh script: ", $ARGV[0], "\n";
 foreach my $hashref (@conversation) {
 
     # Ignore certain URLs
-
+    next if $hashref->{URL} =~ /revsci/;
+    next if $hashref->{URL} =~ /targetingmarketplace/;
+    next if $hashref->{URL} =~ /tribalfusion/;
+    next if $hashref->{URL} =~ /yieldmanager/;
     next if $hashref->{URL} =~ /google/;
     next if $hashref->{URL} =~ /mozilla/;
     next if $hashref->{URL} =~ /hitslink/;
