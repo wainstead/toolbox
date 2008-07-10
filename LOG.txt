@@ -39107,3 +39107,55 @@ cart can outlast the session; being logged in or out is a session
 thing.
 
 
+
+
+
+#########################################################################
+080708 Tue 08 Jul 2008 11:31:30 AM EDT
+
+Hubris.
+
+I made many large changes to Gifts and Gallery, and lo, nothing
+worked. I should have used stepwise refinement.
+
+Worked on the damn SVN report script again. I think it will do the
+right thing now.
+
+The really nice thing about moving all the static content out, and
+separating gifts and gallery, is the projects are so lightweight now I
+can easily check out multiple copies.
+
+It seems PHP casting circumvents SQL injection attacks:
+
+#!/opt/php5/bin/php
+<?php
+
+$x = "'; delete * from tablename; '42";
+print "hello, sailor! " . (int)$x . "\n";
+
+?>
+
+Output:
+
+hello, sailor! 0
+
+
+
+
+#########################################################################
+080710 Thu 10 Jul 2008 10:49:18 AM EDT
+
+Yesterday: endless interruptions and distractions.
+
+Setting include path:
+
+set_include_path(
+	$_SERVER['DOCUMENT_ROOT'].'/ecard' 
+	. PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'].'/ajax/itreelib' 
+	. PATH_SEPARATOR . get_include_path()
+);
+
+I'm going take the plunge here and start using the include path
+more. I'm working on an interface which is defined in /opt/mpa/lib; I
+want to use my local copy so I'll set it in the conditionals in
+gallery.conf.

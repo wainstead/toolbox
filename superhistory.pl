@@ -40,17 +40,3 @@ foreach $command (sort keys %commands) {
 }
 
 
-
-
-__END__
-
-# $Log: superhistory.pl,v $
-# Revision 1.4  2005/01/31 23:46:39  swain
-# Generic home directory references.
-#
-# Revision 1.3  2004/08/24 19:00:53  swain
-# Generalized how we refer to files in our home directory (via $ENV{HOME})
-#
-# Revision 1.2  2003/09/02 19:44:36  swain
-# added id and log
-#
