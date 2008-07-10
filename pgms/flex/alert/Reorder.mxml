@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
+<mx:Script>
+<![CDATA[
+private function moveToTheBeginning():void {
+
+// retrieve the index of the last child. child indicees are zero-based
+var lastChildIndex:int = tileOfLabels.numChildren - 1;
+
+// get a ref to the ast child
+var child:DisplayObject = tileOfLabels.getChildAt(lastChildIndex);
+
+// change the index of the child
+tileOfLabels.setChildIndex(child, 0);
+}
+]]>
+</mx:Script>
+
+<mx:Tile id="tileOfLabels">
+<mx:Label text="1"/>
+<mx:Label text="2"/>
+<mx:Label text="3"/>
+<mx:Label text="4"/>
+<mx:Label text="5"/>
+<mx:Label text="6"/>
+<mx:Label text="7"/>
+</mx:Tile>
+<mx:Button label="Move to the beginning" click="moveToTheBeginning()"/>
+</mx:Application>

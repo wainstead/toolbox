@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
+<mx:Script>
+<![CDATA[
+private function resizeImage():void {
+foo.load('http://images.myphotodevel.com/s/sw/swa/swai/swain/swain/albums/album32/P4010017.sized.jpg');
+foo.measuredHeight = 100;
+foo.measuredWidth  = 150;
+}
+]]>
+</mx:Script>
+<mx:Image id="foo" autoLoad="false"/>
+<mx:Button label="Load Image" click="resizeImage()"/>
+</mx:Application>

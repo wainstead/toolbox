@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" initialize="addItems()">
+<mx:Script>
+<![CDATA[
+
+import mx.controls.Button;
+import mx.controls.TextInput;
+
+private function addItems():void {
+        var ti:TextInput = new TextInput();
+        this.addChild(ti);
+
+        var btn:Button = new Button();
+        btn.label = "Submit"
+        this.addChild(btn);
+}
+]]>
+</mx:Script>
+</mx:Application>

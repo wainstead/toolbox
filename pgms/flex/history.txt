@@ -1,0 +1,77 @@
+   34  cd flex
+   35  ls
+   36  mkdir alert
+   37  cd alert
+   38  export PATH=$PATH:$HOME/flexsdk/bin
+   39  ls
+   40  mxmlc Alert.mxml
+   41  ls
+   42  mxmlc TwoElements.mxml
+   43  open TwoElements.swf 
+   44  ls
+   45  open TwoElements.swf 
+   46  mxmlc TwoASKids.mxml
+   47  mxmlc TwoASKids.mxml
+   48  mxmlc TwoASKids.mxml
+   49  open ./TwoASKids.swf 
+   50  mxmlc Reorder.mxml
+   51  open Reorder.swf 
+   52  mxmlc Image.mxml
+   53  mxmlc Image.mxml
+   54  open Image.swf 
+   55  cd ..
+   56  mv ~/Desktop/image_scale_php.zip .
+   57  unzip image_scale_php.zip 
+   58  ls
+   59  mkdir thumbnailer
+   60  mv __MACOSX image_scale_php image_scale_php.zip  thumbnailer/
+   61  cd thumbnailer/
+   62  ls
+   63  ls -l
+   64  ls __MACOSX/
+   65  cd image_scale_php
+   66  ls
+   67  ls -l
+   68  find .
+   69  ls -l *mxml
+   70  cd
+   71  cd Sites/projects/flex/
+   72  l
+   73  ls
+   74  cd alert
+   75  ls
+   76  ls -ltr *mxml
+   77  grep function *mxml
+   78  mxmlc Image.mxml
+   79  mxmlc Image.mxml
+   80  mxmlc Image.mxml
+   81  ls -ltr
+   82  open Image.swf
+   83  mxmlc Image.mxml
+   84  open Image.swf
+   85  mxmlc Image.mxml
+   86  open Image.swf
+   87  cd ..
+   88  mv ~/Desktop/moock_imageviewer.zip .
+   89  mkdir imageviewer
+   90  mv moock_imageviewer.zip imageviewer/
+   91  cd imageviewer/
+   92  ls
+   93  unzip moock_imageviewer.zip 
+   94  ls
+   95  cd moock_imageviewer
+   96  ls -lR
+   97  find . -type f
+   98  find . -name \*.doc
+   99  open ./eas3_imageviewer/docs/take1_changes.doc
+  100  open ./eas3_imageviewer/docs/new in v3.doc
+  101  open ./eas3_imageviewer/docs/new in v3.doc
+  102  open './eas3_imageviewer/docs/new in v3.doc'
+  103  pwd
+  104  cd ..
+  105  cd ..
+  106  ls
+  107  pwd
+  108  cd imageviewer/
+  109  ls
+  110  cd moock_imageviewer
