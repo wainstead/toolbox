@@ -39159,3 +39159,31 @@ I'm going take the plunge here and start using the include path
 more. I'm working on an interface which is defined in /opt/mpa/lib; I
 want to use my local copy so I'll set it in the conditionals in
 gallery.conf.
+
+So: contexts are off and running. I just committed to the two new
+branches the code that routes the user to either upload or select
+photo.
+
+Took a long detour into looking at the SWF Upload thing Chris and
+Fernando are working on... handheld Fcat until he got the debugger
+version of the player installed; found out how the swfupload app is
+built (open source Windows app)... it's all there. Chris was just
+spouting off to Peter how great the iPhone app store is, and how we
+could have an app in a week for it.
+
+After another long detour into how images are processed by Gallery:
+
+1) Most of the action still takes place in util.php. The only barrier
+there is the use of global $gallery, maybe. (This can be parameterized
+however).
+
+2) I should focus on factoring out the $gallery stuff in the rest of
+gifts and isolating the $file in a new class. Get gifts to work end to
+end first with Gallery, then build out upload_photo.php.
+
+---
+
+OK, branches merged in to trunk, everything good. I got Gallery out of
+quantity.php! We can probably do single photo gifts in a few more
+days.
+
