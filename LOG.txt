@@ -39187,3 +39187,322 @@ OK, branches merged in to trunk, everything good. I got Gallery out of
 quantity.php! We can probably do single photo gifts in a few more
 days.
 
+
+
+
+#########################################################################
+080714 Mon 14 Jul 2008 11:41:11 AM EDT
+
+AIM IM with chrisatfcity.
+10:26 AM
+chrisatfcity: I need you to disable downloads immediately for all users on fast02
+chrisatfcity: uploads
+Steve Wainstead: ok
+chrisatfcity: we have something filling up space on here... and i need to find it
+chrisatfcity: its at 100% again with NO available space.
+Steve Wainstead: did you have a look at the opp servers?
+Steve Wainstead: i think we just re-enabled something with movies? or i heard wrong
+chrisatfcity: Doesn't matter that all occurs on the slow volumes
+chrisatfcity: wtf is this
+chrisatfcity: /opt/video/bin/mencoder /mnt/fast/vol01/l/lo/lor/lori/lorin/lorintim/videoTmp/01325c5c63426791d336ba96fc0df990 -ofps 25 -o /mnt/fast/vol01/l/lo/lor/lori/lorin/lorintim/videoTmp/01325c5c634267
+chrisatfcity: goddamnit
+chrisatfcity: video processing?? on fast..
+chrisatfcity: argh'
+Steve Wainstead: i take that to be a rhetorical question :)
+chrisatfcity: goddamnit
+10:30 AM
+Steve Wainstead: i'll need a list of users who are on fast02
+Steve Wainstead: we disable uploadingfor them by not letting them login
+chrisatfcity: we'll get you the 3 letters.
+chrisatfcity: It'll take to long to scan the directories.
+chrisatfcity: And besides im doing that already looking for space.
+10:35 AM
+chrisatfcity: mike should be getting it to you any second now.
+Steve Wainstead: ok
+Steve Wainstead: turning it on will require pushing the gallery.conf to all the servers, i believe
+Steve Wainstead: also
+chrisatfcity: not a problem
+Steve Wainstead: /opt/mpa/conf/out-of-service.php
+chrisatfcity: not gallery.conf tho?
+Steve Wainstead: when i've cooked it up
+chrisatfcity: yea that
+Steve Wainstead: yes
+chrisatfcity: oh and enable it in conf yea
+Steve Wainstead: gallery.conf too has to be pushed
+10:45 AM
+Steve Wainstead: ok emailed the php file to you
+Steve Wainstead: push that to /opt/mpa/conf/
+chrisatfcity: just put it in conf
+chrisatfcity: its easuer
+chrisatfcity: easier\
+10:50 AM
+Steve Wainstead: and set SERVICE_OUTAGE to true
+chrisatfcity: in the central conf
+Steve Wainstead: i already ssnt it though
+chrisatfcity: doesn't help mke
+chrisatfcity: now i have to scp to bastion then to mdb thencopy it in place
+chrisatfcity: sheesh
+Steve Wainstead: well i have to do the same thing ???
+chrisatfcity: well you were making the list i figured you
+chrisatfcity: 'd be making it on mdb-2
+chrisatfcity: and dropping it in the centralized conf
+Steve Wainstead: not when he emails me the list :)
+Steve Wainstead: i just made it locally
+chrisatfcity: cut and paste is amazing
+chrisatfcity: how?
+chrisatfcity: you don't have a local DB
+Steve Wainstead: mdb2 good?
+chrisatfcity: im doing it
+Steve Wainstead: ok
+10:55 AM
+Steve Wainstead: 4,316 uploads from 730 to 845
+Steve Wainstead: working on checking the files now
+11:05 AM
+Steve Wainstead: 116 users affected
+chrisatfcity: lovely
+11:10 AM
+chrisatfcity: how many users are going to be affected when i enable the outofservice?
+chrisatfcity: shit shit shit... this doesn't disable signups.
+chrisatfcity: fucker
+11:15 AM
+chrisatfcity: what's the difference between this
+chrisatfcity: // selective service outages. At the moment you must define an
+// associative array element in out-of-service.php. Set to true to
+// activate service outages.
+define('SERVICE_OUTAGE', true);
+chrisatfcity: and this
+chrisatfcity: // don't let users log in who are listed in out-of-service.php
+define('PARTIAL_DISABLED_LOGINS', false);
+Steve Wainstead: the latter takes full usernames
+Steve Wainstead: the former just three letter codes
+Steve Wainstead: yes the former is going to lock out a lot of unaffected users
+Steve Wainstead: you are the sole designer of all these outage types
+Steve Wainstead: i have only ever coded what you've asked for
+chrisatfcity: You are the implenter
+chrisatfcity: implementer
+Steve Wainstead: and we go through this whith every emergency
+chrisatfcity: and it sucks
+Steve Wainstead: you can't shut things off the way you want and you blame me
+chrisatfcity: we need a better method
+Steve Wainstead: yes, you say that too
+chrisatfcity: I can't shut shit off
+Steve Wainstead: and you vow to set a meeting
+chrisatfcity: everything is disjointed.
+Steve Wainstead: and flesh out the emergencies we need to meet
+Steve Wainstead: and you never do
+chrisatfcity: Because we NEVER have time.
+chrisatfcity: always something more important
+Steve Wainstead: you have plenty of time to surf reddit and set up your iphone on company time. and yes, i know, "fuck you steve"
+chrisatfcity: Exactly
+Steve Wainstead: all production sites are whitescreening at the moment
+chrisatfcity: stop being wholly than art hou
+11:20 AM
+chrisatfcity: Yes because you gave me a php script with errors
+chrisatfcity: i'm fixing it
+chrisatfcity: and fuckj you steve
+chrisatfcity: this is your app
+Steve Wainstead: aha
+Steve Wainstead: mike's script contains garbage. mea culpa. i should have checked it.
+chrisatfcity: i don't have time for petty bickering
+chrisatfcity: touche
+Steve Wainstead: this isn't petty bickering
+11:25 AM
+Steve Wainstead: i'll set the goddamn meeting this time
+chrisatfcity: yes it is ...
+Steve Wainstead: i'm tired of you giving me shit for this
+Steve Wainstead: when it's all your fault
+chrisatfcity: I'm not giving you shit
+chrisatfcity: and it's NO ONE fault
+chrisatfcity: jesus stop pointing fingers..
+chrisatfcity: lame
+chrisatfcity: please update jessys message
+11:30 AM
+Steve Wainstead: done
+chrisatfcity: thx
+chrisatfcity: users are still managing to login or are logged in.
+chrisatfcity: can we kick off just the users who are affected?
+Steve Wainstead: sure, just need a list of usernames
+chrisatfcity: i don't have that
+chrisatfcity: we have the list of 3 level deep
+chrisatfcity: that's it
+Steve Wainstead: we can put the whole site into maint mode
+chrisatfcity: no
+chrisatfcity: I have NO ideas how long it's going to be until we get space back
+Steve Wainstead: then the list of corrupted sites is going to go up
+chrisatfcity: why?
+Steve Wainstead: because they will continue to upload
+chrisatfcity: how?
+chrisatfcity: we disabled then?
+Steve Wainstead: you can take teh oop servers out
+Steve Wainstead: what would that do?
+chrisatfcity: Hell no
+Steve Wainstead: you said they were still logging in
+chrisatfcity: we don't monitor uploads.
+Steve Wainstead: i.e. the out-of-service is not working
+chrisatfcity: if we did it like video processing where we logged..
+chrisatfcity: wecould just reprocess.
+Steve Wainstead: i just tested a site in out-of-service.php
+Steve Wainstead: and was directed to maint.shtml
+Steve Wainstead: so it's working
+chrisatfcity: awesome
+chrisatfcity: ugh i didn't update that page.
+Steve Wainstead: oh, it redirects them from the get go
+Steve Wainstead: interesting
+Steve Wainstead: my site works
+Steve Wainstead: you should be golden for the time being
+chrisatfcity: [Mon Jul 14 11:39:39 2008] [error] [client 65.222.217.212] PHP Warning: fopen(/mnt/fast/vol01/f/fa/fai/fait/faith/faithandfriends//albums/album13/photos.dat.2) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No space left on device in /opt/mpa_gallery/current_R_2008_07_01_AdditionalLightBoxes/platform/fs_unix.php on line 74
+11:40 AM
+Steve Wainstead: yeah but i can't tell what volume that is since it's a symlink
+Steve Wainstead: 'FAI' is not in the list from Mike
+chrisatfcity: tell him that
+
+
+AIM IM with MSG <yhavesns>.
+11:42 AM
+Steve Wainstead: you may have missed some usernames on vol04
+Steve Wainstead: FAI is not in the list. apparently there's some fai's on vol04.
+MSG: thats just fast03
+MSG: i didnt do 04
+Steve Wainstead: er
+Steve Wainstead: you better coordinate with chris on what needs to be listed, because I don't know
+MSG: yea, its just 02 and 03
+MSG: 02 is full and 03 is almost full
+
+
+Steve Wainstead: he gave me the list to 02 and 03
+Steve Wainstead: so... there you are
+11:45 AM
+chrisatfcity: dyslexia on my part
+
+
+---
+
+So: from the start of the day I was looking into why the changelogs
+were so borked (SVN logs in ChangeLog format we get each day). Really,
+why not just munge the XML ourselves? (Well, because we wanted an off
+the shelf solution from the get-go, so I tried the XSLT thing from
+svn2cl.) Why SVN returns dates prior to the range I specify, I dunno.
+
+But the above conversation shows that Chris's crisis was taking up
+time this morning, and finally by noon I ordered lunch and mucked
+around a bit more with listing the missing sized/thumbnails. Not too
+bad really: I think uploads go to the user's tmp dir and then are
+erased after being moved to the slow storage. So for the most part
+people just couldn't upload. Why did vol02 fill up? (Or 04? Who knows
+which one he meant in the end).
+
+It turns out when he re-OS'd mdb-1 he didn't update the crontab on
+mdb-2, so the script that flushes user's tmp directories was not
+running. Typical sloppy systems administration.
+
+A thought over the weekend: can we do this:
+
+SelectedPhotoBaseClass: has common methods
+DerivedClass: also implements an interface? Let's test.
+
+#!/opt/php5/bin/php
+<?php
+
+interface FooInt {
+    function IntOne();
+    function IntTwo();
+}
+
+class FooBase {
+    function __construct() {}
+    function FBOne() { print "..  One FISHWICH coming up!!\n"; }
+}
+
+/**
+ * Subclass of FooBase implementing an interface
+ */
+class FooChild extends FooBase implements FooInt {
+    function __construct() {
+        parent::__construct();
+    }
+
+    function IntOne() { print "Hello.  Just walk along and try NOT to think about your INTESTINES being almost FORTY YARDS LONG!!\n"; }
+    function IntTwo() { print "Did I SELL OUT yet??\n"; }
+}
+
+$fc = new FooChild();
+$fc->IntOne();
+$fc->FBOne();
+
+?>
+
+Output:
+
+swain@torque:~/tmp/testphp$ ./mixed.php
+Hello.  Just walk along and try NOT to think about your INTESTINES being almost FORTY YARDS LONG!!
+..  One FISHWICH coming up!!
+
+
+So yes, I don't have to choose between a base class and an interface.
+
+
+
+
+
+#########################################################################
+080721 Mon 21 Jul 2008 12:04:00 PM EDT
+
+Shipping should probably just be set on a per-product basis; no
+categories. It might mean a larger table, but that's no big deal.
+
+The difficulty, sorta, lies in the many permutations of US mail,
+airmail, second day, Canada, and so forth. Then for each: first item,
+each additional item.
+
+I think I could also create the new design for shipping and only move
+posters to it, at first; since it's a matter of tweaking the classes.
+
+Well.... my work on "autotest," which lives in /home/www, is now out
+of date. Once again, LHHReplay stuff goes stale. Oh well. There's
+really no way around that.
+
+I managed last week to convice Chris of the need to change the rollout
+procedure. Well, I told him I need help solving a problem: that I have
+not effectively managed how development is done, and my solution was
+to more closely manage integration on the development box. But what
+this effectively does, is cede staging to ops entirely, and I'll just
+give them tag or branch names to roll out. Right now I've been testing
+HEAD on products, gallery and cart (and static) and everything looks
+good. Real good, in fact. Jessy is now rushing to finish something,
+and then she and I are going to sit together and test everything. I
+want to use that time to emphasize that we need to plan the releases
+in a way that takes each project into account; and that work done by
+two people might conflict with the rollouts, and we can avoid any
+pains that way.
+
+Over the weekend we had troubles with the store. In part, because
+Qualex was hammering us with order status reports (two a second), and
+the qualex log file wouldn't open (shared storage issues); this caused
+a lot of hung Apache children, which necessitated a server reboot,
+being unkillable even with -9 as root. From 3pm to 5pm Chris fought
+with this while I did a bit of help, and finally osc-2 was happy after
+I told it to log qualex xml to /tmp. This morning I changed it back
+and that cause child processes to start hanging again; fixed that in
+short order. The catch was, config.pl is on the shared storage... and
+the log file was in /tmp on osc-2 of course. I failed to take this
+into account, looking at /tmp on mdb-2 and thinking the config file
+change hadn't mattered.
+
+
+
+
+
+#########################################################################
+080723 Wed 23 Jul 2008 06:54:32 PM EDT
+
+Long day for the rollout. Geez. But it got done, and largely under the
+new process. Spent more time on testing and debugging after that;
+there were a bunch of PHP notices showing up in the log files, driving
+Chris crazy. Fixed all that. Had to test out using "return" in a file,
+which worked.
+
+The fastest way to get GMC going is to brute force it: the
+SelectedPhoto class should just set every possible field up front and
+be done with it. I have maybe an hour's work to finish up on single
+photo stuff (all that's left is folded cards) and then I just need to
+cook up the file upload stuff.
