@@ -39506,3 +39506,250 @@ SelectedPhoto class should just set every possible field up front and
 be done with it. I have maybe an hour's work to finish up on single
 photo stuff (all that's left is folded cards) and then I just need to
 cook up the file upload stuff.
+
+
+
+#########################################################################
+080724 Thu 24 Jul 2008 06:15:05 PM EDT
+
+cp /mnt/slow/vol01/s/sw/swa/swai/swain/swain/albums/culturehands/44466765701_G.jpg /opt/mpa/custom-sites/gifts/tmp/
+cp /mnt/fast/vol01/s/sw/swa/swai/swain/swain/albums/culturehands/44466765701_G.sized.jpg /opt/mpa/custom-sites/gifts/tmp/
+
+
+
+
+#########################################################################
+080725 Fri 25 Jul 2008 02:02:09 PM EDT
+
+commentText in photos.dat indicates a comment. The number of them
+indicates how many.
+
+Automatic renewal was launched on February 13th, 2008. Since we scope
+this to purchase date, the numbers should be accurate.
+
+mysql> select products_id, constant_name from osc_products where constant_name like '%CLUB%';
++-------------+-----------------+
+| products_id | constant_name   |
++-------------+-----------------+
+|         154 | AUTORENEW_CLUB  |
+|         148 | CLUB_MEMBERSHIP |
+|         151 | CLUB_RENEWAL    |
++-------------+-----------------+
+3 rows in set (0.00 sec)
+
+
+New members only as of 2/13/08:
+
+mysql> select auto_renew, count(auto_renew) from mpa_club_memberships where join_date > '2008-02-13 00:00:00' group by auto_renew;
++------------+-------------------+
+| auto_renew | count(auto_renew) |
++------------+-------------------+
+| n          |              1438 |
+| y          |              1891 |
++------------+-------------------+
+2 rows in set (0.04 sec)
+
+
+All orders placed containing either club membership or club renewal
+since 2/13/08:
+
+mysql> select count(*) from osc_orders o, osc_orders_products op where o.date_purchased > '2008-02-13 00:00:00' and o.orders_id = op.orders_id and op.products_id in (154, 148, 151);
++----------+
+| count(*) |
++----------+
+|     5326 |
++----------+
+1 row in set (4.05 sec)
+
+
+The same, by product ID:
+
+mysql> select op.products_id, count(op.products_id) from osc_orders o, osc_orders_products op where o.date_purchased > '2008-02-13 00:00:00' and o.orders_id = op.orders_id and op.products_id in (154, 148, 151) group by op.products_id;
++-------------+-----------------------+
+| products_id | count(op.products_id) |
++-------------+-----------------------+
+|         148 |                  3392 |
+|         151 |                  1934 |
++-------------+-----------------------+
+2 rows in set (1.85 sec)
+
+
+Breakdown by anonymous purchases (who cannot be auto_renew):
+
+mysql> select op.products_id, count(op.products_id) from osc_orders o, osc_orders_products op where o.date_purchased > '2008-02-13 00:00:00' and o.orders_id = op.orders_id and op.products_id in (154, 148, 151) and customers_id = 0 group by op.products_id;
++-------------+-----------------------+
+| products_id | count(op.products_id) |
++-------------+-----------------------+
+|         148 |                   548 |
+|         151 |                    31 |
++-------------+-----------------------+
+2 rows in set (0.84 sec)
+
+
+
+
+Breakdown by people with store accounts:
+
+mysql> select op.products_id, count(op.products_id) from osc_orders o, osc_orders_products op where o.date_purchased > '2008-02-13 00:00:00' and o.orders_id = op.orders_id and op.products_id in (154, 148, 151) and customers_id <> 0 group by op.products_id;
++-------------+-----------------------+
+| products_id | count(op.products_id) |
++-------------+-----------------------+
+|         148 |                  2844 |
+|         151 |                  1903 |
++-------------+-----------------------+
+2 rows in set (1.57 sec)
+
+
+
+Build a temp table of all the data for crunching:
+
+mysql> create temporary table swain_arc (select op.products_id, cm.auto_renew from osc_orders o, osc_orders_products op, mpa_club_memberships cm where cm.osc_customers_id = o.customers_id and  o.date_purchased > '2008-02-13 00:00:00' and o.orders_id = op.orders_id and op.products_id in (154, 148, 151) and customers_id <> 0 );
+Query OK, 4487 rows affected (3 min 43.63 sec)
+Records: 4487  Duplicates: 0  Warnings: 0
+
+
+
+auto_renews and opt-outs:
+
+mysql> select concat(products_id, auto_renew) as concatted, count(concat(products_id, auto_renew)) from swain_arc group by concatted;
++-----------+----------------------------------------+
+| concatted | count(concat(products_id, auto_renew)) |
++-----------+----------------------------------------+
+| 148n      |                                    627 |
+| 148y      |                                   1916 |
+| 151n      |                                    250 |
+| 151y      |                                   1694 |
++-----------+----------------------------------------+
+4 rows in set (0.02 sec)
+
+
+
+Note the differences here: the first scopes join_date = date_updated.
+
+mysql> select auto_renew, count(auto_renew) from mpa_club_memberships where join_date = date_updated and (join_date > '2008-02-13 00:00:00' OR date_updated > '2008-02-13 00:00:00') group by auto_renew;
++------------+-------------------+
+| auto_renew | count(auto_renew) |
++------------+-------------------+
+| n          |              1425 |
+| y          |              1888 |
++------------+-------------------+
+2 rows in set (0.03 sec)
+
+
+
+
+mysql> select auto_renew, count(auto_renew) from mpa_club_memberships where  (join_date > '2008-02-13 00:00:00' OR date_updated > '2008-02-13 00:00:00') group by auto_renew;
++------------+-------------------+
+| auto_renew | count(auto_renew) |
++------------+-------------------+
+| n          |              1677 |
+| y          |              3550 |
++------------+-------------------+
+2 rows in set (0.04 sec)
+
+
+
+
+Joined prior to 2/13/08:
+
+mysql> select auto_renew, count(auto_renew) from mpa_club_memberships where  (join_date < '2008-02-13 00:00:00' AND  date_updated > '2008-02-13 00:00:00') group by auto_renew;
++------------+-------------------+
+| auto_renew | count(auto_renew) |
++------------+-------------------+
+| n          |               236 |
+| y          |              1661 |
++------------+-------------------+
+2 rows in set (0.04 sec)
+
+
+
+
+
+#########################################################################
+080801 Fri 01 Aug 2008 05:10:34 PM EDT
+
+Worked out quite a few details for file uploads. A lot has happened in
+PHP since Gallery was first written. The bulk of this comes from the
+PHP online manual, plus user annotations.
+
+<!-- The data encoding type, enctype, MUST be specified as below -->
+     <form enctype="multipart/form-data" action="http://swainhome.myphotodevel.com/recv.php" method="POST">
+
+     <!-- MAX_FILE_SIZE must precede the file input field -->
+     <input type="hidden" name="MAX_FILE_SIZE" value="12582912" />
+
+     <!-- Name of input element determines name in $_FILES array -->
+     Send this file: <input name="userfile" type="file" />
+
+     <input type="submit" value="Send File" />
+     </form>
+
+
+     <?php
+
+     if (count($_FILES) == 0) return; // no files uploaded
+
+switch ($_FILES['userfile']["error"]) {
+ case UPLOAD_ERR_OK:
+     break;
+ case UPLOAD_ERR_INI_SIZE:
+     throw new Exception("The uploaded file exceeds the upload_max_filesize directive (".ini_get("upload_max_filesize").") in php.ini.");
+     break;
+ case UPLOAD_ERR_FORM_SIZE:
+     throw new Exception("The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.");
+     break;
+ case UPLOAD_ERR_PARTIAL:
+     throw new Exception("The uploaded file was only partially uploaded.");
+     break;
+ case UPLOAD_ERR_NO_FILE:
+     throw new Exception("No file was uploaded.");
+     break;
+ case UPLOAD_ERR_NO_TMP_DIR:
+     throw new Exception("Missing a temporary folder.");
+     break;
+ case UPLOAD_ERR_CANT_WRITE:
+     throw new Exception("Failed to write file to disk");
+     break;
+ default:
+     throw new Exception("Unknown File Error");
+ }
+
+// see http://us3.php.net/getimagesize
+
+$info = getimagesize($_FILES['userfile']['tmp_name']);
+
+
+
+// for ($x = 0; $x < 7; $x++) {
+//     print "<li>$x: $info[$x]";
+// }
+
+// element 2 of the return result of getimagesize is the file type; see:
+// http://us2.php.net/manual/en/function.exif-imagetype.php
+
+switch ($info[2]) {
+ case IMAGETYPE_GIF:  echo "GIF file.<p>"; break;
+ case IMAGETYPE_JPEG: echo "JPG file.<p>"; break;
+ case IMAGETYPE_PNG:  echo "PNG file.<p>"; break;
+ default: echo "Illegal file type."; return;
+ }
+
+
+$uploaddir = './uploads/';
+$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+
+echo '<pre>';
+if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+    echo "File is valid, and was successfully uploaded.\n";
+ } else {
+    echo "Possible file upload attack!\n";
+}
+
+echo 'Here is some more debugging info:';
+print_r($_FILES);
+
+print "</pre>";
+
+?>
+
+
