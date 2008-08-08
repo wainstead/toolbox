@@ -39753,3 +39753,86 @@ print "</pre>";
 ?>
 
 
+
+
+
+#########################################################################
+080804 Mon 04 Aug 2008 06:28:07 PM EDT
+
+Longish meeting today via phone with some former Rastar guy, who wants
+to do books with the national parks. The idea seems OK, but I think
+the development costs might make it infeasible. (Not feasible?)
+
+I am behind the ball on the Signature Wines thing. Did some toying
+with a script, the idea being: pass the session key to them, so they
+can send it back. Doesn't look like I can "assume" that session. I'll
+have to write a parsing class.
+
+But I wound up on a side track: replacing all of $gallery->session
+with $_SESSION. That led to some weird side effects, and I learned svn
+revert -R . to blow away all changes.
+
+
+
+#########################################################################
+080807 Thu 07 Aug 2008 02:59:01 PM EDT
+
+This is the link I crafted to test the Signature Wines thing.
+
+Index: products.php
+===================================================================
+--- products.php	(revision 1759)
++++ products.php	(working copy)
+@@ -514,4 +514,5 @@
+ //
+ //***************************************************************************************
+ require_once("{$GIFTS_BASEDIR}inc/$appContext/footer.inc") ?>					
+-        
+\ No newline at end of file
++<hr>
++<a href="http://swainhome.myphotodevel.com/signature.php?sk=<?php echo $_COOKIE['PHPSESSID']; ?>">test link for signature wines</a>
+
+
+Jessy and I have a slight design difference. She wants to toss out
+upload_photo.php and make select_photo.php do either task: upload a
+photo (if GMC) or show albums (if Gallery). This is unfortunate, since
+select_photo.php contains a lot of Gallery code. So that needs
+fixing. But she doesn't want to have to fix up upload_photo.php, which
+I understand.
+
+Meanwhile, I will have to introduce context classes to the cart as
+well. The thumbnails come from different places; the store will only
+work with Gallery at the moment. In fact, the five levels deep stuff
+is wired into the Product base class.
+
+
+
+
+
+#########################################################################
+080808 Fri 08 Aug 2008 01:23:50 PM EDT
+
+For the cart, I opted to just do "if gifts: else:" for the three spots
+where the code had to change. It worked fine. This is not a
+sustainable approach, of course. I wonder if templating can do a sort
+of inheritence scheme.
+
+So: done! OFS can build orders for Gifts. I had to make a few cheezy
+hacks, which I will now detail, and their proper solutions:
+
+1) in quantity.php, I modified the stowstring passed to the store. It
+contains the subpath, since a gift user's stuff is in a subdir named
+after their session.
+
+2) Modified both Photo classes to match this call
+
+3) Modified a few methods in gift.class.php; here is where the hacks
+came in. I just test the subdomain. And:
+
+4) Also test the subdomain in template.php to leave out a couple of
+elements.
+
+For 3 and 4, there should be a Gallery class and a GMC class to return
+the proper values; or a solution similar, since that might not be the
+perfect fit.
+
