@@ -39836,3 +39836,1128 @@ For 3 and 4, there should be a Gallery class and a GMC class to return
 the proper values; or a solution similar, since that might not be the
 perfect fit.
 
+
+
+
+#########################################################################
+080811 Mon 11 Aug 2008 03:51:16 PM EDT
+
+Well, wanted to work on shipping today, but... it being
+Monday... started the day with a very long train ride, due to an F
+being taken out of service. I wanted to work on shipping today, but
+instead got very involved in readying the next release of the store
+code. Had to redo some of my staging tests; had to write up the whole
+thing for Chris. It all seems to test out, so I think we're good.
+
+I helped Jessy and Dylan add prices from the database to their PHP
+code; added a few lines to GiftDB to define constants for starting
+price for a category too.
+
+I also put the string into Qualex_ShippingPart.pm. I think it will
+work as-is, but need to test it.
+
+Woops. Posted orders to Qualex's test facility as well as Zaah. Hrmm.
+
+
+
+
+
+#########################################################################
+080812 Tue 12 Aug 2008 10:07:32 AM EDT
+
+Yup, got a terse email from Thomas at Kodak. Oh well.
+
+I need to get a simple API doc written, if only in Twiki, for
+Signature Wines.
+
+
+
+
+#########################################################################
+080813 Wed 13 Aug 2008 03:30:40 PM EDT
+
+mysql> SELECT ui.*, p.state, p.city FROM users u, userinfo ui left outer join mpa_profile p on ui.userid=p.userid WHERE email_address = 'mcmickmick@test.myphotodevel.com' AND password = '112233' AND u.userid=ui.userid;
++--------+-----------+----------+--------+------------+---------+------------+--------+-----+---------------+---------------+-------------+
+| userid | firstname | lastname | gender | birthdate  | country | postalcode | income | sid | directorylist | state         | city        |
++--------+-----------+----------+--------+------------+---------+------------+--------+-----+---------------+---------------+-------------+
+| 142687 | SUPER     | PICKLE   | M      | 1983-12-23 | aq      | 99999      |      1 |     |             0 | McMurdo Sound | CENTERVILLE | 
++--------+-----------+----------+--------+------------+---------+------------+--------+-----+---------------+---------------+-------------+
+1 row in set (0.01 sec)
+
+
+This would be the way to extract info for a user who's used their
+Gallery email/password for the Cart. Hopefully there will be nulls if
+the profile is not filled out...
+
+mysql> SELECT ui.*, p.state, p.city FROM users u, userinfo ui left outer join mpa_profile p on ui.userid=p.userid WHERE email_address = 'autotest@test.myphotodevel.com' AND password = '112233' AND u.userid=ui.userid;
++--------+-----------+----------+--------+------------+---------+------------+--------+---------+---------------+-------+------+
+| userid | firstname | lastname | gender | birthdate  | country | postalcode | income | sid     | directorylist | state | city |
++--------+-----------+----------+--------+------------+---------+------------+--------+---------+---------------+-------+------+
+| 143307 | mpa       | testing  | F      | 1970-01-01 | us      | 10001      |      1 | unknown |             0 | NULL  | NULL | 
++--------+-----------+----------+--------+------------+---------+------------+--------+---------+---------------+-------+------+
+1 row in set (0.04 sec)
+
+
+good!
+
+
+
+
+#########################################################################
+080814 Thu 14 Aug 2008 05:14:32 PM EDT
+
+STAINLESS_STEEL_MUG
+
+That's what the new stainless travel mug will use for
+constant_name. The old one got a new constant_name.
+
+Got the store rolled out today; Chris rolled out trunk so some supreme
+weirdness happened. That's all live and good now.
+
+The manager's meeting went on until almost 12:30. Or maybe it
+did. Chris was to present, or he decided to present there, his pitch
+on the data migration project. He droned from a piece of paper and
+Peter looked agitated. It was not going well at all, so I took to the
+whiteboard and outlined the phases the project would have to take,
+what was changing, and why. This was very productive, in the end.
+
+I explained how dat files worked; what pieces would go into the
+database, in what order; how Veracity is slow and this would hold up
+any work regardless; how memcached was another prerequisite; the
+murmur hash Chris found; how we currently distribute the data and why
+we spread it; the four letters deep proposal, and made a joke that
+Chris threw his drink in my face and stormed out of the Black Door
+(Peter thought that was really funny); and that pretty much covered
+it. It went very well, I thought. Jessy had been asking some very
+tough questions, but her angle was to delay the pro-am features Peter
+now wants (to compete with smugmug). I also explained the software
+estimation margin of error graph -- does that thing have a name? -- to
+Chris, and recalled how Rob Walker once explained it as "The further
+we are from being done, the more fucked we are." Chris thinks that an
+ATOMic database is the panacea for the Flash uploader, that it would
+solve the concurrency problem; and I couldn't make him understand that
+it was no guarantee, because it's still Gallery accessing the
+database.
+
+Jessy told me over AIM later that she's actually 100% behind the
+project. Peter followed up with an email that Chris said he didn't
+understand, and finally, Chris started whining about the standup
+meetings and sent me a link to an article complaining about standups
+from some douche at the ACM. I quit iChat rather than listen to him
+whine.
+
+So, a first stab at adding products. We haven't added any in a while,
+and I moved a lot of the product info off the filesystem (in
+mpa_products) into the database. Later, we should unify those classes
+with the store's product classes in a core library.
+
+Add to these tables:
+
+osc_products
+osc_products_description
+osc_products_to_categories
+mpa_categories,         probably
+mpa_products_groupings
+osc_products_properties
+
+
+
+#########################################################################
+080815 Fri 15 Aug 2008 10:05:33 AM EDT
+
+No entry. Says me, on the 18th.
+
+
+#########################################################################
+080818 Mon 18 Aug 2008 11:19:39 AM EDT
+
+find  /home/swain/public_html/projects/mpa_products
+/home/swain/public_html/projects/mpa_gallery
+/home/swain/public_html/projects/mpa_cart
+/home/swain/public_html/projects/mpa_static \( -name \*.js -o -name
+\*.css -o -name \*.php -o -name \*.inc -o -name \*.default -o -name
+\*html \) -print0 | xargs -0 grep -n
+
+This find command will search my current copies of the projects for a
+string I provide. I found Jessy had committed a file with
+whooziestatic.myphotodevel.com as a link. Looks like Dylan has a ton
+in there too.
+
+So I need a script to search all files for those particular
+items... more to the point, I suppose, any links to myphotodevel.com.
+
+I installed htmltidy on torque. Not quite happy with the results. This
+runs it from emacs:
+
+
+
+; Function to run Tidy HTML parser on buffer
+ ; NOTE: this requires external Tidy program
+ (defun tidy-buffer ()
+  "Run Tidy HTML parser on current buffer."
+  (interactive)
+  (if (get-buffer "tidy-errs") (kill-buffer "tidy-errs"))
+  (shell-command-on-region (point-min) (point-max)
+    "tidy -f /tmp/tidy-errs -q -i -wrap 72 -c" t)
+  (find-file-other-window "/tmp/tidy-errs")
+  (other-window 1)
+  (delete-file "/tmp/tidy-errs")
+  (message "buffer tidy'ed")
+ )
+ (global-set-key (kbd "C-x t") 'tidy-buffer)
+
+
+My first job is to fix the form, which is getting too many form
+variables added:
+
+http://swain.myphotodevel.com/store.php/to/select_photo?product=playing_cards&fromCat=games_and_puzzles&product=playing_cards&fromCat=games_and_puzzles&fromCat=games_and_puzzles&set_albumName=album40
+
+Done. Actually I broke it when I tried to update Jacob's sad
+code. Oops. But there were still issues Jessy created that she did
+clean up, to her credit.
+
+
+
+
+#########################################################################
+080819 Tue 19 Aug 2008 10:57:11 AM EDT
+
+The problem I'm up against now: in the Product class in mpa_products,
+there's a method that returns Boolean when passed a string that is the
+name of a "product" or "category." The difficulty here is that, the
+way Jacob built it, categories and products are
+interchangeable. Though to be fair, the problem he was up against was
+that a category could contain products and other categories. For
+example, "fordad" is a category of items for Father's Day: it contains
+a Golf Towel, but it also contains Mugs (the former a product, the
+latter a category).
+
+So at first blush the answer is this: a container class of
+CategoryItems, and a CategoryItem is-a Product or is-a Category, which
+in turn would also contain CategoryItems.
+
+I guess this would imply an Interface: move whatever "CategoryItem"
+behaviors there are into that. (PHP does not support multiple
+inheritence, alas).
+
+
+
+
+#########################################################################
+080820 Wed 20 Aug 2008 04:11:08 PM EDT
+
+Well, after a manager's meeting and our first 11am sitdown
+meeting... I was working on shipping, and decided to write some
+housekeeping sql to drop TLC tables and delete products from DPI we
+never sold. All done.
+
+Next I merged branch to trunk for mpa_products, resolved the
+conflicts, got that rolled out to staging. There's a number of bugs in
+mpa_products, and Fernando's replacement process for
+ampira.redirect.php failed. He's now working with Chris on MediaClip.
+
+I helped Dylan switch from branch to trunk and got his build working
+right.
+
+I have a bug in the cart code to fix; it is displaying tabs and other
+items when coming from GMC.
+
+
+
+#########################################################################
+080821 Thu 21 Aug 2008 11:35:38 AM EDT
+
+
+Worked on solving the hash login problem for Fernando, who's now on
+vacation. Turned out to be the session bug we've seen before and
+solved by doing a redirect back to the same page.
+
+
+#########################################################################
+080822 Fri 22 Aug 2008 01:50:15 PM EDT
+
+Committed my changes for the hash login code. Tested stuff, looks
+good. Started tinkering with session.php. I think I understand it a
+lot better now, and have been commenting it.
+
+
+
+#########################################################################
+080826 Tue 26 Aug 2008 01:27:29 PM EDT
+
+Have begun the process of getting the rollout ready; however had to
+run numbers for Tom, and now have to prepare for an MPP meeting.
+
+
+
+
+#########################################################################
+080827 Wed Aug 27 09:33:24 2008
+
+Did a lot of testing yesterday and filed two bug reports for
+Jessy. I tested the rollout procedure -- signup has to go out last --
+successfully. Did some exploratory work in conversion from
+$gallery->session to using $_SESSION, but there was a bug in which
+album was the current album; also spent a bit of time reading up on
+diff, context diffs and patch, and learned how easy it was to generate
+a patch file and apply it. Very spiffy. svn diff's output is
+patch-ready.
+
+Did my first ever folded card with MediaClip. Couldn't figure out how
+to edit text.
+
+https://store.myphotodevel.com/shopping_cart.php?action=add_product&quantity=5&productinfo={productid}2{projectid}14331520080827025039{sitename}signature
+
+There's the post to the store.
+
+Now this is weird. This stow string that Chris passes does not conform
+to the spec I gave him; and what's more, the current way it's done
+relies on a weird PHP language "feature":
+
+        // this next line does not do what you would expect; it's some
+        // kind of PHPism. Here, if $_string =
+        // '148{mpa_user_id}143036{sbd}swainfree{auto_renew}0' then
+        // $_product_id will equal 148. In other words, casting the
+        // string to an INT returns the INT portion of the
+        // string. Pretty weird. --sw
+        $_product_id = (int)$_string;
+
+
+
+
+#########################################################################
+080828 Thu Aug 28 10:37:44 2008
+
+INTO OUTFILE syntax:
+
+SELECT * FROM final_result INTO OUTFILE  '/tmp/December2006_newReport.txt' FIELDS TERMINATED BY ','  OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n'; 
+
+mpa_products_groupings.category_members that do not match a
+constant_name:
+
+
+mysql> select distinct category_member from mpa_products_groupings pg left outer join osc_products p on pg.category_member = lower(p.constant_name) where constant_name is null;
++-------------------+
+| category_member   |
++-------------------+
+| mousepads         | 
+| photo_prints      | 
+| mugs              | 
+| photo_club        | 
+| cards             | 
+| books             | 
+| apparel           | 
+| games_and_puzzles | 
+| prints            | 
+| personalized_dvd  | 
+| forher            | 
+| forhim            | 
+| formoms           | 
+| fordads           | 
+| newbaby           | 
+| kids              | 
+| forcouple         | 
+| justfriends       | 
+| forfamily         | 
+| forpet            | 
+| forgrandma        | 
+| forgrandpa        | 
+| under20           | 
+| home_and_office   | 
+| calendars         | 
+| gift_cards        | 
+| ornaments         | 
+| giftguide         | 
+| photo_books       | 
+|                   | 
+| photo_calendar    | 
+| newproducts       | 
++-------------------+
+32 rows in set (0.50 sec)
+
+
+mpa_products_groupings.category_members that match a constant_name:
+
+mysql> select distinct products_id, lower(constant_name) as constant_name from osc_products p, mpa_products_groupings pg where constant_name = category_member;
++-------------+------------------------+
+| products_id | constant_name          |
++-------------+------------------------+
+|        7110 | frosted_stein          | 
+|        7118 | keepsake_box           | 
+|        7123 | large_canvas           | 
+|        7143 | heavy_white_t_shirts   | 
+|        1235 | long_sleve             | 
+|        7148 | white_sweatshirt_s     | 
+|        7111 | coasters_4x4           | 
+|        7127 | teddy_bear             | 
+|        7121 | clip_board             | 
+|        7124 | playing_cards          | 
+|        7109 | white_steel_mug        | 
+|        7135 | bbq_apron              | 
+|        7136 | deluxe_tote_bag        | 
+|        7164 | golf_towel             | 
+|        7112 | pillow_case            | 
+|        6000 | dvd_spiderman          | 
+|        6001 | dvd_dora               | 
+|        6002 | dvd_barney             | 
+|        6003 | dvd_baby_genius        | 
+|        6004 | dvd_arthur             | 
+|        6005 | dvd_care_bears_winter  | 
+|        6006 | dvd_care_bears_fitness | 
+|        7126 | puzzle_252piece        | 
+|        7153 | kids_t_shirts          | 
+|        7138 | white_t_shirts         | 
+|        3113 | folded_cards           | 
+|        7120 | cutting_board          | 
+|        7119 | wall_clock             | 
+|        7105 | ceramic_black_mug      | 
+|        7103 | ceramic_mug_11_oz      | 
+|        7102 | mousepads_8x9          | 
+|        7107 | ceramic_mug_15_oz      | 
+|        7104 | tiled_mug_11_oz        | 
+|        7108 | tiled_mug_15_oz        | 
+|        7106 | magic_mug              | 
+|        7122 | small_canvas           | 
+|        7113 | throw_blanket          | 
+|        1242 | tote_bag               | 
+|        7162 | clutch_bag             | 
+|        7163 | bucket_bag             | 
+|        7114 | pillow_sham            | 
+|        7117 | ornament_snowflake     | 
+|        7115 | ornament_flat          | 
+|        7010 | print_11x14_matte      | 
+|        7018 | print_12x18_matte      | 
+|        7060 | print_16x20_matte      | 
+|        7007 | print_20x30_matte      | 
+|        7158 | boxer_shorts           | 
+|        7132 | pet_collar             | 
+|        7134 | dog_bowl               | 
+|        7156 | girl_bib               | 
+|        7157 | boy_bib                | 
+|        7128 | photo_baseball         | 
+|        7137 | diaper_bag             | 
+|        7125 | puzzle_in_box          | 
+|        7129 | photo_minibasketball   | 
+|        7130 | photo_minifootball     | 
+|        7131 | photo_soccerball       | 
++-------------+------------------------+
+58 rows in set (0.01 sec)
+
+
+And I think there is a solution to this problem:
+
+"A category contains either products or other categories."
+
+I think one way to do this in the database is to create a category for
+each product, whose sole member is that product. Well, that changes
+the statement, then, to this:
+
+"A category contains only categories, or only products."
+
+The only remaining problem is sort order. This does not solve it; a
+given category can only have one sort value, under the OSCommerce
+schema... so I should think this data would be in a table akin to
+osc_products_to_categories.
+
+Perhaps the design of the mpa_products_groupings table is the answer
+anyway. But "category_member" can have one of two values, so another
+column specifying the type would be needed; is this good or bad?
+
+
+
+
+
+#########################################################################
+080902 Tue 02 Sep 2008 03:43:24 PM EDT
+
+Been testing and testing again. So sick of it.
+
+R_2008_07_23_ProductSeparation is the current cart release; but the
+last rollout was August 6th, for Fernando's improvements.
+
+R_2008_07_31_Pxn8AndHouseAds is the current gallery release.
+
+R_2008_07_31_BugFixesAndPhotoHandling is the current products release.
+
+Wrote out all the documentation for the rollout, did more and more
+rounds of testing, helped Jessy, and so on; worked pretty much only on
+the rollout stuff. Early in the morning though I placed an order with
+a card made in Mediaclip.
+
+
+
+
+
+
+
+#########################################################################
+080904 Thu 04 Sep 2008 03:57:52 PM EDT
+
+Finally, FINALLY got the rollouts done. Problems that arose:
+
+1) mass debug output in UserDB and User flooded the error logs.
+2) Some missing images (!) even though I asked Jessy and Dylan
+repeatedly to test.
+3) CGI scripts in the signup wizard were not executable
+4) One of the class files in /opt/mpa/lib was root-only so that broke
+everything everywhere
+
+GMC fails on staging and production but for different reasons; filed
+both in bugzilla.
+
+So I came here to my log to think out the changes to the OFS to handle
+Rastar. So:
+
+1) new product data entered
+2) new manufacturer added to db
+3) new prefix code added
+
+
+Hi Fernando,
+
+The task to extend the OFS to handle MediaClip and Rastar falls to
+you. I've made a short Twiki page:
+
+https://twiki.corp.myphotoalbum.com/bin/view/MPA/MediaClipAndTheOFS
+
+For the OrderPartMC subclasses, I'm guessing we will be making a
+network call of some sort to tell the Clip Producer to make the
+PDF. Or maybe there's some nifty Perl/MONO binding we can use. Either
+way, it's going to come down to some kind of abstraction that only the
+OrderPartMC subclasses need to understand, and as always, the rest of
+the OFS is clueless about it and decoupled from it.
+
+So: import_files.pl is called by cron; WholeOrder is built; it calls
+its OP subclasses and they do their thing. With no Clip Producer set
+up yet, you can just fake it any way you want to with a stub
+subroutine. You'll need to work on the OrderPartFactory class to make
+the correct subclasses of OrderPartMCs.
+
+
+Next: the first thing we're doing is Folded Cards, so once you have a
+PDF (may as well just create one for testing purposes with our current
+folded card system), put that in the XML for Qualex, and upload
+it. Should be pretty straightforward.
+
+Next: the Rastar API doc has an example of the XML document. You can
+pare this down to a basic, unpopulated file, and commit it to
+/opt/mpa/template/rastar. Then comes the fun of loading it, filling
+it, writing it out. DOM manipulation is fun!
+
+Also: we will be using FTP to send the files to Rastar. For the XML
+and upload steps, we'll need a new subclass of OrderShippingPart,
+probably Rastar_OrderShippingPart.pm, to handle those tasks. You'll
+need to work on the OrderShippingPartFactory to create a proper
+subclass of OrderShippingPart. On torque, FTP the order into torque's
+ftp server; this should still be functioning, or at least in place.
+
+
+Really, the hardest part here, it seems to me, is getting the Clip
+Producer to make something for you. I'm making a first guess that the
+OrderPart subclass will somehow call it, wait for it to finish, and
+then retrieve the PDF file. Maybe it will be that easy. The real trick
+here is: it has to work the same way on production. The million dollar
+question is: how will the OFS communicate with the Clip Producer on
+production, and how will they share files? Remember we have Draconian
+firewall rules and no single part of any system can communicate with
+any other part, even with the firewall. Mere processes cannot even
+signal each other. The filesystem is read only. Even root cannot do
+anything. All of our servers are unplugged and buried underground in
+concrete bunkers. OK, I'm kidding here. But you get the idea: that
+which works just fine on dev and staging tends to be impossible on
+production.
+
+Then order notification has to be updated. This has always been done
+as a sort of afterthought, and I suppose it will continue to be that
+way, unless you can put on a designing hat and think of a more "OFS
+way of doing it" instead of it being a mere external Perl script. I
+dunno.
+
+Depending on the filesystem mess on production, for which you've
+heroically done a lot of support, you should be able to do the Folded
+Cards part in a fairly short period of time. Also this will be waiting
+on Chris to get the Clip Producer up and running.
+
+I've committed products.php to mpa_products; it has a test link at the
+bottom of the page, when you are in cards, to start the Mediaclip
+process. You can buy a card via the Cart, and everything should be
+correct in the order.
+
+As a final note, I was never happy with how I had to modify the OFS
+when we switched to Qualex. For some reason the prefix codes made it
+really difficult to put multiple products into the same order. I don't
+remember why now, that being five months ago, but if you run into any
+walls ask me for help. There's got to be some way of vastly
+simplifying the OFS, but I haven't been able to visualize it yet.
+
+
+---
+
+I remembered today that an essential part of porting everything to the
+database, Chris's One Storage To Rule Them All plan, also needs to
+port everything in config.php to the database. This would mean dealing
+with the wonkiness of the shortform, though; and that whole whacky
+system. God that thing is convoluted.
+
+Perhaps a first step is to break out all the variables that the user
+cannot set, that are the same from site to site; and then break out
+all the variables that the user cannot set, but are site specific.
+
+
+
+#########################################################################
+080905 Fri 05 Sep 2008 05:20:07 PM EDT
+
+fun    start/end time  pid   label
+___________________________________
+hooha: 1220649517.928  26644 :start
+hooha: 1220649519.279  20710 :start
+hooha: 1220649520.6782 26659 :start
+hooha: 1220649521.9589 23364 :start
+hooha: 1220649523.2383 27845 :start
+hooha: 1220649531.344  20710 :end
+hooha: 1220649532.6459 23364 :end
+hooha: 1220649533.0434 27845 :end
+hooha: 1220649533.2885 26644 :end
+hooha: 1220649535.0249 26659 :end
+
+So yeah, the flex/javascript uploader
+(http://demo.swfupload.org/Documentation/#swfupload) does the evil
+thing and makes five upload requests at a time. In fact it probably
+makes no difference what order they were uploaded or when they finish;
+each process loads its own copies of Album, its own array of Photos,
+and whoever wrote last won. In the above sample the third upload won.
+
+So there's a possiblity to code around this. Maybe. Let's think. We
+could load the needed classes at the outset; but when it comes time to
+save them, perhaps a "version number" could be tested. Hmm. Nope, that
+won't get around a race condition. It comes closer though.
+
+So the next idea is to delay the updating of the dat file. We could
+just make each process lay a photo.dat file somewhere; when the
+uploading is done we submit the form and it picks them all up and adds
+them. How much coding would that require?
+
+Load Album
+process file (i.e. create sized, thumb, highlight)
+build up AlbumItem object
+write that thing to the database
+exit w/happy code
+
+Form now submits: query db for all AlbumItem objects, add them to the
+photos.dat array. What this suggests to me is we break one huge method
+into discrete operations. Probably this is somehow related to Chris's
+wet dream of copying pbase's delayed processing.
+
+More fun: we then need to borrow this Gallery code for GMC. I
+think. It seems like it would smoothen the transition to go from a GMC
+purchase to *poof* new Gallery user.
+
+So Album->save() needs, really, to do:
+
+Album->createThumb();
+Album->createSized();
+Album->createHighlight() if Album->hasNoHighlightYet();
+
+Nah. That doesn't quite sound right.
+
+AlbumItem->createThumb();
+AlbumItem->createSized();
+AlbumItem->createHighlight() if Album->hasNoHighlightYet();
+
+Better.
+
+Album->writeLatentImage(AlbumItem);
+
+Borrowing some old film terminology there in "latent image". Perhaps
+that's not descriptive enough:
+
+Album->writeLatentImageToDatabaseForLater(AlbumItem);
+
+I suppose we can just queue up all the image processing in a table
+somewhere. Why is this so hard to do? It seems to me a simple matter
+of decoupling. I guess it's that multiple processes do the processing,
+so there's a concurrancy issue there too. Whoopie.
+
+Well, here's a funny idea: implement file locking via the
+database. Sounds like a kludge though.
+
+
+One of many processors wakes up; grabs a site. Sets semaphore to
+'pending.'
+Process all the photos for that site.
+Update the semaphore to "done" or thereabouts.
+
+At this point the files are created. Next process should add them to
+the albums. So maybe:
+
+1) User uploads files via flash.
+2) Album classes put the full sized images on the slow storage. I don't
+   trust the tmp files to stick around for very long.
+3) Images are slotted in the db. This is a series of INSERTS. Really
+   this can happen as with each upload.
+4) Daemon processes all the images. Maybe this can be done in
+   parallel.
+5) When all images from the upload are processed, then we can update
+   the Album class. The AlbumUpdateDaemon.
+
+Breaking out 2+3:
+file uploaded; mv to slow storage; insert into db.
+
+Breaking out 4:
+I would do them all in parallel. That is, a set of photos might be
+processed by different daemons.
+
+5: AlbumUpdateDaemon, the AUD, SELECTs all the ready rows from the
+database, processes them, viola. This means, though, that AUDs could
+wind up competing for the same dat file, so there still lies the
+concurrency issue.
+
+So file locking via the database is still needed. As awful as that
+might sound.
+
+How to notify user? Album could query the db for pending
+photos. PendingAlbumItem instances could fill the role of AlbumItem
+for the nonce. Is that a proxy pattern? Nope.
+
+
+#########################################################################
+080906 Sat Sep  6 09:07:06 2008
+
+Thinking again on how to solve the concurrency problem with
+MPA. Actually I'm reflecting on how Chris believes that porting
+everything to the database solves our concurrency problems, which it
+does not. Why? Because the data is retrieved from the database by two
+separate processes, internal changes are made to each, and then they
+both write back to the database. The last writer "wins."
+
+The race condition has never been in the data storage. It's always
+been in the application. Changing the data storage does not eliminate
+the race condition.
+
+I'm thinking that one of the problems with Gallery is uploading and
+displaying are tightly coupled. The responsibility for handling
+uploads should be moved out of the Album class. So let's think on this
+a bit.
+
+The user has chosen which album they are uploading to; uploads
+currently go to a PHP script. Files are uploaded to a tmp
+directory. They have to be processed (sized and thumbs created). I
+think at the least all of this can be moved out of the Album class,
+into an UploadHelper class. (One of the fundamental problems in the
+current design is that the Album class is too overloaded with
+responsibilities).
+
+So pulling out uploading is a first step. Once files are uploaded,
+they have to be queued to be processed. Here's the first multitasking
+issue: two machines of two (four?) cores each; so we need four
+(eight?) daemons to do the converting. This problem has largely been
+solved by the delayed video processor, though that is written in Perl,
+so communicating with a Gallery is somewhat problematic. Also there
+has never been a solution to killing a runaway process that is
+"pinning the CPU."
+
+I don't see, offhand, why we can't ignore Gallery entirely in the
+convert calls... the UploadHelper should put all the data needed into
+the database row (the database table being the queue) that the
+converter needs. Location, sizes, names. I think updating a
+"processing state" column, then checking the UPDATE call to make sure
+the row was changed, will probably suffice.
+
+So now the user has uploaded their photos; from their perspective,
+nothing happened yet. So after the upload, when the page is refreshed
+the simplest thing is to tell them "10 items still being processed."
+An Album only needs to do a "select count(*)" from the database. This
+sounds rather intensive, on the one hand, but the queue should never
+be more than a hundred or so images. We could even move this out into
+another column, say in "users," a flag indicating whether to scan the
+table or not. This is an optimization so it can wait.
+
+On the OPP servers, as outlined above, the images are processed.
+
+Now, something has to trigger a page reload for the user. For now
+let's stick with the simplest thing that works: user has to manually
+refresh the page to see if their stuff is done. (Which is the current
+situation). How do the new items go into their album?
+
+I think with delayed video processing, the daemon has to manipulate
+the site. Perhaps this is why Fernando has to set the site name at the
+start of his script -- "fmarte."
+
+If, instead, we have the Gallery do this we might get around that
+problem. Album checks for processing items; are any ready?
+
+Here lies the race condition. If two copies of the same Gallery make
+that request, they are both told yes. Only one needs to add the items
+to the site; the other needs to reload when the first is done.
+
+And here again I wonder if the UPDATE approach will work:
+
+  try to get a lock: update table set state=taken where id = INT;
+  test if updated returned 1 (row was modified)
+
+This should be guaranteed to be atomic. Two conditions are possible:
+
+1) Returned 1. We have the lock. We process all the waiting photos for
+this site.
+
+2) Returned 0. We did not get the lock. Someone else did; we can
+either return the "waiting to be processed" message again; or we can
+busy wait until the lock is free and reload the site. Bleh. Too
+complicated. We tell them items are still being processed.
+
+So, now we really do have the situation where Album is adding new
+items to itself and writing out the database. Not sure how the user
+sees this.
+
+foreach item in queue:
+  album->save() (as it currently does)
+
+There's no delay since the files are already created. Objects are
+instantiated, updated, written to the dat files.
+
+Lock released. Well, there's the rub, eh? What if the lock is never
+released? (User stopped the browser, the connection was lost,
+etc). Well, that's a problem that has to be solved.
+
+
+
+
+
+
+#########################################################################
+080909 Tue 09 Sep 2008 06:39:23 PM EDT
+
+Yesterday and today: lots of debugging of stuff like folded
+cards. Turns out I made a mistake when refactoring the
+foldingcard.class.php. I also found that a value was being truncated
+when inserted: card_image_fullpath had the last four chars lopped off.
+
+So the OFS depended on a bug in another program. Somewhat
+amusing. Meanwhile, a user complained about upload times; yesterday
+Jessy and I looked at some of the script run times for him and some
+other users. There are some really severe upload times; a minute or so
+for a single image. I don't know why. I want to add an "image
+processing time" for each image, and we can then figure out:
+
+full script runtime, minus image processing time, equals file upload
+time.
+
+This might tell us something.
+
+
+
+#########################################################################
+080910 Wed 10 Sep 2008 04:52:43 PM EDT
+
+Well.
+
+It was Flash on Mac on Firefox all along; here's an upload from IE:
+
+hooha: 1221078458.2964 11212 :start
+hooha: 1221078458.4118 11212 :end
+hooha: 1221078476.1934 14140 :start
+hooha: 1221078476.3932 14140 :end
+hooha: 1221078479.1382 14152 :start
+hooha: 1221078479.3857 14152 :end
+hooha: 1221078484.3106 9946 :start
+hooha: 1221078485.123 9946 :end
+hooha: 1221078486.162 9941 :start
+hooha: 1221078486.71 9941 :end
+hooha: 1221078486.8012 13074 :start
+hooha: 1221078487.0898 13074 :end
+hooha: 1221078491.0591 11586 :start
+hooha: 1221078491.3053 11586 :end
+hooha: 1221078492.5061 14411 :start
+hooha: 1221078492.8728 14411 :end
+hooha: 1221078492.9773 9953 :start
+hooha: 1221078493.2301 9953 :end
+hooha: 1221078496.9467 13058 :start
+hooha: 1221078497.2157 13058 :end
+hooha: 1221078498.4898 14421 :start
+hooha: 1221078498.9153 14421 :end
+hooha: 1221078499.0077 9959 :start
+hooha: 1221078499.264 9959 :end
+hooha: 1221078508.2021 9942 :start
+hooha: 1221078508.4098 9942 :end
+hooha: 1221078534.3473 9950 :start
+hooha: 1221078534.6055 9950 :end
+hooha: 1221078541.5568 14402 :start
+hooha: 1221078542.0129 14402 :end
+hooha: 1221078542.8611 14438 :start
+hooha: 1221078544.6175 14438 :end
+hooha: 1221078544.7363 14164 :start
+hooha: 1221078545.1727 14164 :end
+
+Perfectly serial. Versus:
+
+hooha: 1221071801.8216 11586 :start
+hooha: 1221071802.5095 9958 :start
+hooha: 1221071803.2069 9934 :start
+hooha: 1221071803.892 9932 :start
+hooha: 1221071804.5524 9955 :start
+hooha: 1221071805.0608 9946 :start
+hooha: 1221071805.6493 11649 :start
+hooha: 1221071821.5395 11586 :end
+hooha: 1221071821.7472 9958 :end
+hooha: 1221071823.7287 9932 :end
+hooha: 1221071823.9561 9934 :end
+hooha: 1221071824.2467 9946 :end
+hooha: 1221071824.4154 9955 :end
+hooha: 1221071824.438 11649 :end
+
+for mac/ff.
+
+This kind of sucks, because that means FF/Mac users might have trouble
+using GMC. Oh well.
+
+---
+
+Meanwhile: thinking about config.pl. There's definitely stuff we can
+drop. And I think I would break it into several tables. Why? If
+there's no row in a table for a particular group of settings, we use
+the defaults. Maybe. Alternately I'm thinking of one ginormous table,
+but that would not be 3NF.
+
+It's premature optimization, maybe, but it's fun so let's do
+it. Grouping things like rss, comments, "default" (skins and such)
+into separate tables, we then have a master table of columns of
+foreign keys. Key null? Use the defaults. Sounds workable.
+
+So there's this huge hassle of the configuration system, which sucks
+butt. bleh.
+
+By my calculations: 6570 bytes per config.php file times 250K users is
+1.5 GB according to Google Calculator. So disk savings is negligible.
+
+Every page request equals a file access though, so there's that.
+
+Perhaps throwing out the shortform entirely would be the way to go...
+
+
+
+
+
+
+#########################################################################
+080911 Thu 11 Sep 2008 01:58:50 PM EDT
+
+Posted a bunch of stuff to SWFUpload's discussion board, so the author
+has some more facts on the matter.
+
+Committed some things for mpa_cart for mediaclip.
+
+Also, Jessy was very excited about my idea to abolish config.php and
+redo the shortform. It turns out she wants to do things I hadn't
+thought of, like one click thumbnail resizing.
+
+I did some work yesterday -- thought experiments, I should say -- into
+how we'd break up the data in config.php. Oh, see my thoughts from
+yesterday. Anyway I like the idea of adding code to Gallery to put the
+data in the database if it's not already there. For example, this
+would replace the code in init.php that loads config.php:
+
+if config info is in the database:
+   create a config object holding that data
+   store it in memcached
+else:
+   load config.php
+   create a new config object
+   store it in the db
+   stash it in memcached
+
+In a fairly short order we'd have everything in the database. I'd
+rather we do all the albums and photos the same way: if it's not in
+mysql, put it there. Later on veracity would finish up the job. We'd
+keep two copies of the data for a while, which was the plan I think
+back prior to the last datacenter move.
+
+Seems my first task would be to put the UploadedPhoto into an album. A
+simple wrapper should work for now: the path to the "album" is the
+path in the tmp directory, the photo is in an array and is the zeroeth
+element. This is doable. Then I'd have to move, eventually, towards
+merging Gallery's Album class with GMC's Album class. Maybe. Maybe
+not. Maybe Gallery's Album will have a method importGMCAlbum(GMCAlbum
+$album); that will bring the data in. And we would use the customer
+information in the Cart to create the account; all they need to do is
+create an accountname.
+
+Hrmm. Well, actually it makes no sense to add an "album" on the single
+photo path because that would affect Gallery too: pages like
+quantity.php use a reference, $sphoto, which points to an instance
+that implementes an interface. So if I wrap that in a GMC album class
+then something similar has to happen for Gallery and we enter a world
+of mess.
+
+Still... based on Jessy's page flow... the user will be able to return
+to the "album" and see a set of thumbnails; they will select one and
+it will now be the "chosen one" (heh). There will be the side-by-side
+display of their album and the upload box.
+
+So: put everything in the session, or create a new table to hold all
+the data? Probably the database.
+
+session_id
+user's filename
+gmc's filename
+location on storage
+
+I suppose this would be useful for the store too. Or the OFS rather;
+knowing the session ID would mean easy access to the
+files. We should probably make the GMC session key fairly permanent.
+
+
+
+
+
+#########################################################################
+080912 Fri 12 Sep 2008 04:43:20 PM EDT
+
+Worked with tcpdump a bit today; neat stuff. Chris analyzed the
+traffic for the SWFUpload tool; he can see it connecting to different
+sockets on the server... we had the same problem on his Safari as
+Firefox. Windows, no problem.
+
+Helped Fernando diagnose nulls in the XML Mediaclip writes to the
+database.
+
+Trying to think out this Album business in gmc:
+
+Well, got interrupted again. Sigh.
+
+Again:
+
+User uploads file; album instantiates photo; thing is written to db.
+
+For a GMC photo, it would appear that all I need to figure out
+everything is this:
+
+cookie
+image_name (as created by md5)
+gifts tmp directory
+
+I can calculate everything from that, I think.
+
+
+
+#########################################################################
+080915 Mon 15 Sep 2008 01:44:02 PM EDT
+
+Jessy uploads five files:
+
+hooha: 1221500561.3454 9961 :start
+hooha: 1221500561.4873 9961 :end
+hooha: 1221500561.4945 9964 :start
+hooha: 1221500561.6952 9964 :end
+hooha: 1221500562.2499 9949 :start
+hooha: 1221500562.3453 14416 :start
+hooha: 1221500562.4765 9949 :end
+hooha: 1221500562.5684 14416 :end
+hooha: 1221500570.308 14225 :start
+hooha: 1221500571.1537 14225 :end
+hooha: 1221500619.5761 9945 :start
+hooha: 1221500619.6664 9945 :end
+
+Me:
+
+hooha: 1221500735.4511 14163 :start
+hooha: 1221500736.7575 9948 :start
+hooha: 1221500737.9019 11760 :start
+hooha: 1221500738.9761 27723 :start
+hooha: 1221500740.1357 9940 :start
+hooha: 1221500744.1895 14163 :end
+hooha: 1221500747.9826 11760 :end
+hooha: 1221500748.2042 9948 :end
+hooha: 1221500748.4918 9940 :end
+hooha: 1221500748.5648 27723 :end
+
+Helped Tim test the uploader. Actually I have no problems uploading to
+staging. But as the above output shows, something funny goes on with
+Macs.
+
+I spent time trying to get readable output from tcpdump, to no
+avail. There's no client available right now for Tiger, only Leopard.
+
+Fernando wanted help with some multidimensional types in Perl; but I
+told him not to bother, just use XML::DOM. This he did and found it
+was  much easier. I told him I'd buy him lunch if I was wrong.
+
+Fixed a bug finally: there was a bug opening the directory for folded
+card themes. I had a feeling I'd fixed this somewhere else before in
+the code base... probably did... probably duplicate code in
+mpa_products.
+
+I'm thinking GMC has to supply images to MediaClip the same way
+Gallery does: taking queries and returning XML. This should be the
+case for cards as well as calendars and books. But I'm ahead of
+myself; first we have to have multiple images uploaded.
+
+I'm supposing:
+
+gifts.myphotoxxxxxx.com/getxml.php: returns one album, ever.
+gifts.myphotoxxxxxx.com/getxml.php?albumname=default: returns the
+photos the user uploaded. 'default' being the name that just came to
+mind this moment.
+
+A GMC photo class needs to create instances either from the database
+(in the case of previously uploaded files) or from $_FILES (new
+upload). Naturally you can't overload methods on PHP objects... so...
+
+Probably: initFromArray() and initFromUpload(). Make the code
+completely duplicated. Then factor out the differences.
+
+
+
+
+
+#########################################################################
+080916 Tue Sep 16 15:30:10 2008
+
+Ran a new set today. The numbers on the Windows uploads in a previous
+entry here looked too short. 
+
+ms: 1221592347.0682 18012 :start  
+ms: 1221592349.5361 18012 :end    
+ms: 1221592349.8388 18002 :start  
+ms: 1221592351.9992 18002 :end    
+ms: 1221592352.3285 18215 :start  
+ms: 1221592354.4726 18215 :end    
+ms: 1221592354.5743 18327 :start  
+ms: 1221592354.6546 18327 :end    
+ms: 1221592354.8429 18003 :start  
+ms: 1221592356.9909 18003 :end    
+ms: 1221592357.2887 17986 :start  
+ms: 1221592359.4087 17986 :end    
+
+mac: 1221592642.2971 535 :start   
+mac: 1221592643.2217 17983 :start 
+mac: 1221592644.5965 17987 :start 
+mac: 1221592645.959 18005 :start  
+mac: 1221592647.4727 18006 :start 
+mac: 1221592649.5 18012 :start    
+mac: 1221592649.6199 18012 :end   
+mac: 1221592652.2145 535 :end     
+mac: 1221592653.3497 17983 :end   
+mac: 1221592654.3956 18005 :end   
+mac: 1221592654.6902 17987 :end   
+mac: 1221592655.2495 18006 :end   
+
+I had a lot of trouble getting the numbers; it turned out uploads to
+port 8080 hit Torque's build of Gallery, not the user's. Bad.
+
+Miles Bader is hero for a day because his patch to comint.el works.
+
+--- orig/lisp/comint.el
++++ mod/lisp/comint.el
+@@ -1774,7 +1774,9 @@
+               (let ((inhibit-read-only t)
+                    (inhibit-modification-hooks t))
+                 (add-text-properties comint-last-output-start (point)
+-                                     '(rear-nonsticky t
++                                     '(front-sticky
++                                      (field inhibit-line-move-field-capture)
++                                      rear-nonsticky t
+                                       field output
+                                       inhibit-line-move-field-capture t))))
+
+
