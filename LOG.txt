@@ -40961,3 +40961,59 @@ Miles Bader is hero for a day because his patch to comint.el works.
                                        inhibit-line-move-field-capture t))))
 
 
+Thus ending years of frustration.
+
+Spent quite a bit of time on SWFUploader again today; found if you set
+debug=true you get a spiffy box at the bottom of the page. Exactly the
+sort of thing I would have done.
+
+I figured out, after reading a lot of code, that a queueComplete
+"plugin" is really just a function you write yourself. All I did was
+set window.location. Worked fine.
+
+
+
+
+#########################################################################
+080918 Thu Sep 18 12:06:33 2008
+
+Fighting with bugs in GMC, now that it handles multiple uploads. I'm
+puzzling over whether I should create an armada of getter/setter
+methods for the SelectedPhoto classes. I'm leaning towards yes; each
+one can do a filetest on the file it's supposed to return, so I can
+add a lot of assertions while I debug. I can add them to the base
+class and the interface... no, just the interface. Because when then
+come via Gallery, they have an original and a sized (in their Gallery
+album), then they have a copy and a sized copy in their tmp gift dir,
+or in gift's tmp dir. So my think goes: if they are on the GMC path,
+they don't need the original and sized original... so we can return
+the copy and copy sized values for that. I know, it's confusing.
+
+I've long felt that accessing the fields directly was kind of icky
+anyway. The desire here is that the fields are all moved up into the
+base class and are somehow enforced; that way whatever the
+applications need will be guaranteed to be there, and we can also
+"create it as needed" instead of "creating it every time" as we do not
+(very slow, very inefficient).
+
+So.. right now the problem is, on the GMC path, we have a full sized
+with the user name and a copy with the GMC-assigned name.
+
+
+  -rw-r--r-- 1 www www 30450 Sep 18 11:40 c5627afc9a9f9f4755ade2a4e2d8b4a0.jpg
+  -rw-r--r-- 1 www www 13682 Sep 18 11:40 c5627afc9a9f9f4755ade2a4e2d8b4a0.sized.jpg
+  -rw-r--r-- 1 www www  3941 Sep 18 11:40 c5627afc9a9f9f4755ade2a4e2d8b4a0.thumb.jpg
+  -rw-r--r-- 1 www www 46923 Sep 18 11:06 lea.jpg
+  -rw-r--r-- 1 www www 11062 Sep 18 11:06 lea.sized.jpg
+
+Never mind the timestamps, the basic evidence is correct here.
+
+---
+
+Just spoke with a Constable Colleen Bevington, of the Royal Mounted
+Canadian Police, regarding case number 2008683775, which is the NCMEC
+case number 611059, which I reported on 7/28/08. Requested a fax from
+her. She had the usual questions about timestamps and such. I think I
+inadvertently deleted all my non-image files, sadly. But the perp's
+data is still in mpa_photos. Her incoming number was 613-949-6121.
+
