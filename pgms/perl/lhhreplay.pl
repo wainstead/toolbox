@@ -207,6 +207,7 @@ foreach my $hashref (@conversation) {
     $errcount++ unless $mech->content_unlike( qr/Warning:/i, "No PHP warnings (step $counter)");
     $errcount++ unless $mech->content_unlike( qr/An error has occurred/i, "No 'An error has occurred' (step $counter)");
     $errcount++ unless $mech->content_unlike( qr/Invalid username or password/i, "No invalid username/password (step $counter)");
+    $errcount++ unless $mech->content_unlike( qr/Could not load the class file/i, "Could not load the class file error (step $counter)");
 
     my $errstr = "";
     $errstr = "error" if ($errcount);
