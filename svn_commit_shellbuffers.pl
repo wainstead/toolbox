@@ -4,9 +4,15 @@
 # shellbuffer files not currently in SVN, and then commit everything
 # with a timestamp.
 
-$svnbin = "/opt/subversion/bin/svn";
-
-chdir '/home/swain/.emacs.shellbuffers';
+if ( -e '/Users' ) {
+    # osx
+    $svnbin = "/usr/bin/svn";
+    chdir '/Users/swain/.emacs.shellbuffers';
+} else {
+    # lee-nooks
+    $svnbin = "/opt/subversion/bin/svn";
+    chdir '/home/swain/.emacs.shellbuffers';
+}
 
 open PIPE, "$svnbin stat | " or die "Couldn't open pipe to svn: $!\n";
 while (<PIPE>) {
