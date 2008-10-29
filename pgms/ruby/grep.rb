@@ -38,7 +38,7 @@ myhash.arb = "arbitrary string of text"
 myhash.greeting = "hello sailor!"
 
 
-open('/home/swain/cvs/LOG.txt').each { |x|
+open('/home/swain/cvs/LOG.txt').each do |x|
   $c += 1
   if /#{ARGV[0]}/.match(x)
 
@@ -53,7 +53,7 @@ open('/home/swain/cvs/LOG.txt').each { |x|
       end
     }
   end
-}
+end
 
 # myhash.keys.each { |key|
 #   puts "#{key} #{myhash[key]}\n"
