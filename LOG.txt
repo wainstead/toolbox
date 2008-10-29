@@ -41017,3 +41017,632 @@ her. She had the usual questions about timestamps and such. I think I
 inadvertently deleted all my non-image files, sadly. But the perp's
 data is still in mpa_photos. Her incoming number was 613-949-6121.
 
+Sent an email to Lindsey at NCMEC asking if we are to destroy or
+retain the copies. I periodically delete them, but on no set schedule.
+
+---
+
+So, I think to fix the cropping tool it's a simple matter of keeping
+the "selected photo" in the session, i.e. 
+$_SESSION['gmc_filename'] = $photo->image_name;
+
+
+
+
+#########################################################################
+080919 Fri Sep 19 14:21:13 2008
+
+So we've come to a weird crossroads with GMC. I can't upload a dozen
+pix at once because GMC wants each to be associated with a
+product. Why? Because GMC expects to create a sized image and a
+thumbnail for each one; those dimensions are dependent on the
+Product. Hrmm.
+
+So Jessy agreed that for single upload products we'd have just the
+browse button for now; for multi uploads we'd use the SWFUpload flash
+object.
+
+So I need to test somehow. I suppose I should make a faux print
+product page.
+
+Last thing doing: getting the flash uploader to work on GMC.
+
+
+
+#########################################################################
+080929 Mon 29 Sep 2008 10:30:09 AM EDT
+
+I'm back from vacation. Circled Iowa with Mike Kole.
+
+Replied to Colleen from the Mounties confirming we received her fax.
+
+Trying to figure out where I left off. Fortunately, there's
+uncommitted files in the products project and that's an indicator.
+
+Found, here at the end of the day, Jessy deleted a bunch of important
+code from welcome.php. This resulted in: new signups were forced to
+login after activating. Not a big deal, but it was one more step they
+were forced to take. Jessy got really defensive and said she couldn't
+test it because you cannot sign up on development. (You can't sign up
+on torque because the mx record for test.myphotodevel.com is somehow
+wrong; ims-1 rejects something from fortunecity.com).
+
+In the end I'm guilty of putting important appliation code in a
+display page where she can change it. But it peeves me she changed
+something, not knowing what it is. It just bolsters Chris's argument
+that she should not be programming.
+
+I got multi-photo uploads working with GMC, and did some refactoring
+(though it might need some more) to allow add_flash_upload_tool.inc to
+be used by Gallery and GMC. Next:
+
+* add photos to cart
+* write XML interface to the GMC album, for MediaClip
+
+Wrote another reply to Colleen the Mounty. Replied to two questions in
+her fax.
+
+Sunday night, Mike called Chris and told him he'd accepted a new
+position as a Rails developer.
+
+
+
+#########################################################################
+080930 Tue 30 Sep 2008 03:10:07 PM EDT
+
+Dependencies. The Photo class in GMC is dependent on the Product class
+for the dimensions of the sized image. Hrmm. There needs to be a way
+to decouple that. I can see where using the same image for multiple
+products would lead to complications; I bet when ordering from
+Gallery, the photo is simply copied in again every time.
+
+Perhaps I can use a NullProduct class as a default? Alternately I'm
+thinking of giving the photo class a handle on the Product class;
+which means in the db, I'd have to store the product class name along
+with the image info, which isn't so terrible.
+
+On the other hand... if all it needs is the size of the sized image
+(the midpic), that value could be stored. Or I can just choose a
+default. 
+
+Anyway, I hardcoded 250 into the SelectedPhoto base class; and I
+changed the session cookie name to PHPSESSID to match Gallery. That,
+actually, should finish everything for the time being. I can turn on
+folded cards and test.
+
+
+
+
+
+#########################################################################
+081002 Thu 02 Oct 2008 02:23:27 PM EDT
+
+Been rattling my noggin for the past hour or so about adding prints to
+cart from GMC. Grayboarded some of it with Jessy but we agree that
+this is a small need, ultimately. Really, books and calendars are the
+prime products for GMC, and mugs/mousepads/tshirts will probably be
+the biggest sellers.
+
+Oh, I forgot about the "create an MPA site" step. Ah well. That's in
+the page flow Jessy and I thought up. It's here somewhere.
+
+Maybe it's finally time for a Gallery object in the cart; ditto a GMC
+object, which is the motivator. I already fleshed out, on paper,
+GallerySiteHelper and GiftsSiteHelper classes to abstract away
+differences like 'getThumbnailURL()'. I'm kind of at a loss as to when
+I would instantiate these though. Meanwhile, I think shopping_cart.php
+never, ever sees 'print_choices' in its GET data anymore. We use the
+ajax.php file in Gallery to do all print adding.
+
+Oh, I should set up a comprehensive test while I do store work.
+
+---
+
+Well... hacked in code in the cart to add prints from GMC. The cheap
+solution seems to be: take the data from the DB, fudge it to match
+what Gallery passes in, then call $this->addPhoto(). Lame, but it
+would probably work. Still have to hack up the SiteHelper
+classes. Maybe I'll work this weekend.
+
+
+
+
+#########################################################################
+081003 Fri 03 Oct 2008 02:25:59 PM EDT
+
+Distilling my todo lists into a set of note cards; found this:
+
+Sgt. Rodney Thompson; Bedford County, VA.
+
+That was one of the CP contacts from law enforcement. Oh and Colleen
+Beverly called again, have to return her call.
+
+
+Spent a long time clearing up my desk; distilling the todo lists into
+note cards; only to find all the mpp stuff was pinned to the
+wall. Alas.
+
+I have changed some defined constants shared by gallery and cart;
+actually, gallery uses the constants and the store does not. I should
+probably throw them out altogether.
+
+---
+
+Stow strings are used throughout, so excersing them from the codebases
+might be tricky. Nah. Stow strings are a minilanguage and we should
+kee them.
+
+
+
+#########################################################################
+081006 Mon 06 Oct 2008 11:26:27 AM EDT
+
+Testing MediaClip today. Gonna review the OFS.
+
+Done. Could use some renaming as Fernando simply ressurected the
+copy_to_shipping_dir.pl script.
+
+Where I left off last week was trying to decide what the scope of
+responsibility would be for a GMC class within the Cart: merely a
+helper class that munged strings, or would it be an "instance of" GMC
+(or a Gallery?) It seems the answer came to be the latter, thinking
+about it half asleep this weekend... but I don't remember why now.
+
+The semi crappy thing to do is munge the GMC photo class into
+returning stow strings of its data. That's why I was re-evaluating
+stow strings, but decided they formed a mini-language and we'd keep
+them.
+
+OK, GMC now stores the file width and height in the table.
+OK, can now add prints to cart. Thumbnails don't work
+though. Amusingly it's all Hello, Sailor! images.
+
+
+
+#########################################################################
+081007 Tue 07 Oct 2008 04:57:36 PM EDT
+
+Been cranking away on GMC/Cart stuff today. Did an end to end
+upload/buy/fulfill with prints. Did a bit of refactoring so
+Mediaclip+GMC works. Well, almost: Mediaclip doesn't like the xml it
+gets from GMC. Will have to debug that with Chris's help.
+
+So I started fixing the FIXME's scattered throughout mpa_products, and
+I'm trying to solve the problem where adding prints to cart then
+generates a sized image for every single file, which takes
+hours. (Seemingly anyway). But I found a bug where uppercase file
+extensions break stuff, so I'm looking at this now.
+
+But I wanted to write out the algorithms needed for resizing
+photos. When uploading images for prints:
+
+make thumbnails
+never make a sized image, unless the user wants to see how it crops in
+the cart.
+
+For single photo gifts:
+Always make sized and thumb? I think the sized is used when showing
+the product+image sandwich on quantity.php.
+
+For calendars and books:
+Probably need to make a sized photo every time
+
+The problem is the "selected photo" interface. Born from Gallery, it
+has notions about an "original," a copy of the original, a sized
+version of the original, a sized version of the copy, and so on. I
+guess it comes back to the idea that all the object's "fields" should
+be hidden behind accessors. Then we don't care. I'm not really sure
+the original full sized image from Gallery is ever needed.
+
+Good news, everyone! This works:
+
+#!/opt/php5/bin/php
+<?php
+
+$foo = "hello, sailor!";
+print "{$foo}\n";
+
+class Blippy {
+    function printFoo() { return "foo"; }
+}
+
+$blip = new Blippy();
+print "{$blip->printFoo()}\n";
+
+?>
+
+Output:
+
+swain@torque:~/svn/pgms/php$ ./testbraces.php 
+hello, sailor!
+foo
+swain@torque:~/svn/pgms/php$ 
+
+
+So I can just change the variables into methods and procede thus.
+
+
+
+#########################################################################
+081008 Wed 08 Oct 2008 10:45:01 AM EDT
+
+So.. I got as far as MediaClip actually fetching and reading the data
+from GMC! All I had to do was pass in a correct "username"
+(subdomain). I should have found that on my own. But the important
+thing is I know where the log file is now:
+
+root@torque:/d0/ecommercebridge/log# !!
+tail -f fluorine.log
+
+
+But there's some weird null pointer exception going on. That can be
+diagnosed later: the XML from GMC is identical to that from
+Gallery. It's clearly parsed the XML at this point.
+
+
+2008-10-08 10:37:08,204 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - Sitename: swaingifts
+2008-10-08 10:37:08,205 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - Session Key: ftgme2qfg2u91gr6okaisvtfn3
+2008-10-08 10:37:08,205 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - UID: 0
+2008-10-08 10:37:08,205 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - XML Feed -> http://swaingifts.myphotodevel.com/getxml.php
+2008-10-08 10:37:08,205 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - SK -> ftgme2qfg2u91gr6okaisvtfn3
+2008-10-08 10:37:08,289 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - AlbumId -> yourphotos
+2008-10-08 10:37:08,289 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - AlbumLabel -> Your Photos
+2008-10-08 10:37:08,289 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - Image XML Feed -> http://swaingifts.myphotodevel.com/getxml.php?albumname=yourphotos
+2008-10-08 10:37:08,379 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - photoList count -> 20
+2008-10-08 10:37:08,379 [-1244660816] DEBUG MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager - PhotoId -> 55997690245_G.jpg
+2008-10-08 10:37:08,380 [-1244660816] ERROR com.TheSilentGroup.Fluorine.Filter.MessageFilter - Object reference not set to an instance of an object
+com.TheSilentGroup.Fluorine.Messaging.MessageException: Object reference not set to an instance of an object ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at MyPhotoAlbum.ECommerceBridge.Plugins.UserFilesManager.GetAlbums () [0x00000] 
+  at Mediaclip.ECommerceBridge.API.Services.ModuleServiceBase`1[Mediaclip.GreetingCard.Model.GreetingCard].getAlbums () [0x00000] 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[])
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] --- End of inner exception stack trace ---
+
+  at com.TheSilentGroup.Fluorine.Remoting.RemotingAdapter.Invoke (IApplicationContext applicationContext, IMessage message) [0x00000] 
+  at com.TheSilentGroup.Fluorine.Messaging.Services.RemotingService.ServiceMessage (IApplicationContext applicationContext, IMessage message) [0x00000] 
+  at com.TheSilentGroup.Fluorine.Messaging.MessageBroker.RouteMessage (IApplicationContext applicationContext, IMessage message, IEndpoint endpoint) [0x00000] 
+  at com.TheSilentGroup.Fluorine.Messaging.Endpoints.EndpointBase.ServiceMessage (IApplicationContext applicationContext, IMessage message) [0x00000] 
+  at com.TheSilentGroup.Fluorine.Filter.MessageFilter.Invoke (com.TheSilentGroup.Fluorine.Gateway.AMFContext context) [0x00000] 
+2008-10-08 10:37:08,384 [-1244660816] DEBUG com.TheSilentGroup.Fluorine.FluorineGateway - End AMF request.
+2008-10-08 10:37:08,518 [-1244660816] DEBUG com.TheSilentGroup.Fluorine.FluorineGateway - Begin AMF request.
+2008-10-08 10:37:08,518 [-1244660816] DEBUG com.TheSilentGroup.Fluorine.Messaging.MessageServer - Query endpoint endpointPath:/builder/Gateway.aspx contextPath:/builder
+2008-10-08 10:37:08,519 [-1244660816] DEBUG com.TheSilentGroup.Fluorine.AMFReader - Attempt to read custom object flex.messaging.messages.RemotingMessage.
+2008-10-08 10:37:08,521 [-1244660816] DEBUG com.TheSilentGroup.Fluorine.AMFReader - Attempt to read custom object .
+2008-10-08 10:37:08,522 [-1244660816] ERROR Mediaclip.ECommerceBridge - This is the logger error
+2008-10-08 10:37:08,524 [-1244660816] DEBUG  com.TheSilentGroup.Fluorine.FluorineGateway - End AMF request.
+
+
+Oh, bollocks. My XML is wrong for listing photos. Teh suck. Well
+that's easily fixed. Also not all the sized images are
+created... hrmm...
+
+Oh, the API for a "photo" object, be it GMC or Gallery, should have
+accessors to the following:
+
+full
+sized
+thumb
+highlight (for an album)
+
+And that's it. All the noise about "original in user's Gallery" and
+such should be hidden away. From the point of view of the Gifts
+project it isn't necessary to pollute the glossary with all that
+stuff.
+
+...
+
+VICTORY!
+
+I got photos uploaded to GMC showing in MediaClip. It seems, however,
+that the sized photos are not there. File extension is uppercase?
+Nope, it simply wasn't generated. Hrmm.
+
+Demo'd the stuff for Peter. Very yay. OFS chokes on GMC orders though;
+Fernando is doing some grevious string hacking.
+
+fileName="http://rawimages.myphotodevel.com/w/wh/who/whoo/whooz/whoozie/albums/album01/istock_000004888053small.jpg"
+
+fileName="http://swaingifts.myphotodevel.com/tmp/63gvqfjpt82gfg6r9sfpgtoc20/fc4b905361875a433bfb16fa5d8f54b2.jpg"
+
+Here's the conflict. He munges the former into a path on the
+filesystem; his s/// failes on the latter though.
+
+
+
+
+#########################################################################
+081013 Mon 13 Oct 2008 11:35:26 AM EDT
+
+On Friday morning we rolled out MediaClip folded cards. That's quite a
+big deal. During log monitoring, I found we've been getting hit with
+spam links for viagra and other drugs. Bleh.
+
+I then factored out Jacob's captcha code from share.php and
+process_something.php; made a class Captcha to deal with that; tested;
+then added code to add_comment.php, tested all around, had Jessy
+resize the box, tested, and all was good. Today packaged that for
+Chris. It will roll out this afternoon.
+
+I got Chris to finally create mpa_core in Subversion, and he went one
+step further and made an mpa_signup too. Makes sense. I'm tempted to
+rush right in and start that process, but I don't want to hamper
+the development process with a dev box with one configuration, while
+production has another.
+
+Also, today I'm wearing my old new glasses. Sent an email to Satomi
+using Photobooth.
+
+Trying to figure out what the layout of mpa_core would be... do I mix
+perl and php? If not, is there a perl/ and php/ at the top level? 
+
+Is there some semblance of functionality I can use to divide at the
+top level? I think my initial response is to just toss it all into
+mpa_core at the top level and sort it later; or maybe divide it
+between php and perl.
+
+And we should perhaps have an mpa_cronjobs as well.
+
+But for starts: all PHP should come out. Leaving the Perl in there is
+no biggie.
+
+Oh, have to fix up the OFS to process GMC orders still... 
+
+Done; I can't see any "clean" way to solve the problem that the XML
+from MediaClip gives us the URL to the raw image. So Fernando does an
+s/// on it to make it a file path; if his fails, we try mine.
+
+            unless ($file_name_path    =~ s%http://rawimages.\Q$SERVICE_NAME/%/mnt/slow/vol01/%i) {
+                # kludge: munge the URI for GMC instead, see if that
+                # works... note I'm using [a-z]*gifts instead of just
+                # 'gifts' to accomodate our test sites on torque. --sw oct 2008
+                $file_name_path    =~ s%http://[a-z]*gifts.\Q$SERVICE_NAME/%/opt/mpa/custom-sites/gifts/%i;
+            }
+
+
+Eh, it works.
+
+
+
+#########################################################################
+081014 Tue 14 Oct 2008 10:59:45 AM EDT
+
+We'll need at least three calendar products, I think; I don't know how
+many books, and there's no slimlines in there at all.
+
+Yesterday Chris brilliantly rolled out mod_deflate on the image
+servers and went to work on Jessy's machine (installing XP so he can
+install MediaClip). I decided on sheer whim to place a print order,
+and lo, the thumbnails didn't load in the shopping cart page. But it
+worked for him. It eventually turned out to be an inconsistent bug
+with the load balancer, and he finally resolved it. I am skeptical
+about his claim in his email that the outage was "10-15 minutes." I'd
+say more like a half an hour.
+
+Still, rolling out a configuration change on a Monday afternoon? Even
+if it is Columbus Day, such changes should be handled more gingerly.
+
+Today: more failures. Onstor bug hit, and now I'm seeing the exact
+same images-not-loading problem as yesterday. Chris is on the phone
+with someone and whacking his keyboard really hard. It sucks for him
+that Peter found the outage. Peter's bug was odd: GiftDB complained
+that it didn't get a CONSTANT_NAME back for some reason.
+
+
+
+
+#########################################################################
+081015 Wed 15 Oct 2008 12:10:14 PM EDT
+
+Peter's pushing for us to get the rest of MediaClip finished. Had to
+call Jessy to get some info. Fernando is going to enter the product
+data: nine books, four calendars. Dunno about slimlines yet.
+
+[Wed Oct 15 13:47:53 2008] [error] [client 64.52.253.115] File does not exist: /opt/mpa_products/current/tmp/b11b56928c51e5a0e13be1b556fd70cd.thumb.jpg
+[Wed Oct 15 13:47:53 2008] [error] [client 64.52.253.115] File does not exist: /opt/mpa_products/current/tmp/94326cef46465b9d100c5f9c36ba90b2.thumb.jpg
+
+
+
+Note on staging the cart tries to pull the thumbnails from the wrong
+address... or something...
+
+
+
+
+
+#########################################################################
+081016 Thu 16 Oct 2008 12:25:12 PM EDT
+
+Yesterday: got MediaClip books working with the cart.
+
+Today: Renewed focus on MPP. Gotta get all that working again.
+
+
+
+#########################################################################
+081017 Fri 17 Oct 2008 04:42:06 PM EDT
+
+The story so far: Working off an old O'Reilly article, I want to
+create a local repository of my shell buffer contents. I don't want to
+have dated files like I currently do:
+
+swain@torque:~$ ls -la .emacs.shellbuffer.* | wc -l
+589
+
+Examples:
+
+-rw-r--r-- 1 swain swain     834 2008-07-10 18:51 .emacs.shellbuffer.www-2008-07-10
+-rw-r--r-- 1 swain swain    4257 2008-07-11 15:16 .emacs.shellbuffer.www-2008-07-11
+-rw-r--r-- 1 swain swain     135 2008-07-14 18:23-.emacs.shellbuffer.www-2008-07-14
+[...]
+-rw-r--r-- 1 swain swain     851 2008-10-15 18:18 .emacs.shellbuffer.www-2008-10-15
+-rw-r--r-- 1 swain swain    4596 2008-10-16 16:58 .emacs.shellbuffer.www-2008-10-16
+-rw-r--r-- 1 swain swain      76 2008-10-17 16:43 .emacs.shellbuffer.www-2008-10-17
+
+This is too much. So, The Google turns up this article:
+
+http://www.onlamp.com/pub/a/onlamp/2002/10/31/subversion.html#create_a_repository
+
+Here's my steps so far, which seem to work fine.
+
+  509  svnadmin create .svnlocal
+  510  svn mkdir file:///home/swain/.svnlocal/shellbuffers -m  "create emacs shellbuffers repostiory"
+  511  pwd
+  512  cd
+  513  cd .svnlocal
+  514  ls -lta
+  515  ls
+  516  find . -name shellbuffers
+  517  cd
+  518  svn checkout file:///home/swain/.svnlocal/shellbuffers .emacs.shellbuffers
+  519  cd .emacs.shellbuffers
+
+Now, I need to tweak Emacs to use the new directory that uses the
+local repository. I'm giggling as I write this because it's so
+freaking silly in a way.
+
+OK:
+
+(defvar sw-buffer-file-name-prefix "~swain/.emacs.shellbuffers/"
+  "All shell buffers, when their contents are saved, get this string prefixed to the buffer name.")
+
+I dropped the long filename prefix, since it's not needed anymore.
+
+Hmm. What I'd be giving up here is the easy ability to grep the
+shellbuffer files. But it wouldn't be hard to tweak the Korn shell
+script to generate all the files with svn cat, and then grep
+those. The need arises so rarely.
+
+And on every machine I'd have to create a repository and all
+that. Perhaps this is a per-machine kind of thing? On torque it makes
+more sense but on mup-1 or stg-1 it makes little sense.
+
+So, this is a runtime option of sorts. Torque? Subversion. Elsewhere?
+Incremental files.
+
+
+
+#########################################################################
+081020 Mon 20 Oct 2008 10:35:55 AM EDT
+
+Well, coming back after the weekend:
+
+swain@torque:~/.emacs.shellbuffers$ svn commit -m "since updated"
+Sending        cli
+Transmitting file data .
+Committed revision 3.
+
+Now that's a nice feature. They only commit if they've been
+changed. Timestamps don't seem to matter.
+
+So, after a contentious standup meeting, we're gunning to get this
+thing live by Wednesday as promised.
+
+
+
+#########################################################################
+081021 Tue 21 Oct 2008 07:27:45 PM EDT
+
+In very late, had to wait on Vinnie. Actually I wasn't going to come
+in at all but he was done before noon.
+
+Just did a massive housecleaning of the OFS, throwing out all the DPI,
+Neilsen, and Zaah code. I started by trying to fix a bug where the
+"your order has shipped" email had a bug: it doesn't list the
+subtotal, discount, shipping and final total. It turns out we have no
+way to do end to end testing of the OFS at the moment; probably not
+since we switched to Qualex. PixFusion, it seems, never did implement
+an order status notification mechanism, so I shot off an email. I
+can't remember how Pixami does it, but who cares; it will just be
+Qualex and Rastar.
+
+Erm. How do I select all status 9 orders that are Qualex product
+laden? Erm... select * from somewhere where orders_status=9 and
+products_id = p.products_id and p.manufacturers_id = 11?
+
+
+
+#########################################################################
+081024 Fri 24 Oct 2008 09:52:10 AM EDT
+
+Got end to end testing of the OFS fixed; threw out a ton of old code
+in the process. Store now uses the ezsql in /opt/mpa/lib/ezsql. Modded
+that to get around the bug that prevents mysql_insert_id from being
+returned.
+
+Spent time at PDN yesterday; smaller than last year (which was smaller
+than the year before.) No Apple. No collages.net. I think the digital
+revolution is largely complete, which in part is why it's smaller. The
+focus of the panels has shifted somewhat, less on industry issues and
+more on the craft and the business.
+
+Also fixed a bug where shipping did not show up for Mediaclip books;
+fixed places in the cart where the books didn't show up at all; and
+fixed a bug in the "order complete" email. Fernando has been cranking
+away on the Rastar order fulfillment. Chris is out today for a
+bachelor party. He flew somewhere. Last night while I was at Tom's,
+Peter called me saying he got an email from Janet saying the site was
+down. I leaned over Jim Yanks to type in the URL on Satomi's laptop --
+they were trying to sort out a mess with Tom's expense reports -- but
+the site was up. Likewise the cart seemed fine.
+
+Yesterday morning we had a number of broken print orders. This was due
+to Chris rolling out the wrong conf files for the store (he rolled out
+"in maintenance" then rolled back old ones). My new constants for the
+stow strings were missing so adding an entire album to cart resulted
+in one broken image. Yet people still bought the single item.
+
+Did repeated rollouts and testing of the codebases to staging. Finally
+tagged them STAGING. Should be good to go live on Tuesday.
+
+
+---
+
+Wrote up a small script to query Rastar for an order's status, since
+we have to poll them. (bleh). Have to write one more piece to update
+the status on our end, and then remove_completed_orders needs
+finishing.
+
+
+
+
+
+#########################################################################
+081027 Mon 27 Oct 2008 10:29:38 AM EDT
+
+Spent time tweaking my setup on kristalle (my iMac), so shell buffer
+contents are stored in a local svn repository.
+
+Oy vey. In the advertisers table, all the first_names are populated
+with email addresses. How did this happen?
+
+
+
+#########################################################################
+081028 Tue 28 Oct 2008 02:47:51 PM EDT
+
+Did quite a bit of housekeeping with MPP yesterday: redid some of the
+lisp I use, added an svn repo on my imac and cronned the perl script
+to manage it, etc. Found Mike had made changes to the DB so my tables
+were out of date, corrected that, added a new action to the
+photog_admin ("contact") and that needs to be fleshed out.
+
+I realized I'm writing, in effect, a CRM for MPP. For some reason I
+like this idea.
+
+cart: R_2008_10_10_folded_cards_launch
+gall: R_2008_10_13_comments_captcha
+prod: R_2008_10_17_signature_wines
+
+Whipped up the release notes for the mediaclip book release. We'll
+have to get calendars live by tomorrow.
+
+
+kristalle:/usr/local/src/subversion-1.4.3/tools/examples swain$ gcc -o ~/client minimal_client.c  -I/usr/local/include/subversion-1 -I/usr/local/include/apr-0 -L/usr/local/lib -lsvn_client-1 -lapr-0 -laprutil-0 -lsvn_client-1 -lsvn_fs-1 -lsvn_ra_dav-1 -lsvn_repos-1 -lsvn_delta-1 -lsvn_fs_fs-1 -lsvn_ra_local-1 -lsvn_subr-1 -lsvn_diff-1 -lsvn_ra-1 -lsvn_ra_svn-1 -lsvn_wc-1 
+kristalle:/usr/local/src/subversion-1.4.3/tools/examples swain$ ~/client
+Usage:  /Users/swain/client URL
+kristalle:/usr/local/src/subversion-1.4.3/tools/examples swain$ ~/client file:///Users/swain/.svnlocal
+   shellbuffers
+kristalle:/usr/local/src/subversion-1.4.3/tools/examples swain$ 
+
+Rather hideous, but I got a subversion client to compile. The
+subversion tarball contains an example program, minimal_client.c, and
+half the battle was finding what it needed to compile.
