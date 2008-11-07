@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://ns.adobe.com/air/application/1.0">
+  <id>com.aircmr.HelloWorld</id>
+  <version>1.0</version>
+  <filename>HelloWorld</filename>
+  <name>Hello World</name>
+  <description>An AIR app to say hello.</description>
+
+  <initialWindow>
+    <content>HelloWorld.swf</content>
+    <title>Hello World</title>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+  </initialWindow>
+  <installFolder>AIRCMR/HelloWorld</installFolder>
+  <programMenuFolder>AIRCMR</programMenuFolder>
+</application>

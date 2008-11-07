@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication
+   xmlns:mx="http://www.adobe.com/2006/mxml"
+   layout="vertical"
+   windowComplete="completeHandler();">
+
+  <mx:Script>
+    <![CDATA[
+// window has complted initial layout and is made visible.
+private function completeHandler():void
+{
+trace("hello world!");
+}
+]]>
+</mx:Script>
+<mx:Label text="Hello World" />
+</mx:WindowedApplication>
