@@ -1,0 +1,27 @@
+  534  mkdir HelloWorld
+  535  cd HelloWorld/
+  536  mv HelloWorld.mxml HelloWorld-app.xml
+  537  amxmlc -load-config "~/flexsdk/frameworks/air-config.xml"  -output HelloWorld.swf HelloWorld.mxml
+  538  amxmlc -load-config ~/flexsdk/frameworks/air-config.xml   -output HelloWorld.swf HelloWorld.mxml
+  539  amxmlc -load-config ~/flexsdk/frameworks/air-config.xml   -output HelloWorld.swf HelloWorld.mxml
+  540  amxmlc -load-config ~/flexsdk/frameworks/air-config.xml   -output HelloWorld.swf HelloWorld.mxml
+  541  adl HelloWorld-app.xml 
+  542  adl HelloWorld-app.xml 
+  543  amxmlc -load-config ~/flexsdk/frameworks/air-config.xml   -output HelloWorld.swf HelloWorld.mxml
+  544  amxmlc -debug HelloWorld.mxml
+  545  fdb
+  546  amxmlc -load-config ~/flexsdk/frameworks/air-config.xml   -output HelloWorld.swf HelloWorld.mxml
+  547  adt -certificate -cn HelloWorld 1024-RSA certificate.pfx password
+  548  adt -package -storetype pkcs12 -keystore certificate.pfx HelloWorld.air HelloWorld-app.xml HelloWorld.swf 
+  549  adt -package -storetype pkcs12 -keystore certificate.pfx HelloWorld.air HelloWorld-app.xml HelloWorld.swf 
+  550  ls -ltr
+  551  cd ..
+  552  svn sat
+  553  svn stat
+  554  svn add HelloWorld/
+  555  cd ..
+  556  svn stat
+  557  cd flex
+  558  svn commit -m "first example from the wrox book done"
+  559  cd HelloWorld/
+  560  history > history.txt
