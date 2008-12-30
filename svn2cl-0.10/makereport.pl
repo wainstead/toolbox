@@ -8,12 +8,10 @@ use warnings;
 use Net::SMTP;
 require "/opt/mpa/lib/db-strict.pl";
 
-my $debug = 0;
-open LOG, ">> /tmp/log" or logdie $!;
-
-
 sub logdie { print LOG "$_[0]\n"; exit(1); }
 
+my $debug = 1;
+open LOG, ">> /tmp/log" or die $!;
 
 my $dbh = &MysqlConnect();
 

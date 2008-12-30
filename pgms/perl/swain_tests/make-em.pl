@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+$template = `cat add.template`;
+
 while ($line = <DATA>) {
     chomp $line;
     $line =~ s/\s//g;
@@ -10,6 +12,15 @@ while ($line = <DATA>) {
         next;
     } else {
         print "$cat, $prod, $id\n";
+
+        $copy = $template;
+        $copy =~ s/##FROMCATEGORY##/$cat/g;
+        $copy =~ s/##PRODUCTS_ID##/$id/g;
+        $copy =~ s/##CONSTANT_NAME##/$prod/g;
+
+        open LHHFILE, ">$id.fromtemplate.lhh" or die $!;
+        print LHHFILE $copy;
+        close LHHFILE;
         $hash{$id}++;
     }
     

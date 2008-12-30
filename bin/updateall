@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "signup:"   ; cd /home/swain/public_html/projects/mpa_signup  ; svn update
+echo "gallery:"  ; cd /home/swain/public_html/projects/mpa_gallery ; svn update
+echo "cart:"     ; cd /home/swain/public_html/projects/mpa_cart    ; svn update
+echo "conf:"     ; cd /home/swain/public_html/projects/mpa_conf    ; svn update
+echo "products:" ; cd /home/swain/public_html/projects/mpa_products; svn update
+echo "static:"   ; cd /home/swain/public_html/projects/mpa_static  ; svn update
+echo "www:"      ; cd /home/swain/public_html/projects/mpa_www     ; svn update
+echo "core:"     ; cd /home/swain/public_html/projects/mpa_core    ; svn update 

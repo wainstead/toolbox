@@ -41646,3 +41646,1632 @@ kristalle:/usr/local/src/subversion-1.4.3/tools/examples swain$
 Rather hideous, but I got a subversion client to compile. The
 subversion tarball contains an example program, minimal_client.c, and
 half the battle was finding what it needed to compile.
+
+
+
+#########################################################################
+081030 Thu 30 Oct 2008 05:14:05 PM EDT
+
+Long day of testing, tweaking, and prepping yet another rollout.
+
+Edited the json files so we have American English calendar
+dates. Tested and retested. Fixed a bug in the cart. Helped Jessy get
+her work done today. Spent quite a lot of time on IM with her, in
+fact.
+
+
+
+
+#########################################################################
+081031 Fri 31 Oct 2008 12:16:19 PM EDT
+
+Calendars live. Tom/Peter/Jessy tossed out an invalid offer concept,
+which Fernando dutifully tried to implement, which lead to an offer
+going out that was completely infeasible. Layers of miscommunication,
+coupled with an inability to say no. Oh well. Some lessons are learned
+the hard way.
+
+
+
+
+#########################################################################
+081103 Mon 03 Nov 2008 10:54:08 AM EST
+
+You say, "today our head of ops gets told he's being fired"
+You say, "his replacement starts tomorrow"
+You say, "should be a lot of drama"
+draco [to Wainstead \]: what did he screw up?
+Wainstead \ [to draco]: in a nutshell, he is incapable of holding a middle management position. 
+he's a brilliant technical person, but he cannot communicate with nontechnical people. he cannot 
+work unsupervised either; he probably does only 1-2 hours of work in a given day (unless he's 
+putting out fires). He cannot finish anything; i've seen him fuck himself many many times because 
+something was only 90% done, or done half assed.
+heller [to Wainstead \]: you are aware of all the fun of escorting  him into a room away from 
+computers while you guys change all passwords and stuff. right? 
+Wainstead \ [to heller]: that's not my job. i doubt he'll pull something like that; he's going to 
+be offered a very sweet severance package. he's always majorly in debt so i'm confident he'll take 
+it.
+heller says, "then it's not being fired. . .it's being layed off. :->"
+Wainstead \ [to heller]: i warned our ceo and jessy (since she's director of photo services) that 
+we could be facing a week of downtime in the worst case, where the mass storage has some failure 
+and he's gone
+Wainstead \ [to heller]: true enough, laid off. and replaced with one of his former bosses.
+heller asks, "so. . .what did he do? or not do?"
+Wainstead \ [to heller]: also i'm the good cop here. the ceo is the fall guy. so even if he blows 
+up i'll call him and tell him not to fuck me. or he doesn't get his dvd's back. ;o)
+Wainstead \ [to heller]: well, that's a long long story. but this process started about three 
+months ago, when, again, he got jessy so upset she went into the conference room and curled up in 
+the corner on the floor (not kidding) because she was so mad and frustrated trying to deal with 
+him. since he became head of ops back in ... 2005, I think, he's progressively made more and more 
+difficult procedures so he doesn't get bothered by anybody and he can play with his iphone all day.
+Wainstead \ [to heller]: that was probably one of those confrontations that set her off. she and i 
+have talked each other down dozens and dozens of times over him.
+Wainstead \ [to heller]: he is, in the parlance of antipatterns, a corncob
+heller says, "ok. so just general assholishness. . ."
+tiResias [to project]: where are you getting this extra 1.2% in your cost calculations from...
+Wainstead \ [to heller]: well, his general assholeness was what brought things to critical mass, 
+finally. so that day i had our ceo come into the conf room to talk to jessy and i
+heller [to tiResias]: MS tax. 
+Wainstead \ [to heller]: and one of the things i told him was: there were days in the past couple 
+of years where, after some confrontation with him (chris) i was so *beside myself* that i sat at 
+my desk, unable to work, and thought: there's no way i can continue working here...
+tiResias [to heller]: I actually think it may be some sort of tax calculation, but I'm not sure 
+where that is set up
+Wainstead \ [to heller]: one of those many occasions where you probably told me to stop bitching 
+about him on avalon :o)
+Wainstead \ [to heller]: so our ceo told jessy and me, if you want i will replace him but you have 
+to be full in 
+Wainstead \ [to heller]: and i didn't want that, because despite wanting to blow him away with a 
+sawed off shotgun on a near weekly basis, we get along great outside of work
+heller says, "that's no reason to work with someone you can't stand to work with. :-> "
+heller says, "I know lots of people I would never work with. "
+Wainstead \ [to heller]: and i had our ceo and jessy sold on the idea that day that what we needed 
+to do was work on team buiding; that chris and jessy used to get along fantastic (smoke breaks, 
+but she quit smoking)
+tiResias says, "well, we didn't invoice any taxes, so I guess I can't put this number in a status 
+report ;)"
+Wainstead \ [to heller]: yeah, well, it didnt' matter because of the next two things to happen... 
+we have half a million dollars invested in storage, and chris is completely unable to tell our 
+ceo, in terms our ceo would understand, the state of the storage, what's being used for what, etc 
+etc
+Wainstead \ [to heller]: this all came to a head last month with our ceo sending chris an excel 
+spreadsheet and bugging him (cc'ing everyone too) twice a day making him fill it out
+Wainstead \ [to heller]: in the end it was a fairly simple document too; and i thought, two years, 
+chris, of our ceo asking for this in manager's meetings and you couldn't create one?
+Wainstead \ [to heller]: and finally, proverbial straw came about five weeks ago. we do daily 
+standup meetings, just me, my programmer, jessy, her design guy. and chris was put on a project to 
+get this .NET book maker up and running for the holidays (now live, it's pretty cool)
+Wainstead \ [to heller]: our ceo told chris to join the standups until the project was finished 
+(maybe 6 weeks). 
+[Type lines of input; use `.' to end or `@abort' to abort the command.]
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+Although I feel it is more than adequate to do a meeting Mon Wed Fri, I've got no problems joining 
+a daily tech meeting.
+Two requests: have it after 11am and let's make it seated.
+
+My requests are due to the following:
+Standing for any amount of time and my back starts to act up.
+Between 9am and 10:30am OPs is checking the previous nights emails, monitoring system, and graphs.
+OPs would more than likely push this meeting back several times a week and I'd like us to keep a 
+routine
+and besides morning meetings are horrendous.  I for one am not a morning person.
+
+I propose this:
+Seated in the conf room.
+Limited to the following:
+What I did yesterday
+What I am doing today
+Problems I am having.
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+You say, "now, there are two problems here. 1: he can't come in at 945am every day? 2: he's a 
+fucking liar about reading systems emails for two hours every morning and everyone knows it. 3: 
+his "proposal" is exactly what we do anyway. 4: he can stand in a bar or at a concert for hours on 
+end, so the back thing is horse shit."
+You say, "so our ceo said to me: i will order him to be in at the 945"
+You say, "and i said: don't bother we'll move it to 11am"
+You say, "but everyone hated that because it broke the flow of the day"
+You say, "and our ceo sat chris down, 1:1 talk, and by the end our ceo had to walk out because he 
+wanted to punch chris, who can be like a stubborn 2yo on the pot refusing to poop."
+You say, "so, after meeting this guy bill only once, he was hired to replace chris. i'm not 
+worried though. bill has been a sysadmin for years longer than chris and is highly recommeneded by 
+jessy's girlfriend (uber sysadmin herself) so somehow things will shake themselves out."
+You say, "for me, after 3-4 years of this drama, it's like the guilty relief one feels after a 
+terminally ill loved one passes away. i'm done with the situation and feel practically nothing."
+heller says, "well. . .the problem is going to be how pissed chris is. "
+You say, "i have sudo access to most machines.. as long as he doens't lock me out of bastion 
+(intermediate machine) there wont' be too many problems."
+heller [to Wainstead \]: as I said. you don't need to work with someone who's just going to be a 
+roadblock. no matter how good a guy he is. 
+Wainstead \ [to heller]: yeah. i have plenty of friends i wouldn't want to work with. i have 
+plenty of coworkers whom i like but wouldn't be friends with. frank zappa said, in his 
+autobiography: friendship lasts up to about $10,000. then it's just boss/worker relationship. but 
+i think that's true also when you have a stake in the company (and we all do)
+merlin stoicly orates, "holy fucking shit i hate this morning"
+
+---
+
+Count colum types in a database. No idea anymore why I was writing
+this.
+
+#!/opt/php5/bin/php
+<?php
+
+// Tell Gallery not to exit on redirects.
+define('MPA_NO_EXIT', true);
+
+$_SERVER['MPA_GALLERY_ROOT'] = 'swain.myphotodevel.com';
+require_once('/opt/mpa/conf/gallery.conf');
+require_once("{$GALLERY_BASEDIR}init.php");
+
+$dbconn = DBConn::getInstance();
+$conn = $dbconn->getConnection();
+
+print "connection: $conn\n";
+
+$query = "show tables";
+$result = mysql_query($query, $conn);
+
+if (!$result) {
+    $message = 'Invalid query: ' . mysql_error() . "\n";
+    $message .= 'Whole query: ' . $query;
+    die($message);
+ } else {
+    //var_export($result); print "\n";
+ }
+
+while ($row = mysql_fetch_assoc($result)) {
+    //print "{$row['Tables_in_mpa']}\n";
+    $query = "show columns from {$row['Tables_in_mpa']}";
+    $lr    = mysql_query($query, $conn);
+    while ($col = mysql_fetch_assoc($lr)) {
+        $types[$col['Type']]++;
+    }
+ }
+
+
+foreach ($types as $type => $count) {
+    print "$type: $count\n";
+}
+
+?>
+
+----
+
+Been resurrecting Jacob's cd burning code... there are some major
+problems with it.
+
+1. It relies on mpa_id, which is the primary key to the mpa_albumitems
+table. This table is not maintained.
+
+2. The table structure he used is appalling:
+
+mysql> desc gift_archive_disc;
++---------------+------------------+------+-----+---------+----------------+
+| Field         | Type             | Null | Key | Default | Extra          |
++---------------+------------------+------+-----+---------+----------------+
+| id            | int(10) unsigned | NO   | PRI | NULL    | auto_increment | 
+| createtime    | datetime         | YES  |     | NULL    |                | 
+| albumItemsIds | text             | YES  |     | NULL    |                | 
+| type          | char(11)         | YES  |     | NULL    |                | 
++---------------+------------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
+Here, albumItemsIds contains a pipe delimited string of the selected
+photos.
+
+3. The code relies on the old filesystem structure (that is, before
+Jessy's redesign of all the pages). Fixing this is hard.
+
+
+4. All photo selecting has been consolidated into select_photo.php;
+so, do we break that decision or merge this into it?
+
+
+
+
+#########################################################################
+081104 Tue 04 Nov 2008 10:43:16 AM EST
+
+Any rastar order that's not cancelled and not finished. Each order
+part has a row in ofs_orders_parts_status. So join the 1200's that are
+not status 3 to the rastar table...
+
+Been trying to think through the algorithm today for querying order
+status from Rastar. There's two tables: ofs_orders_parts_status and
+rastar_orders_status. The latter, we'll add a new row for each status
+change. This gives us an audit trail.
+
+I think the polling script will only insert rows and nothing more. It
+will be up to the remove_completed_orders.pl script to change the
+orders_status in ofs_orders_parts_status to 3 when there's a row
+that's 'Shipped' or 'Cancelled'. This seems fairly uncoupled.
+
+1. get all rows from rastar_orders_status where
+ofs_orders_parts_status.orders_status = 9 (transmitted).
+2. Query Rastar.
+3. For each result, insert new row into rastar_orders_status (which
+means we need to filter out duplicates).
+
+1. remove_completed_orders queries rastar_orders_status for all orders
+where ofs_orders_parts_status.orders_status = 9 and
+rastar_orders_status.orders_status = 'Shipped'.
+2. Update ofs_orders_parts_status to 3.
+
+
+
+#########################################################################
+081105 Wed 05 Nov 2008 10:52:49 AM EST
+
+Obama won. Prop 8 passed, Series of Tubes was re-elected, the Crats
+only got 56 senate seats, NY state senate goes to the Crats, MA
+decriminalizes 1oz of mary jane... Al Franken lost... Palin might get
+a Tyra Banks-style talk show.
+
+---
+
+Can't really focus on anything. I'm just trying to add print surface
+selection for now. Trying to decide where that would go; probably in
+osc_cart.
+
+Fixing svn perms when committing: /opt/scripts/svn_correct_perms on
+rcs.corp.myphotoalbum.com.
+
+
+
+
+#########################################################################
+081106 Thu 06 Nov 2008 01:44:08 PM EST
+
+How to set a text node after you get an element by tag name, in Perl:
+
+#!/usr/bin/perl
+
+use XML::DOM;
+use Data::Dumper;
+
+my $parser = new XML::DOM::Parser;
+my $doc = $parser->parsefile('/opt/mpa/template/qualex/qualex_order.xml');
+
+
+my $node = $doc->getElementsByTagName('paper_surface')->item(0);
+
+my $child = $node->getChildNodes()->item(0);
+$child->setNodeValue('matte');
+print $child->getNodeValue;
+
+print "\n";
+
+
+And, as implemented, with error checking:
+
+
+# this replaces whatever value is in a text node, or appends a new
+# text node if none is found
+sub replace_text_node {
+    my ($self, $tagname, $value) = @_;
+
+    my $node = $self->doc->getElementsByTagName($tagname)->item(0)
+        or do {
+            $self->add_error("Failed to find an element with tag name '$tagname'");
+            return ERROR;
+    };
+
+    my $child = $node->getChildNodes()->item(0);
+
+    if ( $child && ($child->getNodeType() == XML::DOM::TEXT_NODE) ) {
+        $child->setNodeValue($value);
+    } else {
+        my $textnode = $self->doc->createTextNode($value);
+        $node->appendChild($textnode);
+    }
+
+}
+
+
+Today: updated rastar polling script... the problem on production with
+subversion happens when you use the newer client (1.5) on mdb-2 to
+update a repository; every other machine has 1.4, and will refuse to
+read the local copy anymore.
+
+Put an order through with white borders and luster. Spent time tracing
+the javascript in the cart; but it's really really tightly coupled, I
+think, with the PHP code. So this is a huge problem. It always has
+been, though; the current implementation grew out of the old one
+organically. I should imagine elsewhere in this log I documented how I
+spent time optimizing the page and discovered it was being super
+horrible inefficient using a buffer, making a full copy of the page in
+a variable, and then printing the variable.
+
+
+
+
+#########################################################################
+081107 Fri 07 Nov 2008 12:50:43 PM EST
+
+Well, without reading back what I wrote yesterday, what I found with
+the cart is that the javascript is intimately tied to the PHP code in
+the Cart class. Specifically, since the form variables are named in
+the scheme "cbid[]", which translates to a PHP array on the back end,
+this creates a very concrete data structure dependency between the
+page and the class code.
+
+What's at cost here is understandability, but on the other
+hand... even rewriting the whole shebang into something more loosely
+coupled won't necessarily help matters much. But what I really want, I
+suppose, is ease in extending the damn thing. Particularly, I want to
+add bordered prints next.
+
+Now, conceptually, it would work this way:
+
+4XD print: has "parameters" indicating which Qualex product ID should
+be used. For qualex there's only two choices (bordered or not). For
+District this would have been a bigger help, because a matte 4XD was a
+different product ID, but for Qualex it's a top level XML tag's value.
+
+So let's broaden the problem some more. For a given image in a
+customer's album, they might want a 4x6 and an 8x10. Currently, two
+copies of the image will be placed in the order. Yes, this wastes disk
+space, but not much in the grand scheme. The amount of effort to
+overcome this defect is far more expensive than just buying more disk
+space.
+
+Anyhow: if we did, it might have other benefits.
+
+image -> 4xd
+      -> 5x7
+      -> 4Bx6
+
+OK, in DDL terms this would mean a table looking like this:
+
+image_id,
+qualex_product_id
+
+In a perfect world we wouldn't copy the image from the slow storage at
+all, though I'm much more comfortable doing so.
+
+(Incidentally, my current thinking is to put off Veracity, and code
+Gallery to do all the work of storing the data in the database, and
+copying over stuff only when there's a hit on the site. Then, with
+this 'dual mode Gallery' we have time to port the data into the DB).
+
+(al gore rythm:
+
+first, new provisions are provisioned the new way. all new signups are
+db-only.
+second, gallery is extended to port the data to the db when someone
+requests something. First hit will be slow.
+third, at our leisure, we port the rest of the sites over. could be as
+trivial as hitting each site, one at a time.
+fourth, clean up the filesystem. this only means deleting dat files.
+fifth, unified file system? no more slow/fast?
+
+end).
+
+Meanwhile... in two or so years, I think MPA will be fairly
+obsolete. Let's go off on a theoretical experiment.
+
+One of the biggest problems is: uploading is slow. Everyone complains
+about it. It's the fault of the ISP though.
+
+This is why the plugin for iPhoto resizes before upload,
+optionally. Does Flex have this capability? Skimming through my two
+Flex books, it looks like it. It's a big step to making a desktop app
+that synchronizes the albums and photos on your desktop with those on
+the server.
+
+Anyway; most friends are now sharing photos on Facebook and
+Myspace. What's notable here is the social networking came
+first. Where we beat them is in offering finished products; and will
+the social networks survive? My instinct says no, because they are
+for-profit ventures that must inevitably make money, and efforts to
+make money will probably ruin them; and people will probably drop out
+of them after tiring of them. I'm not saying they are a flash in the
+pan, no; I'm saying that a fatigue sets in, you get tired of the
+people who post every little thing because they are dying for
+attention, you get the Michael Normans who are posting crap from their
+jobs... whereas Avalonians would probably pay a minimum fee to stay
+connected year over year. The dropout rate is remarkably low.
+
+Well that's a tangent. The point is... what happens to photo sharing
+in the future? There's a need to get the images directly off the
+camera to somewhere on the Net. Camera phones continue to improve. I
+should think the savvy types will shoot with their camera and the
+images uploaded nearly immediately, slowly, to conserve
+bandwidth. Probably sorted by datetime, and later the user can
+tag/sort them. It's really a matter of *the path of least resistance.*
+Uploading and sharing photos is a hassle. It should be as direct as
+possible.
+
+This now comes back to the idea of developing iPhone or Android
+applications, but that means phones and licensing and restrictions all
+have to evolve to support it. But they probably will.
+
+On the other hand, the G10 is now something like 14MP, which is kind
+of silly.
+
+So... two paths here: the snapshot from the camera phone, instantly
+shared; and the more sluggish handheld jumbo image files, slow uploads
+and all that. Seems we're stuck competing with Snapfish et al in the
+latter category.
+
+---
+
+Here's how Jacob's stuff worked. There's a column in a table,
+gift_archive_disc, with a column of type TEXT. He stored an array of
+mpa_id's as a pipe delimited list:
+
+albumItemsIds: 13868|13869|13870|13871|13872|13873|13874|13875|....
+
+These mpa_id's were (past tense) the IDs of the photos as stored in
+the mpa_albumitems table.
+
+When we moved data centers in the fall of 2006, this table was lost
+because Chris dumped the database to a text file using the default
+settings that mysqldump uses... so the table mpa_albumitems was one
+long string.
+
+When he tried to load this 10GB table into the new database, he got a
+"String too long" error, and so we gave up on the table at that point
+because there were too many things to deal with at the time.
+
+So Jacob's UI relies on a feature that no longer exists.
+
+---
+
+Renaming files. How about: only if we need to? If the name has some
+wonky thing about it -- too long, contains funny chars -- we rename
+it.
+
+Conversely we can just name it with the ID from the database.
+
+
+
+#########################################################################
+081110 Mon 10 Nov 2008 10:29:43 AM EST
+
+It was slightly gratifying to hear from Fernando how much Jacob hated
+the cd/dvd project. HATED IT. Me too. It's a mind numbingly tedious
+awful boring project.
+
+Well, we can visit each photo since we do anyway. filesize is the PHP
+function. I can reuse Ronny's du() on the album. I can cook up a
+testbed.
+
+Thought: user adds photos or whole album to disc. Keep internal
+running count of the bytes. Can do this in Javascript along with the
+session.
+
+So, the fun really begins now. Until now quantity.php in products only
+handled single photo items and expects a photo ID to be passed
+in. Time to refactor.
+
+
+
+#########################################################################
+081111 Tue 11 Nov 2008 09:28:09 AM EST
+
+[Type lines of input; use `.' to end or `@abort' to abort the command.]
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+AIM IM with typolesbo.
+9:22 AM
+typolesbo: youi in?
+typolesbo: what did you want up calling the class for the t-shirt?
+typolesbo: they are all faliking for m
+typolesbo: e?
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+Wainstead \ . o O ( need... more... coffee... first... )
+[Type lines of input; use `.' to end or `@abort' to abort the command.]
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+9:25 AM
+Steve Wainstead: ORNAMENT_PORCELAIN_T_SHIRT
+Steve Wainstead: is that what you want?
+typolesbo: tahst fine
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+You say, "had i not been reading about quantum mechanics on the way in this morning that exchange 
+might have baffled me"
+draco [to Wainstead \]: a porcelain t-shirt sounds quite uncomfortable
+Wainstead \ [to draco]: all i know is it's a christmas ornament. go figure.
+
+
+Oddly, I've been looking at order_prints.php and picking away at the
+JavaScript; and then thought, why am I even looking at this page? I'm
+working on picking images for DVDs and CDs.
+
+---
+
+Today I've been mucking around a lot with DOM scripting. Why? Well,
+the code in order_prints.php is spaghetti, and I was looking at the
+state of the art in 2008 for separation of concerns. Way back in 1999
+or so, I wrote up a thing at the NYTimes saying we should put all our
+javascript at the end of the page file, and dynamically add all
+functionality that way. This is the approach espoused in my book "DOM
+Scripting." Today's browsers and JS are much more supportive of this
+approach.
+
+So I worked on a toy page, discovering along the way that every
+element now has an onclick() event handler, which is why some evil
+pages out there always pop an ad when you click on any text. Bastards.
+
+And then I started in on jQuery, because noone on staff really
+understands how it works; it turns out (according to Wikipedia) it's
+garnering a lot of industry support (even MS!). I think this might be
+because of a) a plugin approach, making it more lightweight to load
+versus prototype.js, and 2) the wacky syntax style it supports because
+every call returns the query object.
+
+$('some-selector').callone().calltwo().callthree().callfour().end();
+
+Actually from the jQuery "How It Works" page:
+
+$("a")
+   .filter(".clickme")
+     .click(function(){
+       alert("You are now leaving the site.");
+     })
+   .end()
+   .filter(".hideme")
+     .click(function(){
+       $(this).hide();
+       return false;
+     })
+   .end();
+
+Which, at first blush, looked kinda unreadable to me but I suppose
+it's not so bad. Kind of FP, really. Probably the appeal. Functional
+programming has been cool again in recent years. "Chainability" is
+what the jQuery author calls it.
+
+Onwards... turns out the 'shop' pages are loading two versions of
+jQuery; in fact, there's three versions (and four copies) in the
+static project. Sigh. Jessy removed the older version from the page
+but it broke something on the right side of whichever page she was
+looking at. So there's something that will have to be figured out. But
+I can depend on jQuery being present whatever I do.
+
+My toy page:
+
+<html>
+<script type="text/javascript" src="jquery.js"></script>
+<style>
+p {
+ color: darkslategray;
+ background: lightskyblue;
+}
+
+a.test { font-weight: bold; }
+</style>
+
+<script>
+
+function blippy() { alert('need a date?'); }
+
+function swapem() {
+    $("a").addClass("test");
+    /*
+    var paa       = document.getElementById("poopagraph");
+    var pee       = document.getElementById("doink");
+
+    var accumulator = "";
+    for (var prop in paa.style) {
+        accumulator += prop + "\n";
+        pee.style["prop"] = paa.style["prop"];
+    }
+    foo = new window();
+    foo.document = accumulator;
+    */
+}
+
+function plooklinks() {
+    document.getElementById("swainimg").onclick =  function foo() { alert("hello, sailor!"); };
+    var pees = document.getElementsByTagName('p');
+    //alert("pees length: " + pees.length);
+    
+    for (x = 0; x < pees.length; x++) {
+       //alert("setting " + x);
+       pees[x].onclick = blippy;
+    }
+    
+    // changing the style
+    document.getElementById("mebutton").onclick =  function changeColor() { 
+        pee                  = document.getElementById("poopagraph");
+        pee.style.color      = "navajowhite";
+        pee.style.background = "blue";
+        $("a").removeClass("test");
+    };
+
+    document.getElementById("youbutton").onclick = swapem;
+}
+
+window.onload = plooklinks;
+
+$(document).ready(function(){
+   // Your code here
+/*
+   $("div").click(function(event){
+     alert("i am god, you are god, we are all god");
+     event.preventDefault();
+   });
+*/
+   $("a").click(function(event){
+      event.preventDefault();
+      $(this).hide("slow");
+   });
+
+// generate markup
+   $("#rating").append("Please rate: ");
+   
+   for ( var i = 1; i <= 5; i++ )
+     $("#rating").append("<a href='#'>" + i + "</a> ");
+   
+   // add markup to container and apply click handlers to anchors
+   $("#rating a").click(function(e){
+     // stop normal link click
+     e.preventDefault();
+     
+     // send request
+     $.post("sandbox/rate.php", {rating: $(this).html()}, function(xml) {
+       // format and output result
+       $("#rating").html(
+         "Thanks for rating, current average: " +
+         $("average", xml).text() +
+         ", number of votes: " +
+         $("count", xml).text()
+       );
+     }); // end $.post
+   }); // end call to $("#rating a").click
+
+
+});
+
+
+
+</script>
+
+<body onload="plooklinks();">
+<div>
+clickable div. click me.<br>
+<a href="http://wainstead.info/">hello there sailor boy</a>
+</div>
+<p class="foofoo" id="poopagraph">
+here is me.<br>
+<img id="swainimg"
+     src="http://wainstead.info/images/drinkingsmall.png">
+</p>
+
+<input name="mebutton" id="mebutton" type="button" value="drink me">
+<input name="youbutton" id="youbutton" type="button" value="lick me">
+<p class="foofoo" id="doink">
+spare paragraph
+</p>
+
+<div id="rating"></div>
+
+</body>
+</html>
+
+
+Oh, one reason Dylan's stuff might not work when Jessy pulls the older
+file: I noticed it uses what might be an older way of running code
+after the DOM load:
+
+	// Accordain left nav
+	    jQuery().ready(function(){
+	        // accordian markup
+	        jQuery('#gift_shop_nav').accordion({
+	            header: '.head',
+	            navigation: true,
+	            fillSpace: true,
+	            animated: 'slide'
+	        });
+	        
+	    });
+
+
+The new way is:
+
+$(document).ready(function() {
+   $("#orderedlist").addClass("red");
+ });
+
+
+But that might not matter. It's probably backwards compatible.
+
+
+
+#########################################################################
+081112 Wed 12 Nov 2008 03:55:02 PM EST
+
+If anything I should consolidate Tree's code down to only a couple
+files, so I can throw out what's not being used; then make the
+remainder comprehensible.
+
+
+
+#########################################################################
+081113 Thu 13 Nov 2008 10:28:19 AM EST
+
+Did spend time in Tree's AJAX dungeon yesterday. What a tangled
+mess. Should clean that up.
+
+I realize now I had select_cd.php in the gifts project, and that's
+wrong. order_prints.php is in gallery and this is the correct
+approach. A reminder:
+
+Gallery can load things from Gifts but NEVER the other way around.
+
+Bill's struggling to get a rollout done on the cart.
+
+
+Bill: His documentation sucks
+Bill: I have to reverse engineer everything to figure out how its done
+10:35 AM
+Bill: ok got it checed in and tagged
+
+---
+
+Back from Martha Stewart. I've come to see Tree's code for what it is:
+sort of a rogue library. I'd imagine this is a common problem in group
+software development.
+
+So while exploring the stuff that uses Tree's code I found that ecards
+are broken, and probably have been for some time. I suppose I should
+write a test for that with lhhreplay. Even putting the card
+directories back into mpa_products did nothing. I wonder how long
+ecards have been broken. Probably since July 2008.
+
+Oh! So... my original plan was to factor out the ajax calls from the
+photo selection grid. That is, when you are choosing photos each photo
+has a button and some javascript it calls... and I want that
+javascript to be added at runtime instead of wired in. So the basic
+plan was to do this:
+
+1) Pull the javascript out, and add it after the page load.
+2) Make that javascript added based on which page it's loaded in.
+
+But first I spent a load of time reading how jQuery works, then
+diagnosing why we load two versions of jQuery in our pages (still
+unsolved), and then I started spelunking around in Tree's code. Which
+lead to the discovery that ecards are broken. I've now updated
+Gallery's store.php to load order_prints.php correctly (Gallery's, not
+Product's), and threw in select_cd.php which moved over from gifts,
+and all looks OK for the moment (except nothing works yet).
+
+Now. Selecting photos and albums. Oh! I started with the DVD code. I
+should go back to that. Get DVDs working first, and then down to the
+level of picking individual photos for a CD.
+
+I think the issue was: selecting a DVD led to a test if the whole site
+would fit, which I think I solved, and then we land on quantity.php
+which breaks because it expects a single photo. So that has to be
+factored out somehow. That was where I left off.
+
+Further into the code, it was an unexpected redirect that took me a
+while to track down; and that would be in the context album or photo
+class, which is really bad coding on my part. It's not for those
+classes to decide if we redirect to albums.php or not. Probably should
+just be a fatal error.
+
+
+
+#########################################################################
+081114 Fri 14 Nov 2008 10:08:18 AM EST
+
+Well, ecards have been phased out and the link to them was
+errant. Good to know.
+
+---
+
+For ordering prints we are now down to only order_prints.php and
+ajax.php loading Tree's code. There was one place, points.php, that
+used a couple of his functions, and two other things: ecard.php and
+editor.php that were calling his code. Both were dead.
+
+When you load order_prints.php, the javascript function call to add a
+print or album to cart calls ajax.php with a bunch of POST data. If
+you order the entire album, all the photo's ids are sent via ajax and
+a function is called recursively to add them all to cart.
+
+Also the file ajax_check.php is loaded in order_prints.php and gives
+them a noscript tagset if they are deemed inferior.
+
+I don't think I need to fudge with quantity. Just add to cart. This
+makes it even more like order_prints.php.
+
+
+
+
+#########################################################################
+081117 Mon 17 Nov 2008 02:37:42 PM EST
+
+Well. Had a 10:30 with Chris, to go over his ideas for restructuring
+the filesystem... and he was completely anal retentive. Wouldn't share
+or engage at all. Bill gave me an odd backwards glance when we left
+the fishbowl. So virtually nothing came out of that.
+
+Tim has an idea of using reversed userid's to replace the five levels
+deep hierarchy. Simple, elegant and I like it.
+
+/mnt/nfs is replacing /mnt/slow. Not sure what that gains us, but oh
+well.
+
+I debugged the swfupload stuff -- there's a new set of params it
+needed -- and committed it. Fernando didn't quite make it to the
+finish line on that so I had to resolve it. Took only an hour or so.
+
+Grepped for /mnt/slow, found some instances, wrote it up to ops and
+dev lists.
+
+Did all the setup and testing for the rollout tomorrow. By 5pm didn't
+feel like starting something else, so downloaded the ecmascript 4
+validator; which is a binary, run by a shell script, where you can
+interactively play with ecmascript.
+
+
+
+#########################################################################
+081202 Tue 02 Dec 2008 11:32:08 AM EST
+
+Back from Japan. Watching Jessy assemble her figurines from Akihabara
+was hilarious.
+
+Not as much email as I'd have worried about. Things were pretty smooth
+while I was away. Two things to tackle for Bill: itemize the cron
+jobs, and investigate 200 emails sent by mup-2.
+
+Also a missing product ID in the store log yesterday.
+
+---
+
+So... no answer on alaskadream3. This site somehow sent 200+ emails to
+the same guy in a couple seconds, on Nov 26th in the early 8 AM. What
+I see in the log makes no sense, unless: a bot script was logged in as
+that user and sent 200+ share emails. To what purpose?
+
+
+
+#########################################################################
+081203 Wed 03 Dec 2008 03:01:44 PM EST
+
+In retrospect, I wonder why I load everything in Veracity and then
+compare. There's no reason why it can't work album per album, is
+there? Something about the recursion?
+
+The nesting is really a human-perceived thing, because it's all
+really just an array and they all sit on the filesystem. So it might
+be much more lightweight to dispense with the recursion.
+
+No, I seem to have some memory of arguing this with Chris. There was
+some cause for doing it recursively. Then again I'm so tired I can
+hardly see.
+
+
+
+
+
+#########################################################################
+081204 Thu 04 Dec 2008 10:32:56 AM EST
+
+At the end of the day yesterday I found out what ailed veracity. It
+was a total newbie mistake by Chris.
+
+     2      swain     $album_nc[$albumname]++;
+     2      swain     if ($album_nc[$albumname] > 1) { 
+    79      swain         glog("Oops: second time I've looked at '$albumname'!\n");
+     2      swain         return;
+     2      swain     }
+    45      chris     elseif ( $album->isRoot() ) {
+    45      chris 		// Drop dis bitch into the DB -- it is root so it needs an entry in db and
+    45      chris 		// it needs id's in it's datz file
+    45      chris 		insertNewAlbum( $album );
+    45      chris 	} 
+    45      chris 	else { 
+    45      chris 		$albumDB = new AlbumDB();
+    45      chris 		if (! $albumDB->getAlbumbyName( $album->fields['parentAlbumName'], false ) ) {
+    45      chris 			$album->fields['desc'] = "DARKMATTER";
+    45      chris 			insertNewAlbum( $album, -1 );
+    45      chris 			return;
+    45      chris 		}
+    45      chris 			
+    45      chris 	}
+     2      swain 
+
+Here, Chris creates a new copy of AlbumDB every time explodLP() is
+called. Since he didn't pass in FALSE, the default is to load all
+albums every time. For my site, 211 albums, and nearly two seconds
+required to create a new copy of AlbumDB that way, up to seven minutes
+was added to the runtime ((211 * 2) / 60). I think it was closer to a
+second plus a fraction, since the runtime was typically around 400+
+seconds.
+
+Runtimes are now down to about 11 to 14 seconds versus 411.
+
+I've added some new timing data to the output of showTime(), and there
+are a few areas where runtime is a tenth of a second or more, the most
+being 1.0 seconds at the end when data structures are compared.
+
+   Comparing collections. time passed: 10.265383958817 (8.8930130004883E-5)
+   swain: mass storage check: No corresponding sized for: album09 100_1101.sized.jpg
+   swain: gallery data check (sized): Missing full sized image: album09 100_1251.jpg or 100_1251.flv
+   swain: gallery data check (thumb): Missing full sized image: album09 100_1251.jpg or 100_1251.flv
+   swain: There were 3 failures in the fs collections.
+   Done comparing collections. time passed: 11.266204833984 (1.0008208751678)
+
+Wound up working on Veracity all day, and monitoring it. Blew away
+almost 2K of my own pix, sadly, when I introduced a bug to it.
+
+
+
+#########################################################################
+081205 Fri 05 Dec 2008 09:44:02 AM EST
+
+Two terabytes freed by Veracity!
+
+Bill: That program is the sweetness
+Steve Wainstead: yeah, totally worth the time i invested in it the last two days
+Bill: All of my volumes in the red or yellow have backed down
+Bill: thank you thank you!
+
+Not quite sure what to make of the sites with no config.php. They fall
+into clumps of dates. Very few from 2008. Seems most have no site at
+all anymore. Hmm. Fast storage was lost?
+
+2.51572062 terabytes freed so far. I'm moving the run over to osc-2 to
+see if the numerous unlink errors go away.
+
+
+3.0500345 terabytes freed, all told. Also computed and sent the
+numbers on album skins, which show once again that they are largely a
+waste of Jessy's expensive time, but who am I to say.
+
+
+
+
+
+From:   swain@myphotoalbum.com
+Subject: [MPA Dev] Final numbers from veracity
+Date: December 5, 2008 5:44:35 PM EST
+To:   dev@myphotoalbum.com
+Cc:   peter@myphotoalbum.com, ops@myphotoalbum.com, jessy@myphotoalbum.com
+Reply-To:   fcdev@corp.myphotoalbum.com
+
+
+I just finished up the last few hundred sites. Here's the good news and the bad news.
+
+Good:
+3.09 terabytes freed up.
+2,895,301 files removed.
+
+Bad:
+2,514 missing individual albums across 102 sites (on the slow storage).
+
+136 sites with no "albums" folder on the mass storage (i.e. all of their full sized images are gone).
+
+26 sites with broken albums or some other fatal error.
+
+386 sites with no config.php file; however, I think that most of these are either deleted sites or the config file couldn't be loaded due to NFS errors. I'll revise this number after Veracity runs again, which will be over the weekend.
+
+There may be more bad news as I have a gigabyte or so of log files to grind through, looking for oddities.
+
+--------
+Steve Wainstead
+Director of Software Development
+http://www.myphotoalbum.com/
+(212) 981-8609
+
+
+Fcdev mailing list
+Fcdev@corp.myphotoalbum.com
+https://mail.corp.myphotoalbum.com/cgi-bin/mailman/listinfo/fcdev
+
+
+
+
+
+#########################################################################
+081208 Mon 08 Dec 2008 09:45:43 AM EST
+
+Reread my log on the cd/dvd stuff. Good thing I wrote it down; forgot
+90% of what I'd done.
+
+http://www.usps.com/shipping/trackandconfirm.htm
+03081400000007187973
+
+Ran Veracity on the remaining sites -- some 2K of them -- that were
+missed due to fatal errors.
+
+(re)Invented the algorithm for 50% off 2nd item.
+
+one minus (percentage divided by two) equals percentage to multiply
+the subtotal by.
+
+1 - (50% / 2) == .75
+
+Now, why doesn't that work for third item 50% off?
+
+$20 each, three items. Total should be $50.
+
+1 - (50% / 3) == .833333
+$60 * .833 == 49.999
+
+So that does work, tho there's a bit of fudging there.
+
+
+
+#########################################################################
+081210 Wed 10 Dec 2008 10:57:07 AM EST
+
+Well. By Tom's numbers I'm out of vacation days. I'd just as soon stay
+home for Christmas, but Mom would cry a river.
+
+Out sick yesterday. Feeling much better today but still getting hot
+flashes.
+
+We are now behind on book/calendar orders going back to December
+4th. Everything we send is "coming through corrupted" according to
+Rastar. This is a crock because we compare byte sizes of the file
+locally and remotely after transfer, and they are the same. They
+switched us to another FTP server with the same results.
+
+---
+
+After some thought, creating a new $10 club membership for first
+timers creates a problem: recurring billing is going to charge them
+$10 next year. The anally retentive solution: add a club membership to
+the cart and add an offer at the same time. Currently there's no way
+to do this, so it's time to add a new feature.
+
+Lesson for the day: you cannot add a new coupon/offer inside of
+calculateEverything() because you're putting the cart before the
+horse. You must add a new coupon/offer prior to calculating
+everything.
+
+So, done and done. All four of Jessy's promo requests are now
+feasible, if you know how to do them. (Therein lies the trick). It's
+some combination of creating an offer, passing it via GET, and testing
+the cart's contents.
+
+Got approval from Peter to work from home second half of tomorrow so I
+can wait for the cable guy.
+
+
+
+#########################################################################
+081211 Thu 11 Dec 2008 11:34:32 AM EST
+
+Wrote a tiny fix for Veracity, in classes/Album.php, to test if the
+instance is an AlbumItem. Tested on osc-2, looks good. Wonder if
+there's lots of sites with arrays of stdClass instances? Which might
+actually work.
+
+Meanwhile, I have to work out the rule set for fixing sites. I pledged
+to fix all of them.
+
+1) No mass storage "albums" folder: create.
+2) Album on fast but not on slow: create folder, copy all sized images
+over.
+
+This requires no checking with Gallery; it can consist of pure
+filesystem operations.
+
+3) Not on fast but it's on slow, Gallery says it's not there: this is
+already implemented. Delete the slow album.
+
+4) Missing fast storage: Gallery has it, slow has it, fast does
+not. Then we need to recreate everything. I think for this phase we'll
+not do this, as it's a bit complicated.
+
+Stated another way, the goal now is to fix dark energy.
+
+Add to the list: 27 sites with no users listed in the subusers
+table. Does this prevent the admin from logging in? Probably. One is a
+club member.
+
+---
+
+Well, working at home. Cable fixed. Guy had to run a new line over the
+roof. Meanwhile, I lost my sql shellbuffer due to an mdb-1
+reboot. Suck. Which really doesn't make sense.
+
+OK, after some krufty hacking, Veracity now creates a new "albums" on
+the nfs storage; creates any missing album folders on same; copies the
+sized version over if the full sized one is missing; and creates a
+config.php file if it's missing. What's left: some sites are missing
+users, so they need fixing; missing display files: if they are truly
+missing then they need to be recreated. (We'll know because Gallery
+says the album exists).
+
+
+
+#########################################################################
+081212 Fri 12 Dec 2008 03:32:30 PM EST
+
+Veracity was dying on sites that had no fast storage... bummer. So
+around 400 or 500 of the processes never finished. I worked out the
+"ghosts" that caused this, cooked up a sql script and removed them
+from the database. Debugged my config.php regeneration code, been
+rerunning veracity on the failed name ranges, and everything looks
+good now. Also, 
+
+root@osc-2:/home/www# wc -l filescopied
+19735 filescopied
+
+Now I have to gear up another run.
+
+To do:
+1. Handle all movie file types.
+2. Fix sites with no users.
+3. Replace missing sized/thumbs when there's a full size (i.e. fix
+   dark energy).
+4. Fix or dispose of ghosts.
+5. Find corpse data? Maybe much later.
+
+Which I'm probably missing something, but now I'm thinking about
+moving albumdb.dat off the filesystem. Hmm.
+
+
+
+#########################################################################
+081215 Mon 15 Dec 2008 09:26:43 AM EST
+
+Spent a chunk of yesterday (Sunday) reading my Facebook Cookbook from
+O'Reilly. Seems we could do a fair amount of integration with them. I
+think we can display Facebook albums on MPA, and with some effort,
+vice versa. The real trick is can we tag the photos? It doesn't look
+like it so far.
+
+Some confusion as Bill wants to switch over to the svn copy of
+mpa_signup. It will stay in the same place, which is what mixed me up.
+
+Bill gave me a link to VirtualBox, some Sun owned thing for
+virtualization. Free. I can install XP this way.
+
+
+
+
+#########################################################################
+081216 Tue 16 Dec 2008 11:33:28 AM EST
+
+Looking at the sites with no admin users again... thinking about a
+simple fix. Perhaps this can be a "self healing" hack where: if
+username/password  match that in mpa.users, and there's no matching
+rows in mpa_sites_subusers, then insert new rows into
+mpa_sites_subusers and mpa_subusers to fix it.
+
+Meanwhile, the algorithm to fix the currently broken sites goes like
+this:
+
+generate uid
+insert into mpa_sites_subusers (uid, site_id, isAdmin,
+canCreateAlbums);
+insert into mpa_subusers (uid, 'admin', 'Administrator', hashed
+password, email, etc etc.
+
+The only minor challenge here is to encrypt the password again.
+
+Now, it turns out, we are still provisioning the user dat files, which
+is a waste of space and inodes. Interesting. On the upside, this means
+the data for the missing sites is on the filesystem. I could use a
+mini-run of Veracity to fix them.
+
+Since we're going to remove all the user dat stuff anyway, it would
+probably be better to code Veracity to fix the sites from scratch
+rather than depend on the dat files.
+
+I can't make random uid's though, because I think the uid is written
+into an album.dat file.
+
+
+
+#########################################################################
+081217 Wed 17 Dec 2008 10:16:43 AM EST
+
+Thinking: http://facebook.myphotoalbum.com/swain. I wonder if this
+creates any problems? Should I generalize the URL?
+applications.myphotoalbum.com? Hmm. I'm tempted to go down the road of
+doing away with the config.php file and getting the Gallery object
+going. It's like this huge set of projects that keep resurfacing that
+need doing. I was also pondering the idea of storing album instances
+in the database, sans a few externally required pieces of data (like
+highlight, theme) and using Chris's schema for the photos. I don't
+think we need the photos stored in pickled form. Do we? Bleh. They
+have an owner field.
+
+There just doesn't seem to be any other way than to do an audit of all
+the fields in config.php that the user has access to... kind of a
+bummer.
+
+Walking around thinking: I can just grep stuff out of the
+shortform.php file, or chop up the "view form" stuff in Firefox.
+
+Neither: here's a dump from a script I wrote, looping on $_REQUEST,
+that shortform.php posted to it:
+
+this_page                   => defaults
+next_page                   => fcconfirm
+print_photos                => Array
+showAlbumTree               => no
+highlight_size              => 200
+showOwners                  => no
+editPassword                => Array
+showSearchEngine            => yes
+emailOn                     => yes
+emailGreeting               => 
+selfReg                     => no
+selfRegCreate               => no
+multiple_create             => no
+gallery_slideshow_type      => ordered
+gallery_slideshow_length    => 
+gallery_slideshow_loop      => yes
+comments_anonymous          => yes
+comments_display_name       => !!FULLNAME!! (!!USERNAME!!)
+bordercolor                 => black
+border                      => 1
+font                        => verdana
+resize_file_size            => 0
+max_size                    => off
+max_file_size               => 0
+fit_to_window               => no
+use_fullOnly                => no
+extra_fields                => Description
+showDimensions              => no
+item_owner_modify           => yes
+item_owner_delete           => yes
+item_owner_display          => no
+poll_type                   => critique
+poll_scale                  => 5
+poll_hint                   => 
+poll_orientation            => vertical
+poll_nv_pairs               => Array
+poll_num_results            => 5
+slideshow_type              => ordered
+slideshow_recursive         => no
+slideshow_loop              => yes
+slideshow_length            => 0
+emailSubjPrefix             => MyPhotoAlbum
+rssHighlight                => *
+rssMaxAlbums                => 25
+rssVisibleOnly              => yes
+rssDCDate                   => no
+rssBigPhoto                 => no
+rssPhotoTag                 => yes
+go_next                     => Save
+galleryTitle                => i got a lust for life
+skinname                    => red
+gallery_thumb_frame_style   => none
+album_frame                 => none
+albumsPerPage               => 5
+cols                        => 3
+rows                        => 3
+add_to_beginning            => no
+thumb_frame                 => none
+image_frame                 => none
+thumb_size                  => 200
+resize_size                 => 1024
+useOriginalFileNames        => yes
+comments_indication         => both
+comments_indication_verbose => no
+rssEnabled                  => yes
+rssMode                     => thumbs
+display_clicks              => yes
+voter_class                 => Nobody
+poll_show_results           => no
+show_profile_tab            => yes
+show_hotvideos_tab          => no
+adminEmail                  => swain@hahahoho.com
+senderEmail                 => swain@hahahoho.com
+preserve                    => +galleryTitle+editPassword+albumDir+tmpDir+photoAlbumURL+albumDirURL+movieThumbnail+mirrorSites+graphics+pnmDir+pnmtojpeg+ImPath+autorotate+jpegImageQuality+showAlbumTree+highlight_size+showOwners+albumsPerPage+showSearchEngine+skinname+gallery_thumb_frame_style+zipinfo+unzip+use_exif+cacheExif+use_jpegtran+default_language+ML_mode+available_lang+show_flags+dateString+dateTimeString+locale_alias+emailOn+adminEmail+senderEmail+emailSubjPrefix+emailGreeting+selfReg+selfRegCreate+multiple_create+email_notification+gallery_slideshow_type+gallery_slideshow_length+gallery_slideshow_loop+comments_indication+comments_indication_verbose+comments_anonymous+comments_display_name+timeLimit+debug+use_flock+expectedExecStatus+sessionVar+userDir+devMode+adminCommentsEmail+adminOtherChangesEmail+maximumAlbumDepth+bordercolor+border+font+cols+rows+thumb_size+resize_size+resize_file_size+max_size+max_file_size+useOriginalFileNames+add_to_beginning+fit_to_window+use_fullOnly+print_photos+returnto+display_clicks+extra_fields+showDimensions+item_owner_modify+item_owner_delete+item_owner_display+voter_class+poll_type+poll_scale+poll_hint+poll_show_results+poll_num_results+poll_orientation+poll_nv_pairs+slideshow_type+slideshow_recursive+slideshow_loop+slideshow_length+album_frame+thumb_frame+image_frame
+albumDir                    => $GALLERY_USERDIR/albums
+tmpDir                      => $GALLERY_USERDIR/tmp
+photoAlbumURL               => http://swain.myphotodevel.com
+albumDirURL                 => http://images.myphotodevel.com/s/sw/swa/swai/swain/swain/albums
+movieThumbnail              => $GALLERY_USERDIR/images/movie.thumb.jpg
+graphics                    => ImageMagick
+pnmDir                      => /usr/bin
+pnmtojpeg                   => pnmtojpeg
+ImPath                      => 
+autorotate                  => yes
+jpegImageQuality            => 90
+zipinfo                     => /usr/bin/zipinfo
+unzip                       => /usr/bin/unzip
+use_exif                    => /usr/bin/jhead
+cacheExif                   => no
+use_jpegtran                => /usr/bin/jpegtran
+default_language            => 
+ML_mode                     => 0
+available_lang              => Array
+show_flags                  => 
+dateString                  => %x
+dateTimeString              => %c
+locale_alias                => Array
+timeLimit                   => 30
+debug                       => no
+use_flock                   => no
+expectedExecStatus          => 0
+sessionVar                  => gallery_session
+userDir                     => $GALLERY_USERDIR/albums/.users
+devMode                     => no
+adminCommentsEmail          => no
+adminOtherChangesEmail      => no
+maximumAlbumDepth           => 3
+returnto                    => yes
+mpa_popup                   => true
+menutitle                   => -1c
+/setup/shortform_php        => 1|sc2
+mpa_fqdn                    => http://atticaccount.myphotodevel.com
+fcwt                        => atticaccount
+PHPSESSID                   => nlpjdq29ogknae12vciooagce6
+acopendivids                => featured
+acgroupswithpersist         => nada
+
+
+But this doesn't help me a whole lot... still need to go through each
+item, determine what it's for (if anything), and if it should go into
+the database or not. I need to make the smallest possible table of
+user settable parameters.
+
+Audit complete, remarkably:
+
+# set these at runtime:
+adminEmail                  => swain@hahahoho.com
+senderEmail                 => swain@hahahoho.com
+albumDir                    => $GALLERY_USERDIR/albums
+tmpDir                      => $GALLERY_USERDIR/tmp
+photoAlbumURL               => http://swain.myphotodevel.com
+albumDirURL                 => http://images.myphotodevel.com/s/sw/swa/swai/swain/swain/albums
+movieThumbnail              => $GALLERY_USERDIR/images/movie.thumb.jpg
+# obsolete:
+userDir                     => $GALLERY_USERDIR/albums/.users
+
+
+
+# not settable by user:
+
+slideshow_type              => ordered
+slideshow_recursive         => no
+slideshow_loop              => yes
+slideshow_length            => 0
+
+# "gallery" slideshow stuff is obsolete
+gallery_slideshow_type      => ordered
+gallery_slideshow_length    => 
+gallery_slideshow_loop      => yes
+
+adminCommentsEmail          => no
+adminOtherChangesEmail      => no
+poll_nv_pairs               => Array
+available_lang              => Array
+locale_alias                => Array
+editPassword                => Array
+maximumAlbumDepth           => 3
+debug                       => no
+use_flock                   => no
+expectedExecStatus          => 0
+sessionVar                  => gallery_session
+timeLimit                   => 30
+show_flags                  => 
+dateString                  => %x
+dateTimeString              => %c
+ML_mode                     => 0
+ImPath                      => 
+autorotate                  => yes
+jpegImageQuality            => 90
+default_language            => 
+poll_show_results           => no
+devMode                     => no
+returnto                    => yes
+poll_type                   => critique
+poll_scale                  => 5
+poll_hint                   => 
+poll_orientation            => vertical
+poll_num_results            => 5
+resize_file_size            => 0
+max_size                    => off
+max_file_size               => 0
+fit_to_window               => no
+use_fullOnly                => no
+extra_fields                => Description
+showDimensions              => no
+item_owner_modify           => yes
+item_owner_delete           => yes
+item_owner_display          => no
+bordercolor                 => black
+border                      => 1
+font                        => verdana
+comments_anonymous          => yes
+comments_display_name       => !!FULLNAME!! (!!USERNAME!!)
+multiple_create             => no
+graphics                    => ImageMagick
+pnmDir                      => /usr/bin
+pnmtojpeg                   => pnmtojpeg
+zipinfo                     => /usr/bin/zipinfo
+unzip                       => /usr/bin/unzip
+use_exif                    => /usr/bin/jhead
+cacheExif                   => no
+use_jpegtran                => /usr/bin/jpegtran
+selfReg                     => no
+selfRegCreate               => no
+emailOn                     => yes
+emailGreeting               => 
+emailSubjPrefix             => MyPhotoAlbum
+showOwners                  => no
+rssHighlight                => *
+rssMaxAlbums                => 25
+rssVisibleOnly              => yes
+rssDCDate                   => no
+rssBigPhoto                 => no
+rssPhotoTag                 => yes
+rssMode                     => thumbs
+showSearchEngine            => yes
+
+
+# are indeed settable by user:
+display_clicks              => yes
+useOriginalFileNames        => yes
+voter_class                 => Nobody
+galleryTitle                => i got a lust for life
+skinname                    => red
+gallery_thumb_frame_style   => none
+album_frame                 => none
+albumsPerPage               => 5
+cols                        => 3
+rows                        => 3
+add_to_beginning            => no
+thumb_frame                 => none
+image_frame                 => none
+thumb_size                  => 200
+resize_size                 => 1024
+rssEnabled                  => yes
+highlight_size              => 200
+show_profile_tab            => yes
+comments_indication         => both
+comments_indication_verbose => no
+showAlbumTree               => no
+# this one is a bit more complicated. The Premium class uses it to
+# determine if printing is allowed, but there's the other older
+# printers listed too, which we don't need.
+print_photos                => Array
+
+
+
+
+# "preserve" was a mechanism used by Gallery to store the previous values, I think...
+
+preserve                    => +galleryTitle+editPassword+albumDir+tmpDir+photoAlbumURL+albumDirURL+movieThumbnail+mirrorSites+graphics+pnmDir+pnmtojpeg+ImPath+autorotate+jpegImageQuality+showAlbumTree+highlight_size+showOwners+albumsPerPage+showSearchEngine+skinname+gallery_thumb_frame_style+zipinfo+unzip+use_exif+cacheExif+use_jpegtran+default_language+ML_mode+available_lang+show_flags+dateString+dateTimeString+locale_alias+emailOn+adminEmail+senderEmail+emailSubjPrefix+emailGreeting+selfReg+selfRegCreate+multiple_create+email_notification+gallery_slideshow_type+gallery_slideshow_length+gallery_slideshow_loop+comments_indication+comments_indication_verbose+comments_anonymous+comments_display_name+timeLimit+debug+use_flock+expectedExecStatus+sessionVar+userDir+devMode+adminCommentsEmail+adminOtherChangesEmail+maximumAlbumDepth+bordercolor+border+font+cols+rows+thumb_size+resize_size+resize_file_size+max_size+max_file_size+useOriginalFileNames+add_to_beginning+fit_to_window+use_fullOnly+print_photos+returnto+display_clicks+extra_fields+showDimensions+item_owner_modify+item_owner_delete+item_owner_display+voter_class+poll_type+poll_scale+poll_hint+poll_show_results+poll_num_results+poll_orientation+poll_nv_pairs+slideshow_type+slideshow_recursive+slideshow_loop+slideshow_length+album_frame+thumb_frame+image_frame
+
+
+(end audit)
+
+So the steps to take are: 
+0) New database table for site config data (done)
+1) new PHP script that the shortform POSTs to, which updates the
+   database... (put a hook in init.php instead)
+2) new PHP script that contains all the ones not settable by the user (done)
+3) runtime code to set the dynamic ones (e.g. photoAlbumURL) (done)
+4) Signup wizard populates the new table, does not create a config.php
+   file from template. This can come later though.
+5) Shortform pulls data from new sources instead of
+   config.php... actually, once we've created a $gallery the shortform is
+   good to go. (done)
+6) Veracity run to move everything into db
+7) also get rid of all the .users stuff
+
+For a page view, we need to build a $gallery up; this can first test
+the database, and if it's not in there, load config.php instead. I can
+use a Veracity run later on to port it all to the database. This would
+have to be after the signup wizard was updated.
+
+Also: demotion code needs updating.
+
+
+
+#########################################################################
+081218 Thu 18 Dec 2008 10:35:24 AM EST
+
+So... back to thinking about albumdb. Perhaps "sort order" is
+something I should store in a separate table, away from the actual
+list of albums... but if I do that, then it suggests that mpa_albumdb
+should just get another column and we be done with it. Hrmm. We still
+have to go fetch all the albums anyway, because we need to check the
+permissions before displaying them. Thus... at a top level, we're
+interested in: sort order, perms, highlight, title&c. User-defined
+sort order is a pain.
+
+
+
+#########################################################################
+081219 Fri 19 Dec 2008 10:51:31 AM EST
+
+Christmas party last night. T'was fun! We were at Down The Hatch and
+played beer pong.
+
+I found the bug in the shortform has been there a while (it's on
+production at this very moment). Filed a bug report for Jessy; I
+commented out the offending line, 1625, in the shortform.
+
+//changeImg("<?php echo  STATIC_SERVER ?>/themes/" +  '<?php echo $gallery->app->skinname ?>' + "/screenshot.jpg");
+
+There's a new JS error popping up now, but I can't see putting much
+effort into fixing it. I think Jessy will probably do a major revamp
+of the way sitewide config is handled.
+
+---
+
+Fixed a stupid bug in the new shortform design; I was passing the
+string "yes" instead of "checked." Branched veracity (why have I never
+thought of that before?) and made a version that ports the config data
+and deletes everything else... the files are tiny, but numerous. We'll
+blow away one or two million files, most of them not being used.
+
+Order of the rollout must be this:
+
+1) db patches applied. This creates the needed table,
+   mpa_sitewide_config.
+2) Roll out Gallery, which is bilingual, so to speak.
+3) Roll out signup wizard, which provisions the new way.
+4) Run veracity, to port the config data and clean up the filesystem.
+
+
+
+
+
+#########################################################################
+081222 Mon 22 Dec 2008 12:40:22 PM EST
+
+Did a lot of groundwork for mpa_core today. Jessy wants to start
+putting things into it already; I was thrown for a loop when she
+became excited about putting things for www into it... which I never
+anticipated. But she and Dylan want to rid themselves of .shtml files
+(SSI) and Tim is somehow involved in this decision, in that Google
+indexing won't be affected if they are PHP files.
+
+Bill rolled out the mpa_signup wizard, and that was Bad. It was the
+new version that didn't provision config.php anymore.
+
+
+
+#########################################################################
+081229 Mon 29 Dec 2008 01:08:34 PM EST
+
+Back from vacation.
+
+Was late to the conference call because I didn't know we were having
+one! I never saw the official word that we're all allowed to work
+remotely today. Bill has set up VPN stuff for us.
+
+I tested the new configuration setup on staging, all looks good. First
+I applied the database patches. Gallery didn't work; my experimental
+work on porting AlbumDB into Mysql was in the way, staging having an
+older version of Gallery (but was newer than production). I rolled
+Gallery back to the production copy, tested, everything was OK.
+
+I then updated it to latest from Subversion. That also tested out OK.
+
+Next, I found the signup wizard wasn't updated on staging yet, so I
+checked out HEAD into ~www, checked out trunk/conf/stg into
+~www/mpa.svn/conf, and then used root to move the old to /opt/mpa-cvs
+and mv ~www/mpa.svn to /opt/mpa. And it all worked!
+
+I updated Veracity on staging and ran it; all the data was ported to
+the database (into mpa_sitewide_config, that is). I then tweaked this
+branch of Veracity to blow away the config.php file as well, and all
+was well.
+
+I deleted ez_sql from mpa_cart today, and Fernando reported the admin
+interface for OSCommerce had failed. Tracked that down, ammended the
+library search path in admin/includes/appliation_top.php and that
+solved it. He sees the "hello sailor" image from home though when he
+hits his store.
+
+One semi-scary thing though is mpa_core is already a dependency.
+
+
+
+#########################################################################
+081230 Tue 30 Dec 2008 10:09:07 AM EST
+
+In at normal time; Dylan surprised me when he showed up. I left the
+door locked because I thought I'd be alone.
+
