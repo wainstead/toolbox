@@ -43275,3 +43275,139 @@ One semi-scary thing though is mpa_core is already a dependency.
 In at normal time; Dylan surprised me when he showed up. I left the
 door locked because I thought I'd be alone.
 
+Set up a virtual host for myself, swainwww.myphotodevel.com. It points
+at my build of mpa_www. I then tested to see if we can do away with
+loginpage2.php, which seems to be the case (passing uname/pw directly
+to loginpage.php works correctly) so I've committed everything and we
+can now see if loginpage2.php can be dropped. I hope so. It was a
+workaround to some bizarre PHP bug.
+
+It's a sauna in here today. Just spent time connecting a monitor and
+keyboard to Calvin to see why it won't boot. Second boot was the
+charm.
+
+
+
+
+#########################################################################
+090105 Mon 05 Jan 2009 03:07:09 PM EST
+
+Wednesday I worked from home all day. I found that one cannot access
+the store sites on torque; you get the root of the image server, I
+think. It says "Hello sailor! need an image?"
+
+I was working on the problem of the extraction of all GET/POST/COOKIE
+params into the global namespace, via the PHP function extract(). This
+happens in init.php, and creates a number of security workarounds to
+try to prevent people from modifying internal variables, such as
+$GALLERY_BASEDIR. The correct answer is to treat tainted data as
+tainted data, and leave them in the superglobals. This tells you where
+they come from, as well. Here's a sample of the logging I was doing:
+
+/albums.php extracted 26 POST vars: config_changed,go_next,galleryTitle,skinname,gallery_thumb_frame_style,album_frame,albumsPerPage,cols,rows,add_to_beginning,thumb_frame,image_frame,print_photos,thumb_size,resize_size,useOriginalFileNames,comments_indication,comments_indication_verbose,rssEnabled,rssMode,display_clicks,voter_class,poll_show_results,show_profile_tab,adminEmail,senderEmail
+
+/albums.php extracted 2 GET vars: displayGalleryStyle,currentItem
+
+/captionator.php extracted 10 POST vars: page,perPage,action,newAlbumTitle,newmodcaptionription,new_captions_1,extra_fields,new_keywords_1,new_captions_2,new_keywords_2
+
+/create_or_add.php extracted 1 GET vars: set_albumName
+
+/create_or_add.php extracted 3 POST vars: action,newAlbumTitle,newAlbumDescription
+
+/do_command.php extracted 2 GET vars: return,cmd
+
+/download.php extracted 2 GET vars: set_albumName,id
+
+/email_invite.php extracted 1 GET vars: page
+
+/gallery_remote2.php extracted 2 POST vars: cmd,protocol_version
+
+/gallery_remote2.php extracted 5 POST vars: cmd,protocol_version,set_albumName,caption,force_filename
+
+/import_emails/import.php extracted 5 POST vars: username,password,Submit_x,Submit_y,Submit
+
+/import_emails/import.php extracted 6 GET vars: spimport,book_style,KeepThis,TB_iframe,height,width
+
+/import_emails/import.php extracted 8 POST vars: allbox2,allbox,formname,sender,addresses,submit_x,submit_y,submit
+
+/inc/share/albumpushxml.php extracted 2 GET vars: set_albumName,whatType
+
+/index.php extracted 1 GET vars: yPosition
+
+/invite_friends.php extracted 6 POST vars: emails,fromName,message,email_action,x,y
+
+/links-badges.php extracted 5 GET vars: set_albumName,index,id,FromShare,type
+
+/links.php extracted 4 GET vars: set_albumName,index,id,FromShare
+
+/links-slideshow.php extracted 5 GET vars: set_albumName,index,id,FromShare,type
+
+/links-text.php extracted 5 GET vars: set_albumName,index,id,FromShare,type
+
+/loginpage.php extracted 1 GET vars: returnpage
+
+/loginpage.php extracted 4 POST vars: returnpage,uname,gallerypassword,referer
+
+
+One simple solution is to go through each file and test/set the
+variable:
+
+$returnpage      = $_GET['returnpage'];     
+$uname           = $_GET['uname'];          
+$gallerypassword = $_GET['gallerypassword'];
+$referer         = $_GET['referer'];        
+
+though one should test with isset(), I suppose:
+
+isset($_GET['returnpage']      ) && $returnpage      = $_GET['returnpage'];     
+isset($_GET['uname']           ) && $uname           = $_GET['uname'];          
+isset($_GET['gallerypassword'] ) && $gallerypassword = $_GET['gallerypassword'];
+isset($_GET['referer']         ) && $referer         = $_GET['referer'];        
+
+very Perlish, probably illegal in PHP. Let's see: Hmm. Seems
+legal. Still, the old terenary operator could provide a default where
+needed, but I think we test if the variable holds anything. Perhaps
+array_key_exists()? 
+
+"isset() does not return TRUE for array keys that correspond to a NULL
+value, while array_key_exists() does."
+
+Says the manual. So:
+
+array_key_exists('returnpage',      $_GET ) && $returnpage      = $_GET['returnpage'];     
+array_key_exists('uname',           $_GET ) && $uname           = $_GET['uname'];          
+array_key_exists('gallerypassword', $_GET ) && $gallerypassword = $_GET['gallerypassword'];
+array_key_exists('referer',         $_GET ) && $referer         = $_GET['referer'];        
+
+The trial:
+
+#!/opt/php5/bin/php
+<?php
+
+$_GET = array();
+$_GET['returnpage'] = 1000;
+
+array_key_exists('returnpage',      $_GET ) && $returnpage      = $_GET['returnpage'];     
+array_key_exists('uname',           $_GET ) && $uname           = $_GET['uname'];          
+array_key_exists('gallerypassword', $_GET ) && $gallerypassword = $_GET['gallerypassword'];
+array_key_exists('referer',         $_GET ) && $referer         = $_GET['referer'];        
+
+print "$returnpage\n";
+print "$referer\n";
+print isset($uname) ? "yes\n" : "no\n";
+?>
+
+
+I wound up throwing out about 100 lines of hidden variables in
+shortform.php as a result of this auditing; I also found three vars
+that weren't being set. Today I found one that was getting set to zero
+every time (highlight_size) and took it out of the UPDATE query in
+DBConn.
+
+I thought I should add a flag, a constant, that if defined, I can
+collect the GET/POST data on production. It would be much faster than
+doing it by hand. The output could be parsable, and a script can
+generate the headers for all the files.
+
+Done. I can define a constant now and toggle logging once we roll out.
+
