@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "signup:"   ; cd /opt/mpa_signup/current  ; svn update
+echo "gallery:"  ; cd /opt/mpa_gallery/current ; svn update
+echo "cart:"     ; cd /opt/mpa_cart/current    ; svn update
+echo "conf:"     ; cd /opt/mpa/conf    ; svn update
+echo "products:" ; cd /opt/mpa_products/current; svn update
+echo "static:"   ; cd /opt/mpa_static/current  ; svn update
+echo "www:"      ; cd /opt/mpa_www/current     ; svn update
+echo "core:"     ; cd /opt/mpa_core/current    ; svn update 
+
+
