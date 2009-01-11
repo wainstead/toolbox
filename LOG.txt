@@ -43411,3 +43411,126 @@ generate the headers for all the files.
 
 Done. I can define a constant now and toggle logging once we roll out.
 
+Oh... so...having dispensed with config.php for all time, this puts us
+one step closer to having a proper Gallery class, whose instance we'll
+fetch via Gallery::getInstance(). Oh, maybe that's where I can wrap
+the thing so we get it from memcached. That is, I don't want to query
+the database every time for the stuff in mpa_sitewide_config. It does
+a join on mpa.users to get the email address.
+
+Hmm. Something about calling loadConfig(). I feel lethargic
+lately. I'm glad the holidays are over, really... now it's the cold
+colorless stretch to Valentine's Day.
+
+
+
+#########################################################################
+090106 Tue 06 Jan 2009 05:05:36 PM EST
+
+
+
+
+#########################################################################
+090107 Wed 07 Jan 2009 11:23:01 AM EST
+
+No entries yesterday; spent the better part of the day in meetings,
+mostly about the Dotphoto thing.
+
+Nothing anywhere on how to build the iPhoto plugin. Way to go,
+Chris. And I didn't document it anywhere it seems.
+
+Thinking over the DVD thing... which Jessy basically wouldn't take no
+for an answer on yesterday... Acutrack is the company, so I need to
+create a bunch of stuff in the database for them. One database patch
+coming up.
+
+typolesbo: is it difficutl to do the zip
+Steve Wainstead: oot
+typolesbo: of an antier
+typolesbo: album
+Steve Wainstead: anteater?
+typolesbo: entire
+typolesbo: album
+Steve Wainstead: anteater albm... no, i don't think it would be
+typolesbo: I want ot trun downloing on for eveyrone
+
+anteater album: an album and its entire contents
+
+Need to add an ArchiveDVD class to the cart... and map the archive DVD
+product to it.
+
+Problem: quantity.php expects to have a "selected photo." This won't
+be the case for DVDs however. What to do.
+
+Hmm. Need to add more product info, this time for mpa_products. And
+with mpa_core now existing, we can finally put the kibosh on this
+nonsense! But it would require a semi-huge refactoring of the cart and
+product product classes into one big shebang.
+
+Todo:
+1) Add the needed stuff in mpa_products_groupings, mpa_whateversis
+tables for mpa_products project.
+2) Add shipping class for Acutrack
+3) generate ISO
+4) build table and populate it with the user's album choices
+5) rejoice (maybe)
+
+
+
+
+
+#########################################################################
+090108 Thu 08 Jan 2009 03:22:51 PM EST
+
+[Type lines of input; use `.' to end or `@abort' to abort the command.]
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+typolesbo: that should be fixed
+typolesbo: can you search for
+typolesbo: something
+typolesbo: but it will need to be
+typolesbo: 2 times?
+typolesbo: does that make sence?
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+Mars Polar Lander . o O ( abend )
+heller says, "holy shit. . .only 1 typo and it's still incomprehensible! "
+Wainstead \ [to heller]: we played Set for the first time in months and i *almost* beat her. i 
+couldn't believe it.
+You say, "turns out what she meant was: search all files for a line that appears twice"
+heller says, "that girl should be the subject of numerous studies of how the brain works. "
+
+
+
+
+#########################################################################
+090109 Fri 09 Jan 2009 10:06:03 AM EST
+
+Get off at Hamilton, the Northeast Extension.
+
+http://www.njtransit.com/sf/sf_servlet.srv?hdnPageAction=TrainSchedulesTo
+
+http://www.njtransit.com/sf/sf_servlet.srv?hdnPageAction=TrainSchedulesTo
+
+Call Bill once I reach Princeton Junction.
+
+---
+
+Fixed three bugs I filed for Jessy; she's been engrossed all day
+trying to get the two new Aurigma tools done. Our cert expires today,
+so thereafter our users will see a "cert expired" warning when they
+upload with the old Aurigma tool.
+
+Worked out release stuff for Bill; turns out mpa_products and
+mpa_gallery are codependent at the moment, old mpa_products wanting to access
+files in Gallery that have moved off to mpa_core... and new
+mpa_products won't work with old gallery either.
+
+Hot damn! All I had to do was copy the latest GalleryContext class to
+the current production branch, and that solved the problem. So we need
+to:
+
+1) update the current Gallery release
+2) roll out mpa_products
+3) roll out mpa_gallery
+
+
