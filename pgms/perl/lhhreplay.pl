@@ -218,7 +218,27 @@ foreach my $hashref (@conversation) {
     
 }
 
+
+build_trials_dir_index($trialsdir);
+
 print "Finished at ", scalar(localtime()), "\n";
+
+sub build_trials_dir_index {
+    my $trialsdir = shift;
+    my @files = <$trialsdir/*.html>;
+    die unless (scalar(@files));
+    open INDEXHTML, ">$trialsdir/index.html"
+        or die "Can't write the index page for the trials dir '$trialsdir': $!\n";
+    foreach my $file (@files) {
+        if ($file =~ /error/) {
+            print INDEXHTML "<a href=" . "$file" . ">$file</a> <font color=red>ERROR</font><br>\n";
+        } else {
+            print INDEXHTML "<a href=" . "$file" . ">$file</a><br>\n";
+        }
+    }
+    close INDEXHTML;
+    
+}
 
 
 # separate the URL from the response headers
