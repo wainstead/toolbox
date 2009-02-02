@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `swain_test`
+-- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `swain_test`;
+DROP TABLE IF EXISTS `users`;
 
-CREATE TABLE `swain_test` (
+CREATE TABLE `users` (
   `id` int(10) NOT NULL default '0',
   `username` varchar(30) NOT NULL default '',
   `password` varchar(32) NOT NULL default '',
