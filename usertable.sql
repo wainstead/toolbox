@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `swain_test`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `swain_test` (
-  `userid` int(10) unsigned NOT NULL default '0',
+  `id` int(10) unsigned NOT NULL default '0',
   `username` varchar(30) NOT NULL default '',
   `password` varbinary(32) NOT NULL default '',
   `email_address` varchar(100) NOT NULL default '',
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-02-02 15:16:52
+-- Dump completed on 2009-02-02 15:19:02
