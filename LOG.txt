@@ -43469,7 +43469,7 @@ product product classes into one big shebang.
 
 Todo:
 1) Add the needed stuff in mpa_products_groupings, mpa_whateversis
-tables for mpa_products project.
+   tables for mpa_products project.
 2) Add shipping class for Acutrack
 3) generate ISO
 4) build table and populate it with the user's album choices
@@ -43534,3 +43534,821 @@ to:
 3) roll out mpa_gallery
 
 
+
+
+
+#########################################################################
+090114 Wed 14 Jan 2009 02:43:04 PM EST
+
+Rolled out mpa_core and then mpa_products, which works; but there's
+things missing because mpa_static cannot update until the uploader is
+working. Jessy's been working like crazy on the uploader for days now.
+
+Meanwhile, I've been handed a task to make Trialpay more
+generic. We're going to sell club memberships and 50 free prints now,
+so I have to modularize trialpay.php in mpa_cart. Which I'm working
+on.
+
+The first problem becomes: clubhelper.class.php does the clubifying,
+but it depends on an Order class, or at least an order ID.
+
+Wow, looking at some Jacob/Tree code. Fucking horrible:
+
+     59:    function _redeemFreePrints10() {
+     93:    function _redeemFreePrints25() {
+    127:    function _redeemFreePrints50() {
+
+and:
+
+        $query = "SELECT offer_id FROM osc_offers_description WHERE offer_name='(points) 50 free prints'";
+
+Well, the stuff works, so what can you do?
+
+---
+
+How to merge from trunk to branch?
+
+swain@torque:~/public_html/projects/mpa_core$ svn switch https://svn.corp.myphotoalbum.com/mpa_core/tags/R_2009_01_14_initial_release
+U    lib/SelectedPhoto.class.inc
+U    inc/core_javascript.inc
+U    inc/core_header.inc
+Updated to revision 27.
+swain@torque:~/public_html/projects/mpa_core$ svn info
+Path: .
+URL: https://svn.corp.myphotoalbum.com/mpa_core/tags/R_2009_01_14_initial_release
+Repository Root: https://svn.corp.myphotoalbum.com/mpa_core
+Repository UUID: ff5c9cf9-2359-0410-9f81-d21499b4376b
+Revision: 27
+Node Kind: directory
+Schedule: normal
+Last Changed Author: bill
+Last Changed Rev: 21
+Last Changed Date: 2009-01-14 11:25:31 -0500 (Wed, 14 Jan 2009)
+
+swain@torque:~/public_html/projects/mpa_core$ svn merge -r 21:HEAD https://svn.corp.myphotoalbum.com/mpa_core/trunk .
+U    inc/core_javascript.inc
+U    inc/core_header.inc
+swain@torque:~/public_html/projects/mpa_core$ svn commit -m "Merging changes from trunk to this release branch"
+Sending        inc/core_header.inc
+Sending        inc/core_javascript.inc
+Transmitting file data ..
+Committed revision 28.
+swain@torque:~/public_html/projects/mpa_core$ svn switch https://svn.corp.myphotoalbum.com/mpa_core/trunk
+U    lib/SelectedPhoto.class.inc
+Updated to revision 28.
+
+
+Now, I'm not sure why the last set of changes didn't merge over but
+when I checked the branch on staging, the two core*inc files had the
+correct fixes.
+
+
+
+#########################################################################
+090115 Thu 15 Jan 2009 02:39:46 PM EST
+
+Getting Gallery out required restarting the Apache servers; then
+everything was OK. Actually, the first rollout failed because
+uploading didn't work; Jessy committed a new PHP include file for the
+Aurigma tool, which has the wildcarding license key I think, and then
+everything worked. I forgot the signup wizard had to immediately
+follow, so it was maybe an hour where confirmations failed (no
+config.php.template file anymore). I had Bill update the signup wizard
+from the trunk, I did a complete signup with uploads and everything
+was good. Configuration is in the DB now too.
+
+Fixed a bug in the cart, where finish === NULL, and added a test to
+make sure the subdomain is valid.
+
+
+
+#########################################################################
+090116 Fri 16 Jan 2009 03:34:11 PM EST
+
+Whipping trialpay.php into shape. Some notes:
+
+1) merchant.trialpay.com for access to our stuff
+2) notifcation key is on the "my account" page
+3) You can test by: setting the script called to
+store.myphotodevel.com, except you can't do this while the thing is
+live or real Trialpay transactions post to the dev server.
+4) then clicking Test Product, entering details, and choosing the
+first product listed, which is the Trialpay test product.
+
+Been refactoring points/func.php. Lot of magic numbers and
+globals. Ferreted out most of them. I am wondering now if I should
+just use the function to upgrade them to club membership rather than
+digging around in the cart code; in fact I will, as it should be
+faster.
+
+Bleh. I see now that getMPAUserID() does not insulate us from the
+global $gallery. It just wraps it. Actually I knew that. Hmm. We can't
+use $gallery in Cart-land. Well, actually, I could try to wrap
+$gallery in a Gallery class, or make it an instance of, but... I don't
+want cart code to depend on this stuff. Maybe Trialpay doesn't belong
+in the store code? I'd have to change the database instance being
+used, and the logging calls.
+
+Well, oddly, zip bam boom and it was done. What now? I need to load
+the site, so to speak... hmm.
+
+
+
+
+
+#########################################################################
+090119 Mon 19 Jan 2009 10:06:40 AM EST
+
+Oh, on Friday I threw out the server variable pointing at the start of
+the "five levels deep" directory structure. This has been a fixture in
+init.php since the first days of mpa.
+
+if ( ! $_SERVER['MPA_GALLERY_ROOT']) { //fail }
+
+Read most of the "Deploying Rails" book over the weekend. Excellent
+book.
+
+Slightly sidetracked into looking at why there are errors in the
+Apache error log for "no such directory 'emoticons'." The cause is
+older comments, and in this case spam comments on
+sample5.myphotoalbum.com.
+
+
+     'comments' =>
+    array (
+      0 =>
+      Comment::__set_state(array(
+         'commentText' => 'great',
+         'datePosted' => 1119805365,
+         'IPNumber' => '85.96.47.150',
+         'name' => 'save315@yahoo.com',
+         'UID' => 'everybody',
+      )),
+      1 =>
+      Comment::__set_state(array(
+         'commentText' => '<img src="../emoticons/omg.gif"> this modern half',
+         'datePosted' => 1131566412,
+         'IPNumber' => '208.54.15.1',
+         'name' => 'bobby',
+         'UID' => 'everybody',
+      )),
+
+
+Thus, the link is inaccessibly embedded in the object and
+unreachable. So the need arises to pull comments out of the AlbumItem
+objects themselves.
+
+So... where's Chris's schema?
+
+DROP TABLE IF EXISTS `mpa_albumitem_comments`;
+CREATE TABLE `mpa_albumitem_comments` (
+  `comment_id`   int unsigned NOT NULL auto_increment,
+  `albumitem_id` int unsigned NOT NULL default '0',
+  `name` varchar(256) default 'unknown',
+  `body` text default '',
+  `created_at` timestamp NOT NULL default now(),
+  `UID` varchar(256) default 'EVERYBODY',
+  `user_id` int unsigned NOT NULL default '0',
+  `from_ip` int unsigned NOT NULL default '0',
+
+  PRIMARY KEY (`comment_id`),
+  -- these come later
+  -- KEY `albumitem_id_idx` (`albumitem_id`),
+  -- CONSTRAINT `mpa_albumitems_cmfk_1` FOREIGN KEY (`albumitem_id`) REFERENCES `mpa_albumitems` (`albumitem_id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+I need  a dump of a simple comment. Or rather, a fairly complete
+comment:
+
+  1 => 
+  AlbumItem::__set_state(array(
+     'image' => 
+    Image::__set_state(array(
+       'name' => 'P1010263',
+       'type' => 'jpg',
+       'width' => 1024,
+       'height' => 768,
+       'resizedName' => 'P1010263.sized',
+       'thumb_x' => NULL,
+       'thumb_y' => NULL,
+       'thumb_width' => NULL,
+       'thumb_height' => NULL,
+       'raw_width' => 2560,
+       'raw_height' => 1920,
+       'version' => 25,
+    )),
+     'thumbnail' => 
+    Image::__set_state(array(
+       'name' => 'P1010263.thumb',
+       'type' => 'jpg',
+       'width' => 200,
+       'height' => 150,
+       'resizedName' => NULL,
+       'thumb_x' => NULL,
+       'thumb_y' => NULL,
+       'thumb_width' => NULL,
+       'thumb_height' => NULL,
+       'raw_width' => 200,
+       'raw_height' => 150,
+       'version' => 25,
+    )),
+     'caption' => 'look it\'s mike\'s kitchen',
+     'hidden' => NULL,
+     'highlight' => true,
+     'highlightImage' => 
+          Image::__set_state(array(
+             'name' => 'P1010263.highlight',
+             'type' => 'jpg',
+             'width' => 200,
+             'height' => 150,
+             'resizedName' => NULL,
+             'thumb_x' => NULL,
+             'thumb_y' => NULL,
+             'thumb_width' => NULL,
+             'thumb_height' => NULL,
+             'raw_width' => 200,
+             'raw_height' => 150,
+             'version' => 25,
+          )),
+     'isAlbumName' => NULL,
+     'clicks' => NULL,
+     'keywords' => '',
+     'comments' => 
+          array (
+            0 => 
+            Comment::__set_state(array(
+               'commentText' => 'These names are getting pretty old. hey, wtfbbq. <img src="http://swainstatic.myphotodevel.com/emoticons/sleepy.gif"> 
+                   so here\'s a url:
+                   http://sample5.myphotoalbum.com/view_photo.php?set_albumName=Sicily&id=P9240020
+                   
+                   and a link:
+                   <a href="http://wainstead.info/">wainstead.info</a>
+                   so there!',
+               'datePosted' => 1232387674,
+               'IPNumber' => '10.1.1.209',
+               'name' => 'wain wcwain',
+               'UID' => 'everybody',
+            )),
+    ),
+     'uploadDate' => 1230742554,
+     'itemCaptureDate' => 
+    array (
+      'hours' => '00',
+      'minutes' => '00',
+      'seconds' => '00',
+      'mday' => '00',
+      'mon' => '00',
+      'year' => '0000',
+    ),
+     'exifData' => NULL,
+     'owner' => 'nobody',
+     'extraFields' => 
+    array (
+      'phid' => 0,
+      'mpa_id' => NULL,
+      'Description' => 'can i live in the garage?',
+    ),
+     'rank' => NULL,
+     'version' => 25,
+     'emailMe' => NULL,
+     'debug' => false,
+  )),
+
+
+Hmm.
+
+foreach album
+  foreach albumitem
+    if has comments:
+      foreach comment:
+        insert into db
+        affix comment_id to albumitem
+save if updated
+
+The AlbumItem will need to store a comment ID, and probably have the
+same transitional code setup that I did for config.php. That is, wrap
+loading of comments in loadComments, or something similar; if the
+comment_id is set, pull it from the database; else if there's an
+array, use that. This differs from the config.php situation in that
+there is *always* a config.php, but here there usually will not be a
+comment.
+
+Once all the comments are ported, the process of culling splinks out
+should be easy; but this means that the AlbumItem should expect to
+have comment IDs that point to nothing, and probably shouldn't do
+anything. Or display "<comment deleted>". When the day comes that
+AlbumItems can be in the database, we can ferret those out too.
+
+I don't think I've ever manipulated AlbumItems in Veracity before.
+
+Well. Veracity just deleted all my photos. It was because I short
+circuited the loop in explodeLP. I think it was, anyway. I should not
+have used 'continue.'
+
+---
+
+Was just looking into an account, 'helencockeram', who had no
+config. She was deleted for not buying anything; she must have gone
+through the signup, not confirmed, then bought a club membership.
+
+I didn't get anywhere near trialpay yet! I found all the functions
+were being passed args but the signatures had nothing.
+
+---
+
+Now I have everything strung together, and Trialpay correctly adds 50
+free prints, or upgrades to club membership; the last detail though is
+it deducts the corresponding amount of points, which it shouldn't. So
+I have to somehow separate those behaviors.
+
+Alternately, I could just pass in a flag, but that's not so exciting.
+
+
+#########################################################################
+090120 Tue 20 Jan 2009 02:57:28 PM EST
+
+
+Waiting for the IRS woman to call me. Waiting is truly the hardest
+part. Had to have Jessy talk me down a bit in the conference room,
+which really helped.
+
+I got all the Trialpay stuff working, so I moved it to torque and
+tested with a new site; nothing. I had to work out what was making it
+not work (silent errors), and fixed all that. Seems to be A-OK now.
+
+So while I'm thinking of it, anything "points" related should probably
+come out of the redemption class. redemption has enough to do as it
+is; monkeying with the points system should be something else.
+
+We'll need a way for users to view their available coupons now. The
+points history page just ain't the place.
+
+
+---
+
+Getting all the current codes for a user... no wait, these aren't
+filtered out for usage...
+
+select cc.validation_code, od.offer_description from osc_coupon_codes
+cc, osc_offers_description od where cc.offer_id = od.offer_id and
+cc.subdomain='swain';
+
+SELECT cc.validation_code, od.offer_description
+FROM osc_coupon_codes cc, osc_offers_description od
+WHERE cc.offer_id = od.offer_id
+AND cc.subdomain='swain' and uses_done < uses_allowed;
+
+Now, a test to see what current offers exist that are available. No
+wait, the previous doesn't filter on expire date:
+
+SELECT cc.validation_code, od.offer_description
+FROM osc_coupon_codes cc, osc_offers_description od
+WHERE cc.offer_id = od.offer_id
+AND cc.subdomain='swain' and uses_done < uses_allowed
+AND cc.expire_date > now();
+
+Anyhoo. We have to look at the infrequently-examined osc_orders_offers
+table, eh? Hmm. Perhaps that should go in the cart.
+
+Actually... shouldn't the comment have the ID of the albumitem it
+belongs to? I think this should have to be... hrmm. Otherwise, I can
+give every AlbumItem an array of Comment IDs, which will have to get
+serialized into photos.dat. Which would remove some disk space,
+probably not a whole lot, but there it is.
+
+How about: if an albumitem gets a comment, it also gets a row in
+mpa_albumitems? Possibly.
+
+Tags are stored in the AlbumItem too. Unfortunate.
+
+
+
+#########################################################################
+090121 Wed 21 Jan 2009 09:51:23 AM EST
+
+Looks like we'll be going with ezprints, at the moment, though fuji or
+someone else might still be in the running.
+
+I'm surprised the dotphoto deal is still alive; or else Peter is
+stringing them along for now. Who knows?
+
+Meanwhile, I realized now that the Trialpay project has hit a
+roadblock because it wasn't spec'd and I don't know where to go from
+here.
+
+OK, Jessy is going to do the Trialpay thing now. I'll have to show her
+how to test it.
+
+Oh! I have to do a Veracity run. I created a branch for that, and now
+that I think of it, for years I've had this script or that script that
+I edit and make a few changes and run it; and next time I edit again
+and change it, sometimes creating huge comment blocks of old code
+because I don't want to lose it; often, not committing changes because
+I will throw them out. Silly! Now I'll branch in Subversion so every
+version will live forever, and having a "trunk" means I'll always have
+the "default version."
+
+---
+
+Been doing housekeeping tasks while watching Veracity. All the
+config.php data (that is user settable) is being ported into Mysql
+today. All albums/.users directories and user.local.php files are
+being deleted. Should free up around 2 million files. 
+
+Just did a bunch of testing of the service outage types, and it's all
+fucked up. Either they don't work anymore, or I'm just testing them
+wrong.
+
+Well. Veracity missed 21,000 sites. How is this?
+
+mysql> select count(username) from users u left outer join mpa_sitewide_config sc on u.userid=sc.site_id where sc.site_id is null and u.status > 0 order by username into outfile '/tmp/users'
+    -> ;
+Query OK, 1 row affected (1.17 sec)
+
+root@mdb-1:/home/www# wc /tmp/users
+ 21087  21088 231098 /tmp/users
+
+This is a Bad Thing, since Veracity is supposed to visit every
+site. Oh well; using an input file to Veracity directly. Let's see
+where this goes. Oh, I looked at the site zoeybird, which was in the
+result set of the above query; and indeed the site still had the
+user.local.php file.
+
+
+
+#########################################################################
+090122 Thu 22 Jan 2009 10:13:41 AM EST
+
+Still almost 900 user's configurations not ported into the database;
+it seems they are ghosts though. Meanwhile, the continual messages
+about "Warning: desktop file appears to be in use by PID NNNNN" "Using
+it may cause conflicts.  Use it anyway?" when I start Emacs appears to
+be due to a change in Emacs behavior:
+
+https://bugs.launchpad.net/ubuntu/+source/emacs-snapshot/+bug/163342
+
+Well, I'm stymied because one of the slow volumes is not working,
+which causes things to hang. Hmm; site loads though.
+
+--
+
+Long lunch with Jessy. Very fun! I described GEB to her, which is
+coincidental since I've been listening to The Musical Offering so much
+lately.
+
+---
+
+Am looking at the way users now login from activate.cgi. A five letter
+code is passed, which is compared to a hashed version in Gallery's
+mpa_subusers table. There's no salt so presumably this might have a
+hole. Not terribly worried about it. Not sure how it gets set
+though...
+
+How logging in via the hash works:
+
+1) In activate.cgi, first the five letter code is create:
+
+# for password hash
+local $unix_time = mktime(localtime(time));
+local $rec_pass_hash = substr( (md5_hex( $password . $userid . $unix_time ) , 0, 5) );
+local $recoverPassHash = md5_hex($rec_pass_hash);
+
+2) This five letter code is used to create the link to the welcome.php
+page:
+
+    $continue_url =
+    "http://$username.$service_name/welcome.php?hash=$rec_pass_hash";
+
+3) Then, the hash is used in the INSERT into mpa_subusers;
+
+    &CreateUserinfo($userid,
+                    $firstname,
+                    $lastname,
+                    $gender,
+                    $birthdate,
+                    $country,
+                    $postalcode,
+                    $income,
+                    $sid,
+                    $directorylist,
+                    $$hash{'email_address'},
+                    $recoverPassHash
+                    );
+
+4) In Gallery, in welcome.php:
+
+    if ($tmpUser->checkRecoverPasswordHash($hash)) {
+        stderr("The correct hash passed in for admin of {$gallery->app->subdomain}.. need to delete hash and log customer in");
+        $password = $dbconn->getPassword($gallery->app->subdomain);
+        if(loginUser($gallery->app->subdomain, $password)) {
+            stderr("welcome.php: login credentials are correct.. logged customer in");
+            $tmpUser->genRecoverPasswordHash(true);
+            $tmpUser->save();
+        }
+
+The recover password hash is set to null by Gallery.
+
+So... to do this from www.myphotoxxxx.com:
+
+1) User enters uname/pw.
+2) Test against users table.
+   if success: generate hash, place in mpa_subusers
+               create a link to albums.php with five letter code
+   if fail:
+            compare username to those in mpa_subusers.
+             if found, compare pw to existing pw. There might be many
+             matches though.
+
+Note they might also use their email address. So all of the above has
+to work for either username or email address.
+
+Currently, logging in via email address from www doesn't work. After
+some exploratory surgery, I found that it's because I put the email
+address into the userMap associative array in the instance of
+UserDB. So the username or the email address are used to return an
+instance of Gallery_User, and then we test the password against that.
+
+First, I should come up with a function that returns the five letter
+code that is used to make the recoverPassHash in mpa_subusers. This
+could be used in a variety of places; in fact, maybe the method does
+that for me...
+
+    function genRecoverPasswordHash($reset=false) {
+        if ($reset) {
+            $this->recoverPassHash = NULL;
+            return "";
+        }
+        $rec_pass_hash=substr(md5($this->password.
+                                  $this->uid.microtime()), 0, 5);
+        $this->recoverPassHash = md5($rec_pass_hash);
+        return str_replace("&amp;", "&", makeGalleryUrl('pops/new_password.php', array('hash' => $rec_pass_hash, 'uname' => $this->getUsername())));
+    }
+
+Sad. Why is it creating the link? This should be external to the
+method. Or this method should be renamed genRecoverPasswordHashLink.
+
+
+
+#########################################################################
+090126 Mon 26 Jan 2009 09:56:47 AM EST
+
+The previous entry is probably a combination of Thursday and Friday
+both; I think I didn't start a new entry. I should probably just
+commit my log once a day.
+
+Just spent about an hour correcting a mistake Jessy made. She made a
+lot of edits to shopping_cart_cb.php, but she was editing an older
+copy; when she tried to commit there were conflicts, and she claims
+her "tool deleted the file" and she committed her new version. This
+blew away some changes I added, namely, code to display archive DVDs.
+
+As mad as I am, I should have set her up on a branch so she could do
+her mass changes without blocking anyone. Currently the cart is
+unusable.
+
+Detective work: had to figure out how I implemented "half off club
+membership" for Jessy. Through a combination of svn's logs, svn diff,
+this log, the database patch I created, and finally searching our AIM
+conversations I sorta pieced it together. The little include file has
+the logic for printing the "add a club membership" box. I created a
+HALFCLUB promo code, and the URL for the little button in the "add
+club membership for 'foosite'" needs to pass in the promo code as GET
+data... like so: coupon_code=HALFCLUB.
+
+---
+
+Changing a password via the console works pretty much as I'd expect it
+to:
+
+>> advert = Advertiser.find(1340)
+=> #<Advertiser id: 1340, last_name: "Wainstead", email_address: "wainstead@test.myphotodevel.com", first_name: "Steve", address_id: nil, hashed_password: "3bf2bed93c95aa09b1e9e351798b9772862f9d55", salt: "264759200.302024459639434", updated_at: "2009-01-07 18:07:37">
+>> Advertiser.instance_methods(false)
+=> ["credit_card_ids", "loaded_address?", "address=", "email_address_confirmation", "salt=", "updated_at=", "last_name?", "email_address=", "before_save_associated_records_for_emails", "hashed_password", "hashed_password?", "before_save_associated_records_for_photographers", "set_address_target", "emails=", "convert_to_lower", "photographers", "credit_card_ids=", "email_address_confirmation=", "validate", "password", "address_id", "first_name?", "last_name", "after_create_or_update_associated_records_for_credit_cards", "validate_associated_records_for_emails", "password_confirmation", "updated_at?", "hashed_password=", "validate_associated_records_for_photographers", "credit_cards", "email_ids", "create_new_salt", "photographers=", "password=", "address_id=", "address_id?", "last_name=", "photographer_ids", "before_save_associated_records_for_credit_cards", "create_address", "password_confirmation=", "salt?", "first_name", "credit_cards=", "has_one_after_save_for_address", "address", "email_ids=", "salt", "updated_at", "email_address", "email_address?", "after_create_or_update_associated_records_for_emails", "after_create_or_update_associated_records_for_photographers", "photographer_ids=", "validate_associated_records_for_credit_cards", "build_address", "emails", "first_name="]
+>> advert.password= "112233"
+=> "112233"
+>> advert.save
+=> true
+>> 
+
+Here we pass "false" to instance_methods so we only see the ones we
+defined, versus all the parent class's methods.
+
+This also works for Admin objects, though I have to set the email
+address too now.
+
+
+>> swain = Admin.find(2)
+=> #<Admin id: 2, name: "swain", hashed_password: "b4c2b9b32986b1d8bc3cf8072d6e67d47d167465", salt: "274681400.668135973477284", email_address: nil>
+>> swain.password= "11223344"
+=> "11223344"
+>> swain.save
+=> false
+>> swain
+=> #<Admin id: 2, name: "swain", hashed_password: "8a28b7de0ceaf8202d2e4209280ed9e282dc223a", salt: "267547000.945877848510301", email_address: nil>
+>> swain.email_address = "swain@myphotoalbum.com"
+=> "swain@myphotoalbum.com"
+>> swain.password="11223344"
+=> "11223344"
+>> swain.save
+=> true
+>> swain.password="112233"
+=> "112233"
+>> swain.save
+=> true
+>> 
+
+I purged the GeoKit stuff from the vendor/plugins directory, and had
+to comment out a bunch of stuff in environment.rb, and make Search no
+longer a... er... no longer mixin the functionality of GeoKit.
+
+Also, Admin.find_all won't work (deprecated). Instead it's
+Admin.find(:all).
+
+---
+
+Yay! I finished the implementation of lost admin password for
+MPP. It's also very Rails 2.2.2 compliant now. My last bug was really
+quite simple; I should have just thought about it a little longer.
+
+Now on to bigger and better things... I really should go all out to
+implement a mini CRM system in it. Maybe. People tend to like their
+email clients better... I wonder how Parature handles this.
+
+
+
+#########################################################################
+090127 Tue 27 Jan 2009 09:46:47 AM EST
+
+I also need to take a look again at how the credit card editing stuff
+is working, which lives in a separate Rails project.
+
+---
+
+After I updated mpp_credit_card to work with Rails 2.2.2, I went
+looking for a solution for the much-missed dynamic scaffolding. The
+project ActiveScaffold requires you to do stuff with the layout; but
+having started with nothing but the dynamic scaffold, I had no layout,
+and adding one threw errors. So I gave up on that, branched, threw all
+the old code out, created a new codebase from scratch, created a
+static scaffold the new way and committed. All was happy, but I think
+it's a dumb loss for Rails to have moved that out of the project and
+then effectively abandoning it.
+
+
+
+
+
+#########################################################################
+090128 Wed 28 Jan 2009 04:41:49 PM EST
+
+Meetings; then, resolving coupon issues for Jessy, changing/testing
+the domain name change to images.mxx.com/images over static.mxx.com,
+fixing a bug in the cart where jQuery wants a function $() and so did
+Tree's library; Javascript does need namespaces. Some help to Fernando
+on svn merging; researched Trac a bit; read up on Subversion and
+managing multiple projects... I'm not sanguine about Bill's desire to
+unify the projects into one plate of spaghetti. Mmm. Spaghetti.
+
+Oh, installed svn-bisect and ack, which are neat tools.
+
+---
+
+Been trying to get llhreplay working on my Mac but it's bitching about
+not being able to call 'new' on some module...
+
+
+
+#########################################################################
+090129 Thu 29 Jan 2009 09:55:09 AM EST
+
+Trying to find out where, on development, the image URLs inserted into
+the cart have http:// instead of https://.
+
+Been testing the store... found some minor bugs and filed them. More
+for me than Jessy, it turns out. Earlier I was solving issues she had
+with her build of www, and got that rectified. Horror of horrors, all
+the CVS directories were committed to SVN. I mass deleted them.
+
+
+
+
+#########################################################################
+090130 Fri 30 Jan 2009 09:53:18 AM EST
+
+Yesterday Bill deployed MPP to osc-1 via Capastrano. I tested all the
+features, we solved some configuration bugs and it looks like it's
+live. Peter replied to a couple of the system emails this morning
+(saying he got them).
+
+
+
+From:   peter@myphotoalbum.com
+Subject: FW: MyPhotoPro - Contact Inquiry
+Date: January 30, 2009 9:17:01 AM EST
+To:   swain@myphotoalbum.com
+Reply-To:   peter@myphotoalbum.com
+
+fyi - received yesterday afternoon.
+
+Is MPP almost ready to go?
+
+
+
+-----Original Message-----
+From: swain@myphotoalbum.com [mailto:swain@myphotoalbum.com] 
+Sent: Thursday, January 29, 2009 3:51 PM
+To: contact@myphotopro.com
+Subject: MyPhotoPro - Contact Inquiry
+
+The following Inquiry was submitted by steve wainstead.
+
+This request falls under the topic Problem with website
+
+The details of the query submitted are as follows:
+does this contact form work or not?
+
+To respond to steve wainstead
+Phone: 917-723-3094
+Email: swain@myphotoalbum.com
+
+---
+
+Had a weird error when I bought with Paypal earlier. I was redirected
+to the login page after the purchase completed, instead of the order
+completed page. Bought two more prints but couldn't duplicate it, even
+though I cleared cookies and all. Can't do a test on development
+either; looks like PP changed the way you do test purchases.
+
+---
+
+Fixed two bugs in the cart: jQuery and prototype.js were both being
+loaded in the cart. I rewrote the email check to use jQuery, which
+fortunately turned out to be simple.
+
+The other bug involved the create_account form at the end of the
+anonyous buyer path. This was a typical javascript bug: trying to
+manipulate a form before it was defined.
+
+
+
+
+
+#########################################################################
+090202 Mon 02 Feb 2009 09:54:35 AM EST
+
+Came in Saturday and repaired/rearranged my collages; then assembled
+the one of Erin and Jeanne in Erin's car and took it home. Which
+reminds me, I meant to bring in the cardboard tube I stole from
+Lenny's desk.
+
+Oh, end of Friday I cooked up a small project to test ActiveScaffold,
+some gem for replacing dynamic scaffolding in Rails. Meh, it works. I
+was researching either yesterday or Saturday the classic_paginate and
+will_paginate projects, both from the same guy. I think I started a
+project to test that too; here or at home? I forget.
+
+-- export as csv example for mysql:
+select *
+into outfile '/tmp/uniq.csv'
+fields terminated by ',' optionally enclosed by '"'
+lines terminated by '\n'
+from swain_test;
+
+So... got will_paginate to work through some old fashion
+hacking. Hacking away at it until it worked. I was missing one thing,
+in the end, and that was to put the require statement in my
+environment.rb file.
+
+require "will_paginate" 
+
+class UserController < ApplicationController
+
+  def index
+    @users = User.paginate :page => params[:page], :order => 'lastname, firstname'
+    logger.info("got this many users: #{@users.length}")
+  end
+
+end
+
+
+class User < ActiveRecord::Base
+  cattr_reader :per_page
+  @@per_page = 30
+end
+
+
+<table border="1">
+    <% for user in @users -%>
+       <tr><td><%= user.lastname %></td><td><%= user.firstname %></td><td><%= user.username %></td><td><%= user.email_address %></tr>
+    <% end -%>
+</table>
+
+
+<%= will_paginate @users %>
+
+fix paging in emacs:
+git config --global core.pager ""
+
+The first problem with storing a git-controlled project in svn is all
+the new git objects don't get added to svn. That is, once you try it
+you see how it's obviously stupid to do.
