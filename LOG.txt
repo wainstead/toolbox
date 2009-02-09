@@ -44352,3 +44352,224 @@ git config --global core.pager ""
 The first problem with storing a git-controlled project in svn is all
 the new git objects don't get added to svn. That is, once you try it
 you see how it's obviously stupid to do.
+
+---
+
+Bulk updated pagination in mpp. Yay.
+
+
+   def list
+-    @address_pages, @addresses = paginate :addresses, :per_page => 30
++    @addresses = Address.paginate :page => params[:page], :order => 'state_id, city'
+   end
+
+
+
+
++        <%= will_paginate @addresses %>
+ 	
+-	<%= link_to 'Previous page', { :page => @address_pages.current.previous } if @address_pages.current.previous %>
+-	<%= link_to 'Next page', { :page => @address_pages.current.next } if @address_pages.current.next %> 
+
+
+I didn't add the page limits to the model classes, even... so
+upgrading is pretty simple in that respect.
+
+
+---
+
+Hacked in a search on company name, so the admin interface took huge
+leaps today. Far more useable than before.
+
+
+
+#########################################################################
+090203 Tue 03 Feb 2009 10:40:28 AM EST
+
+Fixing up the address editing in MPP. It's more useful now and I'm
+going to scope it to state. I wonder how I'll get pagination to handle
+that.
+
+Just added two new config options for the shortform for Jessy; the
+gallery display style (terrible name, should be "layout style") and
+the album display (layout) style.
+
+
+Bill: "/etc/init.d/mongrel_cluster restart" after you svn update :)
+
+---
+
+Fixed a couple of bugs on production with Bill. One involved a gem
+being only available to www and not root. But the other involves
+address records not associated with any advertisers. I put a test in:
+if address.advertiser.nil? next
+and this solved the problem. It logs them to the mongrel log for now.
+
+
+Time to look at the rollout.
+
+Done: staging has versions of everything same as production, but I
+updated the cart. Fixed a bunch of typos in the template
+class. Everything works. Had to update the conf file so we use secure
+static image serving. Jessy says IE still complains about insecure
+items; I wonder if it's because there's javascript popups that use
+plain URLs.
+
+
+
+
+
+#########################################################################
+090204 Wed 04 Feb 2009 03:21:59 PM EST
+
+Fixed an MPP bug this morning -- addresses were being looked up by
+photographer ID, clearly an old dumb bug -- then, manager's meeting,
+lunch, cart rollout, and a moving out meeting. Bill wants a 2U rack to
+virtualize all the server room machines.
+
+The cart rollout was OK, but there was a bug in the gallery.conf
+(subdomain name was wrong) so static content wasn't serving.
+
+I'm puzzled why there were data intergrity problems on mpp. Hmm. I'm
+now thinking I should make credit card management a top priority since
+the thing has to make money. I was going to abandon the
+mpp_credit_card project, but I think that might do for admin
+management of cards.
+
+Copied a little tutorial on encrypting stuff in Ruby. Was really easy,
+which is way cool.
+
+Actually encrypted a fake credit card number! How about that.
+
+
+
+#########################################################################
+090205 Thu 05 Feb 2009 10:32:19 AM EST
+
+Today: first time Tim was in on the morning standup. Fuji are here now
+trying to sell their wares to us.
+
+I now have a small testbed where credit card numbers are encrypted
+into the database and decrypted when displayed for viewing or
+editing. And I limit the field length to 16 as well. It seems there
+was one more thing I wanted to do, but now I can't remember. Oh! Do
+the regexp thing to display only ************1111.
+
+Well... I have Emacs 22.1 on my Mac. Time to fix that.
+
+
+
+#########################################################################
+090206 Fri 06 Feb 2009 09:52:12 AM EST
+
+Got Emacs 22.3 up; turns out all I needed to do was put git in the
+PATH; which X11 didn't have, since it's started via the Dock. Edited
+~/.MacOS/environment.plist and that fixed that.
+
+I have all the info I need at hand to do a transaction with
+Authorizenet, so that's the next step. Still no response on the blog
+post I made on the "padding check failed" error:
+
+ OpenSSL::PKey::RSAError in Creditcards#update
+
+Showing app/views/creditcards/edit.html.erb where line #8 raised:
+
+padding check failed
+
+Extracted source (around line #8):
+
+5: 
+6:   <p>
+7:     <%= f.label :ccnumber %><br />
+8:     <%= f.text_field :ccnumber, :maxLength => 16, :size => 16, :value => @creditcard.get_decrypted_ccnumber %>
+9:   </p>
+10:   <p>
+11:     <%= f.submit "Update" %>
+
+
+This makes no sense: an OpenSSL::PKey::RSAError but the line in
+question is in my template?
+
+I want to decouple the encrypted credit card from the one used to
+contact Authorizenet.
+
+
+>> require 'active_merchant'
+=> []
+>> credit_card = ActiveMerchant::Billing::CreditCard.new(
+  :number     => '4111111111111111',
+  :month      => '8',
+  :year       => '2009',
+  :first_name => 'Tobias',
+  :last_name  => 'Luetke',
+  :verification_value  => '123'	
+)
+
+?> ?> ?> ?> ?> ?> >> => #<ActiveMerchant::Billing::CreditCard:0x3325ad4 @month="8", @last_name="Luetke", @first_name="Tobias", @verification_value="123", @year="2009", @number="4111111111111111">
+>> ?> credit_card.valid?
+=> true
+>> quit
+kristalle:~/svn/pgms/rails/ccexperiment swain$ 
+
+i.e. my class is really EncryptedCreditCard; and we should probably do
+all our work with the ActiveMerchant::Billing::CreditCard, which is
+"built" by some method that takes an EncryptedCreditCard or has access
+to one... and come to think of it an Advertiser might have two or more
+credit cards... hmm.
+
+Ah. ActiveMerchant::Billing::CreditCard has a display_number
+method. Totally what I want. I need to flesh out a new algorithm. I
+think Creditcard will be a wrapper to A::B::C, has-an A::B::C.
+
+
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+AIM IM with typolesbo.
+12:48 PM
+typolesbo: lunch?
+Steve Wainstead: sure
+typolesbo: where2?
+Steve Wainstead: anywhere
+typolesbo: dinner?
+Steve Wainstead: oh, you mentioned that yesterday
+typolesbo: yea
+Steve Wainstead: sure if you want!
+Steve Wainstead: i can have dinner now, lunch later.
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+Wainstead \ waits to see if she gets it
+You say, "we've been playing Set during lunch again lately, and two days ago it was three of us
+versus her, and she still found more sets than the three of us combined"
+heller says, "i'm telling you. . .she needs to have her brain studied. "
+You say, "the new rule is she's not even allowed to look at the cards as I lay them down because
+she's calling "Set!" before I'm even done"
+heller . o O ( new rule: she's never allowed to look at the cards.  )
+tiResias . o O ( now she only wins 75% of the time )
+
+---
+
+Lunch at Venus Diner, obviously. Have a dry spot in the back of my
+throat so it's ColdEeze time. I'm thinking of starting over for the
+credit card testbed project, because I can't do ALTER TABLE on my
+version of sqlite3. (So says the internet).
+
+Notable: git revert does NOT do what svn revert does. It undoes the
+previous commit; and the git revert can be undone with another git
+revert.
+
+git reset --hard HEAD
+
+This is the way to do an "svn revert" in git. Though apparently not a
+very good way. I've used git stash for the time being.
+
+
+
+
+
+#########################################################################
+090209 Mon 09 Feb 2009 10:25:58 AM EST
+
+Oh, installed (again) RMagick on Friday. I wanted to tinker a bit with
+the notion of a photographer's portfoliio. I didn't finish "Ruby for
+Rails" this weekend, unfortunately. I did learn some new ideas
+though. The block thing: I get it on a nuts and bolts level at this
+point. I'm still fuzzy on the scope of @ variables.
