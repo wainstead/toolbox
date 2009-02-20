@@ -44842,6 +44842,8 @@ Note: anywhere Gallery is doing some operation on $gallery->album,
 this should probably be factored out. It has side effects that make
 life hard for Veracity. But judging from ack's output that might be
 really hard to do. Or irrelevant.
+
+
 #########################################################################
 090218 Wed 18 Feb 2009 11:39:33 AM EST
 
@@ -44894,3 +44896,35 @@ Albumitems to show this fact, or else a Treenodes table of
 treenode_id, albumitem_id. Hrmm.
 
 Yay. Bill restored my log from backup; I didn't lose anything.
+
+
+
+#########################################################################
+090220 Fri 20 Feb 2009 11:29:46 AM EST
+
+Peter's calling for an "all hands on deck" thing to cut over to EZ
+Prints. I have to parse another one of Jessy's spread sheets, which
+makes me PMS -- Pre Migration Syndrome. I was snappy with her in the
+meeting today.
+
+Sadly we'll lose matte finish prints for the time being, since they
+are a different product number for ezprints. Unless I have a brilliant
+idea on how to handle that.
+
+Club print discount: this is applied via an offer, in the
+DiscountHelper class (which the Cart class has-an instance of).
+
+
+---
+
+Rereading my entry of 080410 Thu 10 Apr 2008, where I'm ruminating on
+the migration to Qualex, it just dawned on me that the whole issue
+with categories (a category can contain products and other
+categories) harkens to my readings the past two days on heirarchies in
+SQL; and Celko's "Nested Set Model" provides a solution... though we
+still have the "type" problem, same as in albums and photos: a node
+can be either, and somehow one has to distinguish. For the store/cart,
+the data set is small enough that performance isn't going to be much
+of an issue though.
+
+Also, I should write a cron job to commit my log every day...
