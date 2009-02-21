@@ -2369,7 +2369,7 @@ Van Wie.
 Had an argument with Gautam over Twiki. I think the organization is
 counter to how Wikis work best; but it's a catch-22 situation where
 teaching Wiki conventions to users is too hard (you can lead a horse
-to water...) while the organization by heirarchy defeats the purpose
+to water...) while the organization by hierarchy defeats the purpose
 of a wiki. A wiki is not a content management system.
 
 Went on a quest for the db2 rollback logs, but found nothing... which
@@ -25911,9 +25911,9 @@ Hmm. So reading "Refactoring To Patterns" I learned that one can
 manage complex XML documents via the Composite Pattern, which it turns
 out I haven't read up on yet; I read up in Head First Design Patterns
 today and now I see it's just an Iterator for a
-heirarchy. Well. Fernando was just asking me about visiting every
+hierarchy. Well. Fernando was just asking me about visiting every
 album, which Veracity does, and it dawned on me that Composite can
-also be used for the album heirarchy as well. Anyway.
+also be used for the album hierarchy as well. Anyway.
 
 
 
@@ -26704,7 +26704,7 @@ session.
 
 I can see now that the stowstring passed via Gift Cards is completely
 unnecessary; it duplicates data already in the GC table. But the
-implementation of the Product heirarchy requires the stowstring to
+implementation of the Product hierarchy requires the stowstring to
 create the object. So perhaps this should be refactored thus: create
 class, then either initialize it via stowstring or some other method.
 
@@ -27266,7 +27266,7 @@ You say, "the box uses xfs. but it's mounted ufs/nfs."
 You say, "actually the xfs box is linux. the web server is solaris, which 
 mounts it via nfs."
 You say, "one of our sysadmins claims it's not necessary to go five deep in 
-the directory heirarchy"
+the directory hierarchy"
 draco asks, "maybe you could go with some sort of dynamic scheme?  if any 
 directory ab..n has more than X entries, change it to a/b...n instead?"
 the Extended modular data-warehouse heller [to Wainstead \]: it all depends on 
@@ -44869,11 +44869,11 @@ unfortunate. I told him everything I had, I put into the NCMEC report.
 
 ---
 
-Hm. Rediscovering my Celko book on trees and heirarchies. It gives me
+Hm. Rediscovering my Celko book on trees and hierarchies. It gives me
 the idea that our "many to many" table would really be a "list
 adjacency model" with some constraints. Well, yeah, I
 suppose. Hmm. Rather than doing a simple "album_id/albumitem_id" table
-there would be other constraints to preserve the heirarchy. Perhaps
+there would be other constraints to preserve the hierarchy. Perhaps
 the order the items appear in the album should be separate from this;
 an album contains a number of ids, some of which are also albums.
 
@@ -44920,11 +44920,25 @@ DiscountHelper class (which the Cart class has-an instance of).
 Rereading my entry of 080410 Thu 10 Apr 2008, where I'm ruminating on
 the migration to Qualex, it just dawned on me that the whole issue
 with categories (a category can contain products and other
-categories) harkens to my readings the past two days on heirarchies in
+categories) harkens to my readings the past two days on hierarchies in
 SQL; and Celko's "Nested Set Model" provides a solution... though we
 still have the "type" problem, same as in albums and photos: a node
 can be either, and somehow one has to distinguish. For the store/cart,
 the data set is small enough that performance isn't going to be much
 of an issue though.
 
-Also, I should write a cron job to commit my log every day...
+Also, I should write a cron job to commit my log every day... done!
+
+I still have a bug in MPP where encrypting the credit card fails, even
+though my little test project works just fine.
+
+OK, changed the key for constant_name to be (constant_name,
+manufacturers_id).
+
+Perhaps it's time to write a script to generate a PHP file of product
+IDs and their constants... and this file can live in mpa_core, where
+all projects can reach it if they need to... and I can add a tools/
+directory to mpa_core that has a script to regenerate this
+file. Also... since we can have our own copies of mpa_core, I could be
+using ezprints while torque uses qualex. Dunno if there will be OFS
+issues (probably) but it's a step in the right direction.
