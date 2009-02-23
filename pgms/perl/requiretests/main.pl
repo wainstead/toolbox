@@ -1,7 +1,8 @@
 #!/usr/bin/perl
 
-use strict;
-require "config.pl";
-loadconfig();
 
-print "I am in main. $configvar.\n";
+require "config.pl";
+loadconfig('main');
+
+
+print "I am in main: ", $main::configvar, ".\n";
