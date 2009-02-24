@@ -44942,3 +44942,24 @@ directory to mpa_core that has a script to regenerate this
 file. Also... since we can have our own copies of mpa_core, I could be
 using ezprints while torque uses qualex. Dunno if there will be OFS
 issues (probably) but it's a step in the right direction.
+
+
+
+#########################################################################
+090223 Mon 23 Feb 2009 11:14:45 AM EST
+
+Fernando says the blocks of errors I've been seeing for days are not
+from autorenewals... which is puzzling. So I asked him to track those
+down. Autorenewals weren't running under cron over the weekend, which
+is all the weirder, so I have to keep closer tabs on him. He's
+supposed to be posting to EZ Prints today.
+
+Today: worked out a new perl script I started on Friday, which
+generates a file of all constants for all products. I modified GiftsDB
+and productfactory to use it. I tried for a while to use Perl's
+format/write features to make the file more readable, but it was not
+worth the effort... and then I finally finished generating the SQL to
+insert all ezprints prints and posters into the db, created a patch
+file and committed it.
+
+Also did some tweaking of test sites for Jessy.
