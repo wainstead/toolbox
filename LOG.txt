@@ -44963,3 +44963,19 @@ insert all ezprints prints and posters into the db, created a patch
 file and committed it.
 
 Also did some tweaking of test sites for Jessy.
+
+
+
+#########################################################################
+090224 Tue 24 Feb 2009 11:51:43 AM EST
+
+Working from home today; Fernando is in the office. Looks like Qualex
+is threatening to cut us off Thursday for nonpayment. They are being
+tough about payment since they are going under in March.
+
+I have prints and gifts loaded into the three main products
+tables. The constant names for gifts are wrong; and stationary is
+formatted differently, I think, so I'm going to leave that be until
+I'm back in the office. Time to focus on the OFS.
+
+
