@@ -44988,3 +44988,21 @@ I'm back in the office. Time to focus on the OFS.
 All day meeting with our new Dotphoto buddies. Lunch at Dallas BBQ. I
 shouldn't eat so much meat.
 
+
+
+
+#########################################################################
+090226 Thu 26 Feb 2009 11:14:39 AM EST
+
+Hmm. Was looking at fixing a bug last night. What was it? Ah! Applying
+club discounts to prints.
+
+New bug: club discount is applied to all orders. I wonder if it's the
+new status thingie. Hmm. Bug went away. Well, I realized today I need
+to update all product IDs in the existing carts on production when we
+go live...
+
+For some reason the ofs's OrderPartFactory can't separate order parts
+based on who's making it... that is, it goes by category. Really, for
+each product ID, it should just find the manufacturer and do the Right
+Thing based on that.
