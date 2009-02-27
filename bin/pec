@@ -1,0 +1,6 @@
+#!/opt/php5/bin/php
+<?php
+error_reporting(E_ALL);
+require($argv[1]);
+
+?>
