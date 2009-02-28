@@ -45006,3 +45006,14 @@ For some reason the ofs's OrderPartFactory can't separate order parts
 based on who's making it... that is, it goes by category. Really, for
 each product ID, it should just find the manufacturer and do the Right
 Thing based on that.
+
+
+
+#########################################################################
+090227 Fri 27 Feb 2009 03:28:29 PM EST
+
+Been whacking away today on ezprints... right now, trying to fix
+Express Select. Again. I fixed it in April 2008 but the fix was to
+switch to constants... which doesn't seem to be an issue when I view
+source... hmm. There is that wonky config file, but ... the ids are
+correct. I don't get it.
