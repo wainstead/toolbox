@@ -45061,3 +45061,68 @@ Here's what I have to map: old product IDs to the new ones.
 All done, and the hot water tank too. The one upside to generating
 this file of PHP constants and EZPrints products IDs is I found a bug,
 where I hadn't added them to osc_products_to_categories.
+
+
+
+#########################################################################
+090303 Tue 03 Mar 2009 09:58:22 AM EST
+
+Just for history's sake, here's the file I eventually created
+yesterday. I had to put one of every product (including all sizes for
+each apparel item) to create the mapping. Tedious.
+
+---
+
+[nsfw] KENtucky: Dude, you're not going to believe this, but the person in
+http://crack.myphotoalbum.com/vwr.php/album/jennyo/album318 was at the same hotel I was at this
+past weekend. Columbia, SC. [1:19 a.m. 3]
+[nsfw] Andy [to KENtucky]: Did you do her? [1:20 a.m. 3]
+[nsfw] KENtucky: I talked to this girl for a while at 3AM:
+http://crack.myphotoalbum.com/vwr.php/image/jennyo/album318/sarah_003.sized.jpg [1:20 a.m. 3]
+[nsfw] KENtucky: no, but I tried to hook the dude I was with up. [1:20 a.m. 3]
+[nsfw] KENtucky: it was a bachelorette party. the bachelorette was carrying around the blow-up
+penis. i asked her if she knew she was carrying a big inflatable penis.  she then explained how
+she'd traded it for a leigh. [1:21 a.m. 3]
+
+(the girl in KENtucky's photo is just sitting on the floor. In other
+photos a bachelorette is carrying an inflatable penis).
+
+Well, I pulled Jessy and Peter into the conference room to tell them I
+fucked up and print prices were 0.00 over the weekend. How this
+happened: my original creation of patch 785 did not set the prices. I
+later created a patch out of Jessy's updates to the product tables; I
+then went back and updated patch 785 to have the correct prices. I
+found this bug on development, where the patch of Jessy's changes
+wipes out the work of patch 785. I had made a "redo" patch, but at the
+time of the rollout I thought it fixed the pricing problem. It
+didn't. It fixed something else.
+
+So over the weekend:
+
++-------------+---------+
+| products_id | numsold |
++-------------+---------+
+|       11000 |    2411 |
+|       11002 |     101 |
+|       11004 |      35 |
+|       11006 |      15 |
++-------------+---------+
+
+and
+99 rows in set (0.11 sec)
+
+99 orders got free prints. A customer contacted Lenny and told him
+they were not charged for the prints; Jessy IM'd me Lenny's IM, but
+Fernando had already pointed it out to me by what he saw in the admin
+interface to OSCommerce.
+
+Rollout of the signup wizard  and mpa_www complete... turns out the
+login page on www didn't work anymore. And there were typos. I rolled
+out five files to the cart for Dylan.
+
+---
+
+I just had that happy sensation that comes from reusing a tool I spent
+the time creating yesterday.. it parses the input file I posted abover
+and generates SQL code. It's hard to imagine a lot of programmers live
+without the ability or knowledge to do these things.
