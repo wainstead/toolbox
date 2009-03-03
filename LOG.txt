@@ -45017,3 +45017,47 @@ Express Select. Again. I fixed it in April 2008 but the fix was to
 switch to constants... which doesn't seem to be an issue when I view
 source... hmm. There is that wonky config file, but ... the ids are
 correct. I don't get it.
+
+
+
+#########################################################################
+090302 Mon 02 Mar 2009 11:56:09 AM EST
+
+Working from home. We had a nor'easter, and the hot water tank burst,
+so here I am. Testing from home; all projects look good.
+
+
+mysql> select cc.products_id, pd.products_description from osc_cart_contents cc, osc_products_description pd where cc.cart_id = 37 and pd.products_id = cc.products_id;
++-------------+---------------------------------------------+
+| products_id | products_description                        |
++-------------+---------------------------------------------+
+| 7102        | Classic Mousepad                            | 
+| 7103        | White 11oz Mug                              | 
+| 7105        | Ceramic Mug 11oz (black)                    | 
+| 7107        | White 15oz Mug                              | 
+| 7111        | 4Coasters (1 image)                         | 
+| 7115        | Porcelain Flat Circle Ornament              | 
+| 7117        | Porcelain Snowflake Ornament (single-sided) | 
+| 7122        | Photo Canvas - 16x20                        | 
+| 7123        | Photo Canvas - 20x24                        | 
+| 7124        | Playing Cards                               | 
+| 7125        | Puzzle In Box                               | 
+| 7135        | Photo Apron                                 | 
+| 7136        | Deluxe Tote Bag                             | 
+| 7141        | Tshirt (white) - XL                         | 
+| 7144        | Tshirt (white) - (Sub) Medium               | 
+| 7152        | Sweatshirt (white) - XXL                    | 
+| 7153        | Kids Tshirt - Small                         | 
+| 7169        | Stainless Travel Mug                        | 
+| 9041        | Porcelain Star                              | 
++-------------+---------------------------------------------+
+19 rows in set (0.01 sec)
+
+
+Here's what I have to map: old product IDs to the new ones.
+
+---
+
+All done, and the hot water tank too. The one upside to generating
+this file of PHP constants and EZPrints products IDs is I found a bug,
+where I hadn't added them to osc_products_to_categories.
