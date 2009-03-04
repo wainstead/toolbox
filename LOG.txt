@@ -45126,3 +45126,81 @@ I just had that happy sensation that comes from reusing a tool I spent
 the time creating yesterday.. it parses the input file I posted abover
 and generates SQL code. It's hard to imagine a lot of programmers live
 without the ability or knowledge to do these things.
+
+Notes on finding dupes in a table with surrogate keys:
+
+I did a bunch of research recently on the debate of surrogate keys
+versus natural keys. Actually, I didn't know or remember that that's
+what they are called. For all of our tables, practically, we use a
+surrogate key (an autoincrementing integer). This number has no
+meaning at all to the other columns, and now that I think of it,
+clears up the issue for me on how, in 3NF, the columns must 'depend'
+on the primary key somehow.
+
+A natural key, which for a photo would be
+sitename+albumname+photoname, is a composite key. One of the key
+problems (heh) is that users might rename the album or the photo, so
+this is an update on the primary key, which (apparently) causes
+problems. Or is just a headache.
+
+Anyhow, how to find duplicate rows in a table with surrogate keys? I
+thought today: why not just concat() all the columns? This failed on
+null values (you can't concat null), and heller pointed out ifnull(),
+which solved the problem.
+
+I found this via the google:
+
+select distinct(column_name) from information_schema.columns where
+table_name='osc_products' order by column_name;
+
+So that would go some way in creating a tool that would generate the
+query for me, which has this kind of ugliness:
+
+select concat(
+ifnull(products_id, ''),
+ifnull(products_quantity, ''),
+ifnull(products_model, ''),
+ifnull(products_image, ''),
+ifnull(products_price, ''),
+ifnull(products_date_added, ''),
+ifnull(products_last_modified, ''),
+ifnull(products_date_available, ''),
+ifnull(products_weight, ''),
+ifnull(products_status, ''),
+ifnull(products_tax_class_id, ''),
+ifnull(manufacturers_id, ''),
+ifnull(products_ordered, ''),
+ifnull(is_physical, ''),
+ifnull(ofs_prefix_code_id, ''),
+ifnull(constant_name         , ''),
+ifnull(manufacturers_product_id, ''),
+ifnull(class_id, '')
+) as stringy,
+count(
+concat(
+ifnull(products_id, ''),
+ifnull(products_quantity, ''),
+ifnull(products_model, ''),
+ifnull(products_image, ''),
+ifnull(products_price, ''),
+ifnull(products_date_added, ''),
+ifnull(products_last_modified, ''),
+ifnull(products_date_available, ''),
+ifnull(products_weight, ''),
+ifnull(products_status, ''),
+ifnull(products_tax_class_id, ''),
+ifnull(manufacturers_id, ''),
+ifnull(products_ordered, ''),
+ifnull(is_physical, ''),
+ifnull(ofs_prefix_code_id, ''),
+ifnull(constant_name         , ''),
+ifnull(manufacturers_product_id, ''),
+ifnull(class_id, '')
+)
+) as numofthem
+from osc_products
+group by stringy
+order by numofthem;
+
+About as ugly as they come. But it works, or seems to... I didn't find
+any dupes in osc_products though I thought there were...
