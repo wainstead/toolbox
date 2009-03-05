@@ -45071,6 +45071,52 @@ Just for history's sake, here's the file I eventually created
 yesterday. I had to put one of every product (including all sizes for
 each apparel item) to create the mapping. Tedious.
 
++-------------+---------------------------------------------+
+  old mpa id  | products_description                        | mpaid | ez_id | products_description                              |
++-------------+---------------------------------------------+ 
+: 7102        | Classic Mousepad                            | 11050 | 10101 | 8x9 Standard Mouse Pad                            | 
+: 7103        | White 11oz Mug                              | 11051 | 10102 | 11 oz white Mug                                   | 
+: 7105        | Ceramic Mug 11oz (black)                    | 11052 | 10190 | 11 oz Black Mug                                   | 
+: 7107        | White 15oz Mug                              | 11055 | 10112 | 15 oz white Mug                                   | 
+: 7111        | 4Coasters (1 image)                         | 11059 | 10113 | Coasters - Set of 4 - Single Image                | 
+: 7115        | Porcelain Flat Circle Ornament              | 11065 | 10138 | Ornament - Porcelain Circle                       | 
+: 7118        | Keepsake Wood Box                           | 11066 | 10240 | Keepsake Box - Mahagony                           | 
+: 7122        | Photo Canvas - 16x20                        | 11105 | 90120 | 16 x 20 - Mounted                                 | 
+: 7123        | Photo Canvas - 20x24                        | 11120 | 90050 | 20 x 30 - Rolled                                  | 
+: 7124        | Playing Cards                               | 11068 | 70002 | Playing Cards                                     | 
+: 7125        | Puzzle In Box                               | 11069 | 10127 | 252 Piece Puzzle w/Box                            | 
+: 7135        | Photo Apron                                 | 11094 | 10180 | Apron                                             | 
+: 7136        | Deluxe Tote Bag                             | 11095 | 10185 | Tote Bag                                          | 
+: 7169        | Stainless Travel Mug                        | 11058 | 10115 | Photo Travel Mug - Stainless                      | 
+: 9041        | Porcelain Star                              | 11064 | 10137 | Ornament - Porcelain Star                         | 
+
+: 7138        | Tshirt (white) - Small                      | 11074 | 10103 | T-Shirt - Premium Image - Adult S                 | 
+: 7139        | Tshirt (white) - Medium                     | 11075 | 10104 | T-Shirt - Premium Image - Adult M                 | 
+: 7140        | Tshirt (white) - Large                      | 11076 | 10105 | T-Shirt - Premium Image - Adult L                 | 
+: 7141        | Tshirt (white) - XL                         | 11077 | 10106 | T-Shirt - Premium Image - Adult XL                | 
+: 7142        | Tshirt (white) - XXL                        | 11078 | 10107 | T-Shirt - Premium Image - Adult XXL               | 
+                                                           
+: 7143        | Tshirt (white) - (Sub) Small                | 11079 | 10225 | Xtra Large Image T-Shirt - Premium - Adult S      | 
+: 7144        | Tshirt (white) - (Sub) Medium               | 11080 | 10226 | Xtra Large Image T-Shirt - Premium - Adult M      | 
+: 7145        | Tshirt (white) - (Sub) Large                | 11081 | 10227 | Xtra Large Image T-Shirt - Premium - Adult L      | 
+: 7146        | Tshirt (white) - (Sub) XL                   | 11082 | 10228 | Xtra Large Image T-Shirt - Premium - Adult XL     | 
+: 7147        | Tshirt (white) - (Sub) XXL                  | 11083 | 10229 | Xtra Large Image T-Shirt - Premium - Adult XXL    | 
+                                                           
+: 7148        | Sweatshirt (white) - Small                  | 11084 | 10170 | Sweatshirt - S                                    | 
+: 7149        | Sweatshirt (white) - Medium                 | 11085 | 10171 | Sweatshirt - M                                    | 
+: 7150        | Sweatshirt (white) - Large                  | 11086 | 10172 | Sweatshirt - L                                    | 
+: 7151        | Sweatshirt (white) - XL                     | 11087 | 10173 | Sweatshirt - XL                                   | 
+: 7152        | Sweatshirt (white) - XXL                    | 11088 | 10174 | Sweatshirt - XXL                                  | 
+                                                           
+: 7153        | Kids Tshirt - Small                         | 11070 | 10200 | T-Shirt - Premium Image - Youth S                 | 
+: 7154        | Kids Tshirt - Med                           | 11071 | 10205 | T-Shirt - Premium Image - Youth M                 | 
+: 7155        | Kids Tshirt - Large                         | 11072 | 10210 | T-Shirt - Premium Image - Youth L                 | 
+
+
+This was my input for a Perl script to generate all the sql (patch 820, in fact).
+
+
+
 ---
 
 [nsfw] KENtucky: Dude, you're not going to believe this, but the person in
@@ -45204,3 +45250,63 @@ order by numofthem;
 
 About as ugly as they come. But it works, or seems to... I didn't find
 any dupes in osc_products though I thought there were...
+
+
+
+#########################################################################
+090304 Wed 04 Mar 2009 09:49:01 AM EST
+
+Started whacking away at stationary yesterday but the input file is
+irregular.
+
+I crashed a conference call Jessy and Peter were holding at COB
+yesterday. They were talking to some guy about doing wedding
+sites. The end result of that is: they want to be able to white label
+Gallery. What I have to figure out is: can we use some other domain
+name besides mpa.com/mps.com/mpd.com? Probably. But no subdomain? Much
+harder. So I am suddenly interested in Tim's work, because if we
+divorce the file locations from the subdomain, that would be a win.
+
+Also note I've been using the word 'win' more these days, a reddit
+influence.
+
+---
+
+I got stationary in the database; however, osc_products_to_categories
+is not populated, and I think it will all fail without rows in
+osc_products_properties. For stationary. Pushing on Fernando to get
+gifts rolled out... should be nothing more than a set of database
+patches (up to and including 835) and updating mpa_core (new product
+constant definitions).
+
+---
+
+How to bring back matte finish? Evil way: if it's selected, add one to
+each product ID. Muhahaha. I'm thinking, though, of a lookup table or
+some kind of translation event... if print_finish_type is set to 1,
+it's glossy, else... hmm. Four prints, maybe posters too; and then
+this is all in the database already. A view? It would be easier if
+each print product had a print_finish_type itself. Or if somehow this
+were all decoupled. Life was so much easier with Qualex.
+
+Hmm. osc_products.products_status is a field for "in stock/out of
+stock." Most products are set to zero. Nothing anywhere tests this
+column though; but here's a convenient way to tackle this.
+
+Meanwhile, I don't feel like getting whitebox.mpa to talk to another
+database quite yet. I find mysql administration tedious.
+
+Logically, if matte is selected, this should be set when the order is
+created by the cart. The OFS shouldn't know or care. On the other
+hand, we could defer this to the OrderPartPrints class and let it do
+the work. Hmm. Or, even, in the XML generator. This would obliviate
+any need to update the database, I suppose.
+
+So first... a finish types table? Seems logical. Actually, having now
+hacked all that out, it seems to me there should be, first, a print
+sizes table. For each size, there's an ID. (Using a "natural key,"
+we'd just use the code 4XD, 4X6, etc). Somehow we'd need to map
+product_id to size_id. Yes? Or does that just put us back where we
+started? Something feels wrong about the design I have.
+
+Oh well, it's written.
