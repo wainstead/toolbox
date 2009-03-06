@@ -45310,3 +45310,88 @@ product_id to size_id. Yes? Or does that just put us back where we
 started? Something feels wrong about the design I have.
 
 Oh well, it's written.
+
+
+
+#########################################################################
+090305 Thu 05 Mar 2009 09:51:29 AM EST
+
+Oh, I worked on whitebox.mpa yesterday too.
+
+Taxes done for 2008. Was out 10:41 until 12:30. Terrible. Rebooted the
+Pix firewall for Bill; the people working out of the office today are
+having a lot of connectivity problems. Peter reports no gifts or books
+sold yesterday, so I'm ordering a mug to test. Waiting on the xmit to
+qualex part. (upload_order.pl).
+
+Tim walked me through his scripts and I migrated
+coretest.myphotodevel.com to the new filesystem layout. Very keen. I'm
+going to cook up a tiny testbed to compute the location of the
+directories, and return that string.
+
+---
+
+First rollout with everyone working remotely
+was... problematic. Fernando didn't hold his end up because he claims
+he missed my messages. I had to patch the database and push out a
+change that happened in Gallery that Jessy forgot about. The use of
+context classes needs some thinking; more than once now, the class
+interface changed, and PHP was fatal erroring on a method that she
+defined elsewhere but Gallery's class didn't have.
+
+Fundamentally: Jessy has a header and footer file she wants used
+everywhere. These are in mpa_core. They expect to have an object
+that's some subclass of the Context class. The base class lives in
+mpa_core. So... if the base class at least provides some default
+behavior, the derived class won't be missing that method.
+
+
+Bill: ok... everyone ready?
+Bill: Im bout to pull the trigger
+Steve Wainstead: i've bought 2 clubs now for zappa.myphotodevel.com
+Steve Wainstead: yeah go for it
+Bill: done
+Steve Wainstead: ok, massive failures
+Steve Wainstead: [Thu Mar 05 15:28:31 2009] [error] [client 217.129.48.185] PHP Fatal error: Call to undefined method GalleryContext::getFooterTarget() in /opt/mpa_core/R_2009_03_05_ezprints_gifts/inc/core_footer.inc on line 32, referer: http://where.myphotoalbum.com/view_album.php?set_albumName=album11&page=7
+Steve Wainstead: jessy?
+jessyhanley: ea
+jessyhanley: whats wrong?
+Steve Wainstead: oh, do we need agallery rollout too?
+jessyhanley: did you guys do the core
+Steve Wainstead: hmm
+Steve Wainstead: we roled out products and core
+Steve Wainstead: funny that error is only on swg3
+jessyhanley: core doesnt have the latest ifle
+jessyhanley: when I look at that where thing
+jessyhanley: there are nw links there
+jessyhanley: like
+jessyhanley: satisfaction etc
+3:30 PM
+Steve Wainstead: bill did the caches get cleared?
+Steve Wainstead: i'm gonna migrate GalleryContext over to the productino branch, jessy
+Steve Wainstead: all our customers are seeing white screens
+jessyhanley: i saw the site
+jessyhanley: oh SHOOT
+jessyhanley: yes
+jessyhanley: we did make a gallery chagne
+Bill: yeah caches clear with rollouts now
+jessyhanley: because it wasnt loading
+jessyhanley: the gener
+jessyhanley: i forgot we had to do that
+jessyhanley: eventhoguh it was the added to the top level
+jessyhanley: controler context class
+Bill: the rollout logs have no errors
+Bill: want me to reload apache on swg-3?
+jessyhanley: yea we need that 1 file to be in gallery
+Steve Wainstead: bill please update mpa_gallery across the board
+jessyhanley: the gallyer context class
+Steve Wainstead: i updated afile
+jessyhanley: sorr forgot
+
+
+Ah, I remember now. Just two days ago I think, or maybe even
+yesterday, the GalleryContext class didn't extend the base
+class. That's why it failed. OK, cart and products both extend the
+base class. Ditto WWW.
+
+
