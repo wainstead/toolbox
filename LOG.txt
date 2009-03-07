@@ -45395,3 +45395,92 @@ class. That's why it failed. OK, cart and products both extend the
 base class. Ditto WWW.
 
 
+
+
+
+#########################################################################
+090306 Fri 06 Mar 2009 10:23:50 AM EST
+
+Began tinkering with a way to compute the new directory location. I
+don't want to do something like sprintf if I can help it; but then
+again, once I've done the munging I can stash it in the session so we
+don't do it every time.
+
+Here's a thought: separate print sizes from the cart. Rather than
+having the user select the sizes in the cart itself, we can just move
+that functionality to another page: choose print sizes or finishes. I
+would also like to put an abstraction layer between the cart and the
+product IDs, if that makes any sense. A small adult white tshirt is
+just that, and the cart can deal with things on those levels. Some
+later step (order creation?) can translate those into the correct
+product IDs. I think what I'm trying to solve here is the problem with
+print finishes.
+
+First: been playing around today with the filesystem migration
+stuff. I cooked up a function to compute the slow and fast storage
+locations. I'm grepping through Gallery looking for calls to
+getFiveLevelsDeepPath(), and a lot of them are used for the image
+servers.
+
+Well... I redefined $GALLERY_USERDIR to use the new location, and lo,
+it works. I added the Gallery class finally, making it official... and
+I have this thought: since we're going to test the db to see if this
+site has been migrated, I can just create subclasses of Gallery:
+GalleryFiveLevelsDeepStorage and GalleryTimsScheme, and those will
+have methods pathToSlow() and pathToFast() and they will do the Right
+Thing. Is this worth it? Probably not.
+
+I'll probably just have Gallery do it, no subclasses, and later we can
+toss out helper methods.
+
+Hmm. If the app context returns us the Gallery, then Veracity can have
+an application context class (!) and that can return the desired
+Gallery. Internally it can hold an array keyed on subdomain, and we
+can switch galleries at will. In theory. A GalleryContext instance,
+however, will hold its own Gallery. Intruiging.
+
+So the Cart can also hold one or more, if it follows the
+interface. Actually, Gallery might be the only one to return only one
+and one only... any attempt to change it would be fatal? Yes? No?
+Well, let's look at the case of shared albums.
+
+We are swain.mpa.com. We want a jessy.mpa.com album. We do something
+like:
+
+$gallery->loadfriends();
+
+This loads an array of zero or more friend sites. We can iterate:
+
+foreach ($gallery->friends() as $friendgallery) {
+   // do something with that gallery
+}
+
+Now... permissions? Perhaps we use some design patter to wrap a
+Gallery such that only certain operations are permitted. That would
+probably be doable.
+
+Now... can we create a Context class before everything else? How I
+wish sometimes for a Front Controller.
+
+Hmm. Chicken versus egg time: veracity needs to fill an array, or
+thereabouts... actually when would veracity ever need an array of
+Galleries? But it would need to reset the Gallery on each
+iteration. Anyway, a problem here is this: getting the context class
+"above" the gallery code. Not sure how to accomplish this.
+
+If we create a GalleryContext at the top of every page.. that is,
+we'll do this at the top of every page:
+
+require_once("/opt/mpa/conf/gallery.conf");
+require_once("{$GALLERY_BASEDIR}classes/GalleryContext.class.inc");
+$GLOBALS['app_context'] = new GalleryContext();
+
+(which can probably be tossed into a single include file),
+then... we've moved it out of init.php. This means any other
+application can load init.php and other non-display files, providing
+whatever context class it wants. So a short audit of all the Gallery
+files would be in order: if they are web pages, we do the above; if
+they are not, we don't. They must be included by something else.
+
+Then, at the top of init.php, it's a given that there's always a
+Context class defined for us; else it's a fatal error.
