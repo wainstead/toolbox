@@ -45484,3 +45484,133 @@ they are not, we don't. They must be included by something else.
 
 Then, at the top of init.php, it's a given that there's always a
 Context class defined for us; else it's a fatal error.
+
+
+
+#########################################################################
+090309 Mon 09 Mar 2009 10:22:49 AM EDT
+
+I had the urge over the weekend to try out my new ideas, specifically
+for using the Context class to give us the Gallery object. But:
+there's the counter notion of creating a proxy (Proxy?) class to
+intermediate between Galleries.
+
+Reviewing my log from Friday, I thought of this: I can put a test in
+at the end, in that function that's called at the end of the
+request... register_shutdown_function(). In that I can test $GLOBALS
+to see if the key 'gallery' is set... this should be a fatal error, in
+the end. An ounce of prevention. But I don't think I can terminate the
+process at that point, can I? Actually may as well test this.
+
+OK, in init.php:
+
+// at the top of the file
+if ($_SERVER['HTTP_HOST'] == 'swain.myphotodevel.com')
+    ob_start();
+
+
+
+    // in the exit function
+    if (array_key_exists('gallery', $GLOBALS)) {
+        ob_end_clean();
+        die("API violation: cannot set global gallery in superglobal GLOBALS\n");
+    }
+
+This works as an assertion, so the global $gallery can be cleaned
+up. I'm kind of down on the idea of renaming it $thisgallery, but
+otoh, that could be a stopgap while I clean out all the globals. The
+big step was blowing away config.php. That helped a lot.
+
+4,148 instances of the variable $gallery including the sitewide config
+file... certainly a lot of work, but then again, I might just do a
+massive change to the codebase thusly:
+
+s/global $gallery;/$thisgallery = $context->fetchGallery()/;
+
+and then:
+
+s/$gallery->/$thisgallery->/g
+
+and count up the failures. As an experiment it's low budget. The first
+thing, though, is to update all the "page template" files; that is,
+all the PHP files at the top level, which make up most of the
+application. (Stuff in pops/ will need it too, I think).
+
+swain@torque:~/public_html/projects/mpa_gallery$ ftx 'global $gallery;'|wc -l
+239
+
+Not bad. First thing though is to edit all the page template files.
+
+Oh, and another thing; and this relates to the whiteboxing problem. I
+have to parameterize the gallery conf file, so a whiteboxed solution
+can load a different one. Hmm. I had some thought this weekend over
+just placing a file in the DocumentRoot that does this... and I've
+come to question the need for absolute paths to files, using
+{$GALLERY_BASEDIR} and whether that gains us anything. Hrmm.
+
+Oh, I should move my swain and swainlisp projects to git, and then
+start pushing those repos around, instead of relying on our company's
+subversion repository. At the very least, my lisp library should be
+exported.
+
+I think the steps must be:
+
+Top level page templates have to load the GalleryContext class.
+require("classes/GalleryContext.class.inc");
+
+They then load the conf file:
+GalleryContext::loadConfig(); // calls
+require_once('/opt/mpa/conf/gallery.conf');
+
+But how does that get us around the whiteboxking issue? We still need
+to load things differently that way. Hrmm. OK, the "seed file" at the
+top level.
+
+include("seedfile.inc");
+
+In which:
+if (GALLERY)
+   require("classes/GalleryContext.class.inc");
+   $GLOBALS['app_context'] = new GalleryContext();
+elseif (WHITEBOX)
+   require("classes/WhiteboxContext.class.inc");
+   $GLOBALS['app_context'] = new WhiteboxContext();
+
+// do any other things
+
+And outside this file, all access to $gallery is by first calling the
+context class, I guess.
+
+Perhaps we'll use SERVER vars to indicate which it is? That would seem
+simple enough. i.e.:
+
+ServerName swain.myphotodevel.com
+DocumentRoot /home/swain/public_html/projects/mpa_gallery
+SetEnv MPA_GALLERY_ROOT /mnt/fast/vol01
+
+We can SetEnv something like
+SetEnv APPLICATION_DOMAIN mpa_gallery
+or
+SetEnv APPLICATION_DOMAIN mpa_whitebox
+
+Not super optimal, but that will have to do for now. Alternately I can
+enforce the loading of init.php first... hmm.
+
+---
+
+Well... refactoring done. 'global $gallery' is now history. The
+gallery class is provided by the context class; it's still a global,
+in truth, since it's placed there in init.php.
+
+I wound up leaving $gallery in init.php so far; this doesn't upset the
+apple cart. I'm trying to partition the display code from the
+underpinnings... in theory, I can instantiate a Gallery inside the
+cart now, and not have any namespace pollution or anything going on.
+
+So that's done, after so many years. I'm thinking of doing away with
+$GALLERY_BASEDIR now. It's another holdover from original Gallery, and
+was created... who knows why? Security reasons?
+
+Well, that was a mess. Files in subdirectories cannot open "init.php."
+I reverted everything, but it was a simple change to make.
+
