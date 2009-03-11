@@ -45614,3 +45614,42 @@ was created... who knows why? Security reasons?
 Well, that was a mess. Files in subdirectories cannot open "init.php."
 I reverted everything, but it was a simple change to make.
 
+
+
+
+#########################################################################
+090310 Tue 10 Mar 2009 11:49:18 AM EDT
+
+I think two things should happen before init.php is loaded:
+
+1. Load the configuration file.
+2. Create the Context subclass.
+
+From there, init.php can get all the info it needs to set things
+up. The configuration file has to load first because the "basedir"
+path(s) must be set. The Context class has to be instantiated so the
+$gallery can be created.
+
+End of yesterday, was brainstorming on the phone with Tim... he thinks
+we can write a simple mod_perl module to translate image URLs. We can
+do two things this way:
+
+1)
+http://images.myphotoalbum.com/s/sw/swa/swai/swain/swain/album01/foo.jpg
+can be supported.
+
+2) http://images.myphotoalbum.com/swain/album01/foo.jpg would be how
+the new URLs would look. These would translate into
+000/142/000142687-swain/albums/album01/foo.jpg.
+
+This gives us two things: 1). We can dispose of the three-levels-deep
+symlinking mess, and 2) we hide the user IDs.
+
+---
+
+Dunno why I never thought of this before:
+
+-require_once('/opt/mpa/conf/gallery.conf');
++require_once("$_SERVER[DOCUMENT_ROOT]/load_configuration.inc");
+
+That is, using DOCUMENT_ROOT to locate a file.
