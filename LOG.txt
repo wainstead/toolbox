@@ -45653,3 +45653,22 @@ Dunno why I never thought of this before:
 +require_once("$_SERVER[DOCUMENT_ROOT]/load_configuration.inc");
 
 That is, using DOCUMENT_ROOT to locate a file.
+
+
+
+#########################################################################
+090311 Wed 11 Mar 2009 01:22:39 PM EDT
+
+Barely time to do anything today, after a two hour conference
+call... one little test for Fernando... lunch... watching
+thru-you.com... minor tweaking of mod_rewrite.
+
+I'm working on mod_rewrite after fixing up the configuration file
+issue in Gallery; my goal is white labeling and letting us write
+facebook apps.
+
+---
+
+We had a rollout, later everything went down, rolled back, went live,
+turned out that the problem was the Winchester array and not the
+apps. Some one hour rebuild thingie is going on now.
