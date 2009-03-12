@@ -1,7 +1,5 @@
 #!/usr/bin/expect
 
-# $Id: mup.exp,v 1.6 2007/02/23 17:56:09 swain Exp $
-
 set timeout 25
 
 set machine [lindex $argv 0]
@@ -19,4 +17,3 @@ send "tail -f `ls -tr *error* | tail -1` | grep -v 'TRANSMIT_ERROR' \r"
 interact
 puts "mup.exp done."
 
-# $Id: mup.exp,v 1.6 2007/02/23 17:56:09 swain Exp $
