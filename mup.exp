@@ -5,7 +5,7 @@ set timeout 25
 set machine [lindex $argv 0]
 set muppattern [lindex $argv 1]
 puts "Using machine $machine $muppattern"
-spawn /usr/bin/ssh bst-1.fortunecity.com
+spawn /usr/bin/ssh bastion.myphotoalbum.com
 expect "Unauthorized"
 
 send "ssh $machine\r"
