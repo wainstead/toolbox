@@ -1,0 +1,59 @@
+#!/usr/bin/expect
+
+
+set timeout 25
+
+# Get the password from the user.
+proc get_password {} {
+    send "Password: "                ;# prompt user for password
+    stty -echo                       ;# turn off echoing
+    expect -re "..+"                 ;# expect input matching this regexp
+    set passwd $expect_out(buffer)   ;# set variable 'passwd'
+    stty echo                        ;# turn echoing back on
+    return $passwd
+}
+
+proc tail_mup { mupserver pattern } {
+    send "ssh bastion.myphotoalbum.com\r"
+    expect "GENERIC"
+    
+    send "ssh $mupserver\r"
+    expect "$pattern"
+    send "cd /opt/apache2/logs\r"
+    expect "logs"
+    send "tail -f `ls -tr *error* | tail -1`\r"
+}
+
+#set passwd [get_password]
+
+
+# Set up GNU screen
+spawn "/usr/bin/screen"
+expect "to end"
+send "\r"
+expect "bash"                   ;# match my shell prompt
+
+
+tail_mup "mup-1" "Fozzy"
+send "S	c"             ;# split screen, switch to it, start bash
+
+tail_mup "mup-2" "Gonzo"
+send "S	c"             ;# split screen, switch to it, start bash
+
+tail_mup "mup-3" "beaker"
+send "S	c"             ;# split screen, switch to it, start bash
+
+tail_mup "swg-3" "wing three"
+
+interact
+puts "mups.exp done."
+
+# here's how we did the sudo -s
+#send "sudo -s\r"
+#expect {
+#    "assword" {
+#        send "$passwd\r";
+#        expect "root"
+#    }
+#    "root" ;#  do nothing. we are already root.
+#}
