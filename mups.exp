@@ -1,6 +1,5 @@
 #!/usr/bin/expect
 
-# $Id: mups.exp,v 1.4 2005/11/02 19:32:06 swain Exp $
 
 set timeout 25
 
@@ -11,10 +10,12 @@ expect -re "..+"                 ;# expect input matching this regexp
 set passwd $expect_out(buffer)   ;# set variable 'passwd'
 stty echo                        ;# turn echoing back on
 
+# Set up GNU screen
 spawn "/usr/bin/screen"
 expect "to end"
 send "\r"
 expect "swain"                   ;# match my shell prompt
+
 
 # need to wrap this in a proc...
 send "ssh mup-1.fortunecity.com\r"
@@ -32,7 +33,9 @@ expect {
 send "cd /opt/apache/logs\r"
 expect "logs"
 send "tail -f `ls -tr *error* | tail -1` | grep -v 'File does not exist: /mnt/cel-1/vol01/linkless/gallery/1'\r"
+
 send "S	c"             ;# split screen, switch to it, start bash
+
 
 expect "etelone"
 send "ssh mup-2.fortunecity.com\r"
@@ -50,6 +53,7 @@ expect {
 send "cd /opt/apache/logs\r"
 expect "logs"
 send "tail -f `ls -tr *error* | tail -1` | grep -v 'File does not exist: /mnt/cel-1/vol01/linkless/gallery/1'\r"
+
 send "S	c"             ;# split screen, switch to it, start bash
 
 expect "etelone"
@@ -75,4 +79,3 @@ send "tail -f `ls -tr *error* | tail -1` | grep -v 'File does not exist: /mnt/ce
 interact
 puts "mups.exp done."
 
-# $Id: mups.exp,v 1.4 2005/11/02 19:32:06 swain Exp $
