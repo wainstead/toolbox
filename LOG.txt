@@ -45672,3 +45672,264 @@ facebook apps.
 We had a rollout, later everything went down, rolled back, went live,
 turned out that the problem was the Winchester array and not the
 apps. Some one hour rebuild thingie is going on now.
+
+
+
+#########################################################################
+090312 Thu Mar 12 12:11:26 2009
+
+Working from home today. Got mail working on the mini and the laptop;
+recompiled emacs to try to get around annoying mouse color. Turns out
+I only needed set-mouse-color, but I was two versions behind anyway so
+it was all good. Got mod_rewrite working on the mini, and watched the
+rollout for Bill; mass failures and he had to restart the web servers
+to clear them up. As if the APC caches didn't clear.
+
+Which reminds me: the bug that's plagued me for years now when I'm
+tailing logs. I first created an Expect script to log me into the
+server and tail the log:
+
+#!/usr/bin/expect
+
+# $Id: mup.exp,v 1.6 2007/02/23 17:56:09 swain Exp $
+
+set timeout 25
+
+set machine [lindex $argv 0]
+set muppattern [lindex $argv 1]
+puts "Using machine $machine $muppattern"
+spawn /usr/bin/ssh bst-1.fortunecity.com
+expect "Unauthorized"
+
+send "ssh $machine\r"
+expect "$muppattern"
+send "cd /opt/apache2/logs\r"
+expect "logs"
+send "tail -f `ls -tr *error* | tail -1` | grep -v 'TRANSMIT_ERROR' \r"
+
+interact
+puts "mup.exp done."
+
+# $Id: mup.exp,v 1.6 2007/02/23 17:56:09 swain Exp $
+
+With ssh keys set, it slides right through and the log is being
+tailed. I wrote some elisp to open four shell buffers to tail the
+logs:
+
+
+;; $Id: mups.el,v 1.6 2007/07/05 19:09:20 swain Exp $
+
+(defvar sw-tail-mups-alist '(
+                             ("swg-3" . "swg-3") 
+                             ("mup-3" . "mup-3")
+                             ("mup-2" . "mup-2")
+                             ("mup-1" . "mup-1")
+                            )
+  "List of mup servers.")
+
+
+(defun sw-tail-mups ()
+  "Tail error logs on the mup servers in shell buffers."
+  (interactive)
+  ;; if we are on a windowing system like X11, open this in a new frame
+  (if window-system
+    (let ((mups-frame (make-frame)))
+      (select-frame mups-frame)
+      (set-frame-name "mups")))
+
+  (let (pair (file-alist sw-tail-mups-alist))
+    (while (consp file-alist) 
+      ;; first time through these are equal so we do not split the buffer
+      (if (not (equal (safe-length file-alist) (safe-length sw-tail-mups-alist)))
+          (split-window-vertically))
+      (setq pair (car file-alist))
+      (shell)
+      (rename-buffer (car pair))
+      (goto-char (point-max))
+      (insert (format "~swain/svn/mup.exp %s %s" (car pair) (cdr pair)))
+      (comint-send-input)
+      ;;(message "car: %s cdr: %s" (car pair) (cdr pair))
+      (setq file-alist (cdr file-alist))
+      )
+    (balance-windows)
+    (window-configuration-to-register ?m))
+  )
+
+
+
+But the bug is: eventually the same block of text is "printed" to the
+buffer ad inifinitum. I thought it must be an emacs bug.
+
+I wrote a new Expect script to use GNU screen:
+
+#!/usr/bin/expect
+
+# $Id: mups.exp,v 1.4 2005/11/02 19:32:06 swain Exp $
+
+set timeout 25
+
+# Get the password from the user.
+send "Password: "                ;# prompt user for password
+stty -echo                       ;# turn off echoing
+expect -re "..+"                 ;# expect input matching this regexp
+set passwd $expect_out(buffer)   ;# set variable 'passwd'
+stty echo                        ;# turn echoing back on
+
+spawn "/usr/bin/screen"
+expect "to end"
+send "\r"
+expect "swain"                   ;# match my shell prompt
+
+# need to wrap this in a proc...
+send "ssh mup-1.fortunecity.com\r"
+expect "assword"
+send "$passwd\r"
+expect "Fozzy"
+send "sudo -s\r"
+expect {
+    "assword" {
+        send "$passwd\r";
+        expect "root"
+    }
+    "root" ;#  do nothing. we are already root.
+}
+send "cd /opt/apache/logs\r"
+expect "logs"
+send "tail -f `ls -tr *error* | tail -1` | grep -v 'File does not exist: /mnt/cel-1/vol01/linkless/gallery/1'\r"
+send "S	c"             ;# split screen, switch to it, start bash
+
+expect "etelone"
+send "ssh mup-2.fortunecity.com\r"
+expect "assword"
+send "$passwd\r"
+expect "Gonzo"
+send "sudo -s\r"
+expect {
+    "assword" {
+        send "$passwd\r";
+        expect "root"
+    }
+    "root" ;#  do nothing. we are already root.
+}
+send "cd /opt/apache/logs\r"
+expect "logs"
+send "tail -f `ls -tr *error* | tail -1` | grep -v 'File does not exist: /mnt/cel-1/vol01/linkless/gallery/1'\r"
+send "S	c"             ;# split screen, switch to it, start bash
+
+expect "etelone"
+send "ssh mup-3.fortunecity.com\r"
+expect "assword"
+send "$passwd\r"
+expect "beaker"
+send "sudo -s\r"
+expect {
+    "assword" {
+        send "$passwd\r";
+        expect "root"
+    }
+    "root" ;#  do nothing. we are already root.
+}
+
+send "cd /opt/apache/logs\r"
+expect "logs"
+send "tail -f `ls -tr *error* | tail -1` | grep -v 'File does not exist: /mnt/cel-1/vol01/linkless/gallery/1'\r"
+
+
+
+interact
+puts "mups.exp done."
+
+
+This looked pretty much the same as the Emacs result: a Screen with
+four buffers (windows?) each tailing a remote log. But the same
+problem occured: a chunk of text written to the buffer over and over.
+
+A couple weeks ago I just control-C'd out of one of these, which drops
+me back to my machine, and logged in manually. The problem didn't
+happen anymore! And this is what I've been doing since.
+
+So: it's an Expect bug. It has to be.
+
+---
+
+Meanwhile, a tutorial I found on mod_rewrite is either wrong or
+dated. No matter; hacking got it to work.
+
+RewriteEngine on
+RewriteLog /private/var/log/apache2/mod_rewrite_log
+RewriteLogLevel 9
+
+RewriteCond   %{HTTP_HOST}                 ^klingklang.local$
+RewriteRule   ^/page/([^/\.]+)/?$           /index.php?page=$1
+
+Here, calling http://klingklang.local/page/jimjam does the right thing
+on my mini. The browser URL stays the same, but /index.php?page=jimjam
+is the result. Progress. Ah! I bet because his example uses .htaccess
+instead of httpd.conf.
+
+So I want to match this:
+
+klinkklang.local/swain/anythingelse.php?var1=val1
+
+This should become:
+
+swain.klingklang.local/anythingelse.php?var1=val1
+
+Or maybe not. We can always add a var:
+
+klingklang.local/anythingelse.php?username=$1var1=val1
+
+OK, this catches any username:
+
+RewriteCond   %{HTTP_HOST}                 ^klingklang.local$
+RewriteRule   ^/([^/\.]+)/?$           /index.php?username=$1
+
+
+---
+
+OK, got this far:
+
+RewriteEngine on
+RewriteLog /private/var/log/apache2/mod_rewrite_log
+RewriteLogLevel 9
+
+RewriteCond   %{HTTP_HOST}                 ^apps.klingklang.local$
+RewriteRule   ^/([^/\.]+)/?(.*)$           /$2&username=$1
+
+When called like this:
+http://apps.klingklang.local/swain/view_album.php?set_albumName=album01
+
+The log shows this:
+
+127.0.0.1 - - [12/Mar/2009:17:06:56 --0400]
+[apps.klingklang.local/sid#8ca308][rid#93de50/initial] (2) init
+rewrite engine with requested uri /swain/view_album.php
+127.0.0.1 - - [12/Mar/2009:17:06:56 --0400]
+[apps.klingklang.local/sid#8ca308][rid#93de50/initial] (3) applying
+pattern '^/([^/\.]+)/?(.*)$' to uri '/swain/view_album.php'
+127.0.0.1 - - [12/Mar/2009:17:06:56 --0400]
+[apps.klingklang.local/sid#8ca308][rid#93de50/initial] (4)
+RewriteCond: input='apps.klingklang.local'
+pattern='^apps.klingklang.local$' => matched
+127.0.0.1 - - [12/Mar/2009:17:06:56 --0400]
+[apps.klingklang.local/sid#8ca308][rid#93de50/initial] (2) rewrite
+'/swain/view_album.php' -> '/view_album.php&username=swain'
+127.0.0.1 - - [12/Mar/2009:17:06:56 --0400]
+[apps.klingklang.local/sid#8ca308][rid#93de50/initial] (2) local path
+result: /view_album.php&username=swain
+127.0.0.1 - - [12/Mar/2009:17:06:56 --0400]
+[apps.klingklang.local/sid#8ca308][rid#93de50/initial] (2) prefixed
+with document_root to
+/Users/swain/Sites/virtualhost/view_album.php&username=swain
+127.0.0.1 - - [12/Mar/2009:17:06:56 --0400]
+[apps.klingklang.local/sid#8ca308][rid#93de50/initial] (1) go-ahead
+with /Users/swain/Sites/virtualhost/view_album.php&username=swain [OK]
+
+Which appears to do the Right Thing, however the browser says:
+
+Not Found
+
+The requested URL /swain/view_album.php was not found on this server.
+
+
+Hmm.
