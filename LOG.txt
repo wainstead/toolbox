@@ -45933,3 +45933,42 @@ The requested URL /swain/view_album.php was not found on this server.
 
 
 Hmm.
+
+
+
+#########################################################################
+090313 Fri 13 Mar 2009 10:12:15 AM EDT
+
+Jessy couldn't see a number of things in her cart at home; turns out
+she didn't approve the bad certs.
+
+---
+
+Too much fun chatting with Jessy via video iChat. She has Leopard so
+she can change colors. She was actually teasing me because I couldn't
+do it. Very unlike a girl.
+
+Been tweaking mod_rewrite rules today and hacking Gallery code. I have
+surfing via apps.myphotodevel.com working now.
+
+RewriteEngine on
+RewriteLog "|/opt/apache2/bin/rotatelogs /opt/apache2/logs/mod_rewrite_log 86400"
+RewriteLogLevel 9
+
+RewriteCond   %{REQUEST_URI}               !^/favicon.ico$
+RewriteCond   %{HTTP_HOST}                 ^apps.myphotodevel.com$
+RewriteRule   ^/([^/\.]+)/([^\?]+)$        /$2?username=$1&%{QUERY_STRING} [L]
+RewriteRule   ^/([^/\.]+)/$                /albums.php?username=$1&%{QUERY_STRING} [L]
+
+Here, we ignore favicon.ico; match the domain; if the script is
+passed, call that; hmm, that should probably get an L as well. Done;
+but the second rule wouldn't match anyway. Let's test. Works. All is
+yay.
+
+I had to relocate where the sessions file is loaded in Gallery, which
+worries me since that might lead to subtle bugs... I think I should
+review that file and throw out anything we don't need.
+
+End of day: Jessy had endless hassles with SVN. I think perhaps I
+should look at moving us to Git.
+
