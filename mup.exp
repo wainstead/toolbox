@@ -6,7 +6,7 @@ set machine [lindex $argv 0]
 set muppattern [lindex $argv 1]
 puts "Using machine $machine $muppattern"
 spawn /usr/bin/ssh bastion.myphotoalbum.com
-expect "Unauthorized"
+expect "GENERIC"
 
 send "ssh $machine\r"
 expect "$muppattern"
