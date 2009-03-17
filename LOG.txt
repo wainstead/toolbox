@@ -45972,3 +45972,97 @@ review that file and throw out anything we don't need.
 End of day: Jessy had endless hassles with SVN. I think perhaps I
 should look at moving us to Git.
 
+
+
+
+#########################################################################
+090316 Mon 16 Mar 2009 09:32:40 AM EDT
+
+Well. Regretably, "method call on a non-object" is not
+catchable. Which is really piss-poor of the PHP dev team. Their
+reasons are silly too.
+
+A curiosity happened when I hardwired the login form on loginpage.php
+to apps.myphotodevel.com. First, the redirect-after-login fails; no
+biggie. Second, even when I change the /subdomain to another, I still
+surf my own site; until I hit one of those links that is somehow
+composed differently (the one in the breadcrumb). Then I land on
+whoozie.
+
+NO! I take that back. I'm looking at whoozie's albums, but the theme
+looks like mine. No wonder I've been thinking of The Fly lately.
+
+---
+
+Perhaps putting the username in the session is a bad idea. It might be
+better to require that the subdomain follow as a directory:
+http://apps.myphotodevel.com/swain/. Gallery is occasionally spitting
+out http://apps.myphotodevel.com/somepage.php, which is why I stuck it
+in there in the first place. But ultimately, there's going to be one
+session for apps.mpa.com; so problems will arise from this. Very
+similar to solving the problem of global Gallery, perhaps. Maybe the
+gallery session object -- $gallery->session -- could be scoped to a
+single hash key? I think that might already be doable.
+
+So any session accessed is always gotten via $_SESSION['subdomain'],
+orginally:
+
+$gallery->session = $_SESSION['subdomain'];
+
+Hmm.
+
+Also I need to solve the problem of the url not having a closing
+slash: http://apps.myphotodevel.com/swain fails.
+
+Then again: why not craft a Front Controller pattern thingie to just
+do all this in PHP? I do believe I already gave this some thought
+vis-a-vis the app_context class. Oh right, "file not found." You have
+to do some kind of munging just to get the username out. Still: the
+munging is not a problem.
+
+I think the reason Gallery used all functions to generate the URLs was
+due to the "embedding" of it in Nuke and such. So the coding that went
+into that might be of use after all.
+
+OK, tossed out all my changes. Saved a copy of init.php though.
+
+Coming at it one direction:
+ftx '<a href' | grep -v javascript|grep -v '.svn' |grep -v 'setup/old' |grep -v STATIC | grep -v makeGallery | grep -v makeAlbum |grep -v 'href=""' | grep -v 'href="#"' | grep -v 'href="http' |grep -v 'http://www' > urls
+
+Really, most of what I want to match is this:
+<a href="/
+
+This returns 476, versus 621 the other way. Probaby easily
+perl-one-lined away too. Semi-easy.
+
+s%<a href="/%<a href="{\$gallery=>makeGalleryUrl()}%;
+
+Except that the method needs args. Doh.
+
+---
+
+So, some experimentation with <base> shows that it's still useless
+after all these years. When I do this:
+
+<base href="http://apps.myphotodevel.com/swain/">
+
+and the link is this:
+
+<a href="pops/something.php">
+
+this is passed to the server:
+/swain/pops.something.php
+
+wtf?
+
+---
+
+Oh, dear. MPA promotions would have to come out of the app as
+well. Geez. And would a white labeled version for another company
+require us to apply their promotions? What a mess that would be.
+
+Anyway, after deleting my cookies, <base> started doing the Right
+Thing. That can be a stopgap measure for those 500 or so 'a' tags for
+the time being; the rest, I can probably script away about 80% (of
+250) and hand edit the rest of them. I do still like the idea of
+putting them in the Gallery class.
