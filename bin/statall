@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "signup:"   ; cd /home/swain/public_html/projects/mpa_signup  ; svn stat
+echo "gallery:"  ; cd /home/swain/public_html/projects/mpa_gallery ; svn stat
+echo "cart:"     ; cd /home/swain/public_html/projects/mpa_cart    ; svn stat
+echo "conf:"     ; cd /home/swain/public_html/projects/mpa_conf    ; svn stat
+echo "products:" ; cd /home/swain/public_html/projects/mpa_products; svn stat
+echo "static:"   ; cd /home/swain/public_html/projects/mpa_static  ; svn stat
+echo "www:"      ; cd /home/swain/public_html/projects/mpa_www     ; svn stat
+echo "core:"     ; cd /home/swain/public_html/projects/mpa_core    ; svn stat 
+echo "schema:"   ; cd ~/public_html/projects/schema/mpa            ; svn stat
+
