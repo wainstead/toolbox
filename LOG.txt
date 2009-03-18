@@ -46066,3 +46066,89 @@ Thing. That can be a stopgap measure for those 500 or so 'a' tags for
 the time being; the rest, I can probably script away about 80% (of
 250) and hand edit the rest of them. I do still like the idea of
 putting them in the Gallery class.
+
+
+
+#########################################################################
+090317 Tue 17 Mar 2009 11:45:49 AM EDT
+
+I found yesterday that about 500 of the URLs in Gallery can be handled
+just by using <base>. Not optimal, but it gets us partway there.
+
+AIM IM with jessyhanley.
+11:52 AM
+jessyhanley: on my god... how do i make my mack stop reading me evertying
+jessyhanley: i pressed soemthing
+jessyhanley: and tis reading my typing
+jessyhanley: on good
+jessyhanley: god!
+jessyhanley: its terriable
+jessyhanley: it just read my words
+jessyhanley: its funny hear it try to read my typos
+jessyhanley: LOL
+jessyhanley: good god
+jessyhanley: HELP
+Steve Wainstead: this is a priceless moment in company history
+Steve Wainstead: anyway, something in system preferences, universal accesss
+jessyhanley: HELP
+jessyhanley: PLEASE
+jessyhanley: you hav eno diea how funny this is
+
+---
+
+Meanwhile: I'm thinking of scoping the cookie to the domain name,
+instead of the subdomain. The problem is getting from apps to swain
+and back again. I am logged into one but not the other; auth should
+probably work across both. The problem of links, maybe, can wait a
+bit.
+
+Well. I changed the setting in php.ini, per a discussion I found:
+
+; The domain for which the cookie is valid.
+session.cookie_domain = myphotodevel.com
+
+This was blank, originally; now, when session_start() is called, the
+session cookie is set for the tld name, instead of the
+subdomain... the big surprise is once I login to swain, I'm not logged
+into any other site. But once I logout I'm logged out of all of them.
+
+Nope: not on the second try. Weird. Old session data? Old cookie data?
+
+I think if we scope all session activity to $gallery->session, then
+we're safe. Each one gets a key in $_SESSION that uses the album
+directory of the site, which is always guaranteed to be unique.
+
+--
+
+Mass changed:
+
+_SESSION[' -> gallery->session->
+
+for a handful of variables. At any rate, now apps can access swain's
+session; or swain's apps's.
+
+Thought: Cart can load a gallery... given the user's PHPSESSID, it
+could fetch all the Galleries involved; which is to say, something
+like this:
+
+$galleries = Gallery::fetchGalleries($_SESSION['PHPSESSID']);
+
+Each Gallery would have its session handy; that is,
+$this->session. Hmm.
+
+With an accessor, we can do something like: 
+
+foreach ($galleries as $gallery) {
+   $gallery->makeClub();
+   $gallery->saveSession();
+}
+
+Something like that. At the moment given the site_id I could loop over
+all $_SESSION keys, looking for GallerySession objects and checking
+site_id for the right one... otoh, I'm tempted to just change the
+value of the key to make it easier. I wonder why they chose such a
+long complex string?
+
+key: gallery_session_2b98c715ead9f96d8b009ae0f3f4af3b:
+val: GallerySession::__set_state(array(
+
