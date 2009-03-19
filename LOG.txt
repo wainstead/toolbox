@@ -46152,3 +46152,20 @@ long complex string?
 key: gallery_session_2b98c715ead9f96d8b009ae0f3f4af3b:
 val: GallerySession::__set_state(array(
 
+
+
+
+#########################################################################
+090318 Wed 18 Mar 2009 03:22:16 PM EDT
+
+LOOONG meeting this morning. After some noodling around I set up email
+notifications for Subversion. All reet!
+
+Now... I want to be able to "get" the session for a given
+Gallery. That would be spiffy. But the hash keys in $_SESSION are
+gobbledeegook, as noted above. Hmm.
+
+Bleh. Compiled emacs for the svn box, won't run due to no termcap db
+file? teh suck.
+
+
