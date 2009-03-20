@@ -46169,3 +46169,82 @@ Bleh. Compiled emacs for the svn box, won't run due to no termcap db
 file? teh suck.
 
 
+
+
+
+#########################################################################
+090319 Thu 19 Mar 2009 11:28:26 AM EDT
+
+I introduced a bug for popups: I moved the loading of session.php up
+north in init.php, because I was setting the username in the $_SESSION
+superglobal. But I think that decision has been reversed: I decided
+that the username must *always* appear as a folder... that is:
+
+apps.myphotodevel.com/swain/
+
+is the only "legal" way to call apps.myphotodevel.com. If it goes
+something like apps.myphotodevel.com/index.php, that should be a fatal
+error. I tried setting the username in the session to get around this
+but it lead to confusion and problems. This is why I went down the
+road of making sure <base href=""> worked for all <a href> links: if
+the link looked like this <a href="/foo.php"> then the <base> didn't
+do what I wanted; this is something to do with how <base> is
+implemented. If the href starts with a slash then it only applies the
+domain name, not the domain name and username.
+
+Yup. My hunch was right. Putting the loading of session.php down to
+its original location solved the problem.
+
+---
+
+I rolled back my changes to init.php and session.php. They weren't
+needed. I created a patch file and applied it to trunk: there were a
+couple small changes in there besides the link changes... for example,
+calling exit after a redirect, and loading init.php via the document
+root. I noted there and here the proper thing to do is change all
+links to use makeGalleryUrl and its variants, but for now we can use
+<base>.
+
+TODO:
+
+1) test with new session key funness
+2) figure out why moving session.php upstairs causes issues. probably
+   for want of a $gallery object.
+3) think about committing apps base href hack in mpa_core.
+
+Thought: given a Perl script or Elisp, I could create an ongoing todo
+list here in my log and just parse it out on occasion.
+
+---
+
+I think Gallery had a notion of "taking an album offline." I just
+stripped out everything pertaining to "$gallery->session->offline,"
+which took the whole site offline. I think. We definitely didn't use
+it. I don't think the array of "offline albums" which sits in the
+session does anything either:
+
+swain@torque:~/public_html/projects/mpa_gallery_trunk$ ftx offlineAlbums
+./inc/function/get_all_album_items.inc:43:$gallery->session->offlineAlbums[$gallery->album->fields["name"]] = true;
+./inc/function/breadcrumb_n_shop.inc:26:    if ($pAlbumName && ( isset($gallery->session->offlineAlbums[$pAlbumName]))) {
+./inc/function/breadcrumb_n_shop.inc:32:	elseif ( isset($gallery->session->offlineAlbums["albums.php"])) {
+./profile_picture.php:15:$gallery->session->offlineAlbums["albums.php"]=true;
+./albumFeedShare.php:26:$gallery->session->offlineAlbums["albums.php"] = true;
+./friends.php:51:    if ($pAlbumName && ( isset($gallery->session->offlineAlbums[$pAlbumName]))) {
+./friends.php:56:    } elseif ( isset($gallery->session->offlineAlbums["albums.php"])) {
+./my_profile.php:22:$gallery->session->offlineAlbums["albums.php"]=true;
+./albumFeed.php:26:$gallery->session->offlineAlbums["albums.php"] = true;
+./makefeeds.php:35:$gallery->session->offlineAlbums["albums.php"] = true;
+./getxml.php:25:$gallery->session->offlineAlbums["albums.php"]=true;
+./search.php:33:$gallery->session->offlineAlbums["albums.php"]=true;
+./bookxml.php:79:$gallery->session->offlineAlbums["albums.php"]=true;
+./decline_invite.php:38:$gallery->session->offlineAlbums["albums.php"]=true;
+
+so I'm inclined to strip it out, since it wastes memory in the session
+db. I'm suddenly very concious of memory usage in the session db
+because, now, you get one session for the site. If you visit ten
+Galleries you get ten GallerySession classes in your one PHP session,
+and the "value" field is a TEXT, which in Mysql is limited to 65K
+chars.
+
+Also, the site ID is in the session twice and I want to remove the one
+from the Premium class.
