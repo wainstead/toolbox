@@ -46248,3 +46248,115 @@ chars.
 
 Also, the site ID is in the session twice and I want to remove the one
 from the Premium class.
+
+
+
+#########################################################################
+090320 Fri 20 Mar 2009 10:56:21 AM EDT
+
+I was enamored with the idea of 'git stash' when I was using git a few
+weeks ago: stash away all my changes and revert the code. It turns out
+you can do pretty much the same thing in svn:
+
+svn diff > current.diff
+svn revert -R *
+
+and later:
+patch -p0 < current.diff
+
+I think the idea of "taking an album offline" is an intruiging one,
+and if I ever get around to writing a Flex app, I can imagine having
+to reimplement it... no biggie I suppose though.
+
+I've removed all lines with offlineAlbums in them, which was an array
+in the session of albums, the value of which was 'true'. No idea how
+that worked, but... removing them all seems to have made no change to
+the app.
+
+Meanwhile, a note to the future about saving memory for sessions:
+
+            [goodstanding] => GoodStanding Object
+                (
+                    [_purchase_date] => 1237491384
+                    [_days_since_last_purchased] => 
+                    [_confirmed_date] => 1197754710
+                    [_days_since_date_confirmed] => 461
+                    [_user_status] => 9
+                    [_days_since_last_purchase] => 1
+                )
+
+            [albumName] => 
+            [albumListPage] => 1
+            [displayGalleryStyle] => classic
+            [site_id] => 142687
+            [language] => en_US
+            [displayAlbumStyle] => classic
+            [viewedAlbum] => Array
+                (
+                    [album25] => 1
+                )
+
+Here is a chunk of a dump of a session. All those hash keys are
+verbose, which is good for readability; but for the most part we don't
+need that. A simple solution would be to replace all hash keys in the
+code with defined constants. That is:
+
+define('PURCHASE_DATE', 0);
+
+and then:
+            [goodstanding] => GoodStanding Object
+                (
+                    [0] => 1237491384
+
+In the PHP source code for the GoodStanding class, we'd have to switch
+from object fields to an indexed array (a list). This could save a lot
+of room in the session DB.
+
+Note: my right index finger is hurting slightly. Don't know why.
+
+I'd have to review the session code for the cart to decide on a
+unified session... we already store sessions on the same database,
+just in different tables. They are identical too.
+
+Also in question:
+
+
+            [viewedItem] => Array
+                (
+                    [album03] => Array
+                        (
+                            [p4240001] => 1
+                            [p4240002] => 1
+                            [p4240003] => 1
+                            [p4240004] => 1
+                            [p4240005] => 1
+                            [p4240006] => 1
+                            [p4240007] => 1
+                            [p4240008] => 1
+                            [p4240009] => 1
+                            [p4240010] => 1
+                            [p4240011] => 1
+                            [p4240012] => 1
+                            [p4240013] => 1
+                            [p4240014] => 1
+                            [p4240015] => 1
+                            [p4240016] => 1
+                            [p4240017] => 1
+                            [p4240018] => 1
+                            [p4240019] => 1
+                        )
+
+                )
+
+What this is for, I have no idea. Ah: it's prevention for click
+tracking. If a photo is viewed by someone, it gets one click. They can
+view it again and again and, theoretically, the clicks don't go
+up. Let's test.
+
+---
+
+"Whoa!," to quote Neo. I unifed sessions for Gallery and the Cart. I
+created one table (mpa_sessions)... committed changes to the conf
+files, and have made a few purchases. I modifed ClubHelper to update
+the Gallery sessions for the clubs that are being bought. An awful lot
+done today. Monday I have to trek down to Trenton.
