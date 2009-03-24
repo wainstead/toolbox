@@ -46360,3 +46360,40 @@ created one table (mpa_sessions)... committed changes to the conf
 files, and have made a few purchases. I modifed ClubHelper to update
 the Gallery sessions for the clubs that are being bought. An awful lot
 done today. Monday I have to trek down to Trenton.
+
+
+
+#########################################################################
+090323 Mon Mar 23 10:20:50 2009
+
+Down in Ewing (not Trenton). 70 mile drive from Hoboken. Tom and I
+talked about PHB.
+
+---
+
+Brad's ideas center around creating web services for the various
+parts:
+
+Web Services:
+
+1) storage
+2) payment gateway
+3) order fulfillment
+
+Another stray thought I had:
+Service outages by returning different session objects?
+
+The need for a dotphoto to mpa migration tool is at hand; there's 250
+video members (paying) in dotphoto that need migrating. Time to tinker
+with a command line tool.
+
+---
+
+Back at the office, tinkering with my script. Oh, should back up the
+laptop.
+
+Ok, that going, I see now I can redo the way people login to www. In
+effect we have a unified application now, albiet in separate svn
+projects. www can instantiate a Gallery and directly take care of
+matters. No more crappy ampira.redirect.php.
+
