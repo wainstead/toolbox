@@ -46397,3 +46397,32 @@ effect we have a unified application now, albiet in separate svn
 projects. www can instantiate a Gallery and directly take care of
 matters. No more crappy ampira.redirect.php.
 
+
+
+
+#########################################################################
+090324 Tue 24 Mar 2009 09:32:54 AM EDT
+
+Still, I have to keep on target here with the whitebox project and
+with the dotphoto import... 250 customers to be ported over.
+
+But as a matter of refactoring, I might still redo login from www.
+
+The function loginFXFotoUser can stay where it is, in
+ampira.local.php. It's only used in:
+
+swain@torque:~/public_html/projects$ fall loginFXFotoUser
+./mpa_gallery_trunk/ampira.local.php:120:function loginFXFotoUser ($uname,$gallerypassword) {
+./mpa_gallery_trunk/fx_add_photo.php:29:$errorstr = loginFXFotoUser($uname, $gallerypassword);
+./mpa_gallery_trunk/fxfoto-login.php:29:$errorstr = loginFXFotoUser($uname, $gallerypassword);
+
+---
+
+Spent time cleaning up and throwing out. Good progress. Spork got
+wiped. Poor spork.
+
+Helped Jessy a lot with SVN problems; she's trying to access her
+Windows box here in the office via her mac at home over the vpn. All
+kinds of problems; mainly a few thousand files being "locked."
+
+
