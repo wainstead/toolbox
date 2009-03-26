@@ -46426,3 +46426,25 @@ Windows box here in the office via her mac at home over the vpn. All
 kinds of problems; mainly a few thousand files being "locked."
 
 
+
+
+
+#########################################################################
+090325 Wed 25 Mar 2009 11:45:54 AM EDT
+
+Right... forgot... with all Gallery sessions available to the user,
+this means my work on isolating the $gallery class pays off; or at
+least, I might have more work to do but I dunno yet. Conceptually, any
+function or method that needs a $gallery to work on doesn't have to
+have the global one... I think I wrote about this elsewhere, and that
+proxy or decorator classes might be de rigueur.
+
+Meh. 3pm conference call with Our Daughter's Wedding. I mean Our
+Wedding Day.
+
+---
+
+Well. Today some thinking came to the fore about sharing albums,
+and... really, I wonder at how often two of our users want to share
+albums. Sometimes, certainly, but probably not a lot.
+
