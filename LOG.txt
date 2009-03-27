@@ -46448,3 +46448,117 @@ Well. Today some thinking came to the fore about sharing albums,
 and... really, I wonder at how often two of our users want to share
 albums. Sometimes, certainly, but probably not a lot.
 
+
+
+
+#########################################################################
+090326 Thu 26 Mar 2009 10:31:14 AM EDT
+
+I got no work done yesterday, per se. If you count work as LOC and
+commits. I had two longish meetings; the second (a conf call with OWD)
+resulted in a long one-on-one with Jessy on a variety of
+topics. Fernando is working on the DVD thing now. I spent time looking
+at dotphoto's slideshow feature. It's written in an unknown version of
+ActionScript. Fernando wants to know if there will be employee reviews
+before we leave the office.
+
+Working script that imports zip files or URLs:
+
+#!/opt/php5/bin/php
+<?php
+
+/**
+ * This is a test script to see how we can manipulate a gallery from
+ * the command line these days.
+ */
+
+
+$_SERVER['DOCUMENT_ROOT'] = ".";                  // still need the doc root
+$_SERVER['HTTP_HOST'] = 'swain.myphotodevel.com'; // probably need a hostname
+define('MPA_NO_EXIT', true);                      // don't 302 redirect
+define('MPA_NO_MY_FLUSH', true);                  // don't call gallery's my_flush()
+
+// get our configuration. Mayhap, we should write one for standalone stuff?
+require_once("$_SERVER[DOCUMENT_ROOT]/load_configuration.inc");
+require_once('classes/GalleryContext.class.inc');
+
+// init.php expects this
+$GLOBALS['app_context'] = GalleryContext::getInstance();
+require_once("init.php");
+
+// all clear. do something.
+
+
+// To create a new album, $gallery has to be instantiated and
+// populated; $gallery->user must be instantiated too.
+
+$gallery = $GLOBALS['app_context']->getThisGallery();
+$gallery->loginUser("admin", "112233");
+
+// set flag allowing zip files
+$gallery->app->feature['zip'] = true;
+$gallery->app->debug = true; // massive debug goodness
+
+//$newalbum = createNewAlbum("", "fred_sanford", "i am a new album matey", "hello description! i see the fleet's in!");
+$newalbum = createNewAlbum("");
+print "new album: $newalbum\n";
+
+$urls = array("http://slim.deasil.com/~swain/redrock/2002/11-07/index/indexfiles/PB070031.JPG.jpg");
+processURLs($urls);
+
+// this while loop comes out of save_photo.php.
+// $userfile is evily created from $_FILES in init.php
+// i've removed most of the cruft here for clarity
+while (isset($userfile) && sizeof($userfile)) {
+
+	$name = array_shift($userfile_name);
+	$file = array_shift($userfile);
+    $caption = "";
+
+	$tag = ereg_replace(".*\.([^\.]*)$", "\\1", $name);
+	$tag = strtolower($tag);
+
+    $setCaption = '';
+    processNewImage($file, $tag, $name, $caption, $setCaption);
+}
+
+processNewImage("/mnt/fast/vol01/s/sw/swa/swai/swain/swain/tmp/testfile.zip", "zip", "testfile.zip", "");
+
+
+// have to save the album, or nothing shows up in it.
+$gallery->album->save(array("hello sailor"), 1);
+
+?>
+
+
+---
+
+OK, what next? How about a remote directory listing? I think dotphoto
+stores stuff here there and everywhere... so it might depend on Brad
+pushing it all to us.
+
+Reading my log back over the white labeling stuff:
+apps.myphotoalbum.com can set $gallery->session by picking the right
+key out of $_SESSION. Dunno what consequences there might be (the
+session really represents swain.myphotoalbum.com).
+
+If my Gallery is going to instantiate a few other Galleries,
+then... we can't have operations on the global $gallery mucking things
+up. I chaged all "global $gallery;" to get the $gallery from the
+context class, but I'm not sure that's enough. Something on the edge
+of my thoughts is saying I have to pass $gallery in. Maybe not in call
+cases? Also, a lot of the functions in util.php and ampira.local.php
+can be moved off to one class or another (mostly, Gallery or Album).
+
+And that leads to this line of thought: won't those two classes become
+bloated with too many responsibilities? So I start thinking about the
+various behaviors of an Album, the various responsibilities. It's
+still fuzzy though.
+
+Image processing: push this off to a queue? It would be easier if
+photo data were imported into Mysql. A lot of things would.
+
+What if we could upload photos and specify the albums? Is there
+any need for that? The current album is always $gallery->album. Hmm.
+
+
