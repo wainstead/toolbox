@@ -46562,3 +46562,83 @@ What if we could upload photos and specify the albums? Is there
 any need for that? The current album is always $gallery->album. Hmm.
 
 
+
+
+
+#########################################################################
+090327 Fri 27 Mar 2009 10:07:10 AM EDT
+
+Came in at 9; Peter said he talked to Andrew of Photrade for "a long
+time last night," and today we have a technical phone call with him
+(me and Bill). Brad wants to sit in too. I've been surfing the site
+this morning, looking at some woman's food photos. It was making me
+hungry until I hit a photo of a snake (?) in her collection.
+
+svn-bisect only works on the whole repository, because Subversion only
+works on directories, not files. So if I know the change happened in
+one file I still have to deal with whole copies of Gallery, which is
+slow and stupid.
+
+Using svn export, though, I can just retrieve every version of the
+file:
+
+#!/usr/bin/perl
+
+open PIPE, "svn log https://svn.corp.myphotoalbum.com/mpa_gallery/trunk/view_album.php | " or die $!;
+
+while (<PIPE>) {
+    if (m/^r(\d+)/) {
+        `svn export -r$1 https://svn.corp.myphotoalbum.com/mpa_gallery/trunk/view_album.php view_album.php.$1`;
+    }
+}
+
+
+Then use ls -c to list them by create time:
+
+for i in `ls -c view_album*`; do grep -l hideProgressAndReload $i; done
+
+the tail of which is:
+
+view_album.php.3710
+view_album.php.3766
+view_album.php.3852
+view_album.php.3902
+view_album.php.4062
+view_album.php.4134
+
+And indeed, the last occurance of hideProgressAndReload is in
+4134. When Jessy redid the gallery files, she removed it.
+
+---
+
+AIM IM with Timsta2323.
+11:36 AM
+Timsta2323: oh, nice crass icon.
+Timsta2323: HURRY UP GARRY, THE PARSON'S FARTED
+Steve Wainstead: big man, big M.A.N!
+Timsta2323: hahahaha I nearly typed that one!
+Steve Wainstead: i neary typed yours! :)
+Timsta2323: HAHAHAHA
+Steve Wainstead: that was the first thing i thought of
+Timsta2323: HIGH STRANGENESS
+Steve Wainstead: but i thought i'd do something less obvious. but stations is my favorite
+Steve Wainstead: i believe i still own the toxic gravity magazine flexidisc of "Rival Tribal Rebel Revel"
+Timsta2323: nice!
+Timsta2323: anyway
+Timsta2323: can you grab jessy when she gets out of her meeting? I need to discuss email timings etc
+Steve Wainstead: can do
+
+---
+
+Traced and fixed a Javascript bug in the one by one uploader... wound
+up in a meeting with the Photogra guy, they who do event
+photos. Interesting stuff.
+
+---
+
+Wound up in the Photogra meeting, which was interesting; then the call
+with Andrew Paradies from Photrade. A lot of interesting things came
+up in that call: I finally got to see the embedded ad technology; he
+has a proprietary caching layer over Amazon's S3. Development and
+staging use Ubuntu.
+
