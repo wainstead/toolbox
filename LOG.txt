@@ -46544,9 +46544,9 @@ session really represents swain.myphotoalbum.com).
 
 If my Gallery is going to instantiate a few other Galleries,
 then... we can't have operations on the global $gallery mucking things
-up. I chaged all "global $gallery;" to get the $gallery from the
+up. I changed all "global $gallery;" to get the $gallery from the
 context class, but I'm not sure that's enough. Something on the edge
-of my thoughts is saying I have to pass $gallery in. Maybe not in call
+of my thoughts is saying I have to pass $gallery in. Maybe not in all
 cases? Also, a lot of the functions in util.php and ampira.local.php
 can be moved off to one class or another (mostly, Gallery or Album).
 
@@ -46641,4 +46641,31 @@ with Andrew Paradies from Photrade. A lot of interesting things came
 up in that call: I finally got to see the embedded ad technology; he
 has a proprietary caching layer over Amazon's S3. Development and
 staging use Ubuntu.
+
+
+
+
+#########################################################################
+090330 Mon 30 Mar 2009 01:50:43 PM EDT
+
+Office network has been dead, pretty much, since yesterday
+morning. Bill and Tom yanked the virtual server and took it down to
+the data center only to find weekend packages are not allowed by the
+FBI... I am guessing because they are in the building. Bill's email
+was vague. Anyway I was in yesterday to roll up and ship my collages,
+and the office network was down. Bill got it up again this morning but
+we couldn't access the virtual host, so we spent time cleaning up.
+
+I'm pretty much set with what I'm taking and what I'm leaving. Oh! Oh!
+I could use the mini to install OS9, and be reunited with Unreal. It's
+a ppc mini.
+
+And so... I need to spec the XML for porting Dotphoto users to us,
+since I doubt Brad will do it.
+
+typolesbo: the second inite is correct
+3:45 PM
+Steve Wainstead: inite?
+typolesbo: i have no idea waht I meant
+
 
