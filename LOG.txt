@@ -46752,3 +46752,41 @@ function Photo::toXML() {
 
 Perhaps we can cheat, and just use all the hash keys as tags. Very
 much cheating.
+
+
+
+#########################################################################
+090401 Wed 01 Apr 2009 03:26:24 PM EDT
+
+
+
+typolesbo: 1it will breathy
+typolesbo: wnat ge ttoo hto
+wainstead1: breathy?
+typolesbo: breath
+wainstead1: wnat ge ttoo hto?
+typolesbo: lots of air
+wainstead1: what language isthat? gaelic? ;)
+typolesbo: listening to elton john
+typolesbo: yes
+typolesbo: your machiens what over heat
+
+Got the phone connected, but the damn thing expects DHCP, can't change
+the settings because I don't know the password... The Google says 456,
+which works... now the clock is wrong. Wants an SNTP server. Found a
+.gov one.
+
+I was on the phone with Tim twice, been shopping for a desk, and
+getting the phone set up. I was at the office and brought back a bunch
+more stuff. I think I'll wind up taking another cab, unless I can rope
+Ferry into driving me.
+
+Gave up trying to configure the phone. Up the DHCP server, boot phone,
+down the DHCP server. Works. The phone keeps complaining it can't
+contact the boot server when I use the static IP address... something
+must be missing from the configuration? And it can't find a time
+server, so the clock blinks. And for that matter, the phone just plain
+doesn't work on static IP.
+
+
+
