@@ -46790,3 +46790,22 @@ doesn't work on static IP.
 
 
 
+
+
+
+#########################################################################
+090402 Thu 02 Apr 2009 10:06:34 AM EDT
+
+Up and at it by 9am or so. Wanna get something concrete done for
+Facebook integration. However, the meeting with Andrew Paradies from
+Photrade made me mindful about licensing. Apparently anything you post
+to Facebook becomes Facebook's property. Arguably our licensing is
+pretty much the same.
+
+---
+
+Wound up booting the iMac atop my kitchen table in the living
+room... I didn't want to be bothered setting up Skype on my laptop
+(just yet). Downside: far away from my phone. Not that I use it all
+that much. Table is wobbly. But I would need to set up outside the
+"office" anyway when the desk arrives.
