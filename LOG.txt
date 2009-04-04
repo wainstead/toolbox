@@ -46809,3 +46809,32 @@ room... I didn't want to be bothered setting up Skype on my laptop
 (just yet). Downside: far away from my phone. Not that I use it all
 that much. Table is wobbly. But I would need to set up outside the
 "office" anyway when the desk arrives.
+
+
+
+#########################################################################
+090403 Fri 03 Apr 2009 04:24:14 PM EDT
+
+Morning: picking away at Facebook. Confusion sets in.
+
+Afternoon: perpetual network problems; relocate to the office. Video
+chat broken: solved by downgrading Perian.
+
+---
+
+The problem lies in being what, to Facebook, would be a "desktop
+client." How to authenticate? Thus far I can't tell. But, I'm now
+thinking the "share to Facebook" app would in fact live on Facebook;
+we send them there, they authenticate, they choose which pix to
+send. Sounds doable. I don't want to ask them to enter their FB
+username/password.
+
+Well, that was a snap. Unkilled the code to getAlbums into index.php
+and presto: Facebook albums. I can mix FB and MPA album
+information. Freaky.
+
+Now to get a photo uploaded...
+
+Done, except it doesn't show. I uploaded with their Aurigma tool and
+that doesn't show either: no thumbnail shows. I uploaded with the
+iPhoto plugin and it was fine. Hrmm.
