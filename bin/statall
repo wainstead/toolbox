@@ -7,5 +7,5 @@ echo "products:" ; cd /home/swain/public_html/projects/mpa_products; svn stat
 echo "static:"   ; cd /home/swain/public_html/projects/mpa_static  ; svn stat
 echo "www:"      ; cd /home/swain/public_html/projects/mpa_www     ; svn stat
 echo "core:"     ; cd /home/swain/public_html/projects/mpa_core    ; svn stat 
-echo "schema:"   ; cd ~/public_html/projects/schema/mpa            ; svn stat
+echo "schema:"   ; cd ~/public_html/projects/schema                ; svn stat
 
