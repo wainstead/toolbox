@@ -46838,3 +46838,74 @@ Now to get a photo uploaded...
 Done, except it doesn't show. I uploaded with their Aurigma tool and
 that doesn't show either: no thumbnail shows. I uploaded with the
 iPhoto plugin and it was fine. Hrmm.
+
+
+
+#########################################################################
+090406 Mon 06 Apr 2009 11:17:17 AM EDT
+
+Uploads to Facebook now work. They have two album IDs: one in the URL
+and another returned via XML:
+
+  11 => 
+  array (
+    'aid' => '2175550327271456765',
+    'cover_pid' => '2175550322978632419',
+    'owner' => '506534782',
+    'name' => 'Profile Pictures',
+    'created' => '1182808822',
+    'modified' => '1233895503',
+    'description' => '',
+    'location' => '',
+    'link' => 'http://www.facebook.com/album.php?aid=-3&id=506534782',
+    'size' => '9',
+    'visible' => 'everyone',
+  ),
+
+
+When I use 'aid' here it worked, but that might not be the change that
+fixed it... they might have fixed a bug over the weekend.
+
+---
+
+I have to find a closer credit union. It took 1.5 hours to go into
+Manhattan and make a deposit. Granted I could have sped that up a lot
+had I filled out all the checks and stuff beforehand...
+
+I've been reading/skimming "JavaScript: The Good Parts" and I'd like
+to bring all MPA JavaScript code under one MPACart object, or
+thereabouts. Maybe just an MPA object. I collapsed all JS in the Web
+Developer extension that isn't MPA's, and there's actually not as much
+as I'd thought; and there's probably functions that are not being
+called at all. But bringing all variables and functions into one
+object should prove useful in the future.
+
+I should also remember I want to split the "choosing sizes and
+quantities" functionality out of the shopping cart... this would
+simply the shopping cart page. It should load faster too.
+
+Another further-fetched idea is to eschew standard html forms and do
+everything via JSON/AJAX over https. Probably harder though. But maybe
+that would be the way to do the print size/quantity page, if I ever
+get to it.
+
+Back to figuring out how to pass info into FB.
+
+---
+
+How to associate the FB account with the MPA account? I installed the
+Twitter application. After the "Allow?" step, which is provided
+automatically by FB, Twitter prompts you to login. I am guessing this
+is where they (Twitter) store your FB user ID.
+
+---
+
+On thinking on this further, what I need to do is this:
+
+1) have them "login" if we don't recognize their fb id
+2) store the fb id somewhere. probably a "site_id to fb_uid" table.
+
+By fiat, it's going to have to be a Front Controller pattern,
+i.e. index.php is the gateway to all functionality. I think.
+
+
