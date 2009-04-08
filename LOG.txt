@@ -46908,4 +46908,93 @@ On thinking on this further, what I need to do is this:
 By fiat, it's going to have to be a Front Controller pattern,
 i.e. index.php is the gateway to all functionality. I think.
 
+---
+
+Found out, I think, the login process that Twitter uses. I tweaked the
+settings for the mpa app and set callback urls for signup and
+uninstall. Got this on uninstall:
+
+from facebook.com: fb_sig_uninstall => 1
+from facebook.com: fb_sig_locale => en_US
+from facebook.com: fb_sig_in_new_facebook => 1
+from facebook.com: fb_sig_time => 1239126021.1237
+from facebook.com: fb_sig_added => 0
+from facebook.com: fb_sig_user => 1630184675
+from facebook.com: fb_sig_api_key => b1cd81571c16215555f42ab28c025c00
+from facebook.com: fb_sig_app_id => 2413509183
+from facebook.com: fb_sig => e199a679fd002ef8cb9f0bd8436df605
+
+Thus, I can test for the uninstall array key here, and delete the user
+id from the new table. Let's test signups now.
+
+Hmm:
+
+from facebook.com: fb_sig_in_canvas => 1
+from facebook.com: fb_sig_request_method => GET
+from facebook.com: fb_sig_position_fix => 1
+from facebook.com: fb_sig_locale => en_US
+from facebook.com: fb_sig_in_new_facebook => 1
+from facebook.com: fb_sig_time => 1239126211.4689
+from facebook.com: fb_sig_added => 0
+from facebook.com: fb_sig_api_key => b1cd81571c16215555f42ab28c025c00
+from facebook.com: fb_sig_app_id => 2413509183
+from facebook.com: fb_sig => 91d752bae8128027ee5e840c4c853272
+from facebook.com: fb_sig_authorize => 1
+from facebook.com: fb_sig_locale => en_US
+from facebook.com: fb_sig_in_new_facebook => 1
+from facebook.com: fb_sig_time => 1239126219.8766
+from facebook.com: fb_sig_added => 1
+from facebook.com: fb_sig_profile_update_time => 1239120952
+from facebook.com: fb_sig_expires => 1239130800
+from facebook.com: fb_sig_user => 1630184675
+from facebook.com: fb_sig_session_key => 2.85BXHrVqWfuKIU0RB_D6lw__.3600.1239130800-1630184675
+from facebook.com: fb_sig_ss => Svv1j_te0dH9nolO9mhFXw__
+from facebook.com: fb_sig_api_key => b1cd81571c16215555f42ab28c025c00
+from facebook.com: fb_sig_app_id => 2413509183
+from facebook.com: fb_sig => 62230bee5c85e9f944abfa44ccf0d112
+from facebook.com: fb_sig_in_canvas => 1
+from facebook.com: fb_sig_request_method => GET
+from facebook.com: fb_sig_friends => 
+from facebook.com: fb_sig_position_fix => 1
+from facebook.com: fb_sig_locale => en_US
+from facebook.com: fb_sig_in_new_facebook => 1
+from facebook.com: fb_sig_time => 1239126221.0039
+from facebook.com: fb_sig_added => 1
+from facebook.com: fb_sig_profile_update_time => 1239120952
+from facebook.com: fb_sig_expires => 1239130800
+from facebook.com: fb_sig_user => 1630184675
+from facebook.com: fb_sig_session_key => 2.85BXHrVqWfuKIU0RB_D6lw__.3600.1239130800-1630184675
+from facebook.com: fb_sig_api_key => b1cd81571c16215555f42ab28c025c00
+from facebook.com: fb_sig_app_id => 2413509183
+from facebook.com: fb_sig => dcbccc34500e59e40fa4d36980f7a18b
+
+Note this appears to be two hits.
+
+By sending to apps.myphotodevel.com/fb/, I should be able to do most
+anything...
+
+So it still seems that I have to have them login to mpa regardless,
+that this will be a manual munging of things? That will require
+submitting to mpa. Dunno how to get the form data back to us though,
+from facebook.
+
+---
+
+Lots of phone time today. Jessy is losing it because Glenn wants her
+to do things, Peter is changing our priorities around again, and she's
+feeling overwhelmed. She found that you can't make books via GMC
+currently, so I put Fernando on that.
+
+Thus, the flow:
+
+1. user adds mpa fb app
+2. first hit on index.php: we don't know the fb id, so we have them
+   "log in"
+3. A. If correct, we insert this into mpa_sites_to_facebook
+3. B. If incorrect, tell them oops, redo
+3. C. If they don't have an mpa account, panic
+
+4. Henceforth, we list albums and whatnot. I wonder how we can get the
+   most recently updated? It's slow.
+
 
