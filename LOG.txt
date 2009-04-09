@@ -43465,7 +43465,7 @@ be the case for DVDs however. What to do.
 Hmm. Need to add more product info, this time for mpa_products. And
 with mpa_core now existing, we can finally put the kibosh on this
 nonsense! But it would require a semi-huge refactoring of the cart and
-product product classes into one big shebang.
+product classes into one big shebang.
 
 Todo:
 1) Add the needed stuff in mpa_products_groupings, mpa_whateversis
@@ -46998,3 +46998,57 @@ Thus, the flow:
    most recently updated? It's slow.
 
 
+
+
+
+#########################################################################
+090408 Wed 08 Apr 2009 11:55:30 AM EDT
+
+Wow. Dotphoto may have lost five terabytes of user data. People can't
+upload, they are swamped in support... this all came to the fore when
+Glenn said there were "database problems" in the manager's conference
+call.
+
+Order things happen in for the fb app:
+
+1. passed fb id
+2. query db for match
+3. if none: prompt to login
+4. if yes:  set $gallery to use that site ID
+
+Should I create a FacebookContext class? Hmm.
+
+This is the essential change in init.appsversion2... it comes in after
+loading ampira.local.php:
+
+
+	require($GALLERY_BASEDIR . "session.php");
+	// calculate the user dir...
+
+
+	$url_parts = explode('.', $_SERVER['HTTP_HOST']);
+	$parts_count = count($url_parts);
+
+	//echo "<h1>parts count: $parts_count</h1>";
+
+	$p = $url_parts[$parts_count - 3];
+
+	if ($p == 'apps') {
+	    if (array_key_exists('username', $_GET)) {
+	        $p = $_GET['username'];
+	        $_SESSION['username'] = $_GET['username'];
+	    } elseif ( array_key_exists('username', $_SESSION) ) {
+	        $p = $_SESSION['username'];
+	    } else {
+	        die("apps got no username");
+	    }
+	}
+	$service_name = SERVICE_NAME;
+
+	if ( ! USER_DATA_ROOT) {
+	    echo "You need to set USER_DATA_ROOT in gallery.conf.";
+	    die();
+	}
+
+The basic struggle is to decide if we're under the apps subdomain, and
+how to set the username.
