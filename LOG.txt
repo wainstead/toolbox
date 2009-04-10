@@ -44316,7 +44316,7 @@ from swain_test;
 
 So... got will_paginate to work through some old fashion
 hacking. Hacking away at it until it worked. I was missing one thing,
-in the end, and that was to put the require statement in my
+*in the end, and that was to put the require statement in my
 environment.rb file.
 
 require "will_paginate" 
@@ -45002,7 +45002,7 @@ new status thingie. Hmm. Bug went away. Well, I realized today I need
 to update all product IDs in the existing carts on production when we
 go live...
 
-For some reason the ofs's OrderPartFactory can't separate order parts
+For some reason the OFS's OrderPartFactory can't separate order parts
 based on who's making it... that is, it goes by category. Really, for
 each product ID, it should just find the manufacturer and do the Right
 Thing based on that.
@@ -45500,7 +45500,10 @@ at the end, in that function that's called at the end of the
 request... register_shutdown_function(). In that I can test $GLOBALS
 to see if the key 'gallery' is set... this should be a fatal error, in
 the end. An ounce of prevention. But I don't think I can terminate the
-process at that point, can I? Actually may as well test this.
+process at that point, can I? Actually may as well test this. (Note
+from much later: this won't work, since it will frequently be created
+in the global space. No biggie; as long as it's limited to the "page
+files" of Gallery).
 
 OK, in init.php:
 
@@ -47052,3 +47055,23 @@ loading ampira.local.php:
 
 The basic struggle is to decide if we're under the apps subdomain, and
 how to set the username.
+
+
+
+#########################################################################
+090409 Thu 09 Apr 2009 11:13:06 AM EDT
+
+Still going through email; have been chatting with Bill and Avalon
+about Dotphoto's disk problem. Set up Bill with an Avalon account.
+
+Back to reviewing this LOG since the beginning of the year. I didn't
+recall that I did a lot of work on MPP in Jan/Feb. Time flies.
+
+---
+
+Playing around with my old Hello, Sailor! Facebook appliation; I now
+realize we can probably show other Facebook users who are using
+MyPhotoAlbum. This is because we'll be storing user IDs on our side;
+when they hit a page, we can run a little list of profiles down the
+side showing others who use our app. Dunno what use this is.
+
