@@ -45562,10 +45562,9 @@ Top level page templates have to load the GalleryContext class.
 require("classes/GalleryContext.class.inc");
 
 They then load the conf file:
-GalleryContext::loadConfig(); // calls
-require_once('/opt/mpa/conf/gallery.conf');
+GalleryContext::loadConfig(); // calls require_once('/opt/mpa/conf/gallery.conf');
 
-But how does that get us around the whiteboxking issue? We still need
+But how does that get us around the whiteboxing issue? We still need
 to load things differently that way. Hrmm. OK, the "seed file" at the
 top level.
 
@@ -47074,4 +47073,30 @@ realize we can probably show other Facebook users who are using
 MyPhotoAlbum. This is because we'll be storing user IDs on our side;
 when they hit a page, we can run a little list of profiles down the
 side showing others who use our app. Dunno what use this is.
+
+
+
+
+#########################################################################
+090410 Fri 10 Apr 2009 03:04:46 PM EDT
+
+Today is a day off, but I avoided the issue of apps.myphotodevel.com
+all day yesterday. My original work involved making sure the case was
+always: apps.myphotodevel.com/username/. But even that's not possible
+with Facebook; they are using the Front Controller pattern throughout,
+so we're stuck with that. In a sense, anyway. We can set individual
+callback URLs and mitigate the problem, but ultimately it has to work
+based on a POST variable, and init.php is a persnickity little bitch.
+
+---
+
+So. Hmm. How to make Gallery not care about the user? That's not quite
+the right statement, but there we are. Something about the brittleness
+of init.php irks me. Something about the need to put FB-related code
+into init.php rubs my fur the wrong way.
+
+Does FB need a Gallery session? Probably not. Unknown. Does it
+currently set one? Most certainly. Anything that calls init.php calls
+session.php.
+
 
