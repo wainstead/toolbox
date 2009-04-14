@@ -47100,3 +47100,38 @@ currently set one? Most certainly. Anything that calls init.php calls
 session.php.
 
 
+
+
+
+#########################################################################
+090413 Mon 13 Apr 2009 10:49:09 AM EDT
+
+Didn't do any work on Friday, as we had Good Friday off. Peter leaning
+on me for the Facebook app. I have been gun shy about hacking away on
+apps.mpa.com support in Gallery; mostly because of my gun shyness and
+slightly because Jessy has uncommitted changes.
+
+But I have a photo I want to share to Facebook now, so there's
+motivation.
+
+Today my thinking is: the Context class should tell us the
+subdomain. Is that right? I had thoughts that the Context classes are
+specific to: core, products, cart, www and gallery. Those are
+"modules" of MPA overall. But now we're talking about a sort of
+"context within a context," vis Facebook and Gallery. Which comes back
+to the whiteboxing thing; so if we add Our Daughter's Wedding, for
+example, we'd have an ODW context as well as a FB context and a
+Gallery context. Hmm. Perhaps those form a class hierarchy.
+
+Anyway, for now we're doing an if/else in init.php. This will be
+tricky because I have to get the order of operations exactly right.
+
+---
+
+Mucho progress today, but... still can't select a photo to add to
+Facebook. Closer though. I fixed the "choose another album" form,
+using fb:editor. Working on choosing which FB album (probably another
+dropdown). The cruft is thick in the code from order_prints.php.
+
+
+
