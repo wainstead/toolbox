@@ -47135,3 +47135,51 @@ dropdown). The cruft is thick in the code from order_prints.php.
 
 
 
+
+
+
+#########################################################################
+090414 Tue 14 Apr 2009 10:27:14 AM EDT
+
+Began hacking away yesterday at the code for order_prints.php. I
+removed some API calls that were probably performance bottlenecks --
+they certainly weren't being used anywhere. The variables set were
+$numPhotos and $numAccess.
+
+Which reminds me, I should take a crack at xdebug sometime in the
+future.
+
+Jessy got Mother's Day wrong by one month, so I had to migrate a fix
+to the production branch of mpa_core and get Bill to push it out.
+
+Theory: Facebook hits our server for the MPA app. It will get one
+cookie, one session. For all MPA apps that hit us from FB, will the
+session swell beyond the capacity of our session DB? Probably, if
+there's only one session for FB. Does it get/set cookies?
+
+No, thank the Maker. No issues there.
+
+Now I *AM* seeing cookies. This could be a problem.
+
+I wonder if I should just use a case statement (switch statement,
+really) in index.php.
+
+How I FQL'd the albums:
+
+
+/*
+$fb_albums = $facebook->api_client->fql_query("select aid, cover_pid, name, description from album where owner = {$_POST['fb_sig_user']} order by modified desc");
+stderr(var_export($fb_albums, true));
+
+foreach ($fb_albums as $fbalbum) {
+     //print "fb album: {$fbalbum['name']}<br/>";
+}
+*/
+
+---
+
+I should create a MyPhotoDevel application for development, and change
+the URLs for MyPhotoAlbum to point at production; and probably create
+one for staging too. Maintaining the app settings will be a pain
+though.
+
