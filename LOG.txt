@@ -47183,3 +47183,8 @@ the URLs for MyPhotoAlbum to point at production; and probably create
 one for staging too. Maintaining the app settings will be a pain
 though.
 
+---
+
+Fixed the issue with the dropdown on order_prints. Someone -- probably
+Jessy -- deleted the javascript function call that set the dropdown.
+
