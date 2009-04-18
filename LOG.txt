@@ -47188,3 +47188,80 @@ though.
 Fixed the issue with the dropdown on order_prints. Someone -- probably
 Jessy -- deleted the javascript function call that set the dropdown.
 
+
+
+
+#########################################################################
+090417 Fri 17 Apr 2009 10:50:39 AM EDT
+
+
+Hitting my own profile tab:
+Going to find the username via 
+query is: 'select username from mpa_sites_to_facebook stf, users u where u.userid = stf.site_id AND stf.fb_id = 1630184675'
+/fb/mpa-profile-tab.php start request:
+
+from facebook.com: fb_sig_in_canvas           => 1
+from facebook.com: fb_sig_request_method      => GET
+from facebook.com: fb_sig_friends             => 506534782,1379730049
+from facebook.com: fb_sig_locale              => en_US
+from facebook.com: fb_sig_in_new_facebook     => 1
+from facebook.com: fb_sig_time                => 1239979824.2655
+from facebook.com: fb_sig_added               => 1
+from facebook.com: fb_sig_profile_update_time => 1239979146
+from facebook.com: fb_sig_expires             => 1239979884
+from facebook.com: fb_sig_in_profile_tab      => 1
+from facebook.com: fb_sig_profile_user        => 1630184675
+from facebook.com: fb_sig_profile_id          => 1630184675
+from facebook.com: fb_sig_profile_session_key => 1.DiryvuyG7Yc10zwTMMrlAWMYsyg3wD_lZtYxFYuJY-ShIGqfm8hwHmhiPDn_Z5g0-1630184675
+from facebook.com: fb_sig_api_key             => b1cd81571c16215555f42ab28c025c00
+from facebook.com: fb_sig_app_id              => 2413509183
+from facebook.com: fb_sig                     => d9fb8826b05a031671ae3a381c4f1bc0
+
+No cookies set for this useragent
+
+
+Hitting it from a friend account:
+Going to find the username via 
+query is: 'select username from mpa_sites_to_facebook stf, users u where u.userid = stf.site_id AND stf.fb_id = 1630184675'
+/fb/mpa-profile-tab.php start request:
+
+from facebook.com: fb_sig_in_canvas           => 1
+from facebook.com: fb_sig_request_method      => GET
+from facebook.com: fb_sig_friends             => 506534782,1379730049
+from facebook.com: fb_sig_locale              => en_US
+from facebook.com: fb_sig_in_new_facebook     => 1
+from facebook.com: fb_sig_time                => 1239979864.7255
+from facebook.com: fb_sig_added               => 1
+from facebook.com: fb_sig_profile_update_time => 1239979146
+from facebook.com: fb_sig_expires             => 1239979924
+from facebook.com: fb_sig_in_profile_tab      => 1
+from facebook.com: fb_sig_profile_user        => 1630184675
+from facebook.com: fb_sig_profile_id          => 1630184675
+from facebook.com: fb_sig_profile_session_key => 1.X_7yhDpzzgfrawkmJUFrpmMYsyg3wD_lZtYxFYuJY-ShIGqfm8hwHlkouwE5ffk_-1630184675
+from facebook.com: fb_sig_api_key             => b1cd81571c16215555f42ab28c025c00
+from facebook.com: fb_sig_app_id              => 2413509183
+from facebook.com: fb_sig                     => 4a128003bb15e40e5a481d6520c76d34
+
+No cookies set for this useragent
+
+
+Can't get these to work:
+
+<fb:if-section-not-added section="profile">
+   Add MPA to your Facebook Profile tabs so your friends can keep up to date on your MPA albums:
+   <fb:add-section-button section="profile" />
+</fb:if-section-not-added>
+
+<br/>
+
+<fb:if-section-not-added section="info">
+   Add to Info:
+   <fb:add-section-button section="info" />
+</fb:if-section-not-added>
+
+---
+
+It appears that the profile tab never gets/sets cookies; the canvas
+page does though.
+
+
