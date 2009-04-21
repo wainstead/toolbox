@@ -47265,3 +47265,40 @@ It appears that the profile tab never gets/sets cookies; the canvas
 page does though.
 
 
+---
+
+[Type lines of input; use `.' to end or `@abort' to abort the command.]
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+typolesbo: yes
+typolesbo: and....
+typolesbo: heqring
+typolesbo: you're carasy with that deal
+typolesbo: well no one likes to hear that
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+Wainstead \ . o O ( ? )
+[Type lines of input; use `.' to end or `@abort' to abort the command.]
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+typolesbo: yes
+typolesbo: and....
+typolesbo: heqring
+typolesbo: you're carasy with that deal
+typolesbo: well no one likes to hear that
+typolesbo: LOL
+typolesbo: ;-0
+Steve Wainstead: huh?
+Steve Wainstead: i can't read through that :)
+2:55 PM
+Steve Wainstead: hello?
+typolesbo: one
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+tiResias . o O ( of course! )
+You say, "it reminds me of when, sometimes, you do a long one liner in the shell and something is 
+returning a 0 or 1 instead of printing out some text"
+zahn . o O ( she's an android! )
+heller . o O ( then we should ask her if she dreams of electric sheep.  )
+xorian . o O ( ... and whether her internal sheep-counter is 16-bit and signed or 32/64-bit and 
+unsigned )
+heller . o O ( well obviously.  )
+
