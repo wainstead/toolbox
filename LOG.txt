@@ -47302,3 +47302,41 @@ xorian . o O ( ... and whether her internal sheep-counter is 16-bit and signed o
 unsigned )
 heller . o O ( well obviously.  )
 
+
+
+
+#########################################################################
+090421 Tue 21 Apr 2009 03:01:51 PM EDT
+
+[Type lines of input; use `.' to end or `@abort' to abort the command.]
+----------------text pasted by Wainstead \ to Emrys' Tavern----------------
+typolesbo: here docs can't have includes can they?
+Steve Wainstead: nope
+typolesbo: how do I create a block of code
+typolesbo: that gets loaded later
+typolesbo: ?
+typolesbo: ;-)
+Steve Wainstead: hmm
+Steve Wainstead: "loaded" ?
+typolesbo: yes
+typolesbo: as in
+typolesbo: here is the fame thing...
+typolesbo: load it left this time
+typolesbo: and right others
+typolesbo: i guess it is its own indlcue
+typolesbo: hmm
+typolesbo: didn't think of that
+Steve Wainstead: i don't understand
+typolesbo: thats o
+typolesbo: k
+typolesbo: i think i answered my own quesiton
+------------end of text pasted by Wainstead \ to Emrys' Tavern-------------
+pasted to Emrys' Tavern
+Wainstead \ . o O ( ph34r )
+phealy [to Wainstead \]: probably a good thing... I don't even know what a "quesiton" is, much 
+less how you'd answer one.
+phealy . o O ( quesa-ton - 2000lb block of cheese? )
+tiResias asks, "aren't they trying to find the quesiton using the LHC?"
+xorian . o O ( Large Havarti Collider? )
+
+
