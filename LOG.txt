@@ -47352,3 +47352,34 @@ plainer than had I tried to figure it out from the docs. I need to
 look, now, at formatting the thumbnails.
 
 
+
+
+
+#########################################################################
+090424 Fri 24 Apr 2009 10:01:09 AM EDT
+
+Yesterday morning was largely taken up with pushing out files for
+Jessy; I had to update the mups manually because Bill and Fernando
+were down in the data center. I couldn't update static because my
+img-1 and img-2 accounts weren't working (or so I thought), and the
+CGI tool for Jessy was timing out on her.
+
+Today am feeling much better... even yesterday I was coming off Nyquil
+still. Should be beautiful weather this weekend.
+
+---
+
+Been figuring out Jessy's css magic to get the thumbnails to tile
+correctly. It's hard! Well, not that hard. It's a lot of work, really.
+
+Then I saved an open window on the configuratino of my new
+myphotodevel app, and fucked everything up. Took me ages to get back
+to a working version. Bleh.
+
+---
+
+Was going to test for a bit on torque, but the build is busted because
+Jessy is in the middle of a lot of changes. This is going to be a
+rough rollout. I've half a mind to go up to Yonkers for it.
+
+
