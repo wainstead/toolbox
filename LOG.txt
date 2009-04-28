@@ -47372,7 +47372,7 @@ still. Should be beautiful weather this weekend.
 Been figuring out Jessy's css magic to get the thumbnails to tile
 correctly. It's hard! Well, not that hard. It's a lot of work, really.
 
-Then I saved an open window on the configuratino of my new
+Then I saved an open window on the configuration of my new
 myphotodevel app, and fucked everything up. Took me ages to get back
 to a working version. Bleh.
 
@@ -47383,3 +47383,32 @@ Jessy is in the middle of a lot of changes. This is going to be a
 rough rollout. I've half a mind to go up to Yonkers for it.
 
 
+
+#########################################################################
+090427 Mon 27 Apr 2009 09:36:45 AM EDT
+
+I said I was working on the rollout for this week (hopefully, this
+week!). This involves changing the php.ini and restarting the Apache
+servers, because of the cookie change. I haven't even done this on
+staging yet so there's a good testing place.
+
+0) Roll out apps.myphotoalbum.com.conf files
+1) go to maint mode
+1b) apply db patches (create fb->mpa mapping table)
+2) edit php.ini
+3) restart apaches
+4) update gallery.conf, store.conf
+5) come out of maint mode
+
+test: hit a gallery, put stuff in cart; go to store and dump
+session. gallery and store stuff should be in session.
+
+---
+
+Signup emails from staging take forever to come through. Puzzling. But
+so far all my tests on staging are good. I need to generate "release
+notes" and I need to create a test app on Facebook for staging.
+
+Oh, we need apps.myphotoalbum.com created. No staging version either.
+
+Bummer. Hotlinking blocking blocks thumbnails to facebook. Hrmm.
