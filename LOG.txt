@@ -47412,3 +47412,32 @@ notes" and I need to create a test app on Facebook for staging.
 Oh, we need apps.myphotoalbum.com created. No staging version either.
 
 Bummer. Hotlinking blocking blocks thumbnails to facebook. Hrmm.
+
+
+
+#########################################################################
+090428 Tue 28 Apr 2009 10:52:15 AM EDT
+
+Peter wants me to give an estimate on integrating this WePlay.com site
+with GMC. I asked for a tech contact after doing some initial scoping
+out of the site. Thought it might be a Rails project, but it looks
+like PHP; has quite a Rails feel to it though. Perhaps uses Symphony
+or something.
+
+Anyway: one solution to the saving-shell-buffers problem is to use the
+Emacs::Lisp Perl package from CPAN. It might provide a simple way to
+open/write/close files. If I go so far as to recompile Emacs though,
+may just as well add a new primitive.
+
+---
+
+Had lunch with Sharon Tracy. Ubyl onmbbxnf, Ongzna. I stripped all my
+log messages out of the release notes for Gallery, and forwarded that
+to Jessy and Fernando; had done same with core, cart, and
+products. Good results, I think. They checked up on stuff.
+
+The breadth of changes I've made are pretty daunting. I never thought
+of this as a "soft launch" of the Facebook app until Peter said it
+that way yesterday. But I think everything is ready now.
+
+
