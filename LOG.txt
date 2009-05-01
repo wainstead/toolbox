@@ -47441,3 +47441,119 @@ of this as a "soft launch" of the Facebook app until Peter said it
 that way yesterday. But I think everything is ready now.
 
 
+
+
+
+#########################################################################
+090430 Thu 30 Apr 2009 10:50:10 AM EDT
+
+What, no entry yesterday? The rollout happened! There was a bad bug
+where the Flash uploader needed some weird hack where it gets the
+session cookie's name in a POST variable that Chris added... Fernando
+fixed that for me, and I had to track down a Hanley bug and one of
+mine. Links in the store didn't work because the leading / was
+missing, which lead to them being interpreted as product names. Long
+story. Jessy's holiday stuff didn't work because she tested the
+variable before it was set. And one bug showed up from my changing
+"global $gallery" into a call on a singleton; the method in question
+that was failing didn't even need $gallery, so that was an easy fix.
+
+I'm overdue on an email to Peter about weplay.com...
+
+Thoughts on setting prices:
+
+
+AIM IM with fernandofmarte.
+11:40 AM
+Steve Wainstead: here's something to chew on... one thing jessy and peter want is to let customers set the prices on stuff, so they can get a cut. a profit sharing thing.
+Steve Wainstead: and i'm thinking this:
+Steve Wainstead: all we probably need is a table like this:
+Steve Wainstead: userid / product_id / price
+Steve Wainstead: when the cart executes, it looks up the price for each product
+Steve Wainstead: if there's no entry in the above table, it defaults to the regular price
+Steve Wainstead: it sounds too simple to me though, but at face value i don't see any reason why that won't work
+Steve Wainstead: in fact the two largest parts of the project are the UI, and paying out all these people
+Steve Wainstead: but we could just generate a spreadsheet once a month (a sql query) and let tom worry about it.
+Steve Wainstead: i should think there's some third party that takes a spreadsheet and cuts/mails checks out to everyone listed
+Steve Wainstead: hmm. we have to do tax reporting crap too.
+
+Looking at a couple rows:
+
+*************************** 2. row ***************************
+         cart_contents_id: 18977
+             customers_id: 0
+                  cart_id: 151
+              products_id: 11000
+            unique_string: 11000bribealbum01p4240009
+              full_string: 11000{image}p4240009{subdir}{extension}.jpg{width}2272{height}1704{sbd}bribe{mpa_id}{alb}album01
+customers_basket_quantity: 1
+                price_set: 0.1200
+        price_set_comment: Club Discount
+           running_amount: 0.1200
+                subdomain: bribe
+                 sess_key: NULL
+               sort_order: 4
+            last_accessed: 2009-04-30 12:02:58
+*************************** 3. row ***************************
+         cart_contents_id: 18974
+             customers_id: 0
+                  cart_id: 151
+              products_id: 11000
+            unique_string: 11000swainalbum31newdesk
+              full_string: 11000{image}newdesk{subdir}{extension}.jpg{width}4416{height}3312{sbd}swain{mpa_id}{alb}album31
+customers_basket_quantity: 1
+                price_set: 0.1200
+        price_set_comment: Club Discount
+           running_amount: 0.1200
+                subdomain: swain
+                 sess_key: NULL
+               sort_order: 1
+            last_accessed: 2009-04-30 11:56:52
+
+So, doing the price setting doesn't actually look that hard. One could
+wish the subdomain were the site_id, but oh well.
+
+fernandofmarte: well, that actually sounds like a great idea
+fernandofmarte: but, userid would be based on the subdomain?
+fernandofmarte: yeah, of course it would
+fernandofmarte: that actually sounds easy enough
+11:50 AM
+Steve Wainstead: profit sharing for subusers? hmm. :)
+Steve Wainstead: yeah i'd just limit it to per-site for now
+Steve Wainstead: well: getPrice() is defined in the parent class Product. how easy is that.
+Steve Wainstead: no subclasses override it
+12:10 PM
+fernandofmarte: might be trickier for products though
+fernandofmarte: and books
+Steve Wainstead: mmm.
+fernandofmarte: the prices for books are pulled in through mediaclip
+fernandofmarte: and, products uses the constant file
+Steve Wainstead: yeah, and there's a per page thing and all that
+Steve Wainstead: hmm 2x
+fernandofmarte: i can see it working great in the cart
+fernandofmarte: in products, we could do something like
+fernandofmarte: 'see price in cart'
+fernandofmarte: so then we don' have to get the actual price
+Steve Wainstead: masking it, yeah. doubt jessy would go for it, but i like easy solutions :)
+Steve Wainstead: oh, i suppose we should unite the two product hierarchies
+12:15 PM
+Steve Wainstead: that would be a Good Thing
+Steve Wainstead: reduce the size of the code base
+fernandofmarte: that would be a plus
+Steve Wainstead: i would like to throw out mpa_products's product classes. they are all brain damaged.
+fernandofmarte: lol...
+
+---
+
+Where in this log have I pondered on this problem before?
+mpa_products's classes are really... well, the Product class either
+has-a: PhysicalProduct, GenericProduct (category), or some concrete
+class defined on the filesystem (like FoldedCard).
+
+Indeed, I've kicked around the issue of separating products from
+categories -- from the page rendering point of view, they have to
+behave the same -- and using OSCommerce's tables to accomplish this.
+
+Well... my head is going to explode. There's a lot of detail to grasp,
+of course, if I want to unify the products and categories stuff.
+
