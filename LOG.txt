@@ -47557,3 +47557,64 @@ behave the same -- and using OSCommerce's tables to accomplish this.
 Well... my head is going to explode. There's a lot of detail to grasp,
 of course, if I want to unify the products and categories stuff.
 
+
+
+
+#########################################################################
+090501 Fri 01 May 2009 03:25:32 PM EDT
+
+Getting little done today.. gotta focus. Peter called and was looking
+for a good price to pitch to WePlay.com to do GMC for them.
+
+Meanwhile, I need to look harder at unifying products... part of the
+problem is Jessy's incomplete UI changes, which leave my site kinda
+borked, and Fernando's work on the giftorators.
+
+---
+
+For mpa_products: the "Product" class isn't really a product at
+all. It's a container class for either a PhysicalProduct or a
+"GenericProduct" (a category, really). So one effort to refactor this
+crap lies in this: do away with the Product class, and turn it into an
+interface. The interface allows the class to be listed in the shop. I
+can't state it any plainer than that: ListableShopItem interface. For
+some reason I was walking up by 37th Ave and the notion that "the
+Product class's purpose was really that of an interface that the other
+two classes should implement" just came to me. Not out of the blue,
+but sort of bubbled up.
+
+Secondly, the PhysicalProduct classes are probably just duplicates of
+the Cart's product class hierarchy. So there's that. A first cut at
+this would be:
+
+* move Product's functionality into an interface
+* implement the interface in PhysicalProduct and GenericProduct
+* factory method somewhere to create the correct instance of the two
+* throw out Product
+* merge PhysicalProduct with Cart's product classes
+* refactor GenericProduct to use the OSC category tables
+
+Let's take a look at how Product is used throughout... well, renamed
+GenericProduct to start.
+
+Interesting: renaming Product to ListableShopItem, I run into this:
+
+./crop_picture.php:43:$product = new Product($_REQUEST['product']);
+./crop_picture.php:163:$product             = new Product($classname);
+./select_photo.php:42:$product             = new Product($classname);
+./quantity.php:19:$product             = new Product($classname);
+./gifterator.php:18:$product             = new Product($classname);
+./upload_photo.php:63:$product = new Product($classname);
+
+These want a PhysicalProduct only, I should imagine. Refactoring
+reveals curious things.
+
+---
+
+And Product is now ListableShopItem everywhere; this affected Core and
+Gallery too, but in very minor ways. I do think I'm on to something
+with this interface idea.
+
+Let's see if we can do away with ProductTemplate now.
+
+
