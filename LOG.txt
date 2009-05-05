@@ -47618,3 +47618,127 @@ with this interface idea.
 Let's see if we can do away with ProductTemplate now.
 
 
+
+
+
+#########################################################################
+090504 Mon 04 May 2009 12:00:26 AM EDT
+
+Veracity has a chicken and egg problem: init.php fatals if $gallery is
+already defined. Hrmm.
+
+---
+
+Whelp: debugged gallery.conf, which always set the $sub to 'www' and
+as a result torque's builds were in fact always Jessy's builds. No
+wonder torque rendered correctly.
+
+Read through most/all of a document on Google Docs for some bid to
+partner with a company that does stuff with Walmart: looks like they
+have some Windows desktop client for photo organization... well,
+cruising their site, not really! They have a suite of desktop
+apps. They own Photowiki. Did that used to be a separate company/site?
+
+Well, it's a .exe file, so oh well.
+
+Back to Veracity. I'm closer... spent time on init.php and added a
+method to the GalleryContext class. I might need to create a
+VeracityContext class; haven't decided yet.
+
+---
+
+Veracity running on osc-2; load is hovering around:
+
+root@osc-2:/home/www# uptime
+ 16:54:33 up 93 days,  1:31,  1 user,  load average: 12.46, 11.88, 10.84
+root@osc-2:/home/www# uptime
+ 17:10:34 up 93 days,  1:47,  1 user,  load average: 11.43, 11.02, 10.80
+
+Not too bad. Can be renice'd if needed. Currently in the "ba"'s.
+
+Tim wrote up stuff for Jessy to track how many photos a site has
+uploaded; I believe the "30 days free" thing has failed, and the plan
+now is to revert them to free users with an upload cap. Tim asked how
+accurate the mpa_photos table is, and I gave him the bad news. Weirder
+still: between them they only have about 60 million rows, which sounds
+way way low. Ah, there's the old mpa_photos_archive table. That's
+right, the table structure changed.
+
+Still, only 33 million rows. Hmm. Maybe all of that is correct? I
+doubt it frankly.
+
+Tim wants to have a "meeting-ette" tomorrow over the photo counting
+problem. One solution I offered up was to ask Gallery how many there
+are. He liked it.
+
+
+
+
+(From harmonika's LOG.txt:)
+
+ 081129 Sat Nov 29 05:02:47 2008
+
+(with-temp-buffer (prin1 foo (current-buffer)) (write-to-file
+"my-saved-stuff"))
+
+1. read string from the file
+2. create shell buffer named "buffname"
+use "read" with the temp buffer
+
+(setq foo (buffer-string))
+
+the scratch buffer, in case I lose it:
+
+foo
+#("
+bash-3.2$ pwd
+/Users/swain
+bash-3.2$ ls
+%backup%~			bin				public_html
+Desktop				counter.pl			quake
+Documents			cubey.qtz			rrwfiles
+Downloads			cvs				scheme
+Incomplete			databases.list			share
+LOG.minerva.txt			four star wan.xml		snowtrees.JPG
+Library				gr.pl				svn
+Movies				import.pl			testdb.dump.sql
+Music				lib				thepark.txt
+Panix				loc.txt				thepark.txt~
+Pictures			macgluesafari.pl		tmp
+Public				man				username.el
+Shared				moobase.dump.sql		wan_development.dump.sql
+Sites				pgms
+System				phpwiki.dump.sql
+bash-3.2$ " 0 1 (inhibit-line-move-field-capture t field boundary rear-nonsticky t fontified t) 1 11 (font-lock-face comint-highlight-prompt inhibit-line-move-field-capture t field output rear-nonsticky t fontified t) 11 14 (field input help-echo "mouse-2: insert after prompt as new input" mouse-face highlight font-lock-face comint-highlight-input front-sticky t fontified t) 14 15 (inhibit-line-move-field-capture t field boundary rear-nonsticky t fontified t) 15 28 (inhibit-line-move-field-capture t field output rear-nonsticky t fontified t) 28 38 (font-lock-face comint-highlight-prompt inhibit-line-move-field-capture t field output rear-nonsticky t fontified t) 38 40 (field input help-echo "mouse-2: insert after prompt as new input" mouse-face highlight font-lock-face comint-highlight-input front-sticky t fontified t) 40 41 (inhibit-line-move-field-capture t field boundary rear-nonsticky t fontified t) 41 527 (inhibit-line-move-field-capture t field output rear-nonsticky t fontified t) 527 537 (inhibit-line-move-field-capture t field output rear-nonsticky t fontified t))
+
+(with-temp-buffer (prin1 foo (current-buffer)) (write-to-file "my-saved-stuff"))
+
+;;; create a temporary buffer with the macro Miles specified
+;;; write the current buffer as string into the temp buffer
+;;; write the temp buffer to file
+;;; devil is in the details
+
+Somehow Miles set foo to the contents of cli (via buffer-string) and
+then printed the variable out as a string... found this by searching
+apropos:
+
+(insert (pp-to-string foo))
+
+which looks sorta close to what he did but not quite.
+
+Ah: somehow he used the prin1 functions. I did:
+
+(insert (prin1-to-string foo))
+
+via ESC-: and got the same thing.
+
+(end entry from harmonika's log)
+
+Well, here's a thought. Rather than writing out the shellbuffers
+themselves, keep "hidden" buffers that are periodically updated from
+the shellbuffers; that is, for the shellbuffer "cli" there is a *cli
+source* buffer. This buffer, once every auto-save-hook, is overwritten
+with the string representation of the lisp of shellbuffer "cli." The
+desktop-auto-save hook would then write out the lisp source buffers to
+files instead of the shell buffer contents. Well, really, may as well
+do both. Disk space is cheap.
