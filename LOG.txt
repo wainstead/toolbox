@@ -47742,3 +47742,109 @@ with the string representation of the lisp of shellbuffer "cli." The
 desktop-auto-save hook would then write out the lisp source buffers to
 files instead of the shell buffer contents. Well, really, may as well
 do both. Disk space is cheap.
+
+
+
+
+
+#########################################################################
+090505 Tue 05 May 2009 11:19:38 AM EDT
+
+Veracity ran from 4:15pm yesterday until 5:02am today. 1.55 terabytes
+were freed up; nearly 600,000 images were deleted.
+
+Thinking about a database table, and an HTML form, to make it trivial
+to document the database tables. This way, wherever I am, a select
+statement will tell me about a table or the relationships between
+tables. The reason is: I couldn't remember why there's an mpa_subusers
+and mpa_sites_subusers table. Reason: Chris argued for it so subusers
+could belong to multiple sites.
+
+So: table name (names?), username, and text would probably
+suffice. Fernando and Tim are never going to grep my LOG.txt (this
+file) for answers to things like the question above.
+
+Time for the conference call...
+
+Turns out Gallery "caches" the number of photos per Album. There's a
+field that's updated on every save() of the $gallery->album with the
+count of photos; to get the number of all photos in the site, Gallery
+just loops over all Albums and adds up this cached number.
+
+Registered for the NY Tech meetup on meetup.com. I suppose I should
+branch out into a few other categories besides tech.
+
+Here's the listing of both product class libs:
+
+swain@torque:~/public_html/projects/mpa_products/classes$ ls  ../../mpa_cart/includes/custom/ . | sort
+
+.:
+AnonymousUserOrder.class.php
+application_custom_code.php
+archive_cd.class.php
+archivecd.class.php
+archive_dvd.class.php
+archivedvd.class.php
+atticKey.class.php
+bookshipping.class.php
+calendarshipping.class.php
+cart.class.php
+cartcontext.class.inc
+checkout_splash.inc.php
+club.class.php
+clubhelper.class.php
+coupon.class.php
+Credit_card.php
+discount.class.php
+discountfactory.class.php
+discounthelper.class.php
+edit_address_form.php
+ez_results.php
+folded_cards.class.php
+foldedcardshipping.class.php
+foldingcard.class.php
+frameshipping.class.php
+giftCard.class.php
+gift_cards.class.php
+giftcardshipping.class.php
+gift.class.php
+GiftDB.class.inc
+giftshipping.class.php
+GMCAlbum.class.inc
+GMCContext.class.inc
+GMCUploadedPhoto.class.inc
+inc_address_functions.php
+inc_email_functions.php
+inc_javascript_functions.php
+kideo.class.php
+kideoshipping.class.php
+ListableShopItem.class.inc
+mediaclipcalendar.class.php*
+mediaclipfoldedcard.class.php
+mediaclipphotobook.class.php
+../../mpa_cart/includes/custom/:
+offer.class.php
+order.class.php
+photo_books.class.php
+photo_calendar.class.php
+photo_club.class.php
+photoPrint.class.php
+photo_prints.class.php
+physical_product.class.php
+physical_product_details.class.php
+poster.class.php
+postershipping.class.php
+printshipping.class.php
+priv.key.php
+ProductCategory.class.inc
+product.class.php
+productfactory.class.php
+product_template.class.php
+RegisteredUserOrder.class.php
+renewal.class.php
+shipping.class.php
+shippinghelper.class.php
+thumbDisplay.class.php
+
+Well, right off the bat, there are product classes, there are shipping
+classes, and then there's a few that are "other."
