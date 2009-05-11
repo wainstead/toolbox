@@ -1,9 +1,11 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
+my $svnclient = '/usr/bin/env svn'; # default
 if ( -e '/opt/subversion/bin/svn' ) {
     $svnclient = '/opt/subversion/bin/svn';
-} else {
-    $svnclient = '/usr/bin/env svn';
 }
 
 
@@ -27,8 +29,29 @@ while ( my $line = <DATA> ) {
     }
 
     #print "==> $project: $revision\n";
+
+    # and for our next magic trick: use the result from above to run
+    # this command:
+    # svn log -r 6140:HEAD -v https://svn.corp.myphotoalbum.com/mpa_gallery/trunk
+
+    my $cmd = "svn log -r $revision:HEAD -v https://svn.corp.myphotoalbum.com/mpa_$project/trunk";
+    print "Running $cmd...\n";
+
+    open PLIPE, " $cmd | " or die "Failed to run command '$cmd': $!\n";
+    my @results = <PLIPE>;
+    close PLIPE;
+    die unless scalar(@results);
+
+    open OUT_FILE, "> RELEASE_NOTES.$project" or die $!;
+    print OUT_FILE join('', @results);
+
+
 }
 
+
+
+# the data below is the output of the script I wrote for production:
+# https://rcs.corp.myphotoalbum.com/viewvc/trunk/bin/fetchreleases.sh?root=swain&view=log
 
 __END__
 cart:     R_2009_04_28_shared_sessions
