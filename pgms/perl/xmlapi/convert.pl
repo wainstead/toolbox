@@ -42,3 +42,4 @@ foreach $td (@tds) {
 }
 
 # ->getNodeType() == XML::DOM::TEXT_NODE
+__END__
