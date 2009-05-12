@@ -1,8 +1,0 @@
-#!/bin/bash
-echo "signup:   `cd /opt/mpa                      ; svn info | grep URL`"    
-echo "gallery:  `cd /opt/mpa_gallery/current      ; svn info | grep URL`"   
-echo "cart:     `cd /opt/mpa_cart/current         ; svn info | grep URL`"
-echo "products: `cd /opt/mpa_products/current     ; svn info | grep URL`"
-echo "static:   `cd /opt/mpa_static/current       ; svn info | grep URL`"
-echo "core:     `cd /opt/mpa_core/current         ; svn info | grep URL`"
-echo "www:      `cd /opt/mpa/custom-sites/mpa_www ; svn info | grep URL`"
