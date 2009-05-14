@@ -2,6 +2,7 @@
 
 if [ $# -lt 1 ]; then
    echo "Usage: $0 searchterm"
+   echo "'fall' (for 'find all') will search all text files in all projects"
    exit
 fi
 
