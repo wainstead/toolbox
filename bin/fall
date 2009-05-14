@@ -1,0 +1,35 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+   echo "Usage: $0 searchterm"
+   exit
+fi
+
+
+PROJECTDIR=/home/swain/public_html/projects
+echo "searching on $1..."
+
+ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_gallery 
+ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_core    
+ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_cart    
+ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_products
+ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_conf    
+ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_ofs     
+ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_www     
+ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_static  
+
+# find -L  $PROJECTDIR/mpa_gallery  -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
+# find -L  $PROJECTDIR/mpa_core     -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
+# find -L  $PROJECTDIR/mpa_cart     -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
+# find -L  $PROJECTDIR/mpa_products -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
+# find -L  $PROJECTDIR/mpa_conf     -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
+# find -L  $PROJECTDIR/mpa_ofs      -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
+# find -L  $PROJECTDIR/mpa_www      -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
+# find -L  $PROJECTDIR/mpa_static   -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
+
+
+# mpa_conf mpa_gallery mpa_cart
+
+# alias ftx='find . \( -name \*.php -o -name \*.inc -o -name \*.default \) | xargs grep -n'
+# alias ftxcss='find . \( -name \*.css -o -name \*.js -o -name \*.html \) -print0 | xargs -0 grep -n'
+# alias ftxpl='find . \( -name \*.cgi -o -name \*.pl -o -name \*.pm \) | xargs grep -n'
