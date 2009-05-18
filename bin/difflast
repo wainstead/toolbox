@@ -1,0 +1,26 @@
+#!/usr/bin/perl
+
+# do the equivalent of:
+#   svn log --limit 5 classes/WWWContext.class.inc 
+#   svn diff -r729:774 classes/WWWContext.class.inc 
+
+die "Usage: $0 [filename]\n" unless ($ARGV[0]);
+
+$cmd = "svn log --limit 5 $ARGV[0]";
+print "\n$cmd\n";
+@lines = `$cmd`;
+
+foreach (@lines) {
+    if ( /^r(\d+)/ ) {
+        if ( ! $firstrnum ) {
+            $firstrnum  = $1;
+        } elsif ( ! $secondrnum ) {
+            $secondrnum = $1;
+        }
+    }
+    print;
+}
+
+$cmd = "svn diff -r$firstrnum:$secondrnum $ARGV[0]";
+print "\n$cmd\n";
+print `$cmd`;
