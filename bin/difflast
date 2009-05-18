@@ -21,6 +21,6 @@ foreach (@lines) {
     print;
 }
 
-$cmd = "svn diff -r$firstrnum:$secondrnum $ARGV[0]";
+$cmd = "svn diff -r$secondrnum:$firstrnum $ARGV[0]";
 print "\n$cmd\n";
 print `$cmd`;
