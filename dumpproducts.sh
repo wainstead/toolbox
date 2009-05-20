@@ -22,5 +22,5 @@ $MYSQLDUMP osc_products_description       | grep -v 'Dump completed on'   > $TAR
 $MYSQLDUMP osc_products_properties        | grep -v 'Dump completed on'   > $TARGETDIR/products-$1/osc_products_properties.sql         
 $MYSQLDUMP osc_products_to_categories     | grep -v 'Dump completed on'   > $TARGETDIR/products-$1/osc_products_to_categories.sql      
 
-cd /home/swain/public_html/projects/schema/products-$1/
+cd $TARGETDIR/products-$1/
 /opt/subversion/bin/svn commit -m "updated product tables"
