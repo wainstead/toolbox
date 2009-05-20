@@ -1,15 +1,25 @@
 #!/bin/bash
+
+if [ $# -ne 1 ]; then
+        echo "Usage: $0 [dev|stg|prod]"
+        exit
+fi
+
+
 # dump the critical product/category tables out.
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa mpa_categories                   > /home/swain/tmp/mpa_categories.`date '+%F'`.sql                  
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa ofs_categories_to_prefix_codes   > /home/swain/tmp/ofs_categories_to_prefix_codes.`date '+%F'`.sql  
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_categories                   > /home/swain/tmp/osc_categories.`date '+%F'`.sql                  
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_categories_description       > /home/swain/tmp/osc_categories_description.`date '+%F'`.sql      
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_to_categories       > /home/swain/tmp/osc_products_to_categories.`date '+%F'`.sql      
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa mediaclip_products_properties    > /home/swain/tmp/mediaclip_products_properties.`date '+%F'`.sql   
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa mpa_products_groupings           > /home/swain/tmp/mpa_products_groupings.`date '+%F'`.sql          
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products                     > /home/swain/tmp/osc_products.`date '+%F'`.sql                    
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_attributes          > /home/swain/tmp/osc_products_attributes.`date '+%F'`.sql         
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_classes             > /home/swain/tmp/osc_products_classes.`date '+%F'`.sql            
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_description         > /home/swain/tmp/osc_products_description.`date '+%F'`.sql        
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_properties          > /home/swain/tmp/osc_products_properties.`date '+%F'`.sql         
-/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_to_categories       > /home/swain/tmp/osc_products_to_categories.`date '+%F'`.sql      
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa mpa_categories                 | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/mpa_categories.sql                  
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa ofs_categories_to_prefix_codes | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/ofs_categories_to_prefix_codes.sql  
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_categories                 | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/osc_categories.sql                  
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_categories_description     | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/osc_categories_description.sql      
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_to_categories     | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/osc_products_to_categories.sql      
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa mediaclip_products_properties  | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/mediaclip_products_properties.sql   
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa mpa_products_groupings         | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/mpa_products_groupings.sql          
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products                   | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/osc_products.sql                    
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_attributes        | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/osc_products_attributes.sql         
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_classes           | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/osc_products_classes.sql            
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_description       | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/osc_products_description.sql        
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_properties        | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/osc_products_properties.sql         
+/d0/mysql/mpa/bin/mysqldump -S /tmp/mysql.mpa.sock -uroot mpa osc_products_to_categories     | grep -v 'Dump completed on'   > /home/swain/public_html/projects/schema/products-$1/osc_products_to_categories.sql      
+
+cd /home/swain/public_html/projects/schema/products-$1/
+/opt/subversion/bin/svn commit -m "updated product tables"
