@@ -16,7 +16,7 @@ while ( my $line = <DATA> ) {
     # we need to parse the output of this:
     # svn log --stop-on-copy -v https://svn.corp.myphotoalbum.com/mpa_gallery/tags/R_2009_04_28_facebook_and_whitelabeling
     my $command = "$svnclient log --stop-on-copy -v https://svn.corp.myphotoalbum.com/mpa_$project/tags/$tag";
-    #print "command: $command\n";
+    print "running $command ...\n";
     open POPE, "$command | " or die "Can't open pipe for command '': $!\n";
     my $revision = 0;
     while ( my $result = <POPE> ) {
@@ -34,8 +34,8 @@ while ( my $line = <DATA> ) {
     # this command:
     # svn log -r 6140:HEAD -v https://svn.corp.myphotoalbum.com/mpa_gallery/trunk
 
-    my $cmd = "svn log -r $revision:HEAD -v https://svn.corp.myphotoalbum.com/mpa_$project/trunk";
-    print "Running $cmd...\n";
+    my $cmd = "$svnclient log -r $revision:HEAD -v https://svn.corp.myphotoalbum.com/mpa_$project/trunk";
+    print "Running $cmd ...\n";
 
     open PLIPE, " $cmd | " or die "Failed to run command '$cmd': $!\n";
     my @results = <PLIPE>;
@@ -54,7 +54,7 @@ while ( my $line = <DATA> ) {
 # https://rcs.corp.myphotoalbum.com/viewvc/trunk/bin/fetchreleases.sh?root=swain&view=log
 
 __END__
-cart:     R_2009_04_28_shared_sessions
-core:     R_2009_04_28_expanded_classlib
-gallery:  R_2009_04_28_facebook_and_whitelabeling
-products: R_2009_04_28_minor_release
+cart:     R_2009_05_13_mass_cleanup_deux
+core:     R_2009_05_13_new_header_footer
+gallery:  R_2009_05_13_this_years_redesign
+products: R_2009_05_13_gifterator
