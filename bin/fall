@@ -18,6 +18,7 @@ ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_conf    | egrep -v 'ChangeLo
 ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_ofs     | egrep -v 'ChangeLog|TAGS'
 ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_www     | egrep -v 'ChangeLog|TAGS'
 ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_static  | egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_signup  | egrep -v 'ChangeLog|TAGS'
 
 # find -L  $PROJECTDIR/mpa_gallery  -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
 # find -L  $PROJECTDIR/mpa_core     -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
