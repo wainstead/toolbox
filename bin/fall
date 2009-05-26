@@ -10,14 +10,14 @@ fi
 PROJECTDIR=/home/swain/public_html/projects
 echo "searching on $1..."
 
-ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_gallery | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_core    | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_cart    | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_products| egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_conf    | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_ofs     | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_www     | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $1 $PROJECTDIR/mpa_static  | egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_gallery | egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_core    | egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_cart    | egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_products| egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_conf    | egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_ofs     | egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_www     | egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text "$1" $PROJECTDIR/mpa_static  | egrep -v 'ChangeLog|TAGS'
 
 # find -L  $PROJECTDIR/mpa_gallery  -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
 # find -L  $PROJECTDIR/mpa_core     -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
