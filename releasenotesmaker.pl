@@ -54,7 +54,7 @@ while ( my $line = <DATA> ) {
 # https://rcs.corp.myphotoalbum.com/viewvc/trunk/bin/fetchreleases.sh?root=swain&view=log
 
 __END__
-cart:     R_2009_05_13_mass_cleanup_deux
-core:     R_2009_05_13_new_header_footer
-gallery:  R_2009_05_13_this_years_redesign
-products: R_2009_05_13_gifterator
+cart:     R_2009_05_26_bugfixes_galore
+core:     R_2009_05_26_navy_status
+gallery:  R_2009_05_26_navyex_preliminary
+products: R_2009_05_26_minor_fixes
