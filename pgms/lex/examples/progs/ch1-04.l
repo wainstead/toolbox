@@ -32,17 +32,17 @@ int lookup_word(char *word);
 
 [a-zA-Z]+  {
 		/* a normal word, define it or look it up */
-	     if(state != LOOKUP) {
+	     if (state != LOOKUP) {
 	        /* define the current word */
 	     	add_word(state, yytext);
 	     } else {
 		switch(lookup_word(yytext)) {
-		case VERB: printf("%s: verb\n", yytext); break;
-		case ADJ: printf("%s: adjective\n", yytext); break;
-		case ADV: printf("%s: adverb\n", yytext); break;
-		case NOUN: printf("%s: noun\n", yytext); break;
+		case VERB: printf("%s: verb\n",        yytext); break;
+		case ADJ:  printf("%s: adjective\n",   yytext); break;
+		case ADV:  printf("%s: adverb\n",      yytext); break;
+		case NOUN: printf("%s: noun\n",        yytext); break;
 		case PREP: printf("%s: preposition\n", yytext); break;
-		case PRON: printf("%s: pronoun\n", yytext); break;
+		case PRON: printf("%s: pronoun\n",     yytext); break;
 		case CONJ: printf("%s: conjunction\n", yytext); break;
 		default:
 			printf("%s:  don't recognize\n", yytext);
