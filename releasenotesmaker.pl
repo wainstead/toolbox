@@ -55,6 +55,6 @@ while ( my $line = <DATA> ) {
 
 __END__
 cart:     R_2009_05_26_bugfixes_galore
-core:     R_2009_05_26_navy_status
-gallery:  R_2009_05_26_navyex_preliminary
-products: R_2009_05_26_minor_fixes
+core:     R_2009_06_05_not_for_sale_fix
+gallery:  R_2009_06_15_facebook_app_and_gallery_class
+products: R_2009_06_05_multi_photo_upload_gmc
