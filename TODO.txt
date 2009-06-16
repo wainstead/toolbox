@@ -1,0 +1,21 @@
+* customers set prices on their stuff. see entry 090430
+* unify product classes
+* tinyurl project: see entry for 090511
+* photrade
+* candy box
+* unified gmc
+* unified cart
+* dotphoto importer
+* get www and static under tag/release
+  * redo tagrelease. throw out gnu changelog crap.
+  * redo rollout script; use branches and not tags.
+  * reliable way to flush caches (varnish and apc)
+  * see 090513
+* deleting sites: change their status only. clean up later. Let
+  Veracity do it.
+* shipping project is in Trac and is tasked to Fernando
+* change $GALLERY_BASEDIR and brethren to constants
+* rid Gallery of global emulation of form vars
+* isolate "the file and its location" from the Cart
+* complete www's testlogin.php, which tries to log you into your
+  Gallery from another site like www.
