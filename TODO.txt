@@ -1,16 +1,18 @@
 * customers set prices on their stuff. see entry 090430
-* unify product classes
 
+* tinyurl project: see entry for 090511
+* also internal tinyurl project (much smaller scale)
+* photrade
+* candy box
+* unified "Shop" for mpa+dotphoto
+* unify product classes:
    "I already fleshed out, on paper, GallerySiteHelper and
    GiftsSiteHelper classes to abstract away differences like
    'getThumbnailURL()'." (in the Cart; this idea has merit).
 
-* tinyurl project: see entry for 090511
-* photrade
-* candy box
-* unified gmc
-* unified cart
-* dotphoto importer
+* unified cart for mpa+dotphoto
+  * isolate "the file and its location" from the Cart
+* dotphoto importer to mpa
 * get www and static under tag/release
   * redo tagrelease. throw out gnu changelog crap.
   * redo rollout script; use branches and not tags.
@@ -19,29 +21,29 @@
 * deleting sites: change their status only. clean up later. Let
   Veracity do it.
 * shipping project is in Trac and is tasked to Fernando
-* change $GALLERY_BASEDIR and brethren to constants
-* rid Gallery of global emulation of form vars. See 09010
-* isolate "the file and its location" from the Cart
-* complete www's testlogin.php, which tries to log you into your
-  Gallery from another site like www.
+
 * Next iteration of MPP, unless Tim does it; unlikely though.
 * Purge all old products and all old orders that contain them.
 * batch uploading of MPA photos to Facebook
 * create mpa account from gmc flow
-* optimize GMC's image creation (don't make sized until asked; don't
-  copy the full sized image)
-* cd/dvd project (ugh)
+* cd/dvd project (Fernando?)
 * separate print quantity/size selection from the cart itself
 
+
+system/programming/plumbing to-dos:
+* redo all service outages from scratch
+* optimize GMC's image creation (don't make sized until asked; don't
+  copy the full sized image)
+* change $GALLERY_BASEDIR and brethren to constants
+* rid Gallery of global emulation of form vars. See 09010
+* complete www's testlogin.php, which tries to log you into your
+  Gallery from another site like www.
+* consolidate the rest of tree's code
+* GMC now depends on Gallery code. Fix this.
+* create table documenting the other tables in the mpa database
+* Bring iPhoto plugin up to date; learn how to compile and package it
 * idea: (Incidentally, my current thinking is to put off Veracity, and
   code Gallery to do all the work of storing the data in the database,
   and copying over stuff only when there's a hit on the site. Then,
   with this 'dual mode Gallery' we have time to port the data into the
   DB).
-
-* consolidate the rest of tree's code
-* GMC now depends on Gallery code. Fix this.
-* create table documenting the other tables in the mpa database
-* Bring iPhoto plugin up to date; learn how to compile and package it
-* redo all service outages from scratch
-
