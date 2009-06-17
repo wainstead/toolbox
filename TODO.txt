@@ -1,16 +1,17 @@
-* customers set prices on their stuff. see entry 090430
+R: revenue
+G: user/subscriber growth
+E: expense saving
+P: plumbing
+
+
+R customers set prices on their stuff. see entry 090430
 
 * tinyurl project: see entry for 090511
 * also internal tinyurl project (much smaller scale)
-* photrade
-* candy box
-* unified "Shop" for mpa+dotphoto
-* unify product classes:
-   "I already fleshed out, on paper, GallerySiteHelper and
-   GiftsSiteHelper classes to abstract away differences like
-   'getThumbnailURL()'." (in the Cart; this idea has merit).
+E photrade / goody box
+E unified "Shop" for mpa+dotphoto
 
-* unified cart for mpa+dotphoto
+P unified cart for mpa+dotphoto
   * isolate "the file and its location" from the Cart
 * dotphoto importer to mpa
 * get www and static under tag/release
@@ -27,7 +28,7 @@
 * batch uploading of MPA photos to Facebook
 * create mpa account from gmc flow
 * cd/dvd project (Fernando?)
-* separate print quantity/size selection from the cart itself
+Nixed: separate print quantity/size selection from the cart itself
 
 
 system/programming/plumbing to-dos:
@@ -47,3 +48,12 @@ system/programming/plumbing to-dos:
   and copying over stuff only when there's a hit on the site. Then,
   with this 'dual mode Gallery' we have time to port the data into the
   DB).
+* figure out how to upload to a Facebook profile album
+* unify product classes:
+   "I already fleshed out, on paper, GallerySiteHelper and
+   GiftsSiteHelper classes to abstract away differences like
+   'getThumbnailURL()'." (in the Cart; this idea has merit).
+
+
+"need to drive revenue"
+"need to get off dotphoto"
