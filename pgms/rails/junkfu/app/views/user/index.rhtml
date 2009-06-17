@@ -1,8 +1,0 @@
-<table border="1">
-    <% for user in @users -%>
-       <tr><td><%= user.lastname %></td><td><%= user.firstname %></td><td><%= user.username %></td><td><%= user.email_address %></tr>
-    <% end -%>
-</table>
-
-
-<%= will_paginate @users %>
