@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "signup:"   ; cd /home/swain/public_html/projects/mpa_signup  ; svn diff
+echo "gallery:"  ; cd /home/swain/public_html/projects/mpa_gallery ; svn diff
+echo "cart:"     ; cd /home/swain/public_html/projects/mpa_cart    ; svn diff
+echo "conf:"     ; cd /home/swain/public_html/projects/mpa_conf    ; svn diff
+echo "products:" ; cd /home/swain/public_html/projects/mpa_products; svn diff
+echo "static:"   ; cd /home/swain/public_html/projects/mpa_static  ; svn diff
+echo "www:"      ; cd /home/swain/public_html/projects/mpa_www     ; svn diff
+echo "core:"     ; cd /home/swain/public_html/projects/mpa_core    ; svn diff 
+echo "schema:"   ; cd ~/public_html/projects/schema                ; svn diff
+
