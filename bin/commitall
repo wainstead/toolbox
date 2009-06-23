@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+    echo "Usage: $0 'log message'"
+    exit
+fi
+
+
+echo "signup:"   ; cd /home/swain/public_html/projects/mpa_signup  ; svn commit -m "$1"
+echo "gallery:"  ; cd /home/swain/public_html/projects/mpa_gallery ; svn commit -m "$1"
+echo "cart:"     ; cd /home/swain/public_html/projects/mpa_cart    ; svn commit -m "$1"
+echo "conf:"     ; cd /home/swain/public_html/projects/mpa_conf    ; svn commit -m "$1"
+echo "products:" ; cd /home/swain/public_html/projects/mpa_products; svn commit -m "$1"
+echo "static:"   ; cd /home/swain/public_html/projects/mpa_static  ; svn commit -m "$1"
+echo "www:"      ; cd /home/swain/public_html/projects/mpa_www     ; svn commit -m "$1"
+echo "core:"     ; cd /home/swain/public_html/projects/mpa_core    ; svn commit -m "$1" 
+echo "schema:"   ; cd ~/public_html/projects/schema                ; svn commit -m "$1"
+
