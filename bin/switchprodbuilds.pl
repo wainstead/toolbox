@@ -4,11 +4,11 @@ while ($line = <DATA>) {
     chomp $line;
     ($project, $tag) = split /: +/, $line;
     next if $tag eq 'trunk';
-    print "cd /home/swain/public_html/projects/mpa_${project}_prod; svn switch https://svn.myphotoalbum.com/mpa_$project/tags/$tag; ";
+    print "cd /home/swain/public_html/projects/${project}_prod; svn switch https://svn.myphotoalbum.com/$project/tags/$tag; ";
 }
 print "\n";
 __END__
-cart:     R_2009_06_19_mcafee_markings
-core:     R_2009_06_19_additional_products_and_mcafee
-gallery:  R_2009_06_15_facebook_app_and_gallery_class
-products: R_2009_06_19_additional_products_and_mcafee
+mpa_cart:     R_2009_06_30_subdomain_free_coupon_support  
+mpa_gallery:  R_2009_06_30_bugfixes_and_api_change_support
+mpa_products: R_2009_06_30_new_gifterator_products        
+mpa_core:     R_2009_06_30_code_reduction                 

@@ -11,10 +11,11 @@ fi
 PROJECTDIR=/home/swain/public_html/projects
 
 # no feedback if we are asked to just list files...
-if [ $2 != "-l" ]; then
-    echo "searching on $1..."
+if [ $# -gt 1 ]; then
+    if [ $2 != "-l" ]; then
+        echo "searching on $1..."
+    fi
 fi
-
 ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_gallery | egrep -v 'ChangeLog|TAGS'
 ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_core    | egrep -v 'ChangeLog|TAGS'
 ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_cart    | egrep -v 'ChangeLog|TAGS'
