@@ -1,4 +1,4 @@
-#!/opt/php4/bin/php
+#!/opt/php5/bin/php
 <?php
 
 class Foo {
@@ -33,5 +33,13 @@ foreach ($blee as $key => $val) {
     echo "$key\n";
 }
 
-?>
+$thing = 'Foo';
+$burp = new $thing();
+print "glupping burp:\n";
+$burp->glup();
+Foo::glup();
+$myfunc = "glup";
+$class::$myfunc();
 
+
+?>
