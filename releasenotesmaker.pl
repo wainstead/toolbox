@@ -14,8 +14,8 @@ while ( my $line = <DATA> ) {
     my ($project, $tag) = split /: +/, $line;
     
     # we need to parse the output of this:
-    # svn log --stop-on-copy -v https://svn.corp.myphotoalbum.com/mpa_gallery/tags/R_2009_04_28_facebook_and_whitelabeling
-    my $command = "$svnclient log --stop-on-copy -v https://svn.corp.myphotoalbum.com/mpa_$project/tags/$tag";
+    # svn log --stop-on-copy -v https://svn.myphotoalbum.com/mpa_gallery/tags/R_2009_04_28_facebook_and_whitelabeling
+    my $command = "$svnclient log --stop-on-copy -v https://svn.myphotoalbum.com/$project/tags/$tag";
     print "running $command ...\n";
     open POPE, "$command | " or die "Can't open pipe for command '': $!\n";
     my $revision = 0;
@@ -32,9 +32,9 @@ while ( my $line = <DATA> ) {
 
     # and for our next magic trick: use the result from above to run
     # this command:
-    # svn log -r 6140:HEAD -v https://svn.corp.myphotoalbum.com/mpa_gallery/trunk
+    # svn log -r 6140:HEAD -v https://svn.myphotoalbum.com/mpa_gallery/trunk
 
-    my $cmd = "$svnclient log -r $revision:HEAD -v https://svn.corp.myphotoalbum.com/mpa_$project/trunk";
+    my $cmd = "$svnclient log -r $revision:HEAD -v https://svn.myphotoalbum.com/$project/trunk";
     print "Running $cmd ...\n";
 
     open PLIPE, " $cmd | " or die "Failed to run command '$cmd': $!\n";
@@ -51,7 +51,7 @@ while ( my $line = <DATA> ) {
 
 
 # the data below is the output of the script I wrote for production:
-# https://rcs.corp.myphotoalbum.com/viewvc/trunk/bin/fetchreleases.sh?root=swain&view=log
+# https://rcs.myphotoalbum.com/viewvc/trunk/bin/fetchreleases.sh?root=swain&view=log
 
 __END__
 mpa_core: R_2009_06_30_code_reduction
