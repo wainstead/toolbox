@@ -1,0 +1,179 @@
+Index: classes/Album.php
+===================================================================
+--- classes/Album.php	(revision 6342)
++++ classes/Album.php	(working copy)
+@@ -1333,6 +1333,10 @@
+      * Function from Gallery 1.5. --SW
+      */
+     function isHiddenRecurse($index = 0) {
++
++        if ($GLOBALS['infinite_recursion_flag']++ > 10) return true;
++
++
+         if ($index && $this->isHidden($index)) {
+             return true;
+         }
+@@ -1359,7 +1363,37 @@
+         return false;
+     }
+ 
++
+     /**
++     * From Gallery 1.5. Added to try to introduce RSS. --SW
++     */
++    function canReadRecurse($uid) {
++
++        global $albumDB;
++
++        if ($GLOBALS['infinite_recursion_flag']++ > 10) return true;
++
++        if ($this->isOwner($uid)) {
++            return true;
++        } elseif ($this->canRead($uid)) {
++            showTime("can read... testing other things...");
++
++            if ($this->isRoot() || empty($this->fields['parentAlbumName'])) {
++                return true;
++            }
++
++            $parent = $albumDB->getAlbumByName($this->fields['parentAlbumName'], false);
++            if (is_object($parent)) {
++                return $parent->canReadRecurse($uid);
++            }
++        }
++
++        return false;
++
++    }
++
++
++    /**
+      * Probably should make this work with getParentAlbumName... --sw 10/1/07
+      */
+     function &getParentAlbum($loadphotos = TRUE) {
+@@ -2244,34 +2278,7 @@
+         return $this->getPerm("canRead", $uid);
+     }
+ 
+-    /**
+-     * From Gallery 1.5. Added to try to introduce RSS. --SW
+-     */
+-    function canReadRecurse($uid) {
+-        global $albumDB;
+-        if (empty($albumDB)) {
+-            $albumDB = AlbumDB::getInstance();
+-        }
+ 
+-        if ($this->isOwner($uid)) {
+-            return true;
+-        }
+-        elseif ($this->canRead($uid)) {
+-            if ($this->isRoot() || empty($this->fields['parentAlbumName'])) {
+-                return true;
+-            }
+-            $parent = $albumDB->getAlbumByName($this->fields['parentAlbumName'], false);
+-            if (is_object($parent))
+-                return $parent->canReadRecurse($uid);
+-
+-        }
+-
+-        return false;
+-
+-    }
+-
+-
+-
+     function setRead($uid, $bool) {
+         $this->setPerm("canRead", $uid, $bool);
+     }
+Index: makefeeds.php
+===================================================================
+--- makefeeds.php	(revision 6342)
++++ makefeeds.php	(working copy)
+@@ -33,10 +33,10 @@
+ list($set_albumName) = getRequestVar(array('set_albumName'));
+ 
+ 
++showTime("reading the album list");
+ 
+-
+ /* Read the album list */
+-$albumDB = AlbumDB::getInstance(FALSE);
++$albumDB = new AlbumDB(FALSE);
+ $gallery->session->albumName = "";
+ $page = 1;
+ 
+@@ -54,6 +54,7 @@
+     $rssfile = "{$GALLERY_USERDIR}rss.xml";
+ }
+ 
++showTime("set the path to the xml file ($rssfile)");
+ //stderr("rssfile: $rssfile");
+ 
+ // first, create an array of the top 10 most recent albums. If we do
+@@ -62,28 +63,53 @@
+ 
+ $recent_albums = array();
+ 
++showTime("Looping on " . count($rssAlbumList) . " albums...");
++
+ foreach ($rssAlbumList as $album) {
+ 
++    showTime("Doing {$album->fields['name']}...");
++
+ 	if (!$gallery->user->canReadAlbum($album)) {
++        showTime("User can't read album.");
+ 		continue;
+-	}
++	} else {
++        showTime("Yes, user can read album.");
++    }
+ 
+ 	if (isset($gallery->app->rssVisibleOnly)) {
+         // skip albums that are hidden, or whose parent is hidden
+-        if ($album->isHiddenRecurse() || !$album->canReadRecurse($gallery->user->uid)) {
++
++        showTime("testing isHiddenRecurse...");
++        $GLOBALS['infinite_recursion_flag'] = 0;
++        $ihr_flag = $album->isHiddenRecurse();
++
++        showTime("testing canReadRecurse...");
++        $GLOBALS['infinite_recursion_flag'] = 0;
++        $crr_flag = $album->canReadRecurse($gallery->user->uid);
++
++        if ($ihr_flag || !$crr_flag) {
+             //stderr("skipping an album");
+             continue;
+         }
+     }
+ 
++
+     $album->load($album->fields['name'], false);
++
+     //stderr("best date for {$album->fields[name]}: " . bestDate($album));
+-    $recent_albums[bestDate($album)] = $album;
++    $bestdate = bestDate($album);
++
++    $recent_albums["$bestdate"] = $album;
++
+     
+ }
+ 
++showTime("recent albums array is set");
++showTime("sorting albums now");
++
+ krsort($recent_albums);
+ 
++showTime("albums sorted. Looping to build the xml.");
+ 
+ $albumcounter = 0;
+ //foreach ($rssAlbumList as $album) {
+@@ -94,7 +120,7 @@
+ 		continue;
+ 	}
+ 
+-
++    showTime("Doing: {$album->fields['name']}");
+ 	// Increment counters
+ 	$numAlbums++;
+ 	$album->load($album->fields['name'], false);
