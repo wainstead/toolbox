@@ -55,6 +55,6 @@ while ( my $line = <DATA> ) {
 
 __END__
 mpa_core: R_2009_08_04_website_classes
-mpa_gallery: R_2009_0_15_new_club_ads
+mpa_gallery: R_2009_08_04_yellowbox
 mpa_cart: R_2009_08_04_new_signup_path
 mpa_products: R_2009_08_04_deal_of_the_day
