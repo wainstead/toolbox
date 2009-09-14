@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+
+foreach $project ( 'core', 'gallery', 'products', 'cart' ) {
+    print "$project: ", `cd /opt/mpa_$project/current      ; svn switch https://svn.myphotoalbum.com/mpa_$project/trunk`;       
+}
+

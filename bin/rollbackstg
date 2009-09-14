@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+while (<DATA>) {
+    ($project, $tag) = split /:\s+/;
+    if ( $project eq 'mpa_gallery' ) {
+        print "$project:  :", `cd /opt/$project/current/website      ; svn switch https://svn.myphotoalbum.com/$project/tags/$tag`;       
+    } else {
+        print "$project:  :", `cd /opt/$project/current      ; svn switch https://svn.myphotoalbum.com/$project/tags/$tag`;       
+    }
+}
+
+
+__END__
+mpa_core: R_2009_08_04_website_classes
+mpa_gallery: R_2009_08_04_yellowbox
+mpa_cart: R_2009_08_04_new_signup_path
+mpa_products: R_2009_08_04_deal_of_the_day
+
