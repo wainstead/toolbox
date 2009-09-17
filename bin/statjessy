@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "signup:"   ; cd /opt/mpa/custom-sites/jhanley/mpa_signup  ; svn stat
+echo "gallery:"  ; cd /opt/mpa/custom-sites/jhanley/mpa_gallery ; svn stat
+echo "cart:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_cart    ; svn stat
+echo "conf:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_conf    ; svn stat
+echo "products:" ; cd /opt/mpa/custom-sites/jhanley/mpa_products; svn stat
+echo "static:"   ; cd /opt/mpa/custom-sites/jhanley/mpa_static  ; svn stat
+echo "www:"      ; cd /opt/mpa/custom-sites/jhanley/mpa_www     ; svn stat
+echo "core:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_core    ; svn stat 
+
+
