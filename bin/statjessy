@@ -2,7 +2,7 @@
 echo "signup:"   ; cd /opt/mpa/custom-sites/jhanley/mpa_signup  ; svn stat -u
 echo "gallery:"  ; cd /opt/mpa/custom-sites/jhanley/mpa_gallery ; svn stat -u
 echo "cart:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_cart    ; svn stat -u
-echo "conf:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_conf    ; svn stat -u
+#echo "conf:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_conf    ; svn stat -u
 echo "products:" ; cd /opt/mpa/custom-sites/jhanley/mpa_products; svn stat -u
 echo "static:"   ; cd /opt/mpa/custom-sites/jhanley/mpa_static  ; svn stat -u
 echo "www:"      ; cd /opt/mpa/custom-sites/jhanley/mpa_www     ; svn stat -u
