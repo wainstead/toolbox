@@ -1,11 +1,11 @@
 #!/bin/bash
-echo "signup:"   ; cd /opt/mpa/custom-sites/jhanley/mpa_signup  ; svn stat
-echo "gallery:"  ; cd /opt/mpa/custom-sites/jhanley/mpa_gallery ; svn stat
-echo "cart:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_cart    ; svn stat
-echo "conf:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_conf    ; svn stat
-echo "products:" ; cd /opt/mpa/custom-sites/jhanley/mpa_products; svn stat
-echo "static:"   ; cd /opt/mpa/custom-sites/jhanley/mpa_static  ; svn stat
-echo "www:"      ; cd /opt/mpa/custom-sites/jhanley/mpa_www     ; svn stat
-echo "core:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_core    ; svn stat 
+echo "signup:"   ; cd /opt/mpa/custom-sites/jhanley/mpa_signup  ; svn stat -u
+echo "gallery:"  ; cd /opt/mpa/custom-sites/jhanley/mpa_gallery ; svn stat -u
+echo "cart:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_cart    ; svn stat -u
+echo "conf:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_conf    ; svn stat -u
+echo "products:" ; cd /opt/mpa/custom-sites/jhanley/mpa_products; svn stat -u
+echo "static:"   ; cd /opt/mpa/custom-sites/jhanley/mpa_static  ; svn stat -u
+echo "www:"      ; cd /opt/mpa/custom-sites/jhanley/mpa_www     ; svn stat -u
+echo "core:"     ; cd /opt/mpa/custom-sites/jhanley/mpa_core    ; svn stat -u
 
 
