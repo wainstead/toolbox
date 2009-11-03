@@ -1,0 +1,14 @@
+#!/bin/bash
+
+PROJECTDIR=/home/swain/public_html/projects
+PHPBIN=/opt/php5/bin/php
+
+echo "gallery:"  ; cd $PROJECTDIR/mpa_gallery ; for i in `svn stat | egrep  '^M' | awk '{ print $2}'`; do $PHPBIN -l $i; done
+echo "cart:"     ; cd $PROJECTDIR/mpa_cart    ; for i in `svn stat | egrep  '^M' | awk '{ print $2}'`; do $PHPBIN -l $i; done
+echo "conf:"     ; cd $PROJECTDIR/mpa_conf    ; for i in `svn stat | egrep  '^M' | awk '{ print $2}'`; do $PHPBIN -l $i; done
+echo "products:" ; cd $PROJECTDIR/mpa_products; for i in `svn stat | egrep  '^M' | awk '{ print $2}'`; do $PHPBIN -l $i; done
+
+echo "www:"      ; cd $PROJECTDIR/mpa_www     ; for i in `svn stat | egrep  '^M' | awk '{ print $2}'`; do $PHPBIN -l $i; done
+echo "core:"     ; cd $PROJECTDIR/mpa_core    ; for i in `svn stat | egrep  '^M' | awk '{ print $2}'`; do $PHPBIN -l $i; done 
+
+
