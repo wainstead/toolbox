@@ -6,14 +6,23 @@ else
     limit=$1
 fi
 
+echo "Checking for last $limit revisions over the last $limit days"
 
-echo "signup:"   ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
-echo "gallery:"  ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
-echo "cart:"     ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
-echo "conf:"     ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
-echo "products:" ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
-echo "static:"   ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
-echo "www:"      ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
-echo "core:"     ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk" 
-echo "schema:"   ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
+# use /bin/date's date math feature to get a date N days back
+# which is: date "+%F %T" -d  '-1 day'
+pdate=`date '+%F %T' -d  "-$limit day"`
+since="{$pdate}:head"
+
+# sample command that actually works
+# svn log -r '{2009-10-30 11:19:05}:head' -v --limit 5 https://svn.myphotoalbum.com/mpa_gallery/trunk
+
+echo "signup:"   ;  svn log -r "$since" -v --limit "$limit" https://svn.myphotoalbum.com/mpa_signup/trunk
+echo "gallery:"  ;  svn log -r "$since" -v --limit "$limit" https://svn.myphotoalbum.com/mpa_gallery/trunk
+echo "cart:"     ;  svn log -r "$since" -v --limit "$limit" https://svn.myphotoalbum.com/mpa_cart/trunk
+echo "conf:"     ;  svn log -r "$since" -v --limit "$limit" https://svn.myphotoalbum.com/mpa_conf/trunk
+echo "products:" ;  svn log -r "$since" -v --limit "$limit" https://svn.myphotoalbum.com/mpa_products/trunk
+echo "static:"   ;  svn log -r "$since" -v --limit "$limit" https://svn.myphotoalbum.com/mpa_static/trunk
+echo "www:"      ;  svn log -r "$since" -v --limit "$limit" https://svn.myphotoalbum.com/mpa_www/trunk
+echo "core:"     ;  svn log -r "$since" -v --limit "$limit" https://svn.myphotoalbum.com/mpa_core/trunk 
+echo "schema:"   ;  svn log -r "$since" -v --limit "$limit" https://svn.myphotoalbum.com/mpa_mysql/trunk
 
