@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+    limit=5
+else
+    limit=$1
+fi
+
+
+echo "signup:"   ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
+echo "gallery:"  ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
+echo "cart:"     ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
+echo "conf:"     ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
+echo "products:" ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
+echo "static:"   ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
+echo "www:"      ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
+echo "core:"     ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk" 
+echo "schema:"   ;  svn log -v --limit "$limit https://svn.myphotoalbum.com/trunk"
+
