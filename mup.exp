@@ -12,7 +12,7 @@ send "ssh $machine\r"
 expect "$muppattern"
 send "cd /opt/apache2/logs\r"
 expect "logs"
-send "tail -f `ls -tr *error* | tail -1` | grep -v 'TRANSMIT_ERROR' \r"
+send "tail -f `ls -tr *error* | tail -1` | grep -v 'photrade' \r"
 
 interact
 puts "mup.exp done."
