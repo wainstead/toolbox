@@ -1,0 +1,38 @@
+#!/usr/bin/perl
+
+if ( ! scalar(@ARGV) || $ARGV[0] eq '-h' || $ARGV[0] eq '--help') {
+
+    print <<"EOLN";
+Usage: $0 <file under svn control>
+This "fetches all" copies of a file from Subversion. This will check
+out a hell of a lot of files: there might be hundreds of revisions
+of a given file.
+
+Then use ls -c to list them by create time:
+
+   for i in `ls -c filename*`; do grep -l [some pattern] $i; done
+EOLN
+
+    exit;
+}
+
+my ($svnfile) = @ARGV;
+$svnfile =~ m%[^/]+$%;
+my $basename = $&;
+
+
+# first, get all revision numbers for this particular file
+open PIPE, "svn log $svnfile | " or die $!;
+
+while (<PIPE>) {
+    if (m/^r(\d+)/) {
+        # when matching a revision number, svn export the file,
+        # appending the revision number
+        `svn export -r$1 $svnfile $basename.exp-$1`;
+    }
+}
+
+
+print "Now use ls -c to list them by create time:\n";
+
+print "   for i in `ls -c $basename*`; do grep -l [some pattern] $i; done\n";
