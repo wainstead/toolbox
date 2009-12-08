@@ -1,18 +1,17 @@
 #!/usr/bin/perl
 
+print "clearing environment.ini first: ", `if [ -e /opt/mpa_gallery/current/config/environment.ini ]; then rm /opt/mpa_gallery/current/config/environment.ini; fi`;
+print "\n";
+
 while (<DATA>) {
     ($project, $tag) = split /:\s+/;
-    if ( $project eq 'mpa_gallery' ) {
-        print "$project:  :", `cd /opt/$project/current/website      ; svn switch https://svn.myphotoalbum.com/$project/tags/$tag`;       
-    } else {
-        print "$project:  :", `cd /opt/$project/current      ; svn switch https://svn.myphotoalbum.com/$project/tags/$tag`;       
-    }
+    print "$project:  :", `cd /opt/$project/current      ; svn switch https://svn.myphotoalbum.com/$project/tags/$tag`;       
 }
 
+print "rebuilding environment.ini: ", `cd /opt/mpa_gallery/current/build; cp config.environment.properties.staging config.environment.properties; /opt/php5/bin/phing build.configuration`;
 
 __END__
-mpa_core: R_2009_08_04_website_classes
-mpa_gallery: R_2009_08_04_yellowbox
-mpa_cart: R_2009_08_04_new_signup_path
-mpa_products: R_2009_08_04_deal_of_the_day
-
+mpa_core: R_2009_11_25_shipping_terms
+mpa_gallery: R_2009_11_25_shipping_and_refactoring
+mpa_cart: R_2009_11_25_new_shipping
+mpa_products: R_2009_11_25_new_shipping
