@@ -10,10 +10,16 @@ while (<STDIN>) {
     }
 }
 
-for ($x = 0; $x < $#revisions; $x++) {
-    print "$revisions[$x]\n";
-    $older = $revisions[$x];
-    $newer = $revisions[$x + 1];
-    system("svn log  -r$newer         > $older-$newer.diff");
-    system("svn diff -r$older:$newer >> $older-$newer.diff");
+# for ($x = 0; $x < $#revisions; $x++) {
+#     print "$revisions[$x]\n";
+#     $older = $revisions[$x];
+#     $newer = $revisions[$x + 1];
+#     system("svn log  -r$newer         > $older-$newer.diff");
+#     system("svn diff -r$older:$newer >> $older-$newer.diff");
+# }
+
+foreach $rev (@revisions) {
+    print "$rev\n";
+    system("svn log  -c$rev  > $rev.diff");
+    system("svn diff -c$rev >> $rev.diff");
 }
