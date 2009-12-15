@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+my ($username, $album) = split /:/, $ARGV[0] 
+    or die "Usage: $0 username:albumname\n";
+
+my $root = '/mnt/fast/vol01';
+my ($a, $b, $c, $d, $e, $x) = split //, $ARGV[0], 6;
+
+print `/opt/mpa/sbin/dumpdat $root/$a/$a$b/$a$b$c/$a$b$c$d/$a$b$c$d$e/$username/albums/$album/album.dat`;
