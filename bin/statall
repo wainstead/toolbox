@@ -1,11 +1,11 @@
 #!/bin/bash
-echo "signup:"   ; cd /home/swain/public_html/projects/mpa_signup  ; svn stat
-echo "gallery:"  ; cd /home/swain/public_html/projects/mpa_gallery ; svn stat
-echo "cart:"     ; cd /home/swain/public_html/projects/mpa_cart    ; svn stat
-echo "conf:"     ; cd /home/swain/public_html/projects/mpa_conf    ; svn stat
-echo "products:" ; cd /home/swain/public_html/projects/mpa_products; svn stat
-echo "static:"   ; cd /home/swain/public_html/projects/mpa_static  ; svn stat
-echo "www:"      ; cd /home/swain/public_html/projects/mpa_www     ; svn stat
-echo "core:"     ; cd /home/swain/public_html/projects/mpa_core    ; svn stat 
-echo "schema:"   ; cd ~/public_html/projects/schema                ; svn stat
-
+echo "signup:"   ; cd /home/swain/public_html/projects/mpa_signup  ; svn stat -u
+echo "gallery:"  ; cd /home/swain/public_html/projects/mpa_gallery ; svn stat -u
+echo "cart:"     ; cd /home/swain/public_html/projects/mpa_cart    ; svn stat -u
+echo "conf:"     ; cd /home/swain/public_html/projects/mpa_conf    ; svn stat -u
+echo "products:" ; cd /home/swain/public_html/projects/mpa_products; svn stat -u
+echo "static:"   ; cd /home/swain/public_html/projects/mpa_static  ; svn stat -u
+echo "www:"      ; cd /home/swain/public_html/projects/mpa_www     ; svn stat -u
+echo "core:"     ; cd /home/swain/public_html/projects/mpa_core    ; svn stat -u
+echo "schema:"   ; cd ~/public_html/projects/schema                ; svn stat -u
+echo "veracity:" ; cd /home/swain/public_html/projects/mpa_veracity; svn stat -u
