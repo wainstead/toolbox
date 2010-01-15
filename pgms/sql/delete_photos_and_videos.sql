@@ -275,7 +275,7 @@ insert into arch_pro_portfolio_gallery (
 select pro_portfolio_gallery.*
 from pro_portfolio_gallery
 where pro_portfolio_gallery.owner_id = @userid
-)
+);
 
 delete from pro_portfolio_gallery
 where pro_portfolio_gallery.owner_id = @userid
