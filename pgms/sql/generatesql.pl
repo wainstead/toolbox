@@ -24,7 +24,7 @@ insert into arch_$table (
    from users, pro_portfolio_gallery, $table
    where users.userid = $sqlvar
    and users.userid = pro_portfolio_gallery.owner_id
-   and pro_portfolio_gallery.owner_id = $table.gallery_id
+   and pro_portfolio_gallery.id = $table.gallery_id
 )
 ;
 
@@ -32,7 +32,7 @@ delete $table
 from users, pro_portfolio_gallery, $table
 where users.userid = $sqlvar
 and users.userid = pro_portfolio_gallery.owner_id
-and pro_portfolio_gallery.owner_id = $table.gallery_id
+and pro_portfolio_gallery.id = $table.gallery_id
 ;
 
 EOLN
