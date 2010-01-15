@@ -270,3 +270,13 @@ where users.userid = @userid
 and users.userid = pro_portfolio_gallery.owner_id
 and pro_portfolio_gallery.id = mpa_album_polls.gallery_id
 ;
+
+insert into arch_pro_portfolio_gallery (
+select pro_portfolio_gallery.*
+from pro_portfolio_gallery
+where pro_portfolio_gallery.owner_id = @userid
+)
+
+delete from pro_portfolio_gallery
+where pro_portfolio_gallery.owner_id = @userid
+;
