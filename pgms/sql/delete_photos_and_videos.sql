@@ -21,7 +21,7 @@
 -- pro_video_sizes video_id
 
 
-select @userid := userid from users where username = 'swain' and service_id = 1;
+-- select @userid := userid from users where username = 'swain' and service_id = 1;
 
 -- archive and delete comments
 insert into arch_pro_photo_comments (
@@ -44,7 +44,7 @@ from users, pro_portfolio_photos, pro_photo_sizes
 where users.userid = @userid
 and users.userid = pro_portfolio_photos.photog_id
 and pro_portfolio_photos.id = pro_photo_sizes.photo_id
-)
+);
 
 delete pro_photo_sizes
 from users, pro_portfolio_photos, pro_photo_sizes
@@ -152,7 +152,7 @@ insert into arch_pro_portfolio_gallery_attrs (
    from users, pro_portfolio_gallery, pro_portfolio_gallery_attrs
    where users.userid = @userid
    and users.userid = pro_portfolio_gallery.owner_id
-   and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_attrs.gallery_id
+   and pro_portfolio_gallery.id = pro_portfolio_gallery_attrs.gallery_id
 )
 ;
 
@@ -160,7 +160,7 @@ delete pro_portfolio_gallery_attrs
 from users, pro_portfolio_gallery, pro_portfolio_gallery_attrs
 where users.userid = @userid
 and users.userid = pro_portfolio_gallery.owner_id
-and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_attrs.gallery_id
+and pro_portfolio_gallery.id = pro_portfolio_gallery_attrs.gallery_id
 ;
 
 
@@ -170,7 +170,7 @@ insert into arch_pro_portfolio_gallery_notifications (
    from users, pro_portfolio_gallery, pro_portfolio_gallery_notifications
    where users.userid = @userid
    and users.userid = pro_portfolio_gallery.owner_id
-   and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_notifications.gallery_id
+   and pro_portfolio_gallery.id = pro_portfolio_gallery_notifications.gallery_id
 )
 ;
 
@@ -178,7 +178,7 @@ delete pro_portfolio_gallery_notifications
 from users, pro_portfolio_gallery, pro_portfolio_gallery_notifications
 where users.userid = @userid
 and users.userid = pro_portfolio_gallery.owner_id
-and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_notifications.gallery_id
+and pro_portfolio_gallery.id = pro_portfolio_gallery_notifications.gallery_id
 ;
 
 
@@ -188,7 +188,7 @@ insert into arch_pro_portfolio_gallery_perms (
    from users, pro_portfolio_gallery, pro_portfolio_gallery_perms
    where users.userid = @userid
    and users.userid = pro_portfolio_gallery.owner_id
-   and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_perms.gallery_id
+   and pro_portfolio_gallery.id = pro_portfolio_gallery_perms.gallery_id
 )
 ;
 
@@ -196,7 +196,7 @@ delete pro_portfolio_gallery_perms
 from users, pro_portfolio_gallery, pro_portfolio_gallery_perms
 where users.userid = @userid
 and users.userid = pro_portfolio_gallery.owner_id
-and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_perms.gallery_id
+and pro_portfolio_gallery.id = pro_portfolio_gallery_perms.gallery_id
 ;
 
 
@@ -206,7 +206,7 @@ insert into arch_pro_portfolio_gallery_photos (
    from users, pro_portfolio_gallery, pro_portfolio_gallery_photos
    where users.userid = @userid
    and users.userid = pro_portfolio_gallery.owner_id
-   and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_photos.gallery_id
+   and pro_portfolio_gallery.id = pro_portfolio_gallery_photos.gallery_id
 )
 ;
 
@@ -214,7 +214,7 @@ delete pro_portfolio_gallery_photos
 from users, pro_portfolio_gallery, pro_portfolio_gallery_photos
 where users.userid = @userid
 and users.userid = pro_portfolio_gallery.owner_id
-and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_photos.gallery_id
+and pro_portfolio_gallery.id = pro_portfolio_gallery_photos.gallery_id
 ;
 
 
@@ -224,7 +224,7 @@ insert into arch_pro_portfolio_gallery_subalbums (
    from users, pro_portfolio_gallery, pro_portfolio_gallery_subalbums
    where users.userid = @userid
    and users.userid = pro_portfolio_gallery.owner_id
-   and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_subalbums.gallery_id
+   and pro_portfolio_gallery.id = pro_portfolio_gallery_subalbums.gallery_id
 )
 ;
 
@@ -232,7 +232,7 @@ delete pro_portfolio_gallery_subalbums
 from users, pro_portfolio_gallery, pro_portfolio_gallery_subalbums
 where users.userid = @userid
 and users.userid = pro_portfolio_gallery.owner_id
-and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_subalbums.gallery_id
+and pro_portfolio_gallery.id = pro_portfolio_gallery_subalbums.gallery_id
 ;
 
 
@@ -242,7 +242,7 @@ insert into arch_pro_portfolio_gallery_videos (
    from users, pro_portfolio_gallery, pro_portfolio_gallery_videos
    where users.userid = @userid
    and users.userid = pro_portfolio_gallery.owner_id
-   and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_videos.gallery_id
+   and pro_portfolio_gallery.id = pro_portfolio_gallery_videos.gallery_id
 )
 ;
 
@@ -250,7 +250,7 @@ delete pro_portfolio_gallery_videos
 from users, pro_portfolio_gallery, pro_portfolio_gallery_videos
 where users.userid = @userid
 and users.userid = pro_portfolio_gallery.owner_id
-and pro_portfolio_gallery.owner_id = pro_portfolio_gallery_videos.gallery_id
+and pro_portfolio_gallery.id = pro_portfolio_gallery_videos.gallery_id
 ;
 
 
@@ -260,7 +260,7 @@ insert into arch_mpa_album_polls (
    from users, pro_portfolio_gallery, mpa_album_polls
    where users.userid = @userid
    and users.userid = pro_portfolio_gallery.owner_id
-   and pro_portfolio_gallery.owner_id = mpa_album_polls.gallery_id
+   and pro_portfolio_gallery.id = mpa_album_polls.gallery_id
 )
 ;
 
@@ -268,5 +268,5 @@ delete mpa_album_polls
 from users, pro_portfolio_gallery, mpa_album_polls
 where users.userid = @userid
 and users.userid = pro_portfolio_gallery.owner_id
-and pro_portfolio_gallery.owner_id = mpa_album_polls.gallery_id
+and pro_portfolio_gallery.id = mpa_album_polls.gallery_id
 ;
