@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+print "clearing environment.ini first: ", `if [ -e /opt/mpa_gallery/current/config/environment.ini ]; then rm /opt/mpa_gallery/current/config/environment.ini; fi`;
+print "\n";
+
+foreach $project ( 'core', 'gallery', 'products', 'cart' ) {
+    print "$project: ", `cd /opt/mpa_$project/current      ; svn switch https://svn.myphotoalbum.com/mpa_$project/trunk`;       
+}
+
+print "rebuilding environment.ini: ", `cd /opt/mpa_gallery/current/build; cp config.environment.properties.torque config.environment.properties; /opt/php5/bin/phing build.configuration`;
