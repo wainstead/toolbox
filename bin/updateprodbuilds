@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "gallery:"  ; cd /home/swain/public_html/projects/mpa_gallery_prod ; svn update
+echo "cart:"     ; cd /home/swain/public_html/projects/mpa_cart_prod    ; svn update
+echo "products:" ; cd /home/swain/public_html/projects/mpa_products_prod; svn update
+echo "core:"     ; cd /home/swain/public_html/projects/mpa_core_prod    ; svn update 
+
+
