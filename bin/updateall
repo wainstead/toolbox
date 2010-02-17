@@ -8,4 +8,4 @@ echo "static:"   ; cd /home/swain/public_html/projects/mpa_static  ; svn update
 echo "www:"      ; cd /home/swain/public_html/projects/mpa_www     ; svn update
 echo "core:"     ; cd /home/swain/public_html/projects/mpa_core    ; svn update 
 echo "schema:"   ; cd ~/public_html/projects/schema                ; svn update
-
+echo "ofs:"      ; cd /home/swain/public_html/projects/mpa_ofs     ; svn update 
