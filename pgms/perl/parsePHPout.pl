@@ -7,13 +7,14 @@
 use strict;
 use warnings;
 
-chdir '/home/swain/public_html/projects/ampiradev/gallery';
+#chdir '/home/swain/public_html/projects/mpa_gallery/website';
 
+my $inputfile = $ARGV[0];
 my $file;
 
 READFILE: {
     undef $/;
-    open INFILE, "albums.php" or die $!;
+    open INFILE, $inputfile or die "Can't read $inputfile: $!\n";
     $file = <INFILE>;
 }
 
@@ -27,7 +28,7 @@ my @parts = &parse_start($file);
 
 sub parse_start {
     my $code = shift;
-    $code =~ /<\?/ or do { $html{ ++$counter } = $code; return; };
+    $code =~ /<\?php/ or do { $html{ ++$counter } = $code; return; };
     my $chunk = $`;
     $html{ ++$counter } = $chunk;
     my $remainder = $& . $';        #';
@@ -44,10 +45,19 @@ sub parse_to_end {
     &parse_start($remainder);
 }
 
-print "array size: ", scalar(@parts), "\n";
+#print "array size: ", scalar(@parts), "\n";
 print "total chars: ", length(join '', (values(%html), values(%php))), "\n";
+print "html chunks: ", scalar(keys %html), "\n";
 
-open OUTFILE, ">delme.php" or die $!;
+foreach my $key (keys %html) {
+    $html{$key} =~ s/myphotoalbum\.com/<?php echo SERVICE_NAME ?>/g;
+}
+
+# foreach my $key (keys %html) {
+#     $html{$key} =~ s/MyPhotoAlbum/<?php echo \$_SESSION['website']->getCamelCaseCompanyName(); ?>/g; # <?php echo $_SESSION['website']->getCamelCaseCompanyName(); ?>
+# }
+
+open OUTFILE, ">$inputfile" or die "Can't write $inputfile: $!\n";
 
 foreach my $key (sort (keys %html, keys %php) ) {
     if (exists($html{$key})) {

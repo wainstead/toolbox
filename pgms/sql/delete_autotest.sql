@@ -23,11 +23,8 @@ DELETE FROM users                 WHERE userid      = autotest_userid;
 DELETE FROM userinfo              WHERE userid      = autotest_userid;
 DELETE FROM userstats             WHERE userid      = autotest_userid;
 DELETE FROM mpa_club_memberships  WHERE mpa_userid  = autotest_userid;
-DELETE FROM mpa_photos            WHERE subdomain   = 'autotest';
-DELETE FROM mpa_albumitems        WHERE userid      = autotest_userid;
-DELETE FROM mpa_albumitems2       WHERE user_id     = autotest_userid;
-DELETE FROM mpa_albums2           WHERE user_id     = autotest_userid;
-DELETE FROM mpa_points            WHERE username    = 'autotest';
+DELETE FROM mpa_upload_log        WHERE site_id     = autotest_userid;
+DELETE FROM mpa_points            WHERE userid      = autotest_userid;
 DELETE FROM banlist               WHERE username    = 'autotest';
 
 END $$
