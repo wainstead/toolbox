@@ -186,9 +186,9 @@ class Gallery:
         
     def albumProperties(self, album):
         request = {} 
-        request[ 'cmd' ] = 'album-properties'
+        request[ 'cmd' ]              = 'album-properties'
         request[ 'protocol_version' ] = self.protocol_version
-        request[ 'set_albumName' ] = album
+        request[ 'set_albumName' ]    = album
         
         response = self._doRequest( request )
         
@@ -231,24 +231,24 @@ class Gallery:
         
         for x in range( 1, int( response[ 'image_count' ] ) + 1 ):
             image = {}
-            image[ 'name' ]                     = self._get( response, 'image.name.' + str( x ) )
-            image[ 'raw_width' ]                = self._get( response, 'image.raw_width.' + str( x ) )
-            image[ 'raw_height' ]               = self._get( response, 'image.raw_height.' + str( x ) )
-            image[ 'resizedName' ]              = self._get( response, 'image.resizedName.' + str( x ) )
-            image[ 'resized_width' ]            = self._get( response, 'image.resized_width.' + str( x ) )
-            image[ 'resized_height' ]           = self._get( response, 'image.resized_height.' + str( x ) )
-            image[ 'thumbName' ]                = self._get( response, 'image.thumbName.' + str( x ) )
-            image[ 'thumb_width' ]              = self._get( response, 'image.thumb_width.' + str( x ) )
-            image[ 'thumb_height' ]             = self._get( response, 'image.thumb_height.' + str( x ) )
-            image[ 'raw_filesize' ]             = self._get( response, 'image.raw_filesize.' + str( x ) )
-            image[ 'caption' ]                  = self._get( response, 'image.caption.' + str( x ) )
-            image[ 'clicks' ]                   = self._get( response, 'image.clicks.' + str( x ) )
-            image[ 'capturedate.year' ]         = self._get( response, 'image.capturedate.year' + str( x ) )
-            image[ 'capturedate.mon' ]          = self._get( response, 'image.capturedate.mon' + str( x ) )
-            image[ 'capturedate.mday' ]         = self._get( response, 'image.capturedate.mday' + str( x ) )
-            image[ 'capturedate.hours' ]        = self._get( response, 'image.capturedate.hours' + str( x ) )
-            image[ 'capturedate.minutes' ]      = self._get( response, 'image.capturedate.minutes' + str( x ) )
-            image[ 'capturedate.seconds' ]      = self._get( response, 'image.capturedate.seconds' + str( x ) )
+            image[ 'name' ]                     = self._get( response, 'image.name.'                + str( x ) )
+            image[ 'raw_width' ]                = self._get( response, 'image.raw_width.'           + str( x ) )
+            image[ 'raw_height' ]               = self._get( response, 'image.raw_height.'          + str( x ) )
+            image[ 'resizedName' ]              = self._get( response, 'image.resizedName.'         + str( x ) )
+            image[ 'resized_width' ]            = self._get( response, 'image.resized_width.'       + str( x ) )
+            image[ 'resized_height' ]           = self._get( response, 'image.resized_height.'      + str( x ) )
+            image[ 'thumbName' ]                = self._get( response, 'image.thumbName.'           + str( x ) )
+            image[ 'thumb_width' ]              = self._get( response, 'image.thumb_width.'         + str( x ) )
+            image[ 'thumb_height' ]             = self._get( response, 'image.thumb_height.'        + str( x ) )
+            image[ 'raw_filesize' ]             = self._get( response, 'image.raw_filesize.'        + str( x ) )
+            image[ 'caption' ]                  = self._get( response, 'image.caption.'             + str( x ) )
+            image[ 'clicks' ]                   = self._get( response, 'image.clicks.'              + str( x ) )
+            image[ 'capturedate.year' ]         = self._get( response, 'image.capturedate.year'     + str( x ) )
+            image[ 'capturedate.mon' ]          = self._get( response, 'image.capturedate.mon'      + str( x ) )
+            image[ 'capturedate.mday' ]         = self._get( response, 'image.capturedate.mday'     + str( x ) )
+            image[ 'capturedate.hours' ]        = self._get( response, 'image.capturedate.hours'    + str( x ) )
+            image[ 'capturedate.minutes' ]      = self._get( response, 'image.capturedate.minutes'  + str( x ) )
+            image[ 'capturedate.seconds' ]      = self._get( response, 'image.capturedate.seconds'  + str( x ) )
             
             images.append( image )
             
@@ -296,4 +296,6 @@ if __name__ == '__main__':
     gallery.login( 'swain', '112233' )
     gallery.moveAlbum(albumname, newparent)
     
-    
+    gallery.login( 'swain', '112233' )
+    albumdetails = gallery.albumProperties('album58')
+    print "album58 albumProperties: ", albumdetails
