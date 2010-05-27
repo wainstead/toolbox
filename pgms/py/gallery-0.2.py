@@ -309,6 +309,10 @@ if __name__ == '__main__':
     albumdetails = gallery.albumProperties('album58')
     print "album58 albumProperties: ", albumdetails
 
+
+    gallery.login( 'swain', '112233' )
+    images = gallery.fetchAlbumImages('album58')
+
     try:
         gallery.commandUnknownTest()
     except:
