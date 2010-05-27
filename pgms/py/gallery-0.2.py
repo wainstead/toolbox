@@ -257,9 +257,9 @@ class Gallery:
         
     def moveAlbum(self, source, destination):
         request = {} 
-        request[ 'cmd' ] = 'fetch-album-images'
-        request[ 'protocol_version' ] = self.protocol_version
-        request[ 'set_albumName' ] = source
+        request[ 'cmd' ]               = 'move-album'
+        request[ 'protocol_version' ]  = self.protocol_version
+        request[ 'set_albumName' ]     = source
         request[ 'set_destalbumName' ] = destination
         
         response = self._doRequest( request )
@@ -274,18 +274,26 @@ if __name__ == '__main__':
     #print gallery.fetchAlbumImages('temp')
 
     gallery = Gallery( 'http://swain.myphotodevel.com' )
+
     gallery.login( 'swain', '112233' )
+
     albums = gallery.fetchAlbums()
     for a in albums:
         print a['name'],
     print ""
+
     gallery.login( 'swain', '112233' )
     albumname = gallery.newAlbum( 0, None, "Hello, sailor!", "this is my hello sailor album. boy howdy!" )
     print "new album name:", albumname
+
     gallery.login( 'swain', '112233' )
     gallery.addItem( albumname, '/Users/swain/Pictures/greenjessy.png', 'test!' )
     
-    
-    
+    gallery.login( 'swain', '112233' )
+    newparent = gallery.newAlbum( 0, None, "Merry Christmas!", "It's almost July!" )
+    print "new parent album name: ", newparent
+
+    gallery.login( 'swain', '112233' )
+    gallery.moveAlbum(albumname, newparent)
     
     
