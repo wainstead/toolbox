@@ -275,6 +275,11 @@ if __name__ == '__main__':
 
     gallery = Gallery( 'http://swain.myphotodevel.com' )
     gallery.login( 'swain', '112233' )
+    albums = gallery.fetchAlbums()
+    for a in albums:
+        print a['name'],
+    print ""
+    gallery.login( 'swain', '112233' )
     albumname = gallery.newAlbum( 0, None, "Hello, sailor!", "this is my hello sailor album. boy howdy!" )
     print "new album name:", albumname
     gallery.login( 'swain', '112233' )
