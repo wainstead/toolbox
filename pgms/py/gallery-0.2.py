@@ -263,7 +263,16 @@ class Gallery:
         request[ 'set_destalbumName' ] = destination
         
         response = self._doRequest( request )
-        
+
+
+    def commandUnknownTest(self):
+        request = {}
+        request[ 'cmd' ]               = 'bogus-command'
+        request[ 'protocol_version' ]  = self.protocol_version
+        response = self._doRequest( request )
+
+
+
 if __name__ == '__main__':
 
     #gallery = Gallery( 'http://garion.tzo.com/gallery' )
@@ -299,3 +308,9 @@ if __name__ == '__main__':
     gallery.login( 'swain', '112233' )
     albumdetails = gallery.albumProperties('album58')
     print "album58 albumProperties: ", albumdetails
+
+    try:
+        gallery.commandUnknownTest()
+    except:
+        print "The unknown command failed, which was expected."
+    
