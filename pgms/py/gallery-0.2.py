@@ -216,6 +216,19 @@ class Gallery:
         response = self._doRequest( request )
         
         return response[ 'album_name' ]
+
+
+    def deleteAlbum(self, name=None):
+        if name == None:
+            raise "No albumname passed into deleteAlbum."
+
+        request = {} 
+        request[ 'cmd' ] = 'delete-album'
+        request[ 'protocol_version' ] = self.protocol_version
+        request[ 'target_album' ] = name
+        
+        response = self._doRequest( request )
+
         
     def fetchAlbumImages(self, album):
         # Note: Does not support extrafields!
@@ -308,6 +321,12 @@ if __name__ == '__main__':
     gallery.login( 'swain', '112233' )
     albumdetails = gallery.albumProperties('album58')
     print "album58 albumProperties: ", albumdetails
+
+
+#     hick = [69, 71, 74, 94, 147, 149, 151, 155, 159, 271, 273, 275]
+#     for h in hick:
+#         gallery.login( 'swain', '112233' )
+#         images = gallery.deleteAlbum( "album%d" % h)
 
 
     gallery.login( 'swain', '112233' )
