@@ -36,7 +36,7 @@ import string
 import StringIO
 import sys
 
-# this implements the gallery2 protocal
+# this implements the gallery2 protocol
 class Gallery:
     def __init__(self, url):
         self.url = url
@@ -223,13 +223,28 @@ class Gallery:
             raise "No albumname passed into deleteAlbum."
 
         request = {} 
-        request[ 'cmd' ] = 'delete-album'
+        request[ 'cmd' ]              = 'delete-album'
         request[ 'protocol_version' ] = self.protocol_version
-        request[ 'target_album' ] = name
+        request[ 'target_album' ]     = name
         
         response = self._doRequest( request )
 
-        
+
+    def deleteAlbumItem( self, album=None, albumitem=None ):
+        if album == None:
+            raise "No album name passed in"
+        if albumitem == None:
+            raise "No albumitem name passed in"
+
+        request = {}
+        request['cmd']              = 'delete-albumitem'
+        request['protocol_version'] = self.protocol_version
+        request['target_album']     = album
+        request['target_albumitem'] = albumitem
+
+        response = self._doRequest( request )
+
+
     def fetchAlbumImages(self, album):
         # Note: Does not support extrafields!
         request = {} 
@@ -296,94 +311,99 @@ if __name__ == '__main__':
     #print gallery.fetchAlbumImages('temp')
 
     gallery = Gallery( 'http://swainfree.myphotodevel.com' )
-    gallery.login( 'admin', '112233' )
-
-
-
-    albums = gallery.fetchAlbums()
-    if not albums:
-        print "No albums in this site."
-    else:
-        for a in albums:
-            print a['name'],
-        print ""
+#     gallery.login( 'admin', '112233' )
 
 
 
 
-    gallery.login( 'admin', '112233' )
-    albumname = gallery.newAlbum( 0, None, "Hello, sailor!", "this is my hello sailor album. boy howdy!" )
-    print "new album name:", albumname
+    gallery.login('admin', '112233')
+    gallery.deleteAlbumItem('hahaonlyserious', 'nosuchimage')
+
+
+#     albums = gallery.fetchAlbums()
+#     if not albums:
+#         print "No albums in this site."
+#     else:
+#         for a in albums:
+#             print a['name'],
+#         print ""
 
 
 
-    gallery.login( 'admin', '112233' )
-    gallery.addItem( albumname, '/Users/swain/Pictures/greenjessy.png', 'test!' )
+
+#     gallery.login( 'admin', '112233' )
+#     albumname = gallery.newAlbum( 0, None, "Hello, sailor!", "this is my hello sailor album. boy howdy!" )
+#     print "new album name:", albumname
+
+
+
+#     gallery.login( 'admin', '112233' )
+#     gallery.addItem( albumname, '/Users/swain/Pictures/greenjessy.png', 'test!' )
     
 
 
 
 
-    gallery.login( 'admin', '112233' )
-    newparent = gallery.newAlbum( 0, None, "Merry Christmas!", "It's almost July!" )
-    print "new parent album name: ", newparent
+#     gallery.login( 'admin', '112233' )
+#     newparent = gallery.newAlbum( 0, None, "Merry Christmas!", "It's almost July!" )
+#     print "new parent album name: ", newparent
 
 
 
-    gallery.login( 'admin', '112233' )
-    gallery.moveAlbum(albumname, newparent)
+#     gallery.login( 'admin', '112233' )
+#     gallery.moveAlbum(albumname, newparent)
     
 
 
 
-    try:
-        gallery.login( 'admin', '112233' )
-        albumdetails = gallery.albumProperties('album58')
-        print "album58 albumProperties: ", albumdetails
-    except:
-        print "error trying to get properties on album58"
+#     try:
+#         gallery.login( 'admin', '112233' )
+#         albumdetails = gallery.albumProperties('album58')
+#         print "album58 albumProperties: ", albumdetails
+#     except:
+#         print "error trying to get properties on album58"
 
-#     hick = [69, 71, 74, 94, 147, 149, 151, 155, 159, 271, 273, 275]
-#     for h in hick:
-#         gallery.login( 'swain', '112233' )
-#         images = gallery.deleteAlbum( "album%d" % h)
-
-
-
-    gallery.login( 'admin', '112233' )
-    images = gallery.deleteAlbum(newparent)
+# #     hick = [69, 71, 74, 94, 147, 149, 151, 155, 159, 271, 273, 275]
+# #     for h in hick:
+# #         gallery.login( 'swain', '112233' )
+# #         images = gallery.deleteAlbum( "album%d" % h)
 
 
 
-    try:
-        gallery.login( 'admin', '112233' )
-        images = gallery.fetchAlbumImages('album58')
-    except:
-        print "error trying to fetch images for album58"
+#     gallery.login( 'admin', '112233' )
+#     images = gallery.deleteAlbum(newparent)
 
 
 
-    # test giving gallery_remote2 an unknown command
-    try:
-        gallery.commandUnknownTest()
-    except:
-        print "The unknown command failed, which was expected."
+#     try:
+#         gallery.login( 'admin', '112233' )
+#         images = gallery.fetchAlbumImages('album58')
+#     except:
+#         print "error trying to fetch images for album58"
+
+
+
+#     # test giving gallery_remote2 an unknown command
+#     try:
+#         gallery.commandUnknownTest()
+#     except:
+#         print "The unknown command failed, which was expected."
     
 
 
-    # test trying to delete an album that ain't there
-    try:
-        nosuchalbum = 'no_such_album_to_delete_i_guarantee'
-        gallery.login( 'admin', '112233' )
-        gallery.deleteAlbum(nosuchalbum)
-    except:
-        print "Could not delete album %s, as expected" % nosuchalbum
+#     # test trying to delete an album that ain't there
+#     try:
+#         nosuchalbum = 'no_such_album_to_delete_i_guarantee'
+#         gallery.login( 'admin', '112233' )
+#         gallery.deleteAlbum(nosuchalbum)
+#     except:
+#         print "Could not delete album %s, as expected" % nosuchalbum
 
 
 
-    # try deleting an album while not logged in
-    try:
-        swainfree = Gallery('http://swainfree.myphotodevel.com')
-        swainfree.deleteAlbum('album01')
-    except:
-        print "Error trying to delete album01"
+#     # try deleting an album while not logged in
+#     try:
+#         swainfree = Gallery('http://swainfree.myphotodevel.com')
+#         swainfree.deleteAlbum('album01')
+#     except:
+#         print "Error trying to delete album01"
