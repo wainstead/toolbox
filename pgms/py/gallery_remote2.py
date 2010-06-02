@@ -219,8 +219,6 @@ class Gallery:
 
 
     def deleteAlbum(self, name=None):
-        if name == None:
-            raise "No albumname passed into deleteAlbum."
 
         request = {} 
         request[ 'cmd' ]              = 'delete-album'
@@ -230,17 +228,13 @@ class Gallery:
         response = self._doRequest( request )
 
 
-    def deleteAlbumItem( self, album=None, albumitem=None ):
-        if album == None:
-            raise "No album name passed in"
-        if albumitem == None:
-            raise "No albumitem name passed in"
+    def deleteAlbumItem( self, albumname=None, albumitemid=None ):
 
         request = {}
-        request['cmd']              = 'delete-albumitem'
-        request['protocol_version'] = self.protocol_version
-        request['target_album']     = album
-        request['target_albumitem'] = albumitem
+        request['cmd']                 = 'delete-albumitem'
+        request['protocol_version']    = self.protocol_version
+        request['target_album']        = albumname
+        request['target_albumitem_id'] = albumitemid
 
         response = self._doRequest( request )
 
@@ -259,6 +253,7 @@ class Gallery:
         
         for x in range( 1, int( response[ 'image_count' ] ) + 1 ):
             image = {}
+            image[ 'id' ]                       = self._get( response, 'image.id.'                  + str( x ) )
             image[ 'name' ]                     = self._get( response, 'image.name.'                + str( x ) )
             image[ 'raw_width' ]                = self._get( response, 'image.raw_width.'           + str( x ) )
             image[ 'raw_height' ]               = self._get( response, 'image.raw_height.'          + str( x ) )
@@ -281,7 +276,7 @@ class Gallery:
             images.append( image )
             
         return images        
-        
+
         
     def moveAlbum(self, source, destination):
         request = {} 
