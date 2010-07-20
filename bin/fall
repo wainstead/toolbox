@@ -10,17 +10,17 @@ fi
 
 PROJECTDIR=/home/swain/public_html/projects
 
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_gallery    | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_core       | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_cart       | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_products   | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_conf       | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_ofs        | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_www        | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_static     | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_signup     | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_veracity   | egrep -v 'ChangeLog|TAGS'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_crackpages | egrep -v 'ChangeLog|TAGS'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_gallery    | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_core       | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_cart       | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_products   | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_conf       | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_ofs        | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_www        | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_static     | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_signup     | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_veracity   | egrep -v 'ChangeLog|TAGS|templates_c'
+ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_crackpages | egrep -v 'ChangeLog|TAGS|templates_c'
 
 # find -L  $PROJECTDIR/mpa_gallery  -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
 # find -L  $PROJECTDIR/mpa_core     -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
