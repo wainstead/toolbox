@@ -1,0 +1,346 @@
+
+#########################################################################
+090921 Mon 21 Sep 2009 12:49:47 AM EDT
+
+Looking at pro_transaction, this table appears to be analogous to our
+osc_orders.
+
+
+mysql> desc pro_transaction;
++------------------+--------------------------------------+------+-----+-------------------+----------------+
+| Field            | Type                                 | Null | Key | Default           | Extra          |
++------------------+--------------------------------------+------+-----+-------------------+----------------+
+| id               | mediumint(8) unsigned                | NO   | PRI | NULL              | auto_increment | 
+| user_id          | mediumint(8) unsigned                | NO   |     | 0                 |                | 
+| time             | timestamp                            | NO   |     | CURRENT_TIMESTAMP |                | 
+| type             | enum('CreditCard','PayPal')          | NO   |     | CreditCard        |                | 
+| status           | enum('request','confirmed','failed') | NO   |     | request           |                | 
+| log              | text                                 | YES  |     | NULL              |                | 
+| paypal_txn       | varchar(64)                          | YES  | UNI | NULL              |                | 
+| total_amount     | decimal(8,2)                         | NO   |     | 0.00              |                | 
+| shipping_amount  | decimal(8,2)                         | NO   |     | 0.00              |                | 
+| billing_name     | varchar(128)                         | NO   |     |                   |                | 
+| billing_addr1    | varchar(128)                         | NO   |     |                   |                | 
+| billing_addr2    | varchar(128)                         | NO   |     |                   |                | 
+| billing_city     | varchar(128)                         | NO   |     |                   |                | 
+| billing_state    | varchar(128)                         | NO   |     |                   |                | 
+| billing_zip      | varchar(128)                         | NO   |     |                   |                | 
+| billing_country  | varchar(128)                         | NO   |     |                   |                | 
+| shipping_name    | varchar(128)                         | NO   |     |                   |                | 
+| shipping_addr1   | varchar(128)                         | NO   |     |                   |                | 
+| shipping_addr2   | varchar(128)                         | NO   |     |                   |                | 
+| shipping_city    | varchar(128)                         | NO   |     |                   |                | 
+| shipping_state   | varchar(128)                         | NO   |     |                   |                | 
+| shipping_zip     | varchar(128)                         | NO   |     |                   |                | 
+| shipping_country | varchar(128)                         | NO   |     |                   |                | 
+| contact_email    | varchar(200)                         | YES  |     | NULL              |                | 
+| order_status     | varchar(50)                          | YES  |     | NULL              |                | 
++------------------+--------------------------------------+------+-----+-------------------+----------------+
+25 rows in set (0.00 sec)
+
+So perhaps this should be another view. If needed. All I see at the
+"buy" point in the page flow is this:
+
+21 12:13:50 14189 debug     : Anonymous cart transaction
+21 12:13:54 14189 debug     : select photo_id
+                      from pro_transaction, pro_transaction_items, pro_products
+                      where pro_transaction.id = pro_transaction_items.id and product_id = pro_products.id and digital = 1 and
+                      pro_transaction.id = (
+                        select max(pro_transaction.id) as id
+                        from pro_transaction,pro_transaction_items,pro_products
+                        where pro_transaction.id = pro_transaction_items.id and product_id = pro_products.id and
+                        contact_email = 'swain@myphotoalbum.com' and digital=1)
+21 12:13:54 14189 debug     : UPDATE `pro_transaction` SET status='confirmed', shipping_name='Testing Person', shipping_addr1='123 State', shipping_addr2='', shipping_city='New York', shipping_state='NY', shipping_zip='10001', shipping_country='United States' WHERE user_id='0' AND paypal_txn='EC-0EW22068LJ655180B' AND type='PayPal';
+21 12:13:54 14189 debug     : SELECT id FROM `pro_transaction` WHERE user_id='0' AND paypal_txn='EC-0EW22068LJ655180B' AND type='PayPal'
+21 12:13:54 14189 debug     : INSERT INTO `pro_transaction_secure_log` (`id`, `user_id`, `type`, `status`, `paypal_txn`, `total_amount`, `shipping_amount`, `shipping_name`, `shipping_addr1`, `shipping_addr2`, `shipping_city`, `shipping_state`, `shipping_zip`, `shipping_country`) VALUES ('277', '0', 'PayPal', 'confirmed', 'EC-0EW22068LJ655180B', '', '', 'Testing Person', '123 State', '', 'New York', 'NY', '10001', 'United States');
+21 12:13:54 14189 debug     : SELECT id,contact_email,billing_name FROM pro_transaction WHERE user_id='0' AND status='confirmed' AND paypal_txn='EC-0EW22068LJ655180B'
+21 12:13:54 14189 debug     : select photog_id, photog_comm from pro_transaction_items where id = '277'
+21 12:13:54 14189 debug     : select balance from pro_balance where photog_id = '1247'
+21 12:13:54 14189 debug     : update pro_balance set balance=balance+0.07 where photog_id = '1247'
+21 12:13:54 14189 debug     : fetch propertyName: string(5) "debug"
+
+21 12:13:54 14189 debug     : returning: 1
+21 12:13:54 14189 debug     : select distinct photo_id from pro_transaction_items where pro_transaction_items.id = '277'
+21 12:13:54 14189 debug     : select contact_email, shipping_name, shipping_addr1, shipping_addr2, shipping_city, shipping_state, shipping_zip, shipping_country from pro_transaction where id = '277'
+21 12:13:54 14189 debug     : select pro_transaction_items.product_id,
+                       pro_transaction_items.photo_id,
+                       pro_transaction_items.product_total,
+                       pro_transaction_items.qty,
+                       pro_photo_lab_products.lab_sku
+                from   pro_transaction_items,
+                       pro_photo_lab_products,
+                       pro_photo_lab
+                where  pro_transaction_items.id            = '277' and
+                       pro_photo_lab_products.product_id   = pro_transaction_items.product_id and
+                       pro_photo_lab_products.photo_lab_id = pro_photo_lab.id and
+                       pro_photo_lab.class                 = 'EZPrints'
+
+
+I'll take a longer view now. This is an "anonymous purchase," all of
+which it has associated with it is the email address. user_id is zero,
+it seems.
+
+---
+
+
+How to tell what tables are touched by a transaction:
+
+alias schema='/d0/mysql/mpa/bin/mysql -S /tmp/mysql.mpa.sock -uroot INFORMATION_SCHEMA'
+schema -e "SELECT TABLE_NAME, TABLE_ROWS, UPDATE_TIME FROM TABLES WHERE TABLE_SCHEMA='photrade_prod' ORDER BY TABLE_NAME"
+
+
+Here, using the INFORMATION_SCHEMA table of Mysql. Ordering by table
+name is probably the best; your diff comes out more understandable.
+
+After a purchase, diffing the two files from above (buy.before,
+buy.after) we see:
+
+7c7
+< pro_carts                        	125	2009-09-21 16:49:34
+---
+> pro_carts                        	125	2009-09-21 16:53:15
+62c62
+< pro_sessions                     	262304	NULL
+---
+> pro_sessions                     	261707	NULL
+64,65c64,65
+< pro_statistics                   	1510317	2009-09-21 16:15:08
+< pro_statistics_referrer          	2337116	2009-09-21 16:15:08
+---
+> pro_statistics                   	1510317	2009-09-21 16:52:12
+> pro_statistics_referrer          	2337116	2009-09-21 16:52:12
+70c70
+< pro_transaction                  	262	2009-09-21 16:49:34
+---
+> pro_transaction                  	263	2009-09-21 16:53:15
+76,78c76,78
+< pro_transaction_items            	1366	2009-09-21 16:48:54
+< pro_transaction_items_secure_log 	1366	2009-09-21 16:48:54
+< pro_transaction_secure_log       	495	2009-09-21 16:49:34
+---
+> pro_transaction_items            	1367	2009-09-21 16:52:50
+> pro_transaction_items_secure_log 	1367	2009-09-21 16:52:50
+> pro_transaction_secure_log       	497	2009-09-21 16:53:15
+
+I was surprised sessions were touched. Something somewhere must be
+touching it. Nothing in mpa's db.
+
+Odd. The secure_log tables are identical in schema to their
+shorter-named brethren. (This is because they are audit trail logs,
+really).
+
+
+
+
+#########################################################################
+090922 Tue 22 Sep 2009 10:14:34 AM EDT
+
+Well, one difference between, for example, pro_transaction_items and
+pro_transaction_items_secure_log is: the former has indexes, the
+latter does not. So perhaps the latter never see any deletes. Thus
+it's a "log." Are there any triggers or stored procedures?
+
+---
+
+Took a long detour into the INFORMATION_SCHEMA table, and writing Bill
+to check if Photrade's production DB contained any triggers, routines
+or views. Probably not.
+
+---
+
+Good reading in Balance.class.php:
+
+        // Create an initialization request
+        master_query("insert into pro_transaction_withdraw (photog_id, initiated, email, amt, status) values('{$this->userID}', CURRENT_TIMESTAMP, '$email', '$amt', 'Initialized')");
+
+//            case ACK_SUCCESS_WITH_WARNING:
+                master_query("update pro_transaction_withdraw set status = 'Requested' where id = '$withdrawID'");
+                master_query("update pro_balance set balance=balance-$amt where photog_id = '{$this->userID}'");
+
+
+(Interim note: dotPhoto uses ITI: http://www.itinternet.net/. Twice a
+month dotPhoto generates a csv file and FTP's it to ITI).
+
+Thus, the process is:
+
+User goes into their Photrade account; they request payment. This puts
+a row in pro_transaction_withdraw. 
+
+---
+
+Got it: Photrade uses PayPal's SOAP API client library written for
+PHP.
+
+---
+
+Transaction ID: this comes from PayPal, it seems. We get one in their
+SOAP demo files.
+
+Transaction ID:  	1UR72810CR703661D
+Amount: 	USD 1.00
+
+
+Today I leave a little early to get to my diving review class. Jessy
+wanted me to push some fixes out for her but she's taking too long.
+
+
+
+
+#########################################################################
+090923 Wed 23 Sep 2009 09:52:33 AM EDT
+
+Overslept; dialed into the standup at 9:50. Shame.
+
+Spent the morning creating patch files and applying them for Jessy,
+then testing, then bugfixing, finally getting it all out after
+noon. Came back and fixed the error404 bug. It's almost 3pm now.
+
+---
+
+Tracing Photrade's  cart, it looks like nothing is held in a "cart
+table." I suspect it's all in the session.
+
+
+swain@torque:~/public_html/projects/photrade$ diff cart.before cart.added
+swain@torque:~/public_html/projects/photrade$ diff  cart.added cart.emailadded 
+swain@torque:~/public_html/projects/photrade$ diff   cart.emailadded cart.paypalchosen 
+70c70
+< pro_transaction	269	2009-09-22 11:13:24
+---
+> pro_transaction	270	2009-09-23 15:23:56
+76,78c76,78
+< pro_transaction_items	1375	2009-09-22 11:11:53
+< pro_transaction_items_secure_log	1375	2009-09-22 11:11:53
+< pro_transaction_secure_log	508	2009-09-22 11:13:24
+---
+> pro_transaction_items	1376	2009-09-23 15:23:57
+> pro_transaction_items_secure_log	1376	2009-09-23 15:23:57
+> pro_transaction_secure_log	509	2009-09-23 15:23:56
+swain@torque:~/public_html/projects/photrade$ 
+
+Once paypal is chosen, off we go to paypal and something is added to
+the tables. Found this comment in the Sales class:
+
+//we always log everything to the secure_log which is append only... (we should make sure truncate isn't allowed by the dpicture user)
+
+So yeah, the _secure_log tables are just audit trails. Probably not a
+bad idea. We should dump our shopping cart rows to a table when orders
+are placed.
+
+And then:
+
+swain@torque:~/public_html/projects/photrade$ diff cart.paypalchosen cart.returnfrompaypal 
+swain@torque:~/public_html/projects/photrade$ diff cart.returnfrompaypal  cart.ordercomplete 
+5c5
+< pro_balance	27609	2009-09-22 13:34:55
+---
+> pro_balance	27609	2009-09-23 15:25:10
+70c70
+< pro_transaction	270	2009-09-23 15:23:56
+---
+> pro_transaction	270	2009-09-23 15:25:10
+78c78
+< pro_transaction_secure_log	509	2009-09-23 15:23:56
+---
+> pro_transaction_secure_log	510	2009-09-23 15:25:10
+swain@torque:~/public_html/projects/photrade$ 
+
+So... if I create a view for pro_transaction, maybe, and populate an
+actual pro_balance table, we'll be somewhere closer to solving the
+payment issue.
+
+We can pay them via paypal, or later, by the check-sending company
+dotPhoto users. ITI I think.
+
+---
+
+Got derailed by Jessy, because she found Pixenate won't work anymore;
+and that's because it depended on Tim's stuff, and that changed, and
+of course we never test Pixenate. Losing my religion again.
+
+---
+
+Tracking a withdrawal request:
+
+swain@torque:~/public_html/projects/photrade$ diff photog.001notloggedin photog.002_loggedin 
+swain@torque:~/public_html/projects/photrade$ diff photog.002_loggedin photog.003_tomanagemoney 
+swain@torque:~/public_html/projects/photrade$ diff photog.003_tomanagemoney photog.003_withdrawalrequest 
+swain@torque:~/public_html/projects/photrade$ diff photog.003_withdrawalrequest photog.003_confirmwithdrawal 
+5c5
+< pro_balance	27609	2009-09-23 15:25:10
+---
+> pro_balance	27609	2009-09-23 17:35:33
+79c79
+< pro_transaction_withdraw	33	2009-09-22 13:34:55
+---
+> pro_transaction_withdraw	34	2009-09-23 17:35:33
+swain@torque:~/public_html/projects/photrade$ 
+
+
+
+I need to figure out how to put the "pay the user" admin feature into
+test mode.
+
+
+
+#########################################################################
+090925 Fri 25 Sep 2009 09:48:12 AM EDT
+
+Out sick yesterday. St. Monday. Fixed another bug in error404: it
+didn't have a WebSite class in the session so it fatal
+errored. Fataled. FE'd. So I just instantiate one, if there ain't.
+
+Trying to get back into the groove of Photrade again.
+
+---
+
+Jessy Hanley: i need to gake miss who to the veet
+
+---
+
+So, the mystery is solved. PayPal must require a callback URL for
+successful crediting of transactions:
+
+I first acked for all occurances of 'pro_transaction_withdraw', the
+table in question; I found the methods that operate on this table, and
+found 'updateWithdraw' to be the one. Acking for this method led me to
+the curious little file "ipn.php." All it does is receive POST data
+and update the table. So that has to be the thing.
+
+Bingo:
+
+"PayPal receives the MassPay request and returns a response indicating
+success or failure. If PayPal returns a successful response, then
+PayPal processes the payments and, if you have Instant Payment
+Notifications (IPN) enabled, PayPal sends a notification to the Notify
+URL specified in your account profile. If you do not have IPN enabled,
+you can view the details of the MassPay transaction in your PayPal
+account."
+
+---
+
+We can, optionally, just upload a tab delimited file (spec for it is
+on paypal's site) and do the "twice a month" thing. This might be less
+complicated and, I should think, the route they will want to go... and
+will probably deter fraud as well. I don't know how the automatic
+notification is going to work though, in that regard. I still have to
+figure out how to set up a test transaction.
+
+We can receive tab delimited files from PayPal listing the
+transactions, so it would be prudent to periodically match them up
+with our database.
+
+---
+
+Was late to the 2pm conference call with Polaroid. They had an SEO on
+at first, and he explored the possibility of using studio.polaroid.com
+instead; but this is problematic. I think we're still going with
+polaroidstudio.com.
+
+Then was on the phone with Tim about changes to cron jobs and such,
+for the renamed mpa.conf. He and Fernando had a hell of a day
+yesterday fixing pixenate, for which I feel bad.
+
+
+
+
