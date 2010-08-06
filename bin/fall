@@ -19,7 +19,7 @@ ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_ofs        | egrep -v 'Ch
 ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_www        | egrep -v 'ChangeLog|TAGS|templates_c'
 ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_static     | egrep -v 'ChangeLog|TAGS|templates_c'
 ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_signup     | egrep -v 'ChangeLog|TAGS|templates_c'
-ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_veracity   | egrep -v 'ChangeLog|TAGS|templates_c'
+# ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_veracity   | egrep -v 'ChangeLog|TAGS|templates_c'
 ack --nogroup --nocolor --text $2 "$1" $PROJECTDIR/mpa_crackpages | egrep -v 'ChangeLog|TAGS|templates_c'
 
 # find -L  $PROJECTDIR/mpa_gallery  -type f |egrep -v '.svn|jpg$|gif$|png$' | xargs grep -n $1
