@@ -8,7 +8,7 @@ while ($line = <DATA>) {
 }
 print "\n";
 __END__
-mpa_core: R_2010_04_16_no_more_investors_and_navy_tweaks
-mpa_gallery: R_2010_04_16_click_counts_back_and_site_optimization
-mpa_cart: R_2010_02_24_adding_mediatree
-mpa_products: R_2010_03_15_big_product_pop
+mpa_core: R_2010_06_28_secure_login
+mpa_gallery: R_2010_06_28_secure_login
+mpa_cart: R_2010_06_08_stouffers_mediatree_promotion
+mpa_products: R_2010_06_28_secure_login
