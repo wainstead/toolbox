@@ -2,7 +2,7 @@
 print "clearing environment.ini first: ", `if [ -e /opt/mpa_gallery/current/config/environment.ini ]; then rm /opt/mpa_gallery/current/config/environment.ini; fi`;
 print "\n";
 
-foreach $project ( 'core', 'gallery', 'products', 'cart' ) {
+foreach $project ( 'signup', 'www', 'core', 'gallery', 'products', 'cart' ) {
     print "$project: ", `cd /opt/mpa_$project/current      ; svn switch https://svn.myphotoalbum.com/mpa_$project/trunk`;       
 }
 
