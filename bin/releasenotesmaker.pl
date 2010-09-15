@@ -2,14 +2,19 @@
 
 use strict;
 use warnings;
+use lib "$ENV{'HOME'}/svn/lib";
+require "swainlib.pl";
 
 my $svnclient = '/usr/bin/env svn'; # default
 if ( -e '/opt/subversion/bin/svn' ) {
     $svnclient = '/opt/subversion/bin/svn';
 }
 
+print "Querying SVN for the current tags.. this may take a moment...\n";
 
-while ( my $line = <DATA> ) {
+my @tags = get_current_production_tags();
+
+foreach my $line (@tags) {
     chomp $line;
     my ($project, $tag) = split /: +/, $line;
     
@@ -50,11 +55,3 @@ while ( my $line = <DATA> ) {
 
 
 
-# the data below is the output of the script I wrote for production:
-# https://rcs.myphotoalbum.com/viewvc/trunk/bin/fetchreleases.sh?root=swain&view=log
-
-__END__
-mpa_core: R_2010_06_08_stouffers_mediatree_promotion
-mpa_gallery: R_2010_05_18_albumdb_optimization
-mpa_cart: R_2010_06_08_stouffers_mediatree_promotion
-mpa_products: R_2010_06_08_stouffers_mediatree_promotion
