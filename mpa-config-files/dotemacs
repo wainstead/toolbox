@@ -1,0 +1,217 @@
+(load-file "~swain/.elisp/swainlib.el")
+(load-file "~swain/.elisp/mpa.el")
+(load-file "~swain/.elisp/plr.el")
+(load-file "~swain/.elisp/mpa-exec.el")
+
+;; local settings go here
+(when window-system
+  ;; make pretty
+  (setq default-frame-alist '(
+                              ;;(background-color . "#200020")
+                              (background-color . "black")
+                              (foreground-color . "gold")
+                              (cursor-color     . "green"))))
+
+;; use defun globally; setq this in the local .emacs file in your home dir
+;; this needs to change from an alist, to a triplet that includes the command to run.
+;; tail -f `ls -t access_log.*| head -1` is needed on pork.
+(setq sw-tail-file-alist '(
+                           ("apache access log" . "/opt/apache2/logs/access_log")
+                             ("apache error log" . "/opt/apache2/logs/error_log")
+                             ))
+
+
+
+;; this is used in functions like 'mpa-user'. It defaults to
+;; myphotoalbum.com if not set explicitly.
+(setq sw-my-hostname "myphotodevel.com")
+(setq sw-plr-hostname "plrdevel.com")
+
+
+
+
+
+(defun mpa-signup ()
+  "I'm in direct contact with many advanced fun CONCEPTS."
+  (interactive)
+  (switch-to-buffer (get-buffer "www"))
+  (goto-char (point-max))
+  (insert "cd /opt/mpa")
+  (comint-send-input))
+
+
+;; Please come home with me...  I have Tylenol!!
+(defalias 'sw-products 'sw-gifts)
+
+(defun sw-crack ()
+  "I am having a CONCEPTION--"
+  (interactive)
+  (switch-to-buffer (get-buffer "cli"))
+  (goto-char (point-max))
+  (insert "cd /opt/mpa/custom-sites/crack/")
+  (comint-send-input))
+
+
+
+(defun sw-userid ()
+  "I think my CAREER is RUINED!!"
+  (interactive)
+  (insert "142687")
+  )
+
+(put 'narrow-to-region 'disabled nil)
+(transient-mark-mode t)
+
+
+;; the big enchilada
+(defun sw-mpp ()
+  "Are we live or on tape?"
+  (interactive)
+
+  (sw-shell "console")
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/myphotopro")
+  (comint-send-input)
+
+  (sw-shell "mongrel")
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/myphotopro")
+  (comint-send-input)
+
+
+  (sw-shell "cli")
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/myphotopro")
+  (comint-send-input)
+
+  (sw-shell "tail")
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/myphotopro")
+  (comint-send-input)
+
+)
+
+
+(defun mpa-cart ()
+  "..  or were you driving the PONTIAC that HONKED at me in MIAMI last Tuesday?"
+  (interactive)
+  (switch-to-buffer (get-buffer "www"))
+  (goto-char (point-max))
+  (insert "cd /opt/mpa_cart/current/")
+  (comint-send-input))
+
+(defun sw-static ()
+  "Eisenhower!!  Your mimeograph machine upsets my stomach!!"
+  (interactive)
+  (switch-to-buffer (get-buffer "cli"))
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/mpa_static")
+  (comint-send-input))
+
+(defun sw-core ()
+  "I'm using my X-RAY VISION to obtain a rare glimpse of the
+ INNER WORKINGS of this POTATO!!"
+  (interactive)
+  (switch-to-buffer (get-buffer "cli"))
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/mpa_core")
+  (comint-send-input))
+
+
+(defun sw-conf ()
+  "Is this an out-take from the ``BRADY BUNCH''?"
+  (interactive)
+  (switch-to-buffer (get-buffer "cli"))
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/mpa_conf")
+  (comint-send-input))
+
+
+(defun mpa-core ()
+  "I demand IMPUNITY!"
+  (interactive)
+  (switch-to-buffer (get-buffer "www"))
+  (goto-char (point-max))
+  (insert "cd /d0/mpa_core/current")
+  (comint-send-input))
+
+(defun mpa-static ()
+  "Eisenhower!!  Your mimeograph machine upsets my stomach!!"
+  (interactive)
+  (switch-to-buffer (get-buffer "www"))
+  (goto-char (point-max))
+  (insert "cd /opt/mpa_static/current/")
+  (comint-send-input))
+
+(defun mpa-gifts ()
+  "I'm changing the CHANNEL..  But all I get is commercials
+ for ``RONCO MIRACLE BAMBOO STEAMERS''!"
+  (interactive)
+  (switch-to-buffer (get-buffer "www"))
+  (goto-char (point-max))
+  (insert "cd /opt/mpa_products/current/")
+  (comint-send-input))
+
+(defalias 'mpa-products 'mpa-gifts)
+
+(defun mpa-www ()
+  "...I think I'm having an overnight sensation right now!!"
+  (interactive)
+  (switch-to-buffer (get-buffer "www"))
+  (goto-char (point-max))
+  (insert "cd /opt/mpa_www/current/")
+  (comint-send-input))
+
+
+(defun sw-mpawww ()
+  "HERE!!  Put THIS on!!  I'm in CHARGE!!"
+  (interactive)
+  (switch-to-buffer (get-buffer "cli"))
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/mpa_www")
+  (comint-send-input))
+
+(defun sw-whitebox ()
+  "Are BOTH T.V.S on??"
+  (interactive)
+  (switch-to-buffer (get-buffer "cli"))
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/whitebox.mpa")
+  (comint-send-input))
+
+(defun sw-photrade ()
+  "I have accepted Provolone into my life!"
+  (interactive)
+  (switch-to-buffer (get-buffer "cli"))
+  (goto-char (point-max))
+  (insert "cd /home/swain/public_html/projects/photrade")
+  (comint-send-input))
+
+
+(fset 'mpa-format
+   [?\C-x ?h ?\M-x ?u ?n ?t ?a ?b ?i ?f ?y return ?\M-x ?s backspace ?c ?  ?s ?e ?t ?  ?s ?t ?y ?l ?e return ?c ?c ?- ?m ?o ?d ?e return ?\C-\M-\\])
+(fset 'gallify
+   [backspace ?\" ?{ ?$ ?G ?A ?L ?L ?E ?R ?Y ?_ ?B ?A ?S ?E ?D ?I ?R ?} ?\C-E ?\C-R ?' ?\C-m ?\C-D ?\"])
+
+
+;; hmm. seems to work. not sure.
+(defun sw-php-mode-hook ()
+  (c-set-style "k&r"))
+(add-hook 'php-mode-hook 'sw-php-mode-hook)
+
+
+;;(define-key 2C-command "u" 'sw-update-builds)
+;;(define-key ctl-x-map "9" 'sw-update-builds)
+;;(autoload 'geben "geben" "PHP Debugger on Emacs" t)
+
+
+(defun sw-setheightwidth ()
+"set the HxW of my main work frame"
+(interactive)
+    (set-frame-width nil 190)
+    (set-frame-height nil 84)
+)
+
+
+;; useful for using emacs on torque in a xterm
+(global-set-key "\M-\C-h" 'backward-kill-word)

@@ -1,0 +1,16 @@
+# .bashrc
+
+# User specific aliases and functions
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+
+alias ls='ls -F --color=auto'
+
+# print out the perl module version
+function pmver () { perl -M$1 -le "print $1->VERSION"; }
+
+source ~/.aliases

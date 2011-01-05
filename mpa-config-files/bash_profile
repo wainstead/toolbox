@@ -1,0 +1,25 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+unset USERNAME
+export PS1='[\h \W]\$ '
+export PATH=$PATH:$HOME/bin:.:$HOME/svn/bin:/opt/mpa/sbin
+export CVS_RSH=ssh
+export CVSROOT=10.1.1.50:/opt/cvs
+alias clock='xclock -digital -update 1 -fg white -bg "#330033"'
+alias label='cat /etc/motd'
+umask 022
+
+# Environment variables for pixami software -CF
+export JAVA_HOME=/opt/jdk
+export CATALINA_HOME=/opt/tomcat
+export CLASSPATH=/opt/tomcat/webapps
+export SSMPATH=/opt/pixami/lib/pegasus
+
+

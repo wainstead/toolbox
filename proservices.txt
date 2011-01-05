@@ -180,22 +180,11 @@ Transaction ID:  	1UR72810CR703661D
 Amount: 	USD 1.00
 
 
-Today I leave a little early to get to my diving review class. Jessy
-wanted me to push some fixes out for her but she's taking too long.
-
-
 
 
 #########################################################################
 090923 Wed 23 Sep 2009 09:52:33 AM EDT
 
-Overslept; dialed into the standup at 9:50. Shame.
-
-Spent the morning creating patch files and applying them for Jessy,
-then testing, then bugfixing, finally getting it all out after
-noon. Came back and fixed the error404 bug. It's almost 3pm now.
-
----
 
 Tracing Photrade's  cart, it looks like nothing is held in a "cart
 table." I suspect it's all in the session.
@@ -254,12 +243,6 @@ dotPhoto users. ITI I think.
 
 ---
 
-Got derailed by Jessy, because she found Pixenate won't work anymore;
-and that's because it depended on Tim's stuff, and that changed, and
-of course we never test Pixenate. Losing my religion again.
-
----
-
 Tracking a withdrawal request:
 
 swain@torque:~/public_html/projects/photrade$ diff photog.001notloggedin photog.002_loggedin 
@@ -286,17 +269,6 @@ test mode.
 #########################################################################
 090925 Fri 25 Sep 2009 09:48:12 AM EDT
 
-Out sick yesterday. St. Monday. Fixed another bug in error404: it
-didn't have a WebSite class in the session so it fatal
-errored. Fataled. FE'd. So I just instantiate one, if there ain't.
-
-Trying to get back into the groove of Photrade again.
-
----
-
-Jessy Hanley: i need to gake miss who to the veet
-
----
 
 So, the mystery is solved. PayPal must require a callback URL for
 successful crediting of transactions:
@@ -332,15 +304,12 @@ with our database.
 
 ---
 
-Was late to the 2pm conference call with Polaroid. They had an SEO on
-at first, and he explored the possibility of using studio.polaroid.com
-instead; but this is problematic. I think we're still going with
-polaroidstudio.com.
-
-Then was on the phone with Tim about changes to cron jobs and such,
-for the renamed mpa.conf. He and Fernando had a hell of a day
-yesterday fixing pixenate, for which I feel bad.
 
 
 
+#########################################################################
+100727 Tue 27 Jul 2010 11:59:33 AM EDT
 
+This file can be the basis for a TODO list for pro services
+photographer payment. Again, the sandbox is everything for the first
+iteration.
