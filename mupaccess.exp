@@ -1,0 +1,20 @@
+#!/usr/bin/expect
+
+set timeout 25
+
+set machine [lindex $argv 0]
+set muppattern [lindex $argv 1]
+set logpattern [lindex $argv 2]
+puts "Using machine $machine $muppattern"
+spawn /usr/bin/ssh bastion.myphotoalbum.com
+expect "GENERIC"
+
+send "ssh $machine\r"
+expect "$muppattern"
+send "cd /opt/apache2/logs\r"
+expect "logs"
+send "tail -f `ls -tr *access* | tail -1` | grep $logpattern \r"
+
+interact
+puts "mup.exp done."
+
