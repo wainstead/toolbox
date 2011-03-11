@@ -16,13 +16,19 @@
 
 import java.io.*;
 import java.util.regex.*;
+import java.util.HashMap;
 
 public class UsrShareDict {
 
     public static void main(String argv[]) {
 
+        // this value comes from doing:
+        // wc -l /usr/share/dict/words
+        final int number_of_words = 234936;
+
         FileReader dict;
         String pattern = "^[a-z]{5,6}$";
+        HashMap hash   = new HashMap(number_of_words);
 
         try {
 
