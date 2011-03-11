@@ -26,8 +26,8 @@ public class UrlTest {
         }
         */
         try {
-            URL yahoo = new URL("http://www.yahoo.com/");
-            URLConnection yc = yahoo.openConnection();
+            URL google = new URL("http://www.google.com/");
+            URLConnection yc = google.openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
             String inputLine;
 
