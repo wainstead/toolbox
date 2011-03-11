@@ -1,27 +1,40 @@
-// $Id: UrlTest.java,v 1.1 2008/02/20 19:47:51 swain Exp $
-// testbed for the URL class
+// testbed for reading files
 
-import java.net.*;
 import java.io.*;
-import java.lang.*;
-import java.util.*;
+import java.util.regex.*;
 
 public class UsrShareDict {
 
     public static void main(String argv[]) {
-        try {
-            URL google = new URL("http://www.google.com/");
-            URLConnection yc = google.openConnection();
-            BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
-            String inputLine;
 
-            while ((inputLine = in.readLine()) != null) 
-                System.out.println(inputLine);
+        FileReader dict;
+        String pattern = "^[a-z]{5,6}$";
+
+        try {
+
+            Pattern p = Pattern.compile(pattern);
+
+
+            FileInputStream fstream = new FileInputStream("/usr/share/dict/words");
+            DataInputStream in      = new DataInputStream(fstream);
+            BufferedReader br       = new BufferedReader(new InputStreamReader(in));
+
+            String strLine;
+
+            while ((strLine = br.readLine()) != null) {
+                // Print the content on the console
+                if ( p.matcher(strLine).lookingAt() ) { 
+                    System.out.println (strLine);
+                }
+            }
+
             in.close();
+
         } catch (Exception e) {
             System.out.println("oops, boo hoo.");
             e.printStackTrace();
         }
+
 
     }
 }
