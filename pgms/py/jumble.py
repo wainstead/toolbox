@@ -10,12 +10,13 @@ if len(sys.argv) != 2:
 swlist = list(sys.argv[1].lower())
 swlist.sort()
 sortedsearchword = "".join(swlist)
+wantedlength = len(sortedsearchword)
 
 dict_file = open('/usr/share/dict/words')
 try:
     for word in dict_file:
         word = word.rstrip()
-        if len(word) == 7:
+        if len(word) == wantedlength:
             wordlist = list(word.lower())
             wordlist.sort()
             sortedword = "".join(wordlist)
