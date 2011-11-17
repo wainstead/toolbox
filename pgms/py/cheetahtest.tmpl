@@ -1,0 +1,16 @@
+#set message = "Hello, sailor!"
+
+<h3>$message</h3>
+<h2>$myfunc()</h2>
+<h3>$myrecursion(5)</h3>
+
+#def myfunc()
+Hello, Jason! #slurp ## slurp removes the trailing newline
+#end def
+
+#def myrecursion(oops)
+  #if oops == 0:
+     #return []
+  #end if
+  #return [oops] + self.myrecursion(oops - 1)
+#end def
