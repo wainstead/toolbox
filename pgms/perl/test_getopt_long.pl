@@ -1,8 +1,9 @@
 #!/usr/bin/env perl
 
-use Getopt::Long;
 
-my $path = '/Users/swain/git/pippin/sites/nfmc-reporting/mods/nfmcreporting/';
+my $reportspath = '/Users/swain/git/pippin/sites/nfmc-reporting/mods/nfmcreporting/';
+
+use Getopt::Long;
 
 my $force  = '';
 my $target = '';
@@ -14,7 +15,7 @@ my $result = GetOptions("target=s" => \$target,
     );
 
 
-$reportfile = "$path$report";
+$reportfile = "$reportspath$report";
 usage("No such report file: '$reportfile'") if (! -e $reportfile);
 usage("You must specify the --target") if (! $target);
 usage("Invalid target: '$target'") unless ($target =~ /scratch|report/);
