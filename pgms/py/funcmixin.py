@@ -9,7 +9,7 @@ class SomeParentClass(object):
 	class to extend this class.
 
 	"""
-	def hooha(self):
+	def ima_method(self):
 		print "I am a perfect picture of a perfect major-general."
 
 class EmptyMixin(object):
@@ -30,6 +30,9 @@ def make_class(x, y, MyMixinClass=EmptyMixin):
 	Use variables passed in, in the construction of the class. Like a
 	closure.
 
+	Note this returns a *class* and not an *instance*, unlike most
+	factory functions.
+
 	"""
 
 	class Foo(SomeParentClass, MyMixinClass):
@@ -44,12 +47,19 @@ def make_class(x, y, MyMixinClass=EmptyMixin):
 	return Foo
 
 class Mixin(EmptyMixin):
-	WEEBLAM = 'need a date?'
+	"""
+	Subclass EmptyMixin and override the class field.
 
-MyFoo = make_class("hello", "sailor", MyMixinClass=Mixin)
+	This will be passed into our factory function; the returned
+	subclass from the factory function will mix in this class.
+
+	"""
+	WEEBLAM = "how's tricks?"
+
+MyFoo = make_class("Hello", "world", MyMixinClass=Mixin)
 foo = MyFoo()
 foo.printsomething()
 
-NextFoo = make_class("Sir Richard", "Humpaloaf")
+NextFoo = make_class("Sir Richard", "III")
 nfoo = NextFoo()
 nfoo.printsomething()
