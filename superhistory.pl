@@ -1,6 +1,4 @@
-#!/usr/bin/perl
-
-# $Id: superhistory.pl,v 1.4 2005/01/31 23:46:39 swain Exp $
+#!/usr/bin/env perl
 
 # keep a history of all commands.
 # March 2003, Steve Wainstead
