@@ -17,7 +17,7 @@ my $result = GetOptions("target=s" => \$target,
 
 $reportfile = "$reportspath$report";
 usage("No such report file: '$reportfile'") if (! -e $reportfile);
-usage("You must specify the --target") if (! $target);
+usage("You must specify the --target") unless ($target);
 usage("Invalid target: '$target'") unless ($target =~ /scratch|report/);
 print "$target $force $reportfile\n";
 
