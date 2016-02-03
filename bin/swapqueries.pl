@@ -7,9 +7,15 @@ use Getopt::Long;
 $scratchfile = '/Users/swain/sql/input.sql';
 $reportspath = '/Users/swain/git/pippin/sites/nfmc-reporting/mods/nfmcreporting/';
 
+# In the script you're editing, your SQL query should begin and end
+# with these comment lines. They tell this Perl script where the query
+# stops and starts.
 $STARTREGEXP = qr'-- swain start query';
 $ENDREGEXP   = qr'-- swain end query';
 
+# Log all changes we make. If we accidentally use --force going from
+# one file to another and overwrite new code, we'll have the new code
+# recorded somewhere.
 $logfile = '/Users/swain/tmp/querylog';
 
 $force  = '';
@@ -57,7 +63,8 @@ if (not $force) {
 }
 
 # This logs the target's query, which will be otherwise lost in a
-# moment...
+# moment... I suppose that's a "side effect" and we should do it more
+# explicitly...
 parse_out_query($target);
 
 @sourcequery = parse_out_query($source);
