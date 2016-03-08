@@ -1,5 +1,11 @@
 #!/usr/bin/env perl
 
+# todo: add a feature that diffs the queries from input.sql and
+# nfmc_reports.py (or whatever the user chose for scratch and report
+# files); and show the timestamps on those files, and maybe the latest
+# git log entry for the report file. Reason: I haven't used this in a
+# week or two and I don't recall which is newer.
+
 use Getopt::Long;
 
 # assumption: the scratch file is always
