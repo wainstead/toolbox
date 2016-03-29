@@ -17,11 +17,11 @@ proc remove_spid { spid } {
 
 set spawn_ids ""
 
-spawn talker.pl 3 foo
+spawn ./talker.pl 3 foo
 lappend spawn_ids $spawn_id
-spawn talker.pl 4 blee
+spawn ./talker.pl 4 blee
 lappend spawn_ids $spawn_id
-spawn talker.pl 2 blammo
+spawn ./talker.pl 2 blammo
 lappend spawn_ids $spawn_id
 
 expect {
