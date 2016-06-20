@@ -42,7 +42,7 @@ foreach $jumble (@ARGV) {
 }
 
 sub alphagram {
-    # Split a word into an  array, sort the array asciibetically, then
+    # Split a word into an array, sort the array alphabetically, then
     # join that sorted array into a string and return it.
     my $word = shift;
     return join('', sort(split('', $word)))
