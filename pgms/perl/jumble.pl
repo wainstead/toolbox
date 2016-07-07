@@ -54,6 +54,37 @@ sub checklength {
     return (length($candidate) == 5 or length($candidate) == 6);
 }
 
+=pod
+
+Here's how to winnow out the dictionary:
+
+while (<DATA>) {
+    chomp;
+    my @words = split / /;
+    foreach $word (@words) {
+        $jumbledict{alphagram($word)} = $word;
+        $countdict{alphagram($word)}++;
+    }
+}
+
+print "Length of dictionary: ", scalar(keys %jumbledict), "\n";
+
+foreach $alphagram (keys %jumbledict) {
+    if ($countdict{$alphagram} != 1) {
+        delete($jumbledict{$alphagram});
+    }
+}
+
+print "Length of dictionary: ", scalar(keys %jumbledict), "\n";
+
+But this only yields:
+
+Length of dictionary: 18848
+Length of dictionary: 14920
+
+which isn't much of a reduction.
+
+=cut
 
 # Full credit to www.poslarchive.com for lists of five and six letter
 # words for Scrabble usage. The Unix 'words' dictionary has some
