@@ -25,6 +25,10 @@ while (<DATA>) {
     # alphagrams that have a single word associated with them. That
     # means preprocessing our data from the DATA filehandle and saving
     # it to this script, which frankly should be trivial to do.
+
+    # Update, Oct 30 2016: "lately" and "lealty" are in our tables,
+    # and Jumble uses "lately." This program should print out all
+    # matches, not the "last one wins."
     foreach $word (@words) {
         $dict{alphagram($word)} = $word;
     }
