@@ -11,26 +11,18 @@ EOLN
 my %dict;
 
 # Build an alphagram dictionary, such that:
-# innoo => onion
+# key 'innoo' => ['onion']
+# key 'abdeo' => ['adobe', 'abode']
 while (<DATA>) {
     chomp;
     my @words = split / /;
-    # Bug: some words have the same alphagram. For example: adobe and
-    # abode have the alphagram abdeo. Jumble cannot use words that
-    # share an alphagram, else people will arrive at solutions that
-    # are correct but break the Jumble puzzle. Here, words with
-    # duplicate alphagrams simply overwrite each other. The input from
-    # the user will never access those alphagram keys, though. The
-    # correct thing to do is winnow our list of words to only those
-    # alphagrams that have a single word associated with them. That
-    # means preprocessing our data from the DATA filehandle and saving
-    # it to this script, which frankly should be trivial to do.
-
-    # Update, Oct 30 2016: "lately" and "lealty" are in our tables,
-    # and Jumble uses "lately." This program should print out all
-    # matches, not the "last one wins."
     foreach $word (@words) {
-        $dict{alphagram($word)} = $word;
+	my $alphagram = alphagram($word);
+	# Some words match the same alphagram; for example, adobe and
+	# abode. So we build a list of matches. The Scrabble list
+	# contains uncommon words too, like "mither" (same alphagram
+	# as "hermit," and Jumble uses the word "hermit").
+        push @{$dict{$alphagram}}, $word;
     }
 }
 
@@ -38,11 +30,11 @@ foreach $jumble (@ARGV) {
     if (not checklength($jumble)) {
         die "Not the right length (did you mistype the jumble? '$jumble'\n"
     }
-    my $solution = $dict{alphagram($jumble)};
-    if (not $solution) {
-        $solution = "not found";
+    my $solutions = $dict{alphagram($jumble)};
+    if (not scalar(@{$solutions})) {
+        $solution = "'$jumble' not found";
     }
-    print "$jumble: $solution\n";
+    print "$jumble: " . join(", ", @{$solutions}) . "\n";
 }
 
 sub alphagram {
@@ -57,38 +49,6 @@ sub checklength {
     my $candidate = shift;
     return (length($candidate) == 5 or length($candidate) == 6);
 }
-
-=pod
-
-Here's how to winnow out the dictionary:
-
-while (<DATA>) {
-    chomp;
-    my @words = split / /;
-    foreach $word (@words) {
-        $jumbledict{alphagram($word)} = $word;
-        $countdict{alphagram($word)}++;
-    }
-}
-
-print "Length of dictionary: ", scalar(keys %jumbledict), "\n";
-
-foreach $alphagram (keys %jumbledict) {
-    if ($countdict{$alphagram} != 1) {
-        delete($jumbledict{$alphagram});
-    }
-}
-
-print "Length of dictionary: ", scalar(keys %jumbledict), "\n";
-
-But this only yields:
-
-Length of dictionary: 18848
-Length of dictionary: 14920
-
-which isn't much of a reduction.
-
-=cut
 
 # Full credit to www.poslarchive.com for lists of five and six letter
 # words for Scrabble usage. The Unix 'words' dictionary has some
