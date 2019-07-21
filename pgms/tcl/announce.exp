@@ -1,0 +1,11 @@
+#!/usr/bin/expect
+
+# Demo of sending notifications and audio messages from Expect on macos
+
+spawn sleep 3
+expect {
+    eof {
+	exec osascript -e {display notification "hello sailor" with title "Solicitation"}
+	exec say "hello world"
+    }
+}
