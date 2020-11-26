@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require 'byebug'
 
 BEGIN {
   puts "I begin!"
@@ -33,11 +34,13 @@ if defined? hello then puts "yes" else "no" end
 
 hello
 
-# do
-#   throw "Sailor boy"
-# catch:
-#   puts "I caught it"
-# end
+begin
+  raise "Sailor boy"
+rescue Exception => ex
+  puts "I caught me a: #{ex}"
+ensure
+  puts "End of begin/end block with raise/rescue/ensure"
+end
 
 puts "hello sailor if true" if true
 
@@ -75,9 +78,9 @@ rescue StandardError
 ensure
   puts "Insured."
 end
-    
+byebug
 mystr = "This is a string that is mine and is a string"
-/mine/ =~ mystr
+saywhat = /(mi)(ne)/ =~ mystr
 mat = mystr.match(/that is/)
 puts "match before: #{$`}"
 puts "match after: #{$'}"
