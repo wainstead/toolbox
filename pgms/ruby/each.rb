@@ -24,17 +24,23 @@ def valleys(steps, trek)
   trek.each_char do |step|
     if step == 'U'
       change = 1
-    else
+    elsif step == 'D'
       change = -1
+    else
+      puts "elevation at the blank: #{elevation}"
+      next
     end
+
     if elevation == 0 and change == -1
       valleys += 1
     end
+    elevation += change
   end
+  puts "final elevation: #{elevation}"
   valleys
 end
 
-trek = 'UDDDUDUU'
+trek = 'UD DDUDUU DDUU DU DU'
 steps = 8
 
-valleys(steps, trek)
+puts "We stepped into #{valleys(steps, trek)} valleys"
