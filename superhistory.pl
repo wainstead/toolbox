@@ -3,6 +3,10 @@
 # keep a history of all commands.
 # March 2003, Steve Wainstead
 
+
+# Note: we can just use Bash for this:
+# { cat ~/.bash_history && cat ~/.superhistory; } | sort -u > ~/.superhistory
+
 # file where we keep all of history
 
 my $sh_file = "$ENV{'HOME'}/.superhistory";

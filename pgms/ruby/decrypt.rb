@@ -11,7 +11,6 @@ encrypted_string = File.read("message")
 private_key =
 OpenSSL::PKey::RSA.new(File.read(private_key_file),password)
 
-string =
-private_key.private_decrypt(Base64.decode64(encrypted_string))
+string = private_key.private_decrypt(Base64.decode64(encrypted_string))
 
 print string, "\n"

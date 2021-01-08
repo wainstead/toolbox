@@ -72,12 +72,14 @@ begin
 
 rescue StandardError
   puts "Caught it"
+else
+  puts "No errors."
 ensure
   puts "Insured."
 end
     
 mystr = "This is a string that is mine and is a string"
-/mine/ =~ mystr
+#/mine/ =~ mystr
 mat = mystr.match(/that is/)
 puts "match before: #{$`}"
 puts "match after: #{$'}"

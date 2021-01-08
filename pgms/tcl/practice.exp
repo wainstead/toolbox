@@ -1,0 +1,23 @@
+#!/usr/bin/expect
+
+set timeout 3
+
+expect {
+    "hi" {
+        send "You said hi\n"
+        exp_continue
+    }
+    "hello" {
+        send "Hello yourself\n"
+        exp_continue
+    }
+    "bye" {
+        send "That was unexpected\n"
+    }
+    timeout {
+	send "you timed out\n"
+    }
+    eof {
+	send "I got EOF\n"
+    }
+}
