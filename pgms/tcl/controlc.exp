@@ -1,0 +1,17 @@
+#!/usr/bin/expect
+
+# define control-c
+set controlC \x03
+set timeout 3
+
+spawn cat
+expect {
+    timeout {
+	puts "I got the timeout as expected; sending control c..."
+	send $controlC
+	expect {
+	    eof {puts "It quit!"}
+	    timeout {puts "I timed out, it did not quit!"}
+	}
+    }
+}

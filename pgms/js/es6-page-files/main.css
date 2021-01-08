@@ -41,3 +41,17 @@ hr {
     height: 5px;
     color: red;
 }
+
+/* A pseudo selector. */
+p:hover {
+    color: red;
+}
+
+/* Two classes to be combined for one element */
+.firstclass {
+    text-align: right;
+    font-weight: bold;    
+}
+.secondclass {
+    color: purple;
+}

@@ -7,7 +7,7 @@ set timeout 5
 # spawned; that is, $spawn_id is $user_spawn_id, so to speak.
 
 expect {
-    -i timeout {
+    timeout {
         puts "Timed out, sucka!"
         exp_continue
     }
