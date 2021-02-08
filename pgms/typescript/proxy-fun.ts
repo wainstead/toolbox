@@ -1,6 +1,28 @@
 const axios = require('axios')
 
-const payload = JSON.parse(`{
+type NullableString = string | null | undefined
+
+type SignalFXDimensions = {
+  sre_part_of: NullableString
+  sre_environment: NullableString
+  sre_group: NullableString
+  sre_tier: NullableString
+  sre_appteam: NullableString
+  sre_site: NullableString
+  state: NullableString
+}
+
+type SignalFXMetric = {
+  metric: string
+  dimensions: SignalFXDimensions
+  value: number
+}
+
+type SignalFXPayload = {
+  gauge: SignalFXMetric[]
+}
+
+const payload: SignalFXPayload = JSON.parse(`{
 	"gauge": [
 		{
 			"metric": "environment.live",
