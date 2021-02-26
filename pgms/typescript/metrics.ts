@@ -18,6 +18,8 @@ for (let x = 0; x < 100; x++) {
     client.increment('diligent_hs_counter');
 }
 
+const x = 1, y = 2
+console.log(x)
 client.gauge('diligent_test_gauge', 123.45)
 
 console.log("End of line.")
