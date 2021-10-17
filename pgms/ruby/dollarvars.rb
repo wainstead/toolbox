@@ -75,11 +75,16 @@ begin
 
 rescue StandardError
   puts "Caught it"
+else
+  puts "No errors."
 ensure
   puts "Insured."
 end
 byebug
 mystr = "This is a string that is mine and is a string"
+
+#/mine/ =~ mystr
+
 saywhat = /(mi)(ne)/ =~ mystr
 mat = mystr.match(/that is/)
 puts "match before: #{$`}"
