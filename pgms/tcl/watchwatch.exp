@@ -1,0 +1,12 @@
+#!/usr/bin/expect
+puts "Hello sailor!"
+spawn watch ls
+set watch_sid $spawn_id
+set timeout -1 ;# watch forever
+puts "Watching for the exit file (run 'touch exit' to cause me to quit)..."
+expect -i $watch_sid {
+    "exit" {
+	puts "Saw the exit file."
+	exit 0
+    }
+}

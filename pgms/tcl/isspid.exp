@@ -1,0 +1,8 @@
+#!/usr/bin/expect
+
+set ppid [spawn sleep 3]
+puts "$ppid $spawn_id"
+# nope. it returns the process id.
+lassign [wait] pid spawnid os_error_flag exit_value
+puts "return values were pid:$pid spawn_id:$spawnid os_error_flag:$os_error_flag exit_value:$exit_value"
+

@@ -1,0 +1,28 @@
+#!/usr/bin/expect
+
+set timeout -1
+
+send_user "ready...\n"
+
+expect_user {
+    -gl "noob" {
+	send_user "you said noob\n"
+	exp_continue
+    }
+    -re "foo\[a-z]+" {
+	send_user "we saw the foo...\n"
+	exp_continue
+    }
+    -re "exit|quit" {
+	send_user "You asked me to quit\n"
+	exit
+    }
+    eof {
+	#puts "You asked me to quit\n"
+	exit
+    }
+    timeout {
+	send_user "I timed out\n"
+	exit
+    }
+}

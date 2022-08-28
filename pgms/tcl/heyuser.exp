@@ -1,0 +1,39 @@
+#!/usr/bin/expect
+
+spawn top
+set top_spawn_id $spawn_id
+send_user "Hello, sailor. Need a date?\n"
+set timeout 3
+
+expect_user {
+    timeout {
+	send_user "Still waiting for an answer.\n"
+	exp_continue
+    }
+    -gl "yes" {
+	send_user "I 'expect' to be paid then!\n"
+    }
+    -gl "no" {
+	send_user "Fine, run home to your momma, little boy!\n"
+    }
+    -re "foo\\s+([\a-z ]+)" {
+	puts "You foo-typed: '$expect_out(0,string)'"
+	puts "First match: '$expect_out(1,string)'"
+	exp_continue
+    }
+
+}
+
+send 'q'
+expect {
+    eof {send_user "program terminated correctly\n"}
+    timeout {send_user "you lose, ex-lax\n"}
+}
+
+lassign [wait] pid spawnid os_error_flag exit_value
+if {$os_error_flag == 0} {
+    puts "exit status: $exit_value"
+} else {
+    puts "errno: $exit_value"
+}
+puts "return values were pid:$pid spawn_id:$spawnid os_error_flag:$os_error_flag exit_value:$exit_value"

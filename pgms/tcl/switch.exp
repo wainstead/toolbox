@@ -1,0 +1,34 @@
+#!/usr/bin/expect
+
+switch -glob p {
+    a -
+    q -
+    j -
+    b {
+        # Correct Comment Placement
+        expr {1}
+	puts 1
+    }
+    c {
+        expr {2}
+	puts 2
+    }
+    u -
+    p -
+    default {
+        expr {3}
+	puts 3
+    }
+}
+
+#set bar abbbcbbc
+set bar deefgggggggh
+switch -regexp -matchvar foo -- $bar {
+    a(b*)c {
+        puts "Found [string length [lindex $foo 1]] 'b's"
+    }
+    d(e*)f(g*)h {
+        puts "Found [string length [lindex $foo 1]] 'e's and\
+                [string length [lindex $foo 2]] 'g's"
+    }
+}

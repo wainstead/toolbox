@@ -1,0 +1,21 @@
+#!/usr/bin/expect
+
+spawn sleep 15
+set spid $spawn_id
+expect_background -i $spid {
+    eof {puts "It exited"}
+    ;# no such thing as timeout for background'd expect commands
+    ;# also 'default' is ignored
+    ;# timeout "Timed out"
+}
+
+expect_user {
+    "ok" {
+	puts "thank you\n"
+	exit 0
+    }
+    timeout {
+	puts "You let it time out"
+	exit 0
+    }
+}

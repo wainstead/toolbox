@@ -1,0 +1,35 @@
+#!/usr/bin/expect
+
+# Trying to use expect_background here, but it's tricky.
+
+set timeout 3
+
+spawn top
+set top_spawn_id $spawn_id
+send_user "Hello, sailor. Need a date?\n"
+
+send -i $top_spawn_id "o"
+expect_background -i $top_spawn_id {
+    "primary key" send -i $top_spawn_id "cpu\n"
+    eof {send_user "program terminated correctly\n"}
+    timeout {send_user "you lose, ex-lax\n"}
+}
+
+expect_user {
+    timeout {
+	send_user "Still waiting for an answer.\n"
+	exp_continue
+    }
+    "yes" {
+	send_user "I 'expect' to be paid then!\n"
+    }
+    "no" {
+	send_user "Fine, run home to your momma, little boy!\n"
+    }
+}
+
+send -i $top_spawn_id 'q'
+
+# lassign [wait -i $top_spawn_id] pid spawnid os_error_flag exit_value
+
+# puts "return values were pid:$pid spawn_id:$spawnid os_error_flag:$os_error_flag exit_value:$exit_value"
