@@ -11,6 +11,9 @@ A pattern, like... '..f..' to indicate 'f' is in the third spot, or
 
 And 'lu' as additional letters it must contain.
 
+(Later thought: /^..[^t]../ expresses "third position is not 't'", or:
+/^[sf]..../ says "first position is not 's' or 'f'")
+
 Optional: maybe a pattern '..d..' to indicate "the letter 'd' is not
 in the third position."
 
@@ -86,13 +89,15 @@ while (<DATA>) {
 	# next LABEL unless $word =~ /^[^r][^e]e[^e]s$/;
 
 	# MUST contain these letters
-	for $c (qw(t a)) {
+	for $c (qw(a)) {
 	    next LABEL unless $word =~ /$c/;	    
 	}
 
 	# MUST NOT contain these letters
-	next LABEL if $word =~ /[udisem]/;
+	next LABEL if $word =~ /[lsertn]/;
 
+	# We now have a word to add to our list...
+	push(@candidates, $word);
 
 	# Anchored to the end
 	#next LABEL unless $word =~ /e$/;
@@ -101,20 +106,26 @@ while (<DATA>) {
 	#next LABEL if $word =~ /^.o/;
 
 	# etc.
-	next LABEL if $word =~ /^a/;
-	next LABEL if $word =~ /^.a/;
-	next LABEL if $word =~ /a.$/;
+	next LABEL unless $word =~ /^.aw.y$/;
+	# next LABEL if $word =~ /^s....$/;
+	# next LABEL if $word =~ /^.t...$/;
+	# next LABEL if $word =~ /^..u..$/;
+	# next LABEL if $word =~ /^...s.$/;
+	# next LABEL if $word =~ /^....t$/;
 	
-	next LABEL if $word =~ /^.t/;
-	next LABEL if $word =~ /^..t/;
-	next LABEL if $word =~ /t$/;
+	# next LABEL if $word =~ /a.$/;
+	
+	# next LABEL if $word =~ /^.t/;
+	# next LABEL if $word =~ /^..t/;
+	# next LABEL if $word =~ /t$/;
 
-	next LABEL if $word =~ /h$/;
+	# next LABEL if $word =~ /h$/;
 	
 
 	print $word, "\n";
     }
 }
+
 
 # for my $key ( reverse sort { $lettercounts{$a} <=> $lettercounts{$b} } keys %lettercounts ) {
 #     print "$key - $lettercounts{$key}\n";
@@ -124,13 +135,13 @@ while (<DATA>) {
 There are 8,938 words below, taken from the Scrabble list online.
 Frequency count:
 
- s - 4649
- e - 4586
- a - 3991
+s - 4649
+e - 4586
+a - 3991
 o - 2986
- r - 2918
+r - 2918
 i - 2638
- l - 2442
+l - 2442
 t - 2321
 n - 2033
 d - 1730
