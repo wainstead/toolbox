@@ -1,4 +1,5 @@
 *~
 *.class
 sample_app
-pgms/py/flask-demo/.env
+pgms/py2/flask-demo/.env
+pgms/py3/env
