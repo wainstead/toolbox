@@ -2,9 +2,14 @@
 
 =begin
 
+TODO: a better dictionary, and the ability to do -ed or -s
+endings. This script may ultimately never be able to solve the problem
+but it can be a great tool to assist.
 
-BUG: words shorter than 5 letters are missing. A word like 'yaw' could
-be the key to solving in two words.
+TODO: Once we have filtered the dictionary, print statistics about:
+letter count for starting letters, letter count for ending letters,
+letter frequency for the target set of letters. These may aid in
+decision making.
 
 Possible minor optimization: for words like "comely," which end in
 'y', there may be no solutions at all when a word ends in a particular
@@ -14,7 +19,7 @@ skipping those words would probably be automatic.
 
 TODO: this solution is buggy. But, the problem appears to be
 recursive! And I did not see this earlier. (Update: nah, don't need
-recursion).
+recursion). (Now I keep thinking about a bitmap). (I need Copilot!)
 
 1. Filter the master list to only words that contain the letters
 2. For each of the four groupings:
@@ -71,9 +76,13 @@ my $no_double_chars_regexp = qr/$future_regexp/;
 
 my @dict = ();
 
-while (<DATA>) {
+open DICT, "</usr/share/dict/words" or die $!;
+while (<DICT>) {
+    next if /[A-Z]/; # no capital letters please
     chomp;
-    push(@dict, split / /);
+    #next if length($_) < 3; # Letterboxed does not accept one or two letter words
+    #push(@dict, split / /);
+    push(@dict, $_);
 }
 
 my @qualified_words = ();
@@ -196,20 +205,40 @@ sub build_last_letter_refs {
 # Subroutine to get words from first letter hash reference
 sub get_words_by_first_letter {
     my ($refs, $letter) = @_;
-    return @{$refs->{$letter}};
+    if (exists $refs->{$letter}) {
+	return @{$refs->{$letter}};
+    } else {
+	return ();
+    }
 }
 
 # Subroutine to get words from last letter hash reference
 sub get_words_by_last_letter {
     my ($refs, $letter) = @_;
-    return @{$refs->{$letter}};
+    if (exists $refs->{$letter}) {
+	return @{$refs->{$letter}};
+    } else {
+	return ();
+    }
 }
 
 # Build references
 my $first_letter_refs = build_first_letter_refs(@qualified_words);
 my $last_letter_refs = build_last_letter_refs(@qualified_words);
 
-
+# Brute force approach, but the runtime is still fast... "Do the
+# simplest thing that works."
+foreach my $word (@qualified_words) {
+    my $last_letter = substr($word, -1, 1);
+    #print "last letter: '$last_letter'\n";
+    my @caboosen = get_words_by_first_letter($first_letter_refs, $last_letter);
+    foreach my $caboose (@caboosen) {
+	my $alphagram = alphagram("$word$caboose");
+	if (length($alphagram) == 12) {
+	    print "$word, $caboose\n";
+	}
+    }
+}
 
 exit;
 

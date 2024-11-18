@@ -2,6 +2,68 @@
 
 # Help me solve the New York Times' "Wordle" puzzle
 
+my %lettercounts;
+
+while (<DATA>) {
+    chomp;
+    my @words = split / /;
+  LABEL:
+    foreach $word (@words) {
+	# foreach $letter (split //, $word) {
+	#     $lettercounts{$letter}++;
+	# }
+	# next LABEL unless $word =~ /^.[^e][^spr].s$/;
+	# next LABEL unless $word =~ /^[^r][^e]e[^e]s$/;
+
+	# MUST contain these letters
+	for $c (qw(f i a l)) {
+	    next LABEL unless $word =~ /$c/;	    
+	}
+
+	# MUST NOT contain these letters
+	next LABEL if $word =~ /[stemckn]/;
+
+	# We now have a word to add to our list...
+	push(@candidates, $word);
+
+	# Anchored to the end
+	#next LABEL unless $word =~ /e$/;
+	
+	# Anchored to the beginning
+	#next LABEL if $word =~ /^.o/;
+
+	# etc.
+	next LABEL unless $word =~ /^f....$/;
+	next LABEL unless $word =~ /^f...l$/;
+	# next LABEL if $word =~ /^t....$/;
+	# next LABEL if $word =~ /^.t...$/;
+	# next LABEL if $word =~ /^...e.$/;
+	# next LABEL if $word =~ /^..e..$/;
+	# next LABEL if $word =~ /^..r..$/;
+	# next LABEL if $word =~ /^...c.$/;
+	# next LABEL if $word =~ /^....k$/;
+	# next LABEL if $word =~ /^.t...$/;
+	# next LABEL if $word =~ /^..u..$/;
+	# next LABEL if $word =~ /^...s.$/;
+	# next LABEL if $word =~ /^....t$/;
+	
+	# next LABEL if $word =~ /a.$/;
+	
+	# next LABEL if $word =~ /^.t/;
+	# next LABEL if $word =~ /^..t/;
+	# next LABEL if $word =~ /t$/;
+
+	# next LABEL if $word =~ /h$/;
+	
+
+	print $word, "\n";
+    }
+}
+
+
+# for my $key ( reverse sort { $lettercounts{$a} <=> $lettercounts{$b} } keys %lettercounts ) {
+#     print "$key - $lettercounts{$key}\n";
+# }
 =begin
 
 Possible inputs:
@@ -75,76 +137,20 @@ human would not reuse words.
 
 =cut
 
-my %lettercounts;
-
-while (<DATA>) {
-    chomp;
-    my @words = split / /;
-  LABEL:
-    foreach $word (@words) {
-	# foreach $letter (split //, $word) {
-	#     $lettercounts{$letter}++;
-	# }
-	# next LABEL unless $word =~ /^.[^e][^spr].s$/;
-	# next LABEL unless $word =~ /^[^r][^e]e[^e]s$/;
-
-	# MUST contain these letters
-	for $c (qw(a)) {
-	    next LABEL unless $word =~ /$c/;	    
-	}
-
-	# MUST NOT contain these letters
-	next LABEL if $word =~ /[lsertn]/;
-
-	# We now have a word to add to our list...
-	push(@candidates, $word);
-
-	# Anchored to the end
-	#next LABEL unless $word =~ /e$/;
-	
-	# Anchored to the beginning
-	#next LABEL if $word =~ /^.o/;
-
-	# etc.
-	next LABEL unless $word =~ /^.aw.y$/;
-	# next LABEL if $word =~ /^s....$/;
-	# next LABEL if $word =~ /^.t...$/;
-	# next LABEL if $word =~ /^..u..$/;
-	# next LABEL if $word =~ /^...s.$/;
-	# next LABEL if $word =~ /^....t$/;
-	
-	# next LABEL if $word =~ /a.$/;
-	
-	# next LABEL if $word =~ /^.t/;
-	# next LABEL if $word =~ /^..t/;
-	# next LABEL if $word =~ /t$/;
-
-	# next LABEL if $word =~ /h$/;
-	
-
-	print $word, "\n";
-    }
-}
-
-
-# for my $key ( reverse sort { $lettercounts{$a} <=> $lettercounts{$b} } keys %lettercounts ) {
-#     print "$key - $lettercounts{$key}\n";
-# }
-
 =begin
 There are 8,938 words below, taken from the Scrabble list online.
 Frequency count:
 
-s - 4649
-e - 4586
-a - 3991
-o - 2986
-r - 2918
-i - 2638
-l - 2442
-t - 2321
-n - 2033
-d - 1730
+ s - 4649
+ e - 4586
+ a - 3991
+ o - 2986
+ r - 2918
+ i - 2638
+ l - 2442
+ t - 2321
+ n - 2033
+ d - 1730
 u - 1699
 c - 1485
 y - 1403
