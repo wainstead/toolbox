@@ -3,8 +3,6 @@
 # Help me solve the New York Times' "Wordle" puzzle
 # (vc-revert-file (buffer-file-name)
 
-my %lettercounts;
-
 my $must_include = '';
 my $must_not_include = '';
 my $already_matched_pattern = '.....';
