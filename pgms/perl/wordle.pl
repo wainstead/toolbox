@@ -1,6 +1,7 @@
 #!/usr/bin/env perl
 
 # Help me solve the New York Times' "Wordle" puzzle
+# (vc-revert-file (buffer-file-name)
 
 my %lettercounts;
 
