@@ -4,92 +4,41 @@
 
 my %lettercounts;
 
+my $must_include = '';
+my $must_not_include = '';
+my $already_matched_pattern = '....';
+my $filter1 = '';
+my $filter2 = '';
+my $filter3 = '';
+my $filter4 = '';
+my $filter5 = '';
+
 while (<DATA>) {
     chomp;
     my @words = split / /;
   LABEL:
     foreach $word (@words) {
-	# foreach $letter (split //, $word) {
-	#     $lettercounts{$letter}++;
-	# }
-	# next LABEL unless $word =~ /^.[^e][^spr].s$/;
-	# next LABEL unless $word =~ /^[^r][^e]e[^e]s$/;
-
 	# MUST contain these letters
-	for $c (qw(f i a l)) {
+	for $c (split //, $must_include) {
 	    next LABEL unless $word =~ /$c/;	    
 	}
 
 	# MUST NOT contain these letters
-	next LABEL if $word =~ /[stemckn]/;
-
-	# We now have a word to add to our list...
-	push(@candidates, $word);
-
-	# Anchored to the end
-	#next LABEL unless $word =~ /e$/;
-	
-	# Anchored to the beginning
-	#next LABEL if $word =~ /^.o/;
+	next LABEL if $word =~ /[$must_not_include]/;
 
 	# etc.
-	next LABEL unless $word =~ /^f....$/;
-	next LABEL unless $word =~ /^f...l$/;
-	# next LABEL if $word =~ /^t....$/;
-	# next LABEL if $word =~ /^.t...$/;
-	# next LABEL if $word =~ /^...e.$/;
-	# next LABEL if $word =~ /^..e..$/;
-	# next LABEL if $word =~ /^..r..$/;
-	# next LABEL if $word =~ /^...c.$/;
-	# next LABEL if $word =~ /^....k$/;
-	# next LABEL if $word =~ /^.t...$/;
-	# next LABEL if $word =~ /^..u..$/;
-	# next LABEL if $word =~ /^...s.$/;
-	# next LABEL if $word =~ /^....t$/;
-	
-	# next LABEL if $word =~ /a.$/;
-	
-	# next LABEL if $word =~ /^.t/;
-	# next LABEL if $word =~ /^..t/;
-	# next LABEL if $word =~ /t$/;
-
-	# next LABEL if $word =~ /h$/;
-	
-
+	next LABEL unless $word =~ /^$already_matched_pattern/;
+	next LABEL if $filter1 ne '' && $word =~ /^[$filter1]....$/;
+	next LABEL if $filter2 ne '' && $word =~ /^.[$filter2]...$/;
+	next LABEL if $filter3 ne '' && $word =~ /^..[$filter3]..$/;
+	next LABEL if $filter4 ne '' && $word =~ /^...[$filter4].$/;
+	next LABEL if $filter5 ne '' && $word =~ /^....[$filter5]$/;
 	print $word, "\n";
     }
 }
 
 
-# for my $key ( reverse sort { $lettercounts{$a} <=> $lettercounts{$b} } keys %lettercounts ) {
-#     print "$key - $lettercounts{$key}\n";
-# }
 =begin
-
-Possible inputs:
-
-A pattern, like... '..f..' to indicate 'f' is in the third spot, or
-'g..d.' for those positioned letters
-
-And 'lu' as additional letters it must contain.
-
-(Later thought: /^..[^t]../ expresses "third position is not 't'", or:
-/^[sf]..../ says "first position is not 's' or 'f'")
-
-Optional: maybe a pattern '..d..' to indicate "the letter 'd' is not
-in the third position."
-
-Or we could freeform those as command line args, or create command line switches:
-
-'+..f..' '-...g.' '-a..aa' (freeform)
-
---contains '..f..' --uncontains '...g.' --uncontains 'a..aa'
-
-Respectively: "'f' is not in the 3rd position, 'g' is not in the
-fourth, 'a' is not in positions 1, 4, 5." So I'm passing in literal
-regexps, I guess.
-
-More thoughts:
 
 Frequency count of letters is a start, but I really am interested in
 narrowing down the list of words. 'press', for example, has two
@@ -141,13 +90,13 @@ human would not reuse words.
 There are 8,938 words below, taken from the Scrabble list online.
 Frequency count:
 
- s - 4649
- e - 4586
- a - 3991
+s - 4649
+e - 4586
+a - 3991
  o - 2986
- r - 2918
+r - 2918
  i - 2638
- l - 2442
+l - 2442
  t - 2321
  n - 2033
  d - 1730
