@@ -39,6 +39,22 @@ while (<DATA>) {
 
 =begin
 
+The second word problem
+
+WordleBot will pick a second word to narrow the list as much as possible. Thus, it often (always?) ignores letters already matched.
+
+For example, I chose, and it would have chosen:
+
+crane -> sects
+crane -> pilot
+
+and the 'c' and 'e' were yellow matches after 'crane'.
+
+=cut
+
+
+=begin
+
 Frequency count of letters is a start, but I really am interested in
 narrowing down the list of words. 'press', for example, has two
 letters 's' which might be misleading; 'press' should increment the
