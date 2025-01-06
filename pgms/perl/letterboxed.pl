@@ -2,6 +2,14 @@
 
 =begin
 
+BUG:
+
+./letterboxed.pl hdo lyc tiv mea
+
+does not find "mythical, loved" which is a solution. This is because
+the Unix dictionary doesn't include "-ed" words; "love" is there but
+not "loved."
+
 TODO: a better dictionary, and the ability to do -ed or -s
 endings. This script may ultimately never be able to solve the problem
 but it can be a great tool to assist.
